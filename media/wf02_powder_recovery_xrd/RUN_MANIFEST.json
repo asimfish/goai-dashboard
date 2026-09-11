@@ -1,0 +1,9 @@
+{
+  "workflow": "wf02_powder_recovery_xrd",
+  "status": "failed",
+  "env": "isaacsim51",
+  "files": [],
+  "cameras_ok": false,
+  "joints": {},
+  "reason": "'Articulation' object has no attribute '_data'"
+}

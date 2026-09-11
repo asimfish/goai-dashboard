@@ -1,0 +1,9 @@
+{
+  "workflow": "wf05_reagent_logistics_safety",
+  "status": "failed",
+  "env": "isaacsim51",
+  "files": [],
+  "cameras_ok": false,
+  "joints": {},
+  "reason": "'Articulation' object has no attribute '_data'"
+}
