@@ -1,0 +1,189 @@
+<mxfile host="goai-research" agent="goai-figure-mcp" version="24.0.0">
+  <diagram id="goai-0" name="fig01_F01_line">
+    <mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1"
+        connect="1" arrows="1" fold="1" page="1" pageScale="1"
+        pageWidth="1500" pageHeight="1331" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="goai-title" value="四级文献证据决定合成条件的可迁移范围" style="text;html=1;align=center;verticalAlign=middle;fontSize=30;fontColor=#1a1a1a;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="36" width="480" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="g_src" value="" style="rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fontSize=15;fontStyle=1;container=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#C9D1D6;strokeWidth=1.2;fontColor=#C9D1D6;" vertex="1" parent="1">
+          <mxGeometry x="28" y="138" width="334" height="981" as="geometry" />
+        </mxCell>
+        <mxCell id="g_rec" value="" style="rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fontSize=15;fontStyle=1;container=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#1F2E36;strokeWidth=1.2;fontColor=#1F2E36;" vertex="1" parent="1">
+          <mxGeometry x="490" y="138" width="310" height="995" as="geometry" />
+        </mxCell>
+        <mxCell id="g_ver" value="" style="rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fontSize=15;fontStyle=1;container=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#1F2E36;strokeWidth=1.2;fontColor=#1F2E36;" vertex="1" parent="1">
+          <mxGeometry x="900" y="138" width="240" height="907" as="geometry" />
+        </mxCell>
+        <mxCell id="g_use" value="" style="rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=10;spacingTop=4;fontSize=15;fontStyle=1;container=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#C9D1D6;strokeWidth=1.2;fontColor=#C9D1D6;" vertex="1" parent="1">
+          <mxGeometry x="1338" y="138" width="144" height="1093" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="&lt;b&gt;T1 目标相直接报道&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;Ba₅Y₁₂Zn[O(SiO₄)]₈：高温&lt;br/&gt;溶液法 · Pt 坩埚 ·&lt;br/&gt;单晶结构；仅 1 篇&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF6E5;strokeColor=#B06A12;strokeWidth=3.2;fontSize=26;" vertex="1" parent="g_src">
+          <mxGeometry x="12" y="12" width="310" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="&lt;b&gt;T2 同一 Ba–Y&lt;br/&gt;四方谱系&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;Ba5.2Y13Si8O41&lt;br/&gt;等三次报道为同一相；相区&lt;br/&gt;与结构核验可比&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F2E36;strokeWidth=2.4;fontSize=26;" vertex="1" parent="g_src">
+          <mxGeometry x="12" y="228" width="310" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" value="&lt;b&gt;T3 晶体化学近邻&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;Ba–Zn–Si–O /&lt;br/&gt;Y–Si–O：结构关系、竞争相&lt;br/&gt;、电荷平衡&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4A5B64;strokeWidth=1.8;fontSize=26;" vertex="1" parent="g_src">
+          <mxGeometry x="12" y="449" width="310" height="171" as="geometry" />
+        </mxCell>
+        <mxCell id="t4" value="&lt;b&gt;T4 工艺近邻&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;固相 / 助熔 / 熔体 /&lt;br/&gt;提拉：过程变量与表征方法&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#7A878E;strokeWidth=1.4;fontSize=26;" vertex="1" parent="g_src">
+          <mxGeometry x="12" y="636" width="310" height="171" as="geometry" />
+        </mxCell>
+        <mxCell id="t0" value="&lt;b&gt;T0 范围之外&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;化学式或结构证据不指向目&lt;br/&gt;标相&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F6F7;strokeColor=#9AA4AA;strokeWidth=1.4;fontSize=26;dashed=1;" vertex="1" parent="g_src">
+          <mxGeometry x="12" y="823" width="310" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="h_rec" value="&lt;b&gt;统一实验记录&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:25.5px' color='#555555'&gt;抽取 → 规范化 →&lt;br/&gt;跨路线对照&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=0.5;fontSize=30;" vertex="1" parent="g_rec">
+          <mxGeometry x="10" y="12" width="290" height="147" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" value="&lt;b&gt;配比与原料&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;名义组成 · 前驱体 ·&lt;br/&gt;助熔剂比&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F2E36;strokeWidth=1.4;fontSize=26;" vertex="1" parent="g_rec">
+          <mxGeometry x="20" y="167" width="270" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" value="&lt;b&gt;温度—时间&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;升温速率 · 保温 · 台阶&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F2E36;strokeWidth=1.4;fontSize=26;" vertex="1" parent="g_rec">
+          <mxGeometry x="20" y="319" width="270" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" value="&lt;b&gt;气氛与体系开闭&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;空气 / 还原 · 开放 / 封闭&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F2E36;strokeWidth=1.4;fontSize=26;" vertex="1" parent="g_rec">
+          <mxGeometry x="20" y="471" width="270" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" value="&lt;b&gt;坩埚 · 助熔剂 /&lt;br/&gt;矿化剂&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;Pt / Al₂O₃ · 污染路径&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F2E36;strokeWidth=1.4;fontSize=26;" vertex="1" parent="g_rec">
+          <mxGeometry x="20" y="623" width="270" height="176" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" value="&lt;b&gt;冷却 · 生长 · 分离&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;慢冷速率 · 籽晶 · 失重&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F2E36;strokeWidth=1.4;fontSize=26;" vertex="1" parent="g_rec">
+          <mxGeometry x="20" y="809" width="270" height="176" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B06A12;strokeColor=#B06A12;strokeWidth=1;fontSize=26;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="474" y="300" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1F2E36;strokeColor=#1F2E36;strokeWidth=1;fontSize=26;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="474" y="461" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#4A5B64;strokeColor=#4A5B64;strokeWidth=1;fontSize=26;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="474" y="665" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7A878E;strokeColor=#7A878E;strokeWidth=1;fontSize=26;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="474" y="852" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="h_ver" value="&lt;b&gt;互补表征&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:25.5px' color='#555555'&gt;同一批样品 ·&lt;br/&gt;互相支持&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=0.5;fontSize=30;" vertex="1" parent="g_ver">
+          <mxGeometry x="10" y="12" width="220" height="147" as="geometry" />
+        </mxCell>
+        <mxCell id="v1" value="&lt;b&gt;单晶 / 先进衍射&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;结构身份 ·&lt;br/&gt;位点占据&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F2E36;strokeWidth=1.4;fontSize=26;" vertex="1" parent="g_ver">
+          <mxGeometry x="20" y="167" width="200" height="176" as="geometry" />
+        </mxCell>
+        <mxCell id="v2" value="&lt;b&gt;PXRD /&lt;br/&gt;Rietveld&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;批量相纯度 · 杂相&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F2E36;strokeWidth=1.4;fontSize=26;" vertex="1" parent="g_ver">
+          <mxGeometry x="20" y="353" width="200" height="211" as="geometry" />
+        </mxCell>
+        <mxCell id="v3" value="&lt;b&gt;成分与污染&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;EDS / EPMA ·&lt;br/&gt;坩埚溶出&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F2E36;strokeWidth=1.4;fontSize=26;" vertex="1" parent="g_ver">
+          <mxGeometry x="20" y="574" width="200" height="171" as="geometry" />
+        </mxCell>
+        <mxCell id="v4" value="&lt;b&gt;高温稳定性&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;原位高温 ≠&lt;br/&gt;冷却回收&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F2E36;strokeWidth=1.4;fontSize=26;" vertex="1" parent="g_ver">
+          <mxGeometry x="20" y="755" width="200" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="gate" value="可迁移判定" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;spacing=10;fillColor=#FFF6E5;strokeColor=#B06A12;strokeWidth=2.6;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="653" width="180" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="u1" value="&lt;b&gt;直接条件&lt;br/&gt;复现&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;只依据 T1&lt;br/&gt;的原始处&lt;br/&gt;方&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF6E5;strokeColor=#B06A12;strokeWidth=3.2;fontSize=26;" vertex="1" parent="g_use">
+          <mxGeometry x="12" y="12" width="120" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="u2" value="&lt;b&gt;谱系内相&lt;br/&gt;图与结构&lt;br/&gt;比较&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;借鉴 T2&lt;br/&gt;的组成扫&lt;br/&gt;描与核验&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F2E36;strokeWidth=2.4;fontSize=26;" vertex="1" parent="g_use">
+          <mxGeometry x="12" y="233" width="120" height="303" as="geometry" />
+        </mxCell>
+        <mxCell id="u3" value="&lt;b&gt;方法与变&lt;br/&gt;量结构&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;T3/T4&lt;br/&gt;只给变量&lt;br/&gt;与方法，&lt;br/&gt;不移用数&lt;br/&gt;值&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4A5B64;strokeWidth=1.8;fontSize=26;" vertex="1" parent="g_use">
+          <mxGeometry x="12" y="552" width="120" height="298" as="geometry" />
+        </mxCell>
+        <mxCell id="u0" value="&lt;b&gt;排除出条&lt;br/&gt;件比较&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:22.1px' color='#555555'&gt;仅说明研&lt;br/&gt;究边界&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F6F7;strokeColor=#9AA4AA;strokeWidth=1.4;fontSize=26;dashed=1;" vertex="1" parent="g_use">
+          <mxGeometry x="12" y="866" width="120" height="211" as="geometry" />
+        </mxCell>
+        <mxCell id="e_t1" value="完整处方" style="edgeStyle=orthogonalEdgeStyle;jettySize=0;orthogonalLoop=1;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;targetSpacing=0;perimeterSpacing=0;strokeColor=#B06A12;strokeWidth=3.2;fontSize=22;" edge="1" parent="1" source="t1" target="p1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="412" y="250" />
+              <mxPoint x="412" y="307" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_t2" value="相区核验" style="edgeStyle=orthogonalEdgeStyle;jettySize=0;orthogonalLoop=1;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;targetSpacing=0;perimeterSpacing=0;strokeColor=#1F2E36;strokeWidth=2.4;fontSize=22;" edge="1" parent="1" source="t2" target="p2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="412" y="468.5" />
+              <mxPoint x="412" y="468" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_t3" value="结构关系" style="edgeStyle=orthogonalEdgeStyle;jettySize=0;orthogonalLoop=1;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;targetSpacing=0;perimeterSpacing=0;strokeColor=#4A5B64;strokeWidth=1.8;fontSize=22;" edge="1" parent="1" source="t3" target="p3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="412" y="672.5" />
+              <mxPoint x="412" y="672" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_t4" value="过程变量" style="edgeStyle=orthogonalEdgeStyle;jettySize=0;orthogonalLoop=1;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;targetSpacing=0;perimeterSpacing=0;strokeColor=#7A878E;strokeWidth=1.4;fontSize=22;" edge="1" parent="1" source="t4" target="p4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="412" y="859.5" />
+              <mxPoint x="412" y="859" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_rec_ver" value="同项对照" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;targetSpacing=0;perimeterSpacing=0;strokeColor=#1F2E36;strokeWidth=2.6;fontSize=22;" edge="1" parent="1" source="r3" target="v2">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_ver_gate" value="" style="edgeStyle=orthogonalEdgeStyle;jettySize=0;orthogonalLoop=1;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;targetSpacing=0;perimeterSpacing=0;strokeColor=#1F2E36;strokeWidth=2.6;fontSize=26;" edge="1" parent="1" source="v2" target="gate">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1160" y="596.5" />
+              <mxPoint x="1160" y="697" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_u1" value="数值可复现" style="edgeStyle=orthogonalEdgeStyle;jettySize=0;orthogonalLoop=1;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;targetSpacing=0;perimeterSpacing=0;strokeColor=#B06A12;strokeWidth=3.2;fontSize=22;" edge="1" parent="1" source="gate" target="u1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1322" y="697" />
+              <mxPoint x="1322" y="252.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_u2" value="方法 + 相区" style="edgeStyle=orthogonalEdgeStyle;jettySize=0;orthogonalLoop=1;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;targetSpacing=0;perimeterSpacing=0;strokeColor=#1F2E36;strokeWidth=2.4;fontSize=22;" edge="1" parent="1" source="gate" target="u2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1322" y="697" />
+              <mxPoint x="1322" y="522.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_u3" value="仅变量结构" style="edgeStyle=orthogonalEdgeStyle;jettySize=0;orthogonalLoop=1;rounded=0;html=1;endArrow=block;endFill=1;endSize=8;targetSpacing=0;perimeterSpacing=0;strokeColor=#4A5B64;strokeWidth=1.8;fontSize=22;" edge="1" parent="1" source="gate" target="u3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1322" y="697" />
+              <mxPoint x="1322" y="839" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_t0" value="排除" style="edgeStyle=orthogonalEdgeStyle;jettySize=0;orthogonalLoop=1;rounded=0;html=1;endArrow=open;endFill=0;endSize=8;targetSpacing=0;perimeterSpacing=0;strokeColor=#9AA4AA;strokeWidth=1.4;fontSize=22;dashed=1;" edge="1" parent="1" source="t0" target="u0">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="412" y="1032" />
+              <mxPoint x="412" y="1261" />
+              <mxPoint x="1322" y="1261" />
+              <mxPoint x="1322" y="1109.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gate_note" value="近邻条件≠已验证配方" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontColor=#B06A12;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1133" y="782.7" width="154" height="28.6" as="geometry" />
+        </mxCell>
+        <mxCell id="mainline" value="证据等级（线宽）→ 统一实验记录（五项条件）→ 互补表征 → 可迁移判定 → 研究用途" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontColor=#4A5B64;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="418.9" y="93.7" width="662.2" height="28.6" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="线宽 = 证据等级：T1 粗（琥珀）· T2 · T3 · T4 细 · T0 虚线；条件项只出现在连线与记录行上" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontColor=#7A878E;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="311.1" y="1286.7" width="877.8" height="28.6" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

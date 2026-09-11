@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-12T00:44+08:00",
+  "updated": "2026-09-12T00:54+08:00",
   "goal": "决赛材料：综述流水线整改 → A-Lab 仪器与工作流 → 五个工作流 + 生成 MCP → Isaac Sim 重建 + Franka 采集（5090, GPT-6 Astra）→ 演示与展示页",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,18 +11,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-12T00:44+08:00",
+    "snapshot_at": "2026-09-12T00:54+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 7663,
-        "util": "28%",
+        "used_mib": 7791,
+        "util": "29%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 7414,
-        "util": "93%",
+        "used_mib": 7418,
+        "util": "90%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -331,6 +331,10 @@
   ],
   "changelog": [
     {
+      "date": "2026-09-12 00:55",
+      "entry": "综述头图按 super_teaser 契约重做矢量候选 F01（S0/S1 文档 + 生成器 + 印刷字号 lint 通过）；S2/S5 生图 prompt 已备好，待图像通道恢复"
+    },
+    {
       "date": "2026-09-12 00:02",
       "entry": "wf04 重建 ok（4/5 场景已建）；展示页加入 wf04 渲染与 wf01 首段轨迹视频；wf05/wf02 重跑，wf01 全量采集启动"
     },
@@ -439,6 +443,20 @@
       "date": "2026-09-03",
       "status": "ok",
       "note": "诊断用"
+    }
+  ],
+  "figures": [
+    {
+      "title": "旧头图 fig01（2026-09-02 交付版）",
+      "image": "old/fig01_evidence_synthesis_map.png",
+      "status": "partial",
+      "note": "四栏流程框：证据来源→路线对照→互补表征→用途。问题：模块大而空、变量塞在框里、证据等级只靠颜色、无端口/判定节点。"
+    },
+    {
+      "title": "新头图候选 F01 · 技术线稿（印刷优先）",
+      "image": "out/fig01_F01_line.png",
+      "status": "ok",
+      "note": "按 super_teaser S0/S1 契约重做：证据等级用线宽承载（T1 琥珀粗线 → T0 虚线）；五项条件只出现在记录行与连线标签；表征列四方法；琥珀六边形\"可迁移判定\"把结论分流到三种用途；唯一强调色、灰度可辨、全部文字 ≥6.6 pt。矢量 SVG/drawio 可编辑：final_round/figures/out/"
     }
   ]
 }
