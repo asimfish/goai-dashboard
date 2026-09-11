@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-11T23:58+08:00",
+  "updated": "2026-09-11T23:59+08:00",
   "goal": "决赛材料：综述流水线整改 → A-Lab 仪器与工作流 → 五个工作流 + 生成 MCP → Isaac Sim 重建 + Franka 采集（5090, GPT-6 Astra）→ 演示与展示页",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,18 +11,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-11T23:58+08:00",
+    "snapshot_at": "2026-09-11T23:59+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 1109,
-        "util": "0%",
+        "used_mib": 9782,
+        "util": "9%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 7392,
-        "util": "2%",
+        "used_mib": 7426,
+        "util": "0%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -48,16 +48,16 @@
     ],
     "runs": [
       {
-        "name": "wf02→wf05 场景重建链（工具包 v3）",
+        "name": "wf05 + wf02 场景重建（工具包 v4）",
         "state": "running",
-        "since": "23:03",
-        "log": "/data/liyufeng/goai_workflows/_shared/recon_kit_chain_150344.log"
+        "since": "23:57",
+        "log": "_shared/recon_kit_chain_155752.log"
       },
       {
-        "name": "wf01 确定性 expert 采集（5 条 episode）",
+        "name": "wf01 采集 5 条 episode（软夹爪、薄件吸附）",
         "state": "running",
-        "since": "23:04",
-        "log": "/data/liyufeng/goai_workflows/wf01_solid_state_calcination/recon/collect/collect.log"
+        "since": "23:58",
+        "log": "wf01/recon/collect/collect.log"
       }
     ]
   },
@@ -88,7 +88,7 @@
       "collect": "failed",
       "astra_demo": "partial",
       "showcase": "ok",
-      "note": "重建 ok：12 prims，三相机渲染有效，炉门 Door_joint 0–1.745 rad；scene.usd 73 MB；首轮采集失败：大位移伺服时长不足 + 称量纸太薄抓不起 → 自适应时长/重试/薄件运动学吸附，调试中",
+      "note": "调试采集已跑通\"抓称量纸→按去皮→抓瓶\"，放置误差 42–58 mm；夹爪刚度调软后全量采集 5 条中",
       "evidence": "5090:/data/liyufeng/goai_workflows/wf01_solid_state_calcination/recon/RUN_MANIFEST.json",
       "collect_detail": "0/2 episodes"
     },
@@ -102,7 +102,7 @@
       "collect": "pending",
       "astra_demo": "pending",
       "showcase": "ok",
-      "note": "v3 重建：三相机有效、无重叠；仅压片（薄圆柱）陷入台面 15 mm → 已改为盒体，待重跑",
+      "note": "压片改盒体后重跑",
       "evidence": "_shared/recon_chain.log"
     },
     {
@@ -127,8 +127,8 @@
       "recon": "ok",
       "collect": "pending",
       "astra_demo": "pending",
-      "showcase": "pending",
-      "note": "坩埚钳中介抓取（新原语）；工具包 v3（台面 ±0.37 m 实测区域、仪器 ≤0.20 m、仅 Oven/柜/分配器保留关节）链式重建中",
+      "showcase": "ok",
+      "note": "v3 重建 ok：Pt 坩埚/坩埚钳/漏斗/锥形瓶就位，炉门关节保留",
       "evidence": ""
     },
     {
@@ -141,7 +141,7 @@
       "collect": "pending",
       "astra_demo": "pending",
       "showcase": "pending",
-      "note": "试剂柜 + 瓶口分配器（可动资产）；工具包 v3（台面 ±0.37 m 实测区域、仪器 ≤0.20 m、仅 Oven/柜/分配器保留关节）链式重建中",
+      "note": "瓶口分配器 USD 含多个关节根 → 改刚体后重跑；试剂柜保留门关节",
       "evidence": ""
     }
   ],
@@ -330,6 +330,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-12 00:02",
+      "entry": "wf04 重建 ok（4/5 场景已建）；展示页加入 wf04 渲染与 wf01 首段轨迹视频；wf05/wf02 重跑，wf01 全量采集启动"
+    },
     {
       "date": "2026-09-11 23:58",
       "entry": "wf04 重建 ok；wf01 调试采集首次跑通前两个原语（抓称量纸 → 按去皮 → 抓瓶），第 3 步放置误差 58 mm；看板新增综述 PDF 区"
