@@ -1,6 +1,6 @@
 {
   "workflow": "wf02_powder_recovery_xrd",
-  "status": "partial",
+  "status": "ok",
   "env": "isaacsim51",
   "files": [
     "cam_wrist.png",
@@ -23,6 +23,7 @@
     "placement_plan.json",
     "prepare_assets.py",
     "measure_support.py",
+    "support_check.json",
     "RUN_INFO.json",
     "export_joint_state.py",
     "depth_wrist.npy",
