@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-11T23:16+08:00",
+  "updated": "2026-09-11T23:58+08:00",
   "goal": "决赛材料：综述流水线整改 → A-Lab 仪器与工作流 → 五个工作流 + 生成 MCP → Isaac Sim 重建 + Franka 采集（5090, GPT-6 Astra）→ 演示与展示页",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,18 +11,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-11T23:16+08:00",
+    "snapshot_at": "2026-09-11T23:58+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 4067,
-        "util": "1%",
+        "used_mib": 1109,
+        "util": "0%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 7390,
-        "util": "1%",
+        "used_mib": 7392,
+        "util": "2%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -30,13 +30,13 @@
       {
         "mount": "/",
         "used": "95%",
-        "free": "188G",
+        "free": "189G",
         "note": "不写"
       },
       {
         "mount": "/data",
         "used": "93%",
-        "free": "271G",
+        "free": "270G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -85,11 +85,12 @@
       "spec": "ok",
       "validate": "ok",
       "recon": "ok",
-      "collect": "running",
-      "astra_demo": "pending",
+      "collect": "failed",
+      "astra_demo": "partial",
       "showcase": "ok",
       "note": "重建 ok：12 prims，三相机渲染有效，炉门 Door_joint 0–1.745 rad；scene.usd 73 MB；首轮采集失败：大位移伺服时长不足 + 称量纸太薄抓不起 → 自适应时长/重试/薄件运动学吸附，调试中",
-      "evidence": "5090:/data/liyufeng/goai_workflows/wf01_solid_state_calcination/recon/RUN_MANIFEST.json"
+      "evidence": "5090:/data/liyufeng/goai_workflows/wf01_solid_state_calcination/recon/RUN_MANIFEST.json",
+      "collect_detail": "0/2 episodes"
     },
     {
       "id": "wf02_powder_recovery_xrd",
@@ -123,7 +124,7 @@
       "target": "Ba5Y12Zn[O(SiO4)]8",
       "spec": "ok",
       "validate": "ok",
-      "recon": "running",
+      "recon": "ok",
       "collect": "pending",
       "astra_demo": "pending",
       "showcase": "pending",
@@ -330,6 +331,10 @@
   ],
   "changelog": [
     {
+      "date": "2026-09-11 23:58",
+      "entry": "wf04 重建 ok；wf01 调试采集首次跑通前两个原语（抓称量纸 → 按去皮 → 抓瓶），第 3 步放置误差 58 mm；看板新增综述 PDF 区"
+    },
+    {
       "date": "2026-09-11 23:15",
       "entry": "GitHub Pages 上线（goai-dashboard）；wf03 重建 ok；wf01 采集脚本改自适应伺服/薄件吸附后重跑"
     },
@@ -375,5 +380,61 @@
     "刷新：python3 build_dashboard.py --remote 后重新发布 Artifact；每完成一个工作流阶段更新一次",
     "判决记录只写有证据路径的结论；状态取值 ok / running / queued / pending / partial / failed / blocked / owed",
     "GitHub Pages：https://asimfish.github.io/goai-dashboard/（main 分支页面，由 final_round/site/deploy_pages.sh 从 5090 推送；data 分支 status.json 由 5090 cron 每 10 分钟推送）"
+  ],
+  "pdfs": [
+    {
+      "title": "Ba5Y12Zn[O(SiO4)]8 合成调研（BYZSO 正式案例，学术润色版）",
+      "url": "pdf/byzso_cn_20260902.pdf",
+      "lang": "中文",
+      "pages": 23,
+      "date": "2026-09-02",
+      "status": "partial",
+      "note": "决赛前交付版；审计发现用英文模板编译、条件表 NA 铺表、裸键，HEAD 守卫会判 FAIL；需重编与复审"
+    },
+    {
+      "title": "BYZSO 英文终稿（36 页，2026-09-07 重跑）",
+      "url": null,
+      "lang": "英文",
+      "pages": 36,
+      "date": "2026-09-07",
+      "status": "owed",
+      "note": "工作区 workspace_repro_20260905_230324 只在 Mac 上（gitignore），拿到文件即挂到这里"
+    },
+    {
+      "title": "BaZn2Si2O7 补充案例",
+      "url": "pdf/bazn2si2o7_cn_20260904.pdf",
+      "lang": "中文",
+      "pages": 10,
+      "date": "2026-09-04",
+      "status": "partial",
+      "note": "含被审计指出的否定存在性论断（目标相“未见报道”与正式案例矛盾）"
+    },
+    {
+      "title": "Ba–Y–Zn–Si–O 相图补充案例",
+      "url": "pdf/bayznsio_phase_en_20260904.pdf",
+      "lang": "英文",
+      "pages": 19,
+      "date": "2026-09-04",
+      "status": "ok",
+      "note": "英文；流水线文件名泄漏 1 处"
+    },
+    {
+      "title": "LLZO 补充案例",
+      "url": "pdf/llzo_en_20260904.pdf",
+      "lang": "英文",
+      "pages": 28,
+      "date": "2026-09-04",
+      "status": "ok",
+      "note": "212 条参考文献占 15 页，引用堆叠"
+    },
+    {
+      "title": "LLZO 诊断轮",
+      "url": "pdf/llzo_diag_en_20260903.pdf",
+      "lang": "英文",
+      "pages": 16,
+      "date": "2026-09-03",
+      "status": "ok",
+      "note": "诊断用"
+    }
   ]
 }
