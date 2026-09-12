@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T03:08+08:00",
+  "updated": "2026-09-13T03:11+08:00",
   "goal": "决赛材料：综述流水线整改 → A-Lab 仪器与工作流 → 五个工作流 + 生成 MCP → Isaac Sim 重建 + Franka 采集（5090, GPT-6 Astra）→ 演示与展示页",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,18 +11,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T03:08+08:00",
+    "snapshot_at": "2026-09-13T03:11+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 11101,
-        "util": "81%",
+        "used_mib": 11784,
+        "util": "37%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 736,
-        "util": "0%",
+        "used_mib": 9230,
+        "util": "64%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -36,7 +36,7 @@
       {
         "mount": "/data",
         "used": "97%",
-        "free": "123G",
+        "free": "122G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -377,6 +377,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-13 04:00",
+      "entry": "5090 采集 agent：v3 场景已加载、进入运动测量；一次诊断因 Isaac Lab 停止回调以退出码 0 掩盖异常而提前退出，已修改异常记录并重排；物性审计发现所有目标物件沿用 0.15 kg 通用质量（未标定）。正式试验仍 0/60。4090：v3 最终摆放 home 姿态审计 6,925 几何体 / 20,405 对零穿模、五扇门扫掠无冲突、v3 placement_plan 已生成"
+    },
     {
       "date": "2026-09-13 03:10",
       "entry": "两 agent 汇报：5090 采集 agent 建好门槛/评分/去重/五视角落盘，纠正 UR5e TCP 偏移（差 297 mm）与可达图统计口径，正式试验尚未开始（0/60）；4090 交付布局 v3 prepare/审计/预览（T-390）与执行器诊断二期文件"
