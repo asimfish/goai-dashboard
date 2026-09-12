@@ -1,0 +1,153 @@
+{
+ "reasoning_summary": "Execute a safe partial plan: pick holder_0 from above and lift it horizontally, then hold. Full placement cannot be certified with the supplied grasp geometry: a TCP aligned with the disc centre would need y=-3.614, exceeding the permitted TCP insertion limit y=-3.584 by 0.030 m. Also, changing a rigid top grasp to tool_down=false would tilt the disc rather than keep it horizontal. Completing insertion requires a validated horizontal-tool grasp transform or regrasp that preserves disc orientation and supplies sufficient forward offset. No unverified offset or orientation change is assumed.",
+ "waypoints": [
+  {
+   "name": "pregrasp_holder",
+   "tcp_xyz_m": [
+    3.05,
+    -3.55,
+    1.027
+   ],
+   "tool_down": true,
+   "yaw_deg": 0,
+   "gripper": "open",
+   "attach": "",
+   "detach": false,
+   "duration_s": 2,
+   "clearance_note": "TCP is 0.120 m above the holder top. Approach from the current TCP without crossing an instrument AABB."
+  },
+  {
+   "name": "grasp_holder",
+   "tcp_xyz_m": [
+    3.05,
+    -3.55,
+    0.9037
+   ],
+   "tool_down": true,
+   "yaw_deg": 0,
+   "gripper": "close",
+   "attach": "holder_0",
+   "detach": false,
+   "duration_s": 2,
+   "clearance_note": "Descend vertically to 45% of the holder height. Contact with the target and proximity to its supporting worktop are necessary grasp exceptions; validate finger geometry before descent."
+  },
+  {
+   "name": "lift_holder_vertically",
+   "tcp_xyz_m": [
+    3.05,
+    -3.55,
+    1.027
+   ],
+   "tool_down": true,
+   "yaw_deg": 0,
+   "gripper": "hold",
+   "attach": "",
+   "detach": false,
+   "duration_s": 2,
+   "clearance_note": "Lift vertically while retaining the original grasp and horizontal disc orientation; no instrument lies beneath this lift corridor."
+  },
+  {
+   "name": "safe_hold_pending_insertion_grasp",
+   "tcp_xyz_m": [
+    3.05,
+    -3.55,
+    1.294
+   ],
+   "tool_down": true,
+   "yaw_deg": 0,
+   "gripper": "hold",
+   "attach": "",
+   "detach": false,
+   "duration_s": 3,
+   "clearance_note": "Continue vertically to a clear holding position. Stop here without rotating, entering the chamber, or releasing the unsupported holder."
+  }
+ ],
+ "safety_checks": [
+  "All listed TCP targets remain within the specified usable radius, whether checked horizontally or as distance from the supplied base position.",
+  "The TCP and translated holder maintain at least 0.030 m clearance from non-target object and instrument AABBs along this partial path.",
+  "Interpolate translations into increments no greater than 0.020 m; maintain constant orientation throughout.",
+  "Verify inverse kinematics, full-arm collision clearance, gripper opening for the 0.044 m disc, and finger-to-worktop clearance before execution; TCP checks alone cannot certify these.",
+  "The chamber placement is not completed: no detach is issued, and the TCP insertion-depth limit is never crossed.",
+  "Require a validated grasp transform preserving a horizontal disc with a horizontal tool axis before planning the remaining insertion, stage contact, release, and retreat."
+ ],
+ "_meta": {
+  "usage": {
+   "attribution": {
+    "items": {
+     "msg_0af4dcecedb6ab42016aa53aac1ff087d0975854ab990ed2d2": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "content": [
+       {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 1946,
+        "output_tokens": 0
+       },
+       {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 4,
+        "output_tokens": 0
+       },
+       {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 1202,
+        "output_tokens": 0
+       }
+      ],
+      "input_tokens": 3152,
+      "output_tokens": 0
+     },
+     "rs_0af4dcecedb6ab42016aa53aad66a487d0853e6a738f1e1ee2": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "input_tokens": 2,
+      "output_tokens": 255
+     },
+     "msg_0af4dcecedb6ab42016aa53ab8b93087d0963e00c1e4689195": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "content": [
+       {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 767
+       }
+      ],
+      "input_tokens": 0,
+      "output_tokens": 767
+     }
+    },
+    "request_fields": {
+     "text.format": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "input_tokens": 139,
+      "output_tokens": 0
+     },
+     "instructions": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "input_tokens": 21,
+      "output_tokens": 0
+     }
+    }
+   },
+   "input_tokens": 3314,
+   "input_tokens_details": {
+    "cache_write_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 1022,
+   "output_tokens_details": {
+    "reasoning_tokens": 255
+   },
+   "total_tokens": 4336
+  },
+  "elapsed_s": 35.09017276001396,
+  "effort": "medium"
+ }
+}

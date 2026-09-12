@@ -1,0 +1,281 @@
+{
+ "reasoning_summary": "Use a northern detour around the robot base, avoiding the XRD and carrying the upright vial above the racks rather than over tall instruments. Grasp height is 0.9473 m, calculated from the supplied 0.114 m vial height. Place the vial bottom on the worktop at z=0.896 m and retreat vertically by 0.12 m. The supplied initial TCP is already inside the 0.32 m minimum horizontal radius (0.307 m); the first move exits this region, and all commanded targets satisfy the usable-radius limits.",
+ "waypoints": [
+  {
+   "name": "exit_initial_radius",
+   "tcp_xyz_m": [
+    3.1,
+    -3.5,
+    1.13
+   ],
+   "tool_down": true,
+   "yaw_deg": 0,
+   "gripper": "open",
+   "attach": "",
+   "detach": false,
+   "duration_s": 3,
+   "clearance_note": "Move through the free corridor in front of the balance; initial radius exception is limited to departure from the supplied starting pose."
+  },
+  {
+   "name": "north_east_approach",
+   "tcp_xyz_m": [
+    3.1,
+    -2.9,
+    1.13
+   ],
+   "tool_down": true,
+   "yaw_deg": 0,
+   "gripper": "open",
+   "attach": "",
+   "detach": false,
+   "duration_s": 3,
+   "clearance_note": "Pass above the holder rack with 0.198 m TCP clearance."
+  },
+  {
+   "name": "north_west_approach",
+   "tcp_xyz_m": [
+    2.3,
+    -2.9,
+    1.13
+   ],
+   "tool_down": true,
+   "yaw_deg": 0,
+   "gripper": "open",
+   "attach": "",
+   "detach": false,
+   "duration_s": 4,
+   "clearance_note": "The straight segment stays at least 0.35 m horizontally from the base."
+  },
+  {
+   "name": "vial_pregrasp",
+   "tcp_xyz_m": [
+    2.1505,
+    -3.38,
+    1.13
+   ],
+   "tool_down": true,
+   "yaw_deg": 0,
+   "gripper": "open",
+   "attach": "",
+   "detach": false,
+   "duration_s": 3,
+   "clearance_note": "TCP is 0.12 m above the vial top; approach remains in front of the XRD."
+  },
+  {
+   "name": "grasp_vial",
+   "tcp_xyz_m": [
+    2.1505,
+    -3.38,
+    0.9473
+   ],
+   "tool_down": true,
+   "yaw_deg": 0,
+   "gripper": "close",
+   "attach": "vial_1",
+   "detach": false,
+   "duration_s": 2,
+   "clearance_note": "Descend vertically to 45% of vial height; intentional target contact only."
+  },
+  {
+   "name": "lift_vial",
+   "tcp_xyz_m": [
+    2.1505,
+    -3.38,
+    1.13
+   ],
+   "tool_down": true,
+   "yaw_deg": 0,
+   "gripper": "hold",
+   "attach": "",
+   "detach": false,
+   "duration_s": 2,
+   "clearance_note": "Lift vertically; vial bottom reaches z=1.0787 m."
+  },
+  {
+   "name": "carry_north_west",
+   "tcp_xyz_m": [
+    2.3,
+    -2.9,
+    1.13
+   ],
+   "tool_down": true,
+   "yaw_deg": 0,
+   "gripper": "hold",
+   "attach": "",
+   "detach": false,
+   "duration_s": 3,
+   "clearance_note": "Vial bottom clears the vial rack top by 0.1097 m."
+  },
+  {
+   "name": "carry_north_east",
+   "tcp_xyz_m": [
+    3.1,
+    -2.9,
+    1.13
+   ],
+   "tool_down": true,
+   "yaw_deg": 0,
+   "gripper": "hold",
+   "attach": "",
+   "detach": false,
+   "duration_s": 4,
+   "clearance_note": "Traverse north of the base, maintaining at least 0.35 m horizontal radius."
+  },
+  {
+   "name": "place_approach",
+   "tcp_xyz_m": [
+    2.95,
+    -3.722,
+    1.13
+   ],
+   "tool_down": true,
+   "yaw_deg": 0,
+   "gripper": "hold",
+   "attach": "",
+   "detach": false,
+   "duration_s": 4,
+   "clearance_note": "Straight transfer clears the holder rack by at least 0.1467 m beneath the vial and avoids the balance footprint."
+  },
+  {
+   "name": "lower_to_worktop",
+   "tcp_xyz_m": [
+    2.95,
+    -3.722,
+    0.9473
+   ],
+   "tool_down": true,
+   "yaw_deg": 0,
+   "gripper": "hold",
+   "attach": "",
+   "detach": false,
+   "duration_s": 2,
+   "clearance_note": "Vertical descent places the upright vial bottom at z=0.896 m."
+  },
+  {
+   "name": "release_vial",
+   "tcp_xyz_m": [
+    2.95,
+    -3.722,
+    0.9473
+   ],
+   "tool_down": true,
+   "yaw_deg": 0,
+   "gripper": "open",
+   "attach": "",
+   "detach": true,
+   "duration_s": 1,
+   "clearance_note": "Release only after bench support is established."
+  },
+  {
+   "name": "vertical_retreat",
+   "tcp_xyz_m": [
+    2.95,
+    -3.722,
+    1.0673
+   ],
+   "tool_down": true,
+   "yaw_deg": 0,
+   "gripper": "open",
+   "attach": "",
+   "detach": false,
+   "duration_s": 2,
+   "clearance_note": "Retreat exactly 0.12 m upward from the release TCP."
+  }
+ ],
+ "safety_checks": [
+  "All commanded TCP targets are within the 0.32–0.75 m usable-radius bounds; the initial supplied pose requires the disclosed departure exception.",
+  "Keep tool_down=true and yaw constant throughout; no pouring or intentional vial tilt.",
+  "Use a conservative 20 mm vial diameter for clearance checks despite the smaller supplied AABB width.",
+  "Maintain at least 0.03 m clearance from unrelated AABBs; intended vial grasp and bench support are contact exceptions.",
+  "At pickup, a conservative 20 mm vial envelope remains 0.052 m in front of the XRD AABB.",
+  "At placement, the conservative vial envelope remains 0.11 m in front of the balance AABB.",
+  "Interpolate translation in increments no greater than 0.020 m and enforce orientation deviation no greater than 0.25 rad.",
+  "Before execution, validate full-arm IK, gripper envelope, and swept-volume collisions; TCP and object checks alone do not certify robot-link clearance."
+ ],
+ "_meta": {
+  "usage": {
+   "attribution": {
+    "items": {
+     "msg_0eff7218bf20f4d7016aa538ffd1e087d0b1a77c2f72381a44": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "content": [
+       {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 1888,
+        "output_tokens": 0
+       },
+       {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 4,
+        "output_tokens": 0
+       },
+       {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 1202,
+        "output_tokens": 0
+       }
+      ],
+      "input_tokens": 3094,
+      "output_tokens": 0
+     },
+     "rs_0eff7218bf20f4d7016aa53901f8f487d09c74d42d41704274": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "input_tokens": 2,
+      "output_tokens": 516
+     },
+     "rs_0eff7218bf20f4d7016aa53917dcbc87d0b15463f32b7c2064": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "input_tokens": 0,
+      "output_tokens": 441
+     },
+     "msg_0eff7218bf20f4d7016aa53927141c87d0a6aa46dc260f6da2": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "content": [
+       {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 0,
+        "output_tokens": 1579
+       }
+      ],
+      "input_tokens": 0,
+      "output_tokens": 1579
+     }
+    },
+    "request_fields": {
+     "text.format": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "input_tokens": 139,
+      "output_tokens": 0
+     },
+     "instructions": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "input_tokens": 21,
+      "output_tokens": 0
+     }
+    }
+   },
+   "input_tokens": 3256,
+   "input_tokens_details": {
+    "cache_write_tokens": 0,
+    "cached_tokens": 0
+   },
+   "output_tokens": 2536,
+   "output_tokens_details": {
+    "reasoning_tokens": 957
+   },
+   "total_tokens": 5792
+  },
+  "elapsed_s": 80.89630227198359,
+  "effort": "medium"
+ }
+}

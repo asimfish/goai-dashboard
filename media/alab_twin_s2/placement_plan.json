@@ -448,7 +448,7 @@
       "asset_key": null,
       "usd": null,
       "pose": [
-        -1.0,
+        -0.85,
         -3.35,
         0.896
       ],
@@ -463,7 +463,7 @@
       "source_usd": null,
       "uniform_scale": 1.0,
       "world_pose": [
-        -1.0,
+        -0.85,
         -3.35,
         0.8980000001899898,
         1.0,
@@ -496,29 +496,29 @@
       "asset_key": "Crucible",
       "usd": "solid_assets_all/Crucible/Crucible001.usd",
       "pose": [
-        -1.1125,
+        -0.9625,
         -3.35,
-        0.896
+        0.904
       ],
       "yaw_deg": 0.0,
       "semantic": "crucible",
       "articulated": false,
       "labware": "crucible",
-      "surface_z": 0.896,
+      "surface_z": 0.904,
       "name": "crucible_1",
       "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/crucible_1.usda",
       "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Crucible/Crucible001.usd",
       "uniform_scale": 1.0,
       "world_pose": [
-        -1.1125,
+        -0.9625,
         -3.35,
-        0.9354409034848213,
+        0.9434409034848213,
         1.0,
         0.0,
         0.0,
         0.0
       ],
-      "support_z": 0.896,
+      "support_z": 0.904,
       "local_asset_bounds": {
         "min": [
           -0.03583374246954918,
@@ -541,29 +541,29 @@
       "asset_key": "Crucible",
       "usd": "solid_assets_all/Crucible/Crucible001.usd",
       "pose": [
-        -1.0375,
+        -0.8875,
         -3.35,
-        0.896
+        0.904
       ],
       "yaw_deg": 0.0,
       "semantic": "crucible",
       "articulated": false,
       "labware": "crucible",
-      "surface_z": 0.896,
+      "surface_z": 0.904,
       "name": "crucible_2",
       "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/crucible_2.usda",
       "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Crucible/Crucible001.usd",
       "uniform_scale": 1.0,
       "world_pose": [
-        -1.0375,
+        -0.8875,
         -3.35,
-        0.9354409034848213,
+        0.9434409034848213,
         1.0,
         0.0,
         0.0,
         0.0
       ],
-      "support_z": 0.896,
+      "support_z": 0.904,
       "local_asset_bounds": {
         "min": [
           -0.03583374246954918,
@@ -586,29 +586,29 @@
       "asset_key": "Crucible",
       "usd": "solid_assets_all/Crucible/Crucible001.usd",
       "pose": [
-        -0.9625,
+        -0.8125,
         -3.35,
-        0.896
+        0.904
       ],
       "yaw_deg": 0.0,
       "semantic": "crucible",
       "articulated": false,
       "labware": "crucible",
-      "surface_z": 0.896,
+      "surface_z": 0.904,
       "name": "crucible_3",
       "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/crucible_3.usda",
       "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Crucible/Crucible001.usd",
       "uniform_scale": 1.0,
       "world_pose": [
-        -0.9625,
+        -0.8125,
         -3.35,
-        0.9354409034848213,
+        0.9434409034848213,
         1.0,
         0.0,
         0.0,
         0.0
       ],
-      "support_z": 0.896,
+      "support_z": 0.904,
       "local_asset_bounds": {
         "min": [
           -0.03583374246954918,
@@ -631,29 +631,29 @@
       "asset_key": "Crucible",
       "usd": "solid_assets_all/Crucible/Crucible001.usd",
       "pose": [
-        -0.8875,
+        -0.7375,
         -3.35,
-        0.896
+        0.904
       ],
       "yaw_deg": 0.0,
       "semantic": "crucible",
       "articulated": false,
       "labware": "crucible",
-      "surface_z": 0.896,
+      "surface_z": 0.904,
       "name": "crucible_4",
       "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/crucible_4.usda",
       "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Crucible/Crucible001.usd",
       "uniform_scale": 1.0,
       "world_pose": [
-        -0.8875,
+        -0.7375,
         -3.35,
-        0.9354409034848213,
+        0.9434409034848213,
         1.0,
         0.0,
         0.0,
         0.0
       ],
-      "support_z": 0.896,
+      "support_z": 0.904,
       "local_asset_bounds": {
         "min": [
           -0.03583374246954918,

@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-12T19:09+08:00",
+  "updated": "2026-09-12T19:57+08:00",
   "goal": "决赛材料：综述流水线整改 → A-Lab 仪器与工作流 → 五个工作流 + 生成 MCP → Isaac Sim 重建 + Franka 采集（5090, GPT-6 Astra）→ 演示与展示页",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,18 +11,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-12T19:09+08:00",
+    "snapshot_at": "2026-09-12T19:57+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 26459,
-        "util": "94%",
+        "used_mib": 26409,
+        "util": "91%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 20186,
-        "util": "87%",
+        "used_mib": 53,
+        "util": "0%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -36,7 +36,7 @@
       {
         "mount": "/data",
         "used": "96%",
-        "free": "156G",
+        "free": "153G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -272,6 +272,22 @@
   ],
   "queue": [
     {
+      "id": "Q-layout",
+      "topic": "Scene02 摆放精修 + 资产升级 + 碰撞体级零穿模审计（4090 GPT-6 Astra 已受理为 T-360，四阶段 3–6 h；第一阶段已实测出：小物件高出台面 3 mm、干燥箱实宽 0.569 m、控制区越墙、旧审计跳过托盘对）",
+      "owner": "codex@4090（GPT-6 Astra）+ claude 审核",
+      "status": "running",
+      "eta": "2026-09-13",
+      "evidence": "对话 44rck5n3… T-360; 5090:/data/liyufeng/goai_assets/handoff/scene02_layout/"
+    },
+    {
+      "id": "Q-collect",
+      "topic": "采集方式定稿（参考 RoboCurve/GPT-6 Astra 闭环、General Robotics 四 harness、4090 SafeLab 守护+独立审核）：闭环 astra-loop + 腕相机 + 5 级自动评分 + 每任务 20 次试验 + 预检/独立复核/去重",
+      "owner": "claude（5090）+ codex@4090 方案",
+      "status": "running",
+      "eta": "2026-09-13",
+      "evidence": "final_round/06_twin_collection_plan.md"
+    },
+    {
       "id": "Q-scene",
       "topic": "更贴近论文的科研实验室场景：4090 agent 两轮交付并逐包核查，唯一独立房间候选 = Collected_Scene04/Scene02.usd（蓝白柜体、黑台面、自带导轨 UR5e）；已实测尺寸、写好 Scene02 三站布局（twin_layout_s2），链 7 在第六轮后自动切换到 Scene02 渲染静帧 + 三站演示；同时在网上再找免费实验室场景/仪器；网上检索结论：Isaac 资产桶无实验室环境，MatteriX 实验室自动化 USD 已克隆，Sketchfab 炉/干燥箱需账号，XRD/球磨机无免费模型",
       "owner": "claude + codex@4090",
@@ -281,7 +297,7 @@
     },
     {
       "id": "Q-astra",
-      "topic": "GPT-6 Astra（medium）航点规划 + 不穿模：第 5 轮暴露提示规则自相矛盾（B 拒绝、C 抬高后 IK 卡死）→ 规划器 v8：中空腔体 AABB、任务优先规则、航点推出盒子 + 可达钳制、腔内不计穿模；链 8 在 Scene02 上跑 A/B/C",
+      "topic": "GPT-6 Astra（medium）航点规划 + 不穿模：Scene02 上 A 站第 1 段完整成功（抓取/放回误差 2 mm，11 航点自规划绕行）；B 站因我给的腔体宽度与 UR5e 半径参数错误被模型正确拒绝、C 站 IK 卡死 → 执行器 v10（预转肩部、携带不回零、抓取失败不吸附、真实腔体、分机器人半径）在链 9/10 验证",
       "owner": "claude",
       "status": "running",
       "eta": "2026-09-13",
@@ -361,6 +377,22 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-12 20:05",
+      "entry": "研读三份采集参考（RoboCurve GPT-6 Astra 闭环、General Robotics auto-engineering、4090 SafeLab 采集）→ 06_twin_collection_plan.md；4090 agent 受理 T-360 并已实测出布局尺寸问题；补充指导把三份方法融进其采集方案"
+    },
+    {
+      "date": "2026-09-12 19:52",
+      "entry": "读取 4090 采集 agent（iskhvftx…）的工作方式（agentctl 任务生命周期、systemd-run 守护 GPU、独立审核）；据此向 4090 GPT-6 Astra 下发 Scene02 摆放精修/零穿模任务 T-359；执行器 v11：肩部预转改为避开仪器盒的弧线"
+    },
+    {
+      "date": "2026-09-12 19:45",
+      "entry": "Scene02 Astra 首轮：A 站段 1 成功（2 mm）、段 2 入箱 IK 卡住翻转；B 被模型正确拒绝（腔体/半径参数错）；C IK 卡死 → 执行器 v10 上传，链 9（脚本）与链 10（Astra）排队"
+    },
+    {
+      "date": "2026-09-12 19:12",
+      "entry": "链 7（Scene02 脚本演示）因缩放修正时误把 `c = obj_p(name)` 吞进注释而在首次抓取时 NameError 中止 → 修复；托盘 2 外移到 UR5e 可达 0.55 m；队列改为链 8（重新 prepare + Astra A/B/C）→ 链 9（脚本演示 + 静帧 + 串联视频）"
+    },
     {
       "date": "2026-09-12 19:08",
       "entry": "Scene02 数字孪生静帧上线（scenes.html 主场景切换）；发现房间自带 FR3 仍在第二岛台、坩埚在托盘环上倾倒 → 下一轮修正"
