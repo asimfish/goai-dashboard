@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T04:11+08:00",
+  "updated": "2026-09-13T04:18+08:00",
   "goal": "决赛材料：综述流水线整改 → A-Lab 仪器与工作流 → 五个工作流 + 生成 MCP → Isaac Sim 重建 + Franka 采集（5090, GPT-6 Astra）→ 演示与展示页",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,18 +11,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T04:11+08:00",
+    "snapshot_at": "2026-09-13T04:18+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 11103,
-        "util": "1%",
+        "used_mib": 24337,
+        "util": "2%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 3064,
-        "util": "88%",
+        "used_mib": 3090,
+        "util": "31%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -30,7 +30,7 @@
       {
         "mount": "/",
         "used": "95%",
-        "free": "188G",
+        "free": "189G",
         "note": "不写"
       },
       {
@@ -386,6 +386,10 @@
   ],
   "changelog": [
     {
+      "date": "2026-09-13 04:50",
+      "entry": "用户要求参考文献与整体按 NeurIPS 模版、去掉蓝色：取得 neurips_2023.sty，把版心/字号/标题/段落/标题栏/摘要/图表注/脚注/参考文献/链接逐项移植为 goai_zh_typo.sty v5（中文保留思源宋 Light + 思源黑 Bold、全角标点），修正 bib 的 None Available 作者；两份报告重建部署为 pdf/*_cn_typo5_20260913.pdf（v3/v4 保留）"
+    },
+    {
       "date": "2026-09-13 04:20",
       "entry": "图件车道（会话 goai-48）完成：五张综述框架图按 super_teaser S0–S5 重做（20 张探索图 + 10 张正式候选，全部由 5090 Codex image_gen 生成），选定图用 super_img2ppt 重建为可编辑 PPTX/SVG（图 1/2/3 各 91/123/91 个原生对象，路线图 40、分类框架 54），LibreOffice 实渲染逐张核对；图 3 重建时按论文修正两条连线；矢量 PDF 同名写回两篇报告的 figures/pdf（下次编译自动拾取）。已知：LibreOffice 把 Noto CJK 子集命名为 -VKana 导致 img2ppt 字体核对假阳性；化学式下标为纯文本。孪生：DEMO16（布局 v2 脚本执行）A/C 站仍失败（穿模 151 tick / 放置误差 162 mm，B 站把手抓取 371 mm 未成），未作为成功演示发布；v17 闭环采集运行中"
     },
@@ -570,13 +574,31 @@
   ],
   "pdfs": [
     {
+      "title": "BaZn2Si2O7 补充案例 · 排版 v5（NeurIPS 模版中文版）",
+      "url": "pdf/bazn2si2o7_cn_typo5_20260913.pdf",
+      "lang": "中文",
+      "pages": 8,
+      "date": "2026-09-13",
+      "status": "ok",
+      "note": "同 v5 样式；8 页、0 Overfull"
+    },
+    {
+      "title": "BYZSO 中文综述 · 排版 v5（NeurIPS 模版中文版）",
+      "url": "pdf/byzso_cn_typo5_20260913.pdf",
+      "lang": "中文",
+      "pages": 25,
+      "date": "2026-09-13",
+      "status": "ok",
+      "note": "按 neurips_2023.sty 移植：Letter、版心 5.5×9 in、10 pt Times/思源宋 Light（行距 1.5）、12 pt 粗体节标题、无缩进段间 5.5 pt、标题栏横线、摘要 quote 缩进、图注下/表注上、参考文献 \\small 数字编号、超链接不着色（去掉蓝色）；修正 bib 作者 None Available；0 错误 0 Overfull"
+    },
+    {
       "title": "BaZn2Si2O7 补充案例 · 排版 v4",
       "url": "pdf/bazn2si2o7_cn_typo4_20260913.pdf",
       "lang": "中文",
       "pages": 6,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "v4.1：三张表统一为版心宽、无底色。同 v4 样式；6 页、0 Overfull"
+      "note": "已被 v5（NeurIPS 版式）取代。v4.1：三张表统一为版心宽、无底色。同 v4 样式；6 页、0 Overfull"
     },
     {
       "title": "BYZSO 中文综述 · 排版 v4（对齐 super_translate 观感：细宋正文 + 黑体标题、五号 10.5 pt、行距 1.5）",
@@ -585,7 +607,7 @@
       "pages": 20,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "v4.1：全部表格严格等于版心宽、三线表无底色（顶会惯例）、表 1 化学式自动换行；7.3 节标题改为“机械化学预活化与提拉法工艺参照”。读 super_translate 的排版引擎（pdf_layout.py）后对齐其观感：正文 Noto Serif CJK SC Light（Linux 上最接近 Songti SC 的灰度）、标题/粗体 Noto Sans CJK SC Bold（对应 Hiragino Sans GB W6）、五号 10.5 pt、行距 1.5×字号、两端对齐有界拉伸、全角标点、中西文四分之一空；表格内用 Regular 字重保证 7.5–9 pt 清晰。内容与 v3 相同（术语规范化 + 润色，QA PASS）；0 错误 0 Overfull"
+      "note": "已被 v5（NeurIPS 版式）取代。v4.1：全部表格严格等于版心宽、三线表无底色（顶会惯例）、表 1 化学式自动换行；7.3 节标题改为“机械化学预活化与提拉法工艺参照”。读 super_translate 的排版引擎（pdf_layout.py）后对齐其观感：正文 Noto Serif CJK SC Light（Linux 上最接近 Songti SC 的灰度）、标题/粗体 Noto Sans CJK SC Bold（对应 Hiragino Sans GB W6）、五号 10.5 pt、行距 1.5×字号、两端对齐有界拉伸、全角标点、中西文四分之一空；表格内用 Regular 字重保证 7.5–9 pt 清晰。内容与 v3 相同（术语规范化 + 润色，QA PASS）；0 错误 0 Overfull"
     },
     {
       "title": "BaZn2Si2O7 补充案例 · 排版/用语 v3",
