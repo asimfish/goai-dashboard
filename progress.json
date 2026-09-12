@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T04:07+08:00",
+  "updated": "2026-09-13T04:08+08:00",
   "goal": "决赛材料：综述流水线整改 → A-Lab 仪器与工作流 → 五个工作流 + 生成 MCP → Isaac Sim 重建 + Franka 采集（5090, GPT-6 Astra）→ 演示与展示页",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,18 +11,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T04:07+08:00",
+    "snapshot_at": "2026-09-13T04:08+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 11104,
-        "util": "1%",
+        "used_mib": 11103,
+        "util": "61%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
         "used_mib": 3060,
-        "util": "68%",
+        "util": "53%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -36,7 +36,7 @@
       {
         "mount": "/data",
         "used": "97%",
-        "free": "115G",
+        "free": "114G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
