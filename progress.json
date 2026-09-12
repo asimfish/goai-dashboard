@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-12T15:38+08:00",
+  "updated": "2026-09-12T17:01+08:00",
   "goal": "决赛材料：综述流水线整改 → A-Lab 仪器与工作流 → 五个工作流 + 生成 MCP → Isaac Sim 重建 + Franka 采集（5090, GPT-6 Astra）→ 演示与展示页",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,18 +11,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-12T15:38+08:00",
+    "snapshot_at": "2026-09-12T17:01+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 26658,
-        "util": "97%",
+        "used_mib": 20725,
+        "util": "88%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 29914,
-        "util": "94%",
+        "used_mib": 11479,
+        "util": "67%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -36,7 +36,7 @@
       {
         "mount": "/data",
         "used": "95%",
-        "free": "188G",
+        "free": "182G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -346,6 +346,10 @@
   ],
   "changelog": [
     {
+      "date": "2026-09-12 17:00",
+      "entry": "A-Lab 孪生三站操作演示视频（第一轮）上线：A 站 FR3 定量/混料/干燥 118 s，B 站导轨 UR5e 开炉入炉 24 s，C 站 FR3 称重/倒粉/XRD 55 s；第一轮 ΔP 超标（释放后飞出/滑落），第二轮修正版录制中"
+    },
+    {
       "date": "2026-09-12 15:38",
       "entry": "孪生场景 v5：炉子避开壁挂音箱、物件清零互穿、UR5e 抬到滑块顶面并改显式增益、关节资产缩放改为烘焙；PhysX 改 CPU（共享 GPU 满载时 GPU 求解核失败）；探针通过后跑 A/B/C 三站演示"
     },
@@ -489,8 +493,8 @@
   "twin": {
     "scene": "ok",
     "assets": "partial",
-    "ops": "running",
-    "note": "lab_clean 真实房间贴图已恢复；三站绕服务柱布局；程序化 Aeris XRD/振摇/投球器/旋盖机；B/C 站操作演示录制中",
+    "ops": "partial",
+    "note": "三站演示视频第一轮上线 ['A', 'B', 'C']（放置误差大、释放飞出 → 第二轮修正录制中）；安全达标 []",
     "evidence": "5090:/data/liyufeng/goai_workflows/alab_twin/recon/RUN_MANIFEST.json"
   }
 }

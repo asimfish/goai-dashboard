@@ -1,0 +1,92 @@
+{
+ "max_theta_rad": 2.66799259185791,
+ "placements_mm": [
+  358.5660755634308,
+  408.50743651390076,
+  167587.24975585938,
+  65.41901081800461,
+  9.980223141610622,
+  187.91717290878296
+ ],
+ "events": [
+  {
+   "t": 0.0,
+   "msg": "PowderDosing: precursor 1 \u2192 weighing paper on the dosing balance"
+  },
+  {
+   "t": 9.8,
+   "msg": "dose precursor 1 (tilt 0.80 rad \u2264 0.85 ceiling)"
+  },
+  {
+   "t": 17.55,
+   "msg": "precursor 1 back (dp 359 mm)"
+  },
+  {
+   "t": 17.55,
+   "msg": "PowderDosing: precursor 2 \u2192 weighing paper on the dosing balance"
+  },
+  {
+   "t": 27.35,
+   "msg": "dose precursor 2 (tilt 0.80 rad \u2264 0.85 ceiling)"
+  },
+  {
+   "t": 35.1,
+   "msg": "precursor 2 back (dp 409 mm)"
+  },
+  {
+   "t": 35.1,
+   "msg": "weigh: tare/read the balance"
+  },
+  {
+   "t": 39.03,
+   "msg": "powders \u2192 mixing vial on the carousel (weighing paper as a funnel)"
+  },
+  {
+   "t": 48.83,
+   "msg": "tip powder into the carousel vial (tilt 0.90 rad \u2264 0.85 ceiling)"
+  },
+  {
+   "t": 56.33,
+   "msg": "paper back (dp 167587 mm)"
+  },
+  {
+   "t": 56.33,
+   "msg": "solvent addition: ethanol into the vial"
+  },
+  {
+   "t": 66.13,
+   "msg": "ethanol (tilt 0.80 rad \u2264 0.85 ceiling)"
+  },
+  {
+   "t": 73.8,
+   "msg": "ethanol back (dp 65 mm)"
+  },
+  {
+   "t": 73.8,
+   "msg": "press mixer start (Smart DAC 250, 9 min; time-compressed)"
+  },
+  {
+   "t": 78.4,
+   "msg": "slurry transfer: pipettor vial \u2192 alumina crucible"
+  },
+  {
+   "t": 98.7,
+   "msg": "pipette back (dp 10 mm)"
+  },
+  {
+   "t": 98.7,
+   "msg": "drying 80 \u00b0C: open the drying oven, crucible in, close"
+  },
+  {
+   "t": 112.5,
+   "msg": "crucible into the drying oven (dp 188 mm)"
+  }
+ ],
+ "dp_max_mm": 167587.24975585938,
+ "frames": 1765,
+ "duration_s": 117.7,
+ "safety": {
+  "theta_dev_ok": false,
+  "dp_ok": false
+ }
+}
