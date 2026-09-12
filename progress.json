@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T00:59+08:00",
+  "updated": "2026-09-13T01:11+08:00",
   "goal": "决赛材料：综述流水线整改 → A-Lab 仪器与工作流 → 五个工作流 + 生成 MCP → Isaac Sim 重建 + Franka 采集（5090, GPT-6 Astra）→ 演示与展示页",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,18 +11,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T00:59+08:00",
+    "snapshot_at": "2026-09-13T01:11+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 3126,
-        "util": "1%",
+        "used_mib": 8515,
+        "util": "0%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 7636,
-        "util": "50%",
+        "used_mib": 7640,
+        "util": "93%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -36,7 +36,7 @@
       {
         "mount": "/data",
         "used": "97%",
-        "free": "136G",
+        "free": "132G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -281,8 +281,8 @@
     },
     {
       "id": "Q-collect",
-      "topic": "采集（5090）：闭环 Astra 第二轮 A 3/5 阶段 3、B 0/5、C 0/5；求解器扫描：A 站低位任何参数都不行（运动学/碰撞极限）、C 站两阶段下降 8/8；根因 = 执行器（FR3 坐台面、夹爪 yaw 与方位角不匹配撞腕限位）→ 已把执行器可靠性 + 4 视角相机 + 20 次/站闭环采集交给 4090 GPT-6 Astra（T-364，在 5090 上跑）；我做论文 1:1 布局 v3",
-      "owner": "codex@4090（GPT-6 Astra）在 5090 上执行 + claude 布局/审核",
+      "topic": "采集：用户指定改由 5090 本机的 GPT-6 Astra codex agent 执行（对话 uee6luy9…，guidance-5090-20260913-01 已下发并触发执行）：先修执行器（TCP 判据、两阶段下降、切向 yaw、真实夹持）→ 4 路 + 腕相机观测 → 三站各 20 次闭环试验（自动门 + 独立复核 + 去重）→ 交付 handoff/collection_5090/{episodes, index, benchmark.md, patches}；4090 agent 收敛为执行器诊断报告 + 布局 v3 集成/审计",
+      "owner": "codex@5090（GPT-6 Astra）+ claude 指导/审核",
       "status": "running",
       "eta": "2026-09-13",
       "evidence": "final_round/06_twin_collection_plan.md"
@@ -377,6 +377,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-13 06:10",
+      "entry": "用户指定采集由 5090 本机 Astra agent 执行：完整交接（环境/代码/布局 v2·v3/证据/根因/交付物/门槛）已下发并触发；4090 agent 改为交出执行器诊断报告 + 布局 v3 集成"
+    },
     {
       "date": "2026-09-13 01:15",
       "entry": "按用户反馈：布局 v3（论文一比一布置、R3=UR5e、FR3 底座、4 路相机）交付 4090 Astra；执行器与闭环采集由 4090 Astra 在 5090 上接管（T-364）"
