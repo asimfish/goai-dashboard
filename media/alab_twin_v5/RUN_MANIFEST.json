@@ -215,5 +215,20 @@
   "/World/Robots/ur5e_B",
   "/World/Robots/fr3_C"
  ],
- "wall_s": 140.488440990448
+ "wall_s": 141.83363318443298,
+ "demos": {
+  "PROBE": {
+   "max_theta_rad": 0.0,
+   "placements_mm": [],
+   "events": [],
+   "dp_max_mm": null,
+   "frames": 0,
+   "duration_s": 5.5,
+   "safety": {
+    "theta_dev_ok": true,
+    "dp_ok": true
+   }
+  }
+ },
+ "demo_wall_s": 152.30402159690857
 }
