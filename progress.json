@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T03:53+08:00",
+  "updated": "2026-09-13T04:07+08:00",
   "goal": "决赛材料：综述流水线整改 → A-Lab 仪器与工作流 → 五个工作流 + 生成 MCP → Isaac Sim 重建 + Franka 采集（5090, GPT-6 Astra）→ 演示与展示页",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,18 +11,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T03:53+08:00",
+    "snapshot_at": "2026-09-13T04:07+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 11133,
-        "util": "13%",
+        "used_mib": 11104,
+        "util": "1%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 3050,
-        "util": "70%",
+        "used_mib": 3060,
+        "util": "68%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -36,7 +36,7 @@
       {
         "mount": "/data",
         "used": "97%",
-        "free": "122G",
+        "free": "115G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -386,6 +386,10 @@
   ],
   "changelog": [
     {
+      "date": "2026-09-13 04:20",
+      "entry": "用户指出表格宽度不一致、要符合顶会要求：新增 tools/zh_table_width.py 把所有竖排表列宽换算为版心宽比例（Σ=1），横排长表等于横排版心宽；去掉表头灰底；表 1 去 shortstack；并核对编辑改写的标题“机械化学活化与提拉法生长”——术语真实（机械化学活化 / 提拉法=Czochralski）但“生长”夸大，改为“…工艺参照”。两份 PDF 重建部署（typo4 同址更新）"
+    },
+    {
       "date": "2026-09-13 03:55",
       "entry": "图件车道（会话 goai-48）：按 super_teaser S0–S5 重做综述框架图，生图走 5090 Codex image_gen（禁止本地渲染替代）；图 1 完成 4 张探索 + 2 张正式候选，选定 F01 并用 super_img2ppt 重建为可编辑 PPTX/SVG（LibreOffice 实渲染核对），矢量 PDF 同名替换 figures/pdf（drawio 旧版存 pdf_drawio_v1）；图 2 探索完成、图 3 与两张 BaZn2Si2O7 图排队。排版 v3 由并行会话 goai-76 负责，本会话不再改 sections_v3/sty（分工见 final_round/AGENT_LANES.md）"
     },
@@ -568,7 +572,7 @@
       "pages": 6,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "同 v4 样式；6 页、0 Overfull"
+      "note": "v4.1：三张表统一为版心宽、无底色。同 v4 样式；6 页、0 Overfull"
     },
     {
       "title": "BYZSO 中文综述 · 排版 v4（对齐 super_translate 观感：细宋正文 + 黑体标题、五号 10.5 pt、行距 1.5）",
@@ -577,7 +581,7 @@
       "pages": 20,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "读 super_translate 的排版引擎（pdf_layout.py）后对齐其观感：正文 Noto Serif CJK SC Light（Linux 上最接近 Songti SC 的灰度）、标题/粗体 Noto Sans CJK SC Bold（对应 Hiragino Sans GB W6）、五号 10.5 pt、行距 1.5×字号、两端对齐有界拉伸、全角标点、中西文四分之一空；表格内用 Regular 字重保证 7.5–9 pt 清晰。内容与 v3 相同（术语规范化 + 润色，QA PASS）；0 错误 0 Overfull"
+      "note": "v4.1：全部表格严格等于版心宽、三线表无底色（顶会惯例）、表 1 化学式自动换行；7.3 节标题改为“机械化学预活化与提拉法工艺参照”。读 super_translate 的排版引擎（pdf_layout.py）后对齐其观感：正文 Noto Serif CJK SC Light（Linux 上最接近 Songti SC 的灰度）、标题/粗体 Noto Sans CJK SC Bold（对应 Hiragino Sans GB W6）、五号 10.5 pt、行距 1.5×字号、两端对齐有界拉伸、全角标点、中西文四分之一空；表格内用 Regular 字重保证 7.5–9 pt 清晰。内容与 v3 相同（术语规范化 + 润色，QA PASS）；0 错误 0 Overfull"
     },
     {
       "title": "BaZn2Si2O7 补充案例 · 排版/用语 v3",
