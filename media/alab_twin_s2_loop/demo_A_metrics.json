@@ -1,0 +1,287 @@
+{
+ "max_theta_rad": 2.619582176208496,
+ "placements_mm": [
+  144.2275047302246,
+  54.33419719338417,
+  309.39486622810364,
+  100.70636868476868,
+  416.39286279678345
+ ],
+ "events": [
+  {
+   "t": 0.0,
+   "msg": "PowderDosing: precursor 1 \u2192 weighing paper on the dosing balance"
+  },
+  {
+   "t": 4.88,
+   "msg": "pick precursor_1: pre-grasp err 0 mm, grasp err 0 mm, grip width 55 mm"
+  },
+  {
+   "t": 7.5,
+   "msg": "\u26a0 AABB overlap while carrying: precursor_1\u2282drying_oven"
+  },
+  {
+   "t": 10.38,
+   "msg": "IK stuck (92 mm) while carrying \u2192 lift and retry"
+  },
+  {
+   "t": 17.08,
+   "msg": "IK stuck (373 mm) while carrying \u2192 lift and retry"
+  },
+  {
+   "t": 21.08,
+   "msg": "dose precursor 1 (tilt 0.80 rad \u2264 0.85 ceiling)"
+  },
+  {
+   "t": 25.0,
+   "msg": "\u26a0 AABB overlap while carrying: precursor_1\u2282carousel"
+  },
+  {
+   "t": 32.08,
+   "msg": "IK stuck (268 mm) \u2192 re-home and retry"
+  },
+  {
+   "t": 39.48,
+   "msg": "precursor 1 back (dp 144 mm; approach err 0/64 mm)"
+  },
+  {
+   "t": 39.48,
+   "msg": "PowderDosing: precursor 2 \u2192 weighing paper on the dosing balance"
+  },
+  {
+   "t": 42.98,
+   "msg": "pick precursor_2: pre-grasp err 0 mm, grasp err 4 mm, grip width 55 mm"
+  },
+  {
+   "t": 46.3,
+   "msg": "\u26a0 AABB overlap while carrying: precursor_2\u2282drying_oven"
+  },
+  {
+   "t": 48.9,
+   "msg": "\u26a0 AABB overlap while carrying: precursor_2\u2282dosing_balance"
+  },
+  {
+   "t": 51.18,
+   "msg": "dose precursor 2 (tilt 0.80 rad \u2264 0.85 ceiling)"
+  },
+  {
+   "t": 56.4,
+   "msg": "\u26a0 AABB overlap while carrying: precursor_2\u2282carousel"
+  },
+  {
+   "t": 63.77,
+   "msg": "precursor 2 back (dp 54 mm; approach err 6/69 mm)"
+  },
+  {
+   "t": 63.77,
+   "msg": "weigh: tare/read the balance"
+  },
+  {
+   "t": 66.97,
+   "msg": "IK stuck (439 mm) \u2192 re-home and retry"
+  },
+  {
+   "t": 73.97,
+   "msg": "IK stuck (253 mm) \u2192 re-home and retry"
+  },
+  {
+   "t": 80.97,
+   "msg": "IK stuck (237 mm) \u2192 re-home and retry"
+  },
+  {
+   "t": 86.3,
+   "msg": "powders \u2192 mixing vial on the carousel (weighing paper as a funnel)"
+  },
+  {
+   "t": 92.2,
+   "msg": "pick paper: pre-grasp err 0 mm, grasp err 7 mm, grip width 90 mm"
+  },
+  {
+   "t": 94.0,
+   "msg": "IK stuck (298 mm) \u2192 re-home and retry"
+  },
+  {
+   "t": 101.4,
+   "msg": "IK stuck (361 mm) while carrying \u2192 lift and retry"
+  },
+  {
+   "t": 106.7,
+   "msg": "\u26a0 AABB overlap while carrying: paper\u2282drying_oven"
+  },
+  {
+   "t": 109.4,
+   "msg": "tip powder into the carousel vial (tilt 0.80 rad \u2264 0.85 ceiling)"
+  },
+  {
+   "t": 116.88,
+   "msg": "IK stuck (205 mm) while carrying \u2192 lift and retry"
+  },
+  {
+   "t": 123.78,
+   "msg": "paper back (dp 309 mm; approach err 10/205 mm)"
+  },
+  {
+   "t": 123.78,
+   "msg": "solvent addition: ethanol into the vial"
+  },
+  {
+   "t": 128.75,
+   "msg": "pick ethanol: pre-grasp err 17 mm, grasp err 4 mm, grip width 70 mm"
+  },
+  {
+   "t": 132.3,
+   "msg": "\u26a0 AABB overlap while carrying: ethanol\u2282drying_oven"
+  },
+  {
+   "t": 136.95,
+   "msg": "IK stuck (280 mm) while carrying \u2192 lift and retry"
+  },
+  {
+   "t": 140.95,
+   "msg": "ethanol (tilt 0.80 rad \u2264 0.85 ceiling)"
+  },
+  {
+   "t": 144.32,
+   "msg": "IK stuck (121 mm) while carrying \u2192 lift and retry"
+  },
+  {
+   "t": 156.75,
+   "msg": "ethanol back (dp 101 mm; approach err 10/49 mm)"
+  },
+  {
+   "t": 156.75,
+   "msg": "press mixer start (Smart DAC 250, 9 min; time-compressed)"
+  },
+  {
+   "t": 160.45,
+   "msg": "IK stuck (267 mm) \u2192 re-home and retry"
+  },
+  {
+   "t": 167.55,
+   "msg": "slurry transfer: pipettor vial \u2192 alumina crucible"
+  },
+  {
+   "t": 174.42,
+   "msg": "IK stuck (251 mm) \u2192 re-home and retry"
+  },
+  {
+   "t": 179.42,
+   "msg": "pick pipette: pre-grasp err 44 mm, grasp err 1 mm, grip width 25 mm"
+  },
+  {
+   "t": 181.22,
+   "msg": "IK stuck (576 mm) \u2192 re-home and retry"
+  },
+  {
+   "t": 186.4,
+   "msg": "\u26a0 AABB overlap while carrying: pipette\u2282dosing_balance"
+  },
+  {
+   "t": 188.62,
+   "msg": "IK stuck (199 mm) while carrying \u2192 lift and retry"
+  },
+  {
+   "t": 195.9,
+   "msg": "\u26a0 AABB overlap while carrying: pipette\u2282drying_oven"
+  },
+  {
+   "t": 196.32,
+   "msg": "IK stuck (84 mm) while carrying \u2192 lift and retry"
+  },
+  {
+   "t": 200.6,
+   "msg": "\u26a0 AABB overlap while carrying: pipette\u2282carousel,pipette\u2282drying_oven"
+  },
+  {
+   "t": 200.7,
+   "msg": "\u26a0 AABB overlap while carrying: pipette\u2282carousel"
+  },
+  {
+   "t": 201.5,
+   "msg": "\u26a0 AABB overlap while carrying: pipette\u2282mixer"
+  },
+  {
+   "t": 202.52,
+   "msg": "IK stuck (148 mm) while carrying \u2192 lift and retry"
+  },
+  {
+   "t": 208.72,
+   "msg": "IK stuck (320 mm) while carrying \u2192 lift and retry"
+  },
+  {
+   "t": 213.5,
+   "msg": "\u26a0 AABB overlap while carrying: pipette\u2282vial_rack_a"
+  },
+  {
+   "t": 218.62,
+   "msg": "IK stuck (361 mm) while carrying \u2192 lift and retry"
+  },
+  {
+   "t": 224.82,
+   "msg": "IK stuck (348 mm) while carrying \u2192 lift and retry"
+  },
+  {
+   "t": 236.42,
+   "msg": "IK stuck (350 mm) \u2192 re-home and retry"
+  },
+  {
+   "t": 243.82,
+   "msg": "IK stuck (261 mm) \u2192 re-home and retry"
+  },
+  {
+   "t": 248.82,
+   "msg": "pipette back (dp 416 mm; approach err 0/19 mm)"
+  },
+  {
+   "t": 248.82,
+   "msg": "drying 80 \u00b0C: open the drying oven, crucible in through the door, close"
+  },
+  {
+   "t": 254.52,
+   "msg": "IK stuck (378 mm) \u2192 re-home and retry"
+  },
+  {
+   "t": 262.22,
+   "msg": "IK stuck (388 mm) \u2192 re-home and retry"
+  },
+  {
+   "t": 267.22,
+   "msg": "side-pick crucible_A0: pre-grasp err 401 mm, grasp err 251 mm, grip width 72 mm"
+  },
+  {
+   "t": 267.22,
+   "msg": "\u2717 grasp crucible_A0 failed (err 251 mm > 30 mm) \u2192 object left in place"
+  },
+  {
+   "t": 270.42,
+   "msg": "IK stuck (770 mm) \u2192 re-home and retry"
+  }
+ ],
+ "simplifications": [
+  "objects released inside instrument chambers are pinned at the release pose (chamber interiors are convex-hull solid)",
+  "tilt metric excludes deliberate pour phases"
+ ],
+ "penetration_ticks": 230,
+ "penetration_pairs": {
+  "precursor_1\u2282drying_oven": 7.5,
+  "precursor_1\u2282carousel": 25.0,
+  "precursor_2\u2282drying_oven": 46.3,
+  "precursor_2\u2282dosing_balance": 48.9,
+  "precursor_2\u2282carousel": 56.4,
+  "paper\u2282drying_oven": 106.7,
+  "ethanol\u2282drying_oven": 132.3,
+  "pipette\u2282dosing_balance": 186.4,
+  "pipette\u2282drying_oven": 195.9,
+  "pipette\u2282carousel,pipette\u2282drying_oven": 200.6,
+  "pipette\u2282carousel": 200.7,
+  "pipette\u2282mixer": 201.5,
+  "pipette\u2282vial_rack_a": 213.5
+ },
+ "dp_max_mm": 416.39286279678345,
+ "frames": 4178,
+ "duration_s": 278.6,
+ "safety": {
+  "theta_dev_ok": false,
+  "dp_ok": false
+ }
+}
