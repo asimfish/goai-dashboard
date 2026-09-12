@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-12T18:04+08:00",
+  "updated": "2026-09-12T18:35+08:00",
   "goal": "决赛材料：综述流水线整改 → A-Lab 仪器与工作流 → 五个工作流 + 生成 MCP → Isaac Sim 重建 + Franka 采集（5090, GPT-6 Astra）→ 演示与展示页",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,18 +11,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-12T18:04+08:00",
+    "snapshot_at": "2026-09-12T18:35+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 25754,
-        "util": "92%",
+        "used_mib": 24491,
+        "util": "85%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 30246,
-        "util": "93%",
+        "used_mib": 20140,
+        "util": "71%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -36,7 +36,7 @@
       {
         "mount": "/data",
         "used": "96%",
-        "free": "176G",
+        "free": "164G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -273,19 +273,19 @@
   "queue": [
     {
       "id": "Q-scene",
-      "topic": "更贴近论文的科研实验室场景：4090 agent 已交付 lab_object/lab_real/Chemistry（同源变体，1.58 GB 校验 OK），正在查 Chemistry lab.zip / demo.zip / Collected_Scene04.zip / assets-chemlab.zip（7 GB）；5090 侧并行渲染 Chemistrylab/lab.usd、lab_object.usd 预览",
+      "topic": "更贴近论文的科研实验室场景：4090 agent 两轮交付并逐包核查，唯一独立房间候选 = Collected_Scene04/Scene02.usd（蓝白柜体、黑台面、自带导轨 UR5e）；已实测尺寸、写好 Scene02 三站布局（twin_layout_s2），链 7 在第六轮后自动切换到 Scene02 渲染静帧 + 三站演示；同时在网上再找免费实验室场景/仪器",
       "owner": "claude + codex@4090",
       "status": "running",
       "eta": "2026-09-13",
-      "evidence": "5090:/data/liyufeng/goai_assets/scenes/README_goai_scenes_4090_20260912.md"
+      "evidence": "final_round/05_alab_twin.md §3a.1; final_round/5090/assets/rooms/scene02_round2/; 5090:/data/liyufeng/goai_assets/scenes/scene02/"
     },
     {
       "id": "Q-astra",
-      "topic": "GPT-6 Astra（medium）航点规划 + 不穿模：astra_plan.py 直连 Responses API 已通 ping；twin_demo --planner astra（B/C）录制中；夹爪按物宽闭合、AABB 穿模审计、中空 XRD 腔、水平入炉",
+      "topic": "GPT-6 Astra（medium）航点规划 + 不穿模：第 5 轮暴露提示规则自相矛盾（B 拒绝、C 抬高后 IK 卡死）→ 规划器 v8：中空腔体 AABB、任务优先规则、航点推出盒子 + 可达钳制、腔内不计穿模；链 8 在 Scene02 上跑 A/B/C",
       "owner": "claude",
       "status": "running",
       "eta": "2026-09-13",
-      "evidence": "final_round/5090/twin/astra_plan.py; 5090:/data/liyufeng/goai_workflows/alab_twin/recon/demo5.log"
+      "evidence": "final_round/5090/twin/twin_demo.py (v8); 5090:/data/liyufeng/goai_workflows/alab_twin/recon/demo5.log, demo8.log"
     },
     {
       "id": "Q-twin",
@@ -361,6 +361,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-12 18:45",
+      "entry": "4090 agent 关闭 T-358：Scene02 为唯一独立实验室候选（含 CPU 预览与逐包对照表）；Astra 规划器 v8（腔体/任务优先/航点修正）上传，链 7（Scene02 脚本演示）与链 8（Scene02 Astra）排队"
+    },
     {
       "date": "2026-09-12 18:04",
       "entry": "按用户新要求：① 请 4090 上的 codex agent 找回更像科研实验室的场景（已交付 1.58 GB 同源变体包并继续查压缩包线索）；② 接入 GPT-6 Astra medium 做轨迹规划（直连 Codex 身份 Responses API），③ 不穿模措施上线（物宽闭合、AABB 审计、中空腔体、水平入炉、称量纸实体化）"
