@@ -1,0 +1,54 @@
+{
+ "max_theta_rad": 2.592047691345215,
+ "placements_mm": [
+  316.54030084609985,
+  798.6868619918823,
+  289.02071714401245,
+  252.01669335365295
+ ],
+ "events": [
+  {
+   "t": 0.0,
+   "msg": "RecoverPowder: weigh vial on the balance"
+  },
+  {
+   "t": 11.3,
+   "msg": "vial on balance pan (dp 317 mm)"
+  },
+  {
+   "t": 11.8,
+   "msg": "PrepareSampleforXRD: pour powder through the mesh onto the holder"
+  },
+  {
+   "t": 21.6,
+   "msg": "pour (tilt 0.80 rad \u2264 0.85 ceiling)"
+  },
+  {
+   "t": 29.35,
+   "msg": "vial back to the rack (dp 799 mm)"
+  },
+  {
+   "t": 29.35,
+   "msg": "Diffraction: load the holder into the Aeris stage"
+  },
+  {
+   "t": 40.65,
+   "msg": "holder on XRD stage (dp 289 mm)"
+  },
+  {
+   "t": 42.65,
+   "msg": "run_scan 2\u03b8 10\u2013100\u00b0 (8 min, time-compressed)"
+  },
+  {
+   "t": 54.95,
+   "msg": "holder back to rack slot (dirty) (dp 252 mm)"
+  }
+ ],
+ "dp_max_mm": 798.6868619918823,
+ "frames": 824,
+ "duration_s": 54.9,
+ "safety": {
+  "theta_dev_ok": false,
+  "dp_ok": false
+ }
+}

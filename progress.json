@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-12T18:46+08:00",
+  "updated": "2026-09-12T19:02+08:00",
   "goal": "决赛材料：综述流水线整改 → A-Lab 仪器与工作流 → 五个工作流 + 生成 MCP → Isaac Sim 重建 + Franka 采集（5090, GPT-6 Astra）→ 演示与展示页",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,18 +11,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-12T18:46+08:00",
+    "snapshot_at": "2026-09-12T19:02+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 30457,
-        "util": "91%",
+        "used_mib": 14544,
+        "util": "93%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 20144,
-        "util": "85%",
+        "used_mib": 20160,
+        "util": "80%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -36,7 +36,7 @@
       {
         "mount": "/data",
         "used": "96%",
-        "free": "161G",
+        "free": "160G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -361,6 +361,14 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-12 19:05",
+      "entry": "第六轮（lab_clean v6）在 A 站入箱步骤因四元数形状错误中止（B/C 未跑）→ v9 修复并加每站异常隔离、坩埚改侧向抓取水平入箱；Scene02 Isaac 预览完成，链 7 以最新布局/脚本重启（19:01）"
+    },
+    {
+      "date": "2026-09-12 19:00",
+      "entry": "Scene02 三站按机器人可达半径与炉门扫掠区重排（CPU 审计 0 重叠）；twin_demo v9：仪器 AABB 改为 yaw 真实包围盒（消除导轨方盒假阳性、门平面偏差）"
+    },
     {
       "date": "2026-09-12 18:50",
       "entry": "Scene02 布局 CPU 干跑审计 0 重叠（修同名 vial_rack）；修正 AABB 二次缩放（炉/干燥箱门平面偏 5 cm）；网上场景/仪器检索完成（MatteriX 克隆）"

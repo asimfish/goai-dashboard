@@ -1,0 +1,51 @@
+{
+ "max_theta_rad": 3.0927720069885254,
+ "placements_mm": [
+  937.9629492759705
+ ],
+ "events": [
+  {
+   "t": 0.0,
+   "msg": "Heating: open_box_furnace (door actuator)"
+  },
+  {
+   "t": 2.5,
+   "msg": "move_rack: approach tray handle"
+  },
+  {
+   "t": 7.0,
+   "msg": "grasp handle (pre-grasp err 9 mm)"
+  },
+  {
+   "t": 9.3,
+   "msg": "move_rack_into_box_furnace: to door"
+  },
+  {
+   "t": 15.8,
+   "msg": "IK stuck (1260 mm) \u2192 re-home and retry"
+  },
+  {
+   "t": 21.4,
+   "msg": "IK stuck (1012 mm) \u2192 re-home and retry"
+  },
+  {
+   "t": 26.4,
+   "msg": "release rack in chamber (dp 938 mm)"
+  },
+  {
+   "t": 30.9,
+   "msg": "close_box_furnace + run_program (2 \u00b0C/min \u2192 300 \u00b0C, 15 \u00b0C/min \u2192 1000 \u00b0C, 4 h; time-compressed)"
+  }
+ ],
+ "simplifications": [
+  "objects released inside instrument chambers are pinned at the release pose (chamber interiors are convex-hull solid)",
+  "tilt metric excludes deliberate pour phases"
+ ],
+ "dp_max_mm": 937.9629492759705,
+ "frames": 516,
+ "duration_s": 34.4,
+ "safety": {
+  "theta_dev_ok": false,
+  "dp_ok": false
+ }
+}
