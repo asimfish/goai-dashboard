@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T03:25+08:00",
+  "updated": "2026-09-13T03:36+08:00",
   "goal": "决赛材料：综述流水线整改 → A-Lab 仪器与工作流 → 五个工作流 + 生成 MCP → Isaac Sim 重建 + Franka 采集（5090, GPT-6 Astra）→ 演示与展示页",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,18 +11,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T03:25+08:00",
+    "snapshot_at": "2026-09-13T03:36+08:00",
     "gpus": [
       {
         "index": 0,
         "used_mib": 11133,
-        "util": "47%",
+        "util": "1%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 21008,
-        "util": "64%",
+        "used_mib": 2232,
+        "util": "34%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -36,7 +36,7 @@
       {
         "mount": "/data",
         "used": "97%",
-        "free": "124G",
+        "free": "123G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -378,6 +378,10 @@
   ],
   "changelog": [
     {
+      "date": "2026-09-13 03:40",
+      "entry": "中文综述排版/用语 v3 上线：goai_zh_typo.sty v3（紧凑版心、浮动体不再按节阻断、统一灰底黑体表头）+ 条件总表横排 longtable（tools/zh_table_merge.py）+ 材料化学术语表与句法润色（glossary_materials_zh.json / zh_terms_apply.py / zh_qa.py 门禁，三个并行编辑）；BYZSO 24→19 页、BaZn2Si2O7 8→6 页，均 0 错误 0 Overfull；pdf/*_cn_typo3_20260913.pdf。发现同一对话的另一续接会话并行改同一文件，已用 OWNER_goai-76.md 划分归属并改用独立构建树 goai_typeset_g76"
+    },
+    {
       "date": "2026-09-13 04:25",
       "entry": "用户要求先把场景做实：制定场景验收门 G1–G6（零穿模 + 静置、铰链件开合与入口净空、脚本专家 3/3、可达图、视角遮挡、独立复核），采集试验暂停到验收通过；已下发两个 agent"
     },
@@ -541,6 +545,24 @@
     "GitHub Pages：https://asimfish.github.io/goai-dashboard/（main 分支页面，由 final_round/site/deploy_pages.sh 从 5090 推送；data 分支 status.json 由 5090 cron 每 10 分钟推送）"
   ],
   "pdfs": [
+    {
+      "title": "BaZn2Si2O7 补充案例 · 排版/用语 v3",
+      "url": "pdf/bazn2si2o7_cn_typo3_20260913.pdf",
+      "lang": "中文",
+      "pages": 6,
+      "date": "2026-09-13",
+      "status": "ok",
+      "note": "同一 sty v3 + 术语/句法润色（替位→取代、近邻→结构相关化合物、HT-XRD 首次展开等）；8→6 页、0 Overfull；首页不再把图排在标题之上（\\suppressfloats[t]）"
+    },
+    {
+      "title": "BYZSO 中文综述 · 排版/用语 v3（紧凑版式、横排 longtable 条件总表、材料化学术语规范化 + 句法润色）",
+      "url": "pdf/byzso_cn_typo3_20260913.pdf",
+      "lang": "中文",
+      "pages": 19,
+      "date": "2026-09-13",
+      "status": "ok",
+      "note": "v3：版心 2.0/2.3 cm、行距 1.2、节与浮动体间距压缩、去掉按节 FloatBarrier（v2 每个带图节末留半页空白）；条件总表由 6 块上下联表改为 1 张横排 longtable（12 列、A/B/C 分区行、灰底黑体表头、“—”统一表示未报道、化学式串可断行），24→19 页、0 错误、0 Overfull；用语：materials 术语表（templates/glossary_materials_zh.json，56 条规范化映射：身份→归属、长晶→晶体生长、热史→热历史、谱系→系列、批量→块体、成相→相形成、近邻→结构相关化合物…）自动注入 + 三个并行编辑逐句润色，zh_qa.py 门禁核对 cite/公式/数字/表格结构一致（PASS）"
+    },
     {
       "title": "BaZn2Si2O7 补充案例 · 排版 v2",
       "url": "pdf/bazn2si2o7_cn_typo2_20260913.pdf",
