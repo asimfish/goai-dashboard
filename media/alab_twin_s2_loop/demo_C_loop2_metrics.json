@@ -1,0 +1,841 @@
+{
+ "max_theta_rad": 1.5735783576965332,
+ "placements_mm": [
+  3.705698298290372
+ ],
+ "events": [
+  {
+   "t": 0.33,
+   "msg": "trial 2: vial_1 jittered by (0.018, 0.018) m"
+  },
+  {
+   "t": 0.33,
+   "msg": "call 1: 2 waypoints in 41 s, stage_estimate 0, done=False: Move to the pre-grasp position above vial_1 with the gripper open and tool pointing down. The supplied vial bounds give "
+  },
+  {
+   "t": 1.33,
+   "msg": "waypoint 'raise_before_approach' reached (err 0 mm; Vertical motion at the current position; remains 0.120 m in front of the balance)"
+  },
+  {
+   "t": 2.33,
+   "msg": "waypoint 'vial_1_pregrasp' reached (err 0 mm; TCP is 0.120 m above the reported vial top. Approach stays outside instrument AA)"
+  },
+  {
+   "t": 2.33,
+   "msg": "stage after call 1: 0"
+  },
+  {
+   "t": 2.33,
+   "msg": "call 2: 2 waypoints in 18 s, stage_estimate 2, done=False: The pre-grasp is reached. Descend to vial_1's reported 45%-height grasp point, close and attach, then lift vertically be"
+  },
+  {
+   "t": 5.43,
+   "msg": "grasp vial_1 (err 9 mm, width 15 mm)"
+  },
+  {
+   "t": 7.93,
+   "msg": "waypoint 'vial_1_vertical_lift' reached (err 0 mm; Lift vertically in the free corridor without crossing an instrument footprint. E)"
+  },
+  {
+   "t": 7.93,
+   "msg": "stage after call 2: 2"
+  },
+  {
+   "t": 7.93,
+   "msg": "call 3: 2 waypoints in 19 s, stage_estimate 3, done=False: Vial_1 is already attached. Lift vertically, then carry upright through the clear corridor in front of the balance. Acco"
+  },
+  {
+   "t": 9.43,
+   "msg": "waypoint 'vial_1_raise_for_transfer' reached (err 0 mm; Vertical lift in the free corridor; keep the vial upright and attached.)"
+  },
+  {
+   "t": 10.63,
+   "msg": "waypoint 'vial_1_above_bench_target' reached (err 0 mm; Direct transfer remains outside all instrument footprints. Vial center ends abov)"
+  },
+  {
+   "t": 10.63,
+   "msg": "stage after call 3: 3"
+  },
+  {
+   "t": 10.63,
+   "msg": "call 4: 3 waypoints in 22 s, stage_estimate 3, done=False: The vial is already held above the destination. Use the observed TCP-to-vial offset (6.5 mm in x, 0.5 mm in y, and 59 mm"
+  },
+  {
+   "t": 13.63,
+   "msg": "waypoint 'vial_1_lower_to_bench' reached (err 0 mm; Near-vertical descent in the free corridor in front of the balance; vial bottom )"
+  },
+  {
+   "t": 15.33,
+   "msg": "release vial_1 at 'vial_1_release_on_bench' (err 0 mm, dp 4 mm)"
+  },
+  {
+   "t": 16.83,
+   "msg": "waypoint 'retreat_above_placed_vial' reached (err 0 mm; Retreat exactly 0.12 m vertically with open fingers.)"
+  },
+  {
+   "t": 16.83,
+   "msg": "stage after call 4: 3"
+  },
+  {
+   "t": 16.83,
+   "msg": "call 5: 0 waypoints in 10 s, stage_estimate 4, done=True: Execution history confirms vial_1 was released at the bench target with 4 mm placement error, followed by the requested "
+  },
+  {
+   "t": 16.83,
+   "msg": "stage after call 5: 3"
+  }
+ ],
+ "simplifications": [
+  "objects released inside instrument chambers are pinned at the release pose (chamber interiors are convex-hull solid)",
+  "tilt metric excludes deliberate pour phases"
+ ],
+ "loop": {
+  "trial": 2,
+  "stage": 3,
+  "calls": 5,
+  "budget": 12,
+  "tokens_in": 18871,
+  "tokens_out": 2299,
+  "wall_s": 196.7,
+  "penetration_ticks": 0,
+  "gate_pass": false,
+  "history": [
+   {
+    "call": 0,
+    "waypoints": [
+     "raise_before_approach",
+     "vial_1_pregrasp"
+    ],
+    "outcomes": [
+     "waypoint 'raise_before_approach' reached (err 0 mm; Vertical motion at the current positio",
+     "waypoint 'vial_1_pregrasp' reached (err 0 mm; TCP is 0.120 m above the reported vial top. "
+    ],
+    "stage_after": 0
+   },
+   {
+    "call": 1,
+    "waypoints": [
+     "vial_1_grasp",
+     "vial_1_vertical_lift"
+    ],
+    "outcomes": [
+     "grasp vial_1 (err 9 mm, width 15 mm)",
+     "waypoint 'vial_1_vertical_lift' reached (err 0 mm; Lift vertically in the free corridor wi"
+    ],
+    "stage_after": 2
+   },
+   {
+    "call": 2,
+    "waypoints": [
+     "vial_1_raise_for_transfer",
+     "vial_1_above_bench_target"
+    ],
+    "outcomes": [
+     "waypoint 'vial_1_raise_for_transfer' reached (err 0 mm; Vertical lift in the free corridor",
+     "waypoint 'vial_1_above_bench_target' reached (err 0 mm; Direct transfer remains outside al"
+    ],
+    "stage_after": 3
+   },
+   {
+    "call": 3,
+    "waypoints": [
+     "vial_1_lower_to_bench",
+     "vial_1_release_on_bench",
+     "retreat_above_placed_vial"
+    ],
+    "outcomes": [
+     "waypoint 'vial_1_lower_to_bench' reached (err 0 mm; Near-vertical descent in the free corr",
+     "release vial_1 at 'vial_1_release_on_bench' (err 0 mm, dp 4 mm)",
+     "waypoint 'retreat_above_placed_vial' reached (err 0 mm; Retreat exactly 0.12 m vertically "
+    ],
+    "stage_after": 3
+   },
+   {
+    "call": 4,
+    "waypoints": [],
+    "outcomes": [],
+    "stage_after": 3
+   }
+  ]
+ },
+ "astra_plans": [
+  {
+   "reasoning_summary": "Move to the pre-grasp position above vial_1 with the gripper open and tool pointing down. The supplied vial bounds give a pre-grasp height of 1.187 m. Observe again before descending because the reported vial bottom is below the worktop.",
+   "waypoints": [
+    {
+     "name": "raise_before_approach",
+     "tcp_xyz_m": [
+      1.8,
+      -2.577,
+      1.187
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "open",
+     "attach": "",
+     "detach": false,
+     "duration_s": 0.5,
+     "clearance_note": "Vertical motion at the current position; remains 0.120 m in front of the balance AABB."
+    },
+    {
+     "name": "vial_1_pregrasp",
+     "tcp_xyz_m": [
+      1.8545,
+      -2.5,
+      1.187
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "open",
+     "attach": "",
+     "detach": false,
+     "duration_s": 1.0,
+     "clearance_note": "TCP is 0.120 m above the reported vial top. Approach stays outside instrument AABBs with at least 0.03 m clearance."
+    }
+   ],
+   "safety_checks": [
+    "Both waypoints are within the robot's usable radial range of 0.25\u20130.75 m.",
+    "No object is attached during this approach.",
+    "Maintain tool_down=true and check execution position and orientation errors before grasping.",
+    "Reported 45%-height grasp is z=1.0043 m, very close to the worktop; verify the fresh observation before descent."
+   ],
+   "done": false,
+   "stage_estimate": 0,
+   "_meta": {
+    "usage": {
+     "attribution": {
+      "items": {
+       "msg_016bbf5a7b9d3f9b016aa5b9bc9d1887d0aa005fd144c5cdf1": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1880,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1201,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 4,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 314,
+          "output_tokens": 0
+         }
+        ],
+        "input_tokens": 3404,
+        "output_tokens": 0
+       },
+       "rs_016bbf5a7b9d3f9b016aa5b9bda76487d08dcaf4cec05014c3": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 2,
+        "output_tokens": 77
+       },
+       "msg_016bbf5a7b9d3f9b016aa5b9c0b0fc87d0aa01454985b7991b": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 0,
+          "output_tokens": 413
+         }
+        ],
+        "input_tokens": 0,
+        "output_tokens": 413
+       }
+      },
+      "request_fields": {
+       "text.format": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 155,
+        "output_tokens": 0
+       },
+       "instructions": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 21,
+        "output_tokens": 0
+       }
+      }
+     },
+     "input_tokens": 3582,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 490,
+     "output_tokens_details": {
+      "reasoning_tokens": 77
+     },
+     "total_tokens": 4072
+    },
+    "elapsed_s": 40.947483091964386,
+    "effort": "medium",
+    "call": 0
+   },
+   "validator_corrections": []
+  },
+  {
+   "reasoning_summary": "The pre-grasp is reached. Descend to vial_1's reported 45%-height grasp point, close and attach, then lift vertically before any lateral transfer.",
+   "waypoints": [
+    {
+     "name": "vial_1_grasp",
+     "tcp_xyz_m": [
+      1.8545,
+      -2.5,
+      1.0043
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "close",
+     "attach": "vial_1",
+     "detach": false,
+     "duration_s": 2.5,
+     "clearance_note": "Vertical descent from the reached pre-grasp; grasp height is 0.953 + 0.45 \u00d7 0.114 m. Allow intended contact with vial_1 only."
+    },
+    {
+     "name": "vial_1_vertical_lift",
+     "tcp_xyz_m": [
+      1.8545,
+      -2.5,
+      1.24
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 2.5,
+     "clearance_note": "Lift vertically in the free corridor without crossing an instrument footprint. Expected vial bottom after lifting is 1.1887 m."
+    }
+   ],
+   "safety_checks": [
+    "TCP horizontal radius is approximately 0.441 m, within the usable 0.25\u20130.75 m range.",
+    "Maintain tool-down orientation and upright attachment during lifting.",
+    "The approach and lift remain more than 0.03 m from other listed object and station AABBs.",
+    "The reported vial bottom lies below the bench plane; verify successful attachment and updated vial pose before planning placement."
+   ],
+   "done": false,
+   "stage_estimate": 2,
+   "_meta": {
+    "usage": {
+     "attribution": {
+      "items": {
+       "msg_0c7f6dacc339aed6016aa5b9dbd03c87d08b5f21bdd4c5d460": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1975,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1201,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 4,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 314,
+          "output_tokens": 0
+         }
+        ],
+        "input_tokens": 3499,
+        "output_tokens": 0
+       },
+       "rs_0c7f6dacc339aed6016aa5b9dd4c9c87d096f6c6f13f986a17": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 2,
+        "output_tokens": 60
+       },
+       "msg_0c7f6dacc339aed6016aa5b9e00f2087d096c72ea0c9020a1b": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 0,
+          "output_tokens": 417
+         }
+        ],
+        "input_tokens": 0,
+        "output_tokens": 417
+       }
+      },
+      "request_fields": {
+       "text.format": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 155,
+        "output_tokens": 0
+       },
+       "instructions": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 21,
+        "output_tokens": 0
+       }
+      }
+     },
+     "input_tokens": 3677,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 477,
+     "output_tokens_details": {
+      "reasoning_tokens": 60
+     },
+     "total_tokens": 4154
+    },
+    "elapsed_s": 18.005155156948604,
+    "effort": "medium",
+    "call": 1
+   },
+   "validator_corrections": []
+  },
+  {
+   "reasoning_summary": "Vial_1 is already attached. Lift vertically, then carry upright through the clear corridor in front of the balance. Account for the observed 6.5 mm x and -0.5 mm y offset between the TCP and vial center when positioning above the target. Wait for updated state before lowering and releasing.",
+   "waypoints": [
+    {
+     "name": "vial_1_raise_for_transfer",
+     "tcp_xyz_m": [
+      1.854,
+      -2.5,
+      1.42
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 1.5,
+     "clearance_note": "Vertical lift in the free corridor; keep the vial upright and attached."
+    },
+    {
+     "name": "vial_1_above_bench_target",
+     "tcp_xyz_m": [
+      1.8065,
+      -2.5775,
+      1.42
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 1.2,
+     "clearance_note": "Direct transfer remains outside all instrument footprints. Vial center ends above [1.800, -2.577], with approximately 0.11 m clearance from the balance front."
+    }
+   ],
+   "safety_checks": [
+    "No instrument footprint is crossed during horizontal transfer.",
+    "TCP and carried vial remain at least 0.03 m from other listed AABBs.",
+    "Both waypoints remain within the robot's usable radius and reach.",
+    "Maintain tool_down=true and retain the grasp throughout transfer.",
+    "Confirm the attached vial pose before computing the final bench-contact height."
+   ],
+   "done": false,
+   "stage_estimate": 3,
+   "_meta": {
+    "usage": {
+     "attribution": {
+      "items": {
+       "msg_085e7f00bcbb9c21016aa5ba0afb0487d09aa6398f7107d439": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 2062,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1201,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 4,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 314,
+          "output_tokens": 0
+         }
+        ],
+        "input_tokens": 3586,
+        "output_tokens": 0
+       },
+       "rs_085e7f00bcbb9c21016aa5ba0c3b2487d08337f9f969498255": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 2,
+        "output_tokens": 105
+       },
+       "msg_085e7f00bcbb9c21016aa5ba112e3887d0a11d2f434e0524cb": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 0,
+          "output_tokens": 420
+         }
+        ],
+        "input_tokens": 0,
+        "output_tokens": 420
+       }
+      },
+      "request_fields": {
+       "text.format": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 155,
+        "output_tokens": 0
+       },
+       "instructions": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 21,
+        "output_tokens": 0
+       }
+      }
+     },
+     "input_tokens": 3764,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 525,
+     "output_tokens_details": {
+      "reasoning_tokens": 105
+     },
+     "total_tokens": 4289
+    },
+    "elapsed_s": 18.7041426509968,
+    "effort": "medium",
+    "call": 2
+   },
+   "validator_corrections": []
+  },
+  {
+   "reasoning_summary": "The vial is already held above the destination. Use the observed TCP-to-vial offset (6.5 mm in x, 0.5 mm in y, and 59 mm above the bottom) to place its center at the requested location with its bottom on the worktop, then release and retreat vertically.",
+   "waypoints": [
+    {
+     "name": "vial_1_lower_to_bench",
+     "tcp_xyz_m": [
+      1.8065,
+      -2.5765,
+      1.061705
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 3.0,
+     "clearance_note": "Near-vertical descent in the free corridor in front of the balance; vial bottom reaches worktop z=1.002705. Maintain upright orientation."
+    },
+    {
+     "name": "vial_1_release_on_bench",
+     "tcp_xyz_m": [
+      1.8065,
+      -2.5765,
+      1.061705
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "open",
+     "attach": "",
+     "detach": true,
+     "duration_s": 0.8,
+     "clearance_note": "Release only at bench contact without further downward motion."
+    },
+    {
+     "name": "retreat_above_placed_vial",
+     "tcp_xyz_m": [
+      1.8065,
+      -2.5765,
+      1.181705
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "open",
+     "attach": "",
+     "detach": false,
+     "duration_s": 1.5,
+     "clearance_note": "Retreat exactly 0.12 m vertically with open fingers."
+    }
+   ],
+   "safety_checks": [
+    "TCP remains approximately 0.436 m horizontally from the robot base, within the usable radius.",
+    "Vial stays upright throughout descent and release.",
+    "Vial envelope remains more than 0.03 m from neighboring station AABBs; bench contact is intentional.",
+    "No horizontal transfer over instruments is required.",
+    "Confirm release, bench support, and completed retreat in the next observation."
+   ],
+   "done": false,
+   "stage_estimate": 3,
+   "_meta": {
+    "usage": {
+     "attribution": {
+      "items": {
+       "msg_0e5a4f93b51fb402016aa5ba2c5f4087d0ab51a2713e7474b9": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 2156,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1201,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 4,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 314,
+          "output_tokens": 0
+         }
+        ],
+        "input_tokens": 3680,
+        "output_tokens": 0
+       },
+       "rs_0e5a4f93b51fb402016aa5ba2e0fb487d0aba2057af8d00dbd": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 2,
+        "output_tokens": 61
+       },
+       "msg_0e5a4f93b51fb402016aa5ba2ff74487d0adbe400ee8dc601c": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 0,
+          "output_tokens": 528
+         }
+        ],
+        "input_tokens": 0,
+        "output_tokens": 528
+       }
+      },
+      "request_fields": {
+       "text.format": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 155,
+        "output_tokens": 0
+       },
+       "instructions": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 21,
+        "output_tokens": 0
+       }
+      }
+     },
+     "input_tokens": 3858,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 589,
+     "output_tokens_details": {
+      "reasoning_tokens": 61
+     },
+     "total_tokens": 4447
+    },
+    "elapsed_s": 21.802969976968598,
+    "effort": "medium",
+    "call": 3
+   },
+   "validator_corrections": []
+  },
+  {
+   "reasoning_summary": "Execution history confirms vial_1 was released at the bench target with 4 mm placement error, followed by the requested 0.12 m vertical retreat. The gripper is open and the TCP is at the completed retreat position. No further motion is needed.",
+   "waypoints": [],
+   "safety_checks": [
+    "Reported placement error of 4 mm is below the 20 mm limit.",
+    "Release and subsequent 0.12 m upward retreat were executed successfully.",
+    "Current TCP is approximately 0.436 m horizontally from the robot base, within the usable 0.25\u20130.75 m radius.",
+    "Completion is based on executed placement and retreat outcomes rather than the lagging stage_reached value."
+   ],
+   "done": true,
+   "stage_estimate": 4,
+   "_meta": {
+    "usage": {
+     "attribution": {
+      "items": {
+       "msg_00d4ca6ffe423613016aa5ba61eb3487d0b8551d943241125a": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 2288,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1201,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 4,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 314,
+          "output_tokens": 0
+         }
+        ],
+        "input_tokens": 3812,
+        "output_tokens": 0
+       },
+       "rs_00d4ca6ffe423613016aa5ba64250487d09327bf5ca28f9192": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 2,
+        "output_tokens": 33
+       },
+       "msg_00d4ca6ffe423613016aa5ba65ded887d09f8e5b8a1adc3aa7": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 0,
+          "output_tokens": 185
+         }
+        ],
+        "input_tokens": 0,
+        "output_tokens": 185
+       }
+      },
+      "request_fields": {
+       "text.format": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 155,
+        "output_tokens": 0
+       },
+       "instructions": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 21,
+        "output_tokens": 0
+       }
+      }
+     },
+     "input_tokens": 3990,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 218,
+     "output_tokens_details": {
+      "reasoning_tokens": 33
+     },
+     "total_tokens": 4208
+    },
+    "elapsed_s": 10.469371279003099,
+    "effort": "medium",
+    "call": 4
+   },
+   "validator_corrections": []
+  }
+ ],
+ "dp_max_mm": 3.705698298290372,
+ "frames": 252,
+ "duration_s": 16.8,
+ "safety": {
+  "theta_dev_ok": false,
+  "dp_ok": true
+ }
+}

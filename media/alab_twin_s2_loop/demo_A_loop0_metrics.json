@@ -1,243 +1,289 @@
 {
- "max_theta_rad": 1.7821305990219116,
- "placements_mm": [
-  776.013195514679
- ],
+ "max_theta_rad": 1.8644064664840698,
+ "placements_mm": [],
  "events": [
   {
    "t": 0.0,
-   "msg": "call 1: 3 waypoints in 22 s, stage_estimate 1, done=False: Approach precursor_1 from above, descend vertically to its prescribed grasp height of 1.0469 m, and grasp. Wait for feed"
+   "msg": "call 1: 3 waypoints in 19 s, stage_estimate 1, done=False: Approach precursor_1 vertically and grasp at z = 1.004 + 0.45 \u00d7 0.102 = 1.0499 m. First move above the bottle at the cur"
   },
   {
-   "t": 3.2,
-   "msg": "waypoint 'move_above_precursor_1' reached (err 9 mm; High transfer to the bottle axis, clear of neighboring bottles and stations.)"
+   "t": 4.2,
+   "msg": "waypoint 'above_precursor_1' reached (err 2 mm; High approach clears the carousel and adjacent bottles; horizontal base radius r)"
   },
   {
-   "t": 3.2,
+   "t": 4.2,
    "msg": "pre-swing skipped: both arcs cross an instrument box"
   },
   {
-   "t": 4.7,
-   "msg": "waypoint 'precursor_1_pregrasp' reached (err 0 mm; Vertical approach to 0.12 m above the bottle top.)"
+   "t": 6.7,
+   "msg": "waypoint 'precursor_1_pregrasp' reached (err 1 mm; Vertical descent to 0.12 m above the bottle top.)"
   },
   {
-   "t": 4.7,
+   "t": 6.7,
    "msg": "pre-swing skipped: both arcs cross an instrument box"
   },
   {
-   "t": 8.0,
-   "msg": "IK stuck (253 mm) \u2192 re-home and retry"
+   "t": 11.0,
+   "msg": "IK stuck (204 mm) \u2192 re-home and retry"
   },
   {
-   "t": 13.0,
-   "msg": "grasp precursor_1 (err 1 mm, width 55 mm)"
+   "t": 16.0,
+   "msg": "grasp precursor_1 (err 6 mm, width 55 mm)"
   },
   {
-   "t": 13.0,
+   "t": 16.0,
    "msg": "stage after call 1: 1"
   },
   {
-   "t": 13.0,
-   "msg": "call 2: 3 waypoints in 29 s, stage_estimate 1, done=False: The bottle is already reported grasped. Lift vertically from the observed TCP, then route around the south side of the r"
+   "t": 16.0,
+   "msg": "call 2: 2 waypoints in 22 s, stage_estimate 2, done=False: The gripper reports precursor_1 attached. Lift vertically from the measured TCP before moving laterally, then route sout"
   },
   {
-   "t": 13.0,
+   "t": 16.0,
    "msg": "pre-swing skipped: both arcs cross an instrument box"
   },
   {
-   "t": 15.0,
-   "msg": "waypoint 'lift_precursor_1_from_observed_pose' reached (err 0 mm; Vertical lift at the reported TCP. At transfer height, the bottle bottom is appr)"
+   "t": 19.0,
+   "msg": "waypoint 'lift_precursor_1_from_measured_pose' reached (err 2 mm; Vertical lift at the current measured XY; retain the existing grasp. Elevated bo)"
   },
   {
-   "t": 19.2,
-   "msg": "waypoint 'carry_southwest_of_base' reached (err 20 mm; Maintain high upright carry above the pipette region; bottle bottom clears the p)"
+   "t": 19.0,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
   },
   {
-   "t": 23.4,
-   "msg": "waypoint 'carry_south_of_base' reached (err 60 mm; Southern transfer avoids the base inner radius, carousel, mixer, and oven. Retai)"
+   "t": 23.0,
+   "msg": "IK stuck (310 mm) while carrying \u2192 lift and retry"
   },
   {
-   "t": 23.4,
+   "t": 28.0,
+   "msg": "waypoint 'southern_transfer_waypoint' reached (err 306 mm; Carry upright above the mixer and nearby objects. This southwest route stays out)"
+  },
+  {
+   "t": 28.0,
    "msg": "stage after call 2: 2"
   },
   {
-   "t": 23.4,
-   "msg": "call 3: 2 waypoints in 20 s, stage_estimate 2, done=False: Continue the upright carry around the south side of the base, then align above the weighing paper. Because the last tran"
+   "t": 28.0,
+   "msg": "call 3: 2 waypoints in 20 s, stage_estimate 2, done=False: The previous transfer missed its target by 306 mm, so plan from the measured TCP rather than assuming that transfer succ"
   },
   {
-   "t": 27.6,
-   "msg": "waypoint 'carry_southeast_of_base' reached (err 0 mm; Southern route stays outside the 0.32 m inner radius. Bottle bottom remains appr)"
+   "t": 31.2,
+   "msg": "IK stuck (85 mm) while carrying \u2192 lift and retry"
   },
   {
-   "t": 27.6,
-   "msg": "pre-swing skipped: both arcs cross an instrument box"
+   "t": 35.2,
+   "msg": "waypoint 'measured_pose_southward_recovery' reached (err 90 mm; Move outward from the current near-base pose. The measured bottle bottom is appr)"
   },
   {
-   "t": 30.6,
-   "msg": "waypoint 'align_high_above_paper' reached (err 0 mm; Maintain upright high carry over the balance edge to the paper center; remain so)"
+   "t": 38.4,
+   "msg": "IK stuck (140 mm) while carrying \u2192 lift and retry"
   },
   {
-   "t": 30.6,
+   "t": 42.4,
+   "msg": "waypoint 'short_southern_transfer' reached (err 245 mm; Remain south of the oven and east of the mixer. Predicted bottle bottom stays at)"
+  },
+  {
+   "t": 42.4,
    "msg": "stage after call 3: 2"
   },
   {
-   "t": 30.6,
-   "msg": "call 4: 2 waypoints in 21 s, stage_estimate 3, done=False: The bottle is already held above the paper. Descend vertically to an upright dosing pose with the bottle bottom 0.10 m a"
+   "t": 42.4,
+   "msg": "call 4: 1 waypoints in 17 s, stage_estimate 2, done=False: The bottle remains attached, but previous transfers had large tracking errors. Use one shorter recovery move from the me"
   },
   {
-   "t": 30.6,
-   "msg": "pre-swing skipped: both arcs cross an instrument box"
+   "t": 46.6,
+   "msg": "waypoint 'lower_and_move_outward_recovery' reached (err 0 mm; Open corridor east of the mixer and north of the vial rack. Using the observed T)"
   },
   {
-   "t": 32.5,
-   "msg": "\u26a0 AABB overlap while carrying: precursor_1\u2282dosing_balance"
-  },
-  {
-   "t": 33.6,
-   "msg": "waypoint 'lower_to_dosing_pose' reached (err 0 mm; Vertical descent over the paper; bottle bottom target z=1.103 m. No horizontal t)"
-  },
-  {
-   "t": 33.6,
-   "msg": "pre-swing skipped: both arcs cross an instrument box"
-  },
-  {
-   "t": 35.6,
-   "msg": "waypoint 'hold_dosing_pose_for_2_seconds' reached (err 0 mm; Maintain the upright bottle and closed grasp without tilting or releasing.)"
-  },
-  {
-   "t": 35.6,
+   "t": 46.6,
    "msg": "stage after call 4: 2"
   },
   {
-   "t": 35.6,
-   "msg": "call 5: 1 waypoints in 21 s, stage_estimate 2, done=False: The previous dosing attempt reported a carried-bottle overlap with the dosing balance and did not advance the task stage"
+   "t": 46.6,
+   "msg": "call 5: 2 waypoints in 19 s, stage_estimate 2, done=False: The last recovery waypoint was reached accurately. Continue with two moderate upright transfer moves through the open so"
   },
   {
-   "t": 35.6,
+   "t": 50.8,
+   "msg": "waypoint 'southern_corridor_transfer' reached (err 0 mm; Stay south of the oven and east of the mixer. The measured bottle-bottom offset )"
+  },
+  {
+   "t": 50.8,
    "msg": "pre-swing skipped: both arcs cross an instrument box"
   },
   {
-   "t": 37.6,
-   "msg": "waypoint 'lift_clear_after_reported_overlap' reached (err 0 mm; Vertical recovery without lateral motion toward the balance. With the intended 4)"
+   "t": 53.8,
+   "msg": "waypoint 'balance_high_approach' reached (err 0 mm; Approach the balance at transport height, without descending to dose. Estimated )"
   },
   {
-   "t": 37.6,
+   "t": 53.8,
    "msg": "stage after call 5: 2"
   },
   {
-   "t": 37.6,
-   "msg": "call 6: 3 waypoints in 31 s, stage_estimate 2, done=False: The observed bottle is offset from the TCP by (-0.0545, -0.1705) m horizontally, explaining the earlier balance overlap."
+   "t": 53.8,
+   "msg": "call 6: 2 waypoints in 24 s, stage_estimate 2, done=False: The bottle remains attached and the last transfer reached its commanded pose accurately. Use the observed bottle-to-TCP "
   },
   {
-   "t": 37.6,
+   "t": 53.8,
    "msg": "pre-swing skipped: both arcs cross an instrument box"
   },
   {
-   "t": 39.6,
-   "msg": "waypoint 'align_bottle_above_paper_with_observed_offset' reached (err 0 mm; Translate at current height; observed bottle bottom remains at 1.270 m, at least)"
+   "t": 55.8,
+   "msg": "waypoint 'align_carried_bottle_over_paper' reached (err 0 mm; Preserve the measured attachment offset: bottle center is 0.0125 m east and 0.09)"
   },
   {
-   "t": 39.6,
+   "t": 55.8,
    "msg": "pre-swing skipped: both arcs cross an instrument box"
   },
   {
-   "t": 41.6,
-   "msg": "waypoint 'lower_offset_corrected_bottle_to_dosing_height' reached (err 0 mm; Vertical descent predicts bottle bottom at 1.103 m, 0.100 m above paper top. Bot)"
+   "t": 58.3,
+   "msg": "waypoint 'paper_dosing_hold' reached (err 0 mm; Vertical target approach places the measured bottle bottom at 1.179 m, 0.100 m a)"
   },
   {
-   "t": 41.6,
-   "msg": "pre-swing skipped: both arcs cross an instrument box"
-  },
-  {
-   "t": 43.6,
-   "msg": "waypoint 'hold_corrected_dosing_pose_for_two_seconds' reached (err 0 mm; Hold upright without releasing or tilting; verify measured bottle pose after exe)"
-  },
-  {
-   "t": 43.6,
+   "t": 58.3,
    "msg": "stage after call 6: 2"
   },
   {
-   "t": 43.6,
-   "msg": "call 7: 1 waypoints in 39 s, stage_estimate 3, done=False: The observed bottle bottom is at z=1.103 m, exactly 0.100 m above the paper top, and its horizontal centre matches the p"
+   "t": 58.3,
+   "msg": "call 7: 1 waypoints in 16 s, stage_estimate 3, done=False: The measured bottle footprint is centered over the paper, and its bottom is at z=1.179 m, exactly 0.100 m above the pape"
   },
   {
-   "t": 43.6,
+   "t": 58.3,
    "msg": "pre-swing skipped: both arcs cross an instrument box"
   },
   {
-   "t": 45.6,
-   "msg": "waypoint 'hold_verified_bottle_dosing_pose' reached (err 0 mm; Maintain the current verified position without horizontal translation. Bottle bo)"
+   "t": 60.3,
+   "msg": "waypoint 'verified_dosing_dwell_2s' reached (err 0 mm; Stationary dosing pose: bottle bottom is 0.100 m above paper and 0.037 m above t)"
   },
   {
-   "t": 45.6,
+   "t": 60.3,
    "msg": "stage after call 7: 2"
   },
   {
-   "t": 45.6,
-   "msg": "call 8: 1 waypoints in 30 s, stage_estimate 3, done=False: The observed bottle is centered at [2.0995, 0.0495] over the paper, with its bottom at z=1.103, exactly 0.100 m above th"
+   "t": 60.3,
+   "msg": "call 8: 2 waypoints in 23 s, stage_estimate 2, done=False: The previous offset dosing dwell did not advance the observed stage. Correct the TCP's horizontal alignment over the pap"
   },
   {
-   "t": 45.6,
+   "t": 60.3,
    "msg": "pre-swing skipped: both arcs cross an instrument box"
   },
   {
-   "t": 47.6,
-   "msg": "waypoint 'dwell_at_observed_100mm_bottle_clearance' reached (err 0 mm; Maintain the existing upright grasp and orientation. Bottle bottom is 0.100 m ab)"
+   "t": 62.3,
+   "msg": "waypoint 'correct_tcp_alignment_over_paper' reached (err 0 mm; Short local alignment above the balance, without descending toward its housing. )"
   },
   {
-   "t": 47.6,
+   "t": 62.3,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 64.3,
+   "msg": "waypoint 'aligned_dosing_dwell' reached (err 0 mm; Stationary hold. Reobserve the carried bottle's actual pose and paper clearance )"
+  },
+  {
+   "t": 64.3,
    "msg": "stage after call 8: 2"
   },
   {
-   "t": 47.6,
-   "msg": "call 9: 0 waypoints in 30 s, stage_estimate 2, done=False: The current bottle AABB places its bottom at z=1.103 m, exactly 0.100 m above the paper top, with its horizontal center "
+   "t": 64.3,
+   "msg": "call 9: 3 waypoints in 24 s, stage_estimate 2, done=False: The bottle is not currently centered over the paper: its measured center is [2.2705, -0.2965], despite TCP alignment ove"
   },
   {
-   "t": 47.6,
+   "t": 64.3,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 65.3,
+   "msg": "waypoint 'lift_for_offset_correction' reached (err 1 mm; Vertical lift raises the measured bottle bottom to 1.248 m, more than 0.10 m abo)"
+  },
+  {
+   "t": 65.3,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 66.8,
+   "msg": "waypoint 'align_actual_bottle_center' reached (err 0 mm; Translate above the balance with bottle-bottom clearance of 0.106 m; compensate )"
+  },
+  {
+   "t": 66.8,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 69.3,
+   "msg": "waypoint 'corrected_bottle_dosing_dwell' reached (err 0 mm; Vertical target descent places the measured bottle bottom at 1.179 m, exactly 0.)"
+  },
+  {
+   "t": 69.3,
    "msg": "stage after call 9: 2"
   },
   {
-   "t": 47.6,
-   "msg": "call 10: 2 waypoints in 25 s, stage_estimate 3, done=False: The observed bottle bottom is at z=1.103, exactly 0.100 m above the paper top, and prior calls already held this pose fo"
+   "t": 69.3,
+   "msg": "call 10: 2 waypoints in 25 s, stage_estimate 2, done=False: The bottle is still attached and the dosing stage has not been confirmed. Its bottom is currently 0.100 m above the pape"
   },
   {
-   "t": 47.6,
+   "t": 69.3,
    "msg": "pre-swing skipped: both arcs cross an instrument box"
   },
   {
-   "t": 50.6,
+   "t": 71.3,
+   "msg": "waypoint 'align_tcp_with_paper_at_safe_height' reached (err 0 mm; Maintain the current height during this local dosing alignment. Based on the obs)"
+  },
+  {
+   "t": 71.3,
    "msg": "pre-swing skipped: both arcs cross an instrument box"
   },
   {
-   "t": 51.3,
-   "msg": "release precursor_1 at 'return_bottle_vertically_and_release' (err 0 mm, dp 776 mm)"
+   "t": 73.3,
+   "msg": "waypoint 'upright_dosing_confirmation_dwell' reached (err 0 mm; Hold stationary without opening or tilting. Reobserve the actual bottle alignmen)"
   },
   {
-   "t": 51.3,
-   "msg": "pre-swing skipped: both arcs cross an instrument box"
-  },
-  {
-   "t": 53.3,
-   "msg": "waypoint 'retreat_upward_120mm' reached (err 0 mm; Vertical retreat with the bottle detached; keep the released bottle stationary.)"
-  },
-  {
-   "t": 53.3,
+   "t": 73.3,
    "msg": "stage after call 10: 2"
   },
   {
-   "t": 53.3,
-   "msg": "call 11: 0 waypoints in 21 s, stage_estimate 2, done=False: Recovery is blocked by inconsistent placement geometry. precursor_1 currently intersects the weighing paper: its z range"
+   "t": 73.3,
+   "msg": "call 11: 3 waypoints in 25 s, stage_estimate 2, done=False: The observed bottle is offset from the TCP by approximately (+0.0125, -0.0965) m horizontally, so the previous TCP-cente"
   },
   {
-   "t": 53.3,
+   "t": 73.3,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 74.3,
+   "msg": "waypoint 'lift_before_measured_offset_correction' reached (err 1 mm; Vertical lift brings the observed bottle bottom to approximately 1.243 m, at lea)"
+  },
+  {
+   "t": 74.3,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 75.8,
+   "msg": "waypoint 'center_observed_bottle_over_paper' reached (err 0 mm; Translate at transport height; the measured attachment offset places the bottle )"
+  },
+  {
+   "t": 75.8,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 78.3,
+   "msg": "waypoint 'bottle_bottom_100mm_above_paper_dwell' reached (err 0 mm; Vertical target descent leaves the bottle bottom at approximately 1.179 m: 0.100)"
+  },
+  {
+   "t": 78.3,
    "msg": "stage after call 11: 2"
   },
   {
-   "t": 53.3,
-   "msg": "call 12: 0 waypoints in 17 s, stage_estimate 2, done=False: Hold position rather than attempt an unverified recovery. The gripper is open and the recorded release and retreat have "
+   "t": 78.3,
+   "msg": "call 12: 1 waypoints in 17 s, stage_estimate 2, done=False: The measured bottle bottom is at z=1.179 m, exactly 0.100 m above the paper top, and its XY centre matches the paper cen"
   },
   {
-   "t": 53.3,
+   "t": 78.3,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 80.3,
+   "msg": "waypoint 'maintain_measured_dosing_pose' reached (err 0 mm; Stationary dosing hold; retain the existing grasp. Bottle bottom is 0.100 m abov)"
+  },
+  {
+   "t": 80.3,
    "msg": "stage after call 12: 2"
   }
  ],
@@ -245,221 +291,242 @@
   "objects released inside instrument chambers are pinned at the release pose (chamber interiors are convex-hull solid)",
   "tilt metric excludes deliberate pour phases"
  ],
- "penetration_ticks": 35,
- "penetration_pairs": {
-  "precursor_1\u2282dosing_balance": 32.5
- },
  "loop": {
   "trial": 0,
   "stage": 2,
   "calls": 12,
   "budget": 12,
-  "tokens_in": 53711,
-  "tokens_out": 6774,
-  "wall_s": 670.5,
-  "penetration_ticks": 35,
+  "tokens_in": 53862,
+  "tokens_out": 6911,
+  "wall_s": 777.4,
+  "penetration_ticks": 0,
   "gate_pass": false,
   "history": [
    {
     "call": 0,
     "waypoints": [
-     "move_above_precursor_1",
+     "above_precursor_1",
      "precursor_1_pregrasp",
      "grasp_precursor_1"
     ],
     "outcomes": [
-     "waypoint 'move_above_precursor_1' reached (err 9 mm; High transfer to the bottle axis, cle",
+     "waypoint 'above_precursor_1' reached (err 2 mm; High approach clears the carousel and adja",
      "pre-swing skipped: both arcs cross an instrument box",
-     "waypoint 'precursor_1_pregrasp' reached (err 0 mm; Vertical approach to 0.12 m above the b",
+     "waypoint 'precursor_1_pregrasp' reached (err 1 mm; Vertical descent to 0.12 m above the bo",
      "pre-swing skipped: both arcs cross an instrument box",
-     "IK stuck (253 mm) \u2192 re-home and retry",
-     "grasp precursor_1 (err 1 mm, width 55 mm)"
+     "IK stuck (204 mm) \u2192 re-home and retry",
+     "grasp precursor_1 (err 6 mm, width 55 mm)"
     ],
     "stage_after": 1
    },
    {
     "call": 1,
     "waypoints": [
-     "lift_precursor_1_from_observed_pose",
-     "carry_southwest_of_base",
-     "carry_south_of_base"
+     "lift_precursor_1_from_measured_pose",
+     "southern_transfer_waypoint"
     ],
     "outcomes": [
      "pre-swing skipped: both arcs cross an instrument box",
-     "waypoint 'lift_precursor_1_from_observed_pose' reached (err 0 mm; Vertical lift at the rep",
-     "waypoint 'carry_southwest_of_base' reached (err 20 mm; Maintain high upright carry above t",
-     "waypoint 'carry_south_of_base' reached (err 60 mm; Southern transfer avoids the base inner"
+     "waypoint 'lift_precursor_1_from_measured_pose' reached (err 2 mm; Vertical lift at the cur",
+     "pre-swing skipped: both arcs cross an instrument box",
+     "IK stuck (310 mm) while carrying \u2192 lift and retry",
+     "waypoint 'southern_transfer_waypoint' reached (err 306 mm; Carry upright above the mixer a"
     ],
     "stage_after": 2
    },
    {
     "call": 2,
     "waypoints": [
-     "carry_southeast_of_base",
-     "align_high_above_paper"
+     "measured_pose_southward_recovery",
+     "short_southern_transfer"
     ],
     "outcomes": [
-     "waypoint 'carry_southeast_of_base' reached (err 0 mm; Southern route stays outside the 0.3",
-     "pre-swing skipped: both arcs cross an instrument box",
-     "waypoint 'align_high_above_paper' reached (err 0 mm; Maintain upright high carry over the "
+     "IK stuck (85 mm) while carrying \u2192 lift and retry",
+     "waypoint 'measured_pose_southward_recovery' reached (err 90 mm; Move outward from the curr",
+     "IK stuck (140 mm) while carrying \u2192 lift and retry",
+     "waypoint 'short_southern_transfer' reached (err 245 mm; Remain south of the oven and east "
     ],
     "stage_after": 2
    },
    {
     "call": 3,
     "waypoints": [
-     "lower_to_dosing_pose",
-     "hold_dosing_pose_for_2_seconds"
+     "lower_and_move_outward_recovery"
     ],
     "outcomes": [
-     "pre-swing skipped: both arcs cross an instrument box",
-     "\u26a0 AABB overlap while carrying: precursor_1\u2282dosing_balance",
-     "waypoint 'lower_to_dosing_pose' reached (err 0 mm; Vertical descent over the paper; bottle",
-     "pre-swing skipped: both arcs cross an instrument box",
-     "waypoint 'hold_dosing_pose_for_2_seconds' reached (err 0 mm; Maintain the upright bottle a"
+     "waypoint 'lower_and_move_outward_recovery' reached (err 0 mm; Open corridor east of the mi"
     ],
     "stage_after": 2
    },
    {
     "call": 4,
     "waypoints": [
-     "lift_clear_after_reported_overlap"
+     "southern_corridor_transfer",
+     "balance_high_approach"
     ],
     "outcomes": [
+     "waypoint 'southern_corridor_transfer' reached (err 0 mm; Stay south of the oven and east o",
      "pre-swing skipped: both arcs cross an instrument box",
-     "waypoint 'lift_clear_after_reported_overlap' reached (err 0 mm; Vertical recovery without "
+     "waypoint 'balance_high_approach' reached (err 0 mm; Approach the balance at transport heig"
     ],
     "stage_after": 2
    },
    {
     "call": 5,
     "waypoints": [
-     "align_bottle_above_paper_with_observed_offset",
-     "lower_offset_corrected_bottle_to_dosing_height",
-     "hold_corrected_dosing_pose_for_two_seconds"
+     "align_carried_bottle_over_paper",
+     "paper_dosing_hold"
     ],
     "outcomes": [
      "pre-swing skipped: both arcs cross an instrument box",
-     "waypoint 'align_bottle_above_paper_with_observed_offset' reached (err 0 mm; Translate at c",
+     "waypoint 'align_carried_bottle_over_paper' reached (err 0 mm; Preserve the measured attach",
      "pre-swing skipped: both arcs cross an instrument box",
-     "waypoint 'lower_offset_corrected_bottle_to_dosing_height' reached (err 0 mm; Vertical desc",
-     "pre-swing skipped: both arcs cross an instrument box",
-     "waypoint 'hold_corrected_dosing_pose_for_two_seconds' reached (err 0 mm; Hold upright with"
+     "waypoint 'paper_dosing_hold' reached (err 0 mm; Vertical target approach places the measur"
     ],
     "stage_after": 2
    },
    {
     "call": 6,
     "waypoints": [
-     "hold_verified_bottle_dosing_pose"
+     "verified_dosing_dwell_2s"
     ],
     "outcomes": [
      "pre-swing skipped: both arcs cross an instrument box",
-     "waypoint 'hold_verified_bottle_dosing_pose' reached (err 0 mm; Maintain the current verifi"
+     "waypoint 'verified_dosing_dwell_2s' reached (err 0 mm; Stationary dosing pose: bottle bott"
     ],
     "stage_after": 2
    },
    {
     "call": 7,
     "waypoints": [
-     "dwell_at_observed_100mm_bottle_clearance"
+     "correct_tcp_alignment_over_paper",
+     "aligned_dosing_dwell"
     ],
     "outcomes": [
      "pre-swing skipped: both arcs cross an instrument box",
-     "waypoint 'dwell_at_observed_100mm_bottle_clearance' reached (err 0 mm; Maintain the existi"
+     "waypoint 'correct_tcp_alignment_over_paper' reached (err 0 mm; Short local alignment above",
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'aligned_dosing_dwell' reached (err 0 mm; Stationary hold. Reobserve the carried "
     ],
     "stage_after": 2
    },
    {
     "call": 8,
-    "waypoints": [],
-    "outcomes": [],
+    "waypoints": [
+     "lift_for_offset_correction",
+     "align_actual_bottle_center",
+     "corrected_bottle_dosing_dwell"
+    ],
+    "outcomes": [
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'lift_for_offset_correction' reached (err 1 mm; Vertical lift raises the measured",
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'align_actual_bottle_center' reached (err 0 mm; Translate above the balance with ",
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'corrected_bottle_dosing_dwell' reached (err 0 mm; Vertical target descent places"
+    ],
     "stage_after": 2
    },
    {
     "call": 9,
     "waypoints": [
-     "return_bottle_vertically_and_release",
-     "retreat_upward_120mm"
+     "align_tcp_with_paper_at_safe_height",
+     "upright_dosing_confirmation_dwell"
     ],
     "outcomes": [
      "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'align_tcp_with_paper_at_safe_height' reached (err 0 mm; Maintain the current hei",
      "pre-swing skipped: both arcs cross an instrument box",
-     "release precursor_1 at 'return_bottle_vertically_and_release' (err 0 mm, dp 776 mm)",
-     "pre-swing skipped: both arcs cross an instrument box",
-     "waypoint 'retreat_upward_120mm' reached (err 0 mm; Vertical retreat with the bottle detach"
+     "waypoint 'upright_dosing_confirmation_dwell' reached (err 0 mm; Hold stationary without op"
     ],
     "stage_after": 2
    },
    {
     "call": 10,
-    "waypoints": [],
-    "outcomes": [],
+    "waypoints": [
+     "lift_before_measured_offset_correction",
+     "center_observed_bottle_over_paper",
+     "bottle_bottom_100mm_above_paper_dwell"
+    ],
+    "outcomes": [
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'lift_before_measured_offset_correction' reached (err 1 mm; Vertical lift brings ",
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'center_observed_bottle_over_paper' reached (err 0 mm; Translate at transport hei",
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'bottle_bottom_100mm_above_paper_dwell' reached (err 0 mm; Vertical target descen"
+    ],
     "stage_after": 2
    },
    {
     "call": 11,
-    "waypoints": [],
-    "outcomes": [],
+    "waypoints": [
+     "maintain_measured_dosing_pose"
+    ],
+    "outcomes": [
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'maintain_measured_dosing_pose' reached (err 0 mm; Stationary dosing hold; retain"
+    ],
     "stage_after": 2
    }
   ]
  },
  "astra_plans": [
   {
-   "reasoning_summary": "Approach precursor_1 from above, descend vertically to its prescribed grasp height of 1.0469 m, and grasp. Wait for feedback before lifting and carrying.",
+   "reasoning_summary": "Approach precursor_1 vertically and grasp at z = 1.004 + 0.45 \u00d7 0.102 = 1.0499 m. First move above the bottle at the current safe height, then descend to the pre-grasp and grasp poses. Wait for grasp feedback before carrying.",
    "waypoints": [
     {
-     "name": "move_above_precursor_1",
+     "name": "above_precursor_1",
      "tcp_xyz_m": [
-      1.35,
-      0.25,
-      1.488
+      1.13,
+      0.23,
+      1.49
      ],
      "tool_down": true,
      "yaw_deg": 0,
      "gripper": "open",
      "attach": "",
      "detach": false,
-     "duration_s": 2.0,
-     "clearance_note": "High transfer to the bottle axis, clear of neighboring bottles and stations."
+     "duration_s": 3,
+     "clearance_note": "High approach clears the carousel and adjacent bottles; horizontal base radius remains within 0.25\u20130.75 m."
     },
     {
      "name": "precursor_1_pregrasp",
      "tcp_xyz_m": [
-      1.35,
-      0.25,
-      1.223
+      1.13,
+      0.23,
+      1.226
      ],
      "tool_down": true,
      "yaw_deg": 0,
      "gripper": "open",
      "attach": "",
      "detach": false,
-     "duration_s": 1.5,
-     "clearance_note": "Vertical approach to 0.12 m above the bottle top."
+     "duration_s": 2,
+     "clearance_note": "Vertical descent to 0.12 m above the bottle top."
     },
     {
      "name": "grasp_precursor_1",
      "tcp_xyz_m": [
-      1.35,
-      0.25,
-      1.0469
+      1.13,
+      0.23,
+      1.0499
      ],
      "tool_down": true,
      "yaw_deg": 0,
      "gripper": "close",
      "attach": "precursor_1",
      "detach": false,
-     "duration_s": 1.5,
-     "clearance_note": "Grasp at 45% of the 0.102 m bottle height; contact is restricted to the target bottle."
+     "duration_s": 2,
+     "clearance_note": "Grasp at 45% bottle height; intentional contact only with precursor_1."
     }
    ],
    "safety_checks": [
-    "Grasp height calculated as 1.001 + 0.45 \u00d7 0.102 = 1.0469 m.",
-    "Maintain at least 0.03 m clearance from non-target AABBs.",
-    "Use motion interpolation with translation increments no greater than 0.020 m and orientation deviation no greater than 0.25 rad.",
-    "Check robot reach and full gripper clearance during execution; keep the tool vertical."
+    "Execute translation with interpolation steps no greater than 0.020 m.",
+    "Maintain tool-down orientation within 0.25 rad; no pouring tilt is required.",
+    "Check full gripper and robot geometry for at least 0.03 m clearance from non-target objects.",
+    "Bottle approach radius is approximately 0.621 m; verify inverse kinematics and joint limits before execution.",
+    "Confirm attachment from the next observation before lifting."
    ],
    "done": false,
    "stage_estimate": 1,
@@ -467,14 +534,14 @@
     "usage": {
      "attribution": {
       "items": {
-       "msg_03e0586e59171630016aa556fccd1087d09d5ba1630c2c77ca": {
+       "msg_0a8b921fa78612ca016aa5b00a586087d0aba6c9ac4164cdce": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
          {
           "cache_write_tokens": 0,
           "cached_tokens": 0,
-          "input_tokens": 2300,
+          "input_tokens": 2305,
           "output_tokens": 0
          },
          {
@@ -502,28 +569,22 @@
           "output_tokens": 0
          }
         ],
-        "input_tokens": 3824,
+        "input_tokens": 3829,
         "output_tokens": 0
        },
-       "rs_03e0586e59171630016aa55700508887d0a37a8c9e97280996": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 2,
-        "output_tokens": 64
-       },
-       "msg_03e0586e59171630016aa55703163487d094baa1e3ef868d74": {
+       "msg_0a8b921fa78612ca016aa5b00c1d1487d0b0fd503604871650": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
          {
           "cache_write_tokens": 0,
           "cached_tokens": 0,
-          "input_tokens": 0,
-          "output_tokens": 500
+          "input_tokens": 2,
+          "output_tokens": 520
          }
         ],
-        "input_tokens": 0,
-        "output_tokens": 500
+        "input_tokens": 2,
+        "output_tokens": 520
        }
       },
       "request_fields": {
@@ -541,47 +602,32 @@
        }
       }
      },
-     "input_tokens": 4002,
+     "input_tokens": 4007,
      "input_tokens_details": {
       "cache_write_tokens": 0,
       "cached_tokens": 0
      },
-     "output_tokens": 564,
+     "output_tokens": 520,
      "output_tokens_details": {
-      "reasoning_tokens": 64
+      "reasoning_tokens": 0
      },
-     "total_tokens": 4566
+     "total_tokens": 4527
     },
-    "elapsed_s": 22.277902149013244,
+    "elapsed_s": 19.224784080055542,
     "effort": "medium",
     "call": 0
    },
    "validator_corrections": []
   },
   {
-   "reasoning_summary": "The bottle is already reported grasped. Lift vertically from the observed TCP, then route around the south side of the robot base rather than crossing its excluded inner radius. Keep the bottle upright and retain the grasp; continue toward the paper after observing execution.",
+   "reasoning_summary": "The gripper reports precursor_1 attached. Lift vertically from the measured TCP before moving laterally, then route south of the robot base to avoid the inner usable-radius exclusion. Defer the dosing descent until the lifted pose is observed.",
    "waypoints": [
     {
-     "name": "lift_precursor_1_from_observed_pose",
+     "name": "lift_precursor_1_from_measured_pose",
      "tcp_xyz_m": [
-      1.35,
-      0.251,
-      1.38
-     ],
-     "tool_down": true,
-     "yaw_deg": 0,
-     "gripper": "hold",
-     "attach": "",
-     "detach": false,
-     "duration_s": 2,
-     "clearance_note": "Vertical lift at the reported TCP. At transfer height, the bottle bottom is approximately 1.334 m using the specified 45%-height grasp."
-    },
-    {
-     "name": "carry_southwest_of_base",
-     "tcp_xyz_m": [
-      1.4,
-      -0.15,
-      1.38
+      1.128,
+      0.227,
+      1.39
      ],
      "tool_down": true,
      "yaw_deg": 0,
@@ -589,45 +635,45 @@
      "attach": "",
      "detach": false,
      "duration_s": 3,
-     "clearance_note": "Maintain high upright carry above the pipette region; bottle bottom clears the pipette top by approximately 0.108 m. Segment stays outside the 0.32 m inner horizontal radius."
+     "clearance_note": "Vertical lift at the current measured XY; retain the existing grasp. Elevated bottle bottom clears the mixer top by more than 0.10 m, allowing for the measured TCP-to-bottle offset."
     },
     {
-     "name": "carry_south_of_base",
+     "name": "southern_transfer_waypoint",
      "tcp_xyz_m": [
-      1.75,
-      -0.25,
-      1.38
+      1.65,
+      -0.2,
+      1.39
      ],
      "tool_down": true,
      "yaw_deg": 0,
      "gripper": "hold",
      "attach": "",
      "detach": false,
-     "duration_s": 3,
-     "clearance_note": "Southern transfer avoids the base inner radius, carousel, mixer, and oven. Retain height before continuing toward the paper."
+     "duration_s": 4,
+     "clearance_note": "Carry upright above the mixer and nearby objects. This southwest route stays outside the 0.25 m base exclusion and avoids the oven and carousel."
     }
    ],
    "safety_checks": [
-    "Use the reported closed_on:precursor_1 state; do not issue another attachment.",
-    "Keep tool_down=true and preserve bottle uprightness within 0.25 rad.",
-    "Planned segments remain within the usable radial range and 0.85 m reach.",
-    "Maintain at least 0.03 m object clearance; verify the actual attachment transform and swept gripper geometry during execution.",
-    "Dosing hold, return placement, release, and final retreat remain pending."
+    "Keep precursor_1 attached; do not close again or release during transfer.",
+    "Maintain tool_down=true and orientation deviation within 0.25 rad.",
+    "Both endpoints and the straight transfer segment remain within the usable radial range.",
+    "Check tracking error against 20 mm and verify the actual attached-bottle pose before planning the dosing descent.",
+    "Maintain at least 0.03 m clearance from non-target objects throughout execution."
    ],
    "done": false,
-   "stage_estimate": 1,
+   "stage_estimate": 2,
    "_meta": {
     "usage": {
      "attribution": {
       "items": {
-       "msg_0c83adb1c01e42b7016aa5576ae3a887d0a51d69e2d4da841a": {
+       "msg_0bccfdc9719e3709016aa5b08370b087d080faaba7b74dbc88": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
          {
           "cache_write_tokens": 0,
           "cached_tokens": 0,
-          "input_tokens": 2468,
+          "input_tokens": 2469,
           "output_tokens": 0
          },
          {
@@ -655,16 +701,16 @@
           "output_tokens": 0
          }
         ],
-        "input_tokens": 3992,
+        "input_tokens": 3993,
         "output_tokens": 0
        },
-       "rs_0c83adb1c01e42b7016aa5576ca93487d0accb1a968e9535db": {
+       "rs_0bccfdc9719e3709016aa5b0850b7487d095ab0a5d9b01049a": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "input_tokens": 2,
-        "output_tokens": 150
+        "output_tokens": 197
        },
-       "msg_0c83adb1c01e42b7016aa557745d4487d0844afa854dffafc8": {
+       "msg_0bccfdc9719e3709016aa5b08cd21487d082b6269f89cfe092": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
@@ -672,11 +718,11 @@
           "cache_write_tokens": 0,
           "cached_tokens": 0,
           "input_tokens": 0,
-          "output_tokens": 552
+          "output_tokens": 429
          }
         ],
         "input_tokens": 0,
-        "output_tokens": 552
+        "output_tokens": 429
        }
       },
       "request_fields": {
@@ -694,62 +740,63 @@
        }
       }
      },
-     "input_tokens": 4170,
+     "input_tokens": 4171,
      "input_tokens_details": {
       "cache_write_tokens": 0,
       "cached_tokens": 0
      },
-     "output_tokens": 702,
+     "output_tokens": 626,
      "output_tokens_details": {
-      "reasoning_tokens": 150
+      "reasoning_tokens": 197
      },
-     "total_tokens": 4872
+     "total_tokens": 4797
     },
-    "elapsed_s": 28.98669588298071,
+    "elapsed_s": 22.44379625201691,
     "effort": "medium",
     "call": 1
    },
    "validator_corrections": []
   },
   {
-   "reasoning_summary": "Continue the upright carry around the south side of the base, then align above the weighing paper. Because the last transfer had a 60 mm position error, verify alignment in the next observation before descending to the dosing pose.",
+   "reasoning_summary": "The previous transfer missed its target by 306 mm, so plan from the measured TCP rather than assuming that transfer succeeded. Use two shorter upright motions into the southern clear corridor, lowering slightly to improve reach while retaining instrument clearance. Keep the existing grasp and reassess before approaching the paper.",
    "waypoints": [
     {
-     "name": "carry_southeast_of_base",
+     "name": "measured_pose_southward_recovery",
      "tcp_xyz_m": [
-      2.05,
-      -0.2,
-      1.433
+      1.58,
+      -0.09,
+      1.49
      ],
      "tool_down": true,
      "yaw_deg": 0,
      "gripper": "hold",
      "attach": "",
      "detach": false,
-     "duration_s": 3,
-     "clearance_note": "Southern route stays outside the 0.32 m inner radius. Bottle bottom remains approximately 1.387 m, more than 0.10 m above the dosing balance."
+     "duration_s": 2.0,
+     "clearance_note": "Move outward from the current near-base pose. The measured bottle bottom is approximately 0.062 m below the TCP; its predicted bottom remains above 1.428 m."
     },
     {
-     "name": "align_high_above_paper",
+     "name": "short_southern_transfer",
      "tcp_xyz_m": [
-      2.1,
-      0.05,
-      1.433
+      1.75,
+      -0.18,
+      1.43
      ],
      "tool_down": true,
      "yaw_deg": 0,
      "gripper": "hold",
      "attach": "",
      "detach": false,
-     "duration_s": 3,
-     "clearance_note": "Maintain upright high carry over the balance edge to the paper center; remain south of the carousel and oven. Verify actual TCP alignment before vertical descent."
+     "duration_s": 2.0,
+     "clearance_note": "Remain south of the oven and east of the mixer. Predicted bottle bottom stays at or above 1.368 m, more than 0.10 m above nearby southern instruments."
     }
    ],
    "safety_checks": [
-    "Keep precursor_1 attached and gripper closed throughout; do not release at the paper.",
-    "Planned segments remain within the 0.32\u20130.75 m usable radial band and nominal 0.85 m reach.",
-    "Maintain at least 0.03 m clearance from other object AABBs and upright orientation deviation below 0.25 rad.",
-    "Confirm the next observed TCP error is at most 20 mm before attempting the dosing hold."
+    "Both target TCP positions lie within the 0.25\u20130.75 m usable radial band and the stated 0.85 m reach.",
+    "Preserve the existing attachment; do not reopen or regrasp.",
+    "Maintain upright tool orientation within 0.25 rad and at least 0.03 m clearance from unrelated objects.",
+    "Validate swept gripper, bottle, and robot-link clearance before execution.",
+    "Stop and reobserve if either waypoint exceeds 20 mm tracking error; do not treat a failed transfer as completed."
    ],
    "done": false,
    "stage_estimate": 2,
@@ -757,14 +804,14 @@
     "usage": {
      "attribution": {
       "items": {
-       "msg_02aa03e9ba86ed02016aa557ce276487d0bf268c27a9adc8f9": {
+       "msg_02e35c3866f3aea1016aa5b0e7dc5c87d0be85520aa898d49f": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
          {
           "cache_write_tokens": 0,
           "cached_tokens": 0,
-          "input_tokens": 2604,
+          "input_tokens": 2599,
           "output_tokens": 0
          },
          {
@@ -792,16 +839,16 @@
           "output_tokens": 0
          }
         ],
-        "input_tokens": 4128,
+        "input_tokens": 4123,
         "output_tokens": 0
        },
-       "rs_02aa03e9ba86ed02016aa557d0121887d08a88b41103c8620f": {
+       "rs_02e35c3866f3aea1016aa5b0e9615087d08f0e90ee7eb23f3b": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "input_tokens": 2,
-        "output_tokens": 69
+        "output_tokens": 98
        },
-       "msg_02aa03e9ba86ed02016aa557d4483087d0ba223a2a8ee7ebc1": {
+       "msg_02e35c3866f3aea1016aa5b0ec756087d0bd83b2de3edc41e4": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
@@ -809,11 +856,11 @@
           "cache_write_tokens": 0,
           "cached_tokens": 0,
           "input_tokens": 0,
-          "output_tokens": 427
+          "output_tokens": 469
          }
         ],
         "input_tokens": 0,
-        "output_tokens": 427
+        "output_tokens": 469
        }
       },
       "request_fields": {
@@ -831,77 +878,62 @@
        }
       }
      },
-     "input_tokens": 4306,
+     "input_tokens": 4301,
      "input_tokens_details": {
       "cache_write_tokens": 0,
       "cached_tokens": 0
      },
-     "output_tokens": 496,
+     "output_tokens": 567,
      "output_tokens_details": {
-      "reasoning_tokens": 69
+      "reasoning_tokens": 98
      },
-     "total_tokens": 4802
+     "total_tokens": 4868
     },
-    "elapsed_s": 20.33171699900413,
+    "elapsed_s": 20.362897515995428,
     "effort": "medium",
     "call": 2
    },
    "validator_corrections": []
   },
   {
-   "reasoning_summary": "The bottle is already held above the paper. Descend vertically to an upright dosing pose with the bottle bottom 0.10 m above the paper top, accounting for the grasp at 45% of its 0.102 m height, then dwell for 2 seconds.",
+   "reasoning_summary": "The bottle remains attached, but previous transfers had large tracking errors. Use one shorter recovery move from the measured TCP, lowering the elevated arm into a more reachable configuration while moving outward toward the southern transfer corridor. Reobserve before attempting the dosing pose.",
    "waypoints": [
     {
-     "name": "lower_to_dosing_pose",
+     "name": "lower_and_move_outward_recovery",
      "tcp_xyz_m": [
-      2.1,
-      0.05,
-      1.1489
+      1.66,
+      -0.1,
+      1.45
      ],
      "tool_down": true,
-     "yaw_deg": 0,
+     "yaw_deg": 90,
      "gripper": "hold",
      "attach": "",
      "detach": false,
-     "duration_s": 3,
-     "clearance_note": "Vertical descent over the paper; bottle bottom target z=1.103 m. No horizontal transfer at this low height."
-    },
-    {
-     "name": "hold_dosing_pose_for_2_seconds",
-     "tcp_xyz_m": [
-      2.1,
-      0.05,
-      1.1489
-     ],
-     "tool_down": true,
-     "yaw_deg": 0,
-     "gripper": "hold",
-     "attach": "",
-     "detach": false,
-     "duration_s": 2,
-     "clearance_note": "Maintain the upright bottle and closed grasp without tilting or releasing."
+     "duration_s": 3.0,
+     "clearance_note": "Open corridor east of the mixer and north of the vial rack. Using the observed TCP-to-bottle-bottom offset of approximately 0.083 m, the bottle bottom remains at least 1.367 m high, above nearby instrument tops by more than 0.10 m."
     }
    ],
    "safety_checks": [
-    "TCP horizontal radius from the base is approximately 0.381 m, within the usable 0.32\u20130.75 m range.",
-    "Bottle bottom clearance above the paper is 0.100 m at the nominal grasp offset.",
-    "The vertical descent corridor remains more than 0.03 m from neighboring station AABBs.",
-    "Verify dosing-pose position error is at most 20 mm and upright angular deviation is at most 0.25 rad before accepting the dwell."
+    "Target horizontal radius from the robot base is approximately 0.313 m, within the 0.25\u20130.75 m usable range; the measured starting radius is below that range, so this move increases it.",
+    "Keep the gripper closed and tool down; do not release or perform dosing during recovery.",
+    "Check swept robot and carried-bottle clearance before execution; maintain at least 0.03 m from unrelated objects.",
+    "Require measured TCP error no greater than 0.020 m and orientation deviation no greater than 0.25 rad before proceeding; stop for replanning if tracking fails."
    ],
    "done": false,
-   "stage_estimate": 3,
+   "stage_estimate": 2,
    "_meta": {
     "usage": {
      "attribution": {
       "items": {
-       "msg_0389e71772156a61016aa55814614487d0a597423794222f4f": {
+       "msg_0361f007c40833f2016aa5b159117087d0b7f887dd5989f13b": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
          {
           "cache_write_tokens": 0,
           "cached_tokens": 0,
-          "input_tokens": 2708,
+          "input_tokens": 2718,
           "output_tokens": 0
          },
          {
@@ -929,16 +961,16 @@
           "output_tokens": 0
          }
         ],
-        "input_tokens": 4232,
+        "input_tokens": 4242,
         "output_tokens": 0
        },
-       "rs_0389e71772156a61016aa55817d7a487d0bfd49ca9dc4484d4": {
+       "rs_0361f007c40833f2016aa5b15ac21087d0880c8912dd3fd57c": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "input_tokens": 2,
-        "output_tokens": 40
+        "output_tokens": 63
        },
-       "msg_0389e71772156a61016aa5581ab72087d0830dbe4a85f0a874": {
+       "msg_0361f007c40833f2016aa5b15d771487d0b680dfbef92863b4": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
@@ -946,11 +978,11 @@
           "cache_write_tokens": 0,
           "cached_tokens": 0,
           "input_tokens": 0,
-          "output_tokens": 419
+          "output_tokens": 371
          }
         ],
         "input_tokens": 0,
-        "output_tokens": 419
+        "output_tokens": 371
        }
       },
       "request_fields": {
@@ -968,48 +1000,63 @@
        }
       }
      },
-     "input_tokens": 4410,
+     "input_tokens": 4420,
      "input_tokens_details": {
       "cache_write_tokens": 0,
       "cached_tokens": 0
      },
-     "output_tokens": 459,
+     "output_tokens": 434,
      "output_tokens_details": {
-      "reasoning_tokens": 40
+      "reasoning_tokens": 63
      },
-     "total_tokens": 4869
+     "total_tokens": 4854
     },
-    "elapsed_s": 20.647528878005687,
+    "elapsed_s": 16.607193481992,
     "effort": "medium",
     "call": 3
    },
    "validator_corrections": []
   },
   {
-   "reasoning_summary": "The previous dosing attempt reported a carried-bottle overlap with the dosing balance and did not advance the task stage. Lift vertically to restore clearance before retrying; verify the actual bottle-to-TCP transform rather than treating the previous hold as successful.",
+   "reasoning_summary": "The last recovery waypoint was reached accurately. Continue with two moderate upright transfer moves through the open southern corridor, then remeasure the carried bottle before aligning the dosing pose; its observed centre is offset from the TCP.",
    "waypoints": [
     {
-     "name": "lift_clear_after_reported_overlap",
+     "name": "southern_corridor_transfer",
      "tcp_xyz_m": [
-      2.1,
-      0.05,
-      1.34
+      1.9,
+      -0.16,
+      1.4
      ],
      "tool_down": true,
      "yaw_deg": 0,
      "gripper": "hold",
      "attach": "",
      "detach": false,
-     "duration_s": 2.0,
-     "clearance_note": "Vertical recovery without lateral motion toward the balance. With the intended 45%-height grasp, the bottle bottom reaches z=1.294, above the balance top by 0.154 m. Verify actual carried geometry after the lift."
+     "duration_s": 3,
+     "clearance_note": "Stay south of the oven and east of the mixer. The measured bottle-bottom offset of approximately -0.077 m leaves the bottle well above nearby instruments."
+    },
+    {
+     "name": "balance_high_approach",
+     "tcp_xyz_m": [
+      2.1,
+      -0.2,
+      1.36
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 3,
+     "clearance_note": "Approach the balance at transport height, without descending to dose. Estimated bottle bottom is 1.283 m, exceeding the balance top by 0.141 m."
     }
    ],
    "safety_checks": [
-    "Keep the gripper closed; do not detach during recovery.",
-    "TCP horizontal radius from the base is 0.381 m, within the usable 0.32\u20130.75 m range.",
-    "Monitor the reported overlap during extraction; stop if upward motion does not reduce penetration.",
-    "Before another dosing descent, confirm bottle pose and attachment offset and validate at least 0.03 m clearance from the balance.",
-    "Require TCP tracking error at most 0.020 m and upright orientation deviation at most 0.25 rad."
+    "Both endpoints and connecting segments remain within the 0.25\u20130.75 m usable radial workspace.",
+    "Maintain upright tool orientation and retain the existing grasp.",
+    "Interpolate translation in increments no greater than 20 mm and orientation deviation no greater than 0.25 rad.",
+    "Maintain at least 0.03 m clearance for the carried bottle and robot geometry; verify collision-free IK before execution.",
+    "Inspect actual TCP and bottle positions after these moves before commanding the precise dosing height."
    ],
    "done": false,
    "stage_estimate": 2,
@@ -1017,14 +1064,14 @@
     "usage": {
      "attribution": {
       "items": {
-       "msg_045382a9416ac512016aa5584afa0487d0b23ee83ee0028ea2": {
+       "msg_00e9e3f77047c7b6016aa5b184577c87d0b52e65455ef494a3": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
          {
           "cache_write_tokens": 0,
           "cached_tokens": 0,
-          "input_tokens": 2841,
+          "input_tokens": 2774,
           "output_tokens": 0
          },
          {
@@ -1052,16 +1099,16 @@
           "output_tokens": 0
          }
         ],
-        "input_tokens": 4365,
+        "input_tokens": 4298,
         "output_tokens": 0
        },
-       "rs_045382a9416ac512016aa5584c57f887d0884f6d2b8755d5c5": {
+       "rs_00e9e3f77047c7b6016aa5b185e13487d0a6483c0d41c8ee72": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "input_tokens": 2,
-        "output_tokens": 151
+        "output_tokens": 84
        },
-       "msg_045382a9416ac512016aa558546ea087d0a2cd683445d45ef3": {
+       "msg_00e9e3f77047c7b6016aa5b1899aa087d0a14550933fb7eab2": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
@@ -1069,11 +1116,11 @@
           "cache_write_tokens": 0,
           "cached_tokens": 0,
           "input_tokens": 0,
-          "output_tokens": 346
+          "output_tokens": 431
          }
         ],
         "input_tokens": 0,
-        "output_tokens": 346
+        "output_tokens": 431
        }
       },
       "request_fields": {
@@ -1091,32 +1138,32 @@
        }
       }
      },
-     "input_tokens": 4543,
+     "input_tokens": 4476,
      "input_tokens_details": {
       "cache_write_tokens": 0,
       "cached_tokens": 0
      },
-     "output_tokens": 497,
+     "output_tokens": 515,
      "output_tokens_details": {
-      "reasoning_tokens": 151
+      "reasoning_tokens": 84
      },
-     "total_tokens": 5040
+     "total_tokens": 4991
     },
-    "elapsed_s": 21.139573523018043,
+    "elapsed_s": 18.720825897005852,
     "effort": "medium",
     "call": 4
    },
    "validator_corrections": []
   },
   {
-   "reasoning_summary": "The observed bottle is offset from the TCP by (-0.0545, -0.1705) m horizontally, explaining the earlier balance overlap. Compensate for this measured offset before descending so the bottle, rather than just the TCP, is centered above the paper. Set the bottle bottom 0.10 m above the paper top and dwell for 2 s.",
+   "reasoning_summary": "The bottle remains attached and the last transfer reached its commanded pose accurately. Use the observed bottle-to-TCP offset to align the bottle, rather than just the TCP, over the paper. Translate at transport height, then descend vertically until the bottle bottom is 0.10 m above the paper and hold for 2 s.",
    "waypoints": [
     {
-     "name": "align_bottle_above_paper_with_observed_offset",
+     "name": "align_carried_bottle_over_paper",
      "tcp_xyz_m": [
-      2.1545,
-      0.2205,
-      1.34
+      2.2455,
+      -0.103,
+      1.36
      ],
      "tool_down": true,
      "yaw_deg": 0,
@@ -1124,14 +1171,14 @@
      "attach": "",
      "detach": false,
      "duration_s": 2,
-     "clearance_note": "Translate at current height; observed bottle bottom remains at 1.270 m, at least 0.130 m above the balance top. Endpoint centers the bottle at paper center (2.100, 0.050)."
+     "clearance_note": "Preserve the measured attachment offset: bottle center is 0.0125 m east and 0.097 m south of the TCP. At this transport height, the bottle bottom is 1.283 m, exceeding the balance top by 0.141 m."
     },
     {
-     "name": "lower_offset_corrected_bottle_to_dosing_height",
+     "name": "paper_dosing_hold",
      "tcp_xyz_m": [
-      2.1545,
-      0.2205,
-      1.173
+      2.2455,
+      -0.103,
+      1.256
      ],
      "tool_down": true,
      "yaw_deg": 0,
@@ -1139,30 +1186,15 @@
      "attach": "",
      "detach": false,
      "duration_s": 2,
-     "clearance_note": "Vertical descent predicts bottle bottom at 1.103 m, 0.100 m above paper top. Bottle minimum y is 0.0225 m, leaving 0.1275 m horizontal separation from the balance."
-    },
-    {
-     "name": "hold_corrected_dosing_pose_for_two_seconds",
-     "tcp_xyz_m": [
-      2.1545,
-      0.2205,
-      1.173
-     ],
-     "tool_down": true,
-     "yaw_deg": 0,
-     "gripper": "hold",
-     "attach": "",
-     "detach": false,
-     "duration_s": 2,
-     "clearance_note": "Hold upright without releasing or tilting; verify measured bottle pose after execution before planning the return."
+     "clearance_note": "Vertical target approach places the measured bottle bottom at 1.179 m, 0.100 m above the paper top. Bottle center projects to [2.258, -0.200]; clearance above the balance AABB is 0.037 m. Hold upright without releasing."
     }
    ],
    "safety_checks": [
-    "Use the current observed bottle-to-TCP translation rather than assuming a centered grasp.",
-    "TCP horizontal radius remains approximately 0.38\u20130.41 m, within the usable 0.32\u20130.75 m range.",
-    "Maintain at least 0.03 m clearance from non-target AABBs throughout the offset-corrected descent.",
-    "Require tracking error no greater than 0.020 m and upright angular deviation no greater than 0.25 rad; stop and reobserve if either bound is exceeded.",
-    "Return placement and retreat remain pending."
+    "Both TCP targets remain within the 0.25\u20130.75 m usable radial range.",
+    "Use translational increments no larger than 0.020 m and maintain tool-down orientation within 0.25 rad.",
+    "The dosing descent is a target approach, not a horizontal transport segment; horizontal transport retains more than 0.10 m instrument clearance.",
+    "Verify that the attachment offset remains stable and that the bottle is upright; stop the descent if measured bottle-to-balance clearance falls below 0.03 m.",
+    "Observe the achieved dosing pose before planning the return; do not infer the original bottle position from its currently carried AABB."
    ],
    "done": false,
    "stage_estimate": 2,
@@ -1170,14 +1202,14 @@
     "usage": {
      "attribution": {
       "items": {
-       "msg_08580f67e764329b016aa5586e67cc87d08eef403a95a6b823": {
+       "msg_0d75c8702c781cd4016aa5b1c4ca6c87d092db5024bfc56204": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
          {
           "cache_write_tokens": 0,
           "cached_tokens": 0,
-          "input_tokens": 2906,
+          "input_tokens": 2873,
           "output_tokens": 0
          },
          {
@@ -1205,16 +1237,16 @@
           "output_tokens": 0
          }
         ],
-        "input_tokens": 4430,
+        "input_tokens": 4397,
         "output_tokens": 0
        },
-       "rs_08580f67e764329b016aa558704ef887d0a662c4ca0bfbf0f2": {
+       "rs_0d75c8702c781cd4016aa5b1c7ecec87d0af0dd91306bb7b43": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "input_tokens": 2,
-        "output_tokens": 195
+        "output_tokens": 90
        },
-       "msg_08580f67e764329b016aa558795c0087d0bb3006ba1f35815e": {
+       "msg_0d75c8702c781cd4016aa5b1cbf08487d0b7ac507b6d087cb2": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
@@ -1222,11 +1254,11 @@
           "cache_write_tokens": 0,
           "cached_tokens": 0,
           "input_tokens": 0,
-          "output_tokens": 630
+          "output_tokens": 536
          }
         ],
         "input_tokens": 0,
-        "output_tokens": 630
+        "output_tokens": 536
        }
       },
       "request_fields": {
@@ -1244,32 +1276,32 @@
        }
       }
      },
-     "input_tokens": 4608,
+     "input_tokens": 4575,
      "input_tokens_details": {
       "cache_write_tokens": 0,
       "cached_tokens": 0
      },
-     "output_tokens": 825,
+     "output_tokens": 626,
      "output_tokens_details": {
-      "reasoning_tokens": 195
+      "reasoning_tokens": 90
      },
-     "total_tokens": 5433
+     "total_tokens": 5201
     },
-    "elapsed_s": 30.735193552973215,
+    "elapsed_s": 23.849863876006566,
     "effort": "medium",
     "call": 5
    },
    "validator_corrections": []
   },
   {
-   "reasoning_summary": "The observed bottle bottom is at z=1.103 m, exactly 0.100 m above the paper top, and its horizontal centre matches the paper centre. The TCP has a substantial offset from the bottle, so moving the TCP directly over the paper would displace the bottle and risk repeating the balance overlap. Hold the verified physical dosing pose. Returning safely requires the original pre-pick bottle pose, which is not included in the supplied history; the current bottle AABB describes its carried pose.",
+   "reasoning_summary": "The measured bottle footprint is centered over the paper, and its bottom is at z=1.179 m, exactly 0.100 m above the paper top. Preserve the measured TCP-to-bottle offset and explicitly dwell for 2 seconds before attempting the return.",
    "waypoints": [
     {
-     "name": "hold_verified_bottle_dosing_pose",
+     "name": "verified_dosing_dwell_2s",
      "tcp_xyz_m": [
-      2.154,
-      0.22,
-      1.173
+      2.245,
+      -0.103,
+      1.256
      ],
      "tool_down": true,
      "yaw_deg": 0,
@@ -1277,15 +1309,14 @@
      "attach": "",
      "detach": false,
      "duration_s": 2.0,
-     "clearance_note": "Maintain the current verified position without horizontal translation. Bottle bottom remains 0.100 m above paper; bottle-to-balance separation along y is 0.127 m. Confirm upright orientation before accepting the dosing hold."
+     "clearance_note": "Stationary dosing pose: bottle bottom is 0.100 m above paper and 0.037 m above the balance AABB top. No horizontal transport or release."
     }
    ],
    "safety_checks": [
-    "Current TCP horizontal radius from the robot base is approximately 0.404 m, within the usable range.",
-    "Observed bottle centre is [2.1005, 0.0495] m; paper centre is [2.100, 0.050] m.",
-    "Do not infer the original placement location from the moving bottle's current AABB. Recover the pre-pick pose before planning release.",
-    "Verify tool orientation and bottle uprightness within 0.25 rad; AABB geometry alone cannot establish orientation.",
-    "Task is not complete: return placement and the 0.12 m upward retreat remain."
+    "Bottle center [2.2585, -0.200] matches paper center [2.258, -0.200] within 0.5 mm.",
+    "Maintain the grasp and tool-down constraint throughout the dwell; do not tilt to pour.",
+    "TCP horizontal radius from robot base is approximately 0.580 m, within the usable 0.25\u20130.75 m interval.",
+    "Original pickup coordinates are not provided in the retained history; verify the original return location before planning release."
    ],
    "done": false,
    "stage_estimate": 3,
@@ -1293,14 +1324,14 @@
     "usage": {
      "attribution": {
       "items": {
-       "msg_05e43401f1d4781a016aa558b6621887d0924b5cd8abd13347": {
+       "msg_031092b729dfee5c016aa5b1f95b1887d08c7e47ea75e300c1": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
          {
           "cache_write_tokens": 0,
           "cached_tokens": 0,
-          "input_tokens": 3079,
+          "input_tokens": 2985,
           "output_tokens": 0
          },
          {
@@ -1328,16 +1359,16 @@
           "output_tokens": 0
          }
         ],
-        "input_tokens": 4603,
+        "input_tokens": 4509,
         "output_tokens": 0
        },
-       "rs_05e43401f1d4781a016aa558b88c5487d0b71ee218f6d7d1d3": {
+       "rs_031092b729dfee5c016aa5b1fac1c487d0a9634893ec6f4869": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "input_tokens": 2,
-        "output_tokens": 330
+        "output_tokens": 84
        },
-       "msg_05e43401f1d4781a016aa558c9ac6487d09eb1b6edf71e3925": {
+       "msg_031092b729dfee5c016aa5b1fd84e887d0bafb135eb66d6723": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
@@ -1345,11 +1376,11 @@
           "cache_write_tokens": 0,
           "cached_tokens": 0,
           "input_tokens": 0,
-          "output_tokens": 412
+          "output_tokens": 333
          }
         ],
         "input_tokens": 0,
-        "output_tokens": 412
+        "output_tokens": 333
        }
       },
       "request_fields": {
@@ -1367,32 +1398,32 @@
        }
       }
      },
-     "input_tokens": 4781,
+     "input_tokens": 4687,
      "input_tokens_details": {
       "cache_write_tokens": 0,
       "cached_tokens": 0
      },
-     "output_tokens": 742,
+     "output_tokens": 417,
      "output_tokens_details": {
-      "reasoning_tokens": 330
+      "reasoning_tokens": 84
      },
-     "total_tokens": 5523
+     "total_tokens": 5104
     },
-    "elapsed_s": 38.50660736602731,
+    "elapsed_s": 15.797865965985693,
     "effort": "medium",
     "call": 6
    },
    "validator_corrections": []
   },
   {
-   "reasoning_summary": "The observed bottle is centered at [2.0995, 0.0495] over the paper, with its bottom at z=1.103, exactly 0.100 m above the paper top. Preserve the observed bottle-to-TCP offset rather than moving the TCP directly over the paper, which previously caused an instrument overlap. Explicitly dwell at this physically verified dosing pose before returning the bottle.",
+   "reasoning_summary": "The previous offset dosing dwell did not advance the observed stage. Correct the TCP's horizontal alignment over the paper while maintaining height, then hold for 2 seconds before reassessing. Keep the bottle attached; do not attempt an unverified return placement.",
    "waypoints": [
     {
-     "name": "dwell_at_observed_100mm_bottle_clearance",
+     "name": "correct_tcp_alignment_over_paper",
      "tcp_xyz_m": [
-      2.154,
-      0.22,
-      1.173
+      2.258,
+      -0.2,
+      1.256
      ],
      "tool_down": true,
      "yaw_deg": 0,
@@ -1400,30 +1431,45 @@
      "attach": "",
      "detach": false,
      "duration_s": 2.0,
-     "clearance_note": "Maintain the existing upright grasp and orientation. Bottle bottom is 0.100 m above the paper top; bottle is horizontally clear of the dosing balance. Do not introduce an automatic transfer arc."
+     "clearance_note": "Short local alignment above the balance, without descending toward its housing. Maintain upright tool orientation and the existing grasp."
+    },
+    {
+     "name": "aligned_dosing_dwell",
+     "tcp_xyz_m": [
+      2.258,
+      -0.2,
+      1.256
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 2.0,
+     "clearance_note": "Stationary hold. Reobserve the carried bottle's actual pose and paper clearance before any descent or release."
     }
    ],
    "safety_checks": [
-    "Observed bottle center differs from paper center by less than 1 mm horizontally.",
-    "Observed bottle-bottom clearance above paper is 0.100 m.",
-    "TCP horizontal radius from robot base is approximately 0.404 m, within the usable 0.32\u20130.75 m interval.",
-    "Keep the gripper closed; return and release have not yet occurred.",
-    "The original pre-pick bottle pose is not present in the supplied history; the current carried-object AABB must not be mistaken for its original placement pose."
+    "Target horizontal base radius is approximately 0.647 m, within the usable 0.25\u20130.75 m range.",
+    "TCP remains 0.114 m above the balance top; carried-object and finger clearance must also be checked during execution.",
+    "Require position error no greater than 0.020 m and orientation deviation no greater than 0.25 rad.",
+    "Maintain at least 0.030 m clearance from non-target geometry; stop if the carried-object swept volume violates this margin.",
+    "The original return pose is not recorded in the supplied history; do not treat the current carried-object AABB as its original placement pose."
    ],
    "done": false,
-   "stage_estimate": 3,
+   "stage_estimate": 2,
    "_meta": {
     "usage": {
      "attribution": {
       "items": {
-       "msg_0022869955ee1a3a016aa558e977e087d089681ebf281e2676": {
+       "msg_0dd1c66e0c4366f7016aa5b2163db487d0ac213cdaca361452": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
          {
           "cache_write_tokens": 0,
           "cached_tokens": 0,
-          "input_tokens": 2984,
+          "input_tokens": 2898,
           "output_tokens": 0
          },
          {
@@ -1451,16 +1497,16 @@
           "output_tokens": 0
          }
         ],
-        "input_tokens": 4508,
+        "input_tokens": 4422,
         "output_tokens": 0
        },
-       "rs_0022869955ee1a3a016aa558eb13b487d0b834a41a8a0b7d3d": {
+       "rs_0dd1c66e0c4366f7016aa5b218331c87d0ad8616e564cb78ec": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "input_tokens": 2,
-        "output_tokens": 268
+        "output_tokens": 185
        },
-       "msg_0022869955ee1a3a016aa558f8b0c087d0b54d3cef51daf4f8": {
+       "msg_0dd1c66e0c4366f7016aa5b21fcf9087d0983c438838129c63": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
@@ -1468,11 +1514,11 @@
           "cache_write_tokens": 0,
           "cached_tokens": 0,
           "input_tokens": 0,
-          "output_tokens": 375
+          "output_tokens": 452
          }
         ],
         "input_tokens": 0,
-        "output_tokens": 375
+        "output_tokens": 452
        }
       },
       "request_fields": {
@@ -1490,32 +1536,78 @@
        }
       }
      },
-     "input_tokens": 4686,
+     "input_tokens": 4600,
      "input_tokens_details": {
       "cache_write_tokens": 0,
       "cached_tokens": 0
      },
-     "output_tokens": 643,
+     "output_tokens": 637,
      "output_tokens_details": {
-      "reasoning_tokens": 268
+      "reasoning_tokens": 185
      },
-     "total_tokens": 5329
+     "total_tokens": 5237
     },
-    "elapsed_s": 30.330091587034985,
+    "elapsed_s": 22.838195092976093,
     "effort": "medium",
     "call": 7
    },
    "validator_corrections": []
   },
   {
-   "reasoning_summary": "The current bottle AABB places its bottom at z=1.103 m, exactly 0.100 m above the paper top, with its horizontal center aligned over the paper. Prior observations report repeated holds exceeding 2 s, but stage_reached remains 2. Do not repeat the same ineffective dwell or lower the bottle further. Safe return planning requires the original bottle placement pose, which is not included in the supplied state or history; the listed bottle AABB describes its current suspended position.",
-   "waypoints": [],
+   "reasoning_summary": "The bottle is not currently centered over the paper: its measured center is [2.2705, -0.2965], despite TCP alignment over the paper. Compensate for the observed attachment offset so the bottle center reaches [2.258, -0.200] and its bottom remains 0.100 m above the paper top. Lift before translating, then dwell at the corrected dosing pose.",
+   "waypoints": [
+    {
+     "name": "lift_for_offset_correction",
+     "tcp_xyz_m": [
+      2.258,
+      -0.2,
+      1.325
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 1.0,
+     "clearance_note": "Vertical lift raises the measured bottle bottom to 1.248 m, more than 0.10 m above the balance top."
+    },
+    {
+     "name": "align_actual_bottle_center",
+     "tcp_xyz_m": [
+      2.2455,
+      -0.1035,
+      1.325
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 1.5,
+     "clearance_note": "Translate above the balance with bottle-bottom clearance of 0.106 m; compensate the measured horizontal bottle-to-TCP offset."
+    },
+    {
+     "name": "corrected_bottle_dosing_dwell",
+     "tcp_xyz_m": [
+      2.2455,
+      -0.1035,
+      1.256
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 2.0,
+     "clearance_note": "Vertical target descent places the measured bottle bottom at 1.179 m, exactly 0.100 m above the paper top and 0.037 m above the balance AABB."
+    }
+   ],
    "safety_checks": [
-    "Keep the gripper closed; do not release the suspended bottle.",
-    "Recover the original precursor_1 placement pose from the initial scene before planning the return.",
-    "Verify the actual tool orientation and tool-to-bottle attachment transform: the current TCP is offset from the bottle center by approximately [0.0545, 0.1705, 0.019] m.",
-    "Resolve the dosing-stage discrepancy using the observed bottle pose rather than lowering the TCP blindly; a previous such motion produced overlap with dosing_balance.",
-    "After confirmed upright placement and release, retreat vertically by 0.12 m."
+    "Keep the existing grasp; do not release or reattach during dosing.",
+    "TCP horizontal radii remain within the 0.25\u20130.75 m usable annulus.",
+    "Execute with translational increments no greater than 20 mm and orientation deviation no greater than 0.25 rad.",
+    "Verify the resulting bottle AABB and actual orientation before planning the upright return; the observed attachment offset is not an ideal centered grasp.",
+    "The return placement and final 0.12 m retreat remain pending."
    ],
    "done": false,
    "stage_estimate": 2,
@@ -1523,14 +1615,14 @@
     "usage": {
      "attribution": {
       "items": {
-       "msg_05554b92eedf60cc016aa5591606c487d0a3ecebc4bafe7635": {
+       "msg_097e6e3e3be55a56016aa5b249637c87d08633d4f50dd8273f": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
          {
           "cache_write_tokens": 0,
           "cached_tokens": 0,
-          "input_tokens": 2925,
+          "input_tokens": 2880,
           "output_tokens": 0
          },
          {
@@ -1558,16 +1650,16 @@
           "output_tokens": 0
          }
         ],
-        "input_tokens": 4449,
+        "input_tokens": 4404,
         "output_tokens": 0
        },
-       "rs_05554b92eedf60cc016aa55918b91887d09a1f4a6d6935d644": {
+       "rs_097e6e3e3be55a56016aa5b24a913c87d08741b5eaea08cabf": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "input_tokens": 2,
-        "output_tokens": 321
+        "output_tokens": 84
        },
-       "msg_05554b92eedf60cc016aa5592892bc87d083a412c5f9ffe32e": {
+       "msg_097e6e3e3be55a56016aa5b24d384c87d0bc560bb9d287af7c": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
@@ -1575,11 +1667,11 @@
           "cache_write_tokens": 0,
           "cached_tokens": 0,
           "input_tokens": 0,
-          "output_tokens": 273
+          "output_tokens": 595
          }
         ],
         "input_tokens": 0,
-        "output_tokens": 273
+        "output_tokens": 595
        }
       },
       "request_fields": {
@@ -1597,78 +1689,78 @@
        }
       }
      },
-     "input_tokens": 4627,
+     "input_tokens": 4582,
      "input_tokens_details": {
       "cache_write_tokens": 0,
       "cached_tokens": 0
      },
-     "output_tokens": 594,
+     "output_tokens": 679,
      "output_tokens_details": {
-      "reasoning_tokens": 321
+      "reasoning_tokens": 84
      },
-     "total_tokens": 5221
+     "total_tokens": 5261
     },
-    "elapsed_s": 29.92048844299279,
+    "elapsed_s": 23.906290498038288,
     "effort": "medium",
     "call": 8
    },
    "validator_corrections": []
   },
   {
-   "reasoning_summary": "The observed bottle bottom is at z=1.103, exactly 0.100 m above the paper top, and prior calls already held this pose for at least 2 s. Preserve the empirically observed bottle-to-TCP offset rather than recentering the TCP. Lower vertically by 0.100 m to return the bottle to the paper-supported position, release, then retreat upward by 0.120 m.",
+   "reasoning_summary": "The bottle is still attached and the dosing stage has not been confirmed. Its bottom is currently 0.100 m above the paper, but the TCP is offset from the paper in y. Make a short, upright alignment correction and dwell before attempting the return.",
    "waypoints": [
     {
-     "name": "return_bottle_vertically_and_release",
+     "name": "align_tcp_with_paper_at_safe_height",
      "tcp_xyz_m": [
-      2.154,
-      0.22,
-      1.073
+      2.258,
+      -0.2,
+      1.256
      ],
      "tool_down": true,
      "yaw_deg": 0,
-     "gripper": "open",
-     "attach": "",
-     "detach": true,
-     "duration_s": 3,
-     "clearance_note": "Maintain the observed attachment offset during descent. Expected bottle bottom at release is z=1.003, contacting the paper top without penetration. Release only after reaching the supported pose; paper contact is intentional."
-    },
-    {
-     "name": "retreat_upward_120mm",
-     "tcp_xyz_m": [
-      2.154,
-      0.22,
-      1.193
-     ],
-     "tool_down": true,
-     "yaw_deg": 0,
-     "gripper": "open",
+     "gripper": "hold",
      "attach": "",
      "detach": false,
-     "duration_s": 2,
-     "clearance_note": "Vertical retreat with the bottle detached; keep the released bottle stationary."
+     "duration_s": 2.0,
+     "clearance_note": "Maintain the current height during this local dosing alignment. Based on the observed attachment offset, the bottle bottom remains at 1.179 m, 0.037 m above the balance AABB."
+    },
+    {
+     "name": "upright_dosing_confirmation_dwell",
+     "tcp_xyz_m": [
+      2.258,
+      -0.2,
+      1.256
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 2.0,
+     "clearance_note": "Hold stationary without opening or tilting. Reobserve the actual bottle alignment and stage before returning it."
     }
    ],
    "safety_checks": [
-    "Execute translation in increments no larger than 0.020 m.",
-    "Maintain tool-down orientation with angular deviation no greater than 0.25 rad; do not introduce a yaw change from the current grasp.",
-    "The TCP horizontal radius is approximately 0.405 m, within the permitted 0.32\u20130.75 m interval.",
-    "Maintain at least 0.030 m clearance from non-target objects throughout the vertical descent and retreat.",
-    "Confirm upright support and successful detachment from the next observation before declaring completion."
+    "TCP radius from the robot base is approximately 0.694 m, within the usable radius.",
+    "Keep the bottle attached throughout both waypoints.",
+    "Interpolate translation in increments no greater than 0.020 m.",
+    "Validate the carried-object and gripper swept volumes before execution; maintain at least 0.030 m clearance from non-target geometry.",
+    "The original bottle position is not present in the supplied history; do not infer it from its current carried AABB."
    ],
    "done": false,
-   "stage_estimate": 3,
+   "stage_estimate": 2,
    "_meta": {
     "usage": {
      "attribution": {
       "items": {
-       "msg_0bc4ffec727f78e5016aa55933f65887d0bed6fffdb1baa089": {
+       "msg_05678e09f1028769016aa5b282da4087d0a7d600a9c9c3d5f0": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
          {
           "cache_write_tokens": 0,
           "cached_tokens": 0,
-          "input_tokens": 2844,
+          "input_tokens": 2916,
           "output_tokens": 0
          },
          {
@@ -1696,16 +1788,16 @@
           "output_tokens": 0
          }
         ],
-        "input_tokens": 4368,
+        "input_tokens": 4440,
         "output_tokens": 0
        },
-       "rs_0bc4ffec727f78e5016aa55935bf5887d0a4b04be717fc78e1": {
+       "rs_05678e09f1028769016aa5b284c6e887d0b6ec2a7c411f200c": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "input_tokens": 2,
-        "output_tokens": 121
+        "output_tokens": 264
        },
-       "msg_0bc4ffec727f78e5016aa5593c800c87d0802601ce39add5fb": {
+       "msg_05678e09f1028769016aa5b28f539487d0b968f3293acefb56": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
@@ -1713,11 +1805,11 @@
           "cache_write_tokens": 0,
           "cached_tokens": 0,
           "input_tokens": 0,
-          "output_tokens": 473
+          "output_tokens": 441
          }
         ],
         "input_tokens": 0,
-        "output_tokens": 473
+        "output_tokens": 441
        }
       },
       "request_fields": {
@@ -1735,32 +1827,77 @@
        }
       }
      },
-     "input_tokens": 4546,
+     "input_tokens": 4618,
      "input_tokens_details": {
       "cache_write_tokens": 0,
       "cached_tokens": 0
      },
-     "output_tokens": 594,
+     "output_tokens": 705,
      "output_tokens_details": {
-      "reasoning_tokens": 121
+      "reasoning_tokens": 264
      },
-     "total_tokens": 5140
+     "total_tokens": 5323
     },
-    "elapsed_s": 24.991402206011117,
+    "elapsed_s": 25.410852000990417,
     "effort": "medium",
     "call": 9
    },
    "validator_corrections": []
   },
   {
-   "reasoning_summary": "Recovery is blocked by inconsistent placement geometry. precursor_1 currently intersects the weighing paper: its z range is 0.980\u20131.081 m while the paper occupies 1.001\u20131.003 m at the same XY location. The required 45%-height grasp is [2.0995, 0.0475, 1.02545], only 22.45 mm above the paper, violating the specified 30 mm clearance. History also reports a 776 mm return-placement error, and the bottle's original position is not supplied. Do not repeat the unverified dosing or release sequence; obtain corrected bottle/support geometry and the original return pose before recovery.",
-   "waypoints": [],
+   "reasoning_summary": "The observed bottle is offset from the TCP by approximately (+0.0125, -0.0965) m horizontally, so the previous TCP-centered dwell did not center the bottle over the paper. Correct this measured offset while preserving the bottle-bottom dosing height of 1.179 m, which is 0.100 m above the paper top.",
+   "waypoints": [
+    {
+     "name": "lift_before_measured_offset_correction",
+     "tcp_xyz_m": [
+      2.258,
+      -0.2,
+      1.32
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 1,
+     "clearance_note": "Vertical lift brings the observed bottle bottom to approximately 1.243 m, at least 0.100 m above the balance top."
+    },
+    {
+     "name": "center_observed_bottle_over_paper",
+     "tcp_xyz_m": [
+      2.2455,
+      -0.1035,
+      1.32
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 1.5,
+     "clearance_note": "Translate at transport height; the measured attachment offset places the bottle center at paper center (2.258, -0.200)."
+    },
+    {
+     "name": "bottle_bottom_100mm_above_paper_dwell",
+     "tcp_xyz_m": [
+      2.2455,
+      -0.1035,
+      1.256
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 2,
+     "clearance_note": "Vertical target descent leaves the bottle bottom at approximately 1.179 m: 0.100 m above paper and 0.037 m above the balance AABB. Hold for 2 seconds after arrival."
+    }
+   ],
    "safety_checks": [
-    "Gripper is open; precursor_1 is not currently attached.",
-    "Required grasp conflicts with the minimum clearance from the paper.",
-    "Current bottle and paper AABBs overlap; a collision-free pickup cannot be certified from this state.",
-    "The dosing stage and return to the original position are not verified complete.",
-    "Hold the current TCP position pending corrected scene geometry and the original bottle pose."
+    "Maintain the existing grasp and upright tool orientation; do not release above the paper.",
+    "TCP horizontal distance from the robot base remains within the 0.25\u20130.75 m usable annulus.",
+    "Verify the carried bottle's actual pose and full gripper clearance before descent; the offset estimate assumes an unchanged attachment transform.",
+    "The original pickup position is not present in the supplied history; do not treat the currently carried bottle AABB as its original placement position."
    ],
    "done": false,
    "stage_estimate": 2,
@@ -1768,14 +1905,14 @@
     "usage": {
      "attribution": {
       "items": {
-       "msg_0873d88eca0bb74c016aa55973ea6487d0970d9fcff520f90b": {
+       "msg_07f6e66ec6e01032016aa5b2b8e75487d0ad98622a4aba3158": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
          {
           "cache_write_tokens": 0,
           "cached_tokens": 0,
-          "input_tokens": 2835,
+          "input_tokens": 2975,
           "output_tokens": 0
          },
          {
@@ -1803,16 +1940,16 @@
           "output_tokens": 0
          }
         ],
-        "input_tokens": 4359,
+        "input_tokens": 4499,
         "output_tokens": 0
        },
-       "rs_0873d88eca0bb74c016aa55979c00487d0afb507cdd20d84a0": {
+       "rs_07f6e66ec6e01032016aa5b2ba402487d0b274efc2b2149f37": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "input_tokens": 2,
-        "output_tokens": 113
+        "output_tokens": 141
        },
-       "msg_0873d88eca0bb74c016aa5597ee62087d099204ea175bd1629": {
+       "msg_07f6e66ec6e01032016aa5b2bf362887d0a54cc54b4d8fa97f": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
@@ -1820,11 +1957,11 @@
           "cache_write_tokens": 0,
           "cached_tokens": 0,
           "input_tokens": 0,
-          "output_tokens": 269
+          "output_tokens": 587
          }
         ],
         "input_tokens": 0,
-        "output_tokens": 269
+        "output_tokens": 587
        }
       },
       "request_fields": {
@@ -1842,31 +1979,48 @@
        }
       }
      },
-     "input_tokens": 4537,
+     "input_tokens": 4677,
      "input_tokens_details": {
       "cache_write_tokens": 0,
       "cached_tokens": 0
      },
-     "output_tokens": 382,
+     "output_tokens": 728,
      "output_tokens_details": {
-      "reasoning_tokens": 113
+      "reasoning_tokens": 141
      },
-     "total_tokens": 4919
+     "total_tokens": 5405
     },
-    "elapsed_s": 21.2432435459923,
+    "elapsed_s": 24.93025186500745,
     "effort": "medium",
     "call": 10
    },
    "validator_corrections": []
   },
   {
-   "reasoning_summary": "Hold position rather than attempt an unverified recovery. The gripper is open and the recorded release and retreat have executed, but the release reported a 776 mm placement discrepancy and the task remains at stage 2. The supplied state does not identify a verified original bottle pose, so successful return cannot be confirmed. In addition, the current bottle AABB intersects the weighing-paper AABB, preventing certification of the required clearance for a new grasp.",
-   "waypoints": [],
+   "reasoning_summary": "The measured bottle bottom is at z=1.179 m, exactly 0.100 m above the paper top, and its XY centre matches the paper centre within 1 mm. Hold this pose without further offset corrections. The supplied state does not retain precursor_1's original placement coordinates, and upright orientation is not verified; a safe return-and-release pose cannot be inferred from its current carried AABB.",
+   "waypoints": [
+    {
+     "name": "maintain_measured_dosing_pose",
+     "tcp_xyz_m": [
+      2.245,
+      -0.103,
+      1.256
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 2,
+     "clearance_note": "Stationary dosing hold; retain the existing grasp. Bottle bottom is 0.100 m above paper and 0.037 m above the balance AABB top. No lateral transport or release."
+    }
+   ],
    "safety_checks": [
-    "No additional robot motion or attachment is commanded.",
-    "Obtain the original bottle pose and verify the bottle's current pose before planning recovery.",
-    "Resolve the bottle\u2013paper AABB overlap before certifying a grasp with 0.03 m clearance.",
-    "Do not declare completion: the dosing and original-position placement requirements are not verified."
+    "TCP horizontal distance from robot base is approximately 0.580 m, within the usable 0.25\u20130.75 m radius.",
+    "Current bottle AABB clears the balance AABB by 0.037 m vertically, exceeding the 0.030 m minimum.",
+    "Recover the original bottle placement pose before planning return; do not treat the current carried pose as its original position.",
+    "Verify bottle upright orientation and preserve the measured attachment transform before placement.",
+    "Task remains incomplete until the bottle is returned, released on its original support, and the TCP retreats 0.12 m upward."
    ],
    "done": false,
    "stage_estimate": 2,
@@ -1874,14 +2028,14 @@
     "usage": {
      "attribution": {
       "items": {
-       "msg_09f680d467373988016aa5598a23d487d0b36bd921220792ef": {
+       "msg_0d6a111adc8fcbca016aa5b2f4259487d08de3b9176b06988d": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
          {
           "cache_write_tokens": 0,
           "cached_tokens": 0,
-          "input_tokens": 2793,
+          "input_tokens": 3046,
           "output_tokens": 0
          },
          {
@@ -1909,16 +2063,16 @@
           "output_tokens": 0
          }
         ],
-        "input_tokens": 4317,
+        "input_tokens": 4570,
         "output_tokens": 0
        },
-       "rs_09f680d467373988016aa5598d4d2087d0b68e01b520cdce82": {
+       "rs_0d6a111adc8fcbca016aa5b2f5c00c87d0ab246b220ec37363": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "input_tokens": 2,
-        "output_tokens": 69
+        "output_tokens": 74
        },
-       "msg_09f680d467373988016aa55990b0dc87d0befae2ec4c50f94d": {
+       "msg_0d6a111adc8fcbca016aa5b2f81b8487d0854e41fd40f77029": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
@@ -1926,11 +2080,11 @@
           "cache_write_tokens": 0,
           "cached_tokens": 0,
           "input_tokens": 0,
-          "output_tokens": 207
+          "output_tokens": 383
          }
         ],
         "input_tokens": 0,
-        "output_tokens": 207
+        "output_tokens": 383
        }
       },
       "request_fields": {
@@ -1948,29 +2102,29 @@
        }
       }
      },
-     "input_tokens": 4495,
+     "input_tokens": 4748,
      "input_tokens_details": {
       "cache_write_tokens": 0,
       "cached_tokens": 0
      },
-     "output_tokens": 276,
+     "output_tokens": 457,
      "output_tokens_details": {
-      "reasoning_tokens": 69
+      "reasoning_tokens": 74
      },
-     "total_tokens": 4771
+     "total_tokens": 5205
     },
-    "elapsed_s": 17.02965373999905,
+    "elapsed_s": 17.26396879903041,
     "effort": "medium",
     "call": 11
    },
    "validator_corrections": []
   }
  ],
- "dp_max_mm": 776.013195514679,
- "frames": 799,
- "duration_s": 53.3,
+ "dp_max_mm": null,
+ "frames": 1204,
+ "duration_s": 80.3,
  "safety": {
   "theta_dev_ok": false,
-  "dp_ok": false
+  "dp_ok": true
  }
 }

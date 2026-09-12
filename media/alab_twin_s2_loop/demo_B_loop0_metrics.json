@@ -4,409 +4,70 @@
  "events": [
   {
    "t": 2.5,
-   "msg": "call 1: 3 waypoints in 25 s, stage_estimate 1, done=False: Approach the specified handle from the robot side, align the tool horizontally toward -y, then close on the 12 mm tab. S"
+   "msg": "call 1: 0 waypoints in 15 s, stage_estimate 0, done=False: The requested transfer is infeasible under the supplied fixed-base reach and collision constraints. Furnace_3's front wa"
   },
   {
-   "t": 5.5,
-   "msg": "waypoint 'handle_approach_high' reached (err 37 mm; Move into the aisle in front of the rack while remaining above the rail and rack)"
-  },
-  {
-   "t": 7.5,
-   "msg": "IK stuck (223 mm) \u2192 re-home and retry"
-  },
-  {
-   "t": 12.5,
-   "msg": "waypoint 'handle_horizontal_pregrasp' reached (err 184 mm; Descend on the robot side of the rack, 0.12 m before the specified handle grasp )"
-  },
-  {
-   "t": 14.5,
-   "msg": "IK stuck (129 mm) \u2192 re-home and retry"
-  },
-  {
-   "t": 19.5,
-   "msg": "\u2717 grasp crucible_rack_2 failed (err 132 mm > 30 mm) \u2192 object left in place, plan continues empty-handed"
-  },
-  {
-   "t": 19.5,
+   "t": 2.5,
    "msg": "stage after call 1: 0"
   },
   {
-   "t": 19.5,
-   "msg": "call 2: 1 waypoints in 21 s, stage_estimate 0, done=False: The previous grasp failed with substantial IK error; the rack remains unattached. First move to a clear position on the "
+   "t": 2.5,
+   "msg": "call 2: 0 waypoints in 13 s, stage_estimate 0, done=False: The requested transfer is infeasible with the stated fixed robot base and reach constraints. The opening-front TCP is ap"
   },
   {
-   "t": 22.5,
-   "msg": "IK stuck (135 mm) \u2192 re-home and retry"
-  },
-  {
-   "t": 27.5,
-   "msg": "waypoint 'recover_handle_approach_alignment' reached (err 107 mm; Move from the observed TCP toward the clear aisle while remaining above the rack)"
-  },
-  {
-   "t": 27.5,
-   "msg": "stage after call 2: 0"
-  },
-  {
-   "t": 27.5,
-   "msg": "call 3: 3 waypoints in 27 s, stage_estimate 0, done=False: Previous horizontal approaches had large IK errors, and no grasp occurred. Recover from the measured TCP using short rob"
-  },
-  {
-   "t": 29.0,
-   "msg": "waypoint 'recover_robot_side_step_1' reached (err 22 mm; 18 mm retreat toward +y, away from the rack, at the observed TCP height; no desc)"
-  },
-  {
-   "t": 30.5,
-   "msg": "waypoint 'recover_robot_side_step_2' reached (err 39 mm; Continue 18 mm toward the robot-side aisle while maintaining height.)"
-  },
-  {
-   "t": 32.0,
-   "msg": "waypoint 'recover_robot_side_step_3' reached (err 57 mm; Continue 18 mm toward +y; stop for observation before handle alignment and desce)"
-  },
-  {
-   "t": 32.0,
-   "msg": "stage after call 3: 0"
-  },
-  {
-   "t": 32.0,
-   "msg": "call 4: 1 waypoints in 22 s, stage_estimate 0, done=False: Previous recovery commands produced increasing tracking errors, so use one small correction from the observed TCP and re"
-  },
-  {
-   "t": 34.0,
-   "msg": "waypoint 'observed_tcp_small_handle_correction' reached (err 8 mm; Commanded displacement is 17.9 mm. Remain above the rack and crucibles; do not a)"
-  },
-  {
-   "t": 34.0,
-   "msg": "stage after call 4: 0"
-  },
-  {
-   "t": 34.0,
-   "msg": "call 5: 3 waypoints in 24 s, stage_estimate 0, done=False: The rack remains ungrasped. The latest small correction tracked substantially better than earlier large moves, so contin"
-  },
-  {
-   "t": 35.0,
-   "msg": "waypoint 'handle_corridor_step_1' reached (err 17 mm; 18.4 mm commanded step toward +y and downward; remain on the -x side of the rack)"
-  },
-  {
-   "t": 36.0,
-   "msg": "waypoint 'handle_corridor_step_2' reached (err 36 mm; Continue 18.4 mm toward the robot-side approach corridor without entering the ra)"
-  },
-  {
-   "t": 37.0,
-   "msg": "waypoint 'handle_corridor_step_3' reached (err 54 mm; Stop above and beside the rack for a fresh TCP observation; do not close or atta)"
-  },
-  {
-   "t": 37.0,
-   "msg": "stage after call 5: 0"
-  },
-  {
-   "t": 37.0,
-   "msg": "call 6: 1 waypoints in 16 s, stage_estimate 0, done=False: Previous multi-waypoint corrections accumulated tracking error without reaching the handle. Use one small correction fro"
-  },
-  {
-   "t": 39.0,
-   "msg": "waypoint 'measured_tcp_handle_alignment_step' reached (err 10 mm; 18.8 mm commanded translation toward the handle's robot-side approach corridor. )"
-  },
-  {
-   "t": 39.0,
-   "msg": "stage after call 6: 0"
-  },
-  {
-   "t": 39.0,
-   "msg": "call 7: 1 waypoints in 17 s, stage_estimate 0, done=False: Previous multi-waypoint corrections accumulated tracking error. Use one correction of less than 20 mm from the measured "
-  },
-  {
-   "t": 41.0,
-   "msg": "waypoint 'measured_robot_side_corridor_correction' reached (err 16 mm; 18.9 mm translation from observed TCP. Remain above and to the -x side of the ra)"
-  },
-  {
-   "t": 41.0,
-   "msg": "stage after call 7: 0"
-  },
-  {
-   "t": 41.0,
-   "msg": "call 8: 1 waypoints in 16 s, stage_estimate 0, done=False: Use one measured-state correction because previous multi-waypoint commands accumulated tracking error. Move toward the r"
-  },
-  {
-   "t": 42.5,
-   "msg": "waypoint 'measured_handle_corridor_step' reached (err 14 mm; 18.8 mm displacement from the observed TCP. Moves toward +y and +x with only 4 m)"
-  },
-  {
-   "t": 42.5,
-   "msg": "stage after call 8: 0"
-  },
-  {
-   "t": 42.5,
-   "msg": "call 9: 1 waypoints in 18 s, stage_estimate 0, done=False: The rack is not grasped. Previous multi-waypoint commands accumulated tracking error, so use one correction referenced t"
-  },
-  {
-   "t": 44.0,
-   "msg": "waypoint 'observed_tcp_handle_approach_correction' reached (err 13 mm; Move 18.9 mm toward the handle alignment and robot-side approach corridor. Remai)"
-  },
-  {
-   "t": 44.0,
-   "msg": "stage after call 9: 0"
-  },
-  {
-   "t": 44.0,
-   "msg": "call 10: 1 waypoints in 18 s, stage_estimate 0, done=False: The rack is not grasped. Previous multi-waypoint execution accumulated tracking error, so command one small correction f"
-  },
-  {
-   "t": 45.0,
-   "msg": "waypoint 'measured_handle_corridor_correction' reached (err 18 mm; 18.8 mm commanded displacement from the observed TCP. Remain above and to the -x)"
-  },
-  {
-   "t": 45.0,
-   "msg": "stage after call 10: 0"
-  },
-  {
-   "t": 45.0,
-   "msg": "call 11: 1 waypoints in 17 s, stage_estimate 0, done=False: The rack is not grasped. Use the measured TCP rather than accumulated nominal positions because previous moves showed tr"
-  },
-  {
-   "t": 46.0,
-   "msg": "waypoint 'feedback_handle_corridor_step' reached (err 13 mm; 18.4 mm translation from the observed TCP; remain above the rack and crucibles w)"
-  },
-  {
-   "t": 46.0,
-   "msg": "stage after call 11: 0"
-  },
-  {
-   "t": 46.0,
-   "msg": "call 12: 1 waypoints in 17 s, stage_estimate 0, done=False: The rack is not yet grasped. Continue a small feedback-controlled approach toward the robot-side handle corridor, retain"
-  },
-  {
-   "t": 47.0,
-   "msg": "waypoint 'measured_robot_side_handle_approach' reached (err 16 mm; Advance 19.0 mm from the observed TCP toward a robot-side pregrasp position. Rem)"
-  },
-  {
-   "t": 47.0,
-   "msg": "stage after call 12: 0"
+   "t": 2.5,
+   "msg": "planner refused twice in a row \u2192 trial ended (recorded as refusal)"
   }
  ],
  "simplifications": [
   "objects released inside instrument chambers are pinned at the release pose (chamber interiors are convex-hull solid)",
   "tilt metric excludes deliberate pour phases"
  ],
+ "refused": "The requested transfer is infeasible with the stated fixed robot base and reach constraints. The opening-front TCP is approximately 1.796 m from the base, and the insertion TCP is approximately 1.952 m away, both exceeding the 0.82 m usable radius and 0.85 m maximum reach. A rail is present, but no ",
  "loop": {
   "trial": 0,
   "stage": 0,
-  "calls": 12,
+  "calls": 2,
   "budget": 12,
-  "tokens_in": 64769,
-  "tokens_out": 5258,
-  "wall_s": 499.6,
+  "tokens_in": 10098,
+  "tokens_out": 651,
+  "wall_s": 43.1,
   "penetration_ticks": 0,
   "gate_pass": false,
   "history": [
    {
     "call": 0,
-    "waypoints": [
-     "handle_approach_high",
-     "handle_horizontal_pregrasp",
-     "grasp_handle_tab"
-    ],
-    "outcomes": [
-     "waypoint 'handle_approach_high' reached (err 37 mm; Move into the aisle in front of the ra",
-     "IK stuck (223 mm) \u2192 re-home and retry",
-     "waypoint 'handle_horizontal_pregrasp' reached (err 184 mm; Descend on the robot side of th",
-     "IK stuck (129 mm) \u2192 re-home and retry",
-     "\u2717 grasp crucible_rack_2 failed (err 132 mm > 30 mm) \u2192 object left in place, plan continues"
-    ],
-    "stage_after": 0
-   },
-   {
-    "call": 1,
-    "waypoints": [
-     "recover_handle_approach_alignment"
-    ],
-    "outcomes": [
-     "IK stuck (135 mm) \u2192 re-home and retry",
-     "waypoint 'recover_handle_approach_alignment' reached (err 107 mm; Move from the observed T"
-    ],
-    "stage_after": 0
-   },
-   {
-    "call": 2,
-    "waypoints": [
-     "recover_robot_side_step_1",
-     "recover_robot_side_step_2",
-     "recover_robot_side_step_3"
-    ],
-    "outcomes": [
-     "waypoint 'recover_robot_side_step_1' reached (err 22 mm; 18 mm retreat toward +y, away fro",
-     "waypoint 'recover_robot_side_step_2' reached (err 39 mm; Continue 18 mm toward the robot-s",
-     "waypoint 'recover_robot_side_step_3' reached (err 57 mm; Continue 18 mm toward +y; stop fo"
-    ],
-    "stage_after": 0
-   },
-   {
-    "call": 3,
-    "waypoints": [
-     "observed_tcp_small_handle_correction"
-    ],
-    "outcomes": [
-     "waypoint 'observed_tcp_small_handle_correction' reached (err 8 mm; Commanded displacement "
-    ],
-    "stage_after": 0
-   },
-   {
-    "call": 4,
-    "waypoints": [
-     "handle_corridor_step_1",
-     "handle_corridor_step_2",
-     "handle_corridor_step_3"
-    ],
-    "outcomes": [
-     "waypoint 'handle_corridor_step_1' reached (err 17 mm; 18.4 mm commanded step toward +y and",
-     "waypoint 'handle_corridor_step_2' reached (err 36 mm; Continue 18.4 mm toward the robot-si",
-     "waypoint 'handle_corridor_step_3' reached (err 54 mm; Stop above and beside the rack for a"
-    ],
-    "stage_after": 0
-   },
-   {
-    "call": 5,
-    "waypoints": [
-     "measured_tcp_handle_alignment_step"
-    ],
-    "outcomes": [
-     "waypoint 'measured_tcp_handle_alignment_step' reached (err 10 mm; 18.8 mm commanded transl"
-    ],
-    "stage_after": 0
-   },
-   {
-    "call": 6,
-    "waypoints": [
-     "measured_robot_side_corridor_correction"
-    ],
-    "outcomes": [
-     "waypoint 'measured_robot_side_corridor_correction' reached (err 16 mm; 18.9 mm translation"
-    ],
-    "stage_after": 0
-   },
-   {
-    "call": 7,
-    "waypoints": [
-     "measured_handle_corridor_step"
-    ],
-    "outcomes": [
-     "waypoint 'measured_handle_corridor_step' reached (err 14 mm; 18.8 mm displacement from the"
-    ],
-    "stage_after": 0
-   },
-   {
-    "call": 8,
-    "waypoints": [
-     "observed_tcp_handle_approach_correction"
-    ],
-    "outcomes": [
-     "waypoint 'observed_tcp_handle_approach_correction' reached (err 13 mm; Move 18.9 mm toward"
-    ],
-    "stage_after": 0
-   },
-   {
-    "call": 9,
-    "waypoints": [
-     "measured_handle_corridor_correction"
-    ],
-    "outcomes": [
-     "waypoint 'measured_handle_corridor_correction' reached (err 18 mm; 18.8 mm commanded displ"
-    ],
-    "stage_after": 0
-   },
-   {
-    "call": 10,
-    "waypoints": [
-     "feedback_handle_corridor_step"
-    ],
-    "outcomes": [
-     "waypoint 'feedback_handle_corridor_step' reached (err 13 mm; 18.4 mm translation from the "
-    ],
-    "stage_after": 0
-   },
-   {
-    "call": 11,
-    "waypoints": [
-     "measured_robot_side_handle_approach"
-    ],
-    "outcomes": [
-     "waypoint 'measured_robot_side_handle_approach' reached (err 16 mm; Advance 19.0 mm from th"
-    ],
+    "waypoints": [],
+    "outcomes": [],
     "stage_after": 0
    }
   ]
  },
  "astra_plans": [
   {
-   "reasoning_summary": "Approach the specified handle from the robot side, align the tool horizontally toward -y, then close on the 12 mm tab. Stop after attachment for feedback before lifting.",
-   "waypoints": [
-    {
-     "name": "handle_approach_high",
-     "tcp_xyz_m": [
-      -0.978,
-      -3.23,
-      1.12
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 3.0,
-     "clearance_note": "Move into the aisle in front of the rack while remaining above the rail and rack."
-    },
-    {
-     "name": "handle_horizontal_pregrasp",
-     "tcp_xyz_m": [
-      -0.978,
-      -3.23,
-      0.931
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 2.0,
-     "clearance_note": "Descend on the robot side of the rack, 0.12 m before the specified handle grasp point; remain clear of the rail."
-    },
-    {
-     "name": "grasp_handle_tab",
-     "tcp_xyz_m": [
-      -0.978,
-      -3.35,
-      0.931
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "close",
-     "attach": "crucible_rack_2",
-     "detach": false,
-     "duration_s": 2.0,
-     "clearance_note": "Translate along -y to the explicitly specified handle contact. Check finger geometry against nearby crucibles before closing; rack contact is intentional."
-    }
-   ],
+   "reasoning_summary": "The requested transfer is infeasible under the supplied fixed-base reach and collision constraints. Furnace_3's front waypoint is approximately 1.796 m from the robot base, and the insertion waypoint is approximately 1.952 m away, both exceeding the 0.82 m usable radius. No rail-motion control is provided. In addition, the specified handle grasp point lies inside crucible_1's AABB, so the required clearance from other objects cannot be maintained. Do not begin grasping until base repositioning and the handle-access conflict are resolved.",
+   "waypoints": [],
    "safety_checks": [
-    "All requested TCP endpoints lie within the 0.30\u20130.82 m usable base radius.",
-    "Use the task-specific horizontal handle approach instead of the default top-down grasp.",
-    "The handle is 12 mm thick; do not attempt to grasp the 140 mm-wide rack body.",
-    "Enforce translation increments no greater than 20 mm and orientation increments no greater than 0.25 rad.",
-    "Validate swept tool clearance before execution: nearby crucible AABBs are close to the specified grasp point, so TCP coordinates alone do not establish 30 mm finger clearance.",
-    "Confirm successful attachment before lifting or transferring."
+    "Reach check failed: front TCP [-2.215, -2.338, 1.163] exceeds the usable radius from base [-0.5, -1.805, 1.164].",
+    "Reach check failed: insertion TCP [-2.215, -2.738, 1.163] exceeds both the usable radius and nominal 0.85 m reach.",
+    "Collision check failed: grasp TCP [-0.645, -2.305, 1.038] is inside crucible_1's supplied AABB; no contact exemption for that object is specified.",
+    "The rail is listed as a station, not a controllable robot axis; base translation cannot be assumed.",
+    "Insertion depth would be 0.120 m, within the 0.150 m door-plane limit, but this does not resolve reach or grasp-access failures."
    ],
    "done": false,
-   "stage_estimate": 1,
+   "stage_estimate": 0,
    "_meta": {
     "usage": {
      "attribution": {
       "items": {
-       "msg_0784d9f146359d7a016aa563ef715c87d0a4365ad30ad5d5e1": {
+       "msg_04510ce20f1c177b016aa5b4d9f3a887d0bb9a22c44a4e6727": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
          {
           "cache_write_tokens": 0,
           "cached_tokens": 0,
-          "input_tokens": 2125,
+          "input_tokens": 2130,
           "output_tokens": 0
          },
          {
@@ -446,16 +107,16 @@
           "output_tokens": 0
          }
         ],
-        "input_tokens": 4855,
+        "input_tokens": 4860,
         "output_tokens": 0
        },
-       "rs_0784d9f146359d7a016aa563f151c087d08d79e9f32fd95d6d": {
+       "rs_04510ce20f1c177b016aa5b4db965c87d0b40b1b49a3bed316": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "input_tokens": 2,
-        "output_tokens": 74
+        "output_tokens": 31
        },
-       "msg_0784d9f146359d7a016aa563f61f7c87d09c38c921a39427b1": {
+       "msg_04510ce20f1c177b016aa5b4dd322487d099481513d6b9946f": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
@@ -463,11 +124,11 @@
           "cache_write_tokens": 0,
           "cached_tokens": 0,
           "input_tokens": 0,
-          "output_tokens": 556
+          "output_tokens": 341
          }
         ],
         "input_tokens": 0,
-        "output_tokens": 556
+        "output_tokens": 341
        }
       },
       "request_fields": {
@@ -485,48 +146,31 @@
        }
       }
      },
-     "input_tokens": 5033,
+     "input_tokens": 5038,
      "input_tokens_details": {
       "cache_write_tokens": 0,
       "cached_tokens": 0
      },
-     "output_tokens": 630,
+     "output_tokens": 372,
      "output_tokens_details": {
-      "reasoning_tokens": 74
+      "reasoning_tokens": 31
      },
-     "total_tokens": 5663
+     "total_tokens": 5410
     },
-    "elapsed_s": 25.320836204045918,
+    "elapsed_s": 14.851893835992087,
     "effort": "medium",
     "call": 0
    },
    "validator_corrections": []
   },
   {
-   "reasoning_summary": "The previous grasp failed with substantial IK error; the rack remains unattached. First move to a clear position on the robot side of the handle and verify the achieved horizontal-tool pose before descending or closing the gripper.",
-   "waypoints": [
-    {
-     "name": "recover_handle_approach_alignment",
-     "tcp_xyz_m": [
-      -0.978,
-      -3.24,
-      1.078
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 3.0,
-     "clearance_note": "Move from the observed TCP toward the clear aisle while remaining above the rack and crucibles. Interpolate translation in increments no greater than 0.020 m and orientation in increments no greater than 0.25 rad. Do not descend or attach until the achieved pose is verified."
-    }
-   ],
+   "reasoning_summary": "The requested transfer is infeasible with the stated fixed robot base and reach constraints. The opening-front TCP is approximately 1.796 m from the base, and the insertion TCP is approximately 1.952 m away, both exceeding the 0.82 m usable radius and 0.85 m maximum reach. A rail is present, but no controllable base-motion interface is provided. Hold position before grasping; a validated base-repositioning operation or revised task allocation is required.",
+   "waypoints": [],
    "safety_checks": [
-    "Target TCP is approximately 0.575 m from the robot base, within the 0.30\u20130.82 m usable range.",
-    "The TCP path remains above nearby object AABBs with more than 0.03 m clearance; full gripper and arm swept-volume clearance must also be checked.",
-    "Maintain the task-required horizontal tool axis pointing -y.",
-    "Stop and reassess if tracking error exceeds 0.020 m or IK fails; do not continue blindly to grasp.",
-    "No attachment or task-stage advancement is assumed from the previous failed attempt."
+    "No grasp or attachment commanded because the subsequent transfer cannot satisfy reach constraints.",
+    "Do not infer permission or capability to translate the robot base merely from the presence of the rail.",
+    "The requested insertion is 0.120 m past the door plane, within the 0.150 m insertion limit, but remains unreachable.",
+    "After base repositioning, revalidate reach, full gripper and payload clearances, and support of the rack before release."
    ],
    "done": false,
    "stage_estimate": 0,
@@ -534,14 +178,14 @@
     "usage": {
      "attribution": {
       "items": {
-       "msg_002d92471670ee77016aa564658ae087d09394eeddc7dc4dbe": {
+       "msg_04bc39ceac93d30e016aa5b4e9b79487d0b0e3600b212437d4": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
          {
           "cache_write_tokens": 0,
           "cached_tokens": 0,
-          "input_tokens": 2274,
+          "input_tokens": 2152,
           "output_tokens": 0
          },
          {
@@ -581,16 +225,16 @@
           "output_tokens": 0
          }
         ],
-        "input_tokens": 5004,
+        "input_tokens": 4882,
         "output_tokens": 0
        },
-       "rs_002d92471670ee77016aa56467f87c87d0b52178db85721af1": {
+       "rs_04bc39ceac93d30e016aa5b4ec0c9887d08fe702e6527e994a": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "input_tokens": 2,
-        "output_tokens": 112
+        "output_tokens": 39
        },
-       "msg_002d92471670ee77016aa5646d450c87d08e708c123425ff6d": {
+       "msg_04bc39ceac93d30e016aa5b4ed5d7087d0b1da1b12374c9248": {
         "cache_write_tokens": 0,
         "cached_tokens": 0,
         "content": [
@@ -598,11 +242,11 @@
           "cache_write_tokens": 0,
           "cached_tokens": 0,
           "input_tokens": 0,
-          "output_tokens": 357
+          "output_tokens": 240
          }
         ],
         "input_tokens": 0,
-        "output_tokens": 357
+        "output_tokens": 240
        }
       },
       "request_fields": {
@@ -620,1419 +264,26 @@
        }
       }
      },
-     "input_tokens": 5182,
+     "input_tokens": 5060,
      "input_tokens_details": {
       "cache_write_tokens": 0,
       "cached_tokens": 0
      },
-     "output_tokens": 469,
+     "output_tokens": 279,
      "output_tokens_details": {
-      "reasoning_tokens": 112
+      "reasoning_tokens": 39
      },
-     "total_tokens": 5651
+     "total_tokens": 5339
     },
-    "elapsed_s": 20.793426593998447,
+    "elapsed_s": 13.12331112503307,
     "effort": "medium",
     "call": 1
-   },
-   "validator_corrections": []
-  },
-  {
-   "reasoning_summary": "Previous horizontal approaches had large IK errors, and no grasp occurred. Recover from the measured TCP using short robot-side retreat steps before attempting a lower handle approach. Keep the gripper open and reassess actual tracking before descending.",
-   "waypoints": [
-    {
-     "name": "recover_robot_side_step_1",
-     "tcp_xyz_m": [
-      -1.035,
-      -3.318,
-      1.115
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 1.5,
-     "clearance_note": "18 mm retreat toward +y, away from the rack, at the observed TCP height; no descent or attachment."
-    },
-    {
-     "name": "recover_robot_side_step_2",
-     "tcp_xyz_m": [
-      -1.035,
-      -3.3,
-      1.115
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 1.5,
-     "clearance_note": "Continue 18 mm toward the robot-side aisle while maintaining height."
-    },
-    {
-     "name": "recover_robot_side_step_3",
-     "tcp_xyz_m": [
-      -1.035,
-      -3.282,
-      1.115
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 1.5,
-     "clearance_note": "Continue 18 mm toward +y; stop for observation before handle alignment and descent."
-    }
-   ],
-   "safety_checks": [
-    "Each commanded translation is 18 mm, below the 20 mm limit.",
-    "Commanded TCP distances from the robot base are approximately 0.55\u20130.57 m, within the usable radius.",
-    "These TCP segments remain more than 30 mm from all supplied object AABBs; full gripper and arm swept-volume clearance still requires collision checking.",
-    "Maintain the requested horizontal -y tool axis; enforce the 0.25 rad orientation-deviation limit during execution.",
-    "Do not infer successful alignment from commanded poses: inspect the next measured TCP because previous IK tracking errors exceeded grasp tolerance."
-   ],
-   "done": false,
-   "stage_estimate": 0,
-   "_meta": {
-    "usage": {
-     "attribution": {
-      "items": {
-       "msg_0f4fd554549fe15e016aa564a854d887d08ab9c8470d7a0268": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 2340,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1201,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 4,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 313,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1202,
-          "output_tokens": 0
-         }
-        ],
-        "input_tokens": 5070,
-        "output_tokens": 0
-       },
-       "rs_0f4fd554549fe15e016aa564aaca1087d080f329cc7c1d3977": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 2,
-        "output_tokens": 89
-       },
-       "msg_0f4fd554549fe15e016aa564ae58dc87d0af5db11b6ad7c971": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 0,
-          "output_tokens": 537
-         }
-        ],
-        "input_tokens": 0,
-        "output_tokens": 537
-       }
-      },
-      "request_fields": {
-       "text.format": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 155,
-        "output_tokens": 0
-       },
-       "instructions": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 21,
-        "output_tokens": 0
-       }
-      }
-     },
-     "input_tokens": 5248,
-     "input_tokens_details": {
-      "cache_write_tokens": 0,
-      "cached_tokens": 0
-     },
-     "output_tokens": 626,
-     "output_tokens_details": {
-      "reasoning_tokens": 89
-     },
-     "total_tokens": 5874
-    },
-    "elapsed_s": 27.450722124020103,
-    "effort": "medium",
-    "call": 2
-   },
-   "validator_corrections": []
-  },
-  {
-   "reasoning_summary": "Previous recovery commands produced increasing tracking errors, so use one small correction from the observed TCP and reassess before descending further. Keep the required horizontal orientation and leave the gripper open.",
-   "waypoints": [
-    {
-     "name": "observed_tcp_small_handle_correction",
-     "tcp_xyz_m": [
-      -1.059,
-      -3.337,
-      1.107
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 2.0,
-     "clearance_note": "Commanded displacement is 17.9 mm. Remain above the rack and crucibles; do not attempt attachment until measured alignment is confirmed."
-    }
-   ],
-   "safety_checks": [
-    "Commanded translation is below the 20 mm limit.",
-    "Target TCP is approximately 0.557 m from the robot base, within the usable radius.",
-    "TCP segment remains more than 0.03 m from listed object AABBs; full gripper and arm clearance still requires collision checking.",
-    "Maintain horizontal tool axis pointing -y without commanded yaw change.",
-    "Check actual tracking error at the next observation before issuing another correction."
-   ],
-   "done": false,
-   "stage_estimate": 0,
-   "_meta": {
-    "usage": {
-     "attribution": {
-      "items": {
-       "msg_0cdd348e2988e155016aa564dca65887d0a676f6a611b3d2d3": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 2470,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1201,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 4,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 313,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1202,
-          "output_tokens": 0
-         }
-        ],
-        "input_tokens": 5200,
-        "output_tokens": 0
-       },
-       "rs_0cdd348e2988e155016aa564e6713887d08443dcec1ab03c88": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 2,
-        "output_tokens": 36
-       },
-       "msg_0cdd348e2988e155016aa564e7f5e487d09aff4614a86de484": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 0,
-          "output_tokens": 297
-         }
-        ],
-        "input_tokens": 0,
-        "output_tokens": 297
-       }
-      },
-      "request_fields": {
-       "text.format": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 155,
-        "output_tokens": 0
-       },
-       "instructions": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 21,
-        "output_tokens": 0
-       }
-      }
-     },
-     "input_tokens": 5378,
-     "input_tokens_details": {
-      "cache_write_tokens": 0,
-      "cached_tokens": 0
-     },
-     "output_tokens": 333,
-     "output_tokens_details": {
-      "reasoning_tokens": 36
-     },
-     "total_tokens": 5711
-    },
-    "elapsed_s": 22.073000741016585,
-    "effort": "medium",
-    "call": 3
-   },
-   "validator_corrections": []
-  },
-  {
-   "reasoning_summary": "The rack remains ungrasped. The latest small correction tracked substantially better than earlier large moves, so continue with short steps from the observed TCP toward the robot-side horizontal pregrasp corridor. Keep the gripper open and reassess tracking before approaching the handle.",
-   "waypoints": [
-    {
-     "name": "handle_corridor_step_1",
-     "tcp_xyz_m": [
-      -1.057,
-      -3.33,
-      1.1
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 0.8,
-     "clearance_note": "18.4 mm commanded step toward +y and downward; remain on the -x side of the rack."
-    },
-    {
-     "name": "handle_corridor_step_2",
-     "tcp_xyz_m": [
-      -1.057,
-      -3.318,
-      1.086
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 0.8,
-     "clearance_note": "Continue 18.4 mm toward the robot-side approach corridor without entering the rack or crucible AABBs."
-    },
-    {
-     "name": "handle_corridor_step_3",
-     "tcp_xyz_m": [
-      -1.057,
-      -3.306,
-      1.072
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 0.8,
-     "clearance_note": "Stop above and beside the rack for a fresh TCP observation; do not close or attach."
-    }
-   ],
-   "safety_checks": [
-    "Each commanded translation is 18.4 mm, below dp_max_mm=20.",
-    "Waypoint distances from the robot base are approximately 0.54\u20130.55 m, within the 0.30\u20130.82 m usable range.",
-    "The TCP path maintains more than 0.03 m clearance from all listed AABBs; full gripper and arm swept-volume clearance still requires collision validation.",
-    "Maintain the task-required horizontal -y tool orientation; validate any orientation correction against the 0.25 rad deviation limit.",
-    "No grasp success or task completion is assumed from prior failed attempts."
-   ],
-   "done": false,
-   "stage_estimate": 0,
-   "_meta": {
-    "usage": {
-     "attribution": {
-      "items": {
-       "msg_0c26f283a0db14ca016aa564ff365487d09ee73c2f5e572930": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 2524,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1201,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 4,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 313,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1202,
-          "output_tokens": 0
-         }
-        ],
-        "input_tokens": 5254,
-        "output_tokens": 0
-       },
-       "rs_0c26f283a0db14ca016aa56500c45c87d0bae2539061a6fb46": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 2,
-        "output_tokens": 87
-       },
-       "msg_0c26f283a0db14ca016aa56505034c87d08434ba099d2ec47c": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 0,
-          "output_tokens": 558
-         }
-        ],
-        "input_tokens": 0,
-        "output_tokens": 558
-       }
-      },
-      "request_fields": {
-       "text.format": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 155,
-        "output_tokens": 0
-       },
-       "instructions": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 21,
-        "output_tokens": 0
-       }
-      }
-     },
-     "input_tokens": 5432,
-     "input_tokens_details": {
-      "cache_write_tokens": 0,
-      "cached_tokens": 0
-     },
-     "output_tokens": 645,
-     "output_tokens_details": {
-      "reasoning_tokens": 87
-     },
-     "total_tokens": 6077
-    },
-    "elapsed_s": 24.26789319596719,
-    "effort": "medium",
-    "call": 4
-   },
-   "validator_corrections": []
-  },
-  {
-   "reasoning_summary": "Previous multi-waypoint corrections accumulated tracking error without reaching the handle. Use one small correction from the measured TCP, then reassess before descending or attaching. Maintain the task-required horizontal tool orientation.",
-   "waypoints": [
-    {
-     "name": "measured_tcp_handle_alignment_step",
-     "tcp_xyz_m": [
-      -1.055,
-      -3.333,
-      1.116
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 2.0,
-     "clearance_note": "18.8 mm commanded translation toward the handle's robot-side approach corridor. Remain above the rack and crucibles; do not descend or close the gripper before checking the resulting measured pose."
-    }
-   ],
-   "safety_checks": [
-    "Commanded displacement is below the 20 mm limit.",
-    "Target TCP is approximately 0.559 m from the robot base, within the 0.30\u20130.82 m usable radius.",
-    "TCP segment remains more than 30 mm from the listed non-target AABBs; full gripper and arm swept-volume clearance requires execution-time validation.",
-    "Keep the tool axis horizontal toward -y; validate orientation tracking against the 0.25 rad deviation limit.",
-    "No attachment or task-stage advancement is justified by the current observation."
-   ],
-   "done": false,
-   "stage_estimate": 0,
-   "_meta": {
-    "usage": {
-     "attribution": {
-      "items": {
-       "msg_0b23a5e89157a1cf016aa56525e88087d09b0768ce314032ad": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 2655,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1201,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 4,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 313,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1202,
-          "output_tokens": 0
-         }
-        ],
-        "input_tokens": 5385,
-        "output_tokens": 0
-       },
-       "msg_0b23a5e89157a1cf016aa56529169c87d083781e778391d837": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 2,
-          "output_tokens": 327
-         }
-        ],
-        "input_tokens": 2,
-        "output_tokens": 327
-       }
-      },
-      "request_fields": {
-       "text.format": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 155,
-        "output_tokens": 0
-       },
-       "instructions": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 21,
-        "output_tokens": 0
-       }
-      }
-     },
-     "input_tokens": 5563,
-     "input_tokens_details": {
-      "cache_write_tokens": 0,
-      "cached_tokens": 0
-     },
-     "output_tokens": 327,
-     "output_tokens_details": {
-      "reasoning_tokens": 0
-     },
-     "total_tokens": 5890
-    },
-    "elapsed_s": 15.935420235968195,
-    "effort": "medium",
-    "call": 5
-   },
-   "validator_corrections": []
-  },
-  {
-   "reasoning_summary": "Previous multi-waypoint corrections accumulated tracking error. Use one correction of less than 20 mm from the measured TCP, retaining the required horizontal tool orientation and open gripper. Move toward the robot-side approach corridor before descending to the handle; grasping is not yet justified.",
-   "waypoints": [
-    {
-     "name": "measured_robot_side_corridor_correction",
-     "tcp_xyz_m": [
-      -1.051,
-      -3.326,
-      1.109
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 2.0,
-     "clearance_note": "18.9 mm translation from observed TCP. Remain above and to the -x side of the rack, moving toward +y for the horizontal handle approach; do not descend into the rack or attach."
-    }
-   ],
-   "safety_checks": [
-    "Commanded translation is below dp_max_mm=20.",
-    "Target is approximately 0.557 m from the robot base, within the 0.30\u20130.82 m usable radius.",
-    "TCP segment maintains more than 0.03 m clearance from listed AABBs; full gripper and arm collision clearance requires execution-time verification.",
-    "Maintain tool_down=false and yaw_deg=-90; verify orientation tracking within 0.25 rad.",
-    "Reobserve after this single correction because previous waypoint tracking errors accumulated."
-   ],
-   "done": false,
-   "stage_estimate": 0,
-   "_meta": {
-    "usage": {
-     "attribution": {
-      "items": {
-       "msg_097296ecaade9cf0016aa56540768887d099e7bbc6cd39e516": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 2710,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1201,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 4,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 313,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1202,
-          "output_tokens": 0
-         }
-        ],
-        "input_tokens": 5440,
-        "output_tokens": 0
-       },
-       "msg_097296ecaade9cf0016aa56543028887d0bf406dd87e6d1e2e": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 2,
-          "output_tokens": 343
-         }
-        ],
-        "input_tokens": 2,
-        "output_tokens": 343
-       }
-      },
-      "request_fields": {
-       "text.format": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 155,
-        "output_tokens": 0
-       },
-       "instructions": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 21,
-        "output_tokens": 0
-       }
-      }
-     },
-     "input_tokens": 5618,
-     "input_tokens_details": {
-      "cache_write_tokens": 0,
-      "cached_tokens": 0
-     },
-     "output_tokens": 343,
-     "output_tokens_details": {
-      "reasoning_tokens": 0
-     },
-     "total_tokens": 5961
-    },
-    "elapsed_s": 17.234048843965866,
-    "effort": "medium",
-    "call": 6
-   },
-   "validator_corrections": []
-  },
-  {
-   "reasoning_summary": "Use one measured-state correction because previous multi-waypoint commands accumulated tracking error. Move toward the robot-side handle approach corridor while remaining above the rack; keep the gripper open and reassess before descending.",
-   "waypoints": [
-    {
-     "name": "measured_handle_corridor_step",
-     "tcp_xyz_m": [
-      -1.049,
-      -3.329,
-      1.111
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 1.5,
-     "clearance_note": "18.8 mm displacement from the observed TCP. Moves toward +y and +x with only 4 mm descent; TCP remains 160 mm above the rack top. No grasp or attachment until handle alignment is verified."
-    }
-   ],
-   "safety_checks": [
-    "Commanded translation is below dp_max_mm=20.",
-    "Target TCP is approximately 0.561 m from the robot base, within the 0.30\u20130.82 m usable radius.",
-    "The TCP segment maintains at least 0.03 m clearance from all supplied object AABBs; full gripper and link swept-volume clearance still requires simulator validation.",
-    "Maintain the required horizontal -y tool orientation; validate orientation tracking against the 0.25 rad deviation limit.",
-    "Reobserve actual TCP after this single step; do not infer successful grasp or compensate using accumulated nominal waypoints."
-   ],
-   "done": false,
-   "stage_estimate": 0,
-   "_meta": {
-    "usage": {
-     "attribution": {
-      "items": {
-       "msg_0e4df6b88d725608016aa5655ca99887d0aff6c0f3e12ff556": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 2618,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1201,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 4,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 313,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1202,
-          "output_tokens": 0
-         }
-        ],
-        "input_tokens": 5348,
-        "output_tokens": 0
-       },
-       "msg_0e4df6b88d725608016aa5655ede1087d0a64b197a9c9eb3b9": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 2,
-          "output_tokens": 346
-         }
-        ],
-        "input_tokens": 2,
-        "output_tokens": 346
-       }
-      },
-      "request_fields": {
-       "text.format": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 155,
-        "output_tokens": 0
-       },
-       "instructions": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 21,
-        "output_tokens": 0
-       }
-      }
-     },
-     "input_tokens": 5526,
-     "input_tokens_details": {
-      "cache_write_tokens": 0,
-      "cached_tokens": 0
-     },
-     "output_tokens": 346,
-     "output_tokens_details": {
-      "reasoning_tokens": 0
-     },
-     "total_tokens": 5872
-    },
-    "elapsed_s": 16.113045145990327,
-    "effort": "medium",
-    "call": 7
-   },
-   "validator_corrections": []
-  },
-  {
-   "reasoning_summary": "The rack is not grasped. Previous multi-waypoint commands accumulated tracking error, so use one correction referenced to the observed TCP and reassess before descending toward the handle. Keep the gripper open and the task-required horizontal orientation.",
-   "waypoints": [
-    {
-     "name": "observed_tcp_handle_approach_correction",
-     "tcp_xyz_m": [
-      -1.045,
-      -3.33,
-      1.11
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 1.5,
-     "clearance_note": "Move 18.9 mm toward the handle alignment and robot-side approach corridor. Remain above the rack and crucibles; do not descend to contact or attach until alignment is observed."
-    }
-   ],
-   "safety_checks": [
-    "Commanded translation from the measured TCP is 18.9 mm, below dp_max_mm=20.",
-    "Target TCP is approximately 0.564 m from the robot base, within the 0.30\u20130.82 m usable range.",
-    "TCP remains at least 0.128 m above nearby crucible tops and outside furnace AABBs; full gripper and arm swept-volume clearance must also be checked.",
-    "Maintain tool axis along -y; verify orientation tracking within 0.25 rad before subsequent approach.",
-    "No attachment or completion is inferred from prior waypoint success messages."
-   ],
-   "done": false,
-   "stage_estimate": 0,
-   "_meta": {
-    "usage": {
-     "attribution": {
-      "items": {
-       "msg_0ea49aa42c44b821016aa5657452f087d0929220510362fc8b": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 2608,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1201,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 4,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 313,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1202,
-          "output_tokens": 0
-         }
-        ],
-        "input_tokens": 5338,
-        "output_tokens": 0
-       },
-       "rs_0ea49aa42c44b821016aa5657653c487d0ad47fb8d68bfb96e": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 2,
-        "output_tokens": 35
-       },
-       "msg_0ea49aa42c44b821016aa56577da0087d0b011f1a16137937b": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 0,
-          "output_tokens": 349
-         }
-        ],
-        "input_tokens": 0,
-        "output_tokens": 349
-       }
-      },
-      "request_fields": {
-       "text.format": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 155,
-        "output_tokens": 0
-       },
-       "instructions": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 21,
-        "output_tokens": 0
-       }
-      }
-     },
-     "input_tokens": 5516,
-     "input_tokens_details": {
-      "cache_write_tokens": 0,
-      "cached_tokens": 0
-     },
-     "output_tokens": 384,
-     "output_tokens_details": {
-      "reasoning_tokens": 35
-     },
-     "total_tokens": 5900
-    },
-    "elapsed_s": 18.116021074994933,
-    "effort": "medium",
-    "call": 8
-   },
-   "validator_corrections": []
-  },
-  {
-   "reasoning_summary": "The rack is not grasped. Previous multi-waypoint execution accumulated tracking error, so command one small correction from the measured TCP and reassess. Move toward the robot-side handle approach corridor while maintaining the required horizontal tool orientation.",
-   "waypoints": [
-    {
-     "name": "measured_handle_corridor_correction",
-     "tcp_xyz_m": [
-      -1.052,
-      -3.327,
-      1.104
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 1.0,
-     "clearance_note": "18.8 mm commanded displacement from the observed TCP. Remain above and to the -x side of the rack; do not close or attach before confirmed handle alignment."
-    }
-   ],
-   "safety_checks": [
-    "Commanded translation is below the 20 mm limit.",
-    "TCP distance from the robot base is approximately 0.556 m, within the 0.30\u20130.82 m usable range.",
-    "The TCP segment maintains more than 0.03 m clearance from listed AABBs; full gripper and arm clearance requires execution-time collision checking.",
-    "Maintain tool_down=false and yaw_deg=-90; verify orientation deviation remains within 0.25 rad.",
-    "Reobserve after this waypoint because recent tracking errors preclude reliable open-loop chaining."
-   ],
-   "done": false,
-   "stage_estimate": 0,
-   "_meta": {
-    "usage": {
-     "attribution": {
-      "items": {
-       "msg_0e45fbf9c08876f7016aa5658f9a7c87d086084a7d1f25c2fe": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 2539,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1201,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 4,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 313,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1202,
-          "output_tokens": 0
-         }
-        ],
-        "input_tokens": 5269,
-        "output_tokens": 0
-       },
-       "rs_0e45fbf9c08876f7016aa56591e19087d0a637ddd593b842d7": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 2,
-        "output_tokens": 45
-       },
-       "msg_0e45fbf9c08876f7016aa56594ab4087d0b7aa4daeab507ade": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 0,
-          "output_tokens": 334
-         }
-        ],
-        "input_tokens": 0,
-        "output_tokens": 334
-       }
-      },
-      "request_fields": {
-       "text.format": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 155,
-        "output_tokens": 0
-       },
-       "instructions": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 21,
-        "output_tokens": 0
-       }
-      }
-     },
-     "input_tokens": 5447,
-     "input_tokens_details": {
-      "cache_write_tokens": 0,
-      "cached_tokens": 0
-     },
-     "output_tokens": 379,
-     "output_tokens_details": {
-      "reasoning_tokens": 45
-     },
-     "total_tokens": 5826
-    },
-    "elapsed_s": 17.989092999021523,
-    "effort": "medium",
-    "call": 9
-   },
-   "validator_corrections": []
-  },
-  {
-   "reasoning_summary": "The rack is not grasped. Use the measured TCP rather than accumulated nominal positions because previous moves showed tracking error. Take one bounded step toward the robot-side handle approach corridor, retaining the required horizontal tool orientation, then reassess.",
-   "waypoints": [
-    {
-     "name": "feedback_handle_corridor_step",
-     "tcp_xyz_m": [
-      -1.045,
-      -3.33,
-      1.113
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 1.0,
-     "clearance_note": "18.4 mm translation from the observed TCP; remain above the rack and crucibles while moving toward the robot-side approach corridor. No descent or attachment yet."
-    }
-   ],
-   "safety_checks": [
-    "Commanded translation is below the 20 mm limit.",
-    "TCP radius from the base is approximately 0.564 m, within the 0.30\u20130.82 m usable range.",
-    "This TCP segment remains more than 0.03 m from all listed object AABBs; full gripper and arm swept-volume clearance still requires simulator validation.",
-    "Maintain horizontal tool axis toward -y; verify orientation tracking within 0.25 rad before further approach.",
-    "Reobserve after this single step because prior tracking errors make chained nominal steps unreliable."
-   ],
-   "done": false,
-   "stage_estimate": 0,
-   "_meta": {
-    "usage": {
-     "attribution": {
-      "items": {
-       "msg_05434c079f955246016aa565a809e487d0a875344d2854d290": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 2543,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1201,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 4,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 313,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1202,
-          "output_tokens": 0
-         }
-        ],
-        "input_tokens": 5273,
-        "output_tokens": 0
-       },
-       "rs_05434c079f955246016aa565aab61087d090e0005485563b30": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 2,
-        "output_tokens": 41
-       },
-       "msg_05434c079f955246016aa565acfcd087d0973a512d497c91af": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 0,
-          "output_tokens": 332
-         }
-        ],
-        "input_tokens": 0,
-        "output_tokens": 332
-       }
-      },
-      "request_fields": {
-       "text.format": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 155,
-        "output_tokens": 0
-       },
-       "instructions": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 21,
-        "output_tokens": 0
-       }
-      }
-     },
-     "input_tokens": 5451,
-     "input_tokens_details": {
-      "cache_write_tokens": 0,
-      "cached_tokens": 0
-     },
-     "output_tokens": 373,
-     "output_tokens_details": {
-      "reasoning_tokens": 41
-     },
-     "total_tokens": 5824
-    },
-    "elapsed_s": 17.043592065980192,
-    "effort": "medium",
-    "call": 10
-   },
-   "validator_corrections": []
-  },
-  {
-   "reasoning_summary": "The rack is not yet grasped. Continue a small feedback-controlled approach toward the robot-side handle corridor, retaining the required horizontal tool orientation. The remaining call budget does not justify skipping the motion limits or claiming completion.",
-   "waypoints": [
-    {
-     "name": "measured_robot_side_handle_approach",
-     "tcp_xyz_m": [
-      -1.0487,
-      -3.3381,
-      1.0969
-     ],
-     "tool_down": false,
-     "yaw_deg": -90,
-     "gripper": "open",
-     "attach": "",
-     "detach": false,
-     "duration_s": 0.6,
-     "clearance_note": "Advance 19.0 mm from the observed TCP toward a robot-side pregrasp position. Remain above the rack and crucibles; do not close or attach before verified handle alignment."
-    }
-   ],
-   "safety_checks": [
-    "Commanded TCP translation is below dp_max_mm=20.",
-    "Target distance from the robot base is approximately 0.565 m, within the 0.30\u20130.82 m usable range.",
-    "The TCP segment remains more than 0.03 m from all listed object AABBs; full gripper and link clearance must also be validated by the simulator.",
-    "Maintain the horizontal -y tool orientation; enforce the 0.25 rad orientation-change limit during execution.",
-    "No grasp, lift, insertion, or placement has been verified; completion remains false."
-   ],
-   "done": false,
-   "stage_estimate": 0,
-   "_meta": {
-    "usage": {
-     "attribution": {
-      "items": {
-       "msg_0eb58dc1b3200c4d016aa565bf1e7087d08849a3be1e25362c": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 2467,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1201,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 4,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 313,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 5,
-          "output_tokens": 0
-         },
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 1202,
-          "output_tokens": 0
-         }
-        ],
-        "input_tokens": 5197,
-        "output_tokens": 0
-       },
-       "rs_0eb58dc1b3200c4d016aa565c07e4887d0b50d15bf6c5a4979": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 2,
-        "output_tokens": 58
-       },
-       "msg_0eb58dc1b3200c4d016aa565c32ca487d0972723000d5a301d": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "content": [
-         {
-          "cache_write_tokens": 0,
-          "cached_tokens": 0,
-          "input_tokens": 0,
-          "output_tokens": 345
-         }
-        ],
-        "input_tokens": 0,
-        "output_tokens": 345
-       }
-      },
-      "request_fields": {
-       "text.format": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 155,
-        "output_tokens": 0
-       },
-       "instructions": {
-        "cache_write_tokens": 0,
-        "cached_tokens": 0,
-        "input_tokens": 21,
-        "output_tokens": 0
-       }
-      }
-     },
-     "input_tokens": 5375,
-     "input_tokens_details": {
-      "cache_write_tokens": 0,
-      "cached_tokens": 0
-     },
-     "output_tokens": 403,
-     "output_tokens_details": {
-      "reasoning_tokens": 58
-     },
-     "total_tokens": 5778
-    },
-    "elapsed_s": 16.50226760696387,
-    "effort": "medium",
-    "call": 11
-   },
-   "validator_corrections": []
+   }
   }
  ],
  "dp_max_mm": null,
- "frames": 742,
- "duration_s": 49.5,
+ "frames": 75,
+ "duration_s": 5.0,
  "safety": {
   "theta_dev_ok": true,
   "dp_ok": true
