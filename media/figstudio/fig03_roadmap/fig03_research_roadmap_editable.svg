@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" width="1536" height="1024">
+  <rect width="100%" height="100%" fill="#FFFFFF" />
+  <g id="c1">
+    <rect x="27" y="39" width="311" height="243" rx="14" fill="#F3F5F6" stroke="#C9CFD4" stroke-width="2.5" />
+  </g>
+  <g id="c1_t">
+    <text x="126.5" y="82.125" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="28" font-weight="bold" font-style="normal" fill="#2B2F33">文献依据</tspan>
+    </text>
+  </g>
+  <g id="c1_k0">
+    <rect x="43" y="97" width="282" height="51" rx="8" fill="#FFFFFF" stroke="#B5BDC4" stroke-width="2" />
+  </g>
+  <g id="c1_k0_t">
+    <text x="99.337890625" y="131.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#2B2F33">Ba–Y–Si–O </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#2B2F33">谱系</tspan>
+    </text>
+  </g>
+  <g id="c1_k1">
+    <rect x="43" y="156" width="282" height="51" rx="8" fill="#FFFFFF" stroke="#B5BDC4" stroke-width="2" />
+  </g>
+  <g id="c1_k1_t">
+    <text x="70.345703125" y="190.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#2B2F33">Ba–Zn–Si–O </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#2B2F33">结构近邻</tspan>
+    </text>
+  </g>
+  <g id="c1_k2">
+    <rect x="43" y="215" width="282" height="51" rx="8" fill="#FFFFFF" stroke="#B5BDC4" stroke-width="2" />
+  </g>
+  <g id="c1_k2_t">
+    <text x="98.5" y="249.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#2B2F33">Y–Si–O </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#2B2F33">工艺参照</tspan>
+    </text>
+  </g>
+  <g id="c1_c2">
+    <polygon points="184.5,284.0 184.5,314.0 190.0,314.0 182,332 174.0,314.0 179.5,314.0 179.5,284.0" fill="#1F6F78" />
+  </g>
+  <g id="c2">
+    <rect x="30" y="336" width="308" height="244" rx="14" fill="#FBF3E3" stroke="#B8862B" stroke-width="2.5" />
+  </g>
+  <g id="c2_t">
+    <text x="128.0" y="379.125" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="28" font-weight="bold" font-style="normal" fill="#7A5A1C">结构假设</tspan>
+    </text>
+  </g>
+  <g id="c2_k0">
+    <rect x="45" y="395" width="278" height="52" rx="8" fill="#FFFFFF" stroke="#B5BDC4" stroke-width="2" />
+  </g>
+  <g id="c2_k0_t">
+    <text x="119.875" y="430.375" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#2B2F33">局部组成网格</tspan>
+    </text>
+  </g>
+  <g id="c2_k1">
+    <rect x="45" y="454" width="278" height="52" rx="8" fill="#FFFFFF" stroke="#B5BDC4" stroke-width="2" />
+  </g>
+  <g id="c2_k1_t">
+    <text x="96.791015625" y="488.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#2B2F33">Zn–Y–</tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#2B2F33">氧计量耦合</tspan>
+    </text>
+  </g>
+  <g id="c2_k2">
+    <rect x="45" y="512" width="278" height="52" rx="8" fill="#FFFFFF" stroke="#B5BDC4" stroke-width="2" />
+  </g>
+  <g id="c2_k2_t">
+    <text x="109.201171875" y="547.375" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#2B2F33">竞争相与玻璃区</tspan>
+    </text>
+  </g>
+  <g id="c2_c3">
+    <polygon points="184.5,582.0 184.5,613.0 190.0,613.0 182,631 174.0,613.0 179.5,613.0 179.5,582.0" fill="#1F6F78" />
+  </g>
+  <g id="c3">
+    <rect x="31" y="635" width="305" height="257" rx="14" fill="#F3F5F6" stroke="#C9CFD4" stroke-width="2.5" />
+  </g>
+  <g id="c3_t">
+    <text x="71.5" y="680.125" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="28" font-weight="bold" font-style="normal" fill="#2B2F33">模型筛选的前驱体</tspan>
+    </text>
+  </g>
+  <g id="c3_k0">
+    <rect x="45" y="698" width="278" height="52" rx="8" fill="#FFFFFF" stroke="#B5BDC4" stroke-width="2" />
+  </g>
+  <g id="c3_k0_t">
+    <text x="51.875" y="731.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#2B2F33">BaCO3 + Y2O3 + SiO2</tspan>
+    </text>
+  </g>
+  <g id="c3_k1">
+    <rect x="45" y="757" width="278" height="53" rx="8" fill="#FFFFFF" stroke="#B5BDC4" stroke-width="2" />
+  </g>
+  <g id="c3_k1_t">
+    <text x="70.369140625" y="790.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#2B2F33">ZnO / MgO / Co3O4</tspan>
+    </text>
+  </g>
+  <g id="c3_tag">
+    <rect x="45" y="822" width="278" height="53" rx="8" fill="#F6E7C6" stroke="#B8862B" stroke-width="2" />
+  </g>
+  <g id="c3_tag_t">
+    <text x="103.48046875" y="857.875" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#7A5A1C">模型排序</tspan>
+      <tspan font-family="DejaVu Sans" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#7A5A1C"> ≠ </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#7A5A1C">验证</tspan>
+    </text>
+  </g>
+  <g id="fk_stub">
+    <line x1="338" y1="763" x2="400" y2="763" stroke="#1F6F78" stroke-width="5" />
+  </g>
+  <g id="fk_v">
+    <line x1="400" y1="459" x2="400" y2="763" stroke="#1F6F78" stroke-width="5" />
+  </g>
+  <g id="fk_a">
+    <polygon points="400.0,456.5 436.0,456.5 436.0,451.0 454,459 436.0,467.0 436.0,461.5 400.0,461.5" fill="#1F6F78" />
+  </g>
+  <g id="fk_b">
+    <polygon points="400.0,703.5 436.0,703.5 436.0,698.0 454,706 436.0,714.0 436.0,708.5 400.0,708.5" fill="#1F6F78" />
+  </g>
+  <g id="l1">
+    <rect x="456" y="394" width="756" height="130" rx="14" fill="#E4F0F1" stroke="#1F6F78" stroke-width="2.5" />
+  </g>
+  <g id="l1_t">
+    <text x="476" y="434.125" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="28" font-weight="bold" font-style="normal" fill="#155459">固相成相</tspan>
+    </text>
+  </g>
+  <g id="l1_k0">
+    <rect x="475" y="449" width="149" height="59" rx="8" fill="#FFFFFF" stroke="#9AA5AD" stroke-width="2" />
+  </g>
+  <g id="l1_k0_t">
+    <text x="503.5" y="488.5" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="23" font-weight="bold" font-style="normal" fill="#2B2F33">分段煅烧</tspan>
+    </text>
+  </g>
+  <g id="l1_a0">
+    <polygon points="627.0,476.0 637.0,476.0 637.0,472.5 649,478 637.0,483.5 637.0,480.0 627.0,480.0" fill="#1F6F78" />
+  </g>
+  <g id="l1_k1">
+    <rect x="652" y="449" width="128" height="59" rx="8" fill="#FFFFFF" stroke="#9AA5AD" stroke-width="2" />
+  </g>
+  <g id="l1_k1_t">
+    <text x="693.0" y="488.5" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="23" font-weight="bold" font-style="normal" fill="#2B2F33">复磨</tspan>
+    </text>
+  </g>
+  <g id="l1_a1">
+    <polygon points="783.0,476.0 805.0,476.0 805.0,472.5 817,478 805.0,483.5 805.0,480.0 783.0,480.0" fill="#1F6F78" />
+  </g>
+  <g id="l1_k2">
+    <rect x="820" y="449" width="120" height="59" rx="8" fill="#FFFFFF" stroke="#9AA5AD" stroke-width="2" />
+  </g>
+  <g id="l1_k2_t">
+    <text x="857.0" y="488.5" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="23" font-weight="bold" font-style="normal" fill="#2B2F33">退火</tspan>
+    </text>
+  </g>
+  <g id="l1_a2">
+    <polygon points="943.0,476.0 959.0,476.0 959.0,472.5 971,478 959.0,483.5 959.0,480.0 943.0,480.0" fill="#1F6F78" />
+  </g>
+  <g id="l1_k3">
+    <rect x="974" y="449" width="222" height="59" rx="8" fill="#FFFFFF" stroke="#9AA5AD" stroke-width="2" />
+  </g>
+  <g id="l1_k3_t">
+    <text x="993.0" y="488.5" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="23" font-weight="bold" font-style="normal" fill="#2B2F33">批量相区与相纯度</tspan>
+    </text>
+  </g>
+  <g id="l2">
+    <rect x="456" y="640" width="756" height="132" rx="14" fill="#E4F0F1" stroke="#1F6F78" stroke-width="2.5" />
+  </g>
+  <g id="l2_t">
+    <text x="476" y="680.125" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="28" font-weight="bold" font-style="normal" fill="#155459">高温溶液长晶</tspan>
+    </text>
+  </g>
+  <g id="l2_k0">
+    <rect x="475" y="696" width="121" height="59" rx="8" fill="#FFFFFF" stroke="#9AA5AD" stroke-width="2" />
+  </g>
+  <g id="l2_k0_t">
+    <text x="512.5" y="735.5" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="23" font-weight="bold" font-style="normal" fill="#2B2F33">助熔</tspan>
+    </text>
+  </g>
+  <g id="l2_a0">
+    <polygon points="599.0,723.0 615.0,723.0 615.0,719.5 627,725 615.0,730.5 615.0,727.0 599.0,727.0" fill="#1F6F78" />
+  </g>
+  <g id="l2_k1">
+    <rect x="630" y="696" width="126" height="59" rx="8" fill="#FFFFFF" stroke="#9AA5AD" stroke-width="2" />
+  </g>
+  <g id="l2_k1_t">
+    <text x="670.0" y="735.5" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="23" font-weight="bold" font-style="normal" fill="#2B2F33">保温</tspan>
+    </text>
+  </g>
+  <g id="l2_a1">
+    <polygon points="759.0,723.0 769.0,723.0 769.0,719.5 781,725 769.0,730.5 769.0,727.0 759.0,727.0" fill="#1F6F78" />
+  </g>
+  <g id="l2_k2">
+    <rect x="784" y="696" width="122" height="59" rx="8" fill="#FFFFFF" stroke="#9AA5AD" stroke-width="2" />
+  </g>
+  <g id="l2_k2_t">
+    <text x="822.0" y="735.5" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="23" font-weight="bold" font-style="normal" fill="#2B2F33">慢冷</tspan>
+    </text>
+  </g>
+  <g id="l2_a2">
+    <polygon points="909.0,723.0 925.0,723.0 925.0,719.5 937,725 925.0,730.5 925.0,727.0 909.0,727.0" fill="#1F6F78" />
+  </g>
+  <g id="l2_k3">
+    <rect x="940" y="696" width="256" height="59" rx="8" fill="#FFFFFF" stroke="#9AA5AD" stroke-width="2" />
+  </g>
+  <g id="l2_k3_t">
+    <text x="953.0" y="735.5" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="23" font-weight="bold" font-style="normal" fill="#2B2F33">单晶结构与液相选择性</tspan>
+    </text>
+  </g>
+  <g id="mg_a">
+    <line x1="1214" y1="459" x2="1240" y2="459" stroke="#1F6F78" stroke-width="5" />
+  </g>
+  <g id="mg_b">
+    <line x1="1214" y1="706" x2="1240" y2="706" stroke="#1F6F78" stroke-width="5" />
+  </g>
+  <g id="mg_v">
+    <line x1="1240" y1="459" x2="1240" y2="706" stroke="#1F6F78" stroke-width="5" />
+  </g>
+  <g id="mg_out">
+    <polygon points="1240.0,547.5 1249.0,547.5 1249.0,542.0 1265,550 1249.0,558.0 1249.0,552.5 1240.0,552.5" fill="#1F6F78" />
+  </g>
+  <g id="c5">
+    <rect x="1267" y="368" width="239" height="365" rx="14" fill="#F3F5F6" stroke="#C9CFD4" stroke-width="2.5" />
+  </g>
+  <g id="c5_t">
+    <text x="1330.5" y="414.125" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="28" font-weight="bold" font-style="normal" fill="#2B2F33">结果反馈</tspan>
+    </text>
+  </g>
+  <g id="c5_k0">
+    <rect x="1283" y="441" width="213" height="60" rx="8" fill="#FFFFFF" stroke="#B5BDC4" stroke-width="2" />
+  </g>
+  <g id="c5_k0_t">
+    <text x="1295.21875" y="478.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#2B2F33">PXRD / Rietveld</tspan>
+    </text>
+  </g>
+  <g id="c5_k1">
+    <rect x="1283" y="513" width="213" height="60" rx="8" fill="#FFFFFF" stroke="#B5BDC4" stroke-width="2" />
+  </g>
+  <g id="c5_k1_t">
+    <text x="1348.625" y="550.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#2B2F33">SCXRD</tspan>
+    </text>
+  </g>
+  <g id="c5_k2">
+    <rect x="1283" y="585" width="213" height="60" rx="8" fill="#FFFFFF" stroke="#B5BDC4" stroke-width="2" />
+  </g>
+  <g id="c5_k2_t">
+    <text x="1289.25" y="622.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#2B2F33">EDS / EPMA / ICP</tspan>
+    </text>
+  </g>
+  <g id="c5_k3">
+    <rect x="1283" y="657" width="213" height="60" rx="8" fill="#FFFFFF" stroke="#B5BDC4" stroke-width="2" />
+  </g>
+  <g id="c5_k3_t">
+    <text x="1304.0" y="696.375" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="21.37493896484375" font-weight="bold" font-style="normal" fill="#2B2F33">高温相与冷却产物</tspan>
+    </text>
+  </g>
+  <g id="fb1">
+    <line x1="1386" y1="735" x2="1386" y2="960" stroke="#1F6F78" stroke-width="4" stroke-dasharray="16 10" />
+  </g>
+  <g id="fb2">
+    <line x1="1386" y1="960" x2="800" y2="960" stroke="#1F6F78" stroke-width="4" stroke-dasharray="16 10" />
+  </g>
+  <g id="fb_p">
+    <rect x="622" y="936" width="176" height="48" rx="24.0" fill="#FFFFFF" stroke="#1F6F78" stroke-width="2" />
+  </g>
+  <g id="fb_pt">
+    <text x="633.0" y="969.625" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="22" font-weight="bold" font-style="normal" fill="#1F6F78">更新组成与工艺</tspan>
+    </text>
+  </g>
+  <g id="fb3">
+    <line x1="620" y1="960" x2="14" y2="960" stroke="#1F6F78" stroke-width="4" stroke-dasharray="16 10" />
+  </g>
+  <g id="fb4">
+    <line x1="14" y1="960" x2="14" y2="457" stroke="#1F6F78" stroke-width="4" stroke-dasharray="16 10" />
+  </g>
+  <g id="fb5">
+    <defs>
+      <marker id="marker-fb5" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="#1F6F78" />
+      </marker>
+    </defs>
+    <line x1="14" y1="457" x2="28" y2="457" stroke="#1F6F78" stroke-width="4" stroke-dasharray="16 10" marker-end="url(#marker-fb5)" />
+  </g>
+  <g id="q1">
+    <rect x="372" y="289" width="334" height="50" rx="10" fill="#FBF3E3" stroke="#B8862B" stroke-width="2.5" />
+  </g>
+  <g id="q1_t">
+    <text x="387.361328125" y="323.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="22" font-weight="bold" font-style="normal" fill="#7A5A1C">Zn </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="22" font-weight="bold" font-style="normal" fill="#7A5A1C">是否进入并与氧计量耦合？</tspan>
+    </text>
+  </g>
+  <g id="q1_l">
+    <line x1="386" y1="340" x2="362" y2="347" stroke="#B8862B" stroke-width="2.5" />
+  </g>
+  <g id="q1_d">
+    <ellipse cx="352.0" cy="350.0" rx="6.0" ry="6.0" fill="#B8862B" stroke="none" stroke-width="1" />
+  </g>
+  <g id="q2">
+    <rect x="651" y="548" width="318" height="52" rx="10" fill="#FBF3E3" stroke="#B8862B" stroke-width="2.5" />
+  </g>
+  <g id="q2_t">
+    <text x="678.0" y="583.625" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="22" font-weight="bold" font-style="normal" fill="#7A5A1C">稳定相区还是液相选择性？</tspan>
+    </text>
+  </g>
+  <g id="q2_l">
+    <line x1="810" y1="546" x2="810" y2="540" stroke="#B8862B" stroke-width="2.5" />
+  </g>
+  <g id="q2_d">
+    <ellipse cx="810.0" cy="532.0" rx="6.0" ry="6.0" fill="#B8862B" stroke="none" stroke-width="1" />
+  </g>
+  <g id="q2_l2">
+    <line x1="810" y1="602" x2="810" y2="614" stroke="#B8862B" stroke-width="2.5" />
+  </g>
+  <g id="q2_d2">
+    <ellipse cx="810.0" cy="628.0" rx="6.0" ry="6.0" fill="#B8862B" stroke="none" stroke-width="1" />
+  </g>
+  <g id="q3">
+    <rect x="1267" y="214" width="245" height="100" rx="10" fill="#FBF3E3" stroke="#B8862B" stroke-width="2.5" />
+  </g>
+  <g id="q3_t">
+    <text x="1290.5" y="256.75" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="22" font-weight="bold" font-style="normal" fill="#7A5A1C">实际组成与结构信号</tspan>
+    </text>
+    <text x="1334.5" y="289.75" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="22" font-weight="bold" font-style="normal" fill="#7A5A1C">如何对应？</tspan>
+    </text>
+  </g>
+  <g id="q3_l">
+    <line x1="1400" y1="316" x2="1431" y2="351" stroke="#B8862B" stroke-width="2.5" />
+  </g>
+  <g id="q3_d">
+    <ellipse cx="1440.0" cy="360.0" rx="6.0" ry="6.0" fill="#B8862B" stroke="none" stroke-width="1" />
+  </g>
+</svg>

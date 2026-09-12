@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T04:08+08:00",
+  "updated": "2026-09-13T04:10+08:00",
   "goal": "决赛材料：综述流水线整改 → A-Lab 仪器与工作流 → 五个工作流 + 生成 MCP → Isaac Sim 重建 + Franka 采集（5090, GPT-6 Astra）→ 演示与展示页",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,18 +11,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T04:08+08:00",
+    "snapshot_at": "2026-09-13T04:10+08:00",
     "gpus": [
       {
         "index": 0,
         "used_mib": 11103,
-        "util": "61%",
+        "util": "1%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 3060,
-        "util": "53%",
+        "used_mib": 3064,
+        "util": "15%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -273,9 +273,9 @@
   "queue": [
     {
       "id": "Q-fig",
-      "topic": "论文框架图重做：super_teaser（paper-framework-figure-studio-pro S0–S5，Codex image_gen 路线）→ super_img2ppt 可编辑 PPTX/SVG；图 1 已交付（F01 选定 + 可编辑 PPTX/SVG/矢量 PDF 同名写回 figures/），图 2/图 3/两张补充综述图的 S2–S5 排队生成中",
+      "topic": "论文框架图重做：super_teaser（paper-framework-figure-studio-pro S0–S5，Codex image_gen 路线）→ super_img2ppt 可编辑 PPTX/SVG。五张图（BYZSO 图 1–3、BaZn2Si2O7 路线图与分类框架）全部交付：每张 4 张探索 + 2 张正式候选，选定图经 img2ppt 重建为原生对象（LibreOffice 实渲染核对），矢量 PDF 同名写回 figures/（drawio 旧版存 *_drawio_v1）",
       "owner": "claude（会话 goai-48，图件车道）",
-      "status": "running",
+      "status": "delivered",
       "eta": "2026-09-13",
       "evidence": "figures/figstudio/**（S0 契约、S1 提示词包、S2/S5 图、S3 选向、img2ppt 交付物）；scenes.html#figstudio"
     },
@@ -385,6 +385,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-13 04:20",
+      "entry": "图件车道（会话 goai-48）完成：五张综述框架图按 super_teaser S0–S5 重做（20 张探索图 + 10 张正式候选，全部由 5090 Codex image_gen 生成），选定图用 super_img2ppt 重建为可编辑 PPTX/SVG（图 1/2/3 各 91/123/91 个原生对象，路线图 40、分类框架 54），LibreOffice 实渲染逐张核对；图 3 重建时按论文修正两条连线；矢量 PDF 同名写回两篇报告的 figures/pdf（下次编译自动拾取）。已知：LibreOffice 把 Noto CJK 子集命名为 -VKana 导致 img2ppt 字体核对假阳性；化学式下标为纯文本。孪生：DEMO16（布局 v2 脚本执行）A/C 站仍失败（穿模 151 tick / 放置误差 162 mm，B 站把手抓取 371 mm 未成），未作为成功演示发布；v17 闭环采集运行中"
+    },
     {
       "date": "2026-09-13 04:20",
       "entry": "用户指出表格宽度不一致、要符合顶会要求：新增 tools/zh_table_width.py 把所有竖排表列宽换算为版心宽比例（Σ=1），横排长表等于横排版心宽；去掉表头灰底；表 1 去 shortstack；并核对编辑改写的标题“机械化学活化与提拉法生长”——术语真实（机械化学活化 / 提拉法=Czochralski）但“生长”夸大，改为“…工艺参照”。两份 PDF 重建部署（typo4 同址更新）"

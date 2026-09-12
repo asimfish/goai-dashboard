@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" width="1536" height="1024">
+  <rect width="100%" height="100%" fill="#FFFFFF" />
+  <g id="hub">
+    <rect x="70" y="274" width="250" height="460" rx="18" fill="#1F6F78" stroke="none" stroke-width="1" />
+  </g>
+  <g id="hub_t">
+    <text x="78.125" y="481.75" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="34" font-weight="bold" font-style="normal" fill="#FFFFFF">BaZn2Si2O7</tspan>
+    </text>
+    <text x="144.0" y="540.5" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="34" font-weight="bold" font-style="normal" fill="#FFFFFF">目标相</tspan>
+    </text>
+  </g>
+  <g id="stub">
+    <line x1="322" y1="504" x2="364" y2="504" stroke="#1F6F78" stroke-width="5" />
+  </g>
+  <g id="trunk">
+    <line x1="364" y1="84" x2="364" y2="762" stroke="#1F6F78" stroke-width="5" />
+  </g>
+  <g id="br0">
+    <line x1="364" y1="84" x2="474" y2="84" stroke="#1F6F78" stroke-width="5" />
+  </g>
+  <g id="br0b">
+    <polygon points="602.0,81.5 754.0,81.5 754.0,76.5 772,84 754.0,91.5 754.0,86.5 602.0,86.5" fill="#1F6F78" />
+  </g>
+  <g id="pill0">
+    <rect x="476" y="62" width="124" height="44" rx="22.0" fill="#FFFFFF" stroke="#1F6F78" stroke-width="2.5" />
+  </g>
+  <g id="pill0_t">
+    <text x="514.0" y="94.5" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#1F6F78">结构</tspan>
+    </text>
+  </g>
+  <g id="card0">
+    <rect x="774" y="23" width="697" height="123" rx="14" fill="#F3F5F6" stroke="#C9CFD4" stroke-width="2.5" />
+  </g>
+  <g id="card0_t">
+    <text x="810" y="81.75" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="36" font-weight="bold" font-style="normal" fill="#2B2F33">结构与多晶型</tspan>
+    </text>
+  </g>
+  <g id="card0_s">
+    <text x="810" y="126.75" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158">相变</tspan>
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158"> · </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158">配位</tspan>
+    </text>
+  </g>
+  <g id="br1">
+    <line x1="364" y1="220" x2="474" y2="220" stroke="#1F6F78" stroke-width="5" />
+  </g>
+  <g id="br1b">
+    <polygon points="602.0,217.5 754.0,217.5 754.0,212.5 772,220 754.0,227.5 754.0,222.5 602.0,222.5" fill="#1F6F78" />
+  </g>
+  <g id="pill1">
+    <rect x="476" y="198" width="124" height="44" rx="22.0" fill="#FFFFFF" stroke="#1F6F78" stroke-width="2.5" />
+  </g>
+  <g id="pill1_t">
+    <text x="514.0" y="230.5" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#1F6F78">制备</tspan>
+    </text>
+  </g>
+  <g id="card1">
+    <rect x="774" y="158" width="697" height="123" rx="14" fill="#F3F5F6" stroke="#C9CFD4" stroke-width="2.5" />
+  </g>
+  <g id="card1_t">
+    <text x="810" y="216.75" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="36" font-weight="bold" font-style="normal" fill="#2B2F33">合成路线</tspan>
+    </text>
+  </g>
+  <g id="card1_s">
+    <text x="810" y="261.75" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158">固相</tspan>
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158"> · </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158">溶胶</tspan>
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158">—</tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158">凝胶</tspan>
+    </text>
+  </g>
+  <g id="br2">
+    <line x1="364" y1="355" x2="474" y2="355" stroke="#1F6F78" stroke-width="5" />
+  </g>
+  <g id="br2b">
+    <polygon points="602.0,352.5 754.0,352.5 754.0,347.5 772,355 754.0,362.5 754.0,357.5 602.0,357.5" fill="#1F6F78" />
+  </g>
+  <g id="pill2">
+    <rect x="476" y="333" width="124" height="44" rx="22.0" fill="#FFFFFF" stroke="#1F6F78" stroke-width="2.5" />
+  </g>
+  <g id="pill2_t">
+    <text x="514.0" y="365.5" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#1F6F78">变量</tspan>
+    </text>
+  </g>
+  <g id="card2">
+    <rect x="774" y="294" width="697" height="123" rx="14" fill="#F3F5F6" stroke="#C9CFD4" stroke-width="2.5" />
+  </g>
+  <g id="card2_t">
+    <text x="810" y="352.75" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="36" font-weight="bold" font-style="normal" fill="#2B2F33">组成与热处理</tspan>
+    </text>
+  </g>
+  <g id="card2_s">
+    <text x="810" y="397.75" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158">Ba/Sr · Zn </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158">位</tspan>
+    </text>
+  </g>
+  <g id="br3">
+    <line x1="364" y1="490" x2="474" y2="490" stroke="#1F6F78" stroke-width="5" />
+  </g>
+  <g id="br3b">
+    <polygon points="602.0,487.5 754.0,487.5 754.0,482.5 772,490 754.0,497.5 754.0,492.5 602.0,492.5" fill="#1F6F78" />
+  </g>
+  <g id="pill3">
+    <rect x="476" y="468" width="124" height="44" rx="22.0" fill="#FFFFFF" stroke="#1F6F78" stroke-width="2.5" />
+  </g>
+  <g id="pill3_t">
+    <text x="514.0" y="500.5" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#1F6F78">晶化</tspan>
+    </text>
+  </g>
+  <g id="card3">
+    <rect x="774" y="429" width="697" height="123" rx="14" fill="#F3F5F6" stroke="#C9CFD4" stroke-width="2.5" />
+  </g>
+  <g id="card3_t">
+    <text x="810" y="487.75" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="36" font-weight="bold" font-style="normal" fill="#2B2F33">玻璃析晶</tspan>
+    </text>
+  </g>
+  <g id="card3_s">
+    <text x="810" y="532.75" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158">成核</tspan>
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158"> · </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158">生长</tspan>
+    </text>
+  </g>
+  <g id="br4">
+    <line x1="364" y1="626" x2="474" y2="626" stroke="#1F6F78" stroke-width="5" />
+  </g>
+  <g id="br4b">
+    <polygon points="602.0,623.5 754.0,623.5 754.0,618.5 772,626 754.0,633.5 754.0,628.5 602.0,628.5" fill="#1F6F78" />
+  </g>
+  <g id="pill4">
+    <rect x="476" y="604" width="124" height="44" rx="22.0" fill="#FFFFFF" stroke="#1F6F78" stroke-width="2.5" />
+  </g>
+  <g id="pill4_t">
+    <text x="514.0" y="636.5" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#1F6F78">近邻</tspan>
+    </text>
+  </g>
+  <g id="card4">
+    <rect x="774" y="565" width="697" height="123" rx="14" fill="#F3F5F6" stroke="#C9CFD4" stroke-width="2.5" />
+  </g>
+  <g id="card4_t">
+    <text x="810" y="623.75" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="36" font-weight="bold" font-style="normal" fill="#2B2F33">近邻体系</tspan>
+    </text>
+  </g>
+  <g id="card4_s">
+    <text x="810" y="668.75" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158">Ba2ZnSi2O7 </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158">等</tspan>
+    </text>
+  </g>
+  <g id="br5">
+    <line x1="364" y1="762" x2="474" y2="762" stroke="#1F6F78" stroke-width="5" />
+  </g>
+  <g id="br5b">
+    <polygon points="602.0,759.5 754.0,759.5 754.0,754.5 772,762 754.0,769.5 754.0,764.5 602.0,764.5" fill="#1F6F78" />
+  </g>
+  <g id="pill5">
+    <rect x="476" y="740" width="124" height="44" rx="22.0" fill="#FFFFFF" stroke="#1F6F78" stroke-width="2.5" />
+  </g>
+  <g id="pill5_t">
+    <text x="514.0" y="772.5" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#1F6F78">判读</tspan>
+    </text>
+  </g>
+  <g id="card5">
+    <rect x="774" y="701" width="697" height="123" rx="14" fill="#F3F5F6" stroke="#C9CFD4" stroke-width="2.5" />
+  </g>
+  <g id="card5_t">
+    <text x="810" y="759.75" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="36" font-weight="bold" font-style="normal" fill="#2B2F33">证据边界</tspan>
+    </text>
+  </g>
+  <g id="card5_s">
+    <text x="810" y="804.75" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158">直接</tspan>
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158"> / </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158">近邻</tspan>
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158"> / </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158">推断</tspan>
+    </text>
+  </g>
+  <g id="br6a">
+    <line x1="364" y1="767" x2="364" y2="903" stroke="#B8862B" stroke-width="4" stroke-dasharray="16 10" />
+  </g>
+  <g id="br6">
+    <line x1="364" y1="903" x2="474" y2="903" stroke="#B8862B" stroke-width="4" stroke-dasharray="16 10" />
+  </g>
+  <g id="br6b">
+    <defs>
+      <marker id="marker-br6b" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="#B8862B" />
+      </marker>
+    </defs>
+    <line x1="602" y1="903" x2="772" y2="903" stroke="#B8862B" stroke-width="4" stroke-dasharray="16 10" marker-end="url(#marker-br6b)" />
+  </g>
+  <g id="pill6">
+    <rect x="476" y="881" width="124" height="44" rx="22.0" fill="#FFFFFF" stroke="#B8862B" stroke-width="2.5" />
+  </g>
+  <g id="pill6_t">
+    <text x="514.0" y="913.5" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#B8862B">类比</tspan>
+    </text>
+  </g>
+  <g id="card6">
+    <rect x="774" y="842" width="697" height="123" rx="14" fill="#F3F5F6" stroke="#B8862B" stroke-width="2.5" stroke-dasharray="16 10" />
+  </g>
+  <g id="card6_t">
+    <text x="810" y="897.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="36" font-weight="bold" font-style="normal" fill="#2B2F33">Ba5Y12Zn[O(SiO4)]8</tspan>
+    </text>
+  </g>
+  <g id="card6_s">
+    <text x="810" y="945.75" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="27" font-weight="normal" font-style="normal" fill="#4A5158">未见直接报道</tspan>
+    </text>
+  </g>
+</svg>
