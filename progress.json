@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T04:26+08:00",
+  "updated": "2026-09-13T04:28+08:00",
   "goal": "决赛材料：综述流水线整改 → A-Lab 仪器与工作流 → 五个工作流 + 生成 MCP → Isaac Sim 重建 + Franka 采集（5090, GPT-6 Astra）→ 演示与展示页",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,18 +11,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T04:26+08:00",
+    "snapshot_at": "2026-09-13T04:28+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 24337,
-        "util": "80%",
+        "used_mib": 11103,
+        "util": "1%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 3100,
-        "util": "0%",
+        "used_mib": 3084,
+        "util": "21%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -386,6 +386,10 @@
   ],
   "changelog": [
     {
+      "date": "2026-09-13 05:15",
+      "entry": "用户澄清“中文里还是之前的蓝色吧”是要保留蓝色引用：v5 的 hidelinks 改回 colorlinks（cite/link/url = RGB 0,84,159），两份 PDF 重建、typo5 同址更新"
+    },
+    {
       "date": "2026-09-13 05:05",
       "entry": "用户指出表格宽度仍与其他部分不一致：横排条件总表原先用 0.8 cm 页边自成版心；改为不改页边、直接在 NeurIPS 版心内旋转（表宽 = 版心高 9 in），列宽按比例缩放并加宽化学式列；BYZSO 26 页、0 Overfull，typo5 同址更新"
     },
@@ -593,7 +597,7 @@
       "pages": 26,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "v5.1：横排条件总表改为在 NeurIPS 版心内旋转（9 in × 5.5 in，与正文同一矩形，不再另设页边）。按 neurips_2023.sty 移植：Letter、版心 5.5×9 in、10 pt Times/思源宋 Light（行距 1.5）、12 pt 粗体节标题、无缩进段间 5.5 pt、标题栏横线、摘要 quote 缩进、图注下/表注上、参考文献 \\small 数字编号、超链接不着色（去掉蓝色）；修正 bib 作者 None Available；0 错误 0 Overfull"
+      "note": "v5.2：引用恢复蓝色；横排条件总表改为在 NeurIPS 版心内旋转（9 in × 5.5 in，与正文同一矩形，不再另设页边）。按 neurips_2023.sty 移植：Letter、版心 5.5×9 in、10 pt Times/思源宋 Light（行距 1.5）、12 pt 粗体节标题、无缩进段间 5.5 pt、标题栏横线、摘要 quote 缩进、图注下/表注上、参考文献 \\small 数字编号、引用/链接保留学术蓝；修正 bib 作者 None Available；0 错误 0 Overfull"
     },
     {
       "title": "BaZn2Si2O7 补充案例 · 排版 v4",
