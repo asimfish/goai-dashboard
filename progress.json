@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T17:44+08:00",
+  "updated": "2026-09-13T18:00+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,18 +12,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T17:44+08:00",
+    "snapshot_at": "2026-09-13T18:00+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 469,
-        "util": "0%",
+        "used_mib": 13701,
+        "util": "1%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 21,
-        "util": "0%",
+        "used_mib": 10532,
+        "util": "66%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -31,13 +31,13 @@
       {
         "mount": "/",
         "used": "95%",
-        "free": "184G",
+        "free": "185G",
         "note": "不写"
       },
       {
         "mount": "/data",
         "used": "97%",
-        "free": "111G",
+        "free": "110G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -288,6 +288,24 @@
       "group": "active"
     },
     {
+      "id": "Q-layout-v4",
+      "topic": "布局 v4 场景保真度（T-365，用户 09-13 18:0x 批评后开）：FR3 灰方块底座改真实法兰立柱、四台马弗炉/Aeris XRD/转盘/旋盖机等换真实资产、按 ED Fig. 1 补齐台面密度；约束不变（零穿模、门可操作、可达环、四视角不遮挡）",
+      "owner": "codex@4090（GPT-6 Astra）+ claude 审核",
+      "status": "running",
+      "eta": "A 站预览 2 h / 三站 8 h",
+      "group": "active",
+      "evidence": "5090:handoff/collection_astra/layout_v4/（isaac_manifest_s4.json, previews/, CHANGES.md, static_audit.json）"
+    },
+    {
+      "id": "Q-chain",
+      "topic": "完整实验链演示（脚本专家，v3 布局）：A 投料 + 坩埚入干燥箱 / B 入炉关门取出 / C 称量 + holder 入 XRD，四视角分镜 + 腕相机画中画 + 任务卡；站间转运如实标注未仿真",
+      "owner": "codex@5090（GPT-6 Astra）",
+      "status": "queued",
+      "eta": "G3 通过后",
+      "group": "active",
+      "evidence": "5090:handoff/collection_5090/videos/full_chain_v3.mp4"
+    },
+    {
       "id": "Q-astra",
       "topic": "GPT-6 Astra 闭环规划/执行：执行器 v15（诚实抓取、腔体盒、可达钳制、预转避障、参数化 IK）；诊断结论已交两个 agent 吸收",
       "owner": "claude",
@@ -397,6 +415,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-13 18:10",
+      "entry": "用户指出 A007 只是一个抓放子任务而非完整实验、FR3 像是放在仪器上（其实是 0.25 m 灰方块底座）、场景重建要做扎实 → 开 T-365 布局 v4（4090：真实机器人底座 + 马弗炉/XRD/转盘真实资产 + 论文台面密度）与完整实验链演示（5090：G3 后出 3–5 分钟三站视频，站间转运如实标注未仿真）；A007 视频改 moov 前置 + 150 KB 小图版，线上已 200"
+    },
     {
       "date": "2026-09-13 17:50",
       "entry": "看板整理：首页改为「0 当前焦点（三条主线）→ 1 孪生与采集（验收门表 + A 站结果自动读证据文件）→ 2 五个工作流 → 3 PDF（每份文档只列最新版，8 个旧版折叠，ICLR 变体挂在同行）→ 4 队列（进行中 / 待你决定 / 阻塞，已完成折叠）→ 5 流水线 → 6 判决（最近 3 条）→ 7 变更日志（按天分组 + 主线标签）→ 8 算力 → 9 契约」；去掉内嵌头图对比（页面 405 KB → 170 KB）；scenes.html 孪生卡片改为验收/采集在前、场景候选折叠"
@@ -861,8 +883,8 @@
       "lane": "A-Lab 数字孪生与采集",
       "status": "running",
       "owner": "codex@5090（GPT-6 Astra）执行 · claude 指导/审核 · codex@4090 布局/资产",
-      "now": "布局 v3（论文 ED Fig. 1 一比一）已过 4090 静态审计与独立评审；A 站 20 次正式试验、独立复核 11 合格（代表视频 A007 已上页）；5090 agent 首份运行时验收：G1/G4 FAIL、G2 进行中、G3/G5/G6 未完成。",
-      "next": "先把场景做实：G1 静置漂移（研杵、vial_2、UR5e 手部）与 G4 可达图修到 PASS → G2 四炉门 + 干燥箱门 + XRD 滑窗开合与入口扫掠 → G3 脚本专家三站 3/3 → 才开 B/C 各 20 次采集。",
+      "now": "用户看过 v3 渲染与 A007 视频后指出三点：A007 只是 PowderDosing 的一个抓放子任务、没有完成一次实验；FR3 坐在 0.25 m 灰色方块底座上，看起来像放在仪器上；仪器多为程序化示意体，台面密度不及论文照片。已据此开两条线：4090 做 T-365 布局 v4（真实机器人底座 + 马弗炉/XRD/转盘等真实资产 + 论文密度），5090 在 G3 通过后先出一段脚本专家的完整实验链演示。",
+      "next": "v4 先交 A 站预览定方向（2 h），三站 8 h；5090 继续 G3 脚本专家 3/3 → G4 可达图 → G5 遮挡 → G6 复核，然后出 3–5 分钟完整链视频（A 投料 + 入干燥箱 / B 入炉关门取出 / C 称量 + 入 XRD），最后才是 B/C 各 20 次正式采集。",
       "link": "scenes.html#alab_twin",
       "link_text": "验收表、四视角渲染、A 站逐条表与视频 →"
     },
