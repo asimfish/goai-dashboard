@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T23:53+08:00",
+  "updated": "2026-09-14T01:15+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,12 +12,12 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T23:53+08:00",
+    "snapshot_at": "2026-09-14T01:15+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 13317,
-        "util": "1%",
+        "used_mib": 13893,
+        "util": "90%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
@@ -37,7 +37,7 @@
       {
         "mount": "/data",
         "used": "98%",
-        "free": "88G",
+        "free": "87G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -416,6 +416,14 @@
   ],
   "changelog": [
     {
+      "date": "2026-09-14 01:05",
+      "entry": "新增 template=manuscript 并设为两套 sty 的默认（用户：现在的排版没有 pdf/bayznsio_phase_en_20260904.pdf 好看）。逐条复刻那份的排版：正文 10 pt→11 pt / 行距 12.5→13.6 pt；节标题由无衬线改回衬线粗体；标题栏由左对齐+1.2pt 粗横线改为居中不加粗无横线；摘要改成 article 式（居中粗体标题 + 两侧缩进 small 块）；段落首行缩进 1.5em、段间归 0；**去掉 \\sloppy**（它把词距放得很松，是观感变差的主因），改用 emergencystretch=2em + tolerance 2000；加回 fancyhdr 页眉（斜体短题 + 页码 + 0.3pt 细线，首页无页眉）。中文同步：A4 2.54cm 页边距、居中标题、页眉、标题间距 14/6 与 10/4 pt，标题仍用黑体（中文期刊惯例）。重编：BYZSO 中 21 / 英 27 页，BaZn2Si2O7 中 7 / 英 8 页，0 错误；仅 BaZn2Si2O7 英文剩 1 处 0.23 pt Overfull（肉眼不可见，要清零就得把全文词距放松回去，不划算）"
+    },
+    {
+      "date": "2026-09-14 00:40",
+      "entry": "scenes.html 顶部加「布局 v4 场景状态 6/8」总表，一眼看清哪几项过了、哪两项没做（接触分离统计、脚本专家实操）。因对话队列积压 5 条送不进去，把合并指令写成 SENIOR_GUIDANCE_INBOX.md 放到 5090 agent 的工作目录与交接目录，附全部结论、修好的相机参数与执行器改法"
+    },
+    {
       "date": "2026-09-14 00:10",
       "entry": "化学写作词库 chem_library 上线（用户问有没有 super_library 那样的化学词库）：super_library 实为英文 AI 论文语料（274 条，world_models/RL/embodied_ai，无化学内容），只抄它的 schema 与方法。并行四代理建成中文化学版：219 条词条（term 128 / sentence_pattern 60 / anti_pattern 13 / phrase 9 / usage_note 8 / definition 1，7 个 domain）、9 条章节写作协议、11 条 lint 正则；CLI goai_research/tools/chemlib.py（audit/route/terms/guide/show/stats）。首次 audit 扫出 23 处，已修 18 处——其中 high 级 1 类是真损坏：正文两处「生晶体生长体」（术语表最长匹配替换留下的语病，英文同句正确），另有相纯范围→相纯窗口、占位→位点占据、条件总表未报道字段统一记「—」等。余 5 处需回查原始文献（烧成 vs 烧结、3 处出处栏证据层级）留待确认"
     },
@@ -739,19 +747,19 @@
       "title": "BYZSO 综述 · 中文正式版",
       "url": "pdf/final/byzso_cn_final_20260913.pdf",
       "lang": "中文",
-      "pages": 22,
+      "pages": 21,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：journal 版心 + PaperOrchestra 题注/浮动体约定。图件已重渲染（文字不再压框）；表格浮到页底（table [bp]、\\bottomfraction 0.78）；编号标题 1 / 1.1 按期刊惯例只用数字，记号只保留在加粗的 run-in 小标题上（蓝色小方块）。0 错误 0 Overfull"
+      "note": "正式版：template=manuscript（新默认）——照 2026-09-04 那份相图报告的排版复刻：11 pt Times 正文（13.6 pt 行距）、衬线粗体节标题、居中不加粗标题栏、article 式摘要、首行缩进段间 0、页眉（斜体短题 + 页码 + 0.3 pt 细线）、不开 \\sloppy 只给 emergencystretch。保留此前确认的：表格浮到页底、PaperOrchestra 题注（句点、首句不加粗）、图宽 0.95 行宽、参考文献前 clearpage、run-in 小标题蓝色方块。"
     },
     {
       "title": "BYZSO 综述 · 英文正式版",
       "url": "pdf/final/byzso_en_final_20260913.pdf",
       "lang": "English",
-      "pages": 24,
+      "pages": 27,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：journal 版心 + PaperOrchestra 题注/浮动体约定。图件已重渲染（文字不再压框）；表格浮到页底（table [bp]、\\bottomfraction 0.78）；编号标题 1 / 1.1 按期刊惯例只用数字，记号只保留在加粗的 run-in 小标题上（蓝色小方块）。0 错误 0 Overfull"
+      "note": "正式版：template=manuscript（新默认）——照 2026-09-04 那份相图报告的排版复刻：11 pt Times 正文（13.6 pt 行距）、衬线粗体节标题、居中不加粗标题栏、article 式摘要、首行缩进段间 0、页眉（斜体短题 + 页码 + 0.3 pt 细线）、不开 \\sloppy 只给 emergencystretch。保留此前确认的：表格浮到页底、PaperOrchestra 题注（句点、首句不加粗）、图宽 0.95 行宽、参考文献前 clearpage、run-in 小标题蓝色方块。"
     },
     {
       "title": "BaZn₂Si₂O₇ 补充 · 中文正式版",
@@ -760,16 +768,16 @@
       "pages": 7,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：journal 版心 + PaperOrchestra 题注/浮动体约定。图件已重渲染（文字不再压框）；表格浮到页底（table [bp]、\\bottomfraction 0.78）；编号标题 1 / 1.1 按期刊惯例只用数字，记号只保留在加粗的 run-in 小标题上（蓝色小方块）。0 错误 0 Overfull"
+      "note": "正式版：template=manuscript（新默认）——照 2026-09-04 那份相图报告的排版复刻：11 pt Times 正文（13.6 pt 行距）、衬线粗体节标题、居中不加粗标题栏、article 式摘要、首行缩进段间 0、页眉（斜体短题 + 页码 + 0.3 pt 细线）、不开 \\sloppy 只给 emergencystretch。保留此前确认的：表格浮到页底、PaperOrchestra 题注（句点、首句不加粗）、图宽 0.95 行宽、参考文献前 clearpage、run-in 小标题蓝色方块。"
     },
     {
       "title": "BaZn₂Si₂O₇ 补充 · 英文正式版",
       "url": "pdf/final/bazn2si2o7_en_final_20260913.pdf",
       "lang": "English",
-      "pages": 7,
+      "pages": 8,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：journal 版心 + PaperOrchestra 题注/浮动体约定。图件已重渲染（文字不再压框）；表格浮到页底（table [bp]、\\bottomfraction 0.78）；编号标题 1 / 1.1 按期刊惯例只用数字，记号只保留在加粗的 run-in 小标题上（蓝色小方块）。0 错误 0 Overfull"
+      "note": "正式版：template=manuscript（新默认）——照 2026-09-04 那份相图报告的排版复刻：11 pt Times 正文（13.6 pt 行距）、衬线粗体节标题、居中不加粗标题栏、article 式摘要、首行缩进段间 0、页眉（斜体短题 + 页码 + 0.3 pt 细线）、不开 \\sloppy 只给 emergencystretch。保留此前确认的：表格浮到页底、PaperOrchestra 题注（句点、首句不加粗）、图宽 0.95 行宽、参考文献前 clearpage、run-in 小标题蓝色方块。"
     },
     {
       "title": "排版对照台（单文件 HTML，可离线）",
@@ -1006,9 +1014,9 @@
     "scene": "ok",
     "assets": "ok",
     "ops": "running",
-    "note": "v3 布局静态审计通过；A 站正式物理采集 11/20 合格（首批可用数据集）；B/C 等验收门",
+    "note": "v4 场景 6/8 项通过（静态几何、静置、铰链件、可达、遮挡、渲染）；接触分离统计与脚本专家实操未测",
     "evidence": "5090:/data/liyufeng/goai_assets/handoff/collection_5090/benchmark.md",
-    "acceptance": "v3 验收门首份报告（09-13 17:07）：G1 FAIL / G4 FAIL / G2 进行中 / G3 G5 G6 未完成；B/C 采集暂停"
+    "acceptance": "v4：静置 0.0005 mm / 0.056°，六门到位回零，可达 FR3 96% UR5e 91–94%，遮挡三站全过，15 路 RTX 渲染正常"
   },
   "focus": [
     {
