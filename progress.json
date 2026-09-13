@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T23:35+08:00",
+  "updated": "2026-09-13T23:53+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,12 +12,12 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T23:35+08:00",
+    "snapshot_at": "2026-09-13T23:53+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 10455,
-        "util": "0%",
+        "used_mib": 13317,
+        "util": "1%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
@@ -31,13 +31,13 @@
       {
         "mount": "/",
         "used": "95%",
-        "free": "186G",
+        "free": "182G",
         "note": "不写"
       },
       {
         "mount": "/data",
         "used": "98%",
-        "free": "89G",
+        "free": "88G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -415,6 +415,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-14 00:10",
+      "entry": "化学写作词库 chem_library 上线（用户问有没有 super_library 那样的化学词库）：super_library 实为英文 AI 论文语料（274 条，world_models/RL/embodied_ai，无化学内容），只抄它的 schema 与方法。并行四代理建成中文化学版：219 条词条（term 128 / sentence_pattern 60 / anti_pattern 13 / phrase 9 / usage_note 8 / definition 1，7 个 domain）、9 条章节写作协议、11 条 lint 正则；CLI goai_research/tools/chemlib.py（audit/route/terms/guide/show/stats）。首次 audit 扫出 23 处，已修 18 处——其中 high 级 1 类是真损坏：正文两处「生晶体生长体」（术语表最长匹配替换留下的语病，英文同句正确），另有相纯范围→相纯窗口、占位→位点占据、条件总表未报道字段统一记「—」等。余 5 处需回查原始文献（烧成 vs 烧结、3 处出处栏证据层级）留待确认"
+    },
     {
       "date": "2026-09-13 23:20",
       "entry": "图件再修（用户：中文版有的图字显示不全）：figspec2tikz 改成让 TikZ 自己量文字——框和字画两遍、第一遍用 text opacity=0 画框（TikZ 按真实排版结果自动撑大，不再靠估算），第二遍把字画在所有框和连线之上；字符宽度改成按类给值（大写 0.68 / 数字 0.55 / 括号 0.32 / 下标 0.34 / →≥× 1.15 em，原来一律 0.52 em，化学式因此被严重低估而溢出）；框可生长的幅度由与相邻框的实际间距决定（clearance）；2–6 字的中文词组用 \\mbox 保护不从中间断行。五张图重渲染，所有框内文字完整"
