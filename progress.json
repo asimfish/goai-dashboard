@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T20:53+08:00",
+  "updated": "2026-09-13T21:44+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,17 +12,17 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T20:53+08:00",
+    "snapshot_at": "2026-09-13T21:44+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 13701,
-        "util": "1%",
+        "used_mib": 14544,
+        "util": "62%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 37,
+        "used_mib": 53,
         "util": "0%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
@@ -37,7 +37,7 @@
       {
         "mount": "/data",
         "used": "98%",
-        "free": "97G",
+        "free": "90G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -416,6 +416,10 @@
   ],
   "changelog": [
     {
+      "date": "2026-09-13 21:35",
+      "entry": "排版第 5 轮（用户：图字重叠 / 表格放底部 / 小标题层次）：figspec2tikz 修好三处——数学符号宽度被低估导致说明文字溢出框、后画的框把前一个框溢出的字盖掉、框略小时不加高；table 浮动体 [t]→[bp] 且 bottomfraction 0.4→0.78，表格现在落在页底；两套 sty 给 section/subsection/paragraph 三级加了蓝色竖条/短横/小方块记号（\\rule 画，不依赖字体字符），中文版无衬线标题原先被通用 \\ctexset 覆盖也一并修好。四份正式版重编：BYZSO 中 22 / 英 24 页，BaZn2Si2O7 中 7 / 英 7 页，0 错误 0 Overfull"
+    },
+    {
       "date": "2026-09-13 20:40",
       "entry": "定版：两套样式文件的默认模版改为 journal 版心 + PaperOrchestra 题注/浮动体约定（题注标签后句点、首句不加粗、图 0.95 行宽、参考文献前 clearpage）；章节源里的 \\caption{\\textbf{首句。}…} 不改，由 caption 的 format 把 \\textbf 变透明。重编四份正式版：BYZSO 中 22 页 / 英 24 页，BaZn2Si2O7 中 7 页 / 英 7 页，全部 0 错误 0 Overfull"
     },
@@ -710,7 +714,7 @@
       "pages": 22,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：journal 版心（英 6.5×9 in / 中 A4 16×23.5 cm，无衬线粗体节标题，行距 12.5 pt）+ PaperOrchestra 约定（题注标签后句点、整段同字重、图宽 0.95 行宽、参考文献前 \\clearpage）。两套样式文件的默认模版已改为这一组合，main_typo3 / main_en 不带参数即为此版。0 错误 0 Overfull"
+      "note": "正式版：journal 版心 + PaperOrchestra 题注/浮动体约定。第 5 轮修订：① 图件重渲染，说明文字不再压到相邻框（行宽估算把 →/≥/× 按真实宽度计、先画框后统一画字、框放不下时略微加高加宽）；② 表格浮到页底（table 改 [bp]、\\bottomfraction 0.4→0.78）；③ 标题分三级记号：节=蓝色竖条、小节=蓝色短横、段落=蓝色小方块。0 错误 0 Overfull"
     },
     {
       "title": "BYZSO 综述 · 英文正式版",
@@ -719,7 +723,7 @@
       "pages": 24,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：journal 版心（英 6.5×9 in / 中 A4 16×23.5 cm，无衬线粗体节标题，行距 12.5 pt）+ PaperOrchestra 约定（题注标签后句点、整段同字重、图宽 0.95 行宽、参考文献前 \\clearpage）。两套样式文件的默认模版已改为这一组合，main_typo3 / main_en 不带参数即为此版。0 错误 0 Overfull"
+      "note": "正式版：journal 版心 + PaperOrchestra 题注/浮动体约定。第 5 轮修订：① 图件重渲染，说明文字不再压到相邻框（行宽估算把 →/≥/× 按真实宽度计、先画框后统一画字、框放不下时略微加高加宽）；② 表格浮到页底（table 改 [bp]、\\bottomfraction 0.4→0.78）；③ 标题分三级记号：节=蓝色竖条、小节=蓝色短横、段落=蓝色小方块。0 错误 0 Overfull"
     },
     {
       "title": "BaZn₂Si₂O₇ 补充 · 中文正式版",
@@ -728,7 +732,7 @@
       "pages": 7,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：journal 版心（英 6.5×9 in / 中 A4 16×23.5 cm，无衬线粗体节标题，行距 12.5 pt）+ PaperOrchestra 约定（题注标签后句点、整段同字重、图宽 0.95 行宽、参考文献前 \\clearpage）。两套样式文件的默认模版已改为这一组合，main_typo3 / main_en 不带参数即为此版。0 错误 0 Overfull"
+      "note": "正式版：journal 版心 + PaperOrchestra 题注/浮动体约定。第 5 轮修订：① 图件重渲染，说明文字不再压到相邻框（行宽估算把 →/≥/× 按真实宽度计、先画框后统一画字、框放不下时略微加高加宽）；② 表格浮到页底（table 改 [bp]、\\bottomfraction 0.4→0.78）；③ 标题分三级记号：节=蓝色竖条、小节=蓝色短横、段落=蓝色小方块。0 错误 0 Overfull"
     },
     {
       "title": "BaZn₂Si₂O₇ 补充 · 英文正式版",
@@ -737,7 +741,7 @@
       "pages": 7,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：journal 版心（英 6.5×9 in / 中 A4 16×23.5 cm，无衬线粗体节标题，行距 12.5 pt）+ PaperOrchestra 约定（题注标签后句点、整段同字重、图宽 0.95 行宽、参考文献前 \\clearpage）。两套样式文件的默认模版已改为这一组合，main_typo3 / main_en 不带参数即为此版。0 错误 0 Overfull"
+      "note": "正式版：journal 版心 + PaperOrchestra 题注/浮动体约定。第 5 轮修订：① 图件重渲染，说明文字不再压到相邻框（行宽估算把 →/≥/× 按真实宽度计、先画框后统一画字、框放不下时略微加高加宽）；② 表格浮到页底（table 改 [bp]、\\bottomfraction 0.4→0.78）；③ 标题分三级记号：节=蓝色竖条、小节=蓝色短横、段落=蓝色小方块。0 错误 0 Overfull"
     },
     {
       "title": "排版对照台（单文件 HTML，可离线）",
