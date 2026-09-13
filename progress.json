@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-14T04:41+08:00",
+  "updated": "2026-09-14T05:00+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,12 +12,12 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-14T04:41+08:00",
+    "snapshot_at": "2026-09-14T05:00+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 13701,
-        "util": "94%",
+        "used_mib": 1152,
+        "util": "0%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
@@ -37,7 +37,7 @@
       {
         "mount": "/data",
         "used": "98%",
-        "free": "78G",
+        "free": "77G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -415,6 +415,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-14 05:00",
+      "entry": "v4 场景巡览视频上线：36 秒一镜到底（864 帧 @24fps，Isaac RTX），全景 → C 站 → B 站作业区 → 四炉全排 → A 站 → 全景，经过各站时四炉门/干燥箱门/XRD 滑窗依次打开；相机路径为脚本化样条、机位均在复核过的房间范围内。两版均 moov 前置：高清 1280×720 18.1 MB、网页版 960×540 3.8 MB。场景 agent 队列已清到 2 条（用户操作），等它消费队列切到 v4"
+    },
     {
       "date": "2026-09-14 02:30",
       "entry": "换图（用户：用最新的图替换一下）：接 goai_画图 那条线第五轮交付的图件——BYZSO 三张、BaZn2Si2O7 两张，中英各一套，放在各自的 figures/pdf/（中文 <name>.pdf、英文 <name>_en.pdf）。四份报告的 10 处 \\includegraphics 全部从 figures/pdf_tikz/<name>_{zh,en}.pdf 改指过去，重编 21/27/7/8 页、0 错误、无缺图。遗留：新图里出现「谱系」「成相」，而正文已按术语表统一为「系列」「相形成」，图文用词不一致，需回到画图那条线改图源"
