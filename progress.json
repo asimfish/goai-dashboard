@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T18:25+08:00",
+  "updated": "2026-09-13T18:41+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,12 +12,12 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T18:25+08:00",
+    "snapshot_at": "2026-09-13T18:41+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 3097,
-        "util": "1%",
+        "used_mib": 10952,
+        "util": "60%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
@@ -37,7 +37,7 @@
       {
         "mount": "/data",
         "used": "98%",
-        "free": "106G",
+        "free": "105G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -361,7 +361,7 @@
     },
     {
       "id": "Q-fig",
-      "topic": "综述框架图第二轮（作者反馈）：五张定稿并重建为可编辑 PPTX，已写入中文 v5 PDF",
+      "topic": "论文框架图第三轮（作者：还没达到顶会综述图的质量）：五张图统一设计系统（分区淡底 + 区名、白卡 + 顶部色条 + 线稿图标 + 短条目、三个语义色系各三档、细连线 + 药丸标签），每图 4 个版式共 20 张候选；选定版经 super_img2ppt 重建为可编辑 PPTX/SVG 并写回论文",
       "owner": "claude（会话 goai-48，图件车道）",
       "status": "delivered",
       "eta": "2026-09-13",
@@ -415,6 +415,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-13 18:45",
+      "entry": "图件第三轮定稿：建立统一设计系统（Nature Reviews / ACM CSUR 观感）并重出 20 张候选，选定 fig01 R01、fig02 R01、fig03 R02、路线图 R01、分类框架 R04；五张均用 super_img2ppt 重建为原生对象（图标为源图精确裁切，通用构件 i2p_scene_r3.py），LibreOffice 实渲染核对后矢量 PDF 同名写回，两篇报告重编译（BYZSO 24 页、BaZn2Si2O7 8 页，0 错误 0 Overfull）；图 1 完整显示的裁边问题已修复"
+    },
     {
       "date": "2026-09-13 10:35",
       "entry": "用户指出中英文应是两条线、英文版图显示不全且仍是中文：英文正文由母语级改写代理逐节重写（不再逐句翻译）；新增 tools/figspec2tikz.py，把五张图的 figspec 直接渲染为 TikZ/PDF，中英各一版（英文标签单独撰写并按框宽预算压缩），图内文字 5.2–8 pt、自动适配、公式不断行、放不下的边标签省略；两语言各自 sections_en / sections_zh3 与 figures/pdf_tikz；zh_qa 门禁忽略图件语言后缀。BYZSO 中 25 页 / 英 26 页，BaZn2Si2O7 中 8 页 / 英 7 页，全部 0 错误 0 Overfull"
@@ -748,17 +752,17 @@
       "pages": 8,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "中文版：图件 TikZ 重绘；8 页",
+      "note": "排版 v5；2026-09-13 18:39 换入第三轮设计系统版路线图与分类框架",
       "doc": "bazn"
     },
     {
       "title": "BYZSO 中文综述 · 排版 v5（NeurIPS 模版中文版）",
       "url": "pdf/byzso_cn_typo5_20260913.pdf",
       "lang": "中文",
-      "pages": 25,
+      "pages": 24,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "中文版：图件同样换成 TikZ 重绘（中文标签、文字清晰、边界正确），正文与表格为 v5.5 版式。25 页，0 错误 0 Overfull",
+      "note": "排版 v5（NeurIPS 模版中文版）；2026-09-13 18:39 换入第三轮设计系统版五图（分区淡底 + 白卡 + 线稿图标），0 错误 0 Overfull",
       "doc": "byzso"
     },
     {
