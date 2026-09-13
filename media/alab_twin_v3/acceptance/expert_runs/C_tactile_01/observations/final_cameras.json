@@ -1,0 +1,233 @@
+{
+  "station_c": {
+    "eye": [
+      2.299999952316284,
+      -0.5,
+      2.299999952316284
+    ],
+    "target": [
+      2.3423616886138916,
+      -1.3472371101379395,
+      1.7704768180847168
+    ],
+    "target_definition": "one metre along the measured optical axis",
+    "manifest_lookat_target": [
+      2.4,
+      -2.5,
+      1.05
+    ],
+    "world_quat_wxyz": [
+      0.6965261697769165,
+      0.18982145190238953,
+      0.19954966008663177,
+      -0.662570059299469
+    ],
+    "focal_length_mm": 16.0,
+    "intrinsic_matrix": [
+      [
+        853.3333129882812,
+        0.0,
+        640.0
+      ],
+      [
+        0.0,
+        853.3333129882812,
+        400.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "width": 1280,
+    "height": 800,
+    "image_std": 60.124033204738545,
+    "capture_tick": 2227,
+    "path": "observations/final_station_c.png"
+  },
+  "c_front": {
+    "eye": [
+      2.299999952316284,
+      0.0,
+      1.5
+    ],
+    "target": [
+      2.299999952316284,
+      -0.9895329475402832,
+      1.3556931018829346
+    ],
+    "target_definition": "one metre along the measured optical axis",
+    "manifest_lookat_target": [
+      2.3,
+      -2.4,
+      1.15
+    ],
+    "world_quat_wxyz": [
+      0.7052540183067322,
+      0.05115422606468201,
+      0.051154207438230515,
+      -0.7052540183067322
+    ],
+    "focal_length_mm": 18.0,
+    "intrinsic_matrix": [
+      [
+        960.0,
+        0.0,
+        640.0
+      ],
+      [
+        0.0,
+        960.0,
+        400.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "width": 1280,
+    "height": 800,
+    "image_std": 54.04582850849136,
+    "capture_tick": 2227,
+    "path": "observations/final_c_front.png"
+  },
+  "c_side": {
+    "eye": [
+      0.44999998807907104,
+      -2.3499999046325684,
+      1.5
+    ],
+    "target": [
+      1.4278045892715454,
+      -2.3796303272247314,
+      1.2925869226455688
+    ],
+    "target_definition": "one metre along the measured optical axis",
+    "manifest_lookat_target": [
+      2.1,
+      -2.4,
+      1.15
+    ],
+    "world_quat_wxyz": [
+      0.9944344162940979,
+      0.0015793605707585812,
+      0.10426302999258041,
+      -0.015063713304698467
+    ],
+    "focal_length_mm": 18.0,
+    "intrinsic_matrix": [
+      [
+        960.0,
+        0.0,
+        640.0
+      ],
+      [
+        0.0,
+        960.0,
+        400.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "width": 1280,
+    "height": 800,
+    "image_std": 61.35024089090957,
+    "capture_tick": 2227,
+    "path": "observations/final_c_side.png"
+  },
+  "c_top": {
+    "eye": [
+      2.299999952316284,
+      -2.4000000953674316,
+      3.0
+    ],
+    "target": [
+      2.299999713897705,
+      -2.4049794673919678,
+      2.0000123977661133
+    ],
+    "target_definition": "one metre along the measured optical axis",
+    "manifest_lookat_target": [
+      2.3,
+      -2.41,
+      1.0
+    ],
+    "world_quat_wxyz": [
+      -0.4987536072731018,
+      0.5012432932853699,
+      -0.5012433528900146,
+      -0.4987536072731018
+    ],
+    "focal_length_mm": 14.0,
+    "intrinsic_matrix": [
+      [
+        746.6666870117188,
+        0.0,
+        640.0
+      ],
+      [
+        0.0,
+        746.6666870117188,
+        400.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "width": 1280,
+    "height": 800,
+    "image_std": 53.39312721427558,
+    "capture_tick": 2227,
+    "path": "observations/final_c_top.png"
+  },
+  "wrist": {
+    "eye": [
+      2.1665608882904053,
+      -2.1106371879577637,
+      1.3940500020980835
+    ],
+    "target": [
+      2.165903329849243,
+      -1.546610713005066,
+      0.568293571472168
+    ],
+    "target_definition": "one metre along the measured optical axis",
+    "manifest_lookat_target": null,
+    "world_quat_wxyz": [
+      0.625173807144165,
+      -0.3298923671245575,
+      0.3303905129432678,
+      0.625436544418335
+    ],
+    "focal_length_mm": 12.0,
+    "intrinsic_matrix": [
+      [
+        320.0,
+        0.0,
+        320.0
+      ],
+      [
+        0.0,
+        320.0,
+        200.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "width": 640,
+    "height": 400,
+    "image_std": 56.609475585285104,
+    "capture_tick": 2227,
+    "path": "obs_wrist/final_wrist.png"
+  }
+}
