@@ -1,12 +1,12 @@
 {
- "stat": "第三轮定稿（2026-09-13）：五张图统一为顶会综述观感的设计系统（分区淡底 + 区名、白卡 + 色条 + 线稿图标、三色系各三档、细连线 + 药丸标签），每图 4 个版式共 20 张候选，选定版经 super_img2ppt 重建为可编辑 PPTX/SVG 并以矢量 PDF 写回论文；图件裁边改按位图与重建渲染的并集，修复图 1 被裁的问题。",
- "lead": "旧图为 drawio 三栏框图。新图保持论文语义骨架不变（每条连线都有章节依据，不画论文未支持的关系），只改视觉语法：思源黑体中文、白底细线、深青主色 + 赭黄提示色、紧凑排布；所有候选保留，最终取舍由作者决定。",
+ "stat": "第四轮定稿（2026-09-13）：补读了前三轮跳过的三份 super_teaser 策略（hierarchy-and-asset-mirroring、core-submodule-detail、edge-label-first）后重做五张图 —— 四级渲染层级（分组底色 → 模块卡＋主色条＋线稿图标 → 卡内机理链/记录格 → 连线与端口标签）、27 个统一笔触的原生线稿图元（不再裁位图，笔宽与墨色全图一致）、四族配色（文献/实验/提醒/排除各三档）。img2ppt check 五张全部 pass，矢量 PDF 同名写回两篇报告。",
+ "lead": "旧图为 drawio 三栏框图。新图保持论文语义骨架不变（每条连线都有章节依据，不画论文未支持的关系），只改视觉语法。保真审核：第四轮生成候选在图 1、路线图、分类框架里编造了论文没有的子步骤文字（如“文献检索/信息提取/关键数据”），重建未采用，只保留有出处的机理链（图 2 的五条合成路线、图 3 的两条实验通道）；其余模块回到“标题＋图标＋可追溯条目”。所有候选保留，最终取舍由作者决定。",
  "projects": [
   {
    "id": "fig01_evidence_map",
    "title": "图 1 文献来源 → 相同实验项目下比较 → 可回答的问题",
    "paper": "BYZSO 综述 §3",
-   "note": "第三轮定稿：R01（三区：证据阶梯 → 比较账本 → 可回答问题）。统一设计系统 —— 分区淡底 + 区名（文献证据/实验方法/判断提醒）、白卡 + 顶部色条 + 线稿图标 + 短条目、三个语义色系各三档、2 px 细连线 + 药丸标签、字号层级 22/28/21/20。已用 super_img2ppt 重建为原生对象（图标为源图精确裁切），LibreOffice 实渲染核对，矢量 PDF 同名写回论文。四个版式 R01–R04 全部保留在候选中，前两轮候选也保留。",
+   "note": "第四轮定稿：R05（三分组带）。左侧证据阶梯按“与目标相的距离”轴排序，四类可比证据经一条归并连线进入中间的比较账本（6 行记录格＋勾选），右侧三类可回答问题；“非相关资料 → 划定研究范围”走底部虚线不经账本。“近邻条件 ≠ 已验证配方”移到分组标题行，不再压卡片。 前三轮候选全部保留在下方。",
    "s2": [
     [
      "C01",
@@ -26,6 +26,14 @@
     ]
    ],
    "s5": [
+    [
+     "R05",
+     "第四轮 · 三分组带：证据阶梯 → 比较账本 → 可回答问题（选定，已重建）"
+    ],
+    [
+     "R06",
+     "第四轮 · 另一版式"
+    ],
     [
      "R01",
      "第三轮 · 三区：证据阶梯 → 比较账本 → 可回答问题（推荐）"
@@ -60,22 +68,22 @@
     ],
     [
      "render",
-     "第三轮 R01 的 img2ppt 重建渲染（可编辑 PPTX 页面）"
+     "第四轮 R05 的 img2ppt 重建渲染（可编辑 PPTX 页面）"
     ]
    ],
-   "final": "R01",
+   "final": "R05（第四轮重建）",
    "links": [
     [
-     "可编辑 PPTX（super_img2ppt 重建，91 个原生对象）",
-     "media/figstudio/fig01_evidence_map/fig01_editable.pptx"
+     "可编辑 PPTX（super_img2ppt 原生对象重建）",
+     "media/figstudio/fig01_evidence_map/fig01_evidence_synthesis_map_editable.pptx"
     ],
     [
      "可编辑 SVG",
-     "media/figstudio/fig01_evidence_map/fig01_editable.svg"
+     "media/figstudio/fig01_evidence_map/fig01_evidence_synthesis_map_editable.svg"
     ],
     [
-     "论文用矢量 PDF（LibreOffice 渲染，裁边）",
-     "media/figstudio/fig01_evidence_map/fig01_vector.pdf"
+     "论文用矢量 PDF（按重建渲染裁边）",
+     "media/figstudio/fig01_evidence_map/fig01_evidence_synthesis_map_vector.pdf"
     ]
    ]
   },
@@ -83,7 +91,7 @@
    "id": "fig02_route_matrix",
    "title": "图 2 合成路线 → 统一实验记录 → 互补表征",
    "paper": "BYZSO 综述 §4–§6",
-   "note": "第三轮定稿：R01（三层：路线区 → 统一实验记录 → 表征区）。统一设计系统 —— 分区淡底 + 区名（文献证据/实验方法/判断提醒）、白卡 + 顶部色条 + 线稿图标 + 短条目、三个语义色系各三档、2 px 细连线 + 药丸标签、字号层级 22/28/21/20。已用 super_img2ppt 重建为原生对象（图标为源图精确裁切），LibreOffice 实渲染核对，矢量 PDF 同名写回论文。四个版式 R01–R04 全部保留在候选中，前两轮候选也保留。",
+   "note": "第四轮定稿：R05（三层带）。五条合成路线各画出纵向机理链（溶解→保温→慢冷分离 等，均出自论文条件描述），中间是统一实验记录的四列记录格，下层四项互补表征；Czochralski 为虚线灰族，分组带右上给出“虚线＝工艺参照”图例；“抽取框架 ≠ 实验处方”改为记录卡标题行标签。 前三轮候选全部保留在下方。",
    "s2": [
     [
      "C01",
@@ -103,6 +111,14 @@
     ]
    ],
    "s5": [
+    [
+     "R05",
+     "第四轮 · 三层带：路线机理链 → 统一记录 → 互补表征（选定，已重建）"
+    ],
+    [
+     "R06",
+     "第四轮 · 另一版式"
+    ],
     [
      "R01",
      "第三轮 · 三层：路线区 → 统一记录 → 表征区（推荐）"
@@ -129,13 +145,13 @@
     ],
     [
      "render",
-     "第三轮 R01 的 img2ppt 重建渲染（可编辑 PPTX 页面）"
+     "第四轮 R05 的 img2ppt 重建渲染（可编辑 PPTX 页面）"
     ]
    ],
-   "final": "R01",
+   "final": "R05（第四轮重建）",
    "links": [
     [
-     "可编辑 PPTX（123 个原生对象 + 3 个源图裁切图标）",
+     "可编辑 PPTX（super_img2ppt 原生对象重建）",
      "media/figstudio/fig02_route_matrix/fig02_route_variable_matrix_editable.pptx"
     ],
     [
@@ -143,7 +159,7 @@
      "media/figstudio/fig02_route_matrix/fig02_route_variable_matrix_editable.svg"
     ],
     [
-     "论文用矢量 PDF",
+     "论文用矢量 PDF（按重建渲染裁边）",
      "media/figstudio/fig02_route_matrix/fig02_route_variable_matrix_vector.pdf"
     ]
    ]
@@ -152,7 +168,7 @@
    "id": "fig03_roadmap",
    "title": "图 3 研究路线（文献依据 → 假设 → 前驱体 → 固相/长晶并行 → 反馈）",
    "paper": "BYZSO 综述 §1/§8",
-   "note": "第三轮定稿：R02（水平主线 + 反馈弧 + 问题行）。统一设计系统 —— 分区淡底 + 区名（文献证据/实验方法/判断提醒）、白卡 + 顶部色条 + 线稿图标 + 短条目、三个语义色系各三档、2 px 细连线 + 药丸标签、字号层级 22/28/21/20。已用 super_img2ppt 重建为原生对象（图标为源图精确裁切），LibreOffice 实渲染核对，矢量 PDF 同名写回论文。四个版式 R01–R04 全部保留在候选中，前两轮候选也保留。",
+   "note": "第四轮定稿：R05（主干＋提醒带）。单条主干：文献依据 → 结构假设 → 前驱体筛选 → 两条实验通道 → 表征手段，两条通道各自画出机理链与结论条；分叉只由“前驱体筛选”驱动、反馈虚线回到“结构假设”（按论文修正，沿用前轮）。 前三轮候选全部保留在下方。",
    "s2": [
     [
      "C01",
@@ -172,6 +188,14 @@
     ]
    ],
    "s5": [
+    [
+     "R05",
+     "第四轮 · 主干＋判断提醒带（选定，已重建）"
+    ],
+    [
+     "R06",
+     "第四轮 · 另一版式"
+    ],
     [
      "R02",
      "第三轮 · 水平主线 + 反馈弧 + 问题行（推荐）"
@@ -206,13 +230,13 @@
     ],
     [
      "render",
-     "第三轮 R02 的 img2ppt 重建渲染（可编辑 PPTX 页面）"
+     "第四轮 R05 的 img2ppt 重建渲染（可编辑 PPTX 页面）"
     ]
    ],
-   "final": "R02",
+   "final": "R05（第四轮重建）",
    "links": [
     [
-     "可编辑 PPTX",
+     "可编辑 PPTX（super_img2ppt 原生对象重建）",
      "media/figstudio/fig03_roadmap/fig03_research_roadmap_editable.pptx"
     ],
     [
@@ -220,7 +244,7 @@
      "media/figstudio/fig03_roadmap/fig03_research_roadmap_editable.svg"
     ],
     [
-     "论文用矢量 PDF",
+     "论文用矢量 PDF（按重建渲染裁边）",
      "media/figstudio/fig03_roadmap/fig03_research_roadmap_vector.pdf"
     ]
    ]
@@ -229,7 +253,7 @@
    "id": "bzso_roadmap",
    "title": "BaZn2Si2O7 综述路线图（六步链）",
    "paper": "02 补充综述 §1",
-   "note": "第三轮定稿：R01（单行六卡，分区着色）。统一设计系统 —— 分区淡底 + 区名（文献证据/实验方法/判断提醒）、白卡 + 顶部色条 + 线稿图标 + 短条目、三个语义色系各三档、2 px 细连线 + 药丸标签、字号层级 22/28/21/20。已用 super_img2ppt 重建为原生对象（图标为源图精确裁切），LibreOffice 实渲染核对，矢量 PDF 同名写回论文。四个版式 R01–R04 全部保留在候选中，前两轮候选也保留。",
+   "note": "第四轮定稿：R05（单行六卡）。编号＋标题＋线稿图元＋要点条，按文献证据/实验方法分两个分组带；五个连线标签放顶部标签带、分组标题移到分组带底部，箭头全程可见；“类似物判据”用琥珀族标出是待验证比较对象。 前三轮候选全部保留在下方。",
    "s2": [
     [
      "C01",
@@ -249,6 +273,14 @@
     ]
    ],
    "s5": [
+    [
+     "R05",
+     "第四轮 · 单行六卡（选定，已重建）"
+    ],
+    [
+     "R06",
+     "第四轮 · 另一版式"
+    ],
     [
      "R01",
      "第三轮 · 单行六卡（分区着色，推荐）"
@@ -283,13 +315,13 @@
     ],
     [
      "render",
-     "第三轮 R01 的 img2ppt 重建渲染（可编辑 PPTX 页面）"
+     "第四轮 R05 的 img2ppt 重建渲染（可编辑 PPTX 页面）"
     ]
    ],
-   "final": "R01",
+   "final": "R05（第四轮重建）",
    "links": [
     [
-     "可编辑 PPTX",
+     "可编辑 PPTX（super_img2ppt 原生对象重建）",
      "media/figstudio/bzso_roadmap/roadmap_bazn2si2o7_editable.pptx"
     ],
     [
@@ -297,7 +329,7 @@
      "media/figstudio/bzso_roadmap/roadmap_bazn2si2o7_editable.svg"
     ],
     [
-     "论文用矢量 PDF",
+     "论文用矢量 PDF（按重建渲染裁边）",
      "media/figstudio/bzso_roadmap/roadmap_bazn2si2o7_vector.pdf"
     ]
    ]
@@ -306,7 +338,7 @@
    "id": "bzso_taxonomy",
    "title": "BaZn2Si2O7 合成与相控制分类框架（中心 + 七分支）",
    "paper": "02 补充综述 §4",
-   "note": "第三轮定稿：R04（左中心 + 实验方法/文献证据两分区）。统一设计系统 —— 分区淡底 + 区名（文献证据/实验方法/判断提醒）、白卡 + 顶部色条 + 线稿图标 + 短条目、三个语义色系各三档、2 px 细连线 + 药丸标签、字号层级 22/28/21/20。已用 super_img2ppt 重建为原生对象（图标为源图精确裁切），LibreOffice 实渲染核对，矢量 PDF 同名写回论文。四个版式 R01–R04 全部保留在候选中，前两轮候选也保留。",
+   "note": "第四轮定稿：R05（左枢纽＋两组分支）。左侧目标相枢纽 → 实验方法四支，另一条从枢纽底部绕到右侧文献证据三支；Ba5Y12Zn[O(SiO4)]8 仍为虚线 note 卡并标注“未见直接报道”；连线标签抬到线上方，保证箭头可见。 前三轮候选全部保留在下方。",
    "s2": [
     [
      "C01",
@@ -326,6 +358,14 @@
     ]
    ],
    "s5": [
+    [
+     "R05",
+     "第四轮 · 左枢纽＋两组分支（选定，已重建）"
+    ],
+    [
+     "R06",
+     "第四轮 · 另一版式"
+    ],
     [
      "R04",
      "第三轮 · 左中心 + 两分区（推荐）"
@@ -360,13 +400,13 @@
     ],
     [
      "render",
-     "第三轮 R04 的 img2ppt 重建渲染（可编辑 PPTX 页面）"
+     "第四轮 R05 的 img2ppt 重建渲染（可编辑 PPTX 页面）"
     ]
    ],
-   "final": "R04",
+   "final": "R05（第四轮重建）",
    "links": [
     [
-     "可编辑 PPTX",
+     "可编辑 PPTX（super_img2ppt 原生对象重建）",
      "media/figstudio/bzso_taxonomy/taxonomy_phase_control_editable.pptx"
     ],
     [
@@ -374,7 +414,7 @@
      "media/figstudio/bzso_taxonomy/taxonomy_phase_control_editable.svg"
     ],
     [
-     "论文用矢量 PDF",
+     "论文用矢量 PDF（按重建渲染裁边）",
      "media/figstudio/bzso_taxonomy/taxonomy_phase_control_vector.pdf"
     ]
    ]
