@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T18:20+08:00",
+  "updated": "2026-09-13T18:25+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,17 +12,17 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T18:20+08:00",
+    "snapshot_at": "2026-09-13T18:25+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 469,
-        "util": "0%",
+        "used_mib": 3097,
+        "util": "1%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 21,
+        "used_mib": 37,
         "util": "0%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
@@ -416,6 +416,14 @@
   ],
   "changelog": [
     {
+      "date": "2026-09-13 10:35",
+      "entry": "用户指出中英文应是两条线、英文版图显示不全且仍是中文：英文正文由母语级改写代理逐节重写（不再逐句翻译）；新增 tools/figspec2tikz.py，把五张图的 figspec 直接渲染为 TikZ/PDF，中英各一版（英文标签单独撰写并按框宽预算压缩），图内文字 5.2–8 pt、自动适配、公式不断行、放不下的边标签省略；两语言各自 sections_en / sections_zh3 与 figures/pdf_tikz；zh_qa 门禁忽略图件语言后缀。BYZSO 中 25 页 / 英 26 页，BaZn2Si2O7 中 8 页 / 英 7 页，全部 0 错误 0 Overfull"
+    },
+    {
+      "date": "2026-09-13 18:55",
+      "entry": "G3 A 站 3/3 PASS（阶段 4、负间隙 0 tick、物理夹持，报告如实标注为三次无抖动脚本复位）；验收表六门现状：G2 全 PASS、G3 仅 A、G5 A/C PASS，G1/G4/G6 未过"
+    },
+    {
       "date": "2026-09-13 18:45",
       "entry": "scenes.html 新增「完整实验链覆盖」表：把 AlabOS 九个任务类逐项标成 部分完成 / 门已过夹持未过 / 不仿真（已标注）/ 代理 / 未开始，说明 A007 只覆盖 PowderDosing 的一步，避免把子任务读成完整实验"
     },
@@ -682,7 +690,7 @@
       "pages": 26,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "英文版：由润色后的中文 sections_zh3 经 4 个并行翻译代理译出，zh_qa 门禁保证引用键/公式/交叉引用/表格结构与中文版逐一一致；goai_en_typo.sty（neurips_2023 移植，Times 10/11）；美式拼写统一；0 错误 0 Overfull",
+      "note": "英文版（独立线，非直译）：英文正文由母语级改写代理重写（句式重组、主动语态、美式拼写），不再是中文的逐句翻译；图件全部改为 TikZ 重绘的英文版（图内文字 5.2–8 pt、自动适配框内、公式不断行、边标签放不下即省略，说明在题注里）；zh_qa 门禁只允许语言差异。26 页，0 错误 0 Overfull",
       "doc": "byzso_en",
       "variant": false
     },
@@ -690,10 +698,10 @@
       "title": "BaZn2Si2O7 English edition (NeurIPS layout)",
       "url": "pdf/bazn2si2o7_en_typo5_20260913.pdf",
       "lang": "English",
-      "pages": 8,
+      "pages": 7,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "同上",
+      "note": "同上；7 页，0 错误 0 Overfull",
       "doc": "bazn_en",
       "variant": false
     },
@@ -704,7 +712,7 @@
       "pages": 26,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "\\usepackage[template=iclr]{goai_en_typo}：小型大写标题/节标题/Abstract、段间 0.5pc（iclr2025_conference.sty 值）",
+      "note": "ICLR 2025 模版变体（小型大写标题、段间 0.5 pc），内容同英文版。26 页",
       "doc": "byzso_en",
       "variant": true,
       "variant_label": "ICLR 2025 模版变体"
@@ -716,7 +724,7 @@
       "pages": 8,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "同上",
+      "note": "同上；8 页",
       "doc": "bazn_en",
       "variant": true,
       "variant_label": "ICLR 2025 模版变体"
@@ -728,7 +736,7 @@
       "pages": 25,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "\\usepackage[template=iclr]{goai_zh_typo}：段间 0.5pc；中文无小型大写，节标题仍黑体",
+      "note": "中文 ICLR 模版变体；25 页",
       "doc": "byzso",
       "variant": true,
       "variant_label": "ICLR 2025 模版变体"
@@ -740,7 +748,7 @@
       "pages": 8,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "v5.5：同 BYZSO 样式；修正作者名西里尔字母、截断题名、重复 ChemInform 条目，三张表补编号引用；换入重做的路线图与分类框架；8 页、0 Overfull。",
+      "note": "中文版：图件 TikZ 重绘；8 页",
       "doc": "bazn"
     },
     {
@@ -750,7 +758,7 @@
       "pages": 25,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "v5.5：NeurIPS 版式中文化（细宋正文 + 黑体标题、蓝色引用）；题注悬挂 + 首句加粗；字多的表重排为五列并按文字量分配列宽；参考文献按 Crossref 补全；五张定稿图已换入；25 页、0 Overfull。",
+      "note": "中文版：图件同样换成 TikZ 重绘（中文标签、文字清晰、边界正确），正文与表格为 v5.5 版式。25 页，0 错误 0 Overfull",
       "doc": "byzso"
     },
     {
@@ -895,8 +903,8 @@
       "lane": "A-Lab 数字孪生与采集",
       "status": "running",
       "owner": "codex@5090（GPT-6 Astra）执行 · claude 指导/审核 · codex@4090 布局/资产",
-      "now": "用户看过 v3 渲染与 A007 后指出：A007 只是 PowderDosing 的一个抓放子任务、没完成一次实验；FR3 坐在 0.25 m 灰方块底座上像放在仪器里；仪器多为程序化示意体。已开 T-365 布局 v4（4090：真实底座 + 马弗炉/XRD/转盘真实资产 + 论文密度）与完整实验链演示（5090）。验收进展：G2 六扇门全部 PASS（50 Nm 实际上限，最大保持误差 0.0756°，外部接触 0，三条入口路径 0 接触）、G5 A/C PASS；G1/G3/G4/G6 仍未过。",
-      "next": "v4 先交 A 站预览定方向（2 h），三站 8 h；5090 继续 G3 脚本专家 3/3 → G4 可达图 → G5 遮挡 → G6 复核，然后出 3–5 分钟完整链视频（A 投料 + 入干燥箱 / B 入炉关门取出 / C 称量 + 入 XRD），最后才是 B/C 各 20 次正式采集。",
+      "now": "用户看过 v3 渲染与 A007 后指出：A007 只是 PowderDosing 的一个抓放子任务、没完成一次实验；FR3 坐在 0.25 m 灰方块上像放进仪器里；仪器多为程序化示意体。三条都成立。布局 v4 已交 A 站方向预览（法兰立柱底座 + 分区大转盘 + 带控制面板的干燥箱 + 带风罩天平），B/C 在做。验收：G2 三站全 PASS、G3 A 站 3/3 PASS（无抖动脚本复位）、G5 A/C PASS；G1 静置、G4 可达图、G6 放行仍未过，B/C 的 G3 仍 FAIL。",
+      "next": "G3 A 站改成带 ±2 cm/±10° 随机化的三次；B 站把手抓取按「几何不可达 / 自碰撞 / 夹爪几何 / 目标位姿」分类定位；C 站布局改完重测；G1 研杵放回研钵、初始化先保持位姿再计时；v4 到货后 G1/G2 复跑、G4/G5 重测。然后出完整实验链视频，最后才是 B/C 各 20 次采集。",
       "link": "scenes.html#alab_twin",
       "link_text": "验收表、四视角渲染、A 站逐条表与视频 →"
     },
