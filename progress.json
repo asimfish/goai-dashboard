@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T18:41+08:00",
+  "updated": "2026-09-13T19:53+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,18 +12,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T18:41+08:00",
+    "snapshot_at": "2026-09-13T19:53+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 10952,
-        "util": "60%",
+        "used_mib": 468,
+        "util": "0%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 37,
-        "util": "0%",
+        "used_mib": 9978,
+        "util": "1%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -37,7 +37,7 @@
       {
         "mount": "/data",
         "used": "98%",
-        "free": "105G",
+        "free": "100G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -416,6 +416,10 @@
   ],
   "changelog": [
     {
+      "date": "2026-09-13 11:30",
+      "entry": "用户要求多试几种排版（含 PaperOrchestra、NeurIPS、ICLR 等）：goai_en_typo.sty / goai_zh_typo.sty 增加 template=neurips|iclr|orchestra|arxiv|springer|journal 六套版式（PaperOrchestra 取自其 section-writing-agent 的表/图/题注约定），同一内容各出一版：英文 6 种（23–35 页）、中文 5 种（21–25 页），全部 0 错误（springer 4 处 Overfull 且宽表漂到末页）；合成对照册 pdf/gallery/typo_gallery_20260913.pdf（34 页，每套模版首页+图页+表页）"
+    },
+    {
       "date": "2026-09-13 18:45",
       "entry": "图件第三轮定稿：建立统一设计系统（Nature Reviews / ACM CSUR 观感）并重出 20 张候选，选定 fig01 R01、fig02 R01、fig03 R02、路线图 R01、分类框架 R04；五张均用 super_img2ppt 重建为原生对象（图标为源图精确裁切，通用构件 i2p_scene_r3.py），LibreOffice 实渲染核对后矢量 PDF 同名写回，两篇报告重编译（BYZSO 24 页、BaZn2Si2O7 8 页，0 错误 0 Overfull）；图 1 完整显示的裁边问题已修复"
     },
@@ -687,6 +691,15 @@
     "GitHub Pages：https://asimfish.github.io/goai-dashboard/（main 分支页面，由 final_round/site/deploy_pages.sh 从 5090 推送；data 分支 status.json 由 5090 cron 每 10 分钟推送）"
   ],
   "pdfs": [
+    {
+      "title": "排版方案对照（6 种模版 × 中英）",
+      "url": "pdf/gallery/typo_gallery_20260913.pdf",
+      "lang": "中英",
+      "pages": 34,
+      "date": "2026-09-13",
+      "status": "ok",
+      "note": "同一份 BYZSO 内容排成 6 套模版，每套给出首页、图 1 页、表 1 页：neurips（NeurIPS 2023 值）、iclr（ICLR 2025 小型大写）、orchestra（PaperOrchestra 的表图与题注约定：题注不加粗首句、图 0.95 行宽、参考文献前 \\clearpage）、arxiv（预印本 6.0 in 版心、左对齐标题、首行缩进）、springer（LNCS 12.2 cm 窄栏）、journal（单栏期刊 6.5 in / 中文 16 cm A4）。页数 EN 23–35 / ZH 21–25；springer 因栏窄把宽表推到第 34 页，不建议。单个版本 PDF 在 pdf/gallery/ 下"
+    },
     {
       "title": "BYZSO English edition (NeurIPS layout)",
       "url": "pdf/byzso_en_typo5_20260913.pdf",
