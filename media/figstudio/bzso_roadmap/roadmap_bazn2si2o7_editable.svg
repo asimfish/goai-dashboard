@@ -1,382 +1,388 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2172 724" width="2172" height="724">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 900" width="1536" height="900">
   <rect width="100%" height="100%" fill="#FFFFFF" />
   <g id="zA">
-    <rect x="34" y="84" width="1026" height="566" rx="14" fill="#EEF2F7" stroke="#5B7592" stroke-width="1.2" />
+    <rect x="30" y="40" width="1476" height="390" rx="14" fill="#EEF2F7" stroke="#5B7592" stroke-width="1.2" />
   </g>
   <g id="zA_l">
-    <text x="52" y="630.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="21" font-weight="bold" font-style="normal" fill="#2B3E57">文献证据</tspan>
+    <text x="48" y="80.0" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="23" font-weight="bold" font-style="normal" fill="#2B3E57">文献证据</tspan>
     </text>
   </g>
   <g id="zB">
-    <rect x="1134" y="84" width="1022" height="566" rx="14" fill="#E6F2F3" stroke="#1F7F8C" stroke-width="1.2" />
+    <rect x="30" y="470" width="1476" height="390" rx="14" fill="#E6F2F3" stroke="#1F7F8C" stroke-width="1.2" />
   </g>
   <g id="zB_l">
-    <text x="1152" y="630.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="21" font-weight="bold" font-style="normal" fill="#0F4F58">实验方法</tspan>
+    <text x="48" y="510.0" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="23" font-weight="bold" font-style="normal" fill="#0F4F58">实验方法</tspan>
     </text>
   </g>
   <g id="n1">
-    <rect x="60" y="146" width="250" height="440" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
+    <rect x="90" y="100" width="380" height="290" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
   </g>
   <g id="n1_a">
-    <rect x="60" y="146" width="250" height="6" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
+    <rect x="90" y="100" width="380" height="6" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
   </g>
   <g id="n1_t">
-    <text x="131.984375" y="261.0" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="26.511718749999996" font-weight="bold" font-style="normal" fill="#2B3E57">结构基础</tspan>
+    <text x="221.375" y="176.25" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="29.31243896484375" font-weight="bold" font-style="normal" fill="#2B3E57">结构基础</tspan>
     </text>
   </g>
   <g id="n1_n">
-    <text x="78" y="186.25" xml:space="preserve">
-      <tspan font-family="DejaVu Sans" font-size="18" font-weight="bold" font-style="normal" fill="#97A3AE">01</tspan>
+    <text x="112" y="134.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="20" font-weight="bold" font-style="normal" fill="#97A3AE">01</tspan>
     </text>
   </g>
   <g id="n1_g_o_0">
-    <line x1="185" y1="347" x2="220" y2="370" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="280" y1="207" x2="317" y2="231" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n1_g_o_1">
-    <line x1="220" y1="370" x2="204" y2="417" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="317" y1="231" x2="300" y2="281" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n1_g_o_2">
-    <line x1="204" y1="417" x2="166" y2="417" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="300" y1="281" x2="260" y2="281" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n1_g_o_3">
-    <line x1="166" y1="417" x2="150" y2="370" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="260" y1="281" x2="243" y2="231" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n1_g_o_4">
-    <line x1="150" y1="370" x2="185" y2="347" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="243" y1="231" x2="280" y2="207" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n1_g_a">
-    <line x1="185" y1="347" x2="185" y2="417" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="280" y1="207" x2="280" y2="281" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n1_g_b">
-    <line x1="150" y1="370" x2="220" y2="370" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="243" y1="231" x2="317" y2="231" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n1_s">
-    <rect x="76" y="466" width="218" height="66" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
+    <rect x="114" y="306" width="332" height="62" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="n1_s_t">
-    <text x="113.0" y="506.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854">低温与高温多晶型</tspan>
+    <text x="192.0" y="346.625" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="22" font-weight="normal" font-style="normal" fill="#3F4854">低温与高温多晶型</tspan>
     </text>
   </g>
   <g id="n2">
-    <rect x="420" y="146" width="250" height="440" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
+    <rect x="590" y="100" width="380" height="290" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
   </g>
   <g id="n2_a">
-    <rect x="420" y="146" width="250" height="6" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
+    <rect x="590" y="100" width="380" height="6" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
   </g>
   <g id="n2_t">
-    <text x="491.984375" y="261.0" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="26.511718749999996" font-weight="bold" font-style="normal" fill="#2B3E57">合成路线</tspan>
+    <text x="721.375" y="176.25" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="29.31243896484375" font-weight="bold" font-style="normal" fill="#2B3E57">合成路线</tspan>
     </text>
   </g>
   <g id="n2_n">
-    <text x="438" y="186.25" xml:space="preserve">
-      <tspan font-family="DejaVu Sans" font-size="18" font-weight="bold" font-style="normal" fill="#97A3AE">02</tspan>
+    <text x="612" y="134.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="20" font-weight="bold" font-style="normal" fill="#97A3AE">02</tspan>
     </text>
   </g>
   <g id="n2_g_b_0">
-    <line x1="520" y1="366" x2="529" y2="414" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="754" y1="228" x2="763" y2="277" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n2_g_b_1">
-    <line x1="529" y1="414" x2="561" y2="414" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="763" y1="277" x2="797" y2="277" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n2_g_b_2">
-    <line x1="561" y1="414" x2="570" y2="366" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="797" y1="277" x2="806" y2="228" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n2_g_r">
-    <line x1="515" y1="366" x2="575" y2="366" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="749" y1="228" x2="811" y2="228" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n2_s">
-    <rect x="436" y="466" width="218" height="66" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
+    <rect x="614" y="306" width="332" height="62" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="n2_s_t">
-    <text x="473.375" y="506.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854">固相</tspan>
-      <tspan font-family="DejaVu Sans" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854"> · </tspan>
-      <tspan font-family="Noto Sans CJK SC" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854">溶胶</tspan>
-      <tspan font-family="DejaVu Sans" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854">—</tspan>
-      <tspan font-family="Noto Sans CJK SC" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854">凝胶</tspan>
+    <text x="692.5" y="346.625" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="22" font-weight="normal" font-style="normal" fill="#3F4854">固相</tspan>
+      <tspan font-family="DejaVu Sans" font-size="22" font-weight="normal" font-style="normal" fill="#3F4854"> · </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="22" font-weight="normal" font-style="normal" fill="#3F4854">溶胶</tspan>
+      <tspan font-family="DejaVu Sans" font-size="22" font-weight="normal" font-style="normal" fill="#3F4854">—</tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="22" font-weight="normal" font-style="normal" fill="#3F4854">凝胶</tspan>
     </text>
   </g>
   <g id="n3">
-    <rect x="780" y="146" width="250" height="440" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
+    <rect x="1090" y="100" width="380" height="290" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
   </g>
   <g id="n3_a">
-    <rect x="780" y="146" width="250" height="6" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
+    <rect x="1090" y="100" width="380" height="6" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
   </g>
   <g id="n3_t">
-    <text x="865.23828125" y="261.0" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="26.511718749999996" font-weight="bold" font-style="normal" fill="#2B3E57">相控制</tspan>
+    <text x="1236.0" y="176.25" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="29.31243896484375" font-weight="bold" font-style="normal" fill="#2B3E57">相控制</tspan>
     </text>
   </g>
   <g id="n3_n">
-    <text x="798" y="186.25" xml:space="preserve">
-      <tspan font-family="DejaVu Sans" font-size="18" font-weight="bold" font-style="normal" fill="#97A3AE">03</tspan>
+    <text x="1112" y="134.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="20" font-weight="bold" font-style="normal" fill="#97A3AE">03</tspan>
     </text>
   </g>
   <g id="n3_g_t_0">
-    <line x1="905" y1="349" x2="940" y2="416" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="1280" y1="209" x2="1317" y2="279" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n3_g_t_1">
-    <line x1="940" y1="416" x2="870" y2="416" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="1317" y1="279" x2="1243" y2="279" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n3_g_t_2">
-    <line x1="870" y1="416" x2="905" y2="349" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="1243" y1="279" x2="1280" y2="209" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n3_g_i_0">
-    <line x1="905" y1="349" x2="916" y2="393" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="1280" y1="209" x2="1291" y2="255" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n3_g_i_1">
-    <line x1="916" y1="393" x2="870" y2="416" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="1291" y1="255" x2="1243" y2="279" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n3_g_d">
-    <ellipse cx="921.5" cy="400.5" rx="5.5" ry="5.5" fill="#1F2937" stroke="none" stroke-width="1" />
+    <ellipse cx="1296.5" cy="262.5" rx="5.5" ry="5.5" fill="#1F2937" stroke="none" stroke-width="1" />
   </g>
   <g id="n3_s">
-    <rect x="796" y="466" width="218" height="66" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
+    <rect x="1114" y="306" width="332" height="62" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="n3_s_t">
-    <text x="851.375" y="506.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854">组成</tspan>
-      <tspan font-family="DejaVu Sans" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854"> · </tspan>
-      <tspan font-family="Noto Sans CJK SC" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854">热处理</tspan>
+    <text x="1214.5" y="346.625" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="22" font-weight="normal" font-style="normal" fill="#3F4854">组成</tspan>
+      <tspan font-family="DejaVu Sans" font-size="22" font-weight="normal" font-style="normal" fill="#3F4854"> · </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="22" font-weight="normal" font-style="normal" fill="#3F4854">热处理</tspan>
     </text>
   </g>
   <g id="n4">
-    <rect x="1160" y="146" width="250" height="440" rx="9" fill="#FFFFFF" stroke="#1F7F8C" stroke-width="1.4" />
+    <rect x="90" y="530" width="380" height="290" rx="9" fill="#FFFFFF" stroke="#1F7F8C" stroke-width="1.4" />
   </g>
   <g id="n4_a">
-    <rect x="1160" y="146" width="250" height="6" rx="3.0" fill="#1F7F8C" stroke="none" stroke-width="1" />
+    <rect x="90" y="530" width="380" height="6" rx="3.0" fill="#1F7F8C" stroke="none" stroke-width="1" />
   </g>
   <g id="n4_t">
-    <text x="1231.984375" y="261.0" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="26.511718749999996" font-weight="bold" font-style="normal" fill="#0F4F58">近邻体系</tspan>
+    <text x="221.375" y="606.25" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="29.31243896484375" font-weight="bold" font-style="normal" fill="#0F4F58">近邻体系</tspan>
     </text>
   </g>
   <g id="n4_n">
-    <text x="1178" y="186.25" xml:space="preserve">
-      <tspan font-family="DejaVu Sans" font-size="18" font-weight="bold" font-style="normal" fill="#97A3AE">04</tspan>
+    <text x="112" y="564.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="20" font-weight="bold" font-style="normal" fill="#97A3AE">04</tspan>
     </text>
   </g>
   <g id="n4_g_h0">
-    <line x1="1257" y1="356" x2="1313" y2="356" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="251" y1="647" x2="309" y2="647" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n4_g_v0">
-    <line x1="1257" y1="356" x2="1257" y2="412" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="251" y1="647" x2="251" y2="705" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n4_g_h1">
-    <line x1="1257" y1="384" x2="1313" y2="384" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="251" y1="676" x2="309" y2="676" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n4_g_v1">
-    <line x1="1285" y1="356" x2="1285" y2="412" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="280" y1="647" x2="280" y2="705" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n4_g_h2">
-    <line x1="1257" y1="412" x2="1313" y2="412" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="251" y1="705" x2="309" y2="705" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n4_g_v2">
-    <line x1="1313" y1="356" x2="1313" y2="412" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="309" y1="647" x2="309" y2="705" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n4_g_d00">
-    <ellipse cx="1257.0" cy="356.0" rx="6.0" ry="6.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+    <ellipse cx="250.5" cy="646.5" rx="6.5" ry="6.5" fill="#FFFFFF" stroke="none" stroke-width="1" />
   </g>
   <g id="n4_g_d01">
-    <ellipse cx="1257.0" cy="384.0" rx="6.0" ry="6.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+    <ellipse cx="250.5" cy="676.5" rx="6.5" ry="6.5" fill="#FFFFFF" stroke="none" stroke-width="1" />
   </g>
   <g id="n4_g_d02">
-    <ellipse cx="1257.0" cy="412.0" rx="6.0" ry="6.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+    <ellipse cx="250.5" cy="705.5" rx="6.5" ry="6.5" fill="#FFFFFF" stroke="none" stroke-width="1" />
   </g>
   <g id="n4_g_d10">
-    <ellipse cx="1285.0" cy="356.0" rx="6.0" ry="6.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+    <ellipse cx="280.5" cy="646.5" rx="6.5" ry="6.5" fill="#FFFFFF" stroke="none" stroke-width="1" />
   </g>
   <g id="n4_g_d11">
-    <ellipse cx="1285.0" cy="384.0" rx="6.0" ry="6.0" fill="#1F2937" stroke="none" stroke-width="1" />
+    <ellipse cx="280.5" cy="676.5" rx="6.5" ry="6.5" fill="#1F2937" stroke="none" stroke-width="1" />
   </g>
   <g id="n4_g_d12">
-    <ellipse cx="1285.0" cy="412.0" rx="6.0" ry="6.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+    <ellipse cx="280.5" cy="705.5" rx="6.5" ry="6.5" fill="#FFFFFF" stroke="none" stroke-width="1" />
   </g>
   <g id="n4_g_d20">
-    <ellipse cx="1313.0" cy="356.0" rx="6.0" ry="6.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+    <ellipse cx="309.5" cy="646.5" rx="6.5" ry="6.5" fill="#FFFFFF" stroke="none" stroke-width="1" />
   </g>
   <g id="n4_g_d21">
-    <ellipse cx="1313.0" cy="384.0" rx="6.0" ry="6.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+    <ellipse cx="309.5" cy="676.5" rx="6.5" ry="6.5" fill="#FFFFFF" stroke="none" stroke-width="1" />
   </g>
   <g id="n4_g_d22">
-    <ellipse cx="1313.0" cy="412.0" rx="6.0" ry="6.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+    <ellipse cx="309.5" cy="705.5" rx="6.5" ry="6.5" fill="#FFFFFF" stroke="none" stroke-width="1" />
   </g>
   <g id="n4_s">
-    <rect x="1176" y="466" width="218" height="66" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
+    <rect x="114" y="736" width="332" height="62" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="n4_s_t">
-    <text x="1230.25" y="505.25" xml:space="preserve">
-      <tspan font-family="DejaVu Sans" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854">Ba–Sr–Zn–Si</tspan>
+    <text x="213.125" y="774.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="22" font-weight="normal" font-style="normal" fill="#3F4854">Ba–Sr–Zn–Si</tspan>
     </text>
   </g>
   <g id="n5">
-    <rect x="1520" y="146" width="250" height="440" rx="9" fill="#FFFFFF" stroke="#C48A24" stroke-width="1.4" />
+    <rect x="590" y="530" width="380" height="290" rx="9" fill="#FFFFFF" stroke="#C48A24" stroke-width="1.4" />
   </g>
   <g id="n5_a">
-    <rect x="1520" y="146" width="250" height="6" rx="3.0" fill="#C48A24" stroke="none" stroke-width="1" />
+    <rect x="590" y="530" width="380" height="6" rx="3.0" fill="#C48A24" stroke="none" stroke-width="1" />
   </g>
   <g id="n5_t">
-    <text x="1578.73046875" y="261.0" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="26.511718749999996" font-weight="bold" font-style="normal" fill="#7A5410">类似物判据</tspan>
+    <text x="706.728515625" y="606.25" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="29.31243896484375" font-weight="bold" font-style="normal" fill="#7A5410">类似物判据</tspan>
     </text>
   </g>
   <g id="n5_n">
-    <text x="1538" y="186.25" xml:space="preserve">
-      <tspan font-family="DejaVu Sans" font-size="18" font-weight="bold" font-style="normal" fill="#97A3AE">05</tspan>
+    <text x="612" y="564.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="20" font-weight="bold" font-style="normal" fill="#97A3AE">05</tspan>
     </text>
   </g>
   <g id="n5_g_p">
-    <line x1="1645" y1="352" x2="1645" y2="409" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="780" y1="643" x2="780" y2="702" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n5_g_b">
-    <line x1="1615" y1="365" x2="1675" y2="365" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="749" y1="656" x2="811" y2="656" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n5_g_l_0">
-    <line x1="1615" y1="365" x2="1606" y2="384" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="749" y1="656" x2="740" y2="676" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n5_g_l_1">
-    <line x1="1606" y1="384" x2="1624" y2="384" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="740" y1="676" x2="758" y2="676" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n5_g_l_2">
-    <line x1="1624" y1="384" x2="1615" y2="365" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="758" y1="676" x2="749" y2="656" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n5_g_r_0">
-    <line x1="1675" y1="365" x2="1666" y2="384" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="811" y1="656" x2="802" y2="676" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n5_g_r_1">
-    <line x1="1666" y1="384" x2="1684" y2="384" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="802" y1="676" x2="820" y2="676" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n5_g_r_2">
-    <line x1="1684" y1="384" x2="1675" y2="365" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="820" y1="676" x2="811" y2="656" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n5_g_f">
-    <line x1="1627" y1="416" x2="1663" y2="416" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="762" y1="709" x2="798" y2="709" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n5_s">
-    <rect x="1536" y="466" width="218" height="66" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
+    <rect x="614" y="736" width="332" height="62" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="n5_s_t">
-    <text x="1550.875" y="505.25" xml:space="preserve">
-      <tspan font-family="DejaVu Sans" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854">Ba5Y12Zn[O(SiO4)]8</tspan>
+    <text x="664.9765625" y="774.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="22" font-weight="normal" font-style="normal" fill="#3F4854">Ba5Y12Zn[O(SiO4)]8</tspan>
     </text>
   </g>
   <g id="n6">
-    <rect x="1880" y="146" width="250" height="440" rx="9" fill="#FFFFFF" stroke="#1F7F8C" stroke-width="1.4" />
+    <rect x="1090" y="530" width="380" height="290" rx="9" fill="#FFFFFF" stroke="#1F7F8C" stroke-width="1.4" />
   </g>
   <g id="n6_a">
-    <rect x="1880" y="146" width="250" height="6" rx="3.0" fill="#1F7F8C" stroke="none" stroke-width="1" />
+    <rect x="1090" y="530" width="380" height="6" rx="3.0" fill="#1F7F8C" stroke="none" stroke-width="1" />
   </g>
   <g id="n6_t">
-    <text x="1938.73046875" y="261.0" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="26.511718749999996" font-weight="bold" font-style="normal" fill="#0F4F58">实验优先级</tspan>
+    <text x="1206.728515625" y="606.25" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="29.31243896484375" font-weight="bold" font-style="normal" fill="#0F4F58">实验优先级</tspan>
     </text>
   </g>
   <g id="n6_n">
-    <text x="1898" y="186.25" xml:space="preserve">
-      <tspan font-family="DejaVu Sans" font-size="18" font-weight="bold" font-style="normal" fill="#97A3AE">06</tspan>
+    <text x="1112" y="564.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="20" font-weight="bold" font-style="normal" fill="#97A3AE">06</tspan>
     </text>
   </g>
   <g id="n6_g_b0">
-    <rect x="1972" y="358" width="18" height="18" fill="none" stroke="#1F2937" stroke-width="1.76" />
+    <rect x="1245" y="648" width="18" height="18" fill="none" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n6_g_l0">
-    <line x1="2000" y1="366" x2="2040" y2="366" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="1274" y1="658" x2="1317" y2="658" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n6_g_k0_0">
-    <line x1="1975" y1="367" x2="1979" y2="372" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="1249" y1="659" x2="1253" y2="663" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n6_g_k0_1">
-    <line x1="1979" y1="372" x2="1987" y2="361" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="1253" y1="663" x2="1262" y2="652" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n6_g_b1">
-    <rect x="1972" y="380" width="18" height="18" fill="none" stroke="#1F2937" stroke-width="1.76" />
+    <rect x="1245" y="672" width="18" height="18" fill="none" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n6_g_l1">
-    <line x1="2000" y1="389" x2="2040" y2="389" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="1274" y1="682" x2="1317" y2="682" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n6_g_k1_0">
-    <line x1="1975" y1="390" x2="1979" y2="395" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="1249" y1="682" x2="1253" y2="687" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n6_g_k1_1">
-    <line x1="1979" y1="395" x2="1987" y2="384" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="1253" y1="687" x2="1262" y2="676" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n6_g_b2">
-    <rect x="1972" y="403" width="18" height="18" fill="none" stroke="#1F2937" stroke-width="1.76" />
+    <rect x="1245" y="696" width="18" height="18" fill="none" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n6_g_l2">
-    <line x1="2000" y1="412" x2="2040" y2="412" stroke="#1F2937" stroke-width="1.76" />
+    <line x1="1274" y1="705" x2="1317" y2="705" stroke="#1F2937" stroke-width="1.84" />
   </g>
   <g id="n6_s">
-    <rect x="1896" y="466" width="218" height="66" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
+    <rect x="1114" y="736" width="332" height="62" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="n6_s_t">
-    <text x="1924.75" y="506.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854">相图</tspan>
-      <tspan font-family="DejaVu Sans" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854"> · </tspan>
-      <tspan font-family="Noto Sans CJK SC" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854">结构</tspan>
-      <tspan font-family="DejaVu Sans" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854"> · </tspan>
-      <tspan font-family="Noto Sans CJK SC" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854">热力学</tspan>
+    <text x="1182.0" y="776.625" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="22" font-weight="normal" font-style="normal" fill="#3F4854">相图</tspan>
+      <tspan font-family="DejaVu Sans" font-size="22" font-weight="normal" font-style="normal" fill="#3F4854"> · </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="22" font-weight="normal" font-style="normal" fill="#3F4854">结构</tspan>
+      <tspan font-family="DejaVu Sans" font-size="22" font-weight="normal" font-style="normal" fill="#3F4854"> · </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="22" font-weight="normal" font-style="normal" fill="#3F4854">热力学</tspan>
     </text>
   </g>
   <g id="e0_0">
-    <polygon points="318.0,365.1 400.0,365.1 400.0,361.0 412,366 400.0,371.0 400.0,366.9 318.0,366.9" fill="#4B5563" />
+    <polygon points="478.0,244.1 570.0,244.1 570.0,240.0 582,245 570.0,250.0 570.0,245.9 478.0,245.9" fill="#4B5563" />
   </g>
   <g id="e0_p">
-    <rect x="313" y="94" width="104" height="37" rx="18.5" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.1" />
+    <rect x="472" y="49" width="116" height="42" rx="21.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.1" />
   </g>
   <g id="e0_p_t">
-    <text x="331.0" y="119.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="17" font-weight="normal" font-style="normal" fill="#3F4854">结构约束</tspan>
+    <text x="490.0" y="78.625" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="20" font-weight="normal" font-style="normal" fill="#3F4854">结构约束</tspan>
     </text>
   </g>
   <g id="e1_0">
-    <polygon points="678.0,365.1 760.0,365.1 760.0,361.0 772,366 760.0,371.0 760.0,366.9 678.0,366.9" fill="#4B5563" />
+    <polygon points="978.0,244.1 1070.0,244.1 1070.0,240.0 1082,245 1070.0,250.0 1070.0,245.9 978.0,245.9" fill="#4B5563" />
   </g>
   <g id="e1_p">
-    <rect x="673" y="94" width="104" height="37" rx="18.5" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.1" />
+    <rect x="972" y="49" width="116" height="42" rx="21.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.1" />
   </g>
   <g id="e1_p_t">
-    <text x="691.0" y="119.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="17" font-weight="normal" font-style="normal" fill="#3F4854">条件窗口</tspan>
-    </text>
-  </g>
-  <g id="e2_0">
-    <polygon points="1038.0,365.1 1140.0,365.1 1140.0,361.0 1152,366 1140.0,371.0 1140.0,366.9 1038.0,366.9" fill="#4B5563" />
-  </g>
-  <g id="e2_p">
-    <rect x="1034" y="94" width="121" height="37" rx="18.5" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.1" />
-  </g>
-  <g id="e2_p_t">
-    <text x="1052.0" y="119.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="17" font-weight="normal" font-style="normal" fill="#3F4854">可迁移变量</tspan>
+    <text x="990.0" y="78.625" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="20" font-weight="normal" font-style="normal" fill="#3F4854">条件窗口</tspan>
     </text>
   </g>
   <g id="e3_0">
-    <polygon points="1418.0,365.1 1500.0,365.1 1500.0,361.0 1512,366 1500.0,371.0 1500.0,366.9 1418.0,366.9" fill="#4B5563" />
+    <polygon points="478.0,674.1 570.0,674.1 570.0,670.0 582,675 570.0,680.0 570.0,675.9 478.0,675.9" fill="#4B5563" />
   </g>
   <g id="e3_p">
-    <rect x="1413" y="94" width="104" height="37" rx="18.5" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.1" />
+    <rect x="472" y="479" width="116" height="42" rx="21.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.1" />
   </g>
   <g id="e3_p_t">
-    <text x="1431.0" y="119.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="17" font-weight="normal" font-style="normal" fill="#3F4854">比较边界</tspan>
+    <text x="490.0" y="508.625" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="20" font-weight="normal" font-style="normal" fill="#3F4854">比较边界</tspan>
     </text>
   </g>
   <g id="e4_0">
-    <polygon points="1778.0,365.1 1860.0,365.1 1860.0,361.0 1872,366 1860.0,371.0 1860.0,366.9 1778.0,366.9" fill="#4B5563" />
+    <polygon points="978.0,674.1 1070.0,674.1 1070.0,670.0 1082,675 1070.0,680.0 1070.0,675.9 978.0,675.9" fill="#4B5563" />
   </g>
   <g id="e4_p">
-    <rect x="1773" y="94" width="104" height="37" rx="18.5" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.1" />
+    <rect x="972" y="479" width="116" height="42" rx="21.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.1" />
   </g>
   <g id="e4_p_t">
-    <text x="1791.0" y="119.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="17" font-weight="normal" font-style="normal" fill="#3F4854">缺口驱动</tspan>
+    <text x="990.0" y="508.625" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="20" font-weight="normal" font-style="normal" fill="#3F4854">缺口驱动</tspan>
+    </text>
+  </g>
+  <g id="e2_0">
+    <line x1="1280" y1="394" x2="1280" y2="450" stroke="#4B5563" stroke-width="1.8" />
+  </g>
+  <g id="e2_1">
+    <line x1="1280" y1="450" x2="280" y2="450" stroke="#4B5563" stroke-width="1.8" />
+  </g>
+  <g id="e2_2">
+    <polygon points="280.9,450.0 280.9,514.0 285.0,514.0 280,526 275.0,514.0 279.1,514.0 279.1,450.0" fill="#4B5563" />
+  </g>
+  <g id="e2_p">
+    <rect x="712" y="429" width="136" height="42" rx="21.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.1" />
+  </g>
+  <g id="e2_p_t">
+    <text x="730.0" y="458.625" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="20" font-weight="normal" font-style="normal" fill="#3F4854">可迁移变量</tspan>
     </text>
   </g>
 </svg>
