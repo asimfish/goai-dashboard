@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T22:02+08:00",
+  "updated": "2026-09-13T23:06+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,17 +12,17 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T22:02+08:00",
+    "snapshot_at": "2026-09-13T23:06+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 13860,
-        "util": "1%",
+        "used_mib": 469,
+        "util": "0%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 37,
+        "used_mib": 21,
         "util": "0%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
@@ -37,7 +37,7 @@
       {
         "mount": "/data",
         "used": "98%",
-        "free": "87G",
+        "free": "91G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -416,6 +416,14 @@
   ],
   "changelog": [
     {
+      "date": "2026-09-13 22:10",
+      "entry": "标题记号收窄（用户：1 和 1.1 按期刊标准，只有加粗的列表小标题加记号）：撤掉 section/subsection 的竖条与短横，中文删掉 \\ctexset numberformat、英文 \\@seccntformat 恢复成纯编号（间距 0.6em），只保留 \\paragraph 前的蓝色小方块。四份正式版重编 22/24/7/7 页，0 错误 0 Overfull"
+    },
+    {
+      "date": "2026-09-13 23:10",
+      "entry": "v4 可达图与遮挡统计完成并上页：真实 TCP 阻尼最小二乘 IK，FR3 总体 96%、UR5e-B 91%、UR5e-C 94%，中位误差 1.9–8.1 mm（v3 同项 216 格六项阈值全不过）；两台 UR5e 在近基座 r0.35 与 B 站 20 cm 高 r0.65 环带偏低，属肩部奇异与肘部伸展的运动学特性。实例分割遮挡三站全过，仅称量纸 a_side 与 holder_0 c_top 单路零像素，各自仍有 3 路可见"
+    },
+    {
       "date": "2026-09-13 22:30",
       "entry": "v4 运行时检查通过并上页：62 个物件 5 秒静置最大位移 0.0005 mm、最大姿态 0.056°（v3 同项研杵 5.023 mm/18.58°），四炉门与干燥箱门到 1.5 rad 保持误差 7e-6 rad 并回零，XRD 滑窗到全开 0.48 m；门全开渲染 7 张已上页。反馈 4090 一处缺口：placement_plan.json 的 XRD 条目缺 joint_name/open_target/drive，只写在 JOINT_OPERATION.json 里"
     },
@@ -722,7 +730,7 @@
       "pages": 22,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：journal 版心 + PaperOrchestra 题注/浮动体约定。第 5 轮修订：① 图件重渲染，说明文字不再压到相邻框（行宽估算把 →/≥/× 按真实宽度计、先画框后统一画字、框放不下时略微加高加宽）；② 表格浮到页底（table 改 [bp]、\\bottomfraction 0.4→0.78）；③ 标题分三级记号：节=蓝色竖条、小节=蓝色短横、段落=蓝色小方块。0 错误 0 Overfull"
+      "note": "正式版：journal 版心 + PaperOrchestra 题注/浮动体约定。图件已重渲染（文字不再压框）；表格浮到页底（table [bp]、\\bottomfraction 0.78）；编号标题 1 / 1.1 按期刊惯例只用数字，记号只保留在加粗的 run-in 小标题上（蓝色小方块）。0 错误 0 Overfull"
     },
     {
       "title": "BYZSO 综述 · 英文正式版",
@@ -731,7 +739,7 @@
       "pages": 24,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：journal 版心 + PaperOrchestra 题注/浮动体约定。第 5 轮修订：① 图件重渲染，说明文字不再压到相邻框（行宽估算把 →/≥/× 按真实宽度计、先画框后统一画字、框放不下时略微加高加宽）；② 表格浮到页底（table 改 [bp]、\\bottomfraction 0.4→0.78）；③ 标题分三级记号：节=蓝色竖条、小节=蓝色短横、段落=蓝色小方块。0 错误 0 Overfull"
+      "note": "正式版：journal 版心 + PaperOrchestra 题注/浮动体约定。图件已重渲染（文字不再压框）；表格浮到页底（table [bp]、\\bottomfraction 0.78）；编号标题 1 / 1.1 按期刊惯例只用数字，记号只保留在加粗的 run-in 小标题上（蓝色小方块）。0 错误 0 Overfull"
     },
     {
       "title": "BaZn₂Si₂O₇ 补充 · 中文正式版",
@@ -740,7 +748,7 @@
       "pages": 7,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：journal 版心 + PaperOrchestra 题注/浮动体约定。第 5 轮修订：① 图件重渲染，说明文字不再压到相邻框（行宽估算把 →/≥/× 按真实宽度计、先画框后统一画字、框放不下时略微加高加宽）；② 表格浮到页底（table 改 [bp]、\\bottomfraction 0.4→0.78）；③ 标题分三级记号：节=蓝色竖条、小节=蓝色短横、段落=蓝色小方块。0 错误 0 Overfull"
+      "note": "正式版：journal 版心 + PaperOrchestra 题注/浮动体约定。图件已重渲染（文字不再压框）；表格浮到页底（table [bp]、\\bottomfraction 0.78）；编号标题 1 / 1.1 按期刊惯例只用数字，记号只保留在加粗的 run-in 小标题上（蓝色小方块）。0 错误 0 Overfull"
     },
     {
       "title": "BaZn₂Si₂O₇ 补充 · 英文正式版",
@@ -749,7 +757,7 @@
       "pages": 7,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：journal 版心 + PaperOrchestra 题注/浮动体约定。第 5 轮修订：① 图件重渲染，说明文字不再压到相邻框（行宽估算把 →/≥/× 按真实宽度计、先画框后统一画字、框放不下时略微加高加宽）；② 表格浮到页底（table 改 [bp]、\\bottomfraction 0.4→0.78）；③ 标题分三级记号：节=蓝色竖条、小节=蓝色短横、段落=蓝色小方块。0 错误 0 Overfull"
+      "note": "正式版：journal 版心 + PaperOrchestra 题注/浮动体约定。图件已重渲染（文字不再压框）；表格浮到页底（table [bp]、\\bottomfraction 0.78）；编号标题 1 / 1.1 按期刊惯例只用数字，记号只保留在加粗的 run-in 小标题上（蓝色小方块）。0 错误 0 Overfull"
     },
     {
       "title": "排版对照台（单文件 HTML，可离线）",
@@ -989,8 +997,8 @@
       "lane": "A-Lab 数字孪生与采集",
       "status": "running",
       "owner": "codex@5090（GPT-6 Astra）执行 · claude 指导/审核 · codex@4090 布局/资产",
-      "now": "v4 场景已在 Isaac 里跑通并验证：15 路 RTX 渲染正常（材质/光照/阴影/玻璃齐全）；5 秒物理静置 62 个物件最大位移 0.0005 mm、最大姿态 0.056°（v3 同项研杵 5.023 mm / 18.58°）；四台马弗炉与干燥箱铰链门驱动到 1.5 rad、保持误差 7e-6 rad、松开回零，XRD 滑窗滑到全开 0.48 m。修了四路全景相机在墙外、B 站相机对准炉排中心、v4 仪器只有 Door_joint 致执行器组匹配为空三处问题。",
-      "next": "剩下 G4 可达图与 G5 遮挡在 v4 上重测（接触分离统计由 5090 验收脚本出），再做 G3 与完整实验链视频；B/C 采集排最后。",
+      "now": "v4 场景四项运行时检查全部做完（claude 直接在 5090 上跑，绕开 agent 的积压队列）：15 路 RTX 渲染正常；5 秒静置 62 个物件最大位移 0.0005 mm、姿态 0.056°；六个门件全部开到位并回零；真实 TCP 可达图 FR3 96%、UR5e-B 91%、UR5e-C 94%（v3 同项 216 格全不过）；实例分割遮挡统计三站全过，每个作业目标至少 3 路固定相机看得见。",
+      "next": "剩下接触分离统计（需 5090 验收脚本）与 G3 脚本专家三次带抖动；再做完整实验链视频；B/C 各 20 次采集排最后。",
       "link": "scenes.html#alab_twin",
       "link_text": "验收表、四视角渲染、A 站逐条表与视频 →"
     },
