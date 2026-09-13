@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T20:31+08:00",
+  "updated": "2026-09-13T20:33+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,7 +12,7 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T20:31+08:00",
+    "snapshot_at": "2026-09-13T20:33+08:00",
     "gpus": [
       {
         "index": 0,
@@ -416,6 +416,10 @@
   ],
   "changelog": [
     {
+      "date": "2026-09-13 20:05",
+      "entry": "排版对照台上线：六套模版的同一份 BYZSO 内容逐页并排，单文件 HTML（typo_deck_20260913.html），含图注/表头特写与版心尺寸示意；替代此前只能翻 PDF 的对照册"
+    },
+    {
       "date": "2026-09-13 19:20",
       "entry": "布局 v4 完整包到货（4090 迭代到 a07）：马弗炉四台带耐火腔与数显面板、Aeris XRD 柜、三台机器人法兰底座、分区转盘、台面按 ED Fig. 1 补齐；静态审计 8,522 形状零干涉、支撑间隙 0.4–1.0 mm、六门与三条入口净空、39 个可达目标准入；三站预览与门开渲染已上页。已下发 5090：最高优先级是把 v4 载入 Isaac 出 12 路正式 RTX 渲染，再在 v4 上复跑 G1/G2、重测 G4/G5"
     },
@@ -695,6 +699,15 @@
     "GitHub Pages：https://asimfish.github.io/goai-dashboard/（main 分支页面，由 final_round/site/deploy_pages.sh 从 5090 推送；data 分支 status.json 由 5090 cron 每 10 分钟推送）"
   ],
   "pdfs": [
+    {
+      "title": "排版对照台（单文件 HTML，可离线）",
+      "url": "typo_deck_20260913.html",
+      "lang": "中英",
+      "pages": 11,
+      "date": "2026-09-13",
+      "status": "ok",
+      "note": "11 张横向幻灯片，六套模版逐页并排：总览、版心尺寸（按同一比例画出纸张与文本块）、首页、图页、图注特写、表格页、表头特写、条件矩阵、参考文献、springer 的问题、建议。←/→ 翻页，右上角切中英，点任意页面看整页原图。77 张图以 data URI 内嵌（11.4 MB），下载后双击即可离线打开。源码 goai_research/tools/typo_deck/"
+    },
     {
       "title": "排版方案对照（6 种模版 × 中英）",
       "url": "pdf/gallery/typo_gallery_20260913.pdf",
