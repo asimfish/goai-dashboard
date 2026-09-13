@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-14T01:44+08:00",
+  "updated": "2026-09-14T01:46+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,12 +12,12 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-14T01:44+08:00",
+    "snapshot_at": "2026-09-14T01:46+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 13702,
-        "util": "85%",
+        "used_mib": 13701,
+        "util": "19%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
@@ -415,6 +415,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-14 01:50",
+      "entry": "题注对齐统一（用户：为什么有的表注在左边、有的在中间）：caption 宏包的 singlelinecheck 默认开着——放得下一行的题注被居中、放不下的顶左，于是长表的「续表」头和 BaZn2Si2O7 的短表注居中、长表注左对齐，看着像两套规矩。两套 sty 的 4 处 caption 配置全部改 singlelinecheck=false，33 条题注现在一律左对齐"
+    },
     {
       "date": "2026-09-14 01:05",
       "entry": "新增 template=manuscript 并设为两套 sty 的默认（用户：现在的排版没有 pdf/bayznsio_phase_en_20260904.pdf 好看）。逐条复刻那份的排版：正文 10 pt→11 pt / 行距 12.5→13.6 pt；节标题由无衬线改回衬线粗体；标题栏由左对齐+1.2pt 粗横线改为居中不加粗无横线；摘要改成 article 式（居中粗体标题 + 两侧缩进 small 块）；段落首行缩进 1.5em、段间归 0；**去掉 \\sloppy**（它把词距放得很松，是观感变差的主因），改用 emergencystretch=2em + tolerance 2000；加回 fancyhdr 页眉（斜体短题 + 页码 + 0.3pt 细线，首页无页眉）。中文同步：A4 2.54cm 页边距、居中标题、页眉、标题间距 14/6 与 10/4 pt，标题仍用黑体（中文期刊惯例）。重编：BYZSO 中 21 / 英 27 页，BaZn2Si2O7 中 7 / 英 8 页，0 错误；仅 BaZn2Si2O7 英文剩 1 处 0.23 pt Overfull（肉眼不可见，要清零就得把全文词距放松回去，不划算）"
