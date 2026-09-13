@@ -1,10 +1,10 @@
 {
- "snapshot_at": "2026-09-13T16:47+08:00",
+ "snapshot_at": "2026-09-13T16:49+08:00",
  "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
  "gpus": [
   {
    "index": 0,
-   "used_mib": 472,
+   "used_mib": 473,
    "util": "0%",
    "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
   },

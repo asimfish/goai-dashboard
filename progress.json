@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T16:47+08:00",
+  "updated": "2026-09-13T16:49+08:00",
   "goal": "决赛材料：综述流水线整改 → A-Lab 仪器与工作流 → 五个工作流 + 生成 MCP → Isaac Sim 重建 + Franka 采集（5090, GPT-6 Astra）→ 演示与展示页",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,11 +11,11 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T16:47+08:00",
+    "snapshot_at": "2026-09-13T16:49+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 472,
+        "used_mib": 473,
         "util": "0%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
@@ -275,7 +275,7 @@
       "id": "Q-fig",
       "topic": "论文框架图第二轮（作者反馈）：图 1 改按 C02 距离环带方向、图 3 两级配色、BaZn2Si2O7 路线图重做（步序号 + 线稿图标）、分类框架沿 C01 辐射式改进；图 2 作者确认 F01。全部经 super_img2ppt 重建为可编辑 PPTX 后同名写回 figures/",
       "owner": "claude（会话 goai-48，图件车道）",
-      "status": "running",
+      "status": "delivered",
       "eta": "2026-09-13",
       "evidence": "figures/figstudio/**（S0 契约、S1 提示词包、S2/S5 图、S3 选向、img2ppt 交付物）；scenes.html#figstudio"
     },
@@ -385,6 +385,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-13 06:00",
+      "entry": "图件定稿（作者确认）：图 1 用 C02 方向的同心环重建、图 2 用 S5 正式重建、图 4 路线图用 S5 重建；图 3 与图 5 按作者反馈重上色：图 3 取样 S5 位图重设青/赭/描边色，图 5 加深描边与辐条并改浅灰标签底，均已重建、同名写回 figures/ 并更新看板"
+    },
     {
       "date": "2026-09-13 16:55",
       "entry": "A 站正式物理采集完成：20 次、11 次独立复核合格（55%），代表视频与逐条表上页；4090 T-364 关闭（六关节操作合同、插入路径证据）；下发 B/C 验收门 + 采集指导，授权调整 C 站旋盖机位置；释放 5090 磁盘 15 GB"
