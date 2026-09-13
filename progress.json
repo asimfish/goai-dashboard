@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T19:56+08:00",
+  "updated": "2026-09-13T20:02+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,18 +12,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T19:56+08:00",
+    "snapshot_at": "2026-09-13T20:02+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 3145,
-        "util": "1%",
+        "used_mib": 469,
+        "util": "0%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 10579,
-        "util": "31%",
+        "used_mib": 21,
+        "util": "0%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -289,10 +289,10 @@
     },
     {
       "id": "Q-layout-v4",
-      "topic": "布局 v4 场景保真度（T-365，用户 09-13 18:0x 批评后开）：FR3 灰方块底座改真实法兰立柱、四台马弗炉/Aeris XRD/转盘/旋盖机等换真实资产、按 ED Fig. 1 补齐台面密度；约束不变（零穿模、门可操作、可达环、四视角不遮挡）",
+      "topic": "布局 v4 场景保真度（T-365）：完整包已交付并经静态审计（零干涉、门与入口净空、可达准入）；等 5090 在 Isaac 里载入出 RTX 渲染与 G1/G2 复跑",
       "owner": "codex@4090（GPT-6 Astra）+ claude 审核",
       "status": "running",
-      "eta": "A 站预览 2 h / 三站 8 h",
+      "eta": "2026-09-14",
       "group": "active",
       "evidence": "5090:handoff/collection_astra/layout_v4/（isaac_manifest_s4.json, previews/, CHANGES.md, static_audit.json）"
     },
@@ -415,6 +415,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-13 19:20",
+      "entry": "布局 v4 完整包到货（4090 迭代到 a07）：马弗炉四台带耐火腔与数显面板、Aeris XRD 柜、三台机器人法兰底座、分区转盘、台面按 ED Fig. 1 补齐；静态审计 8,522 形状零干涉、支撑间隙 0.4–1.0 mm、六门与三条入口净空、39 个可达目标准入；三站预览与门开渲染已上页。已下发 5090：最高优先级是把 v4 载入 Isaac 出 12 路正式 RTX 渲染，再在 v4 上复跑 G1/G2、重测 G4/G5"
+    },
     {
       "date": "2026-09-13 11:30",
       "entry": "用户要求多试几种排版（含 PaperOrchestra、NeurIPS、ICLR 等）：goai_en_typo.sty / goai_zh_typo.sty 增加 template=neurips|iclr|orchestra|arxiv|springer|journal 六套版式（PaperOrchestra 取自其 section-writing-agent 的表/图/题注约定），同一内容各出一版：英文 6 种（23–35 页）、中文 5 种（21–25 页），全部 0 错误（springer 4 处 Overfull 且宽表漂到末页）；合成对照册 pdf/gallery/typo_gallery_20260913.pdf（34 页，每套模版首页+图页+表页）"
@@ -920,8 +924,8 @@
       "lane": "A-Lab 数字孪生与采集",
       "status": "running",
       "owner": "codex@5090（GPT-6 Astra）执行 · claude 指导/审核 · codex@4090 布局/资产",
-      "now": "用户看过 v3 渲染与 A007 后指出：A007 只是 PowderDosing 的一个抓放子任务、没完成一次实验；FR3 坐在 0.25 m 灰方块上像放进仪器里；仪器多为程序化示意体。三条都成立。布局 v4 已交 A 站方向预览（法兰立柱底座 + 分区大转盘 + 带控制面板的干燥箱 + 带风罩天平），B/C 在做。验收：G2 三站全 PASS、G3 A 站 3/3 PASS（无抖动脚本复位）、G5 A/C PASS；G1 静置、G4 可达图、G6 放行仍未过，B/C 的 G3 仍 FAIL。",
-      "next": "G3 A 站改成带 ±2 cm/±10° 随机化的三次；B 站把手抓取按「几何不可达 / 自碰撞 / 夹爪几何 / 目标位姿」分类定位；C 站布局改完重测；G1 研杵放回研钵、初始化先保持位姿再计时；v4 到货后 G1/G2 复跑、G4/G5 重测。然后出完整实验链视频，最后才是 B/C 各 20 次采集。",
+      "now": "布局 v4 完整包已交付（4090）：三台机器人改法兰立柱底座，四台箱式炉换成带耐火腔、数显面板、下翻门的马弗炉，XRD 换 Aeris 柜体，转盘放大分区，台面按论文 ED Fig. 1 补齐。静态审计 8,522 形状零干涉、支撑间隙 0.4–1.0 mm、六门与三条入口扫掠净空、39 个可达目标准入通过，判定为静态过、运行时未验。v3 验收现状：G2 三站全 PASS、G3 A 站 3/3、G5 A/C PASS；G1/G4/G6 未过。",
+      "next": "5090 正在把 v4 载入 Isaac 出 12 路正式 RTX 渲染（用户要看渲染是否正常），随后在 v4 上复跑 G1/G2、重测 G4/G5；再做 B/C 的 G3（带抖动三次）与完整实验链视频；最后才是 B/C 各 20 次采集。",
       "link": "scenes.html#alab_twin",
       "link_text": "验收表、四视角渲染、A 站逐条表与视频 →"
     },
