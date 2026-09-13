@@ -1,448 +1,526 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" width="1536" height="1024">
   <rect width="100%" height="100%" fill="#FFFFFF" />
-  <g id="zA">
-    <rect x="26" y="30" width="470" height="964" rx="14" fill="#EEF2F7" stroke="#5B7592" stroke-width="1.2" />
+  <g id="zL">
+    <rect x="110" y="50" width="462" height="806" rx="14" fill="#EEF2F7" stroke="#5B7592" stroke-width="1.2" />
   </g>
-  <g id="zA_l">
-    <text x="44" y="67.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="21" font-weight="bold" font-style="normal" fill="#2B3E57">文献证据</tspan>
+  <g id="zL_l">
+    <text x="128" y="93.875" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="26" font-weight="bold" font-style="normal" fill="#2B3E57">文献证据</tspan>
     </text>
   </g>
-  <g id="zB">
-    <rect x="516" y="30" width="500" height="964" rx="14" fill="#E6F2F3" stroke="#1F7F8C" stroke-width="1.2" />
+  <g id="zE">
+    <rect x="592" y="50" width="440" height="806" rx="14" fill="#E6F2F3" stroke="#1F7F8C" stroke-width="1.2" />
   </g>
-  <g id="zB_l">
-    <text x="534" y="67.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="21" font-weight="bold" font-style="normal" fill="#0F4F58">实验方法</tspan>
+  <g id="zE_l">
+    <text x="610" y="93.875" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="26" font-weight="bold" font-style="normal" fill="#0F4F58">实验方法</tspan>
     </text>
   </g>
-  <g id="zC">
-    <rect x="1036" y="30" width="474" height="964" rx="14" fill="#EEF2F7" stroke="#5B7592" stroke-width="1.2" />
+  <g id="zQ">
+    <rect x="1052" y="50" width="458" height="806" rx="14" fill="#FFF6E3" stroke="#C48A24" stroke-width="1.2" />
   </g>
-  <g id="zC_l">
-    <text x="1054" y="67.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="21" font-weight="bold" font-style="normal" fill="#2B3E57">可回答的问题</tspan>
-    </text>
-  </g>
-  <g id="cav">
-    <rect x="758" y="38" width="209" height="37" rx="18.5" fill="#FFF6E3" stroke="#C48A24" stroke-width="1.1" />
-  </g>
-  <g id="cav_t">
-    <text x="773.474609375" y="63.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="17" font-weight="normal" font-style="normal" fill="#7A5410">近邻条件</tspan>
-      <tspan font-family="DejaVu Sans" font-size="17" font-weight="normal" font-style="normal" fill="#7A5410"> ≠ </tspan>
-      <tspan font-family="Noto Sans CJK SC" font-size="17" font-weight="normal" font-style="normal" fill="#7A5410">已验证配方</tspan>
+  <g id="zQ_l">
+    <text x="1070" y="93.875" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="26" font-weight="bold" font-style="normal" fill="#7A5410">可回答的问题</tspan>
     </text>
   </g>
   <g id="a1">
-    <rect x="96" y="96" width="378" height="124" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
+    <rect x="130" y="150" width="420" height="102" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
   </g>
-  <g id="a1_a">
-    <rect x="96" y="96" width="378" height="6" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
+  <g id="a1_b">
+    <rect x="130" y="150" width="8" height="102" rx="3" fill="#5B7592" stroke="none" stroke-width="1" />
   </g>
   <g id="a1_g_s0">
-    <rect x="124" y="149" width="16" height="24" fill="none" stroke="#1F2937" stroke-width="1.0" />
+    <rect x="161" y="187" width="19" height="29" fill="none" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="a1_g_l1">
-    <line x1="128" y1="158" x2="139" y2="158" stroke="#1F2937" stroke-width="1.0" />
+    <line x1="166" y1="197" x2="179" y2="197" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="a1_g_l2">
-    <line x1="128" y1="162" x2="139" y2="162" stroke="#1F2937" stroke-width="1.0" />
+    <line x1="166" y1="203" x2="179" y2="203" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="a1_g_l3">
-    <line x1="128" y1="167" x2="136" y2="167" stroke="#1F2937" stroke-width="1.0" />
+    <line x1="166" y1="208" x2="175" y2="208" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="a1_t">
-    <text x="162" y="171.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="24.21490595890926" font-weight="bold" font-style="normal" fill="#2B3E57">目标化合物直接报道</tspan>
+    <text x="206" y="211.0" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#2B3E57">目标化合物直接报道</tspan>
     </text>
   </g>
   <g id="a2">
-    <rect x="96" y="244" width="378" height="124" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
+    <rect x="130" y="262" width="420" height="102" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
   </g>
-  <g id="a2_a">
-    <rect x="96" y="244" width="378" height="6" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
+  <g id="a2_b">
+    <rect x="130" y="262" width="8" height="102" rx="3" fill="#5B7592" stroke="none" stroke-width="1" />
   </g>
-  <g id="a2_g_s2">
-    <rect x="130" y="303" width="16" height="24" fill="none" stroke="#1F2937" stroke-width="1.0" />
+  <g id="a2_g_o_0">
+    <line x1="174" y1="296" x2="190" y2="307" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="a2_g_s1">
-    <rect x="127" y="300" width="16" height="24" fill="none" stroke="#1F2937" stroke-width="1.0" />
+  <g id="a2_g_o_1">
+    <line x1="190" y1="307" x2="183" y2="328" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="a2_g_s0">
-    <rect x="124" y="297" width="16" height="24" fill="none" stroke="#1F2937" stroke-width="1.0" />
+  <g id="a2_g_o_2">
+    <line x1="183" y1="328" x2="165" y2="328" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="a2_g_l1">
-    <line x1="128" y1="306" x2="139" y2="306" stroke="#1F2937" stroke-width="1.0" />
+  <g id="a2_g_o_3">
+    <line x1="165" y1="328" x2="158" y2="307" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="a2_g_l2">
-    <line x1="128" y1="310" x2="139" y2="310" stroke="#1F2937" stroke-width="1.0" />
+  <g id="a2_g_o_4">
+    <line x1="158" y1="307" x2="174" y2="296" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="a2_g_l3">
-    <line x1="128" y1="315" x2="136" y2="315" stroke="#1F2937" stroke-width="1.0" />
+  <g id="a2_g_a">
+    <line x1="174" y1="296" x2="174" y2="328" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="a2_g_b">
+    <line x1="158" y1="307" x2="190" y2="307" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="a2_t">
-    <text x="162" y="319.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="24.21490595890926" font-weight="bold" font-style="normal" fill="#2B3E57">同类</tspan>
-      <tspan font-family="DejaVu Sans" font-size="24.21490595890926" font-weight="bold" font-style="normal" fill="#2B3E57"> Ba–Y </tspan>
-      <tspan font-family="Noto Sans CJK SC" font-size="24.21490595890926" font-weight="bold" font-style="normal" fill="#2B3E57">四方硅酸盐</tspan>
+    <text x="206" y="323.0" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#2B3E57">同类</tspan>
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="bold" font-style="normal" fill="#2B3E57"> Ba–Y </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#2B3E57">四方硅酸盐</tspan>
     </text>
   </g>
   <g id="a3">
-    <rect x="96" y="392" width="378" height="124" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
+    <rect x="130" y="374" width="420" height="102" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
   </g>
-  <g id="a3_a">
-    <rect x="96" y="392" width="378" height="6" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
+  <g id="a3_b">
+    <rect x="130" y="374" width="8" height="102" rx="3" fill="#5B7592" stroke="none" stroke-width="1" />
   </g>
-  <g id="a3_g_o_0">
-    <line x1="135" y1="443" x2="149" y2="452" stroke="#1F2937" stroke-width="1.0" />
+  <g id="a3_g_h0">
+    <line x1="161" y1="412" x2="187" y2="412" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="a3_g_o_1">
-    <line x1="149" y1="452" x2="142" y2="470" stroke="#1F2937" stroke-width="1.0" />
+  <g id="a3_g_v0">
+    <line x1="161" y1="412" x2="161" y2="438" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="a3_g_o_2">
-    <line x1="142" y1="470" x2="128" y2="470" stroke="#1F2937" stroke-width="1.0" />
+  <g id="a3_g_h1">
+    <line x1="161" y1="425" x2="187" y2="425" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="a3_g_o_3">
-    <line x1="128" y1="470" x2="121" y2="452" stroke="#1F2937" stroke-width="1.0" />
+  <g id="a3_g_v1">
+    <line x1="174" y1="412" x2="174" y2="438" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="a3_g_o_4">
-    <line x1="121" y1="452" x2="135" y2="443" stroke="#1F2937" stroke-width="1.0" />
+  <g id="a3_g_h2">
+    <line x1="161" y1="438" x2="187" y2="438" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="a3_g_a">
-    <line x1="135" y1="443" x2="135" y2="470" stroke="#1F2937" stroke-width="1.0" />
+  <g id="a3_g_v2">
+    <line x1="187" y1="412" x2="187" y2="438" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="a3_g_b">
-    <line x1="121" y1="452" x2="149" y2="452" stroke="#1F2937" stroke-width="1.0" />
+  <g id="a3_g_d00">
+    <ellipse cx="161.0" cy="412.0" rx="3.0" ry="3.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_d01">
+    <ellipse cx="161.0" cy="425.0" rx="3.0" ry="3.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_d02">
+    <ellipse cx="161.0" cy="438.0" rx="3.0" ry="3.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_d10">
+    <ellipse cx="174.0" cy="412.0" rx="3.0" ry="3.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_d11">
+    <ellipse cx="174.0" cy="425.0" rx="3.0" ry="3.0" fill="#1F2937" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_d12">
+    <ellipse cx="174.0" cy="438.0" rx="3.0" ry="3.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_d20">
+    <ellipse cx="187.0" cy="412.0" rx="3.0" ry="3.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_d21">
+    <ellipse cx="187.0" cy="425.0" rx="3.0" ry="3.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_d22">
+    <ellipse cx="187.0" cy="438.0" rx="3.0" ry="3.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
   </g>
   <g id="a3_t">
-    <text x="162" y="467.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="24.21490595890926" font-weight="bold" font-style="normal" fill="#2B3E57">结构相关化合物</tspan>
+    <text x="206" y="435.0" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#2B3E57">结构相关化合物</tspan>
     </text>
   </g>
   <g id="a4">
-    <rect x="96" y="540" width="378" height="124" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
+    <rect x="130" y="486" width="420" height="102" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
   </g>
-  <g id="a4_a">
-    <rect x="96" y="540" width="378" height="6" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
+  <g id="a4_b">
+    <rect x="130" y="486" width="8" height="102" rx="3" fill="#5B7592" stroke="none" stroke-width="1" />
   </g>
   <g id="a4_g_b_0">
-    <line x1="125" y1="598" x2="129" y2="617" stroke="#1F2937" stroke-width="1.0" />
+    <line x1="163" y1="529" x2="167" y2="551" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="a4_g_b_1">
-    <line x1="129" y1="617" x2="141" y2="617" stroke="#1F2937" stroke-width="1.0" />
+    <line x1="167" y1="551" x2="181" y2="551" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="a4_g_b_2">
-    <line x1="141" y1="617" x2="145" y2="598" stroke="#1F2937" stroke-width="1.0" />
+    <line x1="181" y1="551" x2="185" y2="529" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="a4_g_r">
-    <line x1="123" y1="598" x2="147" y2="598" stroke="#1F2937" stroke-width="1.0" />
+    <line x1="160" y1="529" x2="188" y2="529" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="a4_t">
-    <text x="162" y="615.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="24.21490595890926" font-weight="bold" font-style="normal" fill="#2B3E57">工艺参照研究</tspan>
+    <text x="206" y="547.0" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#2B3E57">工艺参照研究</tspan>
     </text>
   </g>
   <g id="a5">
-    <rect x="96" y="748" width="378" height="124" rx="9" fill="#FFFFFF" stroke="#9AA3AB" stroke-width="1.4" stroke-dasharray="12 8" />
+    <rect x="130" y="700" width="420" height="112" rx="9" fill="#FFFFFF" stroke="#9AA3AB" stroke-width="1.4" stroke-dasharray="12 8" />
   </g>
   <g id="a5_g_s0">
-    <rect x="124" y="798" width="16" height="24" fill="none" stroke="#1F2937" stroke-width="1.0" />
+    <rect x="163" y="742" width="19" height="29" fill="none" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="a5_g_l1">
-    <line x1="128" y1="807" x2="139" y2="807" stroke="#1F2937" stroke-width="1.0" />
+    <line x1="168" y1="752" x2="181" y2="752" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="a5_g_l2">
-    <line x1="128" y1="811" x2="139" y2="811" stroke="#1F2937" stroke-width="1.0" />
+    <line x1="168" y1="758" x2="181" y2="758" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="a5_g_l3">
-    <line x1="128" y1="816" x2="136" y2="816" stroke="#1F2937" stroke-width="1.0" />
+    <line x1="168" y1="763" x2="177" y2="763" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="a5_g_x">
-    <line x1="123" y1="824" x2="147" y2="796" stroke="#1F2937" stroke-width="1.0" />
+    <line x1="162" y1="772" x2="190" y2="740" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="a5_t">
-    <text x="162" y="820.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="24.21490595890926" font-weight="bold" font-style="normal" fill="#5B6570">非相关资料</tspan>
+    <text x="208" y="767.0" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#5B6570">非相关资料</tspan>
     </text>
   </g>
   <g id="ax_u">
-    <polygon points="61.2,442.0 61.2,131.0 57.5,131.0 62,120 66.5,131.0 62.8,131.0 62.8,442.0" fill="#3F4854" />
+    <polygon points="61.2,439.0 61.2,185.0 57.5,185.0 62,174 66.5,185.0 62.8,185.0 62.8,439.0" fill="#3F4854" />
   </g>
   <g id="ax_d">
-    <polygon points="62.8,526.0 62.8,837.0 66.5,837.0 62,848 57.5,837.0 61.2,837.0 61.2,526.0" fill="#3F4854" />
+    <polygon points="62.8,523.0 62.8,777.0 66.5,777.0 62,788 57.5,777.0 61.2,777.0 61.2,523.0" fill="#3F4854" />
   </g>
   <g id="ax_n">
-    <text x="53.0" y="109.875" xml:space="preserve">
+    <text x="53.0" y="162.875" xml:space="preserve">
       <tspan font-family="Noto Sans CJK SC" font-size="18" font-weight="bold" font-style="normal" fill="#3F4854">近</tspan>
     </text>
   </g>
   <g id="ax_f">
-    <text x="53.0" y="871.875" xml:space="preserve">
+    <text x="53.0" y="812.875" xml:space="preserve">
       <tspan font-family="Noto Sans CJK SC" font-size="18" font-weight="bold" font-style="normal" fill="#3F4854">远</tspan>
     </text>
   </g>
-  <g id="ax_l" transform="rotate(-90 42.0 483.5)">
-    <text x="-21.0" y="491.375" xml:space="preserve">
+  <g id="ax_l" transform="rotate(-90 42.0 481.5)">
+    <text x="-21.0" y="489.375" xml:space="preserve">
       <tspan font-family="Noto Sans CJK SC" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854">与目标相的距离</tspan>
     </text>
   </g>
   <g id="led">
-    <rect x="560" y="96" width="412" height="776" rx="9" fill="#FFFFFF" stroke="#1F7F8C" stroke-width="1.4" />
+    <rect x="620" y="150" width="382" height="540" rx="9" fill="#FFFFFF" stroke="#1F7F8C" stroke-width="1.4" />
   </g>
-  <g id="led_a">
-    <rect x="560" y="96" width="412" height="6" rx="3.0" fill="#1F7F8C" stroke="none" stroke-width="1" />
+  <g id="led_b">
+    <rect x="620" y="150" width="8" height="540" rx="3" fill="#1F7F8C" stroke="none" stroke-width="1" />
   </g>
   <g id="led_g_b">
-    <rect x="584" y="130" width="26" height="22" fill="none" stroke="#1F2937" stroke-width="1.0" />
+    <rect x="653" y="186" width="33" height="29" fill="none" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="led_g_r1">
-    <line x1="584" y1="137" x2="610" y2="137" stroke="#1F2937" stroke-width="1.0" />
+    <line x1="653" y1="196" x2="687" y2="196" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="led_g_r2">
-    <line x1="584" y1="145" x2="610" y2="145" stroke="#1F2937" stroke-width="1.0" />
+    <line x1="653" y1="205" x2="687" y2="205" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="led_g_c1">
-    <line x1="593" y1="130" x2="593" y2="152" stroke="#1F2937" stroke-width="1.0" />
+    <line x1="664" y1="186" x2="664" y2="215" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="led_g_c2">
-    <line x1="601" y1="130" x2="601" y2="152" stroke="#1F2937" stroke-width="1.0" />
+    <line x1="676" y1="186" x2="676" y2="215" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="led_t">
-    <text x="624" y="151.5" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="25.18350219726563" font-weight="bold" font-style="normal" fill="#0F4F58">相同实验项目下比较</tspan>
+    <text x="704" y="210.875" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="25" font-weight="bold" font-style="normal" fill="#0F4F58">相同实验项目下比较</tspan>
     </text>
   </g>
   <g id="ledr_r0">
-    <rect x="584" y="183" width="364" height="95" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
+    <rect x="648" y="248" width="330" height="61" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
-  <g id="ledr_r0_t">
-    <text x="713.5" y="239.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="21" font-weight="normal" font-style="normal" fill="#3F4854">原料与配比</tspan>
+  <g id="ledr_c0_b">
+    <rect x="662" y="269" width="18" height="18" fill="none" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="ledr_c0_k_0">
+    <line x1="666" y1="279" x2="670" y2="283" stroke="#1F2937" stroke-width="1.3" />
+  </g>
+  <g id="ledr_c0_k_1">
+    <line x1="670" y1="283" x2="677" y2="274" stroke="#1F2937" stroke-width="1.3" />
+  </g>
+  <g id="ledr_x0">
+    <text x="694" y="287.125" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="20" font-weight="normal" font-style="normal" fill="#3F4854">原料与配比</tspan>
     </text>
-  </g>
-  <g id="ledr_k0a">
-    <line x1="922" y1="230" x2="928" y2="236" stroke="#4B5563" stroke-width="1.6" />
-  </g>
-  <g id="ledr_k0b">
-    <line x1="928" y1="236" x2="938" y2="224" stroke="#4B5563" stroke-width="1.6" />
   </g>
   <g id="ledr_r1">
-    <rect x="584" y="296" width="364" height="95" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
+    <rect x="648" y="319" width="330" height="61" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
-  <g id="ledr_r1_t">
-    <text x="745.0" y="352.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="21" font-weight="normal" font-style="normal" fill="#3F4854">热史</tspan>
+  <g id="ledr_c1_b">
+    <rect x="662" y="340" width="18" height="18" fill="none" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="ledr_c1_k_0">
+    <line x1="666" y1="349" x2="670" y2="353" stroke="#1F2937" stroke-width="1.3" />
+  </g>
+  <g id="ledr_c1_k_1">
+    <line x1="670" y1="353" x2="677" y2="345" stroke="#1F2937" stroke-width="1.3" />
+  </g>
+  <g id="ledr_x1">
+    <text x="694" y="357.125" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="20" font-weight="normal" font-style="normal" fill="#3F4854">热史</tspan>
     </text>
-  </g>
-  <g id="ledr_k1a">
-    <line x1="922" y1="344" x2="928" y2="350" stroke="#4B5563" stroke-width="1.6" />
-  </g>
-  <g id="ledr_k1b">
-    <line x1="928" y1="350" x2="938" y2="336" stroke="#4B5563" stroke-width="1.6" />
   </g>
   <g id="ledr_r2">
-    <rect x="584" y="409" width="364" height="95" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
+    <rect x="648" y="389" width="330" height="61" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
-  <g id="ledr_r2_t">
-    <text x="745.0" y="465.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="21" font-weight="normal" font-style="normal" fill="#3F4854">气氛</tspan>
+  <g id="ledr_c2_b">
+    <rect x="662" y="410" width="18" height="18" fill="none" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="ledr_c2_k_0">
+    <line x1="666" y1="420" x2="670" y2="424" stroke="#1F2937" stroke-width="1.3" />
+  </g>
+  <g id="ledr_c2_k_1">
+    <line x1="670" y1="424" x2="677" y2="415" stroke="#1F2937" stroke-width="1.3" />
+  </g>
+  <g id="ledr_x2">
+    <text x="694" y="428.125" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="20" font-weight="normal" font-style="normal" fill="#3F4854">气氛</tspan>
     </text>
-  </g>
-  <g id="ledr_k2a">
-    <line x1="922" y1="456" x2="928" y2="462" stroke="#4B5563" stroke-width="1.6" />
-  </g>
-  <g id="ledr_k2b">
-    <line x1="928" y1="462" x2="938" y2="450" stroke="#4B5563" stroke-width="1.6" />
   </g>
   <g id="ledr_r3">
-    <rect x="584" y="522" width="364" height="95" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
+    <rect x="648" y="460" width="330" height="61" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
-  <g id="ledr_r3_t">
-    <text x="703.0" y="578.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="21" font-weight="normal" font-style="normal" fill="#3F4854">容器与助熔剂</tspan>
+  <g id="ledr_c3_b">
+    <rect x="662" y="481" width="18" height="18" fill="none" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="ledr_c3_k_0">
+    <line x1="666" y1="491" x2="670" y2="495" stroke="#1F2937" stroke-width="1.3" />
+  </g>
+  <g id="ledr_c3_k_1">
+    <line x1="670" y1="495" x2="677" y2="486" stroke="#1F2937" stroke-width="1.3" />
+  </g>
+  <g id="ledr_x3">
+    <text x="694" y="499.125" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="20" font-weight="normal" font-style="normal" fill="#3F4854">容器与助熔剂</tspan>
     </text>
-  </g>
-  <g id="ledr_k3a">
-    <line x1="922" y1="570" x2="928" y2="576" stroke="#4B5563" stroke-width="1.6" />
-  </g>
-  <g id="ledr_k3b">
-    <line x1="928" y1="576" x2="938" y2="562" stroke="#4B5563" stroke-width="1.6" />
   </g>
   <g id="ledr_r4">
-    <rect x="584" y="635" width="364" height="95" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
+    <rect x="648" y="531" width="330" height="61" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
-  <g id="ledr_r4_t">
-    <text x="713.5" y="691.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="21" font-weight="normal" font-style="normal" fill="#3F4854">冷却与分离</tspan>
+  <g id="ledr_c4_b">
+    <rect x="662" y="552" width="18" height="18" fill="none" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="ledr_c4_k_0">
+    <line x1="666" y1="561" x2="670" y2="565" stroke="#1F2937" stroke-width="1.3" />
+  </g>
+  <g id="ledr_c4_k_1">
+    <line x1="670" y1="565" x2="677" y2="557" stroke="#1F2937" stroke-width="1.3" />
+  </g>
+  <g id="ledr_x4">
+    <text x="694" y="570.125" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="20" font-weight="normal" font-style="normal" fill="#3F4854">冷却与分离</tspan>
     </text>
-  </g>
-  <g id="ledr_k4a">
-    <line x1="922" y1="682" x2="928" y2="688" stroke="#4B5563" stroke-width="1.6" />
-  </g>
-  <g id="ledr_k4b">
-    <line x1="928" y1="688" x2="938" y2="676" stroke="#4B5563" stroke-width="1.6" />
   </g>
   <g id="ledr_r5">
-    <rect x="584" y="748" width="364" height="95" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
+    <rect x="648" y="601" width="330" height="61" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
-  <g id="ledr_r5_t">
-    <text x="724.0" y="804.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="21" font-weight="normal" font-style="normal" fill="#3F4854">产物表征</tspan>
+  <g id="ledr_c5_b">
+    <rect x="662" y="622" width="18" height="18" fill="none" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="ledr_c5_k_0">
+    <line x1="666" y1="632" x2="670" y2="636" stroke="#1F2937" stroke-width="1.3" />
+  </g>
+  <g id="ledr_c5_k_1">
+    <line x1="670" y1="636" x2="677" y2="627" stroke="#1F2937" stroke-width="1.3" />
+  </g>
+  <g id="ledr_x5">
+    <text x="694" y="640.125" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="20" font-weight="normal" font-style="normal" fill="#3F4854">产物表征</tspan>
     </text>
   </g>
-  <g id="ledr_k5a">
-    <line x1="922" y1="796" x2="928" y2="802" stroke="#4B5563" stroke-width="1.6" />
-  </g>
-  <g id="ledr_k5b">
-    <line x1="928" y1="802" x2="938" y2="788" stroke="#4B5563" stroke-width="1.6" />
-  </g>
   <g id="u1">
-    <rect x="1068" y="96" width="410" height="124" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
+    <rect x="1076" y="150" width="410" height="112" rx="9" fill="#FFFFFF" stroke="#C48A24" stroke-width="1.4" />
   </g>
-  <g id="u1_a">
-    <rect x="1068" y="96" width="410" height="6" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
+  <g id="u1_b">
+    <rect x="1076" y="150" width="8" height="112" rx="3" fill="#C48A24" stroke="none" stroke-width="1" />
   </g>
-  <g id="u1_g_o">
-    <ellipse cx="1106.5" cy="160.5" rx="11.5" ry="11.5" fill="none" stroke="#1F2937" stroke-width="1.0" />
+  <g id="u1_g_n_0">
+    <line x1="1118" y1="190" x2="1118" y2="201" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="u1_g_a_0">
-    <line x1="1114" y1="151" x2="1119" y2="153" stroke="#1F2937" stroke-width="1.0" />
+  <g id="u1_g_n_1">
+    <line x1="1118" y1="201" x2="1108" y2="221" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="u1_g_a_1">
-    <line x1="1119" y1="153" x2="1118" y2="158" stroke="#1F2937" stroke-width="1.0" />
+  <g id="u1_g_n_2">
+    <line x1="1108" y1="221" x2="1136" y2="221" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="u1_g_n_3">
+    <line x1="1136" y1="221" x2="1126" y2="201" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="u1_g_n_4">
+    <line x1="1126" y1="201" x2="1126" y2="190" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="u1_g_m">
+    <line x1="1116" y1="190" x2="1128" y2="190" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="u1_g_d1">
+    <ellipse cx="1118.5" cy="213.5" rx="1.5" ry="1.5" fill="none" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="u1_g_d2">
+    <ellipse cx="1125.0" cy="216.0" rx="1.0" ry="1.0" fill="none" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="u1_t">
-    <text x="1134" y="171.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="24.21490595890926" font-weight="bold" font-style="normal" fill="#2B3E57">直接条件复现</tspan>
+    <text x="1154" y="217.0" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#7A5410">直接条件复现</tspan>
     </text>
   </g>
   <g id="u2">
-    <rect x="1068" y="268" width="410" height="124" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
+    <rect x="1076" y="282" width="410" height="112" rx="9" fill="#FFFFFF" stroke="#C48A24" stroke-width="1.4" />
   </g>
-  <g id="u2_a">
-    <rect x="1068" y="268" width="410" height="6" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
+  <g id="u2_b">
+    <rect x="1076" y="282" width="8" height="112" rx="3" fill="#C48A24" stroke="none" stroke-width="1" />
   </g>
-  <g id="u2_g_t_0">
-    <line x1="1107" y1="319" x2="1121" y2="345" stroke="#1F2937" stroke-width="1.0" />
+  <g id="u2_g_o_0">
+    <line x1="1122" y1="321" x2="1138" y2="332" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="u2_g_t_1">
-    <line x1="1121" y1="345" x2="1093" y2="345" stroke="#1F2937" stroke-width="1.0" />
+  <g id="u2_g_o_1">
+    <line x1="1138" y1="332" x2="1131" y2="353" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="u2_g_t_2">
-    <line x1="1093" y1="345" x2="1107" y2="319" stroke="#1F2937" stroke-width="1.0" />
+  <g id="u2_g_o_2">
+    <line x1="1131" y1="353" x2="1113" y2="353" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="u2_g_i_0">
-    <line x1="1107" y1="319" x2="1111" y2="336" stroke="#1F2937" stroke-width="1.0" />
+  <g id="u2_g_o_3">
+    <line x1="1113" y1="353" x2="1106" y2="332" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="u2_g_i_1">
-    <line x1="1111" y1="336" x2="1093" y2="345" stroke="#1F2937" stroke-width="1.0" />
+  <g id="u2_g_o_4">
+    <line x1="1106" y1="332" x2="1122" y2="321" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="u2_g_d">
-    <ellipse cx="1113.0" cy="339.0" rx="2.0" ry="2.0" fill="#1F2937" stroke="none" stroke-width="1" />
+  <g id="u2_g_a">
+    <line x1="1122" y1="321" x2="1122" y2="353" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="u2_g_b">
+    <line x1="1106" y1="332" x2="1138" y2="332" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="u2_t">
-    <text x="1134" y="343.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="24.21490595890926" font-weight="bold" font-style="normal" fill="#2B3E57">谱系内相图与结构比较</tspan>
+    <text x="1154" y="349.0" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#7A5410">谱系内相图与结构比较</tspan>
     </text>
   </g>
   <g id="u3">
-    <rect x="1068" y="440" width="410" height="124" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.4" />
+    <rect x="1076" y="414" width="410" height="112" rx="9" fill="#FFFFFF" stroke="#C48A24" stroke-width="1.4" />
   </g>
-  <g id="u3_a">
-    <rect x="1068" y="440" width="410" height="6" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
+  <g id="u3_b">
+    <rect x="1076" y="414" width="8" height="112" rx="3" fill="#C48A24" stroke="none" stroke-width="1" />
   </g>
-  <g id="u3_g_a">
-    <rect x="1102" y="491" width="11" height="7" fill="none" stroke="#1F2937" stroke-width="1.0" />
+  <g id="u3_g_p">
+    <line x1="1122" y1="456" x2="1122" y2="481" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="u3_g_b">
-    <rect x="1093" y="509" width="11" height="7" fill="none" stroke="#1F2937" stroke-width="1.0" />
+    <line x1="1108" y1="461" x2="1136" y2="461" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="u3_g_c">
-    <rect x="1110" y="509" width="11" height="7" fill="none" stroke="#1F2937" stroke-width="1.0" />
+  <g id="u3_g_l_0">
+    <line x1="1108" y1="461" x2="1104" y2="470" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="u3_g_s">
-    <line x1="1107" y1="499" x2="1107" y2="504" stroke="#1F2937" stroke-width="1.0" />
+  <g id="u3_g_l_1">
+    <line x1="1104" y1="470" x2="1112" y2="470" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="u3_g_h">
-    <line x1="1098" y1="504" x2="1116" y2="504" stroke="#1F2937" stroke-width="1.0" />
+  <g id="u3_g_l_2">
+    <line x1="1112" y1="470" x2="1108" y2="461" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="u3_g_l">
-    <line x1="1098" y1="504" x2="1098" y2="509" stroke="#1F2937" stroke-width="1.0" />
+  <g id="u3_g_r_0">
+    <line x1="1136" y1="461" x2="1132" y2="470" stroke="#1F2937" stroke-width="1.0" />
   </g>
-  <g id="u3_g_r">
-    <line x1="1116" y1="504" x2="1116" y2="509" stroke="#1F2937" stroke-width="1.0" />
+  <g id="u3_g_r_1">
+    <line x1="1132" y1="470" x2="1140" y2="470" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="u3_g_r_2">
+    <line x1="1140" y1="470" x2="1136" y2="461" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="u3_g_f">
+    <line x1="1114" y1="484" x2="1130" y2="484" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="u3_t">
-    <text x="1134" y="515.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="24.21490595890926" font-weight="bold" font-style="normal" fill="#2B3E57">方法与变量结构</tspan>
+    <text x="1154" y="481.0" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#7A5410">方法与变量结构</tspan>
+    </text>
+  </g>
+  <g id="cav">
+    <rect x="1166" y="580" width="230" height="40" rx="20.0" fill="#FFF6E3" stroke="#C48A24" stroke-width="1.1" />
+  </g>
+  <g id="cav_t">
+    <text x="1181.5" y="608.375" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#7A5410">近邻条件</tspan>
+      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#7A5410"> ≠ </tspan>
+      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#7A5410">已验证配方</tspan>
     </text>
   </g>
   <g id="u4">
-    <rect x="1068" y="748" width="410" height="124" rx="9" fill="#FFFFFF" stroke="#9AA3AB" stroke-width="1.4" stroke-dasharray="12 8" />
+    <rect x="1076" y="700" width="410" height="112" rx="9" fill="#FFFFFF" stroke="#9AA3AB" stroke-width="1.4" stroke-dasharray="12 8" />
   </g>
-  <g id="u4_g_b">
-    <rect x="1094" y="800" width="26" height="21" fill="none" stroke="#1F2937" stroke-width="1.0" stroke-dasharray="2.3800000000000003 2.04" />
+  <g id="u4_g_o">
+    <ellipse cx="1122.0" cy="756.0" rx="12.0" ry="12.0" fill="none" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="u4_g_i">
+    <ellipse cx="1122.0" cy="756.0" rx="4.0" ry="4.0" fill="none" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="u4_g_t506">
+    <line x1="1122" y1="738" x2="1122" y2="745" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="u4_g_t5078">
+    <line x1="1122" y1="767" x2="1122" y2="774" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="u4_g_t650">
+    <line x1="1104" y1="756" x2="1111" y2="756" stroke="#1F2937" stroke-width="1.0" />
+  </g>
+  <g id="u4_g_t7850">
+    <line x1="1133" y1="756" x2="1140" y2="756" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="u4_t">
-    <text x="1134" y="820.625" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="24.21490595890926" font-weight="bold" font-style="normal" fill="#5B6570">划定研究范围</tspan>
+    <text x="1154" y="767.0" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="24" font-weight="bold" font-style="normal" fill="#5B6570">划定研究范围</tspan>
     </text>
   </g>
-  <g id="br0_0">
-    <line x1="478" y1="158" x2="506" y2="158" stroke="#4B5563" stroke-width="1.8" />
+  <g id="br_a1_0">
+    <line x1="554" y1="201" x2="584" y2="201" stroke="#4B5563" stroke-width="1.8" />
   </g>
-  <g id="br1_0">
-    <line x1="478" y1="306" x2="506" y2="306" stroke="#4B5563" stroke-width="1.8" />
+  <g id="br_a2_0">
+    <line x1="554" y1="313" x2="584" y2="313" stroke="#4B5563" stroke-width="1.8" />
   </g>
-  <g id="br2_0">
-    <line x1="478" y1="454" x2="506" y2="454" stroke="#4B5563" stroke-width="1.8" />
+  <g id="br_a3_0">
+    <line x1="554" y1="425" x2="584" y2="425" stroke="#4B5563" stroke-width="1.8" />
   </g>
-  <g id="br3_0">
-    <line x1="478" y1="602" x2="506" y2="602" stroke="#4B5563" stroke-width="1.8" />
+  <g id="br_a4_0">
+    <line x1="554" y1="537" x2="584" y2="537" stroke="#4B5563" stroke-width="1.8" />
   </g>
   <g id="brv_0">
-    <line x1="506" y1="158" x2="506" y2="602" stroke="#4B5563" stroke-width="1.8" />
+    <line x1="584" y1="201" x2="584" y2="537" stroke="#4B5563" stroke-width="1.8" />
   </g>
   <g id="brh_0">
-    <polygon points="506.0,379.1 544.0,379.1 544.0,375.0 556,380 544.0,385.0 544.0,380.9 506.0,380.9" fill="#4B5563" />
+    <polygon points="584.0,368.1 604.0,368.1 604.0,364.0 616,369 604.0,374.0 604.0,369.9 584.0,369.9" fill="#4B5563" />
   </g>
   <g id="fan0_0">
-    <line x1="976" y1="380" x2="1010" y2="380" stroke="#4B5563" stroke-width="1.8" />
+    <line x1="1006" y1="420" x2="1030" y2="420" stroke="#4B5563" stroke-width="1.8" />
   </g>
   <g id="fanv_0">
-    <line x1="1010" y1="158" x2="1010" y2="502" stroke="#4B5563" stroke-width="1.8" />
+    <line x1="1030" y1="206" x2="1030" y2="470" stroke="#4B5563" stroke-width="1.8" />
   </g>
   <g id="fan1_0">
-    <polygon points="1010.0,157.1 1052.0,157.1 1052.0,153.0 1064,158 1052.0,163.0 1052.0,158.9 1010.0,158.9" fill="#4B5563" />
+    <polygon points="1030.0,205.1 1060.0,205.1 1060.0,201.0 1072,206 1060.0,211.0 1060.0,206.9 1030.0,206.9" fill="#4B5563" />
   </g>
   <g id="fan2_0">
-    <polygon points="1010.0,329.1 1052.0,329.1 1052.0,325.0 1064,330 1052.0,335.0 1052.0,330.9 1010.0,330.9" fill="#4B5563" />
+    <polygon points="1030.0,337.1 1060.0,337.1 1060.0,333.0 1072,338 1060.0,343.0 1060.0,338.9 1030.0,338.9" fill="#4B5563" />
   </g>
   <g id="fan3_0">
-    <polygon points="1010.0,501.1 1052.0,501.1 1052.0,497.0 1064,502 1052.0,507.0 1052.0,502.9 1010.0,502.9" fill="#4B5563" />
+    <polygon points="1030.0,469.1 1060.0,469.1 1060.0,465.0 1072,470 1060.0,475.0 1060.0,470.9 1030.0,470.9" fill="#4B5563" />
   </g>
   <g id="ex_0">
-    <line x1="285" y1="876" x2="285" y2="930" stroke="#4B5563" stroke-width="1.8" stroke-dasharray="11 7" />
-  </g>
-  <g id="ex_1">
-    <line x1="285" y1="930" x2="1273" y2="930" stroke="#4B5563" stroke-width="1.8" stroke-dasharray="11 7" />
-  </g>
-  <g id="ex_2">
     <defs>
-      <marker id="marker-ex_2" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
+      <marker id="marker-ex_0" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
         <path d="M0,0 L6,3 L0,6 Z" fill="#4B5563" />
       </marker>
     </defs>
-    <line x1="1273" y1="930" x2="1273" y2="876" stroke="#4B5563" stroke-width="1.8" stroke-dasharray="11 7" marker-end="url(#marker-ex_2)" />
+    <line x1="554" y1="756" x2="1072" y2="756" stroke="#4B5563" stroke-width="1.8" stroke-dasharray="11 7" marker-end="url(#marker-ex_0)" />
   </g>
   <g id="ex_p">
-    <rect x="743" y="910" width="72" height="39" rx="19.5" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.1" />
+    <rect x="776" y="736" width="74" height="40" rx="20.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.1" />
   </g>
   <g id="ex_p_t">
-    <text x="761.0" y="937.375" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854">排除</tspan>
+    <text x="794.0" y="764.375" xml:space="preserve">
+      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">排除</tspan>
     </text>
   </g>
 </svg>
