@@ -1,5 +1,5 @@
 {
- "snapshot_at": "2026-09-13T18:11+08:00",
+ "snapshot_at": "2026-09-13T18:20+08:00",
  "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
  "gpus": [
   {
@@ -10,8 +10,8 @@
   },
   {
    "index": 1,
-   "used_mib": 1324,
-   "util": "1%",
+   "used_mib": 21,
+   "util": "0%",
    "note": "用户 ubuntu 的 glint.train 占用，不使用"
   }
  ],
