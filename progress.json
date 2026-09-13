@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-14T04:17+08:00",
+  "updated": "2026-09-14T04:41+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,12 +12,12 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-14T04:17+08:00",
+    "snapshot_at": "2026-09-14T04:41+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 13925,
-        "util": "48%",
+        "used_mib": 13701,
+        "util": "94%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
@@ -30,14 +30,14 @@
     "disk": [
       {
         "mount": "/",
-        "used": "95%",
-        "free": "180G",
+        "used": "96%",
+        "free": "178G",
         "note": "不写"
       },
       {
         "mount": "/data",
         "used": "98%",
-        "free": "79G",
+        "free": "78G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -416,6 +416,10 @@
   ],
   "changelog": [
     {
+      "date": "2026-09-14 02:30",
+      "entry": "换图（用户：用最新的图替换一下）：接 goai_画图 那条线第五轮交付的图件——BYZSO 三张、BaZn2Si2O7 两张，中英各一套，放在各自的 figures/pdf/（中文 <name>.pdf、英文 <name>_en.pdf）。四份报告的 10 处 \\includegraphics 全部从 figures/pdf_tikz/<name>_{zh,en}.pdf 改指过去，重编 21/27/7/8 页、0 错误、无缺图。遗留：新图里出现「谱系」「成相」，而正文已按术语表统一为「系列」「相形成」，图文用词不一致，需回到画图那条线改图源"
+    },
+    {
       "date": "2026-09-14 04:20",
       "entry": "第五轮图件交付完成：两篇综述共五张（BYZSO 3 + BaZn2Si2O7 2），每张出中英两版共十张，super_img2ppt 重建后 img2ppt preflight 全部 pass，矢量 PDF 写回两篇论文的中英图目录，四份 PDF 重新编译（21/27/7/8 页，0 错误）。英文术语取自两篇论文自己的英文正文与已有英文图，中英共用一套词汇；英文排版暴露的三处问题（连线标签盖住短连线、分组标题压连线、末条标签出界）两版一起修。"
     },
@@ -766,7 +770,7 @@
       "pages": 21,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：template=manuscript（新默认）——照 2026-09-04 那份相图报告的排版复刻：11 pt Times 正文（13.6 pt 行距）、衬线粗体节标题、居中不加粗标题栏、article 式摘要、首行缩进段间 0、页眉（斜体短题 + 页码 + 0.3 pt 细线）、不开 \\sloppy 只给 emergencystretch。保留此前确认的：表格浮到页底、PaperOrchestra 题注（句点、首句不加粗）、图宽 0.95 行宽、参考文献前 clearpage、run-in 小标题蓝色方块。"
+      "note": "正式版：template=manuscript（11 pt 衬线、居中标题栏、页眉、不开 \\sloppy）+ PaperOrchestra 题注约定，题注一律左对齐（singlelinecheck=false）；表格浮到页底；**图件已换成 goai_画图 第五轮交付的版本**（figures/pdf/，中英各一套，卡片式配图标），不再用本线的 TikZ 直出图（figures/pdf_tikz/ 保留备查）。"
     },
     {
       "title": "BYZSO 综述 · 英文正式版",
@@ -775,7 +779,7 @@
       "pages": 27,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：template=manuscript（新默认）——照 2026-09-04 那份相图报告的排版复刻：11 pt Times 正文（13.6 pt 行距）、衬线粗体节标题、居中不加粗标题栏、article 式摘要、首行缩进段间 0、页眉（斜体短题 + 页码 + 0.3 pt 细线）、不开 \\sloppy 只给 emergencystretch。保留此前确认的：表格浮到页底、PaperOrchestra 题注（句点、首句不加粗）、图宽 0.95 行宽、参考文献前 clearpage、run-in 小标题蓝色方块。"
+      "note": "正式版：template=manuscript（11 pt 衬线、居中标题栏、页眉、不开 \\sloppy）+ PaperOrchestra 题注约定，题注一律左对齐（singlelinecheck=false）；表格浮到页底；**图件已换成 goai_画图 第五轮交付的版本**（figures/pdf/，中英各一套，卡片式配图标），不再用本线的 TikZ 直出图（figures/pdf_tikz/ 保留备查）。"
     },
     {
       "title": "BaZn₂Si₂O₇ 补充 · 中文正式版",
@@ -784,7 +788,7 @@
       "pages": 7,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：template=manuscript（新默认）——照 2026-09-04 那份相图报告的排版复刻：11 pt Times 正文（13.6 pt 行距）、衬线粗体节标题、居中不加粗标题栏、article 式摘要、首行缩进段间 0、页眉（斜体短题 + 页码 + 0.3 pt 细线）、不开 \\sloppy 只给 emergencystretch。保留此前确认的：表格浮到页底、PaperOrchestra 题注（句点、首句不加粗）、图宽 0.95 行宽、参考文献前 clearpage、run-in 小标题蓝色方块。"
+      "note": "正式版：template=manuscript（11 pt 衬线、居中标题栏、页眉、不开 \\sloppy）+ PaperOrchestra 题注约定，题注一律左对齐（singlelinecheck=false）；表格浮到页底；**图件已换成 goai_画图 第五轮交付的版本**（figures/pdf/，中英各一套，卡片式配图标），不再用本线的 TikZ 直出图（figures/pdf_tikz/ 保留备查）。"
     },
     {
       "title": "BaZn₂Si₂O₇ 补充 · 英文正式版",
@@ -793,7 +797,7 @@
       "pages": 8,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：template=manuscript（新默认）——照 2026-09-04 那份相图报告的排版复刻：11 pt Times 正文（13.6 pt 行距）、衬线粗体节标题、居中不加粗标题栏、article 式摘要、首行缩进段间 0、页眉（斜体短题 + 页码 + 0.3 pt 细线）、不开 \\sloppy 只给 emergencystretch。保留此前确认的：表格浮到页底、PaperOrchestra 题注（句点、首句不加粗）、图宽 0.95 行宽、参考文献前 clearpage、run-in 小标题蓝色方块。"
+      "note": "正式版：template=manuscript（11 pt 衬线、居中标题栏、页眉、不开 \\sloppy）+ PaperOrchestra 题注约定，题注一律左对齐（singlelinecheck=false）；表格浮到页底；**图件已换成 goai_画图 第五轮交付的版本**（figures/pdf/，中英各一套，卡片式配图标），不再用本线的 TikZ 直出图（figures/pdf_tikz/ 保留备查）。"
     },
     {
       "title": "排版对照台（单文件 HTML，可离线）",
