@@ -5,32 +5,32 @@
     <rect x="26" y="26" width="1484" height="362" rx="14" fill="#EEF2F7" stroke="#5B7592" stroke-width="1.2" />
   </g>
   <g id="zL_l">
-    <text x="44" y="69.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="26" font-weight="bold" font-style="normal" fill="#2B3E57">文献证据</tspan>
+    <text x="44" y="67.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="26" font-weight="bold" font-style="normal" fill="#2B3E57">Literature Evidence</tspan>
     </text>
   </g>
   <g id="zE">
     <rect x="26" y="418" width="1484" height="232" rx="14" fill="#E6F2F3" stroke="#1F7F8C" stroke-width="1.2" />
   </g>
   <g id="zE_l">
-    <text x="44" y="461.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="26" font-weight="bold" font-style="normal" fill="#0F4F58">实验方法</tspan>
+    <text x="44" y="459.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="26" font-weight="bold" font-style="normal" fill="#0F4F58">Experimental Items</tspan>
     </text>
   </g>
   <g id="zR">
     <rect x="26" y="680" width="1484" height="176" rx="14" fill="#EEF2F7" stroke="#5B7592" stroke-width="1.2" />
   </g>
   <g id="zR_l">
-    <text x="44" y="723.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="26" font-weight="bold" font-style="normal" fill="#2B3E57">结果反馈</tspan>
+    <text x="44" y="721.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="26" font-weight="bold" font-style="normal" fill="#2B3E57">Result Feedback</tspan>
     </text>
   </g>
   <g id="zQ">
     <rect x="26" y="880" width="1484" height="136" rx="14" fill="#FFF6E3" stroke="#C48A24" stroke-width="1.2" />
   </g>
   <g id="zQ_l">
-    <text x="44" y="923.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="26" font-weight="bold" font-style="normal" fill="#7A5410">判断提醒</tspan>
+    <text x="44" y="921.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="26" font-weight="bold" font-style="normal" fill="#7A5410">Open Questions</tspan>
     </text>
   </g>
   <g id="c1">
@@ -58,35 +58,32 @@
     <line x1="97" y1="137" x2="106" y2="137" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="c1_t">
-    <text x="138" y="140.375" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="25" font-weight="bold" font-style="normal" fill="#2B3E57">文献依据</tspan>
+    <text x="138" y="138.125" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="25" font-weight="bold" font-style="normal" fill="#2B3E57">Literature Basis</tspan>
     </text>
   </g>
   <g id="c1_i0">
     <rect x="84" y="160" width="410" height="53" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="c1_i0_t">
-    <text x="218.439453125" y="194.875" xml:space="preserve">
-      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">Ba–Y–Si–O </tspan>
-      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">谱系</tspan>
+    <text x="208.119140625" y="193.125" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">Ba–Y–Si–O family</tspan>
     </text>
   </g>
   <g id="c1_i1">
     <rect x="84" y="222" width="410" height="53" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="c1_i1_t">
-    <text x="192.712890625" y="256.875" xml:space="preserve">
-      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">Ba–Zn–Si–O </tspan>
-      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">结构近邻</tspan>
+    <text x="134.498046875" y="255.125" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">Ba–Zn–Si–O structural neighbors</tspan>
     </text>
   </g>
   <g id="c1_i2">
     <rect x="84" y="285" width="410" height="53" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="c1_i2_t">
-    <text x="216.375" y="319.875" xml:space="preserve">
-      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">Y–Si–O </tspan>
-      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">工艺参照</tspan>
+    <text x="169.5" y="318.125" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">Y–Si–O process reference</tspan>
     </text>
   </g>
   <g id="c2">
@@ -117,33 +114,32 @@
     <line x1="588" y1="123" x2="622" y2="123" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="c2_t">
-    <text x="638" y="140.375" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="25" font-weight="bold" font-style="normal" fill="#2B3E57">结构假设</tspan>
+    <text x="638" y="138.125" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="25" font-weight="bold" font-style="normal" fill="#2B3E57">Structural Hypothesis</tspan>
     </text>
   </g>
   <g id="c2_i0">
     <rect x="584" y="160" width="410" height="53" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="c2_i0_t">
-    <text x="732.0" y="194.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">局部组成网格</tspan>
+    <text x="681.75" y="193.125" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">Local composition grid</tspan>
     </text>
   </g>
   <g id="c2_i1">
     <rect x="584" y="222" width="410" height="53" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="c2_i1_t">
-    <text x="713.625" y="256.875" xml:space="preserve">
-      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">Zn–Y–</tspan>
-      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">氧计量耦合</tspan>
+    <text x="639.8203125" y="255.125" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">Zn–Y–O stoichiometric coupling</tspan>
     </text>
   </g>
   <g id="c2_i2">
     <rect x="584" y="285" width="410" height="53" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="c2_i2_t">
-    <text x="722.5" y="319.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">竞争相与玻璃区</tspan>
+    <text x="636.873046875" y="318.125" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">Competing phases, glass region</tspan>
     </text>
   </g>
   <g id="c3">
@@ -171,8 +167,8 @@
     <line x1="1102" y1="133" x2="1089" y2="116" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="c3_t">
-    <text x="1138" y="140.375" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="25" font-weight="bold" font-style="normal" fill="#2B3E57">前驱体筛选</tspan>
+    <text x="1138" y="138.125" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="25" font-weight="bold" font-style="normal" fill="#2B3E57">Screened Precursors</tspan>
     </text>
   </g>
   <g id="c3_i0">
@@ -195,18 +191,16 @@
     <rect x="1084" y="285" width="410" height="53" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="c3_i2_t">
-    <text x="1222.5" y="319.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">模型排序的候选</tspan>
+    <text x="1169.125" y="318.125" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">Model-ranked candidates</tspan>
     </text>
   </g>
   <g id="cav">
-    <rect x="1208" y="352" width="165" height="39" rx="19.5" fill="#FFF6E3" stroke="#C48A24" stroke-width="1.1" />
+    <rect x="1167" y="352" width="247" height="39" rx="19.5" fill="#FFF6E3" stroke="#C48A24" stroke-width="1.1" />
   </g>
   <g id="cav_t">
-    <text x="1223.236328125" y="379.375" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="18" font-weight="normal" font-style="normal" fill="#7A5410">模型排序</tspan>
-      <tspan font-family="DejaVu Sans" font-size="18" font-weight="normal" font-style="normal" fill="#7A5410"> ≠ </tspan>
-      <tspan font-family="Noto Sans CJK SC" font-size="18" font-weight="normal" font-style="normal" fill="#7A5410">验证</tspan>
+    <text x="1196.5" y="377.75" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="18" font-weight="normal" font-style="normal" fill="#7A5410">Ranking ≠ validation</tspan>
     </text>
   </g>
   <g id="l1">
@@ -240,24 +234,24 @@
     <line x1="110" y1="518" x2="112" y2="522" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="l1_t">
-    <text x="136" y="526.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="25" font-weight="bold" font-style="normal" fill="#0F4F58">固相成相</tspan>
+    <text x="136" y="524.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="25" font-weight="bold" font-style="normal" fill="#0F4F58">Solid-State Route</tspan>
     </text>
   </g>
   <g id="l1r_t0">
     <rect x="82" y="552" width="97" height="50" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="l1r_t0_t">
-    <text x="92.5" y="585.375" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">分段煅烧</tspan>
+    <text x="95.625" y="583.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">Calcine</tspan>
     </text>
   </g>
   <g id="l1r_t1">
     <rect x="199" y="552" width="97" height="50" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="l1r_t1_t">
-    <text x="228.5" y="585.375" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">复磨</tspan>
+    <text x="210.849609375" y="583.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">Regrind</tspan>
     </text>
   </g>
   <g id="l1r_a1">
@@ -267,8 +261,8 @@
     <rect x="315" y="552" width="97" height="50" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="l1r_t2_t">
-    <text x="344.5" y="585.375" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">退火</tspan>
+    <text x="330.625" y="583.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">Anneal</tspan>
     </text>
   </g>
   <g id="l1r_a2">
@@ -278,8 +272,8 @@
     <rect x="424" y="552" width="234" height="50" rx="6" fill="#E6F2F3" stroke="#1F7F8C" stroke-width="1.2" />
   </g>
   <g id="l1_o_t">
-    <text x="465.0" y="585.375" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="bold" font-style="normal" fill="#0F4F58">批量相区与相纯度</tspan>
+    <text x="446.49609375" y="583.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="19" font-weight="bold" font-style="normal" fill="#0F4F58">Bulk phase purity</tspan>
     </text>
   </g>
   <g id="l2">
@@ -313,24 +307,24 @@
     <ellipse cx="865.0" cy="526.0" rx="1.0" ry="1.0" fill="none" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="l2_t">
-    <text x="896" y="526.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="25" font-weight="bold" font-style="normal" fill="#0F4F58">高温溶液长晶</tspan>
+    <text x="896" y="524.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="25" font-weight="bold" font-style="normal" fill="#0F4F58">Solution Growth</tspan>
     </text>
   </g>
   <g id="l2r_t0">
     <rect x="842" y="552" width="97" height="50" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="l2r_t0_t">
-    <text x="871.5" y="585.375" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">助熔</tspan>
+    <text x="870.75" y="583.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">Flux</tspan>
     </text>
   </g>
   <g id="l2r_t1">
     <rect x="959" y="552" width="97" height="50" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="l2r_t1_t">
-    <text x="988.5" y="585.375" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">保温</tspan>
+    <text x="981.25" y="583.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">Dwell</tspan>
     </text>
   </g>
   <g id="l2r_a1">
@@ -340,8 +334,11 @@
     <rect x="1075" y="552" width="97" height="50" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="l2r_t2_t">
-    <text x="1104.5" y="585.375" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">慢冷</tspan>
+    <text x="1099.85546875" y="572.75" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="17.781173706054688" font-weight="normal" font-style="normal" fill="#3F4854">Slow </tspan>
+    </text>
+    <text x="1105.25" y="593.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="17.781173706054688" font-weight="normal" font-style="normal" fill="#3F4854">cool</tspan>
     </text>
   </g>
   <g id="l2r_a2">
@@ -351,8 +348,11 @@
     <rect x="1184" y="552" width="234" height="50" rx="6" fill="#E6F2F3" stroke="#1F7F8C" stroke-width="1.2" />
   </g>
   <g id="l2_o_t">
-    <text x="1206.0" y="585.375" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="bold" font-style="normal" fill="#0F4F58">单晶结构与液相选择性</tspan>
+    <text x="1228.966796875" y="572.75" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="17.781173706054688" font-weight="bold" font-style="normal" fill="#0F4F58">Single-crystal </tspan>
+    </text>
+    <text x="1254.48828125" y="593.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="17.781173706054688" font-weight="bold" font-style="normal" fill="#0F4F58">structure</tspan>
     </text>
   </g>
   <g id="c5">
@@ -398,8 +398,8 @@
     <line x1="433" y1="736" x2="440" y2="726" stroke="#1F2937" stroke-width="1.0" />
   </g>
   <g id="c5_t">
-    <text x="456" y="752.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="25" font-weight="bold" font-style="normal" fill="#2B3E57">表征手段</tspan>
+    <text x="456" y="750.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="25" font-weight="bold" font-style="normal" fill="#2B3E57">Characterization</tspan>
     </text>
   </g>
   <g id="c5r_t0">
@@ -430,8 +430,8 @@
     <rect x="965" y="776" width="175" height="44" rx="6" fill="#F7F9FB" stroke="#CBD3DA" stroke-width="1.2" />
   </g>
   <g id="c5r_t3_t">
-    <text x="980.5" y="805.875" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="18" font-weight="normal" font-style="normal" fill="#3F4854">高温相与冷却产物</tspan>
+    <text x="972.25" y="803.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="15.628875732421875" font-weight="normal" font-style="normal" fill="#3F4854">HT vs cooled phases</tspan>
     </text>
   </g>
   <g id="q1">
@@ -441,9 +441,11 @@
     <rect x="60" y="936" width="8" height="66" rx="3" fill="#C48A24" stroke="none" stroke-width="1" />
   </g>
   <g id="q1_t">
-    <text x="141.814453125" y="978.125" xml:space="preserve">
-      <tspan font-family="DejaVu Sans" font-size="21" font-weight="normal" font-style="normal" fill="#7A5410">Zn </tspan>
-      <tspan font-family="Noto Sans CJK SC" font-size="21" font-weight="normal" font-style="normal" fill="#7A5410">是否进入并与氧计量耦合？</tspan>
+    <text x="80.25" y="964.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="20.7850341796875" font-weight="normal" font-style="normal" fill="#7A5410">Does Zn enter and couple with oxygen </tspan>
+    </text>
+    <text x="208.201171875" y="988.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="20.7850341796875" font-weight="normal" font-style="normal" fill="#7A5410">stoichiometry?</tspan>
     </text>
   </g>
   <g id="q2">
@@ -453,8 +455,11 @@
     <rect x="560" y="936" width="8" height="66" rx="3" fill="#C48A24" stroke="none" stroke-width="1" />
   </g>
   <g id="q2_t">
-    <text x="659.0" y="978.125" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="21" font-weight="normal" font-style="normal" fill="#7A5410">稳定相区还是液相选择性？</tspan>
+    <text x="637.875" y="964.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="21" font-weight="normal" font-style="normal" fill="#7A5410">Stable phase field, or liquid </tspan>
+    </text>
+    <text x="725.84375" y="988.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="21" font-weight="normal" font-style="normal" fill="#7A5410">selectivity?</tspan>
     </text>
   </g>
   <g id="q3">
@@ -464,8 +469,11 @@
     <rect x="1060" y="936" width="8" height="66" rx="3" fill="#C48A24" stroke="none" stroke-width="1" />
   </g>
   <g id="q3_t">
-    <text x="1138.0" y="978.125" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="21" font-weight="normal" font-style="normal" fill="#7A5410">实际组成与结构信号如何对应？</tspan>
+    <text x="1116.2109375" y="964.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="21" font-weight="normal" font-style="normal" fill="#7A5410">How do actual composition and </tspan>
+    </text>
+    <text x="1126.69140625" y="988.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="21" font-weight="normal" font-style="normal" fill="#7A5410">structural signals correspond?</tspan>
     </text>
   </g>
   <g id="e1_0">
@@ -516,11 +524,11 @@
     <line x1="785" y1="403" x2="785" y2="358" stroke="#4B5563" stroke-width="1.8" stroke-dasharray="11 7" marker-end="url(#marker-fb_3)" />
   </g>
   <g id="fb_p">
-    <rect x="796" y="383" width="169" height="40" rx="20.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.1" />
+    <rect x="713" y="383" width="335" height="40" rx="20.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.1" />
   </g>
   <g id="fb_p_t">
-    <text x="814.0" y="411.375" xml:space="preserve">
-      <tspan font-family="Noto Sans CJK SC" font-size="19" font-weight="normal" font-style="normal" fill="#3F4854">更新组成与工艺</tspan>
+    <text x="741.125" y="408.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="17" font-weight="normal" font-style="normal" fill="#3F4854">Update composition and process</tspan>
     </text>
   </g>
 </svg>

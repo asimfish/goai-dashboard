@@ -1,12 +1,12 @@
 {
- "stat": "第五轮定稿（2026-09-14，作者选定）：图 1 F02 嵌套容器、图 2 F01 分层横带、图 3 F02 嵌套容器、路线图 F02、分类框架 F02 双栏对照。选定版经 super_img2ppt 重建为原生对象（img2ppt preflight 五张全 pass），矢量 PDF 同名写回两篇报告并重新编译（21 页 / 7 页，0 错误）。第四轮交付件保留在 deliverables_round4/。",
- "lead": "旧图为 drawio 三栏框图。新图保持论文语义骨架不变（每条连线都有章节依据），只改视觉语法。第五轮的首轮候选共 20 张（每图 C01–C04，四种版式语法：分层横带 / 单主干 / 枢纽辐射 / 账本为轴 / 阶梯汇流 / 蛇形分段 / 双栏对照 / 嵌套容器）。S3 审查把语义违背（白名单外文字、幽灵占位卡、箭头反向、线型语义稀释）与视觉观感分开记分，语义违背不被观感抵消。作者可直接点名偏好的 C 编号，S4 会按点名重跑。",
+ "stat": "第五轮定稿（2026-09-14，作者选定）：图 1 F02、图 2 F01、图 3 F02、路线图 F02、分类框架 F02 双栏对照。五张各出中英两版（同一套几何与设计系统，英文术语取自两篇论文自己的英文正文），super_img2ppt 重建十张，img2ppt preflight 全部 pass；矢量 PDF 同名写回两篇报告的中英图目录，四份 PDF 重新编译：BYZSO 中文 21 页 / 英文 27 页，BaZn2Si2O7 中文 7 页 / 英文 8 页，全部 0 错误。",
+ "lead": "两篇综述共五张框架图 —— BYZSO 三张（图 1 证据适用范围、图 2 条件比较与表征、图 3 研究路线），BaZn2Si2O7 两张（行文路线图、分类框架）。图保持论文语义骨架不变（每条连线都有章节依据），中英两版共用一套词汇与一套几何。重建阶段另外改正了生成图未修掉的三处语义问题：分类框架的分支箭头方向、图 2 产物表征带的族色、图 3 分叉只进一条通道。",
  "projects": [
   {
    "id": "fig01_evidence_map",
    "title": "图 1 文献来源 → 相同实验项目下比较 → 可回答的问题",
    "paper": "BYZSO 综述 §3",
-   "note": "作者选定 F02：三栏纵向分组：左证据阶梯、中账本、右可回答的问题，非相关资料落在栏外。重建时另外改正了生成图未修掉的几处：分类框架的分支箭头一律由枢纽指向分支、图 2 产物表征带回到 teal 族、图 3 的分叉同时进入两条实验通道。 第五轮 S3 选向：C02（分层横带）为主方向，吸收 C04 的三栏纵向分组。高危问题 3 条，逐条记在该图的 S3 记录里。论文当前仍用第四轮的矢量图。 第四轮定稿：R05（三分组带）。左侧证据阶梯按“与目标相的距离”轴排序，四类可比证据经一条归并连线进入中间的比较账本（6 行记录格＋勾选），右侧三类可回答问题；“非相关资料 → 划定研究范围”走底部虚线不经账本。“近邻条件 ≠ 已验证配方”移到分组标题行，不再压卡片。 前三轮候选全部保留在下方。",
+   "note": "BYZSO 论文用图。作者选定 F02：三栏纵向分组：左证据阶梯、中账本、右可回答的问题，非相关资料落在栏外。中英两版同几何同设计系统，英文术语取自该论文的英文正文。",
    "s2": [
     [
      "C01",
@@ -28,7 +28,11 @@
    "s5": [
     [
      "render",
-     "第五轮 F02 的 img2ppt 重建渲染（论文在用）"
+     "第五轮 F02 中文版（论文在用）"
+    ],
+    [
+     "render_en",
+     "第五轮 F02 英文版（论文在用）"
     ],
     [
      "R5F01",
@@ -95,19 +99,31 @@
      "第一轮 · 阶梯—账本—扇出"
     ]
    ],
-   "final": "F02（第五轮，作者选定）",
+   "final": "F02（第五轮，作者选定；中英两版）",
    "links": [
     [
-     "可编辑 PPTX（super_img2ppt 原生对象重建）",
+     "可编辑 PPTX（中文）",
      "media/figstudio/fig01_evidence_map/fig01_evidence_synthesis_map_editable.pptx"
     ],
     [
-     "可编辑 SVG",
+     "可编辑 PPTX（英文）",
+     "media/figstudio/fig01_evidence_map/fig01_evidence_synthesis_map_en_editable.pptx"
+    ],
+    [
+     "可编辑 SVG（中文）",
      "media/figstudio/fig01_evidence_map/fig01_evidence_synthesis_map_editable.svg"
     ],
     [
-     "论文用矢量 PDF（按重建渲染裁边）",
+     "可编辑 SVG（英文）",
+     "media/figstudio/fig01_evidence_map/fig01_evidence_synthesis_map_en_editable.svg"
+    ],
+    [
+     "论文用矢量 PDF（中文）",
      "media/figstudio/fig01_evidence_map/fig01_evidence_synthesis_map_vector.pdf"
+    ],
+    [
+     "论文用矢量 PDF（英文）",
+     "media/figstudio/fig01_evidence_map/fig01_evidence_synthesis_map_en_vector.pdf"
     ]
    ]
   },
@@ -115,7 +131,7 @@
    "id": "fig02_route_matrix",
    "title": "图 2 合成路线 → 统一实验记录 → 互补表征",
    "paper": "BYZSO 综述 §4–§6",
-   "note": "作者选定 F01：三条横带：五条路线（卡内纵向三步机理链）→ 统一实验记录（四栏带图元与勾选）→ 四项互补表征。重建时另外改正了生成图未修掉的几处：分类框架的分支箭头一律由枢纽指向分支、图 2 产物表征带回到 teal 族、图 3 的分叉同时进入两条实验通道。 第五轮 S3 选向：C01（分层横带）为主方向，吸收 C02 的账本栏图元与 C04 的竖排分组名。高危问题 1 条，逐条记在该图的 S3 记录里。论文当前仍用第四轮的矢量图。 第四轮定稿：R05（三层带）。五条合成路线各画出纵向机理链（溶解→保温→慢冷分离 等，均出自论文条件描述），中间是统一实验记录的四列记录格，下层四项互补表征；Czochralski 为虚线灰族，分组带右上给出“虚线＝工艺参照”图例；“抽取框架 ≠ 实验处方”改为记录卡标题行标签。 前三轮候选全部保留在下方。",
+   "note": "BYZSO 论文用图。作者选定 F01：三条横带：五条路线（卡内纵向三步机理链）→ 统一实验记录（四栏带图元与勾选）→ 四项互补表征。中英两版同几何同设计系统，英文术语取自该论文的英文正文。",
    "s2": [
     [
      "C01",
@@ -137,7 +153,11 @@
    "s5": [
     [
      "render",
-     "第五轮 F01 的 img2ppt 重建渲染（论文在用）"
+     "第五轮 F01 中文版（论文在用）"
+    ],
+    [
+     "render_en",
+     "第五轮 F01 英文版（论文在用）"
     ],
     [
      "R5F01",
@@ -196,19 +216,31 @@
      "三带：工艺条 → 账本 → 表征卡（C01 主导）"
     ]
    ],
-   "final": "F01（第五轮，作者选定）",
+   "final": "F01（第五轮，作者选定；中英两版）",
    "links": [
     [
-     "可编辑 PPTX（super_img2ppt 原生对象重建）",
+     "可编辑 PPTX（中文）",
      "media/figstudio/fig02_route_matrix/fig02_route_variable_matrix_editable.pptx"
     ],
     [
-     "可编辑 SVG",
+     "可编辑 PPTX（英文）",
+     "media/figstudio/fig02_route_matrix/fig02_route_variable_matrix_en_editable.pptx"
+    ],
+    [
+     "可编辑 SVG（中文）",
      "media/figstudio/fig02_route_matrix/fig02_route_variable_matrix_editable.svg"
     ],
     [
-     "论文用矢量 PDF（按重建渲染裁边）",
+     "可编辑 SVG（英文）",
+     "media/figstudio/fig02_route_matrix/fig02_route_variable_matrix_en_editable.svg"
+    ],
+    [
+     "论文用矢量 PDF（中文）",
      "media/figstudio/fig02_route_matrix/fig02_route_variable_matrix_vector.pdf"
+    ],
+    [
+     "论文用矢量 PDF（英文）",
+     "media/figstudio/fig02_route_matrix/fig02_route_variable_matrix_en_vector.pdf"
     ]
    ]
   },
@@ -216,7 +248,7 @@
    "id": "fig03_roadmap",
    "title": "图 3 研究路线（文献依据 → 假设 → 前驱体 → 固相/长晶并行 → 反馈）",
    "paper": "BYZSO 综述 §1/§8",
-   "note": "作者选定 F02：紧凑三段分区：文献证据栏、实验方法栏（两条通道）、结果反馈栏，提醒带在底部。重建时另外改正了生成图未修掉的几处：分类框架的分支箭头一律由枢纽指向分支、图 2 产物表征带回到 teal 族、图 3 的分叉同时进入两条实验通道。 第五轮 S3 选向：C01（单主干）为主方向，采用 C03/C04 对警示标签的处理。高危问题 3 条，逐条记在该图的 S3 记录里。论文当前仍用第四轮的矢量图。 第四轮定稿：R05（主干＋提醒带）。单条主干：文献依据 → 结构假设 → 前驱体筛选 → 两条实验通道 → 表征手段，两条通道各自画出机理链与结论条；分叉只由“前驱体筛选”驱动、反馈虚线回到“结构假设”（按论文修正，沿用前轮）。 前三轮候选全部保留在下方。",
+   "note": "BYZSO 论文用图。作者选定 F02：紧凑三段分区：文献证据栏、实验方法栏（两条通道）、结果反馈栏，提醒带在底部。中英两版同几何同设计系统，英文术语取自该论文的英文正文。",
    "s2": [
     [
      "C01",
@@ -238,7 +270,11 @@
    "s5": [
     [
      "render",
-     "第五轮 F02 的 img2ppt 重建渲染（论文在用）"
+     "第五轮 F02 中文版（论文在用）"
+    ],
+    [
+     "render_en",
+     "第五轮 F02 英文版（论文在用）"
     ],
     [
      "R5F01",
@@ -305,19 +341,31 @@
      "第一轮 · 主线 + 反馈弧"
     ]
    ],
-   "final": "F02（第五轮，作者选定）",
+   "final": "F02（第五轮，作者选定；中英两版）",
    "links": [
     [
-     "可编辑 PPTX（super_img2ppt 原生对象重建）",
+     "可编辑 PPTX（中文）",
      "media/figstudio/fig03_roadmap/fig03_research_roadmap_editable.pptx"
     ],
     [
-     "可编辑 SVG",
+     "可编辑 PPTX（英文）",
+     "media/figstudio/fig03_roadmap/fig03_research_roadmap_en_editable.pptx"
+    ],
+    [
+     "可编辑 SVG（中文）",
      "media/figstudio/fig03_roadmap/fig03_research_roadmap_editable.svg"
     ],
     [
-     "论文用矢量 PDF（按重建渲染裁边）",
+     "可编辑 SVG（英文）",
+     "media/figstudio/fig03_roadmap/fig03_research_roadmap_en_editable.svg"
+    ],
+    [
+     "论文用矢量 PDF（中文）",
      "media/figstudio/fig03_roadmap/fig03_research_roadmap_vector.pdf"
+    ],
+    [
+     "论文用矢量 PDF（英文）",
+     "media/figstudio/fig03_roadmap/fig03_research_roadmap_en_vector.pdf"
     ]
    ]
   },
@@ -325,7 +373,7 @@
    "id": "bzso_roadmap",
    "title": "BaZn2Si2O7 综述路线图（六步链）",
    "paper": "02 补充综述 §1",
-   "note": "作者选定 F02：3+3 两行，编号与标题同行的紧凑版，分组名做成贴在带角的小标签。重建时另外改正了生成图未修掉的几处：分类框架的分支箭头一律由枢纽指向分支、图 2 产物表征带回到 teal 族、图 3 的分叉同时进入两条实验通道。 第五轮 S3 选向：C01（蛇形 3+3）为主方向，采用 C02/C04 对 05 的琥珀标注。高危问题 2 条，逐条记在该图的 S3 记录里。论文当前仍用第四轮的矢量图。 第四轮定稿：R05（单行六卡）。编号＋标题＋线稿图元＋要点条，按文献证据/实验方法分两个分组带；五个连线标签放顶部标签带、分组标题移到分组带底部，箭头全程可见；“类似物判据”用琥珀族标出是待验证比较对象。 前三轮候选全部保留在下方。",
+   "note": "BaZn2Si2O7 论文用图。作者选定 F02：3+3 两行，编号与标题同行的紧凑版，分组名做成贴在带角的小标签。中英两版同几何同设计系统，英文术语取自该论文的英文正文。",
    "s2": [
     [
      "C01",
@@ -347,7 +395,11 @@
    "s5": [
     [
      "render",
-     "第五轮 F02 的 img2ppt 重建渲染（论文在用）"
+     "第五轮 F02 中文版（论文在用）"
+    ],
+    [
+     "render_en",
+     "第五轮 F02 英文版（论文在用）"
     ],
     [
      "R5F01",
@@ -414,19 +466,31 @@
      "第一轮 · 蛇形双行（作者判为缺质感、乱）"
     ]
    ],
-   "final": "F02（第五轮，作者选定）",
+   "final": "F02（第五轮，作者选定；中英两版）",
    "links": [
     [
-     "可编辑 PPTX（super_img2ppt 原生对象重建）",
+     "可编辑 PPTX（中文）",
      "media/figstudio/bzso_roadmap/roadmap_bazn2si2o7_editable.pptx"
     ],
     [
-     "可编辑 SVG",
+     "可编辑 PPTX（英文）",
+     "media/figstudio/bzso_roadmap/roadmap_bazn2si2o7_en_editable.pptx"
+    ],
+    [
+     "可编辑 SVG（中文）",
      "media/figstudio/bzso_roadmap/roadmap_bazn2si2o7_editable.svg"
     ],
     [
-     "论文用矢量 PDF（按重建渲染裁边）",
+     "可编辑 SVG（英文）",
+     "media/figstudio/bzso_roadmap/roadmap_bazn2si2o7_en_editable.svg"
+    ],
+    [
+     "论文用矢量 PDF（中文）",
      "media/figstudio/bzso_roadmap/roadmap_bazn2si2o7_vector.pdf"
+    ],
+    [
+     "论文用矢量 PDF（英文）",
+     "media/figstudio/bzso_roadmap/roadmap_bazn2si2o7_en_vector.pdf"
     ]
    ]
   },
@@ -434,7 +498,7 @@
    "id": "bzso_taxonomy",
    "title": "BaZn2Si2O7 合成与相控制分类框架（中心 + 七分支）",
    "paper": "02 补充综述 §4",
-   "note": "作者选定 F02：左右双栏、枢纽居中：左栏四类实验依据，右栏三类文献证据，虚线只到 Ba5Y12Zn[O(SiO4)]8。重建时另外改正了生成图未修掉的几处：分类框架的分支箭头一律由枢纽指向分支、图 2 产物表征带回到 teal 族、图 3 的分叉同时进入两条实验通道。 第五轮 S3 选向：C01（枢纽辐射）为主方向，吸收 C04 的双栏紧凑度。高危问题 4 条，逐条记在该图的 S3 记录里。论文当前仍用第四轮的矢量图。 第四轮定稿：R05（左枢纽＋两组分支）。左侧目标相枢纽 → 实验方法四支，另一条从枢纽底部绕到右侧文献证据三支；Ba5Y12Zn[O(SiO4)]8 仍为虚线 note 卡并标注“未见直接报道”；连线标签抬到线上方，保证箭头可见。 前三轮候选全部保留在下方。",
+   "note": "BaZn2Si2O7 论文用图。作者选定 F02：左右双栏、枢纽居中：左栏四类实验依据，右栏三类文献证据，虚线只到 Ba5Y12Zn[O(SiO4)]8。中英两版同几何同设计系统，英文术语取自该论文的英文正文。",
    "s2": [
     [
      "C01",
@@ -456,7 +520,11 @@
    "s5": [
     [
      "render",
-     "第五轮 F02 的 img2ppt 重建渲染（论文在用）"
+     "第五轮 F02 中文版（论文在用）"
+    ],
+    [
+     "render_en",
+     "第五轮 F02 英文版（论文在用）"
     ],
     [
      "R5F01",
@@ -523,19 +591,31 @@
      "第一轮 · 分组列"
     ]
    ],
-   "final": "F02（第五轮，作者选定）",
+   "final": "F02（第五轮，作者选定；中英两版）",
    "links": [
     [
-     "可编辑 PPTX（super_img2ppt 原生对象重建）",
+     "可编辑 PPTX（中文）",
      "media/figstudio/bzso_taxonomy/taxonomy_phase_control_editable.pptx"
     ],
     [
-     "可编辑 SVG",
+     "可编辑 PPTX（英文）",
+     "media/figstudio/bzso_taxonomy/taxonomy_phase_control_en_editable.pptx"
+    ],
+    [
+     "可编辑 SVG（中文）",
      "media/figstudio/bzso_taxonomy/taxonomy_phase_control_editable.svg"
     ],
     [
-     "论文用矢量 PDF（按重建渲染裁边）",
+     "可编辑 SVG（英文）",
+     "media/figstudio/bzso_taxonomy/taxonomy_phase_control_en_editable.svg"
+    ],
+    [
+     "论文用矢量 PDF（中文）",
      "media/figstudio/bzso_taxonomy/taxonomy_phase_control_vector.pdf"
+    ],
+    [
+     "论文用矢量 PDF（英文）",
+     "media/figstudio/bzso_taxonomy/taxonomy_phase_control_en_vector.pdf"
     ]
    ]
   }

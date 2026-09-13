@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-14T03:11+08:00",
+  "updated": "2026-09-14T04:17+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,12 +12,12 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-14T03:11+08:00",
+    "snapshot_at": "2026-09-14T04:17+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 13703,
-        "util": "1%",
+        "used_mib": 13925,
+        "util": "48%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
@@ -31,13 +31,13 @@
       {
         "mount": "/",
         "used": "95%",
-        "free": "182G",
+        "free": "180G",
         "note": "不写"
       },
       {
         "mount": "/data",
         "used": "98%",
-        "free": "82G",
+        "free": "79G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -415,6 +415,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-14 04:20",
+      "entry": "第五轮图件交付完成：两篇综述共五张（BYZSO 3 + BaZn2Si2O7 2），每张出中英两版共十张，super_img2ppt 重建后 img2ppt preflight 全部 pass，矢量 PDF 写回两篇论文的中英图目录，四份 PDF 重新编译（21/27/7/8 页，0 错误）。英文术语取自两篇论文自己的英文正文与已有英文图，中英共用一套词汇；英文排版暴露的三处问题（连线标签盖住短连线、分组标题压连线、末条标签出界）两版一起修。"
+    },
     {
       "date": "2026-09-14 01:30",
       "entry": "接触分离审计测通并上页：990 次回调、67 对接触，器材间最小分离全程正值 0.25–0.40 mm（与静态审计的 0.40–0.96 mm 支撑间隙一致），五阶段零穿模；唯一负值是 FR3 自身 fr3_hand↔fr3_link7 的 −23.0 mm，属相邻连杆设计重叠。前五次全是零回调，根因是 Isaac Lab 的 SimulationContext 默认把 /physics/disableContactProcessing 置 true；第一次的空结果曾被脚本误判为 PASS，判据已改为「没量到接触对即未测」。v4 场景状态升到 7/8"
@@ -1010,15 +1014,15 @@
   ],
   "figures": [
     {
-      "title": "综述框架图五张（第五轮定稿，作者已选定）",
+      "title": "综述框架图：两篇 × 五张 × 中英两版（第五轮定稿）",
       "status": "ok",
-      "note": "完整 S0–S5 契约跑完：S0 语义精度契约（guard PASS）、S1 八种风格组合选四、S2 逐行生图 20 张、S3 issue-ledger 审查、S4 F01/F02（S2 位图作参考输入）、S5 生图 10 张。作者选定 图1 F02 / 图2 F01 / 图3 F02 / 路线图 F02 / 分类框架 F02，经 super_img2ppt 重建（preflight 五张全 pass）后矢量 PDF 写回两篇报告，21 页 / 7 页 0 错误。",
+      "note": "BYZSO 三张 + BaZn2Si2O7 两张，各出中英两版共十张。完整 S0–S5 契约跑完后由作者选定 （图1 F02 / 图2 F01 / 图3 F02 / 路线图 F02 / 分类框架 F02），经 super_img2ppt 重建为原生对象，img2ppt preflight 十张全 pass。四份 PDF 重编：BYZSO 中 21 页 / 英 27 页，BaZn2Si2O7 中 7 页 / 英 8 页，全部 0 错误。",
       "link": "figures.html"
     },
     {
       "title": "两套配图并存，等作者定 includegraphics",
       "status": "warn",
-      "note": "排版车道把 sections_zh3 指向 figures/pdf_tikz/*_zh.pdf；figstudio 第五轮矢量图在 figures/pdf/ 下同名就位。对照编译：最终输出/main_zh3_figstudio_r5.pdf（21 页）、02_bazn2si2o7/report/main_zh3_figstudio_r5.pdf（7 页），切换只需改 5 处 includegraphics。",
+      "note": "排版车道把 sections_zh3 / sections_en 指向 figures/pdf_tikz/*_{zh,en}.pdf；figstudio 第五轮矢量图在 figures/pdf/ 下以同名（中文）与 *_en（英文）就位。对照编译：最终输出/main_{zh3,en}_figstudio_r5.pdf、02_bazn2si2o7/report/main_{zh3,en}_figstudio_r5.pdf。切换共 10 处 includegraphics（中文 5 处、英文 5 处）。",
       "link": "figures.html"
     }
   ],
