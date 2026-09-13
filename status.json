@@ -1,5 +1,5 @@
 {
- "snapshot_at": "2026-09-13T17:31+08:00",
+ "snapshot_at": "2026-09-13T17:32+08:00",
  "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
  "gpus": [
   {
@@ -19,7 +19,7 @@
   {
    "id": "wf01_solid_state_calcination",
    "recon": "ok",
-   "collect": "failed"
+   "collect": "paused"
   },
   {
    "id": "wf02_powder_recovery_xrd",

@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-13T17:31+08:00",
+  "updated": "2026-09-13T17:32+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,7 +12,7 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-13T17:31+08:00",
+    "snapshot_at": "2026-09-13T17:32+08:00",
     "gpus": [
       {
         "index": 0,
@@ -92,7 +92,7 @@
       "spec": "ok",
       "validate": "ok",
       "recon": "ok",
-      "collect": "failed",
+      "collect": "paused",
       "astra_demo": "partial",
       "showcase": "ok",
       "note": "调试采集跑通前两原语（抓称量纸→按去皮→抓瓶，放置误差 42–58 mm）；全量 0/12 失败后暂停，转向孪生采集",
@@ -398,6 +398,10 @@
   ],
   "changelog": [
     {
+      "date": "2026-09-13 17:50",
+      "entry": "看板整理：首页改为「0 当前焦点（三条主线）→ 1 孪生与采集（验收门表 + A 站结果自动读证据文件）→ 2 五个工作流 → 3 PDF（每份文档只列最新版，8 个旧版折叠，ICLR 变体挂在同行）→ 4 队列（进行中 / 待你决定 / 阻塞，已完成折叠）→ 5 流水线 → 6 判决（最近 3 条）→ 7 变更日志（按天分组 + 主线标签）→ 8 算力 → 9 契约」；去掉内嵌头图对比（页面 405 KB → 170 KB）；scenes.html 孪生卡片改为验收/采集在前、场景候选折叠"
+    },
+    {
       "date": "2026-09-13 09:35",
       "entry": "修复图 1（研究路线图）在论文中被裁：图件 PDF 改按位图与重建渲染的并集裁边，五张图重写并重新编译两篇报告（0 错误）；第三轮“顶会综述图设计系统”候选（5 图 × 4 版式）生成中"
     },
@@ -644,7 +648,9 @@
       "pages": 26,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "英文版：由润色后的中文 sections_zh3 经 4 个并行翻译代理译出，zh_qa 门禁保证引用键/公式/交叉引用/表格结构与中文版逐一一致；goai_en_typo.sty（neurips_2023 移植，Times 10/11）；美式拼写统一；0 错误 0 Overfull"
+      "note": "英文版：由润色后的中文 sections_zh3 经 4 个并行翻译代理译出，zh_qa 门禁保证引用键/公式/交叉引用/表格结构与中文版逐一一致；goai_en_typo.sty（neurips_2023 移植，Times 10/11）；美式拼写统一；0 错误 0 Overfull",
+      "doc": "byzso_en",
+      "variant": false
     },
     {
       "title": "BaZn2Si2O7 English edition (NeurIPS layout)",
@@ -653,7 +659,9 @@
       "pages": 8,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "同上"
+      "note": "同上",
+      "doc": "bazn_en",
+      "variant": false
     },
     {
       "title": "BYZSO English · ICLR 2025 template",
@@ -662,7 +670,10 @@
       "pages": 26,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "\\usepackage[template=iclr]{goai_en_typo}：小型大写标题/节标题/Abstract、段间 0.5pc（iclr2025_conference.sty 值）"
+      "note": "\\usepackage[template=iclr]{goai_en_typo}：小型大写标题/节标题/Abstract、段间 0.5pc（iclr2025_conference.sty 值）",
+      "doc": "byzso_en",
+      "variant": true,
+      "variant_label": "ICLR 2025 模版变体"
     },
     {
       "title": "BaZn2Si2O7 English · ICLR 2025 template",
@@ -671,7 +682,10 @@
       "pages": 8,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "同上"
+      "note": "同上",
+      "doc": "bazn_en",
+      "variant": true,
+      "variant_label": "ICLR 2025 模版变体"
     },
     {
       "title": "BYZSO 中文 · ICLR 模版变体",
@@ -680,7 +694,10 @@
       "pages": 25,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "\\usepackage[template=iclr]{goai_zh_typo}：段间 0.5pc；中文无小型大写，节标题仍黑体"
+      "note": "\\usepackage[template=iclr]{goai_zh_typo}：段间 0.5pc；中文无小型大写，节标题仍黑体",
+      "doc": "byzso",
+      "variant": true,
+      "variant_label": "ICLR 2025 模版变体"
     },
     {
       "title": "BaZn2Si2O7 补充案例 · 排版 v5（NeurIPS 模版中文版）",
@@ -780,7 +797,7 @@
       "date": "2026-09-07",
       "status": "owed",
       "note": "工作区 workspace_repro_20260905_230324 只在 Mac 上（gitignore），拿到文件即挂到这里",
-      "doc": "byzso_en"
+      "doc": "byzso_en36"
     },
     {
       "title": "BaZn2Si2O7 补充案例",
