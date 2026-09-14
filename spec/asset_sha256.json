@@ -1,0 +1,146 @@
+{
+ "source": "5090 NAS sim_ready (authoritative)",
+ "root": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready",
+ "assets": {
+  "Centrifuge_Tube": {
+   "usd": "solid_assets_all/Centrifuge_Tube/CentrifugeTube001.usd",
+   "sha256_main_usd": "6e1faf0618000cde30142d8307ac793c9bed62e4420150703dcd3d1114999e0a",
+   "size_bytes": 2283641
+  },
+  "Crucible": {
+   "usd": "solid_assets_all/Crucible/Crucible001.usd",
+   "sha256_main_usd": "ff32e66a21624afdc61ae5b075fd4ef7e0b283d497e1a3b0946c5d5ae8fbe518",
+   "size_bytes": 3011188
+  },
+  "Crucible_Tong": {
+   "usd": "solid_assets_all/Crucible_Tong/CrucibleTong001.usd",
+   "sha256_main_usd": "d9e225774ee799e9e02e9abc005bbcf8541ac489cb481372a3fc659372d01455",
+   "size_bytes": 4346314
+  },
+  "Funnel": {
+   "usd": "solid_assets_all/Funnel/Funnel001.usd",
+   "sha256_main_usd": "89ed99d7f740d6e53a81f30cf82cc57fc19a321a78f29a8e126813bfd1c672d0",
+   "size_bytes": 974535
+  },
+  "Funnel_Stand": {
+   "usd": "solid_assets_all/Funnel_Stand/FunnelStand001.usd",
+   "sha256_main_usd": "9bee29cd3f801c81338ee853b04460d21c2f2f2536e73cde8111d72fe19a0204",
+   "size_bytes": 11809323
+  },
+  "Precision_Electronic_Balance": {
+   "usd": "solid_assets_all/Precision_Electronic_Balance/PrecisionElectronicBalance001.usd",
+   "sha256_main_usd": "42425abe7e9da5b0a1cded8d18545d37ca1c302206831bc6d1db4e191be706db",
+   "size_bytes": 10282324
+  },
+  "Sample_Tube_With_Stopper": {
+   "usd": "solid_assets_all/Sample_Tube_With_Stopper/SampleTube001.usd",
+   "sha256_main_usd": "24b0703e57f16e5e364de7ad4c0a36270626830cf40fcf301345cf17d75f2413",
+   "size_bytes": 12450007
+  },
+  "Test_Tube_Rack": {
+   "usd": "solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+   "sha256_main_usd": "bf099cb5fc938a3dfb4d0ec92516ff157413417b99d81cb67fec088830d25e63",
+   "size_bytes": 10611916
+  },
+  "art:AnalyticalBalance001": {
+   "usd": "articulated/AnalyticalBalance001/AnalyticalBalance001_2.usd",
+   "sha256_main_usd": "6f86b989e6a0e47ac3a4599deea94314458dff89f1a7c3277ed050692779c913",
+   "size_bytes": 11299714
+  },
+  "art:BottleTopDispenser002": {
+   "usd": "articulated/BottleTopDispenser002/BottleTopDispenser002.usd",
+   "sha256_main_usd": "16f52d9f1f5b1f8e6e341bf8ef7d90fb2bff13ba80c1c5bcd6e00e35d364ace5",
+   "size_bytes": 3328
+  },
+  "art:HighSpeedCentrifuge001": {
+   "usd": "articulated/HighSpeedCentrifuge001/HighSpeedCentrifuge001.usd",
+   "sha256_main_usd": "6a84bba6c247178d98ce75231ec63ec6853bff800acacee7f192f8f7c41368dd",
+   "size_bytes": 150201547
+  },
+  "art:MagneticStirrer001": {
+   "usd": "articulated/MagneticStirrer001/MagneticStirrer001.usd",
+   "sha256_main_usd": "f6faf5a4b1b5986d13940e8ff1627af0ca0d2271483a1214106e6b7de9963148",
+   "size_bytes": 43510328
+  },
+  "art:Oven065": {
+   "usd": "articulated/Oven065/Oven065_small.usd",
+   "sha256_main_usd": "556848ae9608ec1d577b10f2978a324c6b43c173001736ba4a4ad85dbb90ab73",
+   "size_bytes": 94349970
+  },
+  "art:PHMeterAcidimeter001": {
+   "usd": "articulated/PHMeterAcidimeter001/PHMeterAcidimeter001.usd",
+   "sha256_main_usd": "d684149cf7e3b4e23bae70916944336b0fe11d76f1ad584a2bbae661864694a1",
+   "size_bytes": 13963777
+  },
+  "art:ReagentCabinet001": {
+   "usd": "articulated/ReagentCabinet001/ReagentCabinet001_2.usd",
+   "sha256_main_usd": "ca35d2bdb87a64f74555622bad20eb6d90a8662d9abef5a1043529161480c963",
+   "size_bytes": 21646669
+  },
+  "brown_reagent_bottle_large": {
+   "usd": "solid_assets_all/brown_reagent_bottle_large/ReagentBottle001.usd",
+   "sha256_main_usd": "b67c0c19f41dd153b7b545de2624de96cf774ff127ea4d32dfbe5d3d19592bca",
+   "size_bytes": 8935617
+  },
+  "brown_reagent_bottle_small": {
+   "usd": "solid_assets_all/brown_reagent_bottle_small/ReagentBottle004.usd",
+   "sha256_main_usd": "5fc0041791429e754ba12da18198209219d61af835e7dc170a23ec93ba5a350a",
+   "size_bytes": 5994452
+  },
+  "clear_reagent_bottle_large": {
+   "usd": "solid_assets_all/clear_reagent_bottle_large/ReagentBottle002.usd",
+   "sha256_main_usd": "0275b501d41b9ff23d4f920aaf17a4d0a94f391a3fb129297f936e4790c4f19b",
+   "size_bytes": 8783072
+  },
+  "clear_reagent_bottle_small": {
+   "usd": "solid_assets_all/clear_reagent_bottle_small/ReagentBottle003.usd",
+   "sha256_main_usd": "aefd6b5a0ef6b408c2dc300dae0320d29daea5d02995543ea51bf477058bf353",
+   "size_bytes": 6180857
+  },
+  "erlenmeyer_flask": {
+   "usd": "solid_assets_all/erlenmeyer_flask/ErlenmeyerFlask001.usd",
+   "sha256_main_usd": "9bec38b7bee1ef09b40b1bbdabd00e1a15c631eb4ce1a04ddc1f99853328eea1",
+   "size_bytes": 4419753
+  },
+  "glass_beaker_100ml": {
+   "usd": "solid_assets_all/glass_beaker_100ml/Beaker003.usd",
+   "sha256_main_usd": "ee17fdf71fa0d14175dcd327909c51501212b70949dbed7cd1ae135a50621018",
+   "size_bytes": 5307985
+  },
+  "glass_beaker_250ml": {
+   "usd": "solid_assets_all/glass_beaker_250ml/Beaker004.usd",
+   "sha256_main_usd": "4cb52871dece68488a61c8520fc54fe34156613d2243b8cf1031da38b5d51a07",
+   "size_bytes": 3211564
+  },
+  "glass_beaker_500ml": {
+   "usd": "solid_assets_all/glass_beaker_500ml/Beaker005.usd",
+   "sha256_main_usd": "5c16ffbc1b93242a9def28e6b0a3d99ed3680021a0245776230847b43ffe5c4f",
+   "size_bytes": 3591701
+  },
+  "glass_cylinder_100ml": {
+   "usd": "solid_assets_all/glass_cylinder_100ml/GraduatedCylinder004.usd",
+   "sha256_main_usd": "3235ea195f870d38f43483296df2086dcc143856a81b8365d34369cf7377793d",
+   "size_bytes": 2243568
+  },
+  "glass_test_tube_20ml": {
+   "usd": "solid_assets_all/glass_test_tube_20ml/TestTube001.usd",
+   "sha256_main_usd": "886cde750488298eff80dc2b27cd05cb887e8664dfd960f83215dbb4b0e51f1f",
+   "size_bytes": 764820
+  },
+  "mortar": {
+   "usd": "solid_assets_all/mortar/Mortar001.usd",
+   "sha256_main_usd": "44caf7c6fe73dfe2c5efe4184e44c4a950b0c2469160b99d18e428556f7561e1",
+   "size_bytes": 3712748
+  },
+  "pestle": {
+   "usd": "solid_assets_all/pestle/Pestle001.usd",
+   "sha256_main_usd": "be2195af16cd11f3144078b59ceba5c9657d7fb14280c2206af25eef8510cbf3",
+   "size_bytes": 1578724
+  },
+  "weighing_paper": {
+   "usd": "solid_assets_all/weighing_paper/WeighingPaper001.usd",
+   "sha256_main_usd": "6f94006e2ebb8c0e8871d85ea4ed11b868079969f214ff5c6ee5b0a5bdc4cb63",
+   "size_bytes": 1851529
+  }
+ }
+}
