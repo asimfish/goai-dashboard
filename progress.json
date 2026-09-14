@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-14T18:53+08:00",
+  "updated": "2026-09-14T21:07+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,18 +12,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-14T18:53+08:00",
+    "snapshot_at": "2026-09-14T21:07+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 3495,
-        "util": "64%",
+        "used_mib": 3567,
+        "util": "21%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 6942,
-        "util": "30%",
+        "used_mib": 15948,
+        "util": "98%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -37,7 +37,7 @@
       {
         "mount": "/data",
         "used": "98%",
-        "free": "95G",
+        "free": "91G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -415,6 +415,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-14 05:10",
+      "entry": "图文用词修好，门禁四份全 PASS：D2 抓到的 13 类用词问题回到源头改——不是改导出的 PDF/SVG，而是改 final_round/figstudio/scenes_r5.py 里的标签（15 处），重生成 scene.json，用画图线自己的流水线（img2ppt → LibreOffice → install_fig.py 裁切）重出三张中文图。页面尺寸与原版完全一致（939.0×522.0 / 945.6×623.4 / 945.6×633.0 pt），渲染器自动为变长的标签（高温溶液法晶体生长、结构相关化合物）重排了卡片，无裁切无溢出。此前试过用 headless Chrome 从 SVG 重出，Chrome 替换了拉丁字体导致 PXRD/Rietveld 等被裁掉，已弃用。重编 21/27/7/8 页，layout_guard 四份全部 PASS"
+    },
     {
       "date": "2026-09-14 03:20",
       "entry": "版面门禁上线（用户：确保这些都完善到机制里，不能再出现版式/格式问题）：这一轮所有版面问题都是人翻 PDF 看出来的，现在全部写成自动检查。tools/layout_guard.py 24 条，分五层——A 编译层读 .log（错误/Overfull>1pt/缺图/未定义引用）、B 版面层读 PDF 几何（题注必须顶左、文字不得越出版心、页眉页码）、C 结构层读 .tex（图路径与语言、table 必须 [bp]、三线表、题注上下位置、分数列宽合计=1）、D 用词层跑 chemlib（正文 + **图件内文字**）、E 样式层读 .sty（默认模版=manuscript、singlelinecheck=false、无裸 \\sloppy、bottomfraction≥0.7）。tools/build_and_guard.sh 把编译和门禁串成一条命令，FAIL 就非 0 退出。首跑结果：BaZn2Si2O7 中英 PASS；BYZSO 中英各 18 条 D2 FAIL——第五轮新图件里 13 处用词与正文不一致（热史/谱系/成相/处方/慢冷/批量/结构近邻…），清单见 docs/figure_term_fixes_20260914.md，需回 goai_画图 线改图源"
@@ -814,7 +818,7 @@
       "pages": 21,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：template=manuscript（11 pt 衬线、居中标题栏、页眉、不开 \\sloppy）+ PaperOrchestra 题注约定，题注一律左对齐（singlelinecheck=false）；表格浮到页底；**图件已换成 goai_画图 第五轮交付的版本**（figures/pdf/，中英各一套，卡片式配图标），不再用本线的 TikZ 直出图（figures/pdf_tikz/ 保留备查）。"
+      "note": "正式版：template=manuscript + PaperOrchestra 题注约定，题注一律左对齐，表格浮到页底；图件为画图线第五轮版本，15 处非规范用词已在 scenes_r5.py 源头改掉并用同一条流水线重出。layout_guard 24 条检查全部 PASS"
     },
     {
       "title": "BYZSO 综述 · 英文正式版",
@@ -823,7 +827,7 @@
       "pages": 27,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：template=manuscript（11 pt 衬线、居中标题栏、页眉、不开 \\sloppy）+ PaperOrchestra 题注约定，题注一律左对齐（singlelinecheck=false）；表格浮到页底；**图件已换成 goai_画图 第五轮交付的版本**（figures/pdf/，中英各一套，卡片式配图标），不再用本线的 TikZ 直出图（figures/pdf_tikz/ 保留备查）。"
+      "note": "正式版：template=manuscript + PaperOrchestra 题注约定，题注一律左对齐，表格浮到页底；图件为画图线第五轮版本，15 处非规范用词已在 scenes_r5.py 源头改掉并用同一条流水线重出。layout_guard 24 条检查全部 PASS"
     },
     {
       "title": "BaZn₂Si₂O₇ 补充 · 中文正式版",
@@ -832,7 +836,7 @@
       "pages": 7,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：template=manuscript（11 pt 衬线、居中标题栏、页眉、不开 \\sloppy）+ PaperOrchestra 题注约定，题注一律左对齐（singlelinecheck=false）；表格浮到页底；**图件已换成 goai_画图 第五轮交付的版本**（figures/pdf/，中英各一套，卡片式配图标），不再用本线的 TikZ 直出图（figures/pdf_tikz/ 保留备查）。"
+      "note": "正式版：template=manuscript + PaperOrchestra 题注约定，题注一律左对齐，表格浮到页底；图件为画图线第五轮版本，15 处非规范用词已在 scenes_r5.py 源头改掉并用同一条流水线重出。layout_guard 24 条检查全部 PASS"
     },
     {
       "title": "BaZn₂Si₂O₇ 补充 · 英文正式版",
@@ -841,7 +845,7 @@
       "pages": 8,
       "date": "2026-09-13",
       "status": "ok",
-      "note": "正式版：template=manuscript（11 pt 衬线、居中标题栏、页眉、不开 \\sloppy）+ PaperOrchestra 题注约定，题注一律左对齐（singlelinecheck=false）；表格浮到页底；**图件已换成 goai_画图 第五轮交付的版本**（figures/pdf/，中英各一套，卡片式配图标），不再用本线的 TikZ 直出图（figures/pdf_tikz/ 保留备查）。"
+      "note": "正式版：template=manuscript + PaperOrchestra 题注约定，题注一律左对齐，表格浮到页底；图件为画图线第五轮版本，15 处非规范用词已在 scenes_r5.py 源头改掉并用同一条流水线重出。layout_guard 24 条检查全部 PASS"
     },
     {
       "title": "排版对照台（单文件 HTML，可离线）",
