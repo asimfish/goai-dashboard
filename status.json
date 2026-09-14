@@ -1,17 +1,17 @@
 {
- "snapshot_at": "2026-09-14T21:07+08:00",
+ "snapshot_at": "2026-09-14T21:31+08:00",
  "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
  "gpus": [
   {
    "index": 0,
-   "used_mib": 3567,
-   "util": "21%",
+   "used_mib": 5035,
+   "util": "85%",
    "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
   },
   {
    "index": 1,
-   "used_mib": 15948,
-   "util": "98%",
+   "used_mib": 16024,
+   "util": "79%",
    "note": "用户 ubuntu 的 glint.train 占用，不使用"
   }
  ],
