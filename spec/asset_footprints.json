@@ -1,0 +1,785 @@
+{
+ "Centrifuge_Tube": {
+  "size_m": [
+   0.034,
+   0.034,
+   0.1153
+  ],
+  "bbox_min": [
+   -0.017,
+   -0.017,
+   -0.0577
+  ],
+  "bbox_max": [
+   0.017,
+   0.017,
+   0.0577
+  ],
+  "origin_to_bottom_m": 0.0577,
+  "footprint_xy_m": [
+   0.034,
+   0.034
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 77,
+  "usd": "solid_assets_all/Centrifuge_Tube/CentrifugeTube001.usd"
+ },
+ "Crucible": {
+  "size_m": [
+   0.0717,
+   0.0717,
+   0.0749
+  ],
+  "bbox_min": [
+   -0.0358,
+   -0.0358,
+   -0.0374
+  ],
+  "bbox_max": [
+   0.0358,
+   0.0358,
+   0.0374
+  ],
+  "origin_to_bottom_m": 0.0374,
+  "footprint_xy_m": [
+   0.0717,
+   0.0717
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 245,
+  "usd": "solid_assets_all/Crucible/Crucible001.usd"
+ },
+ "Crucible_Tong": {
+  "size_m": [
+   0.0873,
+   0.1896,
+   0.0149
+  ],
+  "bbox_min": [
+   -0.0437,
+   -0.0948,
+   -0.0074
+  ],
+  "bbox_max": [
+   0.0437,
+   0.0948,
+   0.0074
+  ],
+  "origin_to_bottom_m": 0.0074,
+  "footprint_xy_m": [
+   0.0873,
+   0.1896
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 132,
+  "usd": "solid_assets_all/Crucible_Tong/CrucibleTong001.usd"
+ },
+ "Funnel": {
+  "size_m": [
+   0.1002,
+   0.1002,
+   0.1777
+  ],
+  "bbox_min": [
+   -0.0501,
+   -0.0501,
+   -0.0889
+  ],
+  "bbox_max": [
+   0.0501,
+   0.0501,
+   0.0889
+  ],
+  "origin_to_bottom_m": 0.0889,
+  "footprint_xy_m": [
+   0.1002,
+   0.1002
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 2,
+  "usd": "solid_assets_all/Funnel/Funnel001.usd"
+ },
+ "Funnel_Stand": {
+  "size_m": [
+   0.4714,
+   0.0799,
+   0.1854
+  ],
+  "bbox_min": [
+   -0.2357,
+   -0.04,
+   -0.0927
+  ],
+  "bbox_max": [
+   0.2357,
+   0.04,
+   0.0927
+  ],
+  "origin_to_bottom_m": 0.0927,
+  "footprint_xy_m": [
+   0.4714,
+   0.0799
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 107,
+  "usd": "solid_assets_all/Funnel_Stand/FunnelStand001.usd"
+ },
+ "Precision_Electronic_Balance": {
+  "size_m": [
+   0.19,
+   0.2448,
+   0.1378
+  ],
+  "bbox_min": [
+   -0.095,
+   -0.122,
+   -0.0689
+  ],
+  "bbox_max": [
+   0.095,
+   0.1228,
+   0.0689
+  ],
+  "origin_to_bottom_m": 0.0689,
+  "footprint_xy_m": [
+   0.19,
+   0.2448
+  ],
+  "articulated": true,
+  "joints": [
+   "FixedJoint",
+   "Button001_joint",
+   "Button002_joint",
+   "Button003_joint",
+   "Switch_joint"
+  ],
+  "mesh_count": 47,
+  "usd": "solid_assets_all/Precision_Electronic_Balance/PrecisionElectronicBalance001.usd"
+ },
+ "Sample_Tube_With_Stopper": {
+  "size_m": [
+   0.0153,
+   0.0153,
+   0.1139
+  ],
+  "bbox_min": [
+   -0.0076,
+   -0.0076,
+   -0.0569
+  ],
+  "bbox_max": [
+   0.0076,
+   0.0076,
+   0.057
+  ],
+  "origin_to_bottom_m": 0.0569,
+  "footprint_xy_m": [
+   0.0153,
+   0.0153
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 4,
+  "usd": "solid_assets_all/Sample_Tube_With_Stopper/SampleTube001.usd"
+ },
+ "Test_Tube_Rack": {
+  "size_m": [
+   0.219,
+   0.0748,
+   0.0735
+  ],
+  "bbox_min": [
+   -0.1095,
+   -0.0374,
+   -0.0367
+  ],
+  "bbox_max": [
+   0.1095,
+   0.0374,
+   0.0367
+  ],
+  "origin_to_bottom_m": 0.0367,
+  "footprint_xy_m": [
+   0.219,
+   0.0748
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 2,
+  "usd": "solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd"
+ },
+ "art:AnalyticalBalance001": {
+  "size_m": [
+   0.215,
+   0.3443,
+   0.5556
+  ],
+  "bbox_min": [
+   -0.1075,
+   -0.1722,
+   -0.1687
+  ],
+  "bbox_max": [
+   0.1075,
+   0.1722,
+   0.3869
+  ],
+  "origin_to_bottom_m": 0.1687,
+  "footprint_xy_m": [
+   0.215,
+   0.3443
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 80,
+  "usd": "articulated/AnalyticalBalance001/AnalyticalBalance001_2.usd"
+ },
+ "art:BottleTopDispenser002": {
+  "size_m": [
+   0.0698,
+   0.1932,
+   0.3536
+  ],
+  "bbox_min": [
+   -0.0349,
+   -0.0917,
+   -0.1448
+  ],
+  "bbox_max": [
+   0.0349,
+   0.1015,
+   0.2088
+  ],
+  "origin_to_bottom_m": 0.1448,
+  "footprint_xy_m": [
+   0.0698,
+   0.1932
+  ],
+  "articulated": true,
+  "joints": [
+   "Prop_joint",
+   "FixedJoint",
+   "Button001_joint",
+   "Button002_joint",
+   "ReagentBottle001_joint"
+  ],
+  "mesh_count": 488,
+  "usd": "articulated/BottleTopDispenser002/BottleTopDispenser002.usd"
+ },
+ "art:HighSpeedCentrifuge001": {
+  "size_m": [
+   0.32,
+   0.4353,
+   0.2448
+  ],
+  "bbox_min": [
+   -0.1588,
+   -0.2115,
+   -0.125
+  ],
+  "bbox_max": [
+   0.1612,
+   0.2238,
+   0.1198
+  ],
+  "origin_to_bottom_m": 0.125,
+  "footprint_xy_m": [
+   0.32,
+   0.4353
+  ],
+  "articulated": true,
+  "joints": [
+   "Lid_joint",
+   "Rotor_joint",
+   "FixedJoint",
+   "Button001_joint",
+   "Button002_joint",
+   "Button003_joint",
+   "Button004_joint",
+   "Button005_joint"
+  ],
+  "mesh_count": 267,
+  "usd": "articulated/HighSpeedCentrifuge001/HighSpeedCentrifuge001.usd"
+ },
+ "art:MagneticStirrer001": {
+  "size_m": [
+   0.18,
+   0.3099,
+   0.4111
+  ],
+  "bbox_min": [
+   -0.0956,
+   -0.1637,
+   -0.2134
+  ],
+  "bbox_max": [
+   0.0844,
+   0.1461,
+   0.1977
+  ],
+  "origin_to_bottom_m": 0.2134,
+  "footprint_xy_m": [
+   0.18,
+   0.3099
+  ],
+  "articulated": true,
+  "joints": [
+   "FixedJoint",
+   "Knob001_joint",
+   "Knob002_joint",
+   "Button001_joint",
+   "Button002_joint",
+   "Button003_joint"
+  ],
+  "mesh_count": 35,
+  "usd": "articulated/MagneticStirrer001/MagneticStirrer001.usd"
+ },
+ "art:Oven065": {
+  "size_m": [
+   0.833,
+   0.6356,
+   0.7324
+  ],
+  "bbox_min": [
+   -0.4165,
+   -0.3178,
+   -0.3662
+  ],
+  "bbox_max": [
+   0.4165,
+   0.3178,
+   0.3662
+  ],
+  "origin_to_bottom_m": 0.3662,
+  "footprint_xy_m": [
+   0.833,
+   0.6356
+  ],
+  "articulated": true,
+  "joints": [
+   "Button001_joint",
+   "Button002_joint",
+   "Button003_joint",
+   "Switch_joint",
+   "Knob_joint",
+   "FixedJoint",
+   "Button004_joint",
+   "Door_joint"
+  ],
+  "mesh_count": 101,
+  "usd": "articulated/Oven065/Oven065_small.usd"
+ },
+ "art:PHMeterAcidimeter001": {
+  "size_m": [
+   0.2646,
+   0.1912,
+   0.2665
+  ],
+  "bbox_min": [
+   -0.1324,
+   -0.1451,
+   -0.1418
+  ],
+  "bbox_max": [
+   0.1321,
+   0.0462,
+   0.1247
+  ],
+  "origin_to_bottom_m": 0.1418,
+  "footprint_xy_m": [
+   0.2646,
+   0.1912
+  ],
+  "articulated": false,
+  "joints": [
+   "Button004_joint",
+   "Button001_joint",
+   "Button002_joint",
+   "Button003_joint",
+   "Button006_joint",
+   "FixedJoint",
+   "Button007_joint",
+   "Button005_joint"
+  ],
+  "mesh_count": 75,
+  "usd": "articulated/PHMeterAcidimeter001/PHMeterAcidimeter001.usd"
+ },
+ "art:ReagentCabinet001": {
+  "size_m": [
+   1.6402,
+   0.4801,
+   1.8
+  ],
+  "bbox_min": [
+   -0.8201,
+   -0.24,
+   -0.9
+  ],
+  "bbox_max": [
+   0.8201,
+   0.24,
+   0.9
+  ],
+  "origin_to_bottom_m": 0.9,
+  "footprint_xy_m": [
+   1.6402,
+   0.4801
+  ],
+  "articulated": true,
+  "joints": [
+   "Door003_joint",
+   "Door004_joint",
+   "Prop002_joint",
+   "Door002_joint",
+   "Prop001_joint",
+   "Door001_joint",
+   "FixedJoint",
+   "ReagentCabinet001_002_joint"
+  ],
+  "mesh_count": 95,
+  "usd": "articulated/ReagentCabinet001/ReagentCabinet001_2.usd"
+ },
+ "brown_reagent_bottle_large": {
+  "size_m": [
+   0.0698,
+   0.0699,
+   0.1412
+  ],
+  "bbox_min": [
+   -0.0349,
+   -0.035,
+   -0.0706
+  ],
+  "bbox_max": [
+   0.0349,
+   0.035,
+   0.0706
+  ],
+  "origin_to_bottom_m": 0.0706,
+  "footprint_xy_m": [
+   0.0698,
+   0.0699
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 486,
+  "usd": "solid_assets_all/brown_reagent_bottle_large/ReagentBottle001.usd"
+ },
+ "brown_reagent_bottle_small": {
+  "size_m": [
+   0.0548,
+   0.0548,
+   0.1018
+  ],
+  "bbox_min": [
+   -0.0274,
+   -0.0274,
+   -0.0523
+  ],
+  "bbox_max": [
+   0.0274,
+   0.0274,
+   0.0495
+  ],
+  "origin_to_bottom_m": 0.0523,
+  "footprint_xy_m": [
+   0.0548,
+   0.0548
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 450,
+  "usd": "solid_assets_all/brown_reagent_bottle_small/ReagentBottle004.usd"
+ },
+ "clear_reagent_bottle_large": {
+  "size_m": [
+   0.0698,
+   0.0699,
+   0.1412
+  ],
+  "bbox_min": [
+   -0.0349,
+   -0.035,
+   -0.0706
+  ],
+  "bbox_max": [
+   0.0349,
+   0.035,
+   0.0706
+  ],
+  "origin_to_bottom_m": 0.0706,
+  "footprint_xy_m": [
+   0.0698,
+   0.0699
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 486,
+  "usd": "solid_assets_all/clear_reagent_bottle_large/ReagentBottle002.usd"
+ },
+ "clear_reagent_bottle_small": {
+  "size_m": [
+   0.0548,
+   0.0548,
+   0.1018
+  ],
+  "bbox_min": [
+   -0.0274,
+   -0.0274,
+   -0.0523
+  ],
+  "bbox_max": [
+   0.0274,
+   0.0274,
+   0.0495
+  ],
+  "origin_to_bottom_m": 0.0523,
+  "footprint_xy_m": [
+   0.0548,
+   0.0548
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 450,
+  "usd": "solid_assets_all/clear_reagent_bottle_small/ReagentBottle003.usd"
+ },
+ "erlenmeyer_flask": {
+  "size_m": [
+   0.088,
+   0.088,
+   0.1412
+  ],
+  "bbox_min": [
+   -0.044,
+   -0.044,
+   -0.0706
+  ],
+  "bbox_max": [
+   0.044,
+   0.044,
+   0.0706
+  ],
+  "origin_to_bottom_m": 0.0706,
+  "footprint_xy_m": [
+   0.088,
+   0.088
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 142,
+  "usd": "solid_assets_all/erlenmeyer_flask/ErlenmeyerFlask001.usd"
+ },
+ "glass_beaker_100ml": {
+  "size_m": [
+   0.0593,
+   0.0533,
+   0.0807
+  ],
+  "bbox_min": [
+   -0.0297,
+   -0.0266,
+   -0.0403
+  ],
+  "bbox_max": [
+   0.0297,
+   0.0266,
+   0.0403
+  ],
+  "origin_to_bottom_m": 0.0403,
+  "footprint_xy_m": [
+   0.0593,
+   0.0533
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 4,
+  "usd": "solid_assets_all/glass_beaker_100ml/Beaker003.usd"
+ },
+ "glass_beaker_250ml": {
+  "size_m": [
+   0.0824,
+   0.0765,
+   0.0958
+  ],
+  "bbox_min": [
+   -0.0412,
+   -0.0383,
+   -0.0479
+  ],
+  "bbox_max": [
+   0.0412,
+   0.0383,
+   0.0479
+  ],
+  "origin_to_bottom_m": 0.0479,
+  "footprint_xy_m": [
+   0.0824,
+   0.0765
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 242,
+  "usd": "solid_assets_all/glass_beaker_250ml/Beaker004.usd"
+ },
+ "glass_beaker_500ml": {
+  "size_m": [
+   0.096,
+   0.0858,
+   0.1283
+  ],
+  "bbox_min": [
+   -0.048,
+   -0.0429,
+   -0.0641
+  ],
+  "bbox_max": [
+   0.048,
+   0.0429,
+   0.0641
+  ],
+  "origin_to_bottom_m": 0.0641,
+  "footprint_xy_m": [
+   0.096,
+   0.0858
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 2,
+  "usd": "solid_assets_all/glass_beaker_500ml/Beaker005.usd"
+ },
+ "glass_cylinder_100ml": {
+  "size_m": [
+   0.0752,
+   0.0656,
+   0.2635
+  ],
+  "bbox_min": [
+   -0.0376,
+   -0.0328,
+   -0.1317
+  ],
+  "bbox_max": [
+   0.0376,
+   0.0328,
+   0.1317
+  ],
+  "origin_to_bottom_m": 0.1317,
+  "footprint_xy_m": [
+   0.0752,
+   0.0656
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 129,
+  "usd": "solid_assets_all/glass_cylinder_100ml/GraduatedCylinder004.usd"
+ },
+ "glass_test_tube_20ml": {
+  "size_m": [
+   0.0193,
+   0.0193,
+   0.1404
+  ],
+  "bbox_min": [
+   -0.0097,
+   -0.0097,
+   -0.0702
+  ],
+  "bbox_max": [
+   0.0097,
+   0.0097,
+   0.0702
+  ],
+  "origin_to_bottom_m": 0.0702,
+  "footprint_xy_m": [
+   0.0193,
+   0.0193
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 74,
+  "usd": "solid_assets_all/glass_test_tube_20ml/TestTube001.usd"
+ },
+ "mortar": {
+  "size_m": [
+   0.0866,
+   0.0804,
+   0.0492
+  ],
+  "bbox_min": [
+   -0.0433,
+   -0.0402,
+   -0.0246
+  ],
+  "bbox_max": [
+   0.0433,
+   0.0402,
+   0.0246
+  ],
+  "origin_to_bottom_m": 0.0246,
+  "footprint_xy_m": [
+   0.0866,
+   0.0804
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 2,
+  "usd": "solid_assets_all/mortar/Mortar001.usd"
+ },
+ "pestle": {
+  "size_m": [
+   0.1127,
+   0.0297,
+   0.0297
+  ],
+  "bbox_min": [
+   -0.0564,
+   -0.0148,
+   -0.0148
+  ],
+  "bbox_max": [
+   0.0564,
+   0.0148,
+   0.0148
+  ],
+  "origin_to_bottom_m": 0.0148,
+  "footprint_xy_m": [
+   0.1127,
+   0.0297
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 6,
+  "usd": "solid_assets_all/pestle/Pestle001.usd"
+ },
+ "weighing_paper": {
+  "size_m": [
+   0.09,
+   0.09,
+   0.0003
+  ],
+  "bbox_min": [
+   -0.045,
+   -0.045,
+   -0.0
+  ],
+  "bbox_max": [
+   0.045,
+   0.045,
+   0.0003
+  ],
+  "origin_to_bottom_m": 0.0,
+  "footprint_xy_m": [
+   0.09,
+   0.09
+  ],
+  "articulated": false,
+  "joints": [],
+  "mesh_count": 1,
+  "usd": "solid_assets_all/weighing_paper/WeighingPaper001.usd"
+ }
+}

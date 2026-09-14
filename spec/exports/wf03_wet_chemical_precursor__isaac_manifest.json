@@ -1,0 +1,256 @@
+{
+  "workflow": "wf03_wet_chemical_precursor",
+  "title": "Wet-chemical (solution) precursor preparation: metering, stirring, pH adjustment, centrifugation and drying",
+  "asset_root": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready",
+  "robot": {
+    "prim_path": "/World/Robot",
+    "type": "franka_fr3",
+    "gripper": "franka_hand",
+    "base_pose": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "cameras": [
+    {
+      "name": "head",
+      "prim_path": "/World/Robot/head_cam",
+      "resolution": [
+        640,
+        480
+      ]
+    },
+    {
+      "name": "wrist",
+      "prim_path": "/World/Robot/panda_hand/wrist_cam",
+      "resolution": [
+        640,
+        480
+      ]
+    },
+    {
+      "name": "third_person",
+      "prim_path": "/World/Cameras/third_person",
+      "resolution": [
+        640,
+        480
+      ]
+    }
+  ],
+  "physics": {
+    "dt": 0.016666666666666666,
+    "gravity": -9.81,
+    "fluid": "pbd"
+  },
+  "recording": {
+    "hz": 30,
+    "streams": [
+      "rgb",
+      "depth",
+      "seg",
+      "joint_pos",
+      "joint_vel",
+      "ee_pose",
+      "gripper",
+      "contact_force",
+      "safety_labels"
+    ]
+  },
+  "prims": [
+    {
+      "prim_path": "/World/Stations/liquid_1",
+      "kind": "station",
+      "instrument": "liquid_station",
+      "asset_key": "art:MagneticStirrer001",
+      "usd": "articulated/MagneticStirrer001/MagneticStirrer001.usd",
+      "articulated": true,
+      "pose": [
+        0.55,
+        0.1,
+        0.0
+      ],
+      "semantic": "liquid_station"
+    },
+    {
+      "prim_path": "/World/Stations/ph_1",
+      "kind": "station",
+      "instrument": "ph_meter",
+      "asset_key": "art:PHMeterAcidimeter001",
+      "usd": "articulated/PHMeterAcidimeter001/PHMeterAcidimeter001.usd",
+      "articulated": true,
+      "pose": [
+        0.6,
+        -0.3,
+        0.0
+      ],
+      "semantic": "ph_meter"
+    },
+    {
+      "prim_path": "/World/Stations/mixer_1",
+      "kind": "station",
+      "instrument": "mixer",
+      "asset_key": "art:HighSpeedCentrifuge001",
+      "usd": "articulated/HighSpeedCentrifuge001/HighSpeedCentrifuge001.usd",
+      "articulated": true,
+      "pose": [
+        0.75,
+        0.4,
+        0.0
+      ],
+      "semantic": "mixer"
+    },
+    {
+      "prim_path": "/World/Stations/oven_1",
+      "kind": "station",
+      "instrument": "drying_oven",
+      "asset_key": "art:Oven065",
+      "usd": "articulated/Oven065/Oven065_small.usd",
+      "articulated": true,
+      "pose": [
+        0.75,
+        -0.45,
+        0.0
+      ],
+      "semantic": "drying_oven"
+    },
+    {
+      "prim_path": "/World/Stations/rack_1",
+      "kind": "station",
+      "instrument": "storage_rack",
+      "asset_key": "Test_Tube_Rack",
+      "usd": "solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+      "articulated": false,
+      "pose": [
+        0.3,
+        0.5,
+        0.0
+      ],
+      "semantic": "storage_rack"
+    },
+    {
+      "prim_path": "/World/Stations/waste_1",
+      "kind": "station",
+      "instrument": "waste",
+      "asset_key": "glass_beaker_500ml",
+      "usd": "solid_assets_all/glass_beaker_500ml/Beaker005.usd",
+      "articulated": false,
+      "pose": [
+        0.2,
+        -0.55,
+        0.0
+      ],
+      "semantic": "waste"
+    },
+    {
+      "prim_path": "/World/Objects/bottle_nitrate",
+      "kind": "object",
+      "labware": "precursor_bottle",
+      "asset_key": "brown_reagent_bottle_large",
+      "usd": "solid_assets_all/brown_reagent_bottle_large/ReagentBottle001.usd",
+      "pose": [
+        0.3,
+        0.6,
+        0.0
+      ],
+      "semantic": "precursor_bottle",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/bottle_silica",
+      "kind": "object",
+      "labware": "precursor_bottle",
+      "asset_key": "clear_reagent_bottle_large",
+      "usd": "solid_assets_all/clear_reagent_bottle_large/ReagentBottle002.usd",
+      "pose": [
+        0.4,
+        0.6,
+        0.0
+      ],
+      "semantic": "precursor_bottle",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/bottle_ammonia",
+      "kind": "object",
+      "labware": "precursor_bottle",
+      "asset_key": "brown_reagent_bottle_small",
+      "usd": "solid_assets_all/brown_reagent_bottle_small/ReagentBottle004.usd",
+      "pose": [
+        0.48,
+        0.6,
+        0.0
+      ],
+      "semantic": "precursor_bottle",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/cyl_1",
+      "kind": "object",
+      "labware": "cylinder",
+      "asset_key": "glass_cylinder_100ml",
+      "usd": "solid_assets_all/glass_cylinder_100ml/GraduatedCylinder004.usd",
+      "pose": [
+        0.45,
+        0.35,
+        0.0
+      ],
+      "semantic": "cylinder",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/beaker_1",
+      "kind": "object",
+      "labware": "beaker",
+      "asset_key": "glass_beaker_250ml",
+      "usd": "solid_assets_all/glass_beaker_250ml/Beaker004.usd",
+      "pose": [
+        0.55,
+        0.1,
+        0.0
+      ],
+      "semantic": "beaker",
+      "sample": "s1"
+    },
+    {
+      "prim_path": "/World/Objects/tube_1",
+      "kind": "object",
+      "labware": "vial",
+      "asset_key": "Centrifuge_Tube",
+      "usd": "solid_assets_all/Centrifuge_Tube/CentrifugeTube001.usd",
+      "pose": [
+        0.3,
+        0.42,
+        0.0
+      ],
+      "semantic": "vial",
+      "sample": "s1"
+    },
+    {
+      "prim_path": "/World/Objects/dish_1",
+      "kind": "object",
+      "labware": "dish",
+      "asset_key": "glass_beaker_100ml",
+      "usd": "solid_assets_all/glass_beaker_100ml/Beaker003.usd",
+      "pose": [
+        0.35,
+        -0.1,
+        0.0
+      ],
+      "semantic": "dish",
+      "sample": "s1"
+    }
+  ],
+  "task_order": [
+    "t_meter",
+    "t_ph",
+    "t_spin",
+    "t_dry"
+  ],
+  "unresolved_assets": [],
+  "unbound": []
+}

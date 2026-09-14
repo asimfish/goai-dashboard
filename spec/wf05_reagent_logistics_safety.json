@@ -1,0 +1,204 @@
+{
+ "scene_id": "wf05_reagent_logistics_safety",
+ "title": "Reagent logistics and safe disposal: cabinet retrieval, bottle-top dispensing, return and waste handling",
+ "room": "Scene02 (runtime_room_usd, same shell as layout_v4)",
+ "worktop_z": 1.0027048932793163,
+ "benches": {
+  "C": [
+   0.06,
+   -3.165,
+   4.52,
+   -1.635
+  ]
+ },
+ "robots": {
+  "ur5e_C": {
+   "base": [
+    2.3,
+    -2.4,
+    1.0288077568110414
+   ],
+   "bench": "C",
+   "type": "ur5e_2f85",
+   "yaw_deg": 90
+  }
+ },
+ "task_order": [
+  "t_get",
+  "t_dispense",
+  "t_return",
+  "t_dispose"
+ ],
+ "placement_rule": {
+  "rows_m": {
+   "back": 0.72,
+   "mid": 0.58,
+   "front": 0.46
+  },
+  "arc_deg": {
+   "ur5e_C": [
+    150.0,
+    85.0
+   ]
+  },
+  "reach_band_m": [
+   0.44,
+   0.76
+  ],
+  "rationale": "instruments sit on a reach annulus around the serving arm, ordered along the arc by process order"
+ },
+ "prims": [
+  {
+   "name": "storage_rack_0",
+   "asset_key": "art:ReagentCabinet001",
+   "semantic": "storage_rack",
+   "row": "front",
+   "served_by": "ur5e_C",
+   "process_index": 0,
+   "pose": [
+    2.494,
+    -1.983,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": 65.0
+  },
+  {
+   "name": "liquid_station_1",
+   "asset_key": "art:BottleTopDispenser002",
+   "semantic": "liquid_station",
+   "row": "back",
+   "served_by": "ur5e_C",
+   "process_index": 1,
+   "pose": [
+    2.508,
+    -1.763,
+    1.0027
+   ],
+   "ring_r_m": 0.67,
+   "ring_deg": 71.9
+  },
+  {
+   "name": "balance_2",
+   "asset_key": "art:AnalyticalBalance001",
+   "semantic": "balance",
+   "row": "mid",
+   "served_by": "ur5e_C",
+   "process_index": 2,
+   "pose": [
+    2.172,
+    -1.834,
+    1.0027
+   ],
+   "ring_r_m": 0.58,
+   "ring_deg": 102.8
+  },
+  {
+   "name": "storage_rack_3",
+   "asset_key": "Test_Tube_Rack",
+   "semantic": "storage_rack",
+   "row": "front",
+   "served_by": "ur5e_C",
+   "process_index": 3,
+   "pose": [
+    2.059,
+    -2.008,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": 121.7
+  },
+  {
+   "name": "waste_4",
+   "asset_key": "glass_beaker_500ml",
+   "semantic": "waste",
+   "row": "front",
+   "served_by": "ur5e_C",
+   "process_index": 4,
+   "pose": [
+    1.945,
+    -2.108,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": 140.6
+  },
+  {
+   "name": "precursor_bottle_5",
+   "asset_key": "brown_reagent_bottle_large",
+   "semantic": "precursor_bottle",
+   "row": "front",
+   "served_by": "ur5e_C",
+   "process_index": 5,
+   "pose": [
+    1.869,
+    -2.238,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": 159.4
+  },
+  {
+   "name": "beaker_6",
+   "asset_key": "glass_beaker_100ml",
+   "semantic": "beaker",
+   "row": "front",
+   "served_by": "ur5e_C",
+   "process_index": 6,
+   "pose": [
+    1.84,
+    -2.387,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": 178.3
+  },
+  {
+   "name": "crucible_7",
+   "asset_key": "Crucible",
+   "semantic": "crucible",
+   "row": "front",
+   "served_by": "ur5e_C",
+   "process_index": 7,
+   "pose": [
+    1.861,
+    -2.536,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": 197.2
+  },
+  {
+   "name": "vial_8",
+   "asset_key": "glass_test_tube_20ml",
+   "semantic": "vial",
+   "row": "front",
+   "served_by": "ur5e_C",
+   "process_index": 8,
+   "pose": [
+    1.928,
+    -2.671,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": 216.1
+  },
+  {
+   "name": "tongs_9",
+   "asset_key": "Crucible_Tong",
+   "semantic": "tongs",
+   "row": "front",
+   "served_by": "ur5e_C",
+   "process_index": 9,
+   "pose": [
+    2.036,
+    -2.777,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": 235.0
+  }
+ ],
+ "unplaced": [],
+ "footprints": "not set here - measured from the USDs by the asset pipeline, then used to resolve fine spacing"
+}

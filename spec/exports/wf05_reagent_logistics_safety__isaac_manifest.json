@@ -1,0 +1,214 @@
+{
+  "workflow": "wf05_reagent_logistics_safety",
+  "title": "Reagent logistics and safe disposal: cabinet retrieval, bottle-top dispensing, return and waste handling",
+  "asset_root": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready",
+  "robot": {
+    "prim_path": "/World/Robot",
+    "type": "franka_fr3",
+    "gripper": "franka_hand",
+    "base_pose": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "cameras": [
+    {
+      "name": "head",
+      "prim_path": "/World/Robot/head_cam",
+      "resolution": [
+        640,
+        480
+      ]
+    },
+    {
+      "name": "wrist",
+      "prim_path": "/World/Robot/panda_hand/wrist_cam",
+      "resolution": [
+        640,
+        480
+      ]
+    },
+    {
+      "name": "third_person",
+      "prim_path": "/World/Cameras/third_person",
+      "resolution": [
+        640,
+        480
+      ]
+    }
+  ],
+  "physics": {
+    "dt": 0.016666666666666666,
+    "gravity": -9.81,
+    "fluid": null
+  },
+  "recording": {
+    "hz": 30,
+    "streams": [
+      "rgb",
+      "depth",
+      "seg",
+      "joint_pos",
+      "joint_vel",
+      "ee_pose",
+      "gripper",
+      "contact_force",
+      "safety_labels"
+    ]
+  },
+  "prims": [
+    {
+      "prim_path": "/World/Stations/cabinet_1",
+      "kind": "station",
+      "instrument": "storage_rack",
+      "asset_key": "art:ReagentCabinet001",
+      "usd": "articulated/ReagentCabinet001/ReagentCabinet001_2.usd",
+      "articulated": true,
+      "pose": [
+        0.8,
+        0.3,
+        0.0
+      ],
+      "semantic": "storage_rack"
+    },
+    {
+      "prim_path": "/World/Stations/dispenser_1",
+      "kind": "station",
+      "instrument": "liquid_station",
+      "asset_key": "art:BottleTopDispenser002",
+      "usd": "articulated/BottleTopDispenser002/BottleTopDispenser002.usd",
+      "articulated": true,
+      "pose": [
+        0.55,
+        0.0,
+        0.0
+      ],
+      "semantic": "liquid_station"
+    },
+    {
+      "prim_path": "/World/Stations/balance_1",
+      "kind": "station",
+      "instrument": "balance",
+      "asset_key": "art:AnalyticalBalance001",
+      "usd": "articulated/AnalyticalBalance001/AnalyticalBalance001_2.usd",
+      "articulated": true,
+      "pose": [
+        0.55,
+        -0.35,
+        0.0
+      ],
+      "semantic": "balance"
+    },
+    {
+      "prim_path": "/World/Stations/rack_1",
+      "kind": "station",
+      "instrument": "storage_rack",
+      "asset_key": "Test_Tube_Rack",
+      "usd": "solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+      "articulated": false,
+      "pose": [
+        0.3,
+        0.5,
+        0.0
+      ],
+      "semantic": "storage_rack"
+    },
+    {
+      "prim_path": "/World/Stations/waste_1",
+      "kind": "station",
+      "instrument": "waste",
+      "asset_key": "glass_beaker_500ml",
+      "usd": "solid_assets_all/glass_beaker_500ml/Beaker005.usd",
+      "articulated": false,
+      "pose": [
+        0.2,
+        -0.55,
+        0.0
+      ],
+      "semantic": "waste"
+    },
+    {
+      "prim_path": "/World/Objects/bottle_acid",
+      "kind": "object",
+      "labware": "precursor_bottle",
+      "asset_key": "brown_reagent_bottle_large",
+      "usd": "solid_assets_all/brown_reagent_bottle_large/ReagentBottle001.usd",
+      "pose": [
+        0.8,
+        0.3,
+        0.1
+      ],
+      "semantic": "precursor_bottle",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/beaker_1",
+      "kind": "object",
+      "labware": "beaker",
+      "asset_key": "glass_beaker_100ml",
+      "usd": "solid_assets_all/glass_beaker_100ml/Beaker003.usd",
+      "pose": [
+        0.4,
+        0.2,
+        0.0
+      ],
+      "semantic": "beaker",
+      "sample": "s1"
+    },
+    {
+      "prim_path": "/World/Objects/crucible_used",
+      "kind": "object",
+      "labware": "crucible",
+      "asset_key": "Crucible",
+      "usd": "solid_assets_all/Crucible/Crucible001.usd",
+      "pose": [
+        0.35,
+        -0.15,
+        0.0
+      ],
+      "semantic": "crucible",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/tube_used",
+      "kind": "object",
+      "labware": "vial",
+      "asset_key": "glass_test_tube_20ml",
+      "usd": "solid_assets_all/glass_test_tube_20ml/TestTube001.usd",
+      "pose": [
+        0.3,
+        0.5,
+        0.0
+      ],
+      "semantic": "vial",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/tongs_1",
+      "kind": "object",
+      "labware": "tongs",
+      "asset_key": "Crucible_Tong",
+      "usd": "solid_assets_all/Crucible_Tong/CrucibleTong001.usd",
+      "pose": [
+        0.25,
+        -0.1,
+        0.0
+      ],
+      "semantic": "tongs",
+      "sample": null
+    }
+  ],
+  "task_order": [
+    "t_get",
+    "t_dispense",
+    "t_return",
+    "t_dispose"
+  ],
+  "unresolved_assets": [],
+  "unbound": []
+}

@@ -1,0 +1,234 @@
+{
+ "scene_id": "wf02_powder_recovery_xrd",
+ "title": "Post-calcination powder recovery, vial transfer and XRD sample preparation (A-Lab characterization station)",
+ "room": "Scene02 (runtime_room_usd, same shell as layout_v4)",
+ "worktop_z": 1.0027048932793163,
+ "benches": {
+  "C": [
+   0.06,
+   -3.165,
+   4.52,
+   -1.635
+  ]
+ },
+ "robots": {
+  "ur5e_C": {
+   "base": [
+    2.3,
+    -2.4,
+    1.0288077568110414
+   ],
+   "bench": "C",
+   "type": "ur5e_2f85",
+   "yaw_deg": 90
+  }
+ },
+ "task_order": [
+  "t_recover",
+  "t_prep",
+  "t_xrd",
+  "t_end"
+ ],
+ "placement_rule": {
+  "rows_m": {
+   "back": 0.72,
+   "mid": 0.58,
+   "front": 0.46
+  },
+  "arc_deg": {
+   "ur5e_C": [
+    150.0,
+    85.0
+   ]
+  },
+  "reach_band_m": [
+   0.44,
+   0.76
+  ],
+  "rationale": "instruments sit on a reach annulus around the serving arm, ordered along the arc by process order"
+ },
+ "prims": [
+  {
+   "name": "balance_0",
+   "asset_key": "art:AnalyticalBalance001",
+   "semantic": "balance",
+   "row": "mid",
+   "served_by": "ur5e_C",
+   "process_index": 0,
+   "pose": [
+    2.545,
+    -1.874,
+    1.0027
+   ],
+   "ring_r_m": 0.58,
+   "ring_deg": 65.0
+  },
+  {
+   "name": "shaker_grinder_1",
+   "asset_key": "mortar",
+   "semantic": "shaker_grinder",
+   "row": "mid",
+   "served_by": "ur5e_C",
+   "process_index": 1,
+   "pose": [
+    2.396,
+    -1.828,
+    1.0027
+   ],
+   "ring_r_m": 0.58,
+   "ring_deg": 80.5
+  },
+  {
+   "name": "xrd_prep_2",
+   "asset_key": "Funnel_Stand",
+   "semantic": "xrd_prep",
+   "row": "mid",
+   "served_by": "ur5e_C",
+   "process_index": 2,
+   "pose": [
+    2.24,
+    -1.823,
+    1.0027
+   ],
+   "ring_r_m": 0.58,
+   "ring_deg": 95.9
+  },
+  {
+   "name": "xrd_3",
+   "asset_key": "art:PHMeterAcidimeter001",
+   "semantic": "xrd",
+   "row": "back",
+   "served_by": "ur5e_C",
+   "process_index": 3,
+   "pose": [
+    2.056,
+    -1.776,
+    1.0027
+   ],
+   "ring_r_m": 0.67,
+   "ring_deg": 111.4
+  },
+  {
+   "name": "storage_rack_4",
+   "asset_key": "Test_Tube_Rack",
+   "semantic": "storage_rack",
+   "row": "front",
+   "served_by": "ur5e_C",
+   "process_index": 4,
+   "pose": [
+    2.024,
+    -2.032,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": 126.8
+  },
+  {
+   "name": "waste_5",
+   "asset_key": "glass_beaker_500ml",
+   "semantic": "waste",
+   "row": "front",
+   "served_by": "ur5e_C",
+   "process_index": 5,
+   "pose": [
+    1.936,
+    -2.119,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": 142.3
+  },
+  {
+   "name": "crucible_6",
+   "asset_key": "Crucible",
+   "semantic": "crucible",
+   "row": "front",
+   "served_by": "ur5e_C",
+   "process_index": 6,
+   "pose": [
+    1.874,
+    -2.226,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": 157.7
+  },
+  {
+   "name": "tongs_7",
+   "asset_key": "pestle",
+   "semantic": "tongs",
+   "row": "front",
+   "served_by": "ur5e_C",
+   "process_index": 7,
+   "pose": [
+    1.843,
+    -2.345,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": 173.2
+  },
+  {
+   "name": "funnel_8",
+   "asset_key": "Funnel",
+   "semantic": "funnel",
+   "row": "front",
+   "served_by": "ur5e_C",
+   "process_index": 8,
+   "pose": [
+    1.845,
+    -2.469,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": 188.6
+  },
+  {
+   "name": "vial_9",
+   "asset_key": "Sample_Tube_With_Stopper",
+   "semantic": "vial",
+   "row": "front",
+   "served_by": "ur5e_C",
+   "process_index": 9,
+   "pose": [
+    1.88,
+    -2.588,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": 204.1
+  },
+  {
+   "name": "xrd_holder_10",
+   "asset_key": "weighing_paper",
+   "semantic": "xrd_holder",
+   "row": "front",
+   "served_by": "ur5e_C",
+   "process_index": 10,
+   "pose": [
+    1.945,
+    -2.693,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": 219.5
+  },
+  {
+   "name": "acrylic_disc_11",
+   "asset_key": null,
+   "semantic": "acrylic_disc",
+   "row": "front",
+   "served_by": "ur5e_C",
+   "process_index": 11,
+   "pose": [
+    2.036,
+    -2.777,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": 235.0
+  }
+ ],
+ "unplaced": [],
+ "footprints": "not set here - measured from the USDs by the asset pipeline, then used to resolve fine spacing"
+}

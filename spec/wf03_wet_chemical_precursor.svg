@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="2083" viewBox="0 0 900 2083" font-family="system-ui" font-size="11">
+<rect width="900" height="2083" fill="#fbfbfa"/>
+<rect x="141.3" y="141.3" width="617.5" height="1800.0" fill="#eceff1" stroke="#b0bec5"/>
+<text x="147.3" y="157.3" fill="#78909c">bench A</text>
+<circle cx="448.0" cy="1041.3" r="177.6" fill="none" stroke="#cfd8dc" stroke-dasharray="4 4"/>
+<circle cx="448.0" cy="1041.3" r="306.7" fill="none" stroke="#90a4ae" stroke-dasharray="4 4"/>
+<circle cx="448.0" cy="1041.3" r="7" fill="#37474f"/>
+<text x="458.0" y="1033.3" font-weight="600">fr3_A</text>
+<circle cx="197.4" cy="1142.6" r="5" fill="#c0392b"/>
+<text x="204.4" y="1146.6" fill="#263238">0·liquid_station</text>
+<circle cx="243.0" cy="1102.6" r="5" fill="#b8860b"/>
+<text x="250.0" y="1106.6" fill="#263238">1·ph_meter</text>
+<circle cx="199.8" cy="1192.2" r="5" fill="#c0392b"/>
+<text x="206.8" y="1196.2" fill="#263238">2·mixer</text>
+<circle cx="246.2" cy="1250.3" r="5" fill="#c0392b"/>
+<text x="253.2" y="1254.3" fill="#263238">3·drying_oven</text>
+<circle cx="357.2" cy="1203.1" r="5" fill="#2e6da4"/>
+<text x="364.2" y="1207.1" fill="#263238">4·storage_rack</text>
+<circle cx="401.2" cy="1220.9" r="5" fill="#2e6da4"/>
+<text x="408.2" y="1224.9" fill="#263238">5·waste</text>
+<circle cx="448.0" cy="1226.9" r="5" fill="#2e6da4"/>
+<text x="455.0" y="1230.9" fill="#263238">6·precursor_bottle</text>
+<circle cx="494.8" cy="1220.9" r="5" fill="#2e6da4"/>
+<text x="501.8" y="1224.9" fill="#263238">7·precursor_bottle</text>
+<circle cx="538.8" cy="1203.1" r="5" fill="#2e6da4"/>
+<text x="545.8" y="1207.1" fill="#263238">8·precursor_bottle</text>
+<circle cx="577.1" cy="1174.8" r="5" fill="#2e6da4"/>
+<text x="584.1" y="1178.8" fill="#263238">9·cylinder</text>
+<circle cx="606.6" cy="1137.7" r="5" fill="#2e6da4"/>
+<text x="613.6" y="1141.7" fill="#263238">10·beaker</text>
+<circle cx="626.0" cy="1094.5" r="5" fill="#2e6da4"/>
+<text x="633.0" y="1098.5" fill="#263238">11·vial</text>
+<circle cx="633.6" cy="1047.7" r="5" fill="#2e6da4"/>
+<text x="640.6" y="1051.7" fill="#263238">12·dish</text>
+<text x="10" y="18" font-weight="700">wf03_wet_chemical_precursor</text>
+</svg>

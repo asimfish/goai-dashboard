@@ -1,0 +1,300 @@
+{
+  "workflow": "wf04_flux_growth_pt_crucible",
+  "title": "High-temperature solution (flux) growth of Ba5Y12Zn[O(SiO4)]8 crystals in a platinum crucible with flux leaching and filtration",
+  "asset_root": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready",
+  "robot": {
+    "prim_path": "/World/Robot",
+    "type": "franka_fr3",
+    "gripper": "franka_hand",
+    "base_pose": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "cameras": [
+    {
+      "name": "head",
+      "prim_path": "/World/Robot/head_cam",
+      "resolution": [
+        640,
+        480
+      ]
+    },
+    {
+      "name": "wrist",
+      "prim_path": "/World/Robot/panda_hand/wrist_cam",
+      "resolution": [
+        640,
+        480
+      ]
+    },
+    {
+      "name": "third_person",
+      "prim_path": "/World/Cameras/third_person",
+      "resolution": [
+        640,
+        480
+      ]
+    }
+  ],
+  "physics": {
+    "dt": 0.016666666666666666,
+    "gravity": -9.81,
+    "fluid": "pbd"
+  },
+  "recording": {
+    "hz": 30,
+    "streams": [
+      "rgb",
+      "depth",
+      "seg",
+      "joint_pos",
+      "joint_vel",
+      "ee_pose",
+      "gripper",
+      "contact_force",
+      "safety_labels"
+    ]
+  },
+  "prims": [
+    {
+      "prim_path": "/World/Stations/dosing_1",
+      "kind": "station",
+      "instrument": "dosing_station",
+      "asset_key": "Precision_Electronic_Balance",
+      "usd": "solid_assets_all/Precision_Electronic_Balance/PrecisionElectronicBalance001.usd",
+      "articulated": false,
+      "pose": [
+        0.55,
+        0.3,
+        0.0
+      ],
+      "semantic": "dosing_station"
+    },
+    {
+      "prim_path": "/World/Stations/furnace_1",
+      "kind": "station",
+      "instrument": "box_furnace",
+      "asset_key": "art:Oven065",
+      "usd": "articulated/Oven065/Oven065_small.usd",
+      "articulated": true,
+      "pose": [
+        0.75,
+        -0.35,
+        0.0
+      ],
+      "semantic": "box_furnace"
+    },
+    {
+      "prim_path": "/World/Stations/leach_1",
+      "kind": "station",
+      "instrument": "liquid_station",
+      "asset_key": "art:MagneticStirrer001",
+      "usd": "articulated/MagneticStirrer001/MagneticStirrer001.usd",
+      "articulated": true,
+      "pose": [
+        0.55,
+        0.05,
+        0.0
+      ],
+      "semantic": "liquid_station"
+    },
+    {
+      "prim_path": "/World/Stations/filter_1",
+      "kind": "station",
+      "instrument": "liquid_station",
+      "asset_key": "Funnel_Stand",
+      "usd": "solid_assets_all/Funnel_Stand/FunnelStand001.usd",
+      "articulated": false,
+      "pose": [
+        0.45,
+        -0.3,
+        0.0
+      ],
+      "semantic": "liquid_station"
+    },
+    {
+      "prim_path": "/World/Stations/rack_1",
+      "kind": "station",
+      "instrument": "storage_rack",
+      "asset_key": "Test_Tube_Rack",
+      "usd": "solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+      "articulated": false,
+      "pose": [
+        0.3,
+        0.5,
+        0.0
+      ],
+      "semantic": "storage_rack"
+    },
+    {
+      "prim_path": "/World/Objects/bottle_premix",
+      "kind": "object",
+      "labware": "precursor_bottle",
+      "asset_key": "clear_reagent_bottle_small",
+      "usd": "solid_assets_all/clear_reagent_bottle_small/ReagentBottle003.usd",
+      "pose": [
+        0.3,
+        0.58,
+        0.0
+      ],
+      "semantic": "precursor_bottle",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/bottle_flux",
+      "kind": "object",
+      "labware": "precursor_bottle",
+      "asset_key": "brown_reagent_bottle_large",
+      "usd": "solid_assets_all/brown_reagent_bottle_large/ReagentBottle001.usd",
+      "pose": [
+        0.4,
+        0.58,
+        0.0
+      ],
+      "semantic": "precursor_bottle",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/bottle_water",
+      "kind": "object",
+      "labware": "precursor_bottle",
+      "asset_key": "clear_reagent_bottle_large",
+      "usd": "solid_assets_all/clear_reagent_bottle_large/ReagentBottle002.usd",
+      "pose": [
+        0.48,
+        0.58,
+        0.0
+      ],
+      "semantic": "precursor_bottle",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/paper_1",
+      "kind": "object",
+      "labware": "xrd_holder",
+      "asset_key": "weighing_paper",
+      "usd": "solid_assets_all/weighing_paper/WeighingPaper001.usd",
+      "pose": [
+        0.55,
+        0.3,
+        0.02
+      ],
+      "semantic": "xrd_holder",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/pt_crucible_1",
+      "kind": "object",
+      "labware": "crucible",
+      "asset_key": "Crucible",
+      "usd": "solid_assets_all/Crucible/Crucible001.usd",
+      "pose": [
+        0.4,
+        0.1,
+        0.0
+      ],
+      "semantic": "crucible",
+      "sample": "s1"
+    },
+    {
+      "prim_path": "/World/Objects/tray_1",
+      "kind": "object",
+      "labware": "crucible_tray",
+      "asset_key": null,
+      "usd": null,
+      "pose": [
+        0.35,
+        -0.3,
+        0.0
+      ],
+      "semantic": "crucible_tray",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/tongs_1",
+      "kind": "object",
+      "labware": "tongs",
+      "asset_key": "Crucible_Tong",
+      "usd": "solid_assets_all/Crucible_Tong/CrucibleTong001.usd",
+      "pose": [
+        0.25,
+        -0.1,
+        0.0
+      ],
+      "semantic": "tongs",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/beaker_1",
+      "kind": "object",
+      "labware": "beaker",
+      "asset_key": "glass_beaker_250ml",
+      "usd": "solid_assets_all/glass_beaker_250ml/Beaker004.usd",
+      "pose": [
+        0.55,
+        0.05,
+        0.0
+      ],
+      "semantic": "beaker",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/funnel_1",
+      "kind": "object",
+      "labware": "funnel",
+      "asset_key": "Funnel",
+      "usd": "solid_assets_all/Funnel/Funnel001.usd",
+      "pose": [
+        0.45,
+        -0.3,
+        0.05
+      ],
+      "semantic": "funnel",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/flask_1",
+      "kind": "object",
+      "labware": "flask",
+      "asset_key": "erlenmeyer_flask",
+      "usd": "solid_assets_all/erlenmeyer_flask/ErlenmeyerFlask001.usd",
+      "pose": [
+        0.45,
+        -0.3,
+        0.0
+      ],
+      "semantic": "flask",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/vial_s1",
+      "kind": "object",
+      "labware": "vial",
+      "asset_key": "Sample_Tube_With_Stopper",
+      "usd": "solid_assets_all/Sample_Tube_With_Stopper/SampleTube001.usd",
+      "pose": [
+        0.3,
+        0.42,
+        0.0
+      ],
+      "semantic": "vial",
+      "sample": "s1"
+    }
+  ],
+  "task_order": [
+    "t_dose",
+    "t_grow",
+    "t_leach",
+    "t_filter"
+  ],
+  "unresolved_assets": [],
+  "unbound": [
+    "/World/Objects/tray_1"
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "workflow": "wf01_solid_state_calcination",
+  "title": "Solid-state calcination of BaZn2Si2O7 from carbonate/oxide precursors (A-Lab dosing → grinding → box-furnace cycle)",
+  "asset_root": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready",
+  "robot": {
+    "prim_path": "/World/Robot",
+    "type": "franka_fr3",
+    "gripper": "franka_hand",
+    "base_pose": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "cameras": [
+    {
+      "name": "head",
+      "prim_path": "/World/Robot/head_cam",
+      "resolution": [
+        640,
+        480
+      ]
+    },
+    {
+      "name": "wrist",
+      "prim_path": "/World/Robot/panda_hand/wrist_cam",
+      "resolution": [
+        640,
+        480
+      ]
+    },
+    {
+      "name": "third_person",
+      "prim_path": "/World/Cameras/third_person",
+      "resolution": [
+        640,
+        480
+      ]
+    }
+  ],
+  "physics": {
+    "dt": 0.016666666666666666,
+    "gravity": -9.81,
+    "fluid": null
+  },
+  "recording": {
+    "hz": 30,
+    "streams": [
+      "rgb",
+      "depth",
+      "seg",
+      "joint_pos",
+      "joint_vel",
+      "ee_pose",
+      "gripper",
+      "contact_force",
+      "safety_labels"
+    ]
+  },
+  "prims": [
+    {
+      "prim_path": "/World/Stations/dosing_1",
+      "kind": "station",
+      "instrument": "dosing_station",
+      "asset_key": "Precision_Electronic_Balance",
+      "usd": "solid_assets_all/Precision_Electronic_Balance/PrecisionElectronicBalance001.usd",
+      "articulated": false,
+      "pose": [
+        0.55,
+        0.3,
+        0.0
+      ],
+      "semantic": "dosing_station"
+    },
+    {
+      "prim_path": "/World/Stations/grinder_1",
+      "kind": "station",
+      "instrument": "shaker_grinder",
+      "asset_key": "mortar",
+      "usd": "solid_assets_all/mortar/Mortar001.usd",
+      "articulated": false,
+      "pose": [
+        0.5,
+        0.0,
+        0.0
+      ],
+      "semantic": "shaker_grinder"
+    },
+    {
+      "prim_path": "/World/Stations/transfer_1",
+      "kind": "station",
+      "instrument": "transfer_rack",
+      "asset_key": "Test_Tube_Rack",
+      "usd": "solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+      "articulated": false,
+      "pose": [
+        0.35,
+        -0.3,
+        0.0
+      ],
+      "semantic": "transfer_rack"
+    },
+    {
+      "prim_path": "/World/Stations/furnace_1",
+      "kind": "station",
+      "instrument": "box_furnace",
+      "asset_key": "art:Oven065",
+      "usd": "articulated/Oven065/Oven065_small.usd",
+      "articulated": true,
+      "pose": [
+        0.75,
+        -0.35,
+        0.0
+      ],
+      "semantic": "box_furnace"
+    },
+    {
+      "prim_path": "/World/Stations/rack_1",
+      "kind": "station",
+      "instrument": "storage_rack",
+      "asset_key": "Test_Tube_Rack",
+      "usd": "solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+      "articulated": false,
+      "pose": [
+        0.3,
+        0.45,
+        0.0
+      ],
+      "semantic": "storage_rack"
+    },
+    {
+      "prim_path": "/World/Objects/bottle_BaCO3",
+      "kind": "object",
+      "labware": "precursor_bottle",
+      "asset_key": "brown_reagent_bottle_small",
+      "usd": "solid_assets_all/brown_reagent_bottle_small/ReagentBottle004.usd",
+      "pose": [
+        0.3,
+        0.55,
+        0.0
+      ],
+      "semantic": "precursor_bottle",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/bottle_ZnO",
+      "kind": "object",
+      "labware": "precursor_bottle",
+      "asset_key": "clear_reagent_bottle_small",
+      "usd": "solid_assets_all/clear_reagent_bottle_small/ReagentBottle003.usd",
+      "pose": [
+        0.38,
+        0.55,
+        0.0
+      ],
+      "semantic": "precursor_bottle",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/bottle_SiO2",
+      "kind": "object",
+      "labware": "precursor_bottle",
+      "asset_key": "clear_reagent_bottle_large",
+      "usd": "solid_assets_all/clear_reagent_bottle_large/ReagentBottle002.usd",
+      "pose": [
+        0.46,
+        0.55,
+        0.0
+      ],
+      "semantic": "precursor_bottle",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/paper_1",
+      "kind": "object",
+      "labware": "xrd_holder",
+      "asset_key": "weighing_paper",
+      "usd": "solid_assets_all/weighing_paper/WeighingPaper001.usd",
+      "pose": [
+        0.55,
+        0.3,
+        0.02
+      ],
+      "semantic": "xrd_holder",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/pestle_1",
+      "kind": "object",
+      "labware": "tongs",
+      "asset_key": "pestle",
+      "usd": "solid_assets_all/pestle/Pestle001.usd",
+      "pose": [
+        0.42,
+        0.05,
+        0.0
+      ],
+      "semantic": "tongs",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/crucible_s1",
+      "kind": "object",
+      "labware": "crucible",
+      "asset_key": "Crucible",
+      "usd": "solid_assets_all/Crucible/Crucible001.usd",
+      "pose": [
+        0.4,
+        -0.15,
+        0.0
+      ],
+      "semantic": "crucible",
+      "sample": "s1"
+    },
+    {
+      "prim_path": "/World/Objects/tray_1",
+      "kind": "object",
+      "labware": "crucible_tray",
+      "asset_key": null,
+      "usd": null,
+      "pose": [
+        0.35,
+        -0.3,
+        0.0
+      ],
+      "semantic": "crucible_tray",
+      "sample": null
+    }
+  ],
+  "task_order": [
+    "t_start",
+    "t_dose",
+    "t_grind",
+    "t_load",
+    "t_heat",
+    "t_store"
+  ],
+  "unresolved_assets": [],
+  "unbound": [
+    "/World/Objects/tray_1"
+  ]
+}

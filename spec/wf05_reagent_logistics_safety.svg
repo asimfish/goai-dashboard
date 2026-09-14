@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="389" viewBox="0 0 900 389" font-family="system-ui" font-size="11">
+<rect width="900" height="389" fill="#fbfbfa"/>
+<rect x="61.0" y="61.0" width="777.9" height="266.9" fill="#eceff1" stroke="#b0bec5"/>
+<text x="67.0" y="77.0" fill="#78909c">bench C</text>
+<circle cx="451.7" cy="194.5" r="76.7" fill="none" stroke="#cfd8dc" stroke-dasharray="4 4"/>
+<circle cx="451.7" cy="194.5" r="132.6" fill="none" stroke="#90a4ae" stroke-dasharray="4 4"/>
+<circle cx="451.7" cy="194.5" r="7" fill="#37474f"/>
+<text x="461.7" y="186.5" font-weight="600">ur5e_C</text>
+<circle cx="485.6" cy="121.7" r="5" fill="#2e6da4"/>
+<text x="492.6" y="125.7" fill="#263238">0·storage_rack</text>
+<circle cx="488.0" cy="83.4" r="5" fill="#c0392b"/>
+<text x="495.0" y="87.4" fill="#263238">1·liquid_station</text>
+<circle cx="429.4" cy="95.8" r="5" fill="#b8860b"/>
+<text x="436.4" y="99.8" fill="#263238">2·balance</text>
+<circle cx="409.7" cy="126.1" r="5" fill="#2e6da4"/>
+<text x="416.7" y="130.1" fill="#263238">3·storage_rack</text>
+<circle cx="389.8" cy="143.5" r="5" fill="#2e6da4"/>
+<text x="396.8" y="147.5" fill="#263238">4·waste</text>
+<circle cx="376.6" cy="166.2" r="5" fill="#2e6da4"/>
+<text x="383.6" y="170.2" fill="#263238">5·precursor_bottle</text>
+<circle cx="371.5" cy="192.2" r="5" fill="#2e6da4"/>
+<text x="378.5" y="196.2" fill="#263238">6·beaker</text>
+<circle cx="375.2" cy="218.2" r="5" fill="#2e6da4"/>
+<text x="382.2" y="222.2" fill="#263238">7·crucible</text>
+<circle cx="386.9" cy="241.7" r="5" fill="#2e6da4"/>
+<text x="393.9" y="245.7" fill="#263238">8·vial</text>
+<circle cx="405.7" cy="260.2" r="5" fill="#2e6da4"/>
+<text x="412.7" y="264.2" fill="#263238">9·tongs</text>
+<text x="10" y="18" font-weight="700">wf05_reagent_logistics_safety</text>
+</svg>

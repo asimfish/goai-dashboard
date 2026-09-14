@@ -1,0 +1,244 @@
+{
+  "workflow": "wf02_powder_recovery_xrd",
+  "title": "Post-calcination powder recovery, vial transfer and XRD sample preparation (A-Lab characterization station)",
+  "asset_root": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready",
+  "robot": {
+    "prim_path": "/World/Robot",
+    "type": "franka_fr3",
+    "gripper": "franka_hand",
+    "base_pose": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "cameras": [
+    {
+      "name": "head",
+      "prim_path": "/World/Robot/head_cam",
+      "resolution": [
+        640,
+        480
+      ]
+    },
+    {
+      "name": "wrist",
+      "prim_path": "/World/Robot/panda_hand/wrist_cam",
+      "resolution": [
+        640,
+        480
+      ]
+    },
+    {
+      "name": "third_person",
+      "prim_path": "/World/Cameras/third_person",
+      "resolution": [
+        640,
+        480
+      ]
+    }
+  ],
+  "physics": {
+    "dt": 0.016666666666666666,
+    "gravity": -9.81,
+    "fluid": null
+  },
+  "recording": {
+    "hz": 30,
+    "streams": [
+      "rgb",
+      "depth",
+      "seg",
+      "joint_pos",
+      "joint_vel",
+      "ee_pose",
+      "gripper",
+      "contact_force",
+      "safety_labels"
+    ]
+  },
+  "prims": [
+    {
+      "prim_path": "/World/Stations/balance_1",
+      "kind": "station",
+      "instrument": "balance",
+      "asset_key": "art:AnalyticalBalance001",
+      "usd": "articulated/AnalyticalBalance001/AnalyticalBalance001_2.usd",
+      "articulated": true,
+      "pose": [
+        0.55,
+        0.35,
+        0.0
+      ],
+      "semantic": "balance"
+    },
+    {
+      "prim_path": "/World/Stations/grinder_1",
+      "kind": "station",
+      "instrument": "shaker_grinder",
+      "asset_key": "mortar",
+      "usd": "solid_assets_all/mortar/Mortar001.usd",
+      "articulated": false,
+      "pose": [
+        0.5,
+        0.0,
+        0.0
+      ],
+      "semantic": "shaker_grinder"
+    },
+    {
+      "prim_path": "/World/Stations/prep_1",
+      "kind": "station",
+      "instrument": "xrd_prep",
+      "asset_key": "Funnel_Stand",
+      "usd": "solid_assets_all/Funnel_Stand/FunnelStand001.usd",
+      "articulated": false,
+      "pose": [
+        0.45,
+        -0.3,
+        0.0
+      ],
+      "semantic": "xrd_prep"
+    },
+    {
+      "prim_path": "/World/Stations/xrd_1",
+      "kind": "station",
+      "instrument": "xrd",
+      "asset_key": "art:PHMeterAcidimeter001",
+      "usd": "articulated/PHMeterAcidimeter001/PHMeterAcidimeter001.usd",
+      "articulated": true,
+      "pose": [
+        0.75,
+        -0.4,
+        0.0
+      ],
+      "semantic": "xrd"
+    },
+    {
+      "prim_path": "/World/Stations/rack_1",
+      "kind": "station",
+      "instrument": "storage_rack",
+      "asset_key": "Test_Tube_Rack",
+      "usd": "solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+      "articulated": false,
+      "pose": [
+        0.3,
+        0.5,
+        0.0
+      ],
+      "semantic": "storage_rack"
+    },
+    {
+      "prim_path": "/World/Stations/waste_1",
+      "kind": "station",
+      "instrument": "waste",
+      "asset_key": "glass_beaker_500ml",
+      "usd": "solid_assets_all/glass_beaker_500ml/Beaker005.usd",
+      "articulated": false,
+      "pose": [
+        0.2,
+        -0.55,
+        0.0
+      ],
+      "semantic": "waste"
+    },
+    {
+      "prim_path": "/World/Objects/crucible_s1",
+      "kind": "object",
+      "labware": "crucible",
+      "asset_key": "Crucible",
+      "usd": "solid_assets_all/Crucible/Crucible001.usd",
+      "pose": [
+        0.35,
+        0.2,
+        0.0
+      ],
+      "semantic": "crucible",
+      "sample": "s1"
+    },
+    {
+      "prim_path": "/World/Objects/pestle_1",
+      "kind": "object",
+      "labware": "tongs",
+      "asset_key": "pestle",
+      "usd": "solid_assets_all/pestle/Pestle001.usd",
+      "pose": [
+        0.42,
+        0.05,
+        0.0
+      ],
+      "semantic": "tongs",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/funnel_1",
+      "kind": "object",
+      "labware": "funnel",
+      "asset_key": "Funnel",
+      "usd": "solid_assets_all/Funnel/Funnel001.usd",
+      "pose": [
+        0.45,
+        -0.3,
+        0.05
+      ],
+      "semantic": "funnel",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/vial_s1",
+      "kind": "object",
+      "labware": "vial",
+      "asset_key": "Sample_Tube_With_Stopper",
+      "usd": "solid_assets_all/Sample_Tube_With_Stopper/SampleTube001.usd",
+      "pose": [
+        0.3,
+        0.5,
+        0.0
+      ],
+      "semantic": "vial",
+      "sample": "s1"
+    },
+    {
+      "prim_path": "/World/Objects/holder_1",
+      "kind": "object",
+      "labware": "xrd_holder",
+      "asset_key": "weighing_paper",
+      "usd": "solid_assets_all/weighing_paper/WeighingPaper001.usd",
+      "pose": [
+        0.45,
+        -0.22,
+        0.02
+      ],
+      "semantic": "xrd_holder",
+      "sample": null
+    },
+    {
+      "prim_path": "/World/Objects/disc_1",
+      "kind": "object",
+      "labware": "acrylic_disc",
+      "asset_key": null,
+      "usd": null,
+      "pose": [
+        0.5,
+        -0.22,
+        0.0
+      ],
+      "semantic": "acrylic_disc",
+      "sample": null
+    }
+  ],
+  "task_order": [
+    "t_recover",
+    "t_prep",
+    "t_xrd",
+    "t_end"
+  ],
+  "unresolved_assets": [],
+  "unbound": [
+    "/World/Objects/disc_1"
+  ]
+}

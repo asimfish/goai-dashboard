@@ -1,0 +1,249 @@
+{
+ "scene_id": "wf03_wet_chemical_precursor",
+ "title": "Wet-chemical (solution) precursor preparation: metering, stirring, pH adjustment, centrifugation and drying",
+ "room": "Scene02 (runtime_room_usd, same shell as layout_v4)",
+ "worktop_z": 1.0027048932793163,
+ "benches": {
+  "A": [
+   0.99,
+   -1.63,
+   2.52,
+   2.83
+  ]
+ },
+ "robots": {
+  "fr3_A": {
+   "base": [
+    1.75,
+    0.6,
+    1.253840156269062
+   ],
+   "bench": "A",
+   "type": "franka_fr3",
+   "yaw_deg": 90
+  }
+ },
+ "task_order": [
+  "t_meter",
+  "t_ph",
+  "t_spin",
+  "t_dry"
+ ],
+ "placement_rule": {
+  "rows_m": {
+   "back": 0.72,
+   "mid": 0.58,
+   "front": 0.46
+  },
+  "arc_deg": {
+   "fr3_A": [
+    -90.0,
+    88.0
+   ]
+  },
+  "reach_band_m": [
+   0.44,
+   0.76
+  ],
+  "rationale": "instruments sit on a reach annulus around the serving arm, ordered along the arc by process order"
+ },
+ "prims": [
+  {
+   "name": "liquid_station_0",
+   "asset_key": "art:MagneticStirrer001",
+   "semantic": "liquid_station",
+   "row": "back",
+   "served_by": "fr3_A",
+   "process_index": 0,
+   "pose": [
+    1.129,
+    0.349,
+    1.0027
+   ],
+   "ring_r_m": 0.67,
+   "ring_deg": -158.0
+  },
+  {
+   "name": "ph_meter_1",
+   "asset_key": "art:PHMeterAcidimeter001",
+   "semantic": "ph_meter",
+   "row": "mid",
+   "served_by": "fr3_A",
+   "process_index": 1,
+   "pose": [
+    1.242,
+    0.448,
+    1.0027
+   ],
+   "ring_r_m": 0.53,
+   "ring_deg": -163.3
+  },
+  {
+   "name": "mixer_2",
+   "asset_key": "art:HighSpeedCentrifuge001",
+   "semantic": "mixer",
+   "row": "back",
+   "served_by": "fr3_A",
+   "process_index": 2,
+   "pose": [
+    1.135,
+    0.226,
+    1.0027
+   ],
+   "ring_r_m": 0.72,
+   "ring_deg": -148.7
+  },
+  {
+   "name": "drying_oven_3",
+   "asset_key": "art:Oven065",
+   "semantic": "drying_oven",
+   "row": "back",
+   "served_by": "fr3_A",
+   "process_index": 3,
+   "pose": [
+    1.25,
+    0.082,
+    1.0027
+   ],
+   "ring_r_m": 0.72,
+   "ring_deg": -134.0
+  },
+  {
+   "name": "storage_rack_4",
+   "asset_key": "Test_Tube_Rack",
+   "semantic": "storage_rack",
+   "row": "front",
+   "served_by": "fr3_A",
+   "process_index": 4,
+   "pose": [
+    1.525,
+    0.199,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": -119.3
+  },
+  {
+   "name": "waste_5",
+   "asset_key": "glass_beaker_500ml",
+   "semantic": "waste",
+   "row": "front",
+   "served_by": "fr3_A",
+   "process_index": 5,
+   "pose": [
+    1.634,
+    0.155,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": -104.7
+  },
+  {
+   "name": "precursor_bottle_6",
+   "asset_key": "brown_reagent_bottle_large",
+   "semantic": "precursor_bottle",
+   "row": "front",
+   "served_by": "fr3_A",
+   "process_index": 6,
+   "pose": [
+    1.75,
+    0.14,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": -90.0
+  },
+  {
+   "name": "precursor_bottle_7",
+   "asset_key": "clear_reagent_bottle_large",
+   "semantic": "precursor_bottle",
+   "row": "front",
+   "served_by": "fr3_A",
+   "process_index": 7,
+   "pose": [
+    1.866,
+    0.155,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": -75.3
+  },
+  {
+   "name": "precursor_bottle_8",
+   "asset_key": "brown_reagent_bottle_small",
+   "semantic": "precursor_bottle",
+   "row": "front",
+   "served_by": "fr3_A",
+   "process_index": 8,
+   "pose": [
+    1.975,
+    0.199,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": -60.7
+  },
+  {
+   "name": "cylinder_9",
+   "asset_key": "glass_cylinder_100ml",
+   "semantic": "cylinder",
+   "row": "front",
+   "served_by": "fr3_A",
+   "process_index": 9,
+   "pose": [
+    2.07,
+    0.269,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": -46.0
+  },
+  {
+   "name": "beaker_10",
+   "asset_key": "glass_beaker_250ml",
+   "semantic": "beaker",
+   "row": "front",
+   "served_by": "fr3_A",
+   "process_index": 10,
+   "pose": [
+    2.143,
+    0.361,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": -31.3
+  },
+  {
+   "name": "vial_11",
+   "asset_key": "Centrifuge_Tube",
+   "semantic": "vial",
+   "row": "front",
+   "served_by": "fr3_A",
+   "process_index": 11,
+   "pose": [
+    2.191,
+    0.468,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": -16.7
+  },
+  {
+   "name": "dish_12",
+   "asset_key": "glass_beaker_100ml",
+   "semantic": "dish",
+   "row": "front",
+   "served_by": "fr3_A",
+   "process_index": 12,
+   "pose": [
+    2.21,
+    0.584,
+    1.0027
+   ],
+   "ring_r_m": 0.46,
+   "ring_deg": -2.0
+  }
+ ],
+ "unplaced": [],
+ "footprints": "not set here - measured from the USDs by the asset pipeline, then used to resolve fine spacing"
+}
