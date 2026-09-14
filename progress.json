@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-15T02:44+08:00",
+  "updated": "2026-09-15T05:23+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,18 +12,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-15T02:44+08:00",
+    "snapshot_at": "2026-09-15T05:23+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 9794,
-        "util": "92%",
+        "used_mib": 31180,
+        "util": "98%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 17620,
-        "util": "57%",
+        "used_mib": 21845,
+        "util": "99%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -31,13 +31,13 @@
       {
         "mount": "/",
         "used": "97%",
-        "free": "142G",
+        "free": "134G",
         "note": "不写"
       },
       {
         "mount": "/data",
-        "used": "98%",
-        "free": "78G",
+        "used": "99%",
+        "free": "68G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -415,6 +415,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-14 21:23",
+      "entry": "**五个工作流场景在 A100 上构建并渲染完成**（展示页新增一节，每场景五视角）。场景搭建线从 4090 转到 A100 后打通：28 目录 / 290 文件 / 1.58 GB 源资产已推送并用 rsync --checksum 逐文件校验（transferred 0、缺失 0）；五场景 geometry_bounds_passed 全 true、AABB 重叠候选 0、支撑贴合间隙纳米级、TCP 距基座 0.46–0.81 m 越界 0。摆位按环带规则生成（臂基座周围 0.44–0.76 m，三排半径 0.72/0.58/0.46，角度按流程顺序单调排开），够不到的东西不会被生成出来。**两处靠实测包围盒纠正的设计错误**：art:ReagentCabinet001 实测 1.640×0.480×1.800 m 是落地柜、不能放台面环带（已改靠墙落地）；art:AnalyticalBalance001 高 0.556 m 与 art:Oven065 0.833×0.636×0.732 m 超出台面小件假设、改按后排大型仪器处理——这两条光看资产名字看不出来。**本版已知不足并已登记**：房间外壳（layout_v4/Room_runtime_static.usda）未加载，wf03 是白台面悬在灰色虚空、wf05 只有背板；光照偏平、金属与玻璃缺反射。定位为「五场景几何完成」里程碑而非最终成果图，已要求补房间与 GI 后重渲。另：采集线 B 站本轮首次全流程走到 success_end（误差 677→9 mm），但夹爪仅单侧接触（final sides=['left']）导致空跑、dp 596 mm，正在修钳口对中。"
+    },
     {
       "date": "2026-09-14 17:55",
       "entry": "采集输入清单上板（展示页新增一节，字段全部从 5090 上一条真实 episode 的 steps.npz 逐个读出，不是抄配置模板）：逐 tick 记录 15 类状态流——主臂 q/qd、含夹爪的 q_all/qd_all(14 自由度)、tcp(7)、**驱动目标与实测分开记录**、joint_effort、joint_limit_margin（越界诊断靠它）、contact_count、contact_min_separation_m（负值即穿透）、grasp_object_index、body_pose_w(16 连杆)、每个被追踪物体单独一列 obj_<name>、铰链设备 door_<name>；另有 contacts.jsonl.gz、meta.json 事件时间线、jaw_geometry.json 实测指垫几何。相机 15 路全部 1280×800 针孔、水平孔径 24 mm、裁剪 0.05–40 m，通道为 rgb + 深度，分割另开；每站绑定一路作业相机连续出帧，关键节点另抓 front/side/top 三路 + 腕部相机，**并按实拍写下 eye/target 标定值而不是照抄计划值**，相机被移动过事后可发现。**同时如实登记一个缺口：15 个 run、13 条 episode 的图像与视频文件数为 0**——写图代码是齐的，但这批调试跑用 --no-video 关掉了出帧。目前拿到的是纯状态数据、没有视觉数据；正式采集启动时必须打开出帧，已列为 G3 的前置条件。"
@@ -1099,8 +1103,8 @@
       "lane": "A-Lab 数字孪生与采集",
       "status": "running",
       "owner": "codex@5090（GPT-6 Astra）执行 · claude 指导/审核 · codex@4090 布局/资产",
-      "now": "v4 多视角保真度审查完成（84 张 GI 静帧已上板）。五工作流覆盖判定：wf01 PASS*（仅 furnace_4），wf02–wf05 FAIL——场景只覆盖 A-Lab 三站主链，wf03/wf04/wf05 的仪器不在场景里。资产 registry 里都有，正在按“一个工作流一个场景文件”补齐。",
-      "next": "① 修碰撞预判的自碰撞误报（机器人肩部 vs 自己的夹爪指垫）并重跑 B/C；② 4090 出 layout_v5：五个独立场景 + 瓶盖顶面 + 导轨 prismatic 关节（行程 2.69 m，四炉停靠点已给）；③ 通过后才是 G3 三站各三次带抖动与正式采集。",
+      "now": "五个工作流场景已在 A100 构建并渲染（几何全过、两处实测纠错已落地），缺房间外壳与 GI；采集线 B 站首次全流程 success_end，卡在夹爪单侧接触。",
+      "next": "① A100 加载房间外壳 + 开 GI 重渲五场景；② B 站钳口对中修好后立即进 G3（三站各三次 ±2cm/±10° 抖动，**必须开出帧**）；③ 长程线迁到 A100 GPU6 跑 carry_mode 携物往返四项数值。",
       "link": "scenes.html#alab_twin",
       "link_text": "验收表、四视角渲染、A 站逐条表与视频 →"
     },
