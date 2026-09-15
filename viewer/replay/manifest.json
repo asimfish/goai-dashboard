@@ -6,10 +6,10 @@
   "layout_version": "layout_v4",
   "input_manifest_sha256": "49cb5dc7ca85d0aff0c5ec307fed58799852da8d677b7e8bacca4c9e56763fa2",
   "identity_digest": "c1a4dc19c14023ccb1b963e83c11f5ff1258d1e645e298d88c3144c84c0d5173",
-  "geometry_sha256": "caeb9560aac35c7908d1da73ef8b24dc280703d0ab9fd691e1f07b773b8639d6",
+  "geometry_sha256": "b7558a516b2b8fb86f0f0f8af63b96e45dbae075c0558bcce320dce1ff523032",
   "coordinate_system": "isaac_z_up",
   "quaternion": "isaac_wxyz",
-  "geometry": "../layout_v4_textured_draco.glb",
+  "geometry": "../layout_v4_color_draco.glb",
   "binary": "frames.bin",
   "binary_sha256": "5979b704fd4c873a54c249a576d3ba393cdf0ece51cec8b7a133def2aa91d25d",
   "fps": 30,
@@ -366,7 +366,7 @@
   "diagnostic": true,
   "workflow_success": false,
   "verified_grasp": true,
-  "label": "已记录抓取与放回（局部诊断）",
+  "label": "\u5df2\u8bb0\u5f55\u6293\u53d6\u4e0e\u653e\u56de\uff08\u5c40\u90e8\u8bca\u65ad\uff09",
   "scope": "Recorded trajectory only; carry simplification is declared separately. No full workflow or G3 success is asserted.",
   "events": [
     {

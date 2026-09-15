@@ -4,9 +4,9 @@
   "input_manifest_sha256": "884be32602e254d3b0cbf98856541a9488bfcac65ca15036af48dd1a75ec32db",
   "coordinate_system": "isaac_z_up",
   "quaternion": "isaac_wxyz",
-  "geometry_sha256": "105f9be8cf30250baa7664500427a8de8a7467dd99f3e25a76022c41f82ee1e5",
-  "bytes": 3473596,
-  "texture_count": 13,
+  "geometry_sha256": "0b9f373b7f71e0c4f906dee47a1252b88e581d9bcdd570b72107279713eabc21",
+  "bytes": 4262044,
+  "texture_count": 26,
   "entities": [
     {
       "id": 0,
@@ -464,5 +464,6 @@
       "link_name": null,
       "kind": "rigid"
     }
-  ]
+  ],
+  "transmission_materials": 12
 }

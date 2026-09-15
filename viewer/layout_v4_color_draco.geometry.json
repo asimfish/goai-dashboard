@@ -4,9 +4,9 @@
   "input_manifest_sha256": "49cb5dc7ca85d0aff0c5ec307fed58799852da8d677b7e8bacca4c9e56763fa2",
   "coordinate_system": "isaac_z_up",
   "quaternion": "isaac_wxyz",
-  "geometry_sha256": "caeb9560aac35c7908d1da73ef8b24dc280703d0ab9fd691e1f07b773b8639d6",
-  "bytes": 8544728,
-  "texture_count": 23,
+  "geometry_sha256": "b7558a516b2b8fb86f0f0f8af63b96e45dbae075c0558bcce320dce1ff523032",
+  "bytes": 13579168,
+  "texture_count": 47,
   "entities": [
     {
       "id": 0,
@@ -799,5 +799,6 @@
       "link_name": "window_link",
       "kind": "articulation_link"
     }
-  ]
+  ],
+  "transmission_materials": 20
 }

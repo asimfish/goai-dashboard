@@ -4,9 +4,9 @@
   "input_manifest_sha256": "8fa0ed66b545526e1611e1d1f56ed5fdd16769b39b731c170e91e5508e05609e",
   "coordinate_system": "isaac_z_up",
   "quaternion": "isaac_wxyz",
-  "geometry_sha256": "2f0ffa36f959a84f10d2bbd3cfab0db7c4da086157cd225aa9c0e9b022d4c14c",
-  "bytes": 4989184,
-  "texture_count": 14,
+  "geometry_sha256": "babbd2f6be5c378fbd86ee5b5f95e67ffad46db13024c794fdec650939eeaccf",
+  "bytes": 6314716,
+  "texture_count": 29,
   "entities": [
     {
       "id": 0,
@@ -736,5 +736,9 @@
       "link_name": null,
       "kind": "rigid"
     }
-  ]
+  ],
+  "transmission_materials": 11,
+  "output": "/data/liyufeng/goai_workflows/alab_twin_viewer18_followup/site/wf04_scene_surface.glb",
+  "material_revision": "OmniSurface constant transmission + IOR; independent coverage retained",
+  "geometry_binary_unchanged": true
 }

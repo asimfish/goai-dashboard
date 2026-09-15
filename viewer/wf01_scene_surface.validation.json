@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "compressed_primitives_decoded": 167,
+  "decoded_vertices": 1816904,
+  "triangles": 2277058,
+  "textured_primitives": 50,
+  "texture_count": 19,
+  "dynamic_entities": 81,
+  "all_dynamic_transforms_identity": true,
+  "external_uris": 0,
+  "bytes": 6101336,
+  "within_30MB": true
+}
