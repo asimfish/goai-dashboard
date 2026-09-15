@@ -1,0 +1,324 @@
+{
+  "scene_id": "wf05_reagent_logistics_safety",
+  "layout_version": "layout_v1",
+  "input_manifest_sha256": "8fc2adb2b0e2310cd1ebcedeba23a16d058614086dff1177cbf0f638d9515502",
+  "coordinate_system": "isaac_z_up",
+  "quaternion": "isaac_wxyz",
+  "geometry_sha256": "16208b865c02828fe35589b0a3813beabf4977b648ed4365f966950e6dec767f",
+  "bytes": 1992444,
+  "texture_count": 10,
+  "entities": [
+    {
+      "id": 0,
+      "key": "/World/Objects/beaker_1/Asset/Source/base#root",
+      "prim_path": "/World/Objects/beaker_1/Asset/Source/base",
+      "body_prim_path": "/World/Objects/beaker_1/Asset/Source/base",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 1,
+      "key": "/World/Objects/bottle_acid/Asset/Source/ReagentBottle001#root",
+      "prim_path": "/World/Objects/bottle_acid/Asset/Source/ReagentBottle001",
+      "body_prim_path": "/World/Objects/bottle_acid/Asset/Source/ReagentBottle001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 2,
+      "key": "/World/Objects/crucible_used/Asset/Source/Crucible001#root",
+      "prim_path": "/World/Objects/crucible_used/Asset/Source/Crucible001",
+      "body_prim_path": "/World/Objects/crucible_used/Asset/Source/Crucible001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 3,
+      "key": "/World/Objects/crucible_used/Asset/Source/Crucible001_Lid#root",
+      "prim_path": "/World/Objects/crucible_used/Asset/Source/Crucible001_Lid",
+      "body_prim_path": "/World/Objects/crucible_used/Asset/Source/Crucible001_Lid",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 4,
+      "key": "/World/Objects/tongs_1/Asset/Source/CrucibleTong001#root",
+      "prim_path": "/World/Objects/tongs_1/Asset/Source/CrucibleTong001",
+      "body_prim_path": "/World/Objects/tongs_1/Asset/Source/CrucibleTong001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 5,
+      "key": "/World/Objects/tube_used/Asset/Source/TestTube001#root",
+      "prim_path": "/World/Objects/tube_used/Asset/Source/TestTube001",
+      "body_prim_path": "/World/Objects/tube_used/Asset/Source/TestTube001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 6,
+      "key": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/base_link#root",
+      "prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/base_link",
+      "body_prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/base_link",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 7,
+      "key": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/left_inner_finger#root",
+      "prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/left_inner_finger",
+      "body_prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/left_inner_finger",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 8,
+      "key": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/left_inner_knuckle#root",
+      "prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/left_inner_knuckle",
+      "body_prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/left_inner_knuckle",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 9,
+      "key": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/left_outer_finger#root",
+      "prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/left_outer_finger",
+      "body_prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/left_outer_finger",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 10,
+      "key": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/left_outer_knuckle#root",
+      "prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/left_outer_knuckle",
+      "body_prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/left_outer_knuckle",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 11,
+      "key": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/right_inner_finger#root",
+      "prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/right_inner_finger",
+      "body_prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/right_inner_finger",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 12,
+      "key": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/right_inner_knuckle#root",
+      "prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/right_inner_knuckle",
+      "body_prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/right_inner_knuckle",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 13,
+      "key": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/right_outer_finger#root",
+      "prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/right_outer_finger",
+      "body_prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/right_outer_finger",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 14,
+      "key": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/right_outer_knuckle#root",
+      "prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/right_outer_knuckle",
+      "body_prim_path": "/World/Robots/ur5e_C/Model/Source/_f85/Robotiq_2F_85/right_outer_knuckle",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 15,
+      "key": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/base_link#root",
+      "prim_path": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/base_link",
+      "body_prim_path": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/base_link",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 16,
+      "key": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/forearm_link#root",
+      "prim_path": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/forearm_link",
+      "body_prim_path": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/forearm_link",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 17,
+      "key": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/shoulder_link#root",
+      "prim_path": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/shoulder_link",
+      "body_prim_path": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/shoulder_link",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 18,
+      "key": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/upper_arm_link#root",
+      "prim_path": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/upper_arm_link",
+      "body_prim_path": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/upper_arm_link",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 19,
+      "key": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/wrist_1_link#root",
+      "prim_path": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/wrist_1_link",
+      "body_prim_path": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/wrist_1_link",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 20,
+      "key": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/wrist_2_link#root",
+      "prim_path": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/wrist_2_link",
+      "body_prim_path": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/wrist_2_link",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 21,
+      "key": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/wrist_3_link#root",
+      "prim_path": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/wrist_3_link",
+      "body_prim_path": "/World/Robots/ur5e_C/Model/Source/ur5e_robot/wrist_3_link",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 22,
+      "key": "/World/Stations/balance_1/Asset/Source/AnalyticalBalance001#root",
+      "prim_path": "/World/Stations/balance_1/Asset/Source/AnalyticalBalance001",
+      "body_prim_path": "/World/Stations/balance_1/Asset/Source/AnalyticalBalance001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 23,
+      "key": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_001#root",
+      "prim_path": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_001",
+      "body_prim_path": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 24,
+      "key": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_002#root",
+      "prim_path": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_002",
+      "body_prim_path": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 25,
+      "key": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Door001#root",
+      "prim_path": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Door001",
+      "body_prim_path": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Door001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 26,
+      "key": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Door002#root",
+      "prim_path": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Door002",
+      "body_prim_path": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Door002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 27,
+      "key": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Door003#root",
+      "prim_path": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Door003",
+      "body_prim_path": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Door003",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 28,
+      "key": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Door004#root",
+      "prim_path": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Door004",
+      "body_prim_path": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Door004",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 29,
+      "key": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Prop001#root",
+      "prim_path": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Prop001",
+      "body_prim_path": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Prop001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 30,
+      "key": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Prop002#root",
+      "prim_path": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Prop002",
+      "body_prim_path": "/World/Stations/cabinet_1/Asset/Source/ReagentCabinet001_Prop002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 31,
+      "key": "/World/Stations/cabinet_1/Asset/Source/handle#root",
+      "prim_path": "/World/Stations/cabinet_1/Asset/Source/handle",
+      "body_prim_path": "/World/Stations/cabinet_1/Asset/Source/handle",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 32,
+      "key": "/World/Stations/dispenser_1/Asset/Source/BottleTopDispenser001/BottleTopDispenser001#root",
+      "prim_path": "/World/Stations/dispenser_1/Asset/Source/BottleTopDispenser001/BottleTopDispenser001",
+      "body_prim_path": "/World/Stations/dispenser_1/Asset/Source/BottleTopDispenser001/BottleTopDispenser001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 33,
+      "key": "/World/Stations/dispenser_1/Asset/Source/BottleTopDispenser001/BottleTopDispenser001_Button001#root",
+      "prim_path": "/World/Stations/dispenser_1/Asset/Source/BottleTopDispenser001/BottleTopDispenser001_Button001",
+      "body_prim_path": "/World/Stations/dispenser_1/Asset/Source/BottleTopDispenser001/BottleTopDispenser001_Button001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 34,
+      "key": "/World/Stations/dispenser_1/Asset/Source/BottleTopDispenser001/BottleTopDispenser001_Button002#root",
+      "prim_path": "/World/Stations/dispenser_1/Asset/Source/BottleTopDispenser001/BottleTopDispenser001_Button002",
+      "body_prim_path": "/World/Stations/dispenser_1/Asset/Source/BottleTopDispenser001/BottleTopDispenser001_Button002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 35,
+      "key": "/World/Stations/dispenser_1/Asset/Source/BottleTopDispenser001/BottleTopDispenser001_Prop#root",
+      "prim_path": "/World/Stations/dispenser_1/Asset/Source/BottleTopDispenser001/BottleTopDispenser001_Prop",
+      "body_prim_path": "/World/Stations/dispenser_1/Asset/Source/BottleTopDispenser001/BottleTopDispenser001_Prop",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 36,
+      "key": "/World/Stations/dispenser_1/Asset/Source/ReagentBottle001/ReagentBottle001#root",
+      "prim_path": "/World/Stations/dispenser_1/Asset/Source/ReagentBottle001/ReagentBottle001",
+      "body_prim_path": "/World/Stations/dispenser_1/Asset/Source/ReagentBottle001/ReagentBottle001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 37,
+      "key": "/World/Stations/rack_1/Asset/Source/TestTubeRack001#root",
+      "prim_path": "/World/Stations/rack_1/Asset/Source/TestTubeRack001",
+      "body_prim_path": "/World/Stations/rack_1/Asset/Source/TestTubeRack001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 38,
+      "key": "/World/Stations/waste_1/Asset/Source/Beaker005#root",
+      "prim_path": "/World/Stations/waste_1/Asset/Source/Beaker005",
+      "body_prim_path": "/World/Stations/waste_1/Asset/Source/Beaker005",
+      "link_name": null,
+      "kind": "rigid"
+    }
+  ]
+}

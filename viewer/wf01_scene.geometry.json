@@ -1,0 +1,660 @@
+{
+  "scene_id": "wf01_solid_state_calcination",
+  "layout_version": "layout_v1",
+  "input_manifest_sha256": "379d56b80711a2542f62709e734261b73f8787e5bc818ea613063f0467013a90",
+  "coordinate_system": "isaac_z_up",
+  "quaternion": "isaac_wxyz",
+  "geometry_sha256": "7348cd0586930a78f1613a1e0e425b3d0991d566328751bccb416b8a4d636159",
+  "bytes": 4695728,
+  "texture_count": 9,
+  "entities": [
+    {
+      "id": 0,
+      "key": "/World/Objects/bottle_BaCO3/Asset/Source/ReagentBottle004#root",
+      "prim_path": "/World/Objects/bottle_BaCO3/Asset/Source/ReagentBottle004",
+      "body_prim_path": "/World/Objects/bottle_BaCO3/Asset/Source/ReagentBottle004",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 1,
+      "key": "/World/Objects/bottle_SiO2/Asset/Source/ReagentBottle002#root",
+      "prim_path": "/World/Objects/bottle_SiO2/Asset/Source/ReagentBottle002",
+      "body_prim_path": "/World/Objects/bottle_SiO2/Asset/Source/ReagentBottle002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 2,
+      "key": "/World/Objects/bottle_ZnO/Asset/Source/ReagentBottle003#root",
+      "prim_path": "/World/Objects/bottle_ZnO/Asset/Source/ReagentBottle003",
+      "body_prim_path": "/World/Objects/bottle_ZnO/Asset/Source/ReagentBottle003",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 3,
+      "key": "/World/Objects/crucible_s1/Asset/Source/Crucible001#root",
+      "prim_path": "/World/Objects/crucible_s1/Asset/Source/Crucible001",
+      "body_prim_path": "/World/Objects/crucible_s1/Asset/Source/Crucible001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 4,
+      "key": "/World/Objects/crucible_s1/Asset/Source/Crucible001_Lid#root",
+      "prim_path": "/World/Objects/crucible_s1/Asset/Source/Crucible001_Lid",
+      "body_prim_path": "/World/Objects/crucible_s1/Asset/Source/Crucible001_Lid",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 5,
+      "key": "/World/Objects/pestle_1/Asset/Source/Pestle001#root",
+      "prim_path": "/World/Objects/pestle_1/Asset/Source/Pestle001",
+      "body_prim_path": "/World/Objects/pestle_1/Asset/Source/Pestle001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 6,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_hand#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_hand",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_hand",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 7,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_hand_tcp#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_hand_tcp",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_hand_tcp",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 8,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_leftfinger#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_leftfinger",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_leftfinger",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 9,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link0#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link0",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link0",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 10,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link1#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link1",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link1",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 11,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link2#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link2",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link2",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 12,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link3#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link3",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link3",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 13,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link4#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link4",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link4",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 14,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link5#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link5",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link5",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 15,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link6#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link6",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link6",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 16,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link7#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link7",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link7",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 17,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link8#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link8",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link8",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 18,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_rightfinger#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_rightfinger",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_rightfinger",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 19,
+      "key": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/base_link#root",
+      "prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/base_link",
+      "body_prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/base_link",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 20,
+      "key": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/left_inner_finger#root",
+      "prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/left_inner_finger",
+      "body_prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/left_inner_finger",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 21,
+      "key": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/left_inner_knuckle#root",
+      "prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/left_inner_knuckle",
+      "body_prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/left_inner_knuckle",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 22,
+      "key": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/left_outer_finger#root",
+      "prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/left_outer_finger",
+      "body_prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/left_outer_finger",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 23,
+      "key": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/left_outer_knuckle#root",
+      "prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/left_outer_knuckle",
+      "body_prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/left_outer_knuckle",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 24,
+      "key": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/right_inner_finger#root",
+      "prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/right_inner_finger",
+      "body_prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/right_inner_finger",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 25,
+      "key": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/right_inner_knuckle#root",
+      "prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/right_inner_knuckle",
+      "body_prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/right_inner_knuckle",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 26,
+      "key": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/right_outer_finger#root",
+      "prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/right_outer_finger",
+      "body_prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/right_outer_finger",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 27,
+      "key": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/right_outer_knuckle#root",
+      "prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/right_outer_knuckle",
+      "body_prim_path": "/World/Robots/ur5e_B/Model/Source/_f85/Robotiq_2F_85/right_outer_knuckle",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 28,
+      "key": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/base_link#root",
+      "prim_path": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/base_link",
+      "body_prim_path": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/base_link",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 29,
+      "key": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/forearm_link#root",
+      "prim_path": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/forearm_link",
+      "body_prim_path": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/forearm_link",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 30,
+      "key": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/shoulder_link#root",
+      "prim_path": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/shoulder_link",
+      "body_prim_path": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/shoulder_link",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 31,
+      "key": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/upper_arm_link#root",
+      "prim_path": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/upper_arm_link",
+      "body_prim_path": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/upper_arm_link",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 32,
+      "key": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/wrist_1_link#root",
+      "prim_path": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/wrist_1_link",
+      "body_prim_path": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/wrist_1_link",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 33,
+      "key": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/wrist_2_link#root",
+      "prim_path": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/wrist_2_link",
+      "body_prim_path": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/wrist_2_link",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 34,
+      "key": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/wrist_3_link#root",
+      "prim_path": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/wrist_3_link",
+      "body_prim_path": "/World/Robots/ur5e_B/Model/Source/ur5e_robot/wrist_3_link",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 35,
+      "key": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001#root",
+      "prim_path": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001",
+      "body_prim_path": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 36,
+      "key": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_Button001#root",
+      "prim_path": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_Button001",
+      "body_prim_path": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_Button001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 37,
+      "key": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_Button002#root",
+      "prim_path": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_Button002",
+      "body_prim_path": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_Button002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 38,
+      "key": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_Button003#root",
+      "prim_path": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_Button003",
+      "body_prim_path": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_Button003",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 39,
+      "key": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_DustCover001#root",
+      "prim_path": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_DustCover001",
+      "body_prim_path": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_DustCover001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 40,
+      "key": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_DustCover002#root",
+      "prim_path": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_DustCover002",
+      "body_prim_path": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_DustCover002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 41,
+      "key": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_Switch#root",
+      "prim_path": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_Switch",
+      "body_prim_path": "/World/Stations/dosing_1/Asset/Source/PrecisionElectronicBalance001_Switch",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 42,
+      "key": "/World/Stations/furnace_1/Asset/Source/Oven065#root",
+      "prim_path": "/World/Stations/furnace_1/Asset/Source/Oven065",
+      "body_prim_path": "/World/Stations/furnace_1/Asset/Source/Oven065",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 43,
+      "key": "/World/Stations/furnace_1/Asset/Source/Oven065_Button001#root",
+      "prim_path": "/World/Stations/furnace_1/Asset/Source/Oven065_Button001",
+      "body_prim_path": "/World/Stations/furnace_1/Asset/Source/Oven065_Button001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 44,
+      "key": "/World/Stations/furnace_1/Asset/Source/Oven065_Button002#root",
+      "prim_path": "/World/Stations/furnace_1/Asset/Source/Oven065_Button002",
+      "body_prim_path": "/World/Stations/furnace_1/Asset/Source/Oven065_Button002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 45,
+      "key": "/World/Stations/furnace_1/Asset/Source/Oven065_Button003#root",
+      "prim_path": "/World/Stations/furnace_1/Asset/Source/Oven065_Button003",
+      "body_prim_path": "/World/Stations/furnace_1/Asset/Source/Oven065_Button003",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 46,
+      "key": "/World/Stations/furnace_1/Asset/Source/Oven065_Button004#root",
+      "prim_path": "/World/Stations/furnace_1/Asset/Source/Oven065_Button004",
+      "body_prim_path": "/World/Stations/furnace_1/Asset/Source/Oven065_Button004",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 47,
+      "key": "/World/Stations/furnace_1/Asset/Source/Oven065_Door#root",
+      "prim_path": "/World/Stations/furnace_1/Asset/Source/Oven065_Door",
+      "body_prim_path": "/World/Stations/furnace_1/Asset/Source/Oven065_Door",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 48,
+      "key": "/World/Stations/furnace_1/Asset/Source/Oven065_Knob#root",
+      "prim_path": "/World/Stations/furnace_1/Asset/Source/Oven065_Knob",
+      "body_prim_path": "/World/Stations/furnace_1/Asset/Source/Oven065_Knob",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 49,
+      "key": "/World/Stations/furnace_1/Asset/Source/Oven065_Switch#root",
+      "prim_path": "/World/Stations/furnace_1/Asset/Source/Oven065_Switch",
+      "body_prim_path": "/World/Stations/furnace_1/Asset/Source/Oven065_Switch",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 50,
+      "key": "/World/Stations/furnace_1/Asset/Source/handle#root",
+      "prim_path": "/World/Stations/furnace_1/Asset/Source/handle",
+      "body_prim_path": "/World/Stations/furnace_1/Asset/Source/handle",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 51,
+      "key": "/World/Stations/furnace_2/Asset/Source/Oven065#root",
+      "prim_path": "/World/Stations/furnace_2/Asset/Source/Oven065",
+      "body_prim_path": "/World/Stations/furnace_2/Asset/Source/Oven065",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 52,
+      "key": "/World/Stations/furnace_2/Asset/Source/Oven065_Button001#root",
+      "prim_path": "/World/Stations/furnace_2/Asset/Source/Oven065_Button001",
+      "body_prim_path": "/World/Stations/furnace_2/Asset/Source/Oven065_Button001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 53,
+      "key": "/World/Stations/furnace_2/Asset/Source/Oven065_Button002#root",
+      "prim_path": "/World/Stations/furnace_2/Asset/Source/Oven065_Button002",
+      "body_prim_path": "/World/Stations/furnace_2/Asset/Source/Oven065_Button002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 54,
+      "key": "/World/Stations/furnace_2/Asset/Source/Oven065_Button003#root",
+      "prim_path": "/World/Stations/furnace_2/Asset/Source/Oven065_Button003",
+      "body_prim_path": "/World/Stations/furnace_2/Asset/Source/Oven065_Button003",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 55,
+      "key": "/World/Stations/furnace_2/Asset/Source/Oven065_Button004#root",
+      "prim_path": "/World/Stations/furnace_2/Asset/Source/Oven065_Button004",
+      "body_prim_path": "/World/Stations/furnace_2/Asset/Source/Oven065_Button004",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 56,
+      "key": "/World/Stations/furnace_2/Asset/Source/Oven065_Door#root",
+      "prim_path": "/World/Stations/furnace_2/Asset/Source/Oven065_Door",
+      "body_prim_path": "/World/Stations/furnace_2/Asset/Source/Oven065_Door",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 57,
+      "key": "/World/Stations/furnace_2/Asset/Source/Oven065_Knob#root",
+      "prim_path": "/World/Stations/furnace_2/Asset/Source/Oven065_Knob",
+      "body_prim_path": "/World/Stations/furnace_2/Asset/Source/Oven065_Knob",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 58,
+      "key": "/World/Stations/furnace_2/Asset/Source/Oven065_Switch#root",
+      "prim_path": "/World/Stations/furnace_2/Asset/Source/Oven065_Switch",
+      "body_prim_path": "/World/Stations/furnace_2/Asset/Source/Oven065_Switch",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 59,
+      "key": "/World/Stations/furnace_2/Asset/Source/handle#root",
+      "prim_path": "/World/Stations/furnace_2/Asset/Source/handle",
+      "body_prim_path": "/World/Stations/furnace_2/Asset/Source/handle",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 60,
+      "key": "/World/Stations/furnace_3/Asset/Source/Oven065#root",
+      "prim_path": "/World/Stations/furnace_3/Asset/Source/Oven065",
+      "body_prim_path": "/World/Stations/furnace_3/Asset/Source/Oven065",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 61,
+      "key": "/World/Stations/furnace_3/Asset/Source/Oven065_Button001#root",
+      "prim_path": "/World/Stations/furnace_3/Asset/Source/Oven065_Button001",
+      "body_prim_path": "/World/Stations/furnace_3/Asset/Source/Oven065_Button001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 62,
+      "key": "/World/Stations/furnace_3/Asset/Source/Oven065_Button002#root",
+      "prim_path": "/World/Stations/furnace_3/Asset/Source/Oven065_Button002",
+      "body_prim_path": "/World/Stations/furnace_3/Asset/Source/Oven065_Button002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 63,
+      "key": "/World/Stations/furnace_3/Asset/Source/Oven065_Button003#root",
+      "prim_path": "/World/Stations/furnace_3/Asset/Source/Oven065_Button003",
+      "body_prim_path": "/World/Stations/furnace_3/Asset/Source/Oven065_Button003",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 64,
+      "key": "/World/Stations/furnace_3/Asset/Source/Oven065_Button004#root",
+      "prim_path": "/World/Stations/furnace_3/Asset/Source/Oven065_Button004",
+      "body_prim_path": "/World/Stations/furnace_3/Asset/Source/Oven065_Button004",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 65,
+      "key": "/World/Stations/furnace_3/Asset/Source/Oven065_Door#root",
+      "prim_path": "/World/Stations/furnace_3/Asset/Source/Oven065_Door",
+      "body_prim_path": "/World/Stations/furnace_3/Asset/Source/Oven065_Door",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 66,
+      "key": "/World/Stations/furnace_3/Asset/Source/Oven065_Knob#root",
+      "prim_path": "/World/Stations/furnace_3/Asset/Source/Oven065_Knob",
+      "body_prim_path": "/World/Stations/furnace_3/Asset/Source/Oven065_Knob",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 67,
+      "key": "/World/Stations/furnace_3/Asset/Source/Oven065_Switch#root",
+      "prim_path": "/World/Stations/furnace_3/Asset/Source/Oven065_Switch",
+      "body_prim_path": "/World/Stations/furnace_3/Asset/Source/Oven065_Switch",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 68,
+      "key": "/World/Stations/furnace_3/Asset/Source/handle#root",
+      "prim_path": "/World/Stations/furnace_3/Asset/Source/handle",
+      "body_prim_path": "/World/Stations/furnace_3/Asset/Source/handle",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 69,
+      "key": "/World/Stations/furnace_4/Asset/Source/Oven065#root",
+      "prim_path": "/World/Stations/furnace_4/Asset/Source/Oven065",
+      "body_prim_path": "/World/Stations/furnace_4/Asset/Source/Oven065",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 70,
+      "key": "/World/Stations/furnace_4/Asset/Source/Oven065_Button001#root",
+      "prim_path": "/World/Stations/furnace_4/Asset/Source/Oven065_Button001",
+      "body_prim_path": "/World/Stations/furnace_4/Asset/Source/Oven065_Button001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 71,
+      "key": "/World/Stations/furnace_4/Asset/Source/Oven065_Button002#root",
+      "prim_path": "/World/Stations/furnace_4/Asset/Source/Oven065_Button002",
+      "body_prim_path": "/World/Stations/furnace_4/Asset/Source/Oven065_Button002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 72,
+      "key": "/World/Stations/furnace_4/Asset/Source/Oven065_Button003#root",
+      "prim_path": "/World/Stations/furnace_4/Asset/Source/Oven065_Button003",
+      "body_prim_path": "/World/Stations/furnace_4/Asset/Source/Oven065_Button003",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 73,
+      "key": "/World/Stations/furnace_4/Asset/Source/Oven065_Button004#root",
+      "prim_path": "/World/Stations/furnace_4/Asset/Source/Oven065_Button004",
+      "body_prim_path": "/World/Stations/furnace_4/Asset/Source/Oven065_Button004",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 74,
+      "key": "/World/Stations/furnace_4/Asset/Source/Oven065_Door#root",
+      "prim_path": "/World/Stations/furnace_4/Asset/Source/Oven065_Door",
+      "body_prim_path": "/World/Stations/furnace_4/Asset/Source/Oven065_Door",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 75,
+      "key": "/World/Stations/furnace_4/Asset/Source/Oven065_Knob#root",
+      "prim_path": "/World/Stations/furnace_4/Asset/Source/Oven065_Knob",
+      "body_prim_path": "/World/Stations/furnace_4/Asset/Source/Oven065_Knob",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 76,
+      "key": "/World/Stations/furnace_4/Asset/Source/Oven065_Switch#root",
+      "prim_path": "/World/Stations/furnace_4/Asset/Source/Oven065_Switch",
+      "body_prim_path": "/World/Stations/furnace_4/Asset/Source/Oven065_Switch",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 77,
+      "key": "/World/Stations/furnace_4/Asset/Source/handle#root",
+      "prim_path": "/World/Stations/furnace_4/Asset/Source/handle",
+      "body_prim_path": "/World/Stations/furnace_4/Asset/Source/handle",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 78,
+      "key": "/World/Stations/grinder_1/Asset/Source/Mortar001#root",
+      "prim_path": "/World/Stations/grinder_1/Asset/Source/Mortar001",
+      "body_prim_path": "/World/Stations/grinder_1/Asset/Source/Mortar001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 79,
+      "key": "/World/Stations/rack_1/Asset/Source/TestTubeRack001#root",
+      "prim_path": "/World/Stations/rack_1/Asset/Source/TestTubeRack001",
+      "body_prim_path": "/World/Stations/rack_1/Asset/Source/TestTubeRack001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 80,
+      "key": "/World/Stations/transfer_1/Asset/Source/TestTubeRack001#root",
+      "prim_path": "/World/Stations/transfer_1/Asset/Source/TestTubeRack001",
+      "body_prim_path": "/World/Stations/transfer_1/Asset/Source/TestTubeRack001",
+      "link_name": null,
+      "kind": "rigid"
+    }
+  ]
+}

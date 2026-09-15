@@ -1,0 +1,468 @@
+{
+  "scene_id": "wf03_wet_chemical_precursor",
+  "layout_version": "layout_v1",
+  "input_manifest_sha256": "884be32602e254d3b0cbf98856541a9488bfcac65ca15036af48dd1a75ec32db",
+  "coordinate_system": "isaac_z_up",
+  "quaternion": "isaac_wxyz",
+  "geometry_sha256": "105f9be8cf30250baa7664500427a8de8a7467dd99f3e25a76022c41f82ee1e5",
+  "bytes": 3473596,
+  "texture_count": 13,
+  "entities": [
+    {
+      "id": 0,
+      "key": "/World/Objects/beaker_1/Asset/Source/Beaker004#root",
+      "prim_path": "/World/Objects/beaker_1/Asset/Source/Beaker004",
+      "body_prim_path": "/World/Objects/beaker_1/Asset/Source/Beaker004",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 1,
+      "key": "/World/Objects/bottle_ammonia/Asset/Source/ReagentBottle004#root",
+      "prim_path": "/World/Objects/bottle_ammonia/Asset/Source/ReagentBottle004",
+      "body_prim_path": "/World/Objects/bottle_ammonia/Asset/Source/ReagentBottle004",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 2,
+      "key": "/World/Objects/bottle_nitrate/Asset/Source/ReagentBottle001#root",
+      "prim_path": "/World/Objects/bottle_nitrate/Asset/Source/ReagentBottle001",
+      "body_prim_path": "/World/Objects/bottle_nitrate/Asset/Source/ReagentBottle001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 3,
+      "key": "/World/Objects/bottle_silica/Asset/Source/ReagentBottle002#root",
+      "prim_path": "/World/Objects/bottle_silica/Asset/Source/ReagentBottle002",
+      "body_prim_path": "/World/Objects/bottle_silica/Asset/Source/ReagentBottle002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 4,
+      "key": "/World/Objects/cyl_1/Asset/Source/GraduatedCylinder004#root",
+      "prim_path": "/World/Objects/cyl_1/Asset/Source/GraduatedCylinder004",
+      "body_prim_path": "/World/Objects/cyl_1/Asset/Source/GraduatedCylinder004",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 5,
+      "key": "/World/Objects/dish_1/Asset/Source/base#root",
+      "prim_path": "/World/Objects/dish_1/Asset/Source/base",
+      "body_prim_path": "/World/Objects/dish_1/Asset/Source/base",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 6,
+      "key": "/World/Objects/tube_1/Asset/Source/CentrifugeTube001#root",
+      "prim_path": "/World/Objects/tube_1/Asset/Source/CentrifugeTube001",
+      "body_prim_path": "/World/Objects/tube_1/Asset/Source/CentrifugeTube001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 7,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_hand#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_hand",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_hand",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 8,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_hand_tcp#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_hand_tcp",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_hand_tcp",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 9,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_leftfinger#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_leftfinger",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_leftfinger",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 10,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link0#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link0",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link0",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 11,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link1#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link1",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link1",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 12,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link2#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link2",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link2",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 13,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link3#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link3",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link3",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 14,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link4#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link4",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link4",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 15,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link5#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link5",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link5",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 16,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link6#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link6",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link6",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 17,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link7#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link7",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link7",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 18,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_link8#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link8",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_link8",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 19,
+      "key": "/World/Robots/fr3_A/Model/Source/fr3_rightfinger#root",
+      "prim_path": "/World/Robots/fr3_A/Model/Source/fr3_rightfinger",
+      "body_prim_path": "/World/Robots/fr3_A/Model/Source/fr3_rightfinger",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 20,
+      "key": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001#root",
+      "prim_path": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001",
+      "body_prim_path": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 21,
+      "key": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001/MagneticStirrer001_Button001#root",
+      "prim_path": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001/MagneticStirrer001_Button001",
+      "body_prim_path": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001/MagneticStirrer001_Button001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 22,
+      "key": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001/MagneticStirrer001_Button002#root",
+      "prim_path": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001/MagneticStirrer001_Button002",
+      "body_prim_path": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001/MagneticStirrer001_Button002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 23,
+      "key": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001/MagneticStirrer001_Button003#root",
+      "prim_path": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001/MagneticStirrer001_Button003",
+      "body_prim_path": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001/MagneticStirrer001_Button003",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 24,
+      "key": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001/MagneticStirrer001_Knob001#root",
+      "prim_path": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001/MagneticStirrer001_Knob001",
+      "body_prim_path": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001/MagneticStirrer001_Knob001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 25,
+      "key": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001/MagneticStirrer001_Knob002#root",
+      "prim_path": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001/MagneticStirrer001_Knob002",
+      "body_prim_path": "/World/Stations/liquid_1/Asset/Source/MagneticStirrer001/MagneticStirrer001_Knob002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 26,
+      "key": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001#root",
+      "prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001",
+      "body_prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 27,
+      "key": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button001#root",
+      "prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button001",
+      "body_prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 28,
+      "key": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button002#root",
+      "prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button002",
+      "body_prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 29,
+      "key": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button003#root",
+      "prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button003",
+      "body_prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button003",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 30,
+      "key": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button004#root",
+      "prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button004",
+      "body_prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button004",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 31,
+      "key": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button005#root",
+      "prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button005",
+      "body_prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button005",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 32,
+      "key": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button006#root",
+      "prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button006",
+      "body_prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button006",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 33,
+      "key": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button007#root",
+      "prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button007",
+      "body_prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Button007",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 34,
+      "key": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Lid#root",
+      "prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Lid",
+      "body_prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Lid",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 35,
+      "key": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Rotor#root",
+      "prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Rotor",
+      "body_prim_path": "/World/Stations/mixer_1/Asset/Source/HighSpeedCentrifuge001_Rotor",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 36,
+      "key": "/World/Stations/oven_1/Asset/Source/Oven065#root",
+      "prim_path": "/World/Stations/oven_1/Asset/Source/Oven065",
+      "body_prim_path": "/World/Stations/oven_1/Asset/Source/Oven065",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 37,
+      "key": "/World/Stations/oven_1/Asset/Source/Oven065_Button001#root",
+      "prim_path": "/World/Stations/oven_1/Asset/Source/Oven065_Button001",
+      "body_prim_path": "/World/Stations/oven_1/Asset/Source/Oven065_Button001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 38,
+      "key": "/World/Stations/oven_1/Asset/Source/Oven065_Button002#root",
+      "prim_path": "/World/Stations/oven_1/Asset/Source/Oven065_Button002",
+      "body_prim_path": "/World/Stations/oven_1/Asset/Source/Oven065_Button002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 39,
+      "key": "/World/Stations/oven_1/Asset/Source/Oven065_Button003#root",
+      "prim_path": "/World/Stations/oven_1/Asset/Source/Oven065_Button003",
+      "body_prim_path": "/World/Stations/oven_1/Asset/Source/Oven065_Button003",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 40,
+      "key": "/World/Stations/oven_1/Asset/Source/Oven065_Button004#root",
+      "prim_path": "/World/Stations/oven_1/Asset/Source/Oven065_Button004",
+      "body_prim_path": "/World/Stations/oven_1/Asset/Source/Oven065_Button004",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 41,
+      "key": "/World/Stations/oven_1/Asset/Source/Oven065_Door#root",
+      "prim_path": "/World/Stations/oven_1/Asset/Source/Oven065_Door",
+      "body_prim_path": "/World/Stations/oven_1/Asset/Source/Oven065_Door",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 42,
+      "key": "/World/Stations/oven_1/Asset/Source/Oven065_Knob#root",
+      "prim_path": "/World/Stations/oven_1/Asset/Source/Oven065_Knob",
+      "body_prim_path": "/World/Stations/oven_1/Asset/Source/Oven065_Knob",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 43,
+      "key": "/World/Stations/oven_1/Asset/Source/Oven065_Switch#root",
+      "prim_path": "/World/Stations/oven_1/Asset/Source/Oven065_Switch",
+      "body_prim_path": "/World/Stations/oven_1/Asset/Source/Oven065_Switch",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 44,
+      "key": "/World/Stations/oven_1/Asset/Source/handle#root",
+      "prim_path": "/World/Stations/oven_1/Asset/Source/handle",
+      "body_prim_path": "/World/Stations/oven_1/Asset/Source/handle",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 45,
+      "key": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001#root",
+      "prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001",
+      "body_prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 46,
+      "key": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button001#root",
+      "prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button001",
+      "body_prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 47,
+      "key": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button002#root",
+      "prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button002",
+      "body_prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button002",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 48,
+      "key": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button003#root",
+      "prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button003",
+      "body_prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button003",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 49,
+      "key": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button004#root",
+      "prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button004",
+      "body_prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button004",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 50,
+      "key": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button005#root",
+      "prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button005",
+      "body_prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button005",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 51,
+      "key": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button006#root",
+      "prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button006",
+      "body_prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button006",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 52,
+      "key": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button007#root",
+      "prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button007",
+      "body_prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Button007",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 53,
+      "key": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Clamp#root",
+      "prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Clamp",
+      "body_prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Clamp",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 54,
+      "key": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Pole#root",
+      "prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Pole",
+      "body_prim_path": "/World/Stations/ph_1/Asset/Source/PHMeterAcidimeter001_Pole",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 55,
+      "key": "/World/Stations/rack_1/Asset/Source/TestTubeRack001#root",
+      "prim_path": "/World/Stations/rack_1/Asset/Source/TestTubeRack001",
+      "body_prim_path": "/World/Stations/rack_1/Asset/Source/TestTubeRack001",
+      "link_name": null,
+      "kind": "rigid"
+    },
+    {
+      "id": 56,
+      "key": "/World/Stations/waste_1/Asset/Source/Beaker005#root",
+      "prim_path": "/World/Stations/waste_1/Asset/Source/Beaker005",
+      "body_prim_path": "/World/Stations/waste_1/Asset/Source/Beaker005",
+      "link_name": null,
+      "kind": "rigid"
+    }
+  ]
+}
