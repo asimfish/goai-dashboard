@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-16T04:18+08:00",
+  "updated": "2026-09-16T04:22+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -8,22 +8,24 @@
     "agentic_robotics": "https://asimfish.github.io/safeot-dashboard/agentic_robotics.html",
     "repo": "https://github.com/asimfish/goai_research",
     "pages": "https://asimfish.github.io/goai-dashboard/",
-    "scenes": "scenes.html"
+    "scenes": "scenes.html",
+    "b_stages": "https://asimfish.github.io/goai-dashboard/stages.html",
+    "viewer_B": "https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_B"
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-16T04:18+08:00",
+    "snapshot_at": "2026-09-16T04:22+08:00",
     "gpus": [
       {
         "index": 0,
         "used_mib": 19316,
-        "util": "31%",
+        "util": "26%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 7987,
-        "util": "83%",
+        "used_mib": 7991,
+        "util": "13%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -414,6 +416,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-16 04:40",
+      "entry": "**长任务分阶段留档上线**：https://asimfish.github.io/goai-dashboard/stages.html —— B 站加热链 18 个阶段，每个阶段在完成的那一刻从 5 个相机各存一帧（站位总览 18 mm、正面 15 mm、侧面 18 mm、俯视 15 mm、腕部 12 mm），并同时写下 eye/target 位姿、焦距与内参矩阵。顺序为 G3 装载 → 沉降 → 预成形 → 对准把手 → 预接近 → 闭合 → 确认物理抓取 → 起升 → 净空校核 → 前移对位 → 抵达炉口 → 进入炉膛 → 落在实测炉架 → 松爪确认支撑 → 退出 → 复位。图像是实际采集帧，仅缩放与 JPEG 编码，无合成或补帧。"
+    },
     {
       "date": "2026-09-16 04:20",
       "entry": "**B 站 G3 抖动扫描 2/3 通过，并定位两处结构性阻塞（都不是物理问题）**。三份声明计划（±2cm/±10° 内，实际写入 `G3_initial_conditions.json`）：plan00 dx+8.6/dy−13.6 mm、yaw −8.75° → stage 4、落位 1.35 mm；plan01 dx−13.9/dy−9.9 mm、yaw −9.75° → stage 4、落位 1.06 mm；plan02 dx+9.2/dy−1.7 mm、yaw **+4.42°** → stage 3，`release_command_refused`。三次初始条件全部 `passed_initial_conditions`（沉降位移 0.372 mm / 角度 0.937°，门禁 2 mm / 1° 未放宽）。阻塞一：`v4_B_G3_camera_expert.py` 第 37 行强制要求 `--diagnostic`，而判定通过的第 1615 行要求 `not diagnostic`——同一脚本自相矛盾，18 条条件全 true 时唯一未满足项仍是 `not_diagnostic`，结构上不可能出 PASS。阻塞二：`--planner scripted` 时第 1561 行把试次区间塌缩成 `[0]`，`--trials 3` 被静默忽略。另：release 被拒时 `fail()` 丢弃了 `arm.last_result`，具体原因无处可查——已补记 `release_refusal` 后重跑 trial 2。"
