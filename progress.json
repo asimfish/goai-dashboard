@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-16T00:28+08:00",
+  "updated": "2026-09-16T01:09+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,18 +12,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-16T00:28+08:00",
+    "snapshot_at": "2026-09-16T01:09+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 19315,
-        "util": "35%",
+        "used_mib": 16276,
+        "util": "4%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 5293,
-        "util": "57%",
+        "used_mib": 4019,
+        "util": "11%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -31,13 +31,13 @@
       {
         "mount": "/",
         "used": "97%",
-        "free": "117G",
+        "free": "116G",
         "note": "不写"
       },
       {
         "mount": "/data",
         "used": "99%",
-        "free": "38G",
+        "free": "36G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -415,6 +415,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-15 17:08",
+      "entry": "**B 站完整加热链路首次用真实物理夹持走通**（run 20260916T001245）：开炉门 → 接近（elbow-alt）→ pre-grasp err **0 mm** → 指垫法向力 左 38.26 N / 右 38.18 N、双侧接触 6 tick、grasp confirmed → 架子提起 **92.8 mm** tracking True → lift_clearance 1.6 mm → advance_before_align 1.4 mm → at_furnace_entry 0.6 mm → inside_furnace 3.0 mm → on_measured_shelf 1.4 mm → **stage 4, dp3d 1.2 mm, task_success True**，**1043 张观测图像**。dp3d 从空跑时的 596 mm 降到 1.2 mm；封闭炉膛插入全程 root error 保持 0.6–3.0 mm。**这条线共破六层根因**：碰撞预判把机器人肩部撞自己夹爪 / tool_axis='y' 的臂错用 Franka 姿态配方致工具轴指天 / IK 落进夹爪撞自己大臂的分支（tick 196 穿透 10.42 mm）/ 接近段不收敛（47 mm 全在 y）/ 工具轴再次立起（钳口高出把手 262 mm ≈ 工具偏置 0.27 m）/ 炉口需先前进再横向对准以避开折叠姿态。**每层都靠关节级与接触级实测定案**——中间对根因的三次推断被数据推翻，转折点是要求打印 jaw/handle 三维差向量、夹爪限位与指垫法向力之后，后三层每层只需一两轮即收敛。**三维查看器同步升级**：六场景可切换、自由漫游(F)、wf01/wf04 天平 OmniSurface 透射修复；验收如实标注 appearance_parity=NOT_PASSED（不声称与 RTX 外观一致），外域请求 0、JS 异常 0、replay 数据哈希未变。**场景侧**：A100 已替换 Objaverse 劣质椅子（原模型靠背平躺、荧光绿平涂，Isaac 自身渲染即如此），并在逐图实看时另发现机柜标识倒置一并替换；因导出器将静态几何烘入世界坐标，需从覆盖层重烘 v4 而非叠加新模型，已派发。"
+    },
     {
       "date": "2026-09-15 08:02",
       "entry": "**五场景第二版：房间与照明补齐，57 张图（含 22 张近景）已换上板**。第一版是白台面悬在灰色虚空里，房间外壳 layout_v4/Room_runtime_static.usda 没引入；第二版补齐后吊顶格栅灯、烟感喷淋、墙窗地砖、蓝门台柜、四炉与导轨、靠墙黄色试剂柜都在画面里，GI/透射/反射确认开启。**近景是逐张实际看过的**——image_observations.json 里每张带 method: actual_image_view、逐图 SHA256 与复核时间，试剂瓶盖开口、天平防风罩展开、前景臂座遮挡都如实记录（此前 5090 那批 60 多张近景套用同一句模板，漏掉了瓶盖缺陷，这次没有重蹈）。**长程线：A100 GPU6 上携物 checkpoint 往返通过** —— carry_mode=kinematic_after_verified_grasp，物体相对 TCP 恢复误差首 tick 0.0409 mm/0.0465°、30 tick 后 0.0417 mm/0.0498°；kin 完全一致、pinned 1/1、接触历史 6/6；放置误差基线 0.2377 mm vs 恢复后 0.2395 mm（差 0.0024 mm）；瞬态 tick 811–840 单独保存、续跑从 841 开始。**通过范围仅限「抬升后原位放回」**，全场景恢复门仍未过（研杵旋转 0.568° > 0.5°），完整投料路径仍被碰撞预检阻止——如实登记。**采集线：B 站钳口错位已量出** —— 闭合轴 33.1 mm、沿把手长度 80.0 mm，且闭合只走 2 tick 就被预判拦住、钳口仍开 84.6 mm，说明此前的 limit 报错是预判拦截的副产物而非夹爪行程问题。TCP 误差仅 9 mm 却错位 33 mm，再次印证 TCP 对中 ≠ 钳口对中。"
@@ -1107,8 +1111,8 @@
       "lane": "A-Lab 数字孪生与采集",
       "status": "running",
       "owner": "codex@5090（GPT-6 Astra）执行 · claude 指导/审核 · codex@4090 布局/资产",
-      "now": "五场景第二版（房间+GI）已上板，57 张含 22 张逐图实看的近景；长程携物 checkpoint 往返在 A100 通过（恢复误差 0.04 mm 级）；采集线 B 站钳口错位已量出（闭合轴 33.1 mm）。",
-      "next": "① B 站补 33.1 mm 闭合轴偏置、确认双侧接触后 dp 从 596 mm 降下来，然后进 G3（**必须开出帧**）；② 长程线把通过范围从「原位放回」扩到完整投料路径；③ 五场景可按需补充站内器材密度。",
+      "now": "B 站完整加热链路已通（dp3d 1.2 mm、task_success True、1043 张图像）；三维查看器六场景 + 自由漫游已上线。",
+      "next": "① G3：先摸清 C 站差什么，再三站各三次 ±2cm/±10° 抖动并记录实际 reset 值；② 用这条 task_success 轨迹替换查看器里的诊断回放；③ 重烘 v4 换掉椅子与机柜；④ G3 后 B/C 交给 Astra 跑一轮做横向对照。",
       "link": "scenes.html#alab_twin",
       "link_text": "验收表、四视角渲染、A 站逐条表与视频 →"
     },
