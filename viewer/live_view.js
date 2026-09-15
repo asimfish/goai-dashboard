@@ -58,8 +58,8 @@ async function geometry(url,identity,expectedHash){
 function bind(entities){allowed=entityMap(entities);dynamic.clear();for(const e of entities){const node=nodes.get(e.key);if(!node)throw Error('几何缺少实体：'+e.key);dynamic.set(e.id,node);}status.animated_entities=dynamic.size;}
 function pose(a,b,alpha){for(const [id,v] of b.rows){const node=dynamic.get(id),u=a?.rows.get(id)||v;if(!node)throw Error('未绑定实体');node.position.lerpVectors(tmpP1.set(...u.p),tmpP2.set(...v.p),alpha);node.quaternion.slerpQuaternions(isaacQuaternion(tmpQ1,u.q),isaacQuaternion(tmpQ2,v.q),alpha);}status.tick=b.tick;status.sim_time=b.sim;status.applied_frames++;}
 function frameCamera(){scene.updateMatrixWorld(true);const box=new THREE.Box3();const subjects=dynamic.size?dynamic:nodes;if(subjects.size){for(const n of subjects.values())box.expandByPoint(n.getWorldPosition(new THREE.Vector3()));}else box.setFromObject(root);const sphere=box.getBoundingSphere(new THREE.Sphere()),d=Math.max(1.5,sphere.radius/Math.sin(THREE.MathUtils.degToRad(camera.fov/2)));controls.target.copy(sphere.center);camera.position.copy(sphere.center).add(new THREE.Vector3(.6,.9,1.1).normalize().multiplyScalar(d*1.1));camera.near=Math.max(.01,d/1000);camera.far=Math.max(100,d*10);camera.updateProjectionMatrix();controls.update();}
-async function replay(){
- const url=localURL(params.get('replay')||'./replay/manifest.json');manifest=await jsonFile(url);allowed=validateReplayManifest(manifest);assertIdentity(manifest,manifest);
+async function replay(dir){
+ const url=localURL(params.get('replay')||('./'+(dir||'replay')+'/manifest.json'));manifest=await jsonFile(url);allowed=validateReplayManifest(manifest);assertIdentity(manifest,manifest);
  await geometry(localURL(manifest.geometry,url),manifest,manifest.geometry_sha256);bind(manifest.entities);
  const data=await fetchBytes(manifest.binary,64*1024*1024,url);if(data.byteLength!==manifest.byte_length||await sha(data)!==manifest.binary_sha256)throw Error('轨迹长度或 SHA-256 不匹配');
  frames=[];for(let i=0;i<manifest.frame_count;i++){const f=parseFrame(data,i*manifest.frame_bytes,manifest.frame_bytes,allowed);if(i&&(f.tick<=frames[i-1].tick||f.sim<=frames[i-1].sim||Math.abs(f.sim-frames[i-1].sim-1/manifest.fps)>1e-5))throw Error('轨迹时间不连续；接缝应分段声明');frames.push(f);}
@@ -88,11 +88,11 @@ function animate(now){requestAnimationFrame(animate);const delta=Math.max(0,(now
  if(loaded&&status.mode==='replay'){
   const duration=frames.at(-1).sim-frames[0].sim;if(playing)playTime+=delta*speed;if(playTime>duration){if($('loop').checked)playTime%=duration;else{playTime=duration;playing=false;$('play').textContent='播放';}}
   const {index,next,alpha}=playbackBracket(playTime,manifest.fps,frames.length);pose(frames[index],frames[next],alpha);frameIndex=index;status.frame_index=index;status.play_time=playTime;
-  $('seek').value=playTime;$('time').textContent=playTime.toFixed(1)+' / '+duration.toFixed(1)+' s';const tick=frames[index].tick;const grasp=manifest.events?.find(e=>e.kind==='verified_grasp'),release=manifest.events?.find(e=>e.kind==='confirmed_release');$('status').textContent=release&&tick>=release.tick?'已释放':grasp&&tick>=grasp.tick?'已验证抓取 · 运动学搬运':'接近与抓取';
+  $('seek').value=playTime;$('time').textContent=playTime.toFixed(1)+' / '+duration.toFixed(1)+' s';const tick=frames[index].tick;const grasp=manifest.events?.find(e=>e.kind==='verified_grasp'),release=manifest.events?.find(e=>e.kind==='confirmed_release');$('status').textContent=release&&tick>=release.tick?'已释放':grasp&&tick>=grasp.tick?('已验证抓取 · '+(manifest.carry_mode==='physical_grasp'?'物理夹持搬运':'运动学搬运')):'接近与抓取';
  }else if(loaded&&status.mode==='live'&&nextFrame){const alpha=lastFrame?Math.max(0,Math.min(1,(now-34-lastFrame.received)/Math.max(1,nextFrame.received-lastFrame.received))):1;pose(lastFrame,nextFrame,alpha);}
  if(flying)flight.update(delta);else controls.update();renderer.render(scene,camera);raf++;status.rendered_frames++;
  if(now-measureStart>1000){status.browser_render_fps=raf*1000/(now-measureStart);status.receive_fps=received*1000/(now-measureStart);status.receive_bytes_per_second=receivedBytes*1000/(now-measureStart);$('stats').textContent='浏览器 '+status.browser_render_fps.toFixed(1)+' fps'+(status.mode==='live'?' · 接收 '+status.receive_fps.toFixed(1)+' Hz':' · 回放采样 '+(manifest?.fps||'–')+' Hz');raf=received=receivedBytes=0;measureStart=now;}
 }
 addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);});
-const sceneId=params.get('scene')||(params.has('replay')?'replay':'wf01');$('sceneSelect').value=sceneId;
-(wsUrl?live():sceneId==='replay'?replay():/^wf0[1-5]$/.test(sceneId)?staticScene(sceneId):Promise.reject(Error('未知场景'))).catch(fail);requestAnimationFrame(animate);
+const sceneId=params.get('scene')||(params.has('replay')?'replay':'replay_B');$('sceneSelect').value=sceneId;
+(wsUrl?live():sceneId.startsWith('replay')?replay(sceneId):/^wf0[1-5]$/.test(sceneId)?staticScene(sceneId):Promise.reject(Error('未知场景'))).catch(fail);requestAnimationFrame(animate);
