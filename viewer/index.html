@@ -3,7 +3,7 @@
 <title>A-Lab 数字孪生 · 三维场景</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
-:root{--bg:#0d1117;--panel:#161b22;--line:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#ff8a3d}
+:root{--bg:#0d1117;--panel:#161b22;--line:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#ff8a3d;--bad:#f85149}
 *{box-sizing:border-box}
 html,body{margin:0;height:100%;background:var(--bg);color:var(--text);
   font-family:"IBM Plex Sans","Noto Sans SC",system-ui,"PingFang SC",sans-serif}
@@ -16,12 +16,15 @@ canvas{display:block}
 .hud .k{color:var(--accent);font-variant-numeric:tabular-nums}
 .bar{position:fixed;left:0;right:0;bottom:0;padding:8px 14px;background:rgba(22,27,34,.92);
   border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;gap:18px;flex-wrap:wrap}
-#load{position:fixed;inset:0;display:grid;place-items:center;background:var(--bg);z-index:9;font-size:14px}
+#load{position:fixed;inset:0;display:grid;place-items:center;background:var(--bg);z-index:9;
+  font-size:14px;text-align:center;padding:20px;line-height:1.7}
 #load .pct{color:var(--accent);font-variant-numeric:tabular-nums}
+#load .err{color:var(--bad)}
+#load .hint{color:var(--muted);font-size:12.5px;display:block;margin-top:10px}
 a{color:#58a6ff}
 </style>
 <div id="app"></div>
-<div id="load">正在载入场景 <span class="pct">0%</span></div>
+<div id="load">正在载入场景 <span class="pct">0%</span><span class="hint">首次载入约 3 MB，全部资源自同一站点，不依赖外部 CDN</span></div>
 <div class="hud">
   <h1>A-Lab 数字孪生 · 三维场景</h1>
   <p>layout v4 的静态几何，从 Isaac Sim 的 USD 直接导出。</p>
@@ -34,18 +37,35 @@ a{color:#58a6ff}
   <span>同一份几何用于浏览器实时回放：推流 29.0 Hz · 延迟中位 124.5 ms</span>
   <a href="../scenes.html">← 返回展示页</a>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
-<script>
-// OrbitControls and DRACOLoader are not in three.min.js; pull the matching module build for them.
-</script>
 <script type="module">
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
-import {OrbitControls} from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/controls/OrbitControls.js';
-import {GLTFLoader} from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js';
-import {DRACOLoader} from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/DRACOLoader.js';
+// Everything is served from this same origin on purpose: the earlier version pulled three.js and the
+// Draco decoder from jsdelivr/cdnjs, which are slow or unreachable from some networks, and it also
+// loaded three.js twice (a UMD build plus the ES module). One origin, one copy.
+const loadEl = document.getElementById('load');
+const fail = (msg, detail) => {
+  loadEl.innerHTML = '<div><span class="err">' + msg + '</span>'
+    + '<span class="hint">' + (detail || '') + '</span></div>';
+};
+
+let THREE, OrbitControls, GLTFLoader, DRACOLoader;
+try {
+  THREE = await import('./vendor/three.module.js');
+  ({OrbitControls} = await import('./vendor/OrbitControls.js'));
+  ({GLTFLoader} = await import('./vendor/GLTFLoader.js'));
+  ({DRACOLoader} = await import('./vendor/DRACOLoader.js'));
+} catch (err) {
+  fail('three.js 模块载入失败', String(err));
+  throw err;
+}
 
 const app = document.getElementById('app');
-const renderer = new THREE.WebGLRenderer({antialias:true});
+let renderer;
+try {
+  renderer = new THREE.WebGLRenderer({antialias: true});
+} catch (err) {
+  fail('这个浏览器无法创建 WebGL 上下文', '请换一个支持 WebGL2 的浏览器，或检查是否禁用了硬件加速。');
+  throw err;
+}
 renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
 renderer.setSize(innerWidth, innerHeight);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -53,47 +73,43 @@ app.appendChild(renderer.domElement);
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x0d1117);
-
-const camera = new THREE.PerspectiveCamera(45, innerWidth/innerHeight, 0.05, 200);
+const camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.05, 400);
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 
 // The scene is authored Z-up (Isaac); three.js is Y-up, so rotate the root rather than every mesh.
 const root = new THREE.Group();
-root.rotation.x = -Math.PI/2;
+root.rotation.x = -Math.PI / 2;
 scene.add(root);
 
 scene.add(new THREE.HemisphereLight(0xffffff, 0x404a56, 2.2));
 const key = new THREE.DirectionalLight(0xffffff, 1.6); key.position.set(4, 8, 6); scene.add(key);
-const fill = new THREE.DirectionalLight(0xdfe8ff, 0.7); fill.position.set(-6, 4, -4); scene.add(fill);
+const fillL = new THREE.DirectionalLight(0xdfe8ff, 0.7); fillL.position.set(-6, 4, -4); scene.add(fillL);
 
 const draco = new DRACOLoader();
-draco.setDecoderPath('https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/libs/draco/');
+draco.setDecoderPath('./vendor/draco/');
 const loader = new GLTFLoader();
 loader.setDRACOLoader(draco);
 
-const loadEl = document.getElementById('load');
 loader.load('layout_v4_draco.glb', gltf => {
   root.add(gltf.scene);
-  // frame the whole lab: fit the camera to the loaded bounding sphere
-  const box = new THREE.Box3().setFromObject(gltf.scene);
-  const sph = box.getBoundingSphere(new THREE.Sphere());
-  const c = sph.center.clone().applyAxisAngle(new THREE.Vector3(1,0,0), -Math.PI/2);
-  controls.target.copy(c);
-  const d = sph.radius / Math.sin(THREE.MathUtils.degToRad(camera.fov/2));
-  camera.position.set(c.x + d*0.55, c.y + d*0.45, c.z + d*0.55);
-  camera.far = d * 6; camera.updateProjectionMatrix();
+  // frame the whole lab from its bounding sphere, in world space after the Z-up rotation
+  const sph = new THREE.Box3().setFromObject(root).getBoundingSphere(new THREE.Sphere());
+  controls.target.copy(sph.center);
+  const d = sph.radius / Math.sin(THREE.MathUtils.degToRad(camera.fov / 2));
+  camera.position.set(sph.center.x + d * 0.55, sph.center.y + d * 0.45, sph.center.z + d * 0.55);
+  camera.near = Math.max(d / 1000, 0.01); camera.far = d * 8; camera.updateProjectionMatrix();
   loadEl.remove();
 }, ev => {
   if (ev.lengthComputable) {
-    loadEl.querySelector('.pct').textContent = Math.round(ev.loaded/ev.total*100) + '%';
+    loadEl.querySelector('.pct').textContent = Math.round(ev.loaded / ev.total * 100) + '%';
   }
 }, err => {
-  loadEl.textContent = '场景载入失败：' + err;
+  fail('场景文件载入失败', String(err && err.message || err));
 });
 
 addEventListener('resize', () => {
-  camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix();
+  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
   renderer.setSize(innerWidth, innerHeight);
 });
 (function tick(){ requestAnimationFrame(tick); controls.update(); renderer.render(scene, camera); })();
