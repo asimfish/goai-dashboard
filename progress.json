@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-16T04:10+08:00",
+  "updated": "2026-09-16T04:18+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -12,18 +12,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-16T04:10+08:00",
+    "snapshot_at": "2026-09-16T04:18+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 7546,
-        "util": "25%",
+        "used_mib": 19316,
+        "util": "31%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 4057,
-        "util": "15%",
+        "used_mib": 7987,
+        "util": "83%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -280,12 +280,11 @@
   "queue": [
     {
       "id": "Q-collect",
-      "topic": "孪生采集（5090 本机 GPT-6 Astra agent）：A 站 20/20 正式试验、独立复核 11 合格；B/C 暂停，等验收门 G1–G6 全 PASS（首份报告：G1/G4 FAIL、G2 进行中、G3/G5/G6 未完成；C 站天平外移 5/10 cm 试验中）",
-      "owner": "codex@5090（GPT-6 Astra）+ claude 指导/审核",
+      "topic": "孪生采集：A 站 20/20 正式试验（独立复核 11 合格，0 穿模）；B 站 G3 抖动 2/3 stage 4，trial 2 重跑中；C 站待机——A100 容器疑似重建，SSH 主机密钥变更且公钥被拒，三条线目前全部串行在 5090 GPU 0 上。形式化采集仍未开门：`acceptance/release.json` 不存在，`collection_admission.check()` 第一道即拒。",
+      "owner": "codex@5090（GPT-6 Astra）· claude 指导/审核",
+      "eta": "trial 2 重跑约 25 分钟",
       "status": "running",
-      "eta": "2026-09-14",
-      "evidence": "5090:handoff/collection_5090/{acceptance_v3/report.md, benchmark.md, index.jsonl}; scenes.html#alab_twin",
-      "group": "active"
+      "evidence": "5090:/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T0*/episodes/B/{G3_initial_conditions,independent_audit}.json"
     },
     {
       "id": "Q-layout-v4",
@@ -415,6 +414,14 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-16 04:20",
+      "entry": "**B 站 G3 抖动扫描 2/3 通过，并定位两处结构性阻塞（都不是物理问题）**。三份声明计划（±2cm/±10° 内，实际写入 `G3_initial_conditions.json`）：plan00 dx+8.6/dy−13.6 mm、yaw −8.75° → stage 4、落位 1.35 mm；plan01 dx−13.9/dy−9.9 mm、yaw −9.75° → stage 4、落位 1.06 mm；plan02 dx+9.2/dy−1.7 mm、yaw **+4.42°** → stage 3，`release_command_refused`。三次初始条件全部 `passed_initial_conditions`（沉降位移 0.372 mm / 角度 0.937°，门禁 2 mm / 1° 未放宽）。阻塞一：`v4_B_G3_camera_expert.py` 第 37 行强制要求 `--diagnostic`，而判定通过的第 1615 行要求 `not diagnostic`——同一脚本自相矛盾，18 条条件全 true 时唯一未满足项仍是 `not_diagnostic`，结构上不可能出 PASS。阻塞二：`--planner scripted` 时第 1561 行把试次区间塌缩成 `[0]`，`--trials 3` 被静默忽略。另：release 被拒时 `fail()` 丢弃了 `arm.last_result`，具体原因无处可查——已补记 `release_refusal` 后重跑 trial 2。"
+    },
+    {
+      "date": "2026-09-16 04:10",
+      "entry": "**三维查看器接入 B 站真实轨迹**：https://asimfish.github.io/goai-dashboard/viewer/ 默认场景改为「B 站加热链」——2557 帧 / 85.2 秒 / 22 个实体（UR5e 16 连杆 + 坩埚架与 4 个坩埚），由 run `20260916T023716`（G3 抖动试次 1）的 `steps.npz` 直接导出，`decoded_source_max_abs_error: 0.0`（与源数组逐位一致）、`carry_mode: physical_grasp`（非运动学搬运）。导出链路此前一直不通：`export_replay.py` 用 `atol=dt*1e-4` 校验 tick 均匀性，而 `t` 存为 float32——85 秒处一个 ULP 就是 7.6e-6，是该容差的 18 倍，任何超过约 8 秒的 episode 都无法通过。改为校验整数 tick 序号（更严格，真实断点仍会被拒），未放宽任何验收门。"
+    },
     {
       "date": "2026-09-15 17:08",
       "entry": "**B 站完整加热链路首次用真实物理夹持走通**（run 20260916T001245）：开炉门 → 接近（elbow-alt）→ pre-grasp err **0 mm** → 指垫法向力 左 38.26 N / 右 38.18 N、双侧接触 6 tick、grasp confirmed → 架子提起 **92.8 mm** tracking True → lift_clearance 1.6 mm → advance_before_align 1.4 mm → at_furnace_entry 0.6 mm → inside_furnace 3.0 mm → on_measured_shelf 1.4 mm → **stage 4, dp3d 1.2 mm, task_success True**，**1043 张观测图像**。dp3d 从空跑时的 596 mm 降到 1.2 mm；封闭炉膛插入全程 root error 保持 0.6–3.0 mm。**这条线共破六层根因**：碰撞预判把机器人肩部撞自己夹爪 / tool_axis='y' 的臂错用 Franka 姿态配方致工具轴指天 / IK 落进夹爪撞自己大臂的分支（tick 196 穿透 10.42 mm）/ 接近段不收敛（47 mm 全在 y）/ 工具轴再次立起（钳口高出把手 262 mm ≈ 工具偏置 0.27 m）/ 炉口需先前进再横向对准以避开折叠姿态。**每层都靠关节级与接触级实测定案**——中间对根因的三次推断被数据推翻，转折点是要求打印 jaw/handle 三维差向量、夹爪限位与指垫法向力之后，后三层每层只需一两轮即收敛。**三维查看器同步升级**：六场景可切换、自由漫游(F)、wf01/wf04 天平 OmniSurface 透射修复；验收如实标注 appearance_parity=NOT_PASSED（不声称与 RTX 外观一致），外域请求 0、JS 异常 0、replay 数据哈希未变。**场景侧**：A100 已替换 Objaverse 劣质椅子（原模型靠背平躺、荧光绿平涂，Isaac 自身渲染即如此），并在逐图实看时另发现机柜标识倒置一并替换；因导出器将静态几何烘入世界坐标，需从覆盖层重烘 v4 而非叠加新模型，已派发。"
@@ -1111,7 +1118,7 @@
       "lane": "A-Lab 数字孪生与采集",
       "status": "running",
       "owner": "codex@5090（GPT-6 Astra）执行 · claude 指导/审核 · codex@4090 布局/资产",
-      "now": "B 站完整加热链路已通（dp3d 1.2 mm、task_success True、1043 张图像）；三维查看器六场景 + 自由漫游已上线。",
+      "now": "B 站 G3 抖动 2/3 通过（stage 4、落位 1.06–1.35 mm）；trial 2 因开爪指令被拒停在 stage 3，已补上拒绝原因的仪表并重跑。查看器默认播放 B 站加热链真实轨迹（2557 帧，与 NPZ 逐位一致）。",
       "next": "① G3：先摸清 C 站差什么，再三站各三次 ±2cm/±10° 抖动并记录实际 reset 值；② 用这条 task_success 轨迹替换查看器里的诊断回放；③ 重烘 v4 换掉椅子与机柜；④ G3 后 B/C 交给 Astra 跑一轮做横向对照。",
       "link": "scenes.html#alab_twin",
       "link_text": "验收表、四视角渲染、A 站逐条表与视频 →"
