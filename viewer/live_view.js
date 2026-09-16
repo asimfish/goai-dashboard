@@ -94,5 +94,5 @@ function animate(now){requestAnimationFrame(animate);const delta=Math.max(0,(now
  if(now-measureStart>1000){status.browser_render_fps=raf*1000/(now-measureStart);status.receive_fps=received*1000/(now-measureStart);status.receive_bytes_per_second=receivedBytes*1000/(now-measureStart);$('stats').textContent='浏览器 '+status.browser_render_fps.toFixed(1)+' fps'+(status.mode==='live'?' · 接收 '+status.receive_fps.toFixed(1)+' Hz':' · 回放采样 '+(manifest?.fps||'–')+' Hz');raf=received=receivedBytes=0;measureStart=now;}
 }
 addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);});
-const sceneId=params.get('scene')||(params.has('replay')?'replay':'replay_B');$('sceneSelect').value=sceneId;
+const sceneId=params.get('scene')||(params.has('replay')?'replay':'replay_B_g3');$('sceneSelect').value=sceneId;
 (wsUrl?live():sceneId.startsWith('replay')?replay(sceneId):/^wf0[1-5]$/.test(sceneId)?staticScene(sceneId):Promise.reject(Error('未知场景'))).catch(fail);requestAnimationFrame(animate);

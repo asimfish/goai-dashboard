@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-16T11:31+08:00",
+  "updated": "2026-09-16T17:47+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -11,21 +11,23 @@
     "scenes": "scenes.html",
     "b_stages": "https://asimfish.github.io/goai-dashboard/stages.html",
     "viewer_B": "https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_B",
-    "wf01_episode": "https://asimfish.github.io/goai-dashboard/wf01_episode.html"
+    "wf01_episode": "https://asimfish.github.io/goai-dashboard/wf01_episode.html",
+    "viewer_B_g3": "https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_B_g3",
+    "viewer_A_g3": "https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_A_g3"
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-16T11:31+08:00",
+    "snapshot_at": "2026-09-16T17:47+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 19349,
-        "util": "18%",
+        "used_mib": 19320,
+        "util": "4%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 1220,
+        "used_mib": 9346,
         "util": "0%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
@@ -34,13 +36,13 @@
       {
         "mount": "/",
         "used": "97%",
-        "free": "114G",
+        "free": "112G",
         "note": "不写"
       },
       {
         "mount": "/data",
         "used": "100%",
-        "free": "23G",
+        "free": "11G",
         "note": "工作目录 /data/liyufeng/goai_workflows"
       },
       {
@@ -421,6 +423,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-16 18:00",
+      "entry": "**A、B 两站 G3 三组扰动全部独立通过；查看器换上 G3 通过的轨迹；A100 恢复并重建运行时；采集转交 Astra。** G3（5090 本机 agent，脚本专家、真实摩擦夹持、±2 cm/±10° 扰动、阈值未放宽）：A 站 ΔP 1.638 / 0.568 / 0.636 mm、2231 图；B 站 ΔP 1.753 / 1.631 / 1.527 mm、3460 图，原始负分离全 0。B 站此前 015828 版 2/3（开爪净空 4.925 mm < 5 mm）与 103939 版 1/2 完整保留，修法是释放参考改为实测 TCP、修正 ≤3 mm，5 mm 净空门未动。C 站小瓶子与样品架夹持两个子任务通过，完整 C G3 仍 0/3。查看器默认场景改为 B 站 G3 draw00（2646 帧 / 88 s），另加 A 站 G3 draw00（1709 帧 / 57 s、19 个被跟踪物体），两条均与 steps.npz 逐位一致、物理夹持，并通过查看器自身的时间连续性与 SHA 校验。A100：容器重建导致 SSH 主机密钥变更（钥匙本身有效）；图形栈（驱动 580.126.20 + 四个 NVIDIA 图形库 + Vulkan ICD）完好；上次 Isaac 装在 /tmp 已丢失，本次全部装到持久卷。场景依赖闭包 77 文件 389 MB + Scene02 Collect 目录 1.1 GB + 纹理 338 MB 已传到；isaacsim 5.1 走阿里云镜像（实测 13.2 MB/s，清华 2.9）；pip 缓存曾把根分区压到 5.5 GB，已挪到持久卷。Astra 经 5090 反向隧道访问，用 A100 自己的身份，未拷贝任何凭据。采集方向：按用户「交给 Astra 推进、调好相机视角」重写了采集 agent 的 TASK_NOW —— 先把 B 专家的实测几何接进 Astra 入口，再按真实操作过程逐阶段审计相机可见性（把手/装载整体各 ≥2 路固定相机、夹爪 ≥1 路、腕相机含目标），不合格改相机不改任务，然后 B 站 G4 按当前 TCP 重跑、写 release、开 20 次正式 Astra 采集；A 站 Astra 诊断轨迹在 A100 上跑。"
+    },
     {
       "date": "2026-09-16 11:35",
       "entry": "**五个工作流场景的采集跑通了连续 14 个基元**（此前最深 2 个）：https://asimfish.github.io/goai-dashboard/wf01_episode.html —— wf01 称量子任务 `[00]–[12]` 全通过，两瓶试剂的完整循环（取瓶→开盖→倒粉→盖盖→称重→放回）各走一遍，第 14 个基元落位 93.4 mm 超过 80 mm 判定门而止；`t_dose` 20 个基元完成 65%。四处机制性缺陷都是逐 tick 实测定位的，不是调参：①抓取指令把夹爪宽度设成 0，而物体宽 30–100 mm，手指位置目标被推进几何体 15–50 mm/侧 —— 接触力 40,476 N、物体被掀到 121°；改为闭合到实测宽度减 2 mm 预载。②抓取从不校验是否抓住（`rec.held` 无条件赋值），夹空了照样走完流程 —— 逐 tick 显示张开的指尖先把物体撞开、夹爪合上时力停在 2.0 N 空手基线、手举高 18 cm 夹的是空气；加了抬升回读与最多 3 次重抓。③放置瞄的是手不是物体 —— 改为按实测抓持偏移补偿后，放回试剂架的偏差从 179–243 mm 降到 11.2 / 19.1 mm。④松手时在放置高度直接张到 80 mm，每指外扫 38 mm 撞进天平托盘，力 43 N → 8,788 N；改为先张到刚够松开、抬离台面后再全张开。同时发现两处规格与代码不一致：`f_peak_max_n: 20` 是按指垫接触力写的但代码比的是关节反力之和（空手基线就 2 N，真实提起 37–63 N，导致安全成功率恒为 0）；落位门代码用 80 mm 而规格写 20 mm。两者均已如实记录，未擅自改动阈值。"
@@ -1133,7 +1139,7 @@
       "lane": "A-Lab 数字孪生与采集",
       "status": "running",
       "owner": "codex@5090（GPT-6 Astra）执行 · claude 指导/审核 · codex@4090 布局/资产",
-      "now": "wf01 采集连续跑通 14 个基元（两瓶试剂完整循环），落位精度进入 20 mm；wf03–05 正在同一份代码上重跑。B 站 G3 抖动 2/3，trial 2 卡在指垫与坩埚盖 4.925 mm / 门禁 5.000 mm。",
+      "now": "A、B 两站 G3 3/3 独立通过；查看器已换上 G3 轨迹。采集转交 Astra：先接实测几何、再审相机、再开 B 站 20 次正式采集。A100 运行时重建中，冒烟通过后自动开跑 A 站 Astra 诊断。",
       "next": "① G3：先摸清 C 站差什么，再三站各三次 ±2cm/±10° 抖动并记录实际 reset 值；② 用这条 task_success 轨迹替换查看器里的诊断回放；③ 重烘 v4 换掉椅子与机柜；④ G3 后 B/C 交给 Astra 跑一轮做横向对照。",
       "link": "scenes.html#alab_twin",
       "link_text": "验收表、四视角渲染、A 站逐条表与视频 →"
