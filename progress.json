@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-17T00:05+08:00",
+  "updated": "2026-09-17T00:17+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -18,17 +18,17 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-17T00:05+08:00",
+    "snapshot_at": "2026-09-17T00:17+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 15177,
-        "util": "83%",
+        "used_mib": 7545,
+        "util": "25%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 18159,
+        "used_mib": 1204,
         "util": "0%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
