@@ -1,0 +1,906 @@
+{
+ "generated_from": "/data/liyufeng/goai_workflows/subop_library",
+ "segments": [
+  {
+   "id": "SUBOP-A-03",
+   "name": "夹爪张开，移动到源容器预接近位",
+   "g05_stage": 3,
+   "stage_zh": "开爪到预接近位",
+   "actor": "fr3_A",
+   "object": "precursor_1",
+   "station": "A",
+   "source_rows": [
+    "A03.02",
+    "I054"
+   ],
+   "workflow_ids": null,
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T151316_239038588_scripted/episodes/A",
+   "parent_ticks": [
+    300,
+    601
+   ],
+   "dt_s": 0.016666666666666666,
+   "stages": [
+    "G3_after_settle",
+    "pregrasp_hover"
+   ],
+   "boundary_stages": [
+    "G3_after_settle",
+    "pregrasp_hover"
+   ],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+   "unverified_physical_criteria": [
+    "Opening-envelope5mm minimum clearance is not an independently measured per-tick channel; original guard source/enforcement retained, no clearance PASS fabricated."
+   ],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "empty_gripper_no_target_loaded_contacts": true,
+    "no_carried_object_state": true,
+    "preshape_aperture_at_least_contact_width_plus3mm": true
+   },
+   "metrics": {
+    "duration_s": 5.016666666666667,
+    "ticks": 301,
+    "TCP_endpoint_error_mm": 0.17688963271211833,
+    "orientation_endpoint_error_rad": 0.00028368982236151103,
+    "bilateral_fraction": 0.0,
+    "maximum_object_tilt_rad": 3.891457574725353e-07,
+    "final_object_tilt_rad": 3.891457574725353e-07,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": null,
+    "jaw_width_range_m": [
+     0.07995596142318839,
+     0.07996002974588001
+    ],
+    "collision_preflight_refusals": []
+   },
+   "frames": 60,
+   "five_view_sets": 2,
+   "video_bytes": 430364
+  },
+  {
+   "id": "SUBOP-A-04",
+   "name": "沿接近方向到夹持位并闭爪",
+   "g05_stage": 4,
+   "stage_zh": "沿接近方向到夹持位并闭爪",
+   "actor": "fr3_A",
+   "object": "precursor_1",
+   "station": "A",
+   "source_rows": [
+    "A03.02",
+    "I054"
+   ],
+   "workflow_ids": null,
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T151316_239038588_scripted/episodes/A",
+   "parent_ticks": [
+    601,
+    961
+   ],
+   "dt_s": 0.016666666666666666,
+   "stages": [
+    "pregrasp_hover",
+    "before_close",
+    "after_close"
+   ],
+   "boundary_stages": [
+    "pregrasp_hover",
+    "after_close"
+   ],
+   "physical_status": "PASS",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "bilateral_contact_confirmed": true
+   },
+   "metrics": {
+    "duration_s": 6.0,
+    "ticks": 360,
+    "TCP_endpoint_error_mm": 0.20903206313960254,
+    "orientation_endpoint_error_rad": 0.00023761985038810765,
+    "bilateral_fraction": 0.30833333333333335,
+    "maximum_object_tilt_rad": 0.0003518944462864444,
+    "final_object_tilt_rad": 0.00029475300454798496,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.0008973616058938205,
+    "jaw_width_range_m": [
+     0.05560185865578571,
+     0.07996001897045257
+    ],
+    "collision_preflight_refusals": []
+   },
+   "frames": 72,
+   "five_view_sets": 3,
+   "video_bytes": 459603
+  },
+  {
+   "id": "SUBOP-A-05",
+   "name": "确认唯一持有者，提离支撑面并确认物体随臂",
+   "g05_stage": 5,
+   "stage_zh": "确认物理夹持并提离",
+   "actor": "fr3_A",
+   "object": "precursor_1",
+   "station": "A",
+   "source_rows": [
+    "A03.02",
+    "I054"
+   ],
+   "workflow_ids": null,
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T151316_239038588_scripted/episodes/A",
+   "parent_ticks": [
+    961,
+    1141
+   ],
+   "dt_s": 0.016666666666666666,
+   "stages": [
+    "after_close",
+    "lifted"
+   ],
+   "boundary_stages": [
+    "after_close",
+    "lifted"
+   ],
+   "physical_status": "PASS",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "bilateral_transport_fraction_at_least0_8": true,
+    "relative_grip_displacement_within20mm": true,
+    "tilt_within0_25rad": true,
+    "user_lift_strictly_above50mm": true,
+    "original_lift30mm_held0_15s": true
+   },
+   "metrics": {
+    "duration_s": 3.0,
+    "ticks": 180,
+    "TCP_endpoint_error_mm": 0.2030243631452322,
+    "orientation_endpoint_error_rad": 0.0003051434556646019,
+    "bilateral_fraction": 1.0,
+    "maximum_object_tilt_rad": 0.0006606844355226113,
+    "final_object_tilt_rad": 0.000164324752236073,
+    "max_displacement_from_original_grip_m": 2.1376845324994065e-05,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.0008984796586446464,
+    "jaw_width_range_m": [
+     0.05559534346479872,
+     0.05560662891566315
+    ],
+    "collision_preflight_refusals": []
+   },
+   "frames": 36,
+   "five_view_sets": 2,
+   "video_bytes": 254145
+  },
+  {
+   "id": "SUBOP-A-06",
+   "name": "携物沿已规划路线移动；跨站执行接收方锁定/接手",
+   "g05_stage": 6,
+   "stage_zh": "沿路线携行",
+   "actor": "fr3_A",
+   "object": "precursor_1",
+   "station": "A",
+   "source_rows": [
+    "A03.02",
+    "I054"
+   ],
+   "workflow_ids": null,
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T151316_239038588_scripted/episodes/A",
+   "parent_ticks": [
+    1141,
+    2941
+   ],
+   "dt_s": 0.016666666666666666,
+   "stages": [
+    "lifted",
+    "above_balance",
+    "dosing",
+    "above_source"
+   ],
+   "boundary_stages": [
+    "lifted",
+    "above_source"
+   ],
+   "physical_status": "PASS",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "bilateral_transport_fraction_at_least0_8": true,
+    "relative_grip_displacement_within20mm": true,
+    "tilt_within0_25rad": true,
+    "dosing_goal_held2s": true,
+    "object_endpoint_within20mm_of_declared_goal": true,
+    "object_endpoint_tilt_within0_25rad": true
+   },
+   "metrics": {
+    "duration_s": 30.0,
+    "ticks": 1800,
+    "endpoint_position_error_mm": 0.3693226079804147,
+    "TCP_endpoint_error_mm": 0.10533096792642027,
+    "orientation_endpoint_error_rad": 0.00011824402572616507,
+    "bilateral_fraction": 1.0,
+    "maximum_object_tilt_rad": 0.0583950155066313,
+    "final_object_tilt_rad": 0.021297448800952138,
+    "max_displacement_from_original_grip_m": 0.0016030608676373959,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.0009031337685883045,
+    "jaw_width_range_m": [
+     0.055595597817522435,
+     0.055613036012310046
+    ],
+    "dosing_hold_s": 3.7666666666666666,
+    "collision_preflight_refusals": []
+   },
+   "frames": 360,
+   "five_view_sets": 4,
+   "video_bytes": 2232861
+  },
+  {
+   "id": "SUBOP-A-07",
+   "name": "对准目标槽口，降落至支撑/定位面",
+   "g05_stage": 7,
+   "stage_zh": "对准目标位下放",
+   "actor": "fr3_A",
+   "object": "precursor_1",
+   "station": "A",
+   "source_rows": [
+    "I054"
+   ],
+   "workflow_ids": null,
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T151316_239038588_scripted/episodes/A",
+   "parent_ticks": [
+    2941,
+    3117
+   ],
+   "dt_s": 0.016666666666666666,
+   "stages": [
+    "above_source",
+    "before_release"
+   ],
+   "boundary_stages": [
+    "above_source",
+    "before_release"
+   ],
+   "physical_status": "PASS",
+   "physical_numerical_pass": true,
+   "execution_outcome": "guarded_stop_within_tolerance",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "bilateral_transport_fraction_at_least0_8": true,
+    "relative_grip_displacement_within20mm": true,
+    "tilt_within0_25rad": true,
+    "object_endpoint_within20mm_of_declared_goal": true,
+    "object_endpoint_tilt_within0_25rad": true
+   },
+   "metrics": {
+    "duration_s": 2.933333333333333,
+    "ticks": 176,
+    "endpoint_position_error_mm": 6.555495153184938,
+    "TCP_endpoint_error_mm": 6.555692758411169,
+    "orientation_endpoint_error_rad": 0.00033377748276672086,
+    "bilateral_fraction": 1.0,
+    "maximum_object_tilt_rad": 0.02170896018382566,
+    "final_object_tilt_rad": 0.020965071371752197,
+    "max_displacement_from_original_grip_m": 0.000575457641389221,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.0009106427314691246,
+    "jaw_width_range_m": [
+     0.055596157342633734,
+     0.05559823814775566
+    ],
+    "collision_preflight_refusals": [
+     {
+      "tick": 3117,
+      "pass": false,
+      "hits": [
+       {
+        "a": "/World/StationA/precursor_1/model/ReagentBottle004/Collisions/ReagentBottle004_Collider98",
+        "b": "/World/StationA/carousel/turntable_deck",
+        "depth_m": 0.0011271056378918676,
+        "fraction": 1.0
+       }
+      ],
+      "samples": 2,
+      "narrowphase_checks": 587,
+      "prediction_scope": "measured rigid-body geometry, proposed arm-joint samples, held-object rigid transport assumption, current gripper pose plus opening envelope",
+      "releasing_objects_at_current_measured_pose": [],
+      "continuous_certification": false
+     }
+    ]
+   },
+   "frames": 35,
+   "five_view_sets": 2,
+   "video_bytes": 256858
+  },
+  {
+   "id": "SUBOP-A-08",
+   "name": "开爪释放、撤离并检查物体稳定与目标占用",
+   "g05_stage": 8,
+   "stage_zh": "开爪释放、撤离并检查稳定",
+   "actor": "fr3_A",
+   "object": "precursor_1",
+   "station": "A",
+   "source_rows": [
+    "I054"
+   ],
+   "workflow_ids": null,
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T151316_239038588_scripted/episodes/A",
+   "parent_ticks": [
+    3117,
+    3417
+   ],
+   "dt_s": 0.016666666666666666,
+   "stages": [
+    "before_release",
+    "released",
+    "final"
+   ],
+   "boundary_stages": [
+    "before_release",
+    "final"
+   ],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+   "unverified_physical_criteria": [
+    "Opening-envelope5mm minimum clearance is not an independently measured per-tick channel; original guard source/enforcement retained, no clearance PASS fabricated."
+   ],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "object_endpoint_within20mm_of_declared_goal": true,
+    "object_endpoint_tilt_within0_25rad": true,
+    "release_clear_3ticks": true,
+    "stable_at_least0_5s": true,
+    "stable_final": true,
+    "withdrawal150mm_within_original10mm": true
+   },
+   "metrics": {
+    "duration_s": 5.0,
+    "ticks": 300,
+    "endpoint_position_error_mm": 1.6379956898741235,
+    "TCP_endpoint_error_mm": 0.11789009295171127,
+    "orientation_endpoint_error_rad": 0.0001922772465663903,
+    "bilateral_fraction": 0.006666666666666667,
+    "maximum_object_tilt_rad": 0.02803711616196946,
+    "final_object_tilt_rad": 5.638864019043669e-07,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.0009114252170547843,
+    "jaw_width_range_m": [
+     0.05563062694659182,
+     0.07996002433843824
+    ],
+    "collision_preflight_refusals": []
+   },
+   "frames": 60,
+   "five_view_sets": 3,
+   "video_bytes": 382703
+  },
+  {
+   "id": "SUBOP-B-03",
+   "name": "夹爪张开，移动到源容器预接近位",
+   "g05_stage": 3,
+   "stage_zh": "开爪到预接近位",
+   "actor": "ur5e_B",
+   "object": "crucible_rack_2",
+   "station": "B",
+   "source_rows": [
+    "A13.02",
+    "A13.04",
+    "A13.05",
+    "I122"
+   ],
+   "workflow_ids": null,
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T122918_093111776_scripted/episodes/B",
+   "parent_ticks": [
+    2760,
+    6042
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [
+    "handle_initial",
+    "handle_after_preapproach"
+   ],
+   "boundary_stages": [
+    "handle_initial",
+    "handle_after_preapproach"
+   ],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+   "unverified_physical_criteria": [
+    "Opening-envelope5mm minimum clearance is not an independently measured per-tick channel; original guard source/enforcement retained, no clearance PASS fabricated."
+   ],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "empty_gripper_no_target_loaded_contacts": true,
+    "no_carried_object_state": true,
+    "preshape_aperture_at_least_contact_width_plus3mm": true
+   },
+   "metrics": {
+    "duration_s": 13.674999999999999,
+    "ticks": 3282,
+    "TCP_endpoint_error_mm": 0.007838860256015323,
+    "orientation_endpoint_error_rad": 0.00015819184738481926,
+    "bilateral_fraction": 0.0,
+    "maximum_object_tilt_rad": 4.222579990418213e-07,
+    "final_object_tilt_rad": 4.222579990418213e-07,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": null,
+    "jaw_width_range_m": [
+     0.01997574563019855,
+     0.02000001948109309
+    ],
+    "collision_preflight_refusals": []
+   },
+   "frames": 164,
+   "five_view_sets": 2,
+   "video_bytes": 1302362
+  },
+  {
+   "id": "SUBOP-B-04",
+   "name": "沿接近方向到夹持位并闭爪",
+   "g05_stage": 4,
+   "stage_zh": "沿接近方向到夹持位并闭爪",
+   "actor": "ur5e_B",
+   "object": "crucible_rack_2",
+   "station": "B",
+   "source_rows": [
+    "A13.06",
+    "I122"
+   ],
+   "workflow_ids": null,
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T122918_093111776_scripted/episodes/B",
+   "parent_ticks": [
+    6042,
+    7602
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [
+    "handle_after_preapproach",
+    "handle_before_close",
+    "handle_after_close"
+   ],
+   "boundary_stages": [
+    "handle_after_preapproach",
+    "handle_after_close"
+   ],
+   "physical_status": "PASS",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "bilateral_contact_confirmed": true
+   },
+   "metrics": {
+    "duration_s": 6.5,
+    "ticks": 1560,
+    "TCP_endpoint_error_mm": 0.017619197024032474,
+    "orientation_endpoint_error_rad": 8.44527303857727e-05,
+    "bilateral_fraction": 0.375,
+    "maximum_object_tilt_rad": 4.459404215204392e-05,
+    "final_object_tilt_rad": 4.459404215204392e-05,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.0003655781620182097,
+    "jaw_width_range_m": [
+     0.01275687691613625,
+     0.019999611816708285
+    ],
+    "collision_preflight_refusals": []
+   },
+   "frames": 78,
+   "five_view_sets": 3,
+   "video_bytes": 554655
+  },
+  {
+   "id": "SUBOP-B-05",
+   "name": "确认唯一持有者，提离支撑面并确认物体随臂",
+   "g05_stage": 5,
+   "stage_zh": "确认物理夹持并提离",
+   "actor": "ur5e_B",
+   "object": "crucible_rack_2",
+   "station": "B",
+   "source_rows": [
+    "A13.08",
+    "I122"
+   ],
+   "workflow_ids": null,
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T122918_093111776_scripted/episodes/B",
+   "parent_ticks": [
+    7602,
+    8322
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [
+    "handle_after_close",
+    "handle_after_lift",
+    "lifted"
+   ],
+   "boundary_stages": [
+    "handle_after_close",
+    "lifted"
+   ],
+   "physical_status": "PASS",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "bilateral_transport_fraction_at_least0_8": true,
+    "relative_grip_displacement_within20mm": true,
+    "tilt_within0_25rad": true,
+    "user_lift_strictly_above50mm": true,
+    "original_lift30mm_held0_15s": true
+   },
+   "metrics": {
+    "duration_s": 3.0,
+    "ticks": 720,
+    "TCP_endpoint_error_mm": 0.7154045742936432,
+    "orientation_endpoint_error_rad": 0.0026992207162842316,
+    "bilateral_fraction": 1.0,
+    "maximum_object_tilt_rad": 0.03806261896033845,
+    "final_object_tilt_rad": 0.03770934978294828,
+    "max_displacement_from_original_grip_m": 0.0061832149513065815,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.0003349032485857606,
+    "jaw_width_range_m": [
+     0.012756820397669566,
+     0.013360545397673729
+    ],
+    "collision_preflight_refusals": []
+   },
+   "frames": 36,
+   "five_view_sets": 3,
+   "video_bytes": 309627
+  },
+  {
+   "id": "SUBOP-B-06",
+   "name": "携物沿已规划路线移动；跨站执行接收方锁定/接手",
+   "g05_stage": 6,
+   "stage_zh": "沿路线携行",
+   "actor": "ur5e_B",
+   "object": "crucible_rack_2",
+   "station": "B",
+   "source_rows": [
+    "A13.09",
+    "A13.10",
+    "I122"
+   ],
+   "workflow_ids": null,
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T122918_093111776_scripted/episodes/B",
+   "parent_ticks": [
+    8322,
+    12642
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [
+    "handle_after_lift",
+    "lifted",
+    "lift_clearance",
+    "advance_before_align",
+    "at_furnace_entry",
+    "inside_furnace"
+   ],
+   "boundary_stages": [
+    "handle_after_lift",
+    "inside_furnace"
+   ],
+   "physical_status": "PASS",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "bilateral_transport_fraction_at_least0_8": true,
+    "relative_grip_displacement_within20mm": true,
+    "tilt_within0_25rad": true,
+    "furnace_open_during_insertion": true,
+    "object_endpoint_within20mm_of_declared_goal": true,
+    "object_endpoint_tilt_within0_25rad": true,
+    "four_free_cups_retained": true
+   },
+   "metrics": {
+    "duration_s": 18.0,
+    "ticks": 4320,
+    "endpoint_position_error_mm": 2.4338449347270634,
+    "TCP_endpoint_error_mm": 3.080695867538452,
+    "orientation_endpoint_error_rad": 0.004528782479598151,
+    "bilateral_fraction": 1.0,
+    "maximum_object_tilt_rad": 0.05512360949408086,
+    "final_object_tilt_rad": 0.05466595007217298,
+    "max_displacement_from_original_grip_m": 0.009404792450368404,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.0003660134971141815,
+    "jaw_width_range_m": [
+     0.013356999333331343,
+     0.013664081190484456
+    ],
+    "collision_preflight_refusals": []
+   },
+   "frames": 216,
+   "five_view_sets": 6,
+   "video_bytes": 1636718
+  },
+  {
+   "id": "SUBOP-B-07",
+   "name": "对准目标槽口，降落至支撑/定位面",
+   "g05_stage": 7,
+   "stage_zh": "对准目标位下放",
+   "actor": "ur5e_B",
+   "object": "crucible_rack_2",
+   "station": "B",
+   "source_rows": [
+    "A13.11",
+    "I122"
+   ],
+   "workflow_ids": null,
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T122918_093111776_scripted/episodes/B",
+   "parent_ticks": [
+    12642,
+    13602
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [
+    "inside_furnace",
+    "on_measured_shelf"
+   ],
+   "boundary_stages": [
+    "inside_furnace",
+    "on_measured_shelf"
+   ],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+   "unverified_physical_criteria": [
+    "Pre-release5mm shelf-footprint margin/0–4mm gap stored by controller; no independent collider reconstruction performed in this CPU phase audit."
+   ],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "bilateral_transport_fraction_at_least0_8": true,
+    "relative_grip_displacement_within20mm": true,
+    "tilt_within0_25rad": true,
+    "object_endpoint_within20mm_of_declared_goal": true,
+    "object_endpoint_tilt_within0_25rad": true,
+    "four_free_cups_retained": true
+   },
+   "metrics": {
+    "duration_s": 4.0,
+    "ticks": 960,
+    "endpoint_position_error_mm": 9.61704878692103,
+    "TCP_endpoint_error_mm": 2.275762613862753,
+    "orientation_endpoint_error_rad": 0.00336426016293325,
+    "bilateral_fraction": 1.0,
+    "maximum_object_tilt_rad": 0.05502375255091358,
+    "final_object_tilt_rad": 0.04900388003139173,
+    "max_displacement_from_original_grip_m": 0.009377246722579002,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.00036180720780976117,
+    "jaw_width_range_m": [
+     0.013500021724623945,
+     0.013662480867416171
+    ],
+    "collision_preflight_refusals": []
+   },
+   "frames": 48,
+   "five_view_sets": 2,
+   "video_bytes": 391367
+  },
+  {
+   "id": "SUBOP-B-08",
+   "name": "开爪释放、撤离并检查物体稳定与目标占用",
+   "g05_stage": 8,
+   "stage_zh": "开爪释放、撤离并检查稳定",
+   "actor": "ur5e_B",
+   "object": "crucible_rack_2",
+   "station": "B",
+   "source_rows": [
+    "A13.13",
+    "I122"
+   ],
+   "workflow_ids": null,
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T122918_093111776_scripted/episodes/B",
+   "parent_ticks": [
+    13602,
+    20322
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [
+    "on_measured_shelf",
+    "released_on_shelf",
+    "outside_full_open",
+    "withdrawn"
+   ],
+   "boundary_stages": [
+    "on_measured_shelf",
+    "withdrawn"
+   ],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+   "unverified_physical_criteria": [
+    "Opening-envelope5mm minimum clearance is not an independently measured per-tick channel; original guard source/enforcement retained, no clearance PASS fabricated."
+   ],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "object_endpoint_within20mm_of_declared_goal": true,
+    "object_endpoint_tilt_within0_25rad": true,
+    "four_free_cups_retained": true,
+    "release_clear_3ticks": true,
+    "stable_at_least0_5s": true,
+    "stable_final": true,
+    "empty_tool_outside_door_plane150mm": true
+   },
+   "metrics": {
+    "duration_s": 28.0,
+    "ticks": 6720,
+    "endpoint_position_error_mm": 1.7531687906571172,
+    "TCP_endpoint_error_mm": 0.013873933312424924,
+    "orientation_endpoint_error_rad": 5.507095829395816e-05,
+    "bilateral_fraction": 0.004910714285714286,
+    "maximum_object_tilt_rad": 0.05247508797912972,
+    "final_object_tilt_rad": 1.576990670600291e-07,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.00037142119253985584,
+    "jaw_width_range_m": [
+     0.013509316947487138,
+     0.020001412514798256
+    ],
+    "collision_preflight_refusals": []
+   },
+   "frames": 336,
+   "five_view_sets": 4,
+   "video_bytes": 2316234
+  }
+ ]
+}

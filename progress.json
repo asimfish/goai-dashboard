@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-16T23:57+08:00",
+  "updated": "2026-09-17T00:05+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -13,16 +13,17 @@
     "viewer_B": "https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_B",
     "wf01_episode": "https://asimfish.github.io/goai-dashboard/wf01_episode.html",
     "viewer_B_g3": "https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_B_g3",
-    "viewer_A_g3": "https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_A_g3"
+    "viewer_A_g3": "https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_A_g3",
+    "subops": "https://asimfish.github.io/goai-dashboard/subops.html"
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-16T23:57+08:00",
+    "snapshot_at": "2026-09-17T00:05+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 15179,
-        "util": "62%",
+        "used_mib": 15177,
+        "util": "83%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
@@ -36,7 +37,7 @@
       {
         "mount": "/",
         "used": "97%",
-        "free": "110G",
+        "free": "109G",
         "note": "不写"
       },
       {
@@ -330,7 +331,7 @@
       "owner": "codex@5090（goai_子操作集合）· claude 指导",
       "status": "running",
       "eta": "指垫补测后开新采",
-      "evidence": "5090:/data/liyufeng/goai_workflows/subop_library/{PROGRESS.md,registration_report.md,index.jsonl}",
+      "evidence": "https://asimfish.github.io/goai-dashboard/subops.html; 5090:subop_library/{registration_report.md,index.jsonl}",
       "group": "active"
     },
     {
@@ -881,6 +882,10 @@
     {
       "date": "2026-09-17 00:15",
       "entry": "**五个工作流统一到 v4 孪生场景；Astra 周额度用完，09-23 才恢复。** 用户指出，五个工作流的采集场景和 v4 孪生不是同一个场景。核实结果：wf01–wf05 用的是 09-11 各自重建的 `room_mounted.usda`，它由 lab_clean 改出，每个工作流一台 FR3。已决定只在 v4 孪生（Scene02 + A/B/C 三站）里采，映射表见 `final_round/workflow_v4_map.json`：wf01（称量 → 研磨 → 装坩埚 → 入炉 → 存放）和 wf02（小瓶回收 → 样品台 → XRD → 废弃）在 v4 里可完整覆盖；wf03 改为 A-Lab 乙醇浆料加干燥；wf04 只做称量、入炉、钳取；wf05 改用储液架、开合盖和废弃容器。v4 里没有的仪器不采，也不虚构。看板的工作流表和缩略图已改为 v4 实拍帧，旧场景的状态不再覆盖新状态。Astra：5090 和 A100 是同一个 pro 账号，周额度已用完（429 usage_limit_reached，09-23 04:03 恢复），B 站 Astra 诊断两次都在集前被拒。C 站 draw01 在 A100 上第一次启动时缺 fcl，原因是交接包漏了 `layout_v3/audit/deps`；补齐后已重跑。"
+    },
+    {
+      "date": "2026-09-17 00:35",
+      "entry": "**子操作轨迹库上线：** https://asimfish.github.io/goai-dashboard/subops.html —— 已登记的 12 段各有站位相机实录视频、起止帧（站位 / 正面 / 腕部）和独立审计数值。A 站 FR3 搬试剂瓶 6 段（预接近 → 闭爪 → 提离 → 携行到投料位并返回 → 下放 → 释放撤离），B 站 UR5e 搬坩埚架 6 段（同样六步，终点在炉膛搁板）。物理判据 7 段通过、5 段部分通过；部分通过的原因逐段写明（开爪 5 mm 净空、搁板边距只有原执行器记录，本轮未独立重算）。这些片段都切自已通过 G3 的脚本轨迹，不是新采集，也没有 Astra 调用；完整准入 0/12，因为视觉可见性统计还在补测。"
     }
   ],
   "contract": [
@@ -1262,8 +1267,8 @@
       "owner": "goai_子操作集合@5090/A100 · claude",
       "now": "五个工作流只在 v4 A-Lab 孪生里采，09-11 各自重建的旧场景已停用。映射结果：wf01、wf02 在 v4 里可以完整做；wf03、wf04、wf05 只能做 v4 里有仪器的那几步。已有数据都来自 G3：wf01 的称量和入炉、wf02 的 C 站小瓶与 XRD。子操作库正在按这张映射表给每一行、每一段标上所属工作流。",
       "next": "① 标注完成后补 wf01 的研磨 → 装坩埚 → 存放三步，以及 wf02 的废弃处置；② Astra 额度 09-23 04:03 才恢复，在此之前要么只做不调模型的脚本专家采集，要么换账号，由用户决定；③ 是否给 v4 增加搅拌台、离心机、试剂柜等仪器，由用户决定。",
-      "link": "#m",
-      "link_text": "五个工作流 × v4 映射 →"
+      "link": "subops.html",
+      "link_text": "子操作轨迹库（12 段视频与审计） →"
     }
   ]
 }
