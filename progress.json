@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-16T21:21+08:00",
+  "updated": "2026-09-16T22:02+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -17,12 +17,12 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-16T21:21+08:00",
+    "snapshot_at": "2026-09-16T22:02+08:00",
     "gpus": [
       {
         "index": 0,
         "used_mib": 19316,
-        "util": "39%",
+        "util": "11%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
@@ -36,14 +36,14 @@
       {
         "mount": "/",
         "used": "97%",
-        "free": "111G",
+        "free": "110G",
         "note": "不写"
       },
       {
         "mount": "/data",
         "used": "100%",
-        "free": "9.4G",
-        "note": "工作目录；21:20 已把 1.2 GB 已送达 A100 的传输包移到 NAS（lyf/goai_transfer）"
+        "free": "13G",
+        "note": "工作目录；21:20 我把已送达 A100 的 1.2 GB 传输包移到 NAS，21:47 本机 agent 无损去重释放 2.8 GB"
       },
       {
         "mount": "/mnt/nas/data",
@@ -60,16 +60,16 @@
         "log": "alab_twin_collect/CHANGES.md"
       },
       {
-        "name": "子操作 agent「goai_子操作集合」：首批 12 段已登记，等待相机 / A100 就绪",
-        "state": "ok",
-        "since": "09-16 20:58",
+        "name": "子操作 agent「goai_子操作集合」：第 2 轮，在 A100 上做 A 站相机分割审计",
+        "state": "running",
+        "since": "09-16 22:10",
         "log": "subop_library/PROGRESS.md"
       },
       {
-        "name": "A100 相机候选渲染（A/B）：渲染器报 CUDA bad state，已停",
-        "state": "blocked",
-        "since": "09-16 21:14",
-        "log": "A100:goai_a100/cam2.log"
+        "name": "A100：渲染器已修通（单卡设备隔离）；A/B 候选相机已渲染；子操作 agent 接着做 A 站分割审计",
+        "state": "running",
+        "since": "09-16 21:40",
+        "log": "A100:goai_a100/cam3.log"
       },
       {
         "name": "5090→A100 反向隧道（A100 走 5090 代理调用 Astra）",
@@ -295,7 +295,7 @@
   "queue": [
     {
       "id": "Q-collect",
-      "topic": "孪生采集（转交 Astra）：G3 A 3/3、B 3/3、C 1/3。B 站 Astra 诊断 1 次：夹持、起升、搬运、入炉都是物理过程，0 穿模，搬运倾角 0.057 rad；落位偏差 10.3 mm，未关门，未退爪 → stage 3。18:47:54 代理上游中断，本次试次因此出现 13 次 SSLError，调用预算被耗掉，已要求把网络失败记为 infra_failure、不计入试次。正式采集仍未开始：`acceptance/release.json` 还不存在。",
+      "topic": "孪生采集（转交 Astra）：G3 A 3/3、B 3/3、C 1/3。B 站 Astra 诊断 1 次：夹持、起升、搬运、入炉都是物理过程，0 穿模，搬运倾角 0.057 rad；落位偏差 10.3 mm，未关门，未退爪 → stage 3。18:47:54 代理上游中断，本次试次因此出现 13 次 SSLError，调用预算被耗掉，已要求把网络失败记为 infra_failure、不计入试次。正式采集仍未开始：`acceptance/release.json` 还不存在。 21:17：本机 agent 已声明 infra_policy_v1（端点探测不通就不开集；传输失败不占决策槽，连续 3 次暂停并记为 infra_failure；任务失败照常计入分母），并把 UR 可达提示改成 G3 实测包络（B 站 TCP 0.506–0.944 m）。21:47：旧诊断接触日志无损去重，释放 2.8 GB。",
       "owner": "codex@5090（GPT-6 Astra）· claude 指导/审核",
       "eta": "B 站 release 过门后开正式 20 次",
       "status": "running",
@@ -312,29 +312,29 @@
     },
     {
       "id": "Q-a100",
-      "topic": "A100 运行时：conda isaac51（torch 2.7.0+cu126、isaacsim 5.1.0）、psilab 完整源码、场景依赖（含今晚补传的 layout_v4 房间 61 个文件）都已就位；bwrap 沙箱里 CUDA 和 torch 测试通过。阻塞：Kit 渲染器对 8 张卡都报 “Skipping NVIDIA GPU due CUDA being in bad state”，找不到可用设备，相机候选渲染没出图，冒烟标记也还没写。",
+      "topic": "A100 运行时已可用（21:40 修通）。原因：设置 `CUDA_VISIBLE_DEVICES` 后，Kit 渲染器把每张卡都判成 “CUDA bad state”，不出图，PhysX 退回 CPU；沙箱外复现结果相同，所以不是沙箱的问题。修法：沙箱只挂载目标卡的 /dev/nvidiaN，不再设置该变量；渲染器显示 `Yes: 0`，其他人的卡显存没有变化。同时补传了 layout_v4 房间（61 个文件）和资产贴图（17 个目录，102 MB）。A、B 两站的候选相机已渲染完成（A 两轮，B 一轮）。",
       "owner": "claude",
-      "status": "blocked",
-      "eta": "排查中",
-      "evidence": "A100:~/liyufeng/goai_a100/{cam2.log,cam_A.log,cam_B.log}; twin/gpu_probe.py",
-      "group": "blocked"
+      "status": "ok",
+      "eta": "已可用；A 站相机审计进行中",
+      "evidence": "A100:~/liyufeng/goai_a100/{twin/a100_launch.sh,cam2.log,cam3.log}; 5090:goai_assets/handoff/collection_astra/camera_candidates_{A_r1,B_r1,A_r2}_20260916.jpg",
+      "group": "active"
     },
     {
       "id": "Q-subop",
-      "topic": "子操作库（新 agent「goai_子操作集合」）：585/585 行操作矩阵（A 29 / B 432 / C 124；B 含 112 条非物理编排项）。经你批准的首批 12 段已登记，均复用已有的 A/B G3 轨迹：物理数值 12/12 通过，完整物理判定 7 通过 / 5 部分通过，视觉准入 0/12（缺阶段统计）；1681 张图、12 段视频，已归档并逐文件回读。这 12 段只是登记，不是新采集。",
+      "topic": "子操作库（新 agent「goai_子操作集合」）：585/585 行操作矩阵（A 29 / B 432 / C 124；B 含 112 条非物理编排项）。经你批准的首批 12 段已登记，均复用已有的 A/B G3 轨迹：物理数值 12/12 通过，完整物理判定 7 通过 / 5 部分通过，视觉准入 0/12（缺阶段统计）；1681 张图、12 段视频，已归档并逐文件回读。这 12 段只是登记，不是新采集。 22:10 起第 2 轮：在 A100 上做 A 站相机分割审计（两套配置），结果同时补进 A 段的视觉准入统计。",
       "owner": "codex@5090（goai_子操作集合）· claude 指导",
-      "status": "partial",
+      "status": "running",
       "eta": "相机与 A100 就绪后开新采",
       "evidence": "5090:/data/liyufeng/goai_workflows/subop_library/{PROGRESS.md,registration_report.md,index.jsonl}",
       "group": "active"
     },
     {
       "id": "Q-cam",
-      "topic": "Astra 相机视角审核：按阶段做实例分割，要求把手和装载物至少各被 2 个固定视角看到、夹爪至少 1 个、腕部相机能看到目标。B 站调整后 10/10 阶段通过（station_b 焦距 18→36 mm，b_side 机位前移，焦距改 15 mm）；A 站腕部相机被 fr3_hand 挡住（注视点只在前方 0.17 m），正面机位太远，候选机位已给出，待渲染对比。",
+      "topic": "Astra 相机视角：B 站以本机 agent 21:16 的版本为准（10/10 阶段通过；我给的两个 b_side 候选拍不到炉内，已作废）。A 站两轮候选：近景正面 cand_a_front_close2 在 10 个阶段都能同时看到夹爪、瓶子、坩埚架、天平和干燥箱，推荐采用；斜俯视 cand_a_top_oblique 推荐替换原先过远的 a_top。更正：之前说 A 站腕相机“被挡”不对，画面里的白色是下方的转盘；腕相机候选 cand_wrist_back 能拍到手指和瓶盖，是否替换原机位交给分割审计决定。A 站逐阶段分割审计已交给子操作 agent 在 A100 上做。",
       "owner": "codex@5090 · claude 审核",
-      "status": "partial",
-      "eta": "A 站候选随 A100 渲染修通",
-      "evidence": "5090:goai_assets/handoff/collection_astra/astra_camera_review_20260916.md; cameras_fixed_v4_B_dynamic_20260916.json",
+      "status": "running",
+      "eta": "A 站审计完成后定版",
+      "evidence": "5090:goai_assets/handoff/collection_astra/astra_camera_review_20260916.md（21:55 / 22:05 节）; cameras_candidates_A_r2_20260916.json",
       "group": "active"
     },
     {
@@ -864,6 +864,10 @@
     {
       "date": "2026-09-16 21:30",
       "entry": "**晚间进展：C 站 G3 首次完整通过，B 站第一次 Astra 诊断把坩埚架送进了炉膛，但没有过门。** C 站 draw00（18:00，独立复核）：小瓶和样品架都到 stage 4，ΔP 7.340 / 0.908 mm；样品架搬运最大倾角 0.093 rad，双侧接触 99.5%，原始负分离 0；XRD 窗开到 0.480 m 保持 3 s，释放、空手退出、关窗全部通过。C 站目前 1/3，剩余两组按分工交 A100。B 站（18:22 起）：Astra 入口接入 G3 实测合同，CPU 合同检查 10/10 通过。诊断试次 B_trial000 共 16,867 tick，全程 0 穿模，搬运倾角 0.057 rad；但落位偏差 10.3 mm，炉门未关，夹爪未退出，判为 stage 3。18:47:54 旧订阅上游中断，本试次出现 13 次 SSLError，调用预算被耗尽。已换新订阅（运行时热加载，Ai+ 走新加坡），并要求网络失败记为 infra_failure、不计入试次。B 站相机（21:16）：station_b 焦距 18→36 mm，b_side 机位前移，10/10 阶段满足可见性要求（把手 ≥2 个固定视角、装载物 ≥3、指垫 ≥1、腕部 10/10），原始机位 0/10 和 v7 5/10 的失败记录都保留。子操作库：585 行矩阵，首批 12 段已登记（复用已有 G3 轨迹，物理判定 7 通过 / 5 部分，视觉准入 0/12），不算新采集。A100：补传了 layout_v4 房间文件（G3 计划引用、首批漏传）；沙箱里 CUDA/torch 正常，但 Kit 渲染器报 “CUDA bad state”，还没出图，正在排查。所有门限（G3 2 mm / 1°、5 mm 开爪净空）都没有放宽。"
+    },
+    {
+      "date": "2026-09-16 22:15",
+      "entry": "**A100 渲染修通，A、B 两站候选相机已渲染。** A100 上 Kit 渲染器此前把 8 张卡都判成 “CUDA being in bad state”，不出图，PhysX 退回 CPU。已排除的原因：沙箱（在沙箱外复现结果相同）、MPS（本机没有 MPS 守护）、驱动图形库（与内核模块同为 580.126.20）；进程内 cuInit 也正常。真正原因是设置了 `CUDA_VISIBLE_DEVICES`：不设这个变量时渲染器能正常起来，但会在所有卡上各占约 420 MB。最终做法是沙箱里只挂载目标卡的设备节点，渲染器显示 `Yes: 0`，其他卡显存没有变化。另外补传了 G3 计划引用、首批漏传的 layout_v4 房间（61 个文件）和资产贴图（102 MB）。相机结论：B 站以本机 agent 21:16 的动态相机为准；A 站推荐近景正面和斜俯视两个新机位。更正早先“A 站腕相机被挡”的判断：画面里的白色是转盘，不是遮挡物。A 站逐阶段分割审计已交给子操作 agent 在 A100 上做。"
     }
   ],
   "contract": [
