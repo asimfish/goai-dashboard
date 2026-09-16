@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-16T18:32+08:00",
+  "updated": "2026-09-16T21:21+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -17,17 +17,17 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-16T18:32+08:00",
+    "snapshot_at": "2026-09-16T21:21+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 19572,
-        "util": "6%",
+        "used_mib": 19316,
+        "util": "39%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 9346,
+        "used_mib": 1220,
         "util": "0%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
@@ -42,8 +42,8 @@
       {
         "mount": "/data",
         "used": "100%",
-        "free": "11G",
-        "note": "工作目录 /data/liyufeng/goai_workflows"
+        "free": "9.4G",
+        "note": "工作目录；21:20 已把 1.2 GB 已送达 A100 的传输包移到 NAS（lyf/goai_transfer）"
       },
       {
         "mount": "/mnt/nas/data",
@@ -54,22 +54,28 @@
     ],
     "runs": [
       {
-        "name": "5090 本机 Astra agent：v3 场景验收门运行时测试（G2 炉门/入口扫掠 → G3 脚本专家），GPU 0",
+        "name": "5090 本机 agent「goai」：B 站 Astra 释放 / 相机动态验收，GPU 0 单实例",
         "state": "running",
-        "since": "09-13 16:48",
-        "log": "handoff/collection_5090/acceptance_v3/"
+        "since": "09-16 18:22",
+        "log": "alab_twin_collect/CHANGES.md"
       },
       {
-        "name": "claude 监视器：每 10 min 轮询验收报告 / B、C 试验 / 布局缺陷文件，变化即拉取并更新页面",
-        "state": "running",
-        "since": "09-13 17:25",
-        "log": "scratchpad/watch_accept.log"
-      },
-      {
-        "name": "claude 自己的 GPU 链（chain 9–15）已全部停止，GPU 0 让给 5090 agent",
+        "name": "子操作 agent「goai_子操作集合」：首批 12 段已登记，等待相机 / A100 就绪",
         "state": "ok",
-        "since": "09-13 03:00",
-        "log": "recon/STOP_CHAIN15"
+        "since": "09-16 20:58",
+        "log": "subop_library/PROGRESS.md"
+      },
+      {
+        "name": "A100 相机候选渲染（A/B）：渲染器报 CUDA bad state，已停",
+        "state": "blocked",
+        "since": "09-16 21:14",
+        "log": "A100:goai_a100/cam2.log"
+      },
+      {
+        "name": "5090→A100 反向隧道（A100 走 5090 代理调用 Astra）",
+        "state": "running",
+        "since": "09-16",
+        "log": "_shared/a100_tunnel.log"
       }
     ]
   },
@@ -289,11 +295,47 @@
   "queue": [
     {
       "id": "Q-collect",
-      "topic": "孪生采集：A 站 20/20 正式试验（独立复核 11 合格，0 穿模）；B 站 G3 抖动 2/3 stage 4，trial 2 重跑中；C 站待机——A100 容器疑似重建，SSH 主机密钥变更且公钥被拒，三条线目前全部串行在 5090 GPU 0 上。形式化采集仍未开门：`acceptance/release.json` 不存在，`collection_admission.check()` 第一道即拒。",
+      "topic": "孪生采集（转交 Astra）：G3 A 3/3、B 3/3、C 1/3。B 站 Astra 诊断 1 次：夹持、起升、搬运、入炉都是物理过程，0 穿模，搬运倾角 0.057 rad；落位偏差 10.3 mm，未关门，未退爪 → stage 3。18:47:54 代理上游中断，本次试次因此出现 13 次 SSLError，调用预算被耗掉，已要求把网络失败记为 infra_failure、不计入试次。正式采集仍未开始：`acceptance/release.json` 还不存在。",
       "owner": "codex@5090（GPT-6 Astra）· claude 指导/审核",
-      "eta": "trial 2 重跑约 25 分钟",
+      "eta": "B 站 release 过门后开正式 20 次",
       "status": "running",
-      "evidence": "5090:/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T0*/episodes/B/{G3_initial_conditions,independent_audit}.json"
+      "evidence": "5090:alab_twin_collect/runs/20260916T181258_081152400_astra-loop/episodes/B_trial000/independent_audit.json; CHANGES.md 18:00 / 18:22 / 20:54 / 21:16; TASK_NOW.md 17:50 + 18:40/18:55 补充"
+    },
+    {
+      "id": "Q-proxy",
+      "topic": "5090 代理：18:47:54 旧订阅上游中断，所有 agent 都断了网。已按你给的新订阅，通过 mihomo 控制接口热加载（端口、TUN、局域网设置都没动），Ai+ 分组选新加坡节点（OpenAI 不服务香港）。这次改动只在运行时生效；clash-verge 重启后会回到旧订阅，要长期生效，需要你在 GUI 里导入新订阅。",
+      "owner": "需你确认（GUI 导入）",
+      "status": "partial",
+      "eta": "运行中",
+      "evidence": "5090:~liyufeng/.config/goai_verge/{README.md,apply_record.json}（不含订阅地址）",
+      "group": "decide"
+    },
+    {
+      "id": "Q-a100",
+      "topic": "A100 运行时：conda isaac51（torch 2.7.0+cu126、isaacsim 5.1.0）、psilab 完整源码、场景依赖（含今晚补传的 layout_v4 房间 61 个文件）都已就位；bwrap 沙箱里 CUDA 和 torch 测试通过。阻塞：Kit 渲染器对 8 张卡都报 “Skipping NVIDIA GPU due CUDA being in bad state”，找不到可用设备，相机候选渲染没出图，冒烟标记也还没写。",
+      "owner": "claude",
+      "status": "blocked",
+      "eta": "排查中",
+      "evidence": "A100:~/liyufeng/goai_a100/{cam2.log,cam_A.log,cam_B.log}; twin/gpu_probe.py",
+      "group": "blocked"
+    },
+    {
+      "id": "Q-subop",
+      "topic": "子操作库（新 agent「goai_子操作集合」）：585/585 行操作矩阵（A 29 / B 432 / C 124；B 含 112 条非物理编排项）。经你批准的首批 12 段已登记，均复用已有的 A/B G3 轨迹：物理数值 12/12 通过，完整物理判定 7 通过 / 5 部分通过，视觉准入 0/12（缺阶段统计）；1681 张图、12 段视频，已归档并逐文件回读。这 12 段只是登记，不是新采集。",
+      "owner": "codex@5090（goai_子操作集合）· claude 指导",
+      "status": "partial",
+      "eta": "相机与 A100 就绪后开新采",
+      "evidence": "5090:/data/liyufeng/goai_workflows/subop_library/{PROGRESS.md,registration_report.md,index.jsonl}",
+      "group": "active"
+    },
+    {
+      "id": "Q-cam",
+      "topic": "Astra 相机视角审核：按阶段做实例分割，要求把手和装载物至少各被 2 个固定视角看到、夹爪至少 1 个、腕部相机能看到目标。B 站调整后 10/10 阶段通过（station_b 焦距 18→36 mm，b_side 机位前移，焦距改 15 mm）；A 站腕部相机被 fr3_hand 挡住（注视点只在前方 0.17 m），正面机位太远，候选机位已给出，待渲染对比。",
+      "owner": "codex@5090 · claude 审核",
+      "status": "partial",
+      "eta": "A 站候选随 A100 渲染修通",
+      "evidence": "5090:goai_assets/handoff/collection_astra/astra_camera_review_20260916.md; cameras_fixed_v4_B_dynamic_20260916.json",
+      "group": "active"
     },
     {
       "id": "Q-layout-v4",
@@ -818,6 +860,10 @@
     {
       "date": "2026-09-11 19:00",
       "entry": "三段机器人采集对话恢复、5090 探测、中文综述审计三路子 agent 完成"
+    },
+    {
+      "date": "2026-09-16 21:30",
+      "entry": "**晚间进展：C 站 G3 首次完整通过，B 站第一次 Astra 诊断把坩埚架送进了炉膛，但没有过门。** C 站 draw00（18:00，独立复核）：小瓶和样品架都到 stage 4，ΔP 7.340 / 0.908 mm；样品架搬运最大倾角 0.093 rad，双侧接触 99.5%，原始负分离 0；XRD 窗开到 0.480 m 保持 3 s，释放、空手退出、关窗全部通过。C 站目前 1/3，剩余两组按分工交 A100。B 站（18:22 起）：Astra 入口接入 G3 实测合同，CPU 合同检查 10/10 通过。诊断试次 B_trial000 共 16,867 tick，全程 0 穿模，搬运倾角 0.057 rad；但落位偏差 10.3 mm，炉门未关，夹爪未退出，判为 stage 3。18:47:54 旧订阅上游中断，本试次出现 13 次 SSLError，调用预算被耗尽。已换新订阅（运行时热加载，Ai+ 走新加坡），并要求网络失败记为 infra_failure、不计入试次。B 站相机（21:16）：station_b 焦距 18→36 mm，b_side 机位前移，10/10 阶段满足可见性要求（把手 ≥2 个固定视角、装载物 ≥3、指垫 ≥1、腕部 10/10），原始机位 0/10 和 v7 5/10 的失败记录都保留。子操作库：585 行矩阵，首批 12 段已登记（复用已有 G3 轨迹，物理判定 7 通过 / 5 部分，视觉准入 0/12），不算新采集。A100：补传了 layout_v4 房间文件（G3 计划引用、首批漏传）；沙箱里 CUDA/torch 正常，但 Kit 渲染器报 “CUDA bad state”，还没出图，正在排查。所有门限（G3 2 mm / 1°、5 mm 开爪净空）都没有放宽。"
     }
   ],
   "contract": [
@@ -1179,8 +1225,8 @@
       "lane": "A-Lab 数字孪生与采集",
       "status": "running",
       "owner": "codex@5090（GPT-6 Astra）执行 · claude 指导/审核 · codex@4090 布局/资产",
-      "now": "A、B 两站 G3 3/3 独立通过；查看器已换上 G3 轨迹。采集转交 Astra：先接实测几何、再审相机、再开 B 站 20 次正式采集。A100 运行时重建中，冒烟通过后自动开跑 A 站 Astra 诊断。",
-      "next": "① G3：先摸清 C 站差什么，再三站各三次 ±2cm/±10° 抖动并记录实际 reset 值；② 用这条 task_success 轨迹替换查看器里的诊断回放；③ 重烘 v4 换掉椅子与机柜；④ G3 后 B/C 交给 Astra 跑一轮做横向对照。",
+      "now": "G3：A、B 两站 3/3，C 站 1/3（draw00 通过，另两组按分工交 A100）。B 站 Astra 入口已接实测几何；第一次 Astra 诊断试次 B_trial000 物理夹起坩埚架并送进炉膛，0 穿模，但落位偏差 10.3 mm、未关门、未退爪，判为 stage 3，没有过门。B 站相机已按阶段调好，10/10 阶段可见性检查通过（21:16）。A100：Isaac Sim 5.1 装好，沙箱里 CUDA 正常，但 RTX 渲染器报 “CUDA bad state” 不出图，正在排查。",
+      "next": "① B 站：修落位偏差 → 规定网络失败不占试次 → 修正可达半径 usable_radius → G4 复跑 → 写 release.json → 正式 20 次；② A 站腕部相机被遮挡、正面机位偏远，相机定版后再跑 Astra 诊断；③ A100 渲染修通后，跑 A/B 两站的候选相机和 C 站剩余两组 G3；④ 子操作库等相机和 A100 就绪后开始新采集。",
       "link": "scenes.html#alab_twin",
       "link_text": "验收表、四视角渲染、A 站逐条表与视频 →"
     },
