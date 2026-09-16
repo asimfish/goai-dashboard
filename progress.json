@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-17T00:17+08:00",
+  "updated": "2026-09-17T00:30+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -18,12 +18,12 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-17T00:17+08:00",
+    "snapshot_at": "2026-09-17T00:30+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 7545,
-        "util": "25%",
+        "used_mib": 7546,
+        "util": "26%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
@@ -390,12 +390,12 @@
     },
     {
       "id": "Q2b",
-      "topic": "Astra 采集：5090 和 A100 用的是同一个 Codex 账号（pro），周额度已用完，端点返回 429 usage_limit_reached；响应头给出 2026-09-23 04:03（北京时间）恢复。在此之前所有 Astra 规划调用都会失败，B 站正式 20 次也因此顺延。",
-      "owner": "需你决定：等到 09-23，或提供另一个可用账号",
-      "status": "blocked",
-      "eta": "2026-09-23 04:03",
-      "evidence": "5090:_shared/quota_probe.py 的输出（只含限额响应头，不含凭据）",
-      "group": "decide"
+      "topic": "Astra 账号：旧账号周额度用完（09-23 才恢复）；00:29 已换成你给的新账号，5090 和 A100 的 Codex 登录都已更新，端点探测返回 200。主 agent 可按 infra_policy_v1 恢复 B 站 Astra 诊断；子操作 agent 完成工作流标注后开始 FR3 新采。",
+      "owner": "claude",
+      "status": "ok",
+      "eta": "已恢复",
+      "evidence": "5090:~/.codex/auth.json（旧文件备份 auth.json.bak_a2209953519_*）; _shared/quota_probe.py 输出 status 200",
+      "group": "done"
     },
     {
       "id": "Q6",
@@ -886,6 +886,10 @@
     {
       "date": "2026-09-17 00:35",
       "entry": "**子操作轨迹库上线：** https://asimfish.github.io/goai-dashboard/subops.html —— 已登记的 12 段各有站位相机实录视频、起止帧（站位 / 正面 / 腕部）和独立审计数值。A 站 FR3 搬试剂瓶 6 段（预接近 → 闭爪 → 提离 → 携行到投料位并返回 → 下放 → 释放撤离），B 站 UR5e 搬坩埚架 6 段（同样六步，终点在炉膛搁板）。物理判据 7 段通过、5 段部分通过；部分通过的原因逐段写明（开爪 5 mm 净空、搁板边距只有原执行器记录，本轮未独立重算）。这些片段都切自已通过 G3 的脚本轨迹，不是新采集，也没有 Astra 调用；完整准入 0/12，因为视觉可见性统计还在补测。"
+    },
+    {
+      "date": "2026-09-17 00:35",
+      "entry": "**Astra 额度恢复。** 用户提供了新的 Codex 账号，已装进 5090 和 A100（旧登录备份保留），端点探测返回 200；「09-23 前不要调用」的限制撤回，主 agent 可恢复 B 站 Astra 诊断，子操作 agent 在完成工作流标注后开始 FR3 新采。A 站相机定版：子操作 agent 补测了 FR3 指垫区域（2 mm 外扩、左右合计口径 10/10；0 mm 对照 5/10，两组数值都保留），参数文件状态改为 selected_pass。C 站 draw01 在 A100 上已完成小瓶段（称量、回架、空退），正在做样品架入 XRD。"
     }
   ],
   "contract": [
@@ -1248,7 +1252,7 @@
       "status": "running",
       "owner": "codex@5090（GPT-6 Astra）执行 · claude 指导/审核 · codex@4090 布局/资产",
       "now": "G3：A、B 两站 3/3，C 站 1/3（draw00 通过，另两组按分工交 A100）。B 站 Astra 入口已接实测几何；第一次 Astra 诊断试次 B_trial000 物理夹起坩埚架并送进炉膛，0 穿模，但落位偏差 10.3 mm、未关门、未退爪，判为 stage 3，没有过门。B 站相机已按阶段调好，10/10 阶段可见性检查通过（21:16）。A100：Isaac Sim 5.1 装好，沙箱里 CUDA 正常，但 RTX 渲染器报 “CUDA bad state” 不出图，正在排查。",
-      "next": "① B 站：修落位偏差 → 规定网络失败不占试次 → 修正可达半径 usable_radius → G4 复跑 → 写 release.json → 正式 20 次；② A 站腕部相机被遮挡、正面机位偏远，相机定版后再跑 Astra 诊断；③ A100 渲染修通后，跑 A/B 两站的候选相机和 C 站剩余两组 G3；④ 子操作库等相机和 A100 就绪后开始新采集。",
+      "next": "① B 站：修落位偏差 → 规定网络失败不占试次 → 修正可达半径 usable_radius → G4 复跑 → 写 release.json → 正式 20 次；② A 站相机已定版（selected_pass），可开 A 站 Astra 诊断；③ A100 渲染修通后，跑 A/B 两站的候选相机和 C 站剩余两组 G3；④ 子操作库等相机和 A100 就绪后开始新采集。",
       "link": "scenes.html#alab_twin",
       "link_text": "验收表、四视角渲染、A 站逐条表与视频 →"
     },
@@ -1266,7 +1270,7 @@
       "status": "running",
       "owner": "goai_子操作集合@5090/A100 · claude",
       "now": "五个工作流只在 v4 A-Lab 孪生里采，09-11 各自重建的旧场景已停用。映射结果：wf01、wf02 在 v4 里可以完整做；wf03、wf04、wf05 只能做 v4 里有仪器的那几步。已有数据都来自 G3：wf01 的称量和入炉、wf02 的 C 站小瓶与 XRD。子操作库正在按这张映射表给每一行、每一段标上所属工作流。",
-      "next": "① 标注完成后补 wf01 的研磨 → 装坩埚 → 存放三步，以及 wf02 的废弃处置；② Astra 额度 09-23 04:03 才恢复，在此之前要么只做不调模型的脚本专家采集，要么换账号，由用户决定；③ 是否给 v4 增加搅拌台、离心机、试剂柜等仪器，由用户决定。",
+      "next": "① 标注完成后补 wf01 的研磨 → 装坩埚 → 存放三步，以及 wf02 的废弃处置；② Astra 额度已随新账号恢复（00:29），新采集用 Astra 闭环；③ 是否给 v4 增加搅拌台、离心机、试剂柜等仪器，由用户决定。",
       "link": "subops.html",
       "link_text": "子操作轨迹库（12 段视频与审计） →"
     }
