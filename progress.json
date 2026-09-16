@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-17T01:35+08:00",
+  "updated": "2026-09-17T02:26+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -19,18 +19,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-17T01:35+08:00",
+    "snapshot_at": "2026-09-17T02:26+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 3165,
-        "util": "28%",
+        "used_mib": 7115,
+        "util": "42%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 9926,
-        "util": "68%",
+        "used_mib": 13872,
+        "util": "42%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -302,7 +302,7 @@
   "queue": [
     {
       "id": "Q-collect",
-      "topic": "孪生采集（转交 Astra）：G3 A 3/3、B 3/3、C 1/3。C 站 draw01 在 A100 上第一次因缺 fcl 依赖退出，第二次（23:52–00:55）63 分钟全部阶段到位，却在最后编码视频时因沙箱里没有 ffmpeg 而保存失败，数据作废；已补装 ffmpeg，01:05 第三次启动，预计 02:10 出审计结果，通过后自动跑 draw02。B 站：G4 按当前实测 TCP 复测 108 格（22:58），原始负分离 0；下探 20 cm 35/36 通过，下探 5 cm 27/36、水平 24/36 未达 90% 门槛，因此不发布 release。23:00 起第二次 B 站 Astra 诊断试次正在跑，这次已先做端点探测，并按 infra_policy_v1 执行。第一次试次 B_trial000：物理过程全部合格、0 穿模，但落位偏差 10.3 mm、未关门，判为 stage 3。 23:36/23:46：B 站 Astra 诊断两次在开跑前的端点探测就被拒（429，额度用完），没有生成 episode。C 站 draw01 第一次启动时缺 fcl：交接包漏了 layout_v3/audit/deps，已补齐，23:52 重跑。",
+      "topic": "孪生采集（转交 Astra）：G3 A 3/3、B 3/3、C 1/3。C 站 draw01 在 A100 上第一次因缺 fcl 依赖退出，第二次（23:52–00:55）63 分钟全部阶段到位，却在最后编码视频时因沙箱里没有 ffmpeg 而保存失败，数据作废；第三次（01:05–02:20）又在同一步失败：ffmpeg 装进了 conda 环境，但 bwrap 沙箱的 PATH 不含该目录，裸命令仍找不到；已在启动器里前置 PATH 并在沙箱内验证，02:30 第四次启动，预计 03:35 出审计。三次失败目录保留。B 站：G4 按当前实测 TCP 复测 108 格（22:58），原始负分离 0；下探 20 cm 35/36 通过，下探 5 cm 27/36、水平 24/36 未达 90% 门槛，因此不发布 release。23:00 起第二次 B 站 Astra 诊断试次正在跑，这次已先做端点探测，并按 infra_policy_v1 执行。第一次试次 B_trial000：物理过程全部合格、0 穿模，但落位偏差 10.3 mm、未关门，判为 stage 3。 23:36/23:46：B 站 Astra 诊断两次在开跑前的端点探测就被拒（429，额度用完），没有生成 episode。C 站 draw01 第一次启动时缺 fcl：交接包漏了 layout_v3/audit/deps，已补齐，23:52 重跑。",
       "owner": "codex@5090（GPT-6 Astra）· claude 指导/审核",
       "eta": "C draw01 约 24:00 出结果；B 站 G4 两组未过，release 待定",
       "status": "running",
@@ -310,11 +310,11 @@
     },
     {
       "id": "Q-ops",
-      "topic": "操作完整性台账（gaojing 的调研 agent「代码-审核所有场景」，01:35 起转为实现）：585 行操作全部要做成真实仿真动作，五条硬判据——摩擦夹持（禁运动学吸附）、原始负分离 tick = 0 且开合爪 5 mm 净空、落点 ≤ 20 mm / 倾角 ≤ 0.25 rad、动作顺序与可达半径合理、独立审计证据。它先建 operation_ledger.json 并回填已有证据（12 段 + 三站 G3），从冻结计划的 USD 几何推导 177 个操作位，然后 A 类 29 行逐条跑通；缺的执行原语按 门窗 → 坩埚钳 → 旋盖 → 倒粉代理 补；几何上采不了的（研钵超出 FR3 可达、C→B 3 m、转盘架全满）写布局调整建议等你决定。",
+      "topic": "操作完整性（gaojing 的 agent「代码-审核所有场景」）：585 行台账已建（473 行需物理闭环、112 行 software_only，严格完成 0/473）；177 个操作位已从冻结计划的 USD 几何推导为候选（operation_sites.json）；《布局调整建议》已出：研钵/研杵/储液架移入 FR3 可达范围、A↔B/B↔C/A↔C 站间交接架 + 运输段、炉 1/2 需要服务底座、转盘留空槽、A 站初始化微米级净空——124 行 C 类操作全部 blocked 等你决定。A 类 29 行已打成 A100 交接包（strict_operations_20260917，含逐行阶段映射、审计命令、SHA 锁定），正在按 inbox_ops 规范投 precursor_3/4、vial_2 三个脚本专家包。它的旧 Isaac 路径（约束辅助抓持，transport_motion.py:176 / tray_motion.py:255）尚未切换，实时链路暂不用。",
       "owner": "代码-审核所有场景（gaojing）· claude 指导",
       "status": "running",
-      "eta": "台账与操作位推导今天；A 类逐条跑通后按批回报",
-      "evidence": "/home/gaojing/goai_final_lab/docs/operation_ledger.json; docs/MCP实验流程核对_20260916/",
+      "eta": "首批 3 个包投递后由 A100 线执行",
+      "evidence": "/home/gaojing/goai_final_lab/docs/{operation_ledger.json,operation_sites.json,布局调整建议.md,585操作闭环进度_20260917.md}; handoff/strict_operations_20260917/",
       "group": "active"
     },
     {
@@ -337,7 +337,7 @@
     },
     {
       "id": "Q-subop",
-      "topic": "子操作库（「goai_子操作集合」）：已登记 25 段——A 站 FR3 试剂瓶 6 段、B 站 UR5e 坩埚架 6 段（物理 7 通过 / 5 部分），C 站 UR5e 小瓶称量 + 样品架入 XRD 13 段（02:00 新切自已通过的 C draw00，穿模 tick 0，登记为参考级、视觉未测）。25 段全部接入三维查看器。新采：A 站 Astra 入口在 v4 上还没接实测几何（报 A/C generic protocol 需 accepted layout），Astra 线暂停、交主 agent 接入口；脚本专家线（precursor_2/3/4 投料）在 A100 GPU5 排队启动。同时接手 inbox_ops 里操作实现线打来的交接包。",
+      "topic": "子操作库（「goai_子操作集合」）：已登记 25 段——A 站 FR3 试剂瓶 6 段、B 站 UR5e 坩埚架 6 段（物理 7 通过 / 5 部分），C 站 UR5e 小瓶称量 + 样品架入 XRD 13 段（02:00 新切自已通过的 C draw00，穿模 tick 0，登记为参考级、视觉未测）。25 段全部接入三维查看器。新采：A 站 Astra 入口在 v4 上还没接实测几何（报 A/C generic protocol 需 accepted layout），Astra 线暂停、交主 agent 接入口；脚本专家线 02:23 起在 A100 GPU5 串行跑 precursor_2 → 3 → 4 投料（run_scripted_queue.py），每条通过审计后切 6 段登记。同时接手 inbox_ops 里操作实现线打来的交接包。",
       "owner": "codex@5090（goai_子操作集合）· claude 指导",
       "status": "running",
       "eta": "首批新采约 1–2 小时",
@@ -916,6 +916,10 @@
     {
       "date": "2026-09-17 02:00",
       "entry": "**子操作库扩到 25 段并全部接入三维查看器。** 子操作 agent 把已通过的 C 站 draw00 切成 13 段（小瓶预接近→闭爪→提离→到天平→下放→释放退出，样品架同样六步再加关窗），穿模 tick 0，登记为参考级；我把这 13 段的回放导出补齐（C 切片的时间戳是父轨迹 float32 时间减 t0，残差超出短时间轴的量化容差，导出时按 tick 放回精确网格；tick 序列本身连续无缺），25/25 与源数组逐位一致。页面对没有站位视频的 C 切片如实标注\"登记时未生成视频\"。按用户要求停掉了 4 个 robocore vlm-eval（同账号调 gpt-6-astra）。A 站 Astra 入口在 v4 上尚未接实测几何，已交主 agent；子操作 agent 转脚本专家线保证产出。第三个 agent 已建好 585 行台账（473 行需物理闭环、112 行 software_only），并已获得 inbox_ops 交接目录作为它到 A100 执行线的入口。"
+    },
+    {
+      "date": "2026-09-17 02:40",
+      "entry": "**采集线全部在跑；C 站第三次失败的根因是沙箱 PATH。** 第三次 C draw01 全部 135.6 s 阶段完成，保存视频时裸命令 ffmpeg 在 bwrap 沙箱里仍找不到（conda 环境 bin 不在沙箱 PATH），整段作废；启动器已前置 PATH 并在沙箱内验证 which(ffmpeg)，02:30 第四次启动。子操作 agent 的脚本专家队列 02:23 在 A100 GPU5 开跑（precursor_2 → 3 → 4）。操作完整性 agent 交付台账（585 行）、177 个操作位候选、《布局调整建议》和 A 类 29 行交接包；124 行几何上采不了的操作全部等用户对布局做决定。按用户要求已停止 4 个 robocore vlm-eval。"
     }
   ],
   "contract": [
