@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-17T01:04+08:00",
+  "updated": "2026-09-17T01:12+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -19,18 +19,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-17T01:04+08:00",
+    "snapshot_at": "2026-09-17T01:12+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 481,
-        "util": "13%",
+        "used_mib": 483,
+        "util": "19%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
         "used_mib": 8362,
-        "util": "29%",
+        "util": "1%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -307,6 +307,15 @@
       "eta": "C draw01 约 24:00 出结果；B 站 G4 两组未过，release 待定",
       "status": "running",
       "evidence": "5090:alab_twin_collect/{CHANGES.md 22:00–22:58, v4_runtime/reach_after_B_current.json, handoff/C_G3_A100_command.md}; A100:goai_a100/{C_G3.log, twin_C_G3/}"
+    },
+    {
+      "id": "Q-ops",
+      "topic": "操作完整性台账（gaojing 的调研 agent「代码-审核所有场景」，01:35 起转为实现）：585 行操作全部要做成真实仿真动作，五条硬判据——摩擦夹持（禁运动学吸附）、原始负分离 tick = 0 且开合爪 5 mm 净空、落点 ≤ 20 mm / 倾角 ≤ 0.25 rad、动作顺序与可达半径合理、独立审计证据。它先建 operation_ledger.json 并回填已有证据（12 段 + 三站 G3），从冻结计划的 USD 几何推导 177 个操作位，然后 A 类 29 行逐条跑通；缺的执行原语按 门窗 → 坩埚钳 → 旋盖 → 倒粉代理 补；几何上采不了的（研钵超出 FR3 可达、C→B 3 m、转盘架全满）写布局调整建议等你决定。",
+      "owner": "代码-审核所有场景（gaojing）· claude 指导",
+      "status": "running",
+      "eta": "台账与操作位推导今天；A 类逐条跑通后按批回报",
+      "evidence": "/home/gaojing/goai_final_lab/docs/operation_ledger.json; docs/MCP实验流程核对_20260916/",
+      "group": "active"
     },
     {
       "id": "Q-proxy",
@@ -899,6 +908,10 @@
     {
       "date": "2026-09-17 01:20",
       "entry": "**12 段子操作接入三维查看器。** 每段从其 steps.npz 单独导出为 three.js 回放（场景身份、执行器源码哈希、接触/静置偏移都取自父 G3 轨迹），导出校验 12/12 与源数组逐位一致；查看器场景列表新增「子操作片段」分组，子操作页每段都能一键跳到对应回放：https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_SUBOP-B-06 。同时给子操作 agent 下达新排期：立即把 C 站已通过的 draw00 切段登记（三站都有段）；A100 上双线并行——GPU5 用脚本专家保证 precursor_2/3/4 投料各一条，GPU6 跑 Astra 诊断；每登记一批就导出回放上看板。"
+    },
+    {
+      "date": "2026-09-17 01:50",
+      "entry": "**第三个 agent 接入：调研 agent 转为\"操作完整性\"实现。** 用户要求它整理的 585 条操作都要完成、不能穿模、动作合理。我审阅了它的对话（09-14 至 09-15 的 600 条）：调研扎实，但它的执行层用的是\"约束辅助抓持\"（运动学吸附），\"完成\"定义在编排层——这正是穿模与不合理动作的来源。已下发指导：完成的五条硬判据全部复用 alab_twin_collect 的审计模块；建 585 行台账并与子操作库共用分母；A 类 29 行直接跑通，B 类 177 个操作位由 USD 几何推导（禁手填），缺原语按门窗/坩埚钳/旋盖/倒粉顺序补；C 类写布局建议等用户决定；GPU0 空闲不足就走 A100 交接线。它已确认并开始建台账。同时：12 段子操作已接入三维查看器；子操作 agent 的 Astra 诊断（precursor_2 投料）在 A100 GPU6 启动；C 站 draw01 第三次运行进行中。"
     }
   ],
   "contract": [
