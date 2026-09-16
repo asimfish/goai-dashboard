@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-17T00:40+08:00",
+  "updated": "2026-09-17T00:57+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -18,18 +18,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-17T00:40+08:00",
+    "snapshot_at": "2026-09-17T00:57+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 15394,
-        "util": "51%",
+        "used_mib": 8309,
+        "util": "44%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 1734,
-        "util": "0%",
+        "used_mib": 8625,
+        "util": "19%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -37,7 +37,7 @@
       {
         "mount": "/",
         "used": "97%",
-        "free": "109G",
+        "free": "110G",
         "note": "不写"
       },
       {
@@ -301,7 +301,7 @@
   "queue": [
     {
       "id": "Q-collect",
-      "topic": "孪生采集（转交 Astra）：G3 A 3/3、B 3/3、C 1/3。C 站 draw01 已于 23:10 在 A100 GPU4 启动，按主 agent 交接的命令原样执行；draw01 独立审计通过后才跑 draw02。B 站：G4 按当前实测 TCP 复测 108 格（22:58），原始负分离 0；下探 20 cm 35/36 通过，下探 5 cm 27/36、水平 24/36 未达 90% 门槛，因此不发布 release。23:00 起第二次 B 站 Astra 诊断试次正在跑，这次已先做端点探测，并按 infra_policy_v1 执行。第一次试次 B_trial000：物理过程全部合格、0 穿模，但落位偏差 10.3 mm、未关门，判为 stage 3。 23:36/23:46：B 站 Astra 诊断两次在开跑前的端点探测就被拒（429，额度用完），没有生成 episode。C 站 draw01 第一次启动时缺 fcl：交接包漏了 layout_v3/audit/deps，已补齐，23:52 重跑。",
+      "topic": "孪生采集（转交 Astra）：G3 A 3/3、B 3/3、C 1/3。C 站 draw01 在 A100 上第一次因缺 fcl 依赖退出，第二次（23:52–00:55）63 分钟全部阶段到位，却在最后编码视频时因沙箱里没有 ffmpeg 而保存失败，数据作废；已补装 ffmpeg，01:05 第三次启动，预计 02:10 出审计结果，通过后自动跑 draw02。B 站：G4 按当前实测 TCP 复测 108 格（22:58），原始负分离 0；下探 20 cm 35/36 通过，下探 5 cm 27/36、水平 24/36 未达 90% 门槛，因此不发布 release。23:00 起第二次 B 站 Astra 诊断试次正在跑，这次已先做端点探测，并按 infra_policy_v1 执行。第一次试次 B_trial000：物理过程全部合格、0 穿模，但落位偏差 10.3 mm、未关门，判为 stage 3。 23:36/23:46：B 站 Astra 诊断两次在开跑前的端点探测就被拒（429，额度用完），没有生成 episode。C 站 draw01 第一次启动时缺 fcl：交接包漏了 layout_v3/audit/deps，已补齐，23:52 重跑。",
       "owner": "codex@5090（GPT-6 Astra）· claude 指导/审核",
       "eta": "C draw01 约 24:00 出结果；B 站 G4 两组未过，release 待定",
       "status": "running",
@@ -318,7 +318,7 @@
     },
     {
       "id": "Q-a100",
-      "topic": "A100 运行时已可用（21:40 修通）。原因：设置 `CUDA_VISIBLE_DEVICES` 后，Kit 渲染器把每张卡都判成 “CUDA bad state”，不出图，PhysX 退回 CPU；沙箱外复现结果相同，所以不是沙箱的问题。修法：沙箱只挂载目标卡的 /dev/nvidiaN，不再设置该变量；渲染器显示 `Yes: 0`，其他人的卡显存没有变化。同时补传了 layout_v4 房间（61 个文件）和资产贴图（17 个目录，102 MB）。A、B 两站的候选相机已渲染完成（A 两轮，B 一轮）。 23:10 起：GPU4 跑 C 站 G3（draw01→draw02）；GPU5/6 留给子操作 agent 做指垫补测。C 站交接工具不接受 --kit_args，因此 check/audit 改用去掉这一参数的启动器，工具文件本身没改。",
+      "topic": "A100 运行时已可用（21:40 修通）。原因：设置 `CUDA_VISIBLE_DEVICES` 后，Kit 渲染器把每张卡都判成 “CUDA bad state”，不出图，PhysX 退回 CPU；沙箱外复现结果相同，所以不是沙箱的问题。修法：沙箱只挂载目标卡的 /dev/nvidiaN，不再设置该变量；渲染器显示 `Yes: 0`，其他人的卡显存没有变化。同时补传了 layout_v4 房间（61 个文件）和资产贴图（17 个目录，102 MB）。A、B 两站的候选相机已渲染完成（A 两轮，B 一轮）。 23:10 起：GPU4 跑 C 站 G3（draw01→draw02）；GPU5/6 留给子操作 agent 做指垫补测。C 站交接工具不接受 --kit_args，因此 check/audit 改用去掉这一参数的启动器，工具文件本身没改。 01:05：补装 ffmpeg（imageio-ffmpeg 静态版）到 Isaac 环境；之前缺它导致 C draw01 保存失败。",
       "owner": "claude",
       "status": "running",
       "eta": "已可用；A 站相机审计进行中",
@@ -327,7 +327,7 @@
     },
     {
       "id": "Q-subop",
-      "topic": "子操作库（「goai_子操作集合」）：585 行矩阵已按工作流标注（303 行有映射，282 行是编排/软件项）；首批 12 段物理 7 通过 / 5 部分通过，完整准入 0/12。00:40 起第 5 轮：第一次 Astra 新采——FR3 把空坩埚搬上转盘架（wf01.t_load），A100 GPU5/6，先跑 2 次诊断试次；几何不可达就改采 precursor_2 的投料路径。几何核对结论：研钵超出 FR3 可达范围（t_grind 采不了），t_store 需要先定义 B→C 交接。",
+      "topic": "子操作库（「goai_子操作集合」）：585 行矩阵已按工作流标注（303 行有映射，282 行是编排/软件项）；首批 12 段物理 7 通过 / 5 部分通过，完整准入 0/12。00:40 起第 5 轮：第一次 Astra 新采：几何核对发现转盘架 6 个槽位全满，wf01.t_load 无处可放，按预案改采 precursor_2 的投料路径（起点 TCP 半径 0.405 m、终点 0.539 m，都在 A 站实测包络 0.38–0.58 m 内）。00:44 在 A100 启动的第一次试次没有产生 episode（疑似进程随 ssh 会话退出），已要求它查日志后用脱离会话的方式重启，并注意沙箱刚补装的 ffmpeg。几何核对结论：研钵超出 FR3 可达范围（t_grind 采不了），t_store 需要先定义 B→C 交接。",
       "owner": "codex@5090（goai_子操作集合）· claude 指导",
       "status": "running",
       "eta": "首批新采约 1–2 小时",
@@ -890,6 +890,10 @@
     {
       "date": "2026-09-17 00:35",
       "entry": "**Astra 额度恢复。** 用户提供了新的 Codex 账号，已装进 5090 和 A100（旧登录备份保留），端点探测返回 200；「09-23 前不要调用」的限制撤回，主 agent 可恢复 B 站 Astra 诊断，子操作 agent 在完成工作流标注后开始 FR3 新采。A 站相机定版：子操作 agent 补测了 FR3 指垫区域（2 mm 外扩、左右合计口径 10/10；0 mm 对照 5/10，两组数值都保留），参数文件状态改为 selected_pass。C 站 draw01 在 A100 上已完成小瓶段（称量、回架、空退），正在做样品架入 XRD。"
+    },
+    {
+      "date": "2026-09-17 01:10",
+      "entry": "**C 站 draw01 在 A100 上第二次失败，原因是沙箱缺 ffmpeg；第三次已启动。** 63 分钟仿真里小瓶称量回架、样品架入 XRD、释放开窗全部到位，但 twin_demo 在最后一步用 ffmpeg 编码站位视频时报 FileNotFoundError，steps.npz/meta.json 没来得及写，无法审计；失败目录保留。已给 A100 的 Isaac 环境补装静态 ffmpeg 7.0.2，01:05 重跑。子操作 agent 的第一次 Astra 新采：转盘架槽位全满，t_load 改为 precursor_2 投料路径；00:44 的试次没有产出，正在排查后重启。这两个问题都出在 A100 环境与 5090 的差异（缺 fcl、缺 ffmpeg、进程脱离会话），不是场景或采集逻辑的问题。"
     }
   ],
   "contract": [
