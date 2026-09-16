@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-16T23:12+08:00",
+  "updated": "2026-09-16T23:57+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -17,17 +17,17 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-16T23:12+08:00",
+    "snapshot_at": "2026-09-16T23:57+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 7548,
-        "util": "37%",
+        "used_mib": 15179,
+        "util": "62%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 1204,
+        "used_mib": 18159,
         "util": "0%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
@@ -90,10 +90,10 @@
   "stage_labels": {
     "spec": "工作流规范",
     "validate": "机械校验",
-    "recon": "Isaac 场景重建",
-    "collect": "脚本化采集",
-    "astra_demo": "Astra 示范",
-    "showcase": "展示页素材"
+    "recon": "v4 场景映射",
+    "collect": "子操作采集（v4）",
+    "astra_demo": "Astra 采集",
+    "showcase": "展示素材（v4）"
   },
   "workflows": [
     {
@@ -103,12 +103,13 @@
       "spec": "ok",
       "validate": "ok",
       "recon": "ok",
-      "collect": "paused",
-      "astra_demo": "partial",
-      "showcase": "ok",
-      "note": "调试采集跑通前两原语（抓称量纸→按去皮→抓瓶，放置误差 42–58 mm）；全量 0/12 失败后暂停，转向孪生采集",
-      "evidence": "5090:/data/liyufeng/goai_workflows/wf01_solid_state_calcination/recon/RUN_MANIFEST.json",
-      "collect_detail": "0/3 episodes"
+      "collect": "partial",
+      "astra_demo": "blocked",
+      "showcase": "partial",
+      "note": "v4 里 5 步都有对应物体：A 站称量 → 研磨 → 装坩埚，B 站入炉，C 站存放。已有数据：A 站 G3 3/3（t_dose）、B 站 G3 3/3（t_heat）。09-11 旧场景里那条 14 个原语的 wf01 视频属于已停用的旧场景，不计入。",
+      "evidence": "final_round/workflow_v4_map.json; 5090:subop_library/index.jsonl",
+      "collect_detail": "t_dose / t_heat 已有 G3 轨迹，各登记 6 段；t_grind、t_load、t_store 未采",
+      "scene": "v4_twin"
     },
     {
       "id": "wf02_powder_recovery_xrd",
@@ -117,12 +118,13 @@
       "spec": "ok",
       "validate": "ok",
       "recon": "ok",
-      "collect": "failed",
-      "astra_demo": "partial",
-      "showcase": "ok",
-      "note": "重建 ok（压片改盒体后重跑）；采集待孪生验收后排队",
-      "evidence": "_shared/recon_chain.log",
-      "collect_detail": "0/3 episodes"
+      "collect": "partial",
+      "astra_demo": "blocked",
+      "showcase": "partial",
+      "note": "v4 C 站可覆盖小瓶回收称量、样品台取放、XRD 开关窗、钳取入废弃容器。C 站 draw00 已通过；t_dispose 未采。",
+      "evidence": "final_round/workflow_v4_map.json; 5090:subop_library/index.jsonl",
+      "collect_detail": "C 站 G3 1/3（draw00）；draw01 正在 A100 跑",
+      "scene": "v4_twin"
     },
     {
       "id": "wf03_wet_chemical_precursor",
@@ -130,13 +132,14 @@
       "target": "前驱体凝胶",
       "spec": "ok",
       "validate": "ok",
-      "recon": "ok",
-      "collect": "failed",
-      "astra_demo": "partial",
-      "showcase": "ok",
-      "note": "重建 ok：搅拌台/pH 计/离心机按刚体，烘箱保留门关节；采集待排队",
-      "evidence": "",
-      "collect_detail": "0/3 episodes"
+      "recon": "partial",
+      "collect": "pending",
+      "astra_demo": "blocked",
+      "showcase": "pending",
+      "note": "改为 A-Lab 原文的乙醇浆料路线（A 站 ethanol / pipette / mixer / drying_oven）。原 spec 中的搅拌台、pH 计、离心机在 v4 里没有，这几步不采，也不虚构物体。",
+      "evidence": "final_round/workflow_v4_map.json; 5090:subop_library/index.jsonl",
+      "collect_detail": "未采",
+      "scene": "v4_twin"
     },
     {
       "id": "wf04_flux_growth_pt_crucible",
@@ -144,13 +147,14 @@
       "target": "Ba5Y12Zn[O(SiO4)]8",
       "spec": "ok",
       "validate": "ok",
-      "recon": "ok",
-      "collect": "failed",
-      "astra_demo": "partial",
-      "showcase": "ok",
-      "note": "重建 ok：Pt 坩埚/坩埚钳/漏斗/锥形瓶就位，炉门关节保留；采集待排队",
-      "evidence": "",
-      "collect_detail": "0/3 episodes"
+      "recon": "partial",
+      "collect": "pending",
+      "astra_demo": "blocked",
+      "showcase": "pending",
+      "note": "v4 里可做称量（A）、入炉慢冷（B）、坩埚钳取（C）；溶出和过滤在 v4 里没有对应仪器，不采。",
+      "evidence": "final_round/workflow_v4_map.json; 5090:subop_library/index.jsonl",
+      "collect_detail": "称量、入炉可复用 A/B 路径；钳取未采",
+      "scene": "v4_twin"
     },
     {
       "id": "wf05_reagent_logistics_safety",
@@ -158,13 +162,14 @@
       "target": "—",
       "spec": "ok",
       "validate": "ok",
-      "recon": "ok",
-      "collect": "failed",
-      "astra_demo": "partial",
+      "recon": "partial",
+      "collect": "pending",
+      "astra_demo": "blocked",
       "showcase": "pending",
-      "note": "重建 ok：瓶口分配器改刚体后重跑，试剂柜保留门关节；展示页素材待补",
-      "evidence": "",
-      "collect_detail": "0/3 episodes"
+      "note": "改用 v4 已有设施：A 站储液架取还试剂瓶、C 站开合盖、钳取废坩埚入废弃容器。试剂柜和瓶口分配器在 v4 里没有，不采。",
+      "evidence": "final_round/workflow_v4_map.json; 5090:subop_library/index.jsonl",
+      "collect_detail": "未采",
+      "scene": "v4_twin"
     }
   ],
   "pipeline": {
@@ -295,7 +300,7 @@
   "queue": [
     {
       "id": "Q-collect",
-      "topic": "孪生采集（转交 Astra）：G3 A 3/3、B 3/3、C 1/3。C 站 draw01 已于 23:10 在 A100 GPU4 启动，按主 agent 交接的命令原样执行；draw01 独立审计通过后才跑 draw02。B 站：G4 按当前实测 TCP 复测 108 格（22:58），原始负分离 0；下探 20 cm 35/36 通过，下探 5 cm 27/36、水平 24/36 未达 90% 门槛，因此不发布 release。23:00 起第二次 B 站 Astra 诊断试次正在跑，这次已先做端点探测，并按 infra_policy_v1 执行。第一次试次 B_trial000：物理过程全部合格、0 穿模，但落位偏差 10.3 mm、未关门，判为 stage 3。",
+      "topic": "孪生采集（转交 Astra）：G3 A 3/3、B 3/3、C 1/3。C 站 draw01 已于 23:10 在 A100 GPU4 启动，按主 agent 交接的命令原样执行；draw01 独立审计通过后才跑 draw02。B 站：G4 按当前实测 TCP 复测 108 格（22:58），原始负分离 0；下探 20 cm 35/36 通过，下探 5 cm 27/36、水平 24/36 未达 90% 门槛，因此不发布 release。23:00 起第二次 B 站 Astra 诊断试次正在跑，这次已先做端点探测，并按 infra_policy_v1 执行。第一次试次 B_trial000：物理过程全部合格、0 穿模，但落位偏差 10.3 mm、未关门，判为 stage 3。 23:36/23:46：B 站 Astra 诊断两次在开跑前的端点探测就被拒（429，额度用完），没有生成 episode。C 站 draw01 第一次启动时缺 fcl：交接包漏了 layout_v3/audit/deps，已补齐，23:52 重跑。",
       "owner": "codex@5090（GPT-6 Astra）· claude 指导/审核",
       "eta": "C draw01 约 24:00 出结果；B 站 G4 两组未过，release 待定",
       "status": "running",
@@ -321,7 +326,7 @@
     },
     {
       "id": "Q-subop",
-      "topic": "子操作库（「goai_子操作集合」）：585 行操作矩阵；首批 12 段复用 A/B 两站 G3 轨迹登记，物理判定 7 通过 / 5 部分通过，完整准入 0/12，新采集 0 条。第 2 轮（22:28 完成）：A 站相机分割审计，6 个 A 段已补上回放统计。第 3 轮（23:15 派发）：在 A100 的 5/6 号卡上补测 FR3 指垫区域。相机定版后开始 FR3 通用搬运子操作的新采集。",
+      "topic": "子操作库（「goai_子操作集合」）：585 行操作矩阵；首批 12 段复用 A/B 两站 G3 轨迹登记，物理判定 7 通过 / 5 部分通过，完整准入 0/12，新采集 0 条。第 2 轮（22:28 完成）：A 站相机分割审计，6 个 A 段已补上回放统计。第 3 轮（23:15 派发）：在 A100 的 5/6 号卡上补测 FR3 指垫区域。相机定版后开始 FR3 通用搬运子操作的新采集。 00:00 派发第 4 轮：按工作流给矩阵行和已登记片段打标签，并生成 workflow_coverage 覆盖表。",
       "owner": "codex@5090（goai_子操作集合）· claude 指导",
       "status": "running",
       "eta": "指垫补测后开新采",
@@ -375,21 +380,21 @@
     },
     {
       "id": "Q2",
-      "topic": "wf01–wf05 脚本化采集：wf01 全量 0/12 失败后暂停；孪生验收通过后用 v15 执行器 + 物理夹持回到 wf01，再 wf02–wf05（原 Q3 并入）",
-      "owner": "recon_kit@5090",
-      "status": "paused",
-      "eta": "孪生验收后",
-      "evidence": "final_round/5090/recon_kit/collect_episodes.py; wf01/collect/RUN_MANIFEST.json",
-      "group": "blocked"
+      "topic": "五个工作流统一到 v4 孪生采集（09-17 决定）：旧的 recon_kit 场景与 wf01 脚本采集停用；新采集以子操作为单位、按 workflow_v4_map.json 组织",
+      "owner": "goai_子操作集合 · claude",
+      "status": "running",
+      "eta": "标注完成后按步骤补采",
+      "evidence": "final_round/workflow_v4_map.json",
+      "group": "active"
     },
     {
       "id": "Q2b",
-      "topic": "GPT-6 Astra 示范 episode（每工作流 1 条）——等 codex 额度恢复",
-      "owner": "codex@5090",
+      "topic": "Astra 采集：5090 和 A100 用的是同一个 Codex 账号（pro），周额度已用完，端点返回 429 usage_limit_reached；响应头给出 2026-09-23 04:03（北京时间）恢复。在此之前所有 Astra 规划调用都会失败，B 站正式 20 次也因此顺延。",
+      "owner": "需你决定：等到 09-23，或提供另一个可用账号",
       "status": "blocked",
-      "eta": "2026-09-17 20:37 额度恢复后",
-      "evidence": "codex 用量上限；其余 6 个登录 401；claude 未登录",
-      "group": "blocked"
+      "eta": "2026-09-23 04:03",
+      "evidence": "5090:_shared/quota_probe.py 的输出（只含限额响应头，不含凭据）",
+      "group": "decide"
     },
     {
       "id": "Q6",
@@ -872,6 +877,10 @@
     {
       "date": "2026-09-16 23:25",
       "entry": "**A 站相机定选；C 站剩余两组在 A100 开跑；B 站 G4 有两组未过门。** A 站分割审计（子操作 agent 在 A100 上完成）：按 G3 轨迹恢复 10 个阶段，最大位姿误差 0.000273 mm，每阶段渲染 8 次后再取图。配置①（近景正面 + 原侧面 + 斜俯视 + 原腕相机）下，瓶子和称量纸各有 ≥3 路合格固定视角，腕部目标 10/10；腕部可见的来源位与称量纸像素是另一套配置（后移腕相机）的约 2 倍，因此保留原腕相机。严格判据仍是 0/10：FR3 指垫是不渲染的 guide 碰撞体，无法直接计数，已安排补测“渲染手指上的指垫区域”，判据不放宽。C 站：主 agent 22:27 交付完整命令包（8.8 MB，SHA 已核对），A100 上输入检查通过，draw01 于 23:10 启动，渲染器正常。B 站：G4 按当前实测 TCP 复测 108 格，原始负分离 0；下探 20 cm 35/36 通过，下探 5 cm 27/36、水平 24/36 未达 90%，因此不发布 release。23:00 起第二次 B 站 Astra 诊断试次在跑。"
+    },
+    {
+      "date": "2026-09-17 00:15",
+      "entry": "**五个工作流统一到 v4 孪生场景；Astra 周额度用完，09-23 才恢复。** 用户指出，五个工作流的采集场景和 v4 孪生不是同一个场景。核实结果：wf01–wf05 用的是 09-11 各自重建的 `room_mounted.usda`，它由 lab_clean 改出，每个工作流一台 FR3。已决定只在 v4 孪生（Scene02 + A/B/C 三站）里采，映射表见 `final_round/workflow_v4_map.json`：wf01（称量 → 研磨 → 装坩埚 → 入炉 → 存放）和 wf02（小瓶回收 → 样品台 → XRD → 废弃）在 v4 里可完整覆盖；wf03 改为 A-Lab 乙醇浆料加干燥；wf04 只做称量、入炉、钳取；wf05 改用储液架、开合盖和废弃容器。v4 里没有的仪器不采，也不虚构。看板的工作流表和缩略图已改为 v4 实拍帧，旧场景的状态不再覆盖新状态。Astra：5090 和 A100 是同一个 pro 账号，周额度已用完（429 usage_limit_reached，09-23 04:03 恢复），B 站 Astra 诊断两次都在集前被拒。C 站 draw01 在 A100 上第一次启动时缺 fcl，原因是交接包漏了 `layout_v3/audit/deps`；补齐后已重跑。"
     }
   ],
   "contract": [
@@ -1248,13 +1257,13 @@
       "link_text": "PDF 与图件 →"
     },
     {
-      "lane": "五个 SafeLab 工作流",
-      "status": "paused",
-      "owner": "recon_kit@5090 · claude",
-      "now": "5/5 场景重建 ok、展示页 4/5；wf01 脚本采集跑通前两原语（放置误差 42–58 mm）后全量 0/12 失败，已暂停，算力与人力转到孪生采集（09-12 决定）。",
-      "next": "孪生验收通过后，用 v15 执行器 + 物理夹持回到 wf01 采集；Astra 示范 episode 等 codex 额度 09-17 恢复。",
-      "link": "showcase.html",
-      "link_text": "五个工作流展示页 →"
+      "lane": "五个工作流（统一到 v4 孪生）",
+      "status": "running",
+      "owner": "goai_子操作集合@5090/A100 · claude",
+      "now": "五个工作流只在 v4 A-Lab 孪生里采，09-11 各自重建的旧场景已停用。映射结果：wf01、wf02 在 v4 里可以完整做；wf03、wf04、wf05 只能做 v4 里有仪器的那几步。已有数据都来自 G3：wf01 的称量和入炉、wf02 的 C 站小瓶与 XRD。子操作库正在按这张映射表给每一行、每一段标上所属工作流。",
+      "next": "① 标注完成后补 wf01 的研磨 → 装坩埚 → 存放三步，以及 wf02 的废弃处置；② Astra 额度 09-23 04:03 才恢复，在此之前要么只做不调模型的脚本专家采集，要么换账号，由用户决定；③ 是否给 v4 增加搅拌台、离心机、试剂柜等仪器，由用户决定。",
+      "link": "#m",
+      "link_text": "五个工作流 × v4 映射 →"
     }
   ]
 }

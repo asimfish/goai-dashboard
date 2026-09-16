@@ -1,16 +1,16 @@
 {
- "snapshot_at": "2026-09-16T23:12+08:00",
+ "snapshot_at": "2026-09-16T23:57+08:00",
  "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
  "gpus": [
   {
    "index": 0,
-   "used_mib": 7548,
-   "util": "37%",
+   "used_mib": 15179,
+   "util": "62%",
    "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
   },
   {
    "index": 1,
-   "used_mib": 1204,
+   "used_mib": 18159,
    "util": "0%",
    "note": "用户 ubuntu 的 glint.train 占用，不使用"
   }
@@ -19,27 +19,27 @@
   {
    "id": "wf01_solid_state_calcination",
    "recon": "ok",
-   "collect": "paused"
+   "collect": "partial"
   },
   {
    "id": "wf02_powder_recovery_xrd",
    "recon": "ok",
-   "collect": "failed"
+   "collect": "partial"
   },
   {
    "id": "wf03_wet_chemical_precursor",
-   "recon": "ok",
-   "collect": "failed"
+   "recon": "partial",
+   "collect": "pending"
   },
   {
    "id": "wf04_flux_growth_pt_crucible",
-   "recon": "ok",
-   "collect": "failed"
+   "recon": "partial",
+   "collect": "pending"
   },
   {
    "id": "wf05_reagent_logistics_safety",
-   "recon": "ok",
-   "collect": "failed"
+   "recon": "partial",
+   "collect": "pending"
   }
  ]
 }
