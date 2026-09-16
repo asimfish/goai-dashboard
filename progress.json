@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-17T00:30+08:00",
+  "updated": "2026-09-17T00:40+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -18,17 +18,17 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-17T00:30+08:00",
+    "snapshot_at": "2026-09-17T00:40+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 7546,
-        "util": "26%",
+        "used_mib": 15394,
+        "util": "51%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 1204,
+        "used_mib": 1734,
         "util": "0%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
@@ -107,9 +107,9 @@
       "collect": "partial",
       "astra_demo": "blocked",
       "showcase": "partial",
-      "note": "v4 里 5 步都有对应物体：A 站称量 → 研磨 → 装坩埚，B 站入炉，C 站存放。已有数据：A 站 G3 3/3（t_dose）、B 站 G3 3/3（t_heat）。09-11 旧场景里那条 14 个原语的 wf01 视频属于已停用的旧场景，不计入。",
+      "note": "v4 里 5 步都有对应物体，但子操作 agent 的几何核对发现两处布局问题：研钵离 FR3 基座 1.77 m，超出 FR3 可达范围，t_grind 在当前 v4 布局里采不了；t_store 的坩埚在 B 站、存放架在 C 站，要先定义站间交接。已有数据：A 站 G3 3/3（t_dose）、B 站 G3 3/3（t_heat）。t_load 正在做第一次 Astra 新采（A100）。",
       "evidence": "final_round/workflow_v4_map.json; 5090:subop_library/index.jsonl",
-      "collect_detail": "t_dose / t_heat 已有 G3 轨迹，各登记 6 段；t_grind、t_load、t_store 未采",
+      "collect_detail": "t_dose / t_heat 各 6 段登记；t_load 新采进行中；t_grind、t_store 被布局阻塞",
       "scene": "v4_twin"
     },
     {
@@ -327,10 +327,10 @@
     },
     {
       "id": "Q-subop",
-      "topic": "子操作库（「goai_子操作集合」）：585 行操作矩阵；首批 12 段复用 A/B 两站 G3 轨迹登记，物理判定 7 通过 / 5 部分通过，完整准入 0/12，新采集 0 条。第 2 轮（22:28 完成）：A 站相机分割审计，6 个 A 段已补上回放统计。第 3 轮（23:15 派发）：在 A100 的 5/6 号卡上补测 FR3 指垫区域。相机定版后开始 FR3 通用搬运子操作的新采集。 00:00 派发第 4 轮：按工作流给矩阵行和已登记片段打标签，并生成 workflow_coverage 覆盖表。",
+      "topic": "子操作库（「goai_子操作集合」）：585 行矩阵已按工作流标注（303 行有映射，282 行是编排/软件项）；首批 12 段物理 7 通过 / 5 部分通过，完整准入 0/12。00:40 起第 5 轮：第一次 Astra 新采——FR3 把空坩埚搬上转盘架（wf01.t_load），A100 GPU5/6，先跑 2 次诊断试次；几何不可达就改采 precursor_2 的投料路径。几何核对结论：研钵超出 FR3 可达范围（t_grind 采不了），t_store 需要先定义 B→C 交接。",
       "owner": "codex@5090（goai_子操作集合）· claude 指导",
       "status": "running",
-      "eta": "指垫补测后开新采",
+      "eta": "首批新采约 1–2 小时",
       "evidence": "https://asimfish.github.io/goai-dashboard/subops.html; 5090:subop_library/{registration_report.md,index.jsonl}",
       "group": "active"
     },
