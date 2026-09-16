@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-17T00:57+08:00",
+  "updated": "2026-09-17T01:04+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -14,22 +14,23 @@
     "wf01_episode": "https://asimfish.github.io/goai-dashboard/wf01_episode.html",
     "viewer_B_g3": "https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_B_g3",
     "viewer_A_g3": "https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_A_g3",
-    "subops": "https://asimfish.github.io/goai-dashboard/subops.html"
+    "subops": "https://asimfish.github.io/goai-dashboard/subops.html",
+    "viewer_subops": "https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_SUBOP-B-06"
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-17T00:57+08:00",
+    "snapshot_at": "2026-09-17T01:04+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 8309,
-        "util": "44%",
+        "used_mib": 481,
+        "util": "13%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 8625,
-        "util": "19%",
+        "used_mib": 8362,
+        "util": "29%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -327,7 +328,7 @@
     },
     {
       "id": "Q-subop",
-      "topic": "子操作库（「goai_子操作集合」）：585 行矩阵已按工作流标注（303 行有映射，282 行是编排/软件项）；首批 12 段物理 7 通过 / 5 部分通过，完整准入 0/12。00:40 起第 5 轮：第一次 Astra 新采：几何核对发现转盘架 6 个槽位全满，wf01.t_load 无处可放，按预案改采 precursor_2 的投料路径（起点 TCP 半径 0.405 m、终点 0.539 m，都在 A 站实测包络 0.38–0.58 m 内）。00:44 在 A100 启动的第一次试次没有产生 episode（疑似进程随 ssh 会话退出），已要求它查日志后用脱离会话的方式重启，并注意沙箱刚补装的 ffmpeg。几何核对结论：研钵超出 FR3 可达范围（t_grind 采不了），t_store 需要先定义 B→C 交接。",
+      "topic": "子操作库（「goai_子操作集合」）：585 行矩阵已按工作流标注（303 行有映射，282 行是编排/软件项）；首批 12 段物理 7 通过 / 5 部分通过，完整准入 0/12。00:40 起第 5 轮：第一次 Astra 新采：几何核对发现转盘架 6 个槽位全满，wf01.t_load 无处可放，按预案改采 precursor_2 的投料路径（起点 TCP 半径 0.405 m、终点 0.539 m，都在 A 站实测包络 0.38–0.58 m 内）。00:44 在 A100 启动的第一次试次没有产生 episode（疑似进程随 ssh 会话退出），已要求它查日志后用脱离会话的方式重启，并注意沙箱刚补装的 ffmpeg。几何核对结论：研钵超出 FR3 可达范围（t_grind 采不了），t_store 需要先定义 B→C 交接。 01:20：12 段已全部接入三维查看器（每段一个回放，与 steps.npz 逐位一致，误差 0），子操作页每段都有\"在三维查看器中播放\"链接。",
       "owner": "codex@5090（goai_子操作集合）· claude 指导",
       "status": "running",
       "eta": "首批新采约 1–2 小时",
@@ -894,6 +895,10 @@
     {
       "date": "2026-09-17 01:10",
       "entry": "**C 站 draw01 在 A100 上第二次失败，原因是沙箱缺 ffmpeg；第三次已启动。** 63 分钟仿真里小瓶称量回架、样品架入 XRD、释放开窗全部到位，但 twin_demo 在最后一步用 ffmpeg 编码站位视频时报 FileNotFoundError，steps.npz/meta.json 没来得及写，无法审计；失败目录保留。已给 A100 的 Isaac 环境补装静态 ffmpeg 7.0.2，01:05 重跑。子操作 agent 的第一次 Astra 新采：转盘架槽位全满，t_load 改为 precursor_2 投料路径；00:44 的试次没有产出，正在排查后重启。这两个问题都出在 A100 环境与 5090 的差异（缺 fcl、缺 ffmpeg、进程脱离会话），不是场景或采集逻辑的问题。"
+    },
+    {
+      "date": "2026-09-17 01:20",
+      "entry": "**12 段子操作接入三维查看器。** 每段从其 steps.npz 单独导出为 three.js 回放（场景身份、执行器源码哈希、接触/静置偏移都取自父 G3 轨迹），导出校验 12/12 与源数组逐位一致；查看器场景列表新增「子操作片段」分组，子操作页每段都能一键跳到对应回放：https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_SUBOP-B-06 。同时给子操作 agent 下达新排期：立即把 C 站已通过的 draw00 切段登记（三站都有段）；A100 上双线并行——GPU5 用脚本专家保证 precursor_2/3/4 投料各一条，GPU6 跑 Astra 诊断；每登记一批就导出回放上看板。"
     }
   ],
   "contract": [
