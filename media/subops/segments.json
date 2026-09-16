@@ -13,7 +13,9 @@
     "A03.02",
     "I054"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T151316_239038588_scripted/episodes/A",
    "parent_ticks": [
     300,
@@ -68,6 +70,25 @@
     ],
     "collision_preflight_refusals": []
    },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
    "frames": 60,
    "five_view_sets": 2,
    "video_bytes": 430364
@@ -84,7 +105,9 @@
     "A03.02",
     "I054"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T151316_239038588_scripted/episodes/A",
    "parent_ticks": [
     601,
@@ -136,6 +159,25 @@
     ],
     "collision_preflight_refusals": []
    },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
    "frames": 72,
    "five_view_sets": 3,
    "video_bytes": 459603
@@ -152,7 +194,9 @@
     "A03.02",
     "I054"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T151316_239038588_scripted/episodes/A",
    "parent_ticks": [
     961,
@@ -208,6 +252,25 @@
     ],
     "collision_preflight_refusals": []
    },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
    "frames": 36,
    "five_view_sets": 2,
    "video_bytes": 254145
@@ -224,7 +287,9 @@
     "A03.02",
     "I054"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T151316_239038588_scripted/episodes/A",
    "parent_ticks": [
     1141,
@@ -285,6 +350,25 @@
     "dosing_hold_s": 3.7666666666666666,
     "collision_preflight_refusals": []
    },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
    "frames": 360,
    "five_view_sets": 4,
    "video_bytes": 2232861
@@ -300,7 +384,9 @@
    "source_rows": [
     "I054"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T151316_239038588_scripted/episodes/A",
    "parent_ticks": [
     2941,
@@ -375,6 +461,25 @@
      }
     ]
    },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
    "frames": 35,
    "five_view_sets": 2,
    "video_bytes": 256858
@@ -390,7 +495,9 @@
    "source_rows": [
     "I054"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T151316_239038588_scripted/episodes/A",
    "parent_ticks": [
     3117,
@@ -450,6 +557,25 @@
     ],
     "collision_preflight_refusals": []
    },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
    "frames": 60,
    "five_view_sets": 3,
    "video_bytes": 382703
@@ -468,7 +594,10 @@
     "A13.05",
     "I122"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T122918_093111776_scripted/episodes/B",
    "parent_ticks": [
     2760,
@@ -523,6 +652,25 @@
     ],
     "collision_preflight_refusals": []
    },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
    "frames": 164,
    "five_view_sets": 2,
    "video_bytes": 1302362
@@ -539,7 +687,10 @@
     "A13.06",
     "I122"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T122918_093111776_scripted/episodes/B",
    "parent_ticks": [
     6042,
@@ -591,6 +742,25 @@
     ],
     "collision_preflight_refusals": []
    },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
    "frames": 78,
    "five_view_sets": 3,
    "video_bytes": 554655
@@ -607,7 +777,10 @@
     "A13.08",
     "I122"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T122918_093111776_scripted/episodes/B",
    "parent_ticks": [
     7602,
@@ -664,6 +837,25 @@
     ],
     "collision_preflight_refusals": []
    },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
    "frames": 36,
    "five_view_sets": 3,
    "video_bytes": 309627
@@ -681,7 +873,10 @@
     "A13.10",
     "I122"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T122918_093111776_scripted/episodes/B",
    "parent_ticks": [
     8322,
@@ -744,6 +939,25 @@
     ],
     "collision_preflight_refusals": []
    },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
    "frames": 216,
    "five_view_sets": 6,
    "video_bytes": 1636718
@@ -760,7 +974,10 @@
     "A13.11",
     "I122"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T122918_093111776_scripted/episodes/B",
    "parent_ticks": [
     12642,
@@ -820,6 +1037,25 @@
     ],
     "collision_preflight_refusals": []
    },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
    "frames": 48,
    "five_view_sets": 2,
    "video_bytes": 391367
@@ -836,7 +1072,10 @@
     "A13.13",
     "I122"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T122918_093111776_scripted/episodes/B",
    "parent_ticks": [
     13602,
@@ -898,9 +1137,743 @@
     ],
     "collision_preflight_refusals": []
    },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
    "frames": 336,
    "five_view_sets": 4,
    "video_bytes": 2316234
+  },
+  {
+   "id": "SUBOP-C-01",
+   "name": "vial_preapproach",
+   "g05_stage": 3,
+   "stage_zh": "开爪到预接近位",
+   "actor": "ur5e_C",
+   "object": "vial_1",
+   "station": "C",
+   "source_rows": [],
+   "workflow_ids": [
+    "wf02"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T173540_131079855_scripted/episodes/C",
+   "parent_ticks": [
+    5252,
+    6212
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [],
+   "boundary_stages": [],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "parent_penetration_ticks_zero": true,
+    "parent_joint_state_valid": true,
+    "stage_boundary_present": true,
+    "stage_specific_visibility_measured": false
+   },
+   "metrics": {
+    "ticks": 960,
+    "duration_s": 4.0
+   },
+   "has_boundary": false,
+   "audit_keys": [
+    "conditions",
+    "execution_outcome",
+    "metrics",
+    "parent_audit",
+    "parent_audit_sha256",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualified",
+    "schema",
+    "segment",
+    "visibility_status"
+   ],
+   "frames": 0,
+   "five_view_sets": 0,
+   "video_bytes": 0
+  },
+  {
+   "id": "SUBOP-C-02",
+   "name": "vial_close",
+   "g05_stage": 4,
+   "stage_zh": "沿接近方向到夹持位并闭爪",
+   "actor": "ur5e_C",
+   "object": "vial_1",
+   "station": "C",
+   "source_rows": [],
+   "workflow_ids": [
+    "wf02"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T173540_131079855_scripted/episodes/C",
+   "parent_ticks": [
+    6212,
+    6932
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [],
+   "boundary_stages": [],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "parent_penetration_ticks_zero": true,
+    "parent_joint_state_valid": true,
+    "stage_boundary_present": true,
+    "stage_specific_visibility_measured": false
+   },
+   "metrics": {
+    "ticks": 720,
+    "duration_s": 3.0
+   },
+   "has_boundary": false,
+   "audit_keys": [
+    "conditions",
+    "execution_outcome",
+    "metrics",
+    "parent_audit",
+    "parent_audit_sha256",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualified",
+    "schema",
+    "segment",
+    "visibility_status"
+   ],
+   "frames": 0,
+   "five_view_sets": 0,
+   "video_bytes": 0
+  },
+  {
+   "id": "SUBOP-C-03",
+   "name": "vial_lift",
+   "g05_stage": 5,
+   "stage_zh": "确认物理夹持并提离",
+   "actor": "ur5e_C",
+   "object": "vial_1",
+   "station": "C",
+   "source_rows": [],
+   "workflow_ids": [
+    "wf02"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T173540_131079855_scripted/episodes/C",
+   "parent_ticks": [
+    6932,
+    7652
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [],
+   "boundary_stages": [],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "parent_penetration_ticks_zero": true,
+    "parent_joint_state_valid": true,
+    "stage_boundary_present": true,
+    "stage_specific_visibility_measured": false
+   },
+   "metrics": {
+    "ticks": 720,
+    "duration_s": 3.0
+   },
+   "has_boundary": false,
+   "audit_keys": [
+    "conditions",
+    "execution_outcome",
+    "metrics",
+    "parent_audit",
+    "parent_audit_sha256",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualified",
+    "schema",
+    "segment",
+    "visibility_status"
+   ],
+   "frames": 0,
+   "five_view_sets": 0,
+   "video_bytes": 0
+  },
+  {
+   "id": "SUBOP-C-04",
+   "name": "vial_carry",
+   "g05_stage": 6,
+   "stage_zh": "沿路线携行",
+   "actor": "ur5e_C",
+   "object": "vial_1",
+   "station": "C",
+   "source_rows": [],
+   "workflow_ids": [
+    "wf02"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T173540_131079855_scripted/episodes/C",
+   "parent_ticks": [
+    7652,
+    10532
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [],
+   "boundary_stages": [],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "parent_penetration_ticks_zero": true,
+    "parent_joint_state_valid": true,
+    "stage_boundary_present": true,
+    "stage_specific_visibility_measured": false
+   },
+   "metrics": {
+    "ticks": 2880,
+    "duration_s": 12.0
+   },
+   "has_boundary": false,
+   "audit_keys": [
+    "conditions",
+    "execution_outcome",
+    "metrics",
+    "parent_audit",
+    "parent_audit_sha256",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualified",
+    "schema",
+    "segment",
+    "visibility_status"
+   ],
+   "frames": 0,
+   "five_view_sets": 0,
+   "video_bytes": 0
+  },
+  {
+   "id": "SUBOP-C-05",
+   "name": "vial_lower",
+   "g05_stage": 7,
+   "stage_zh": "对准目标位下放",
+   "actor": "ur5e_C",
+   "object": "vial_1",
+   "station": "C",
+   "source_rows": [],
+   "workflow_ids": [
+    "wf02"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T173540_131079855_scripted/episodes/C",
+   "parent_ticks": [
+    10532,
+    12452
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [],
+   "boundary_stages": [],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "parent_penetration_ticks_zero": true,
+    "parent_joint_state_valid": true,
+    "stage_boundary_present": true,
+    "stage_specific_visibility_measured": false
+   },
+   "metrics": {
+    "ticks": 1920,
+    "duration_s": 8.0
+   },
+   "has_boundary": false,
+   "audit_keys": [
+    "conditions",
+    "execution_outcome",
+    "metrics",
+    "parent_audit",
+    "parent_audit_sha256",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualified",
+    "schema",
+    "segment",
+    "visibility_status"
+   ],
+   "frames": 0,
+   "five_view_sets": 0,
+   "video_bytes": 0
+  },
+  {
+   "id": "SUBOP-C-06",
+   "name": "vial_release_exit",
+   "g05_stage": 8,
+   "stage_zh": "开爪释放、撤离并检查稳定",
+   "actor": "ur5e_C",
+   "object": "vial_1",
+   "station": "C",
+   "source_rows": [],
+   "workflow_ids": [
+    "wf02"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T173540_131079855_scripted/episodes/C",
+   "parent_ticks": [
+    12452,
+    14372
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [],
+   "boundary_stages": [],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "parent_penetration_ticks_zero": true,
+    "parent_joint_state_valid": true,
+    "stage_boundary_present": true,
+    "stage_specific_visibility_measured": false
+   },
+   "metrics": {
+    "ticks": 1920,
+    "duration_s": 8.0
+   },
+   "has_boundary": false,
+   "audit_keys": [
+    "conditions",
+    "execution_outcome",
+    "metrics",
+    "parent_audit",
+    "parent_audit_sha256",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualified",
+    "schema",
+    "segment",
+    "visibility_status"
+   ],
+   "frames": 0,
+   "five_view_sets": 0,
+   "video_bytes": 0
+  },
+  {
+   "id": "SUBOP-C-07",
+   "name": "holder_preapproach",
+   "g05_stage": 3,
+   "stage_zh": "开爪到预接近位",
+   "actor": "ur5e_C",
+   "object": "holder_0",
+   "station": "C",
+   "source_rows": [],
+   "workflow_ids": [
+    "wf02"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T173540_131079855_scripted/episodes/C",
+   "parent_ticks": [
+    18165,
+    19125
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [],
+   "boundary_stages": [],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "parent_penetration_ticks_zero": true,
+    "parent_joint_state_valid": true,
+    "stage_boundary_present": true,
+    "stage_specific_visibility_measured": false
+   },
+   "metrics": {
+    "ticks": 960,
+    "duration_s": 4.0
+   },
+   "has_boundary": false,
+   "audit_keys": [
+    "conditions",
+    "execution_outcome",
+    "metrics",
+    "parent_audit",
+    "parent_audit_sha256",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualified",
+    "schema",
+    "segment",
+    "visibility_status"
+   ],
+   "frames": 0,
+   "five_view_sets": 0,
+   "video_bytes": 0
+  },
+  {
+   "id": "SUBOP-C-08",
+   "name": "holder_close",
+   "g05_stage": 4,
+   "stage_zh": "沿接近方向到夹持位并闭爪",
+   "actor": "ur5e_C",
+   "object": "holder_0",
+   "station": "C",
+   "source_rows": [],
+   "workflow_ids": [
+    "wf02"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T173540_131079855_scripted/episodes/C",
+   "parent_ticks": [
+    19125,
+    19845
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [],
+   "boundary_stages": [],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "parent_penetration_ticks_zero": true,
+    "parent_joint_state_valid": true,
+    "stage_boundary_present": true,
+    "stage_specific_visibility_measured": false
+   },
+   "metrics": {
+    "ticks": 720,
+    "duration_s": 3.0
+   },
+   "has_boundary": false,
+   "audit_keys": [
+    "conditions",
+    "execution_outcome",
+    "metrics",
+    "parent_audit",
+    "parent_audit_sha256",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualified",
+    "schema",
+    "segment",
+    "visibility_status"
+   ],
+   "frames": 0,
+   "five_view_sets": 0,
+   "video_bytes": 0
+  },
+  {
+   "id": "SUBOP-C-09",
+   "name": "holder_lift",
+   "g05_stage": 5,
+   "stage_zh": "确认物理夹持并提离",
+   "actor": "ur5e_C",
+   "object": "holder_0",
+   "station": "C",
+   "source_rows": [],
+   "workflow_ids": [
+    "wf02"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T173540_131079855_scripted/episodes/C",
+   "parent_ticks": [
+    19845,
+    20805
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [],
+   "boundary_stages": [],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "parent_penetration_ticks_zero": true,
+    "parent_joint_state_valid": true,
+    "stage_boundary_present": true,
+    "stage_specific_visibility_measured": false
+   },
+   "metrics": {
+    "ticks": 960,
+    "duration_s": 4.0
+   },
+   "has_boundary": false,
+   "audit_keys": [
+    "conditions",
+    "execution_outcome",
+    "metrics",
+    "parent_audit",
+    "parent_audit_sha256",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualified",
+    "schema",
+    "segment",
+    "visibility_status"
+   ],
+   "frames": 0,
+   "five_view_sets": 0,
+   "video_bytes": 0
+  },
+  {
+   "id": "SUBOP-C-10",
+   "name": "holder_carry",
+   "g05_stage": 6,
+   "stage_zh": "沿路线携行",
+   "actor": "ur5e_C",
+   "object": "holder_0",
+   "station": "C",
+   "source_rows": [],
+   "workflow_ids": [
+    "wf02"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T173540_131079855_scripted/episodes/C",
+   "parent_ticks": [
+    20805,
+    28245
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [],
+   "boundary_stages": [],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "parent_penetration_ticks_zero": true,
+    "parent_joint_state_valid": true,
+    "stage_boundary_present": true,
+    "stage_specific_visibility_measured": false
+   },
+   "metrics": {
+    "ticks": 7440,
+    "duration_s": 31.0
+   },
+   "has_boundary": false,
+   "audit_keys": [
+    "conditions",
+    "execution_outcome",
+    "metrics",
+    "parent_audit",
+    "parent_audit_sha256",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualified",
+    "schema",
+    "segment",
+    "visibility_status"
+   ],
+   "frames": 0,
+   "five_view_sets": 0,
+   "video_bytes": 0
+  },
+  {
+   "id": "SUBOP-C-11",
+   "name": "holder_lower",
+   "g05_stage": 7,
+   "stage_zh": "对准目标位下放",
+   "actor": "ur5e_C",
+   "object": "holder_0",
+   "station": "C",
+   "source_rows": [],
+   "workflow_ids": [
+    "wf02"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T173540_131079855_scripted/episodes/C",
+   "parent_ticks": [
+    28245,
+    29925
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [],
+   "boundary_stages": [],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "parent_penetration_ticks_zero": true,
+    "parent_joint_state_valid": true,
+    "stage_boundary_present": true,
+    "stage_specific_visibility_measured": false
+   },
+   "metrics": {
+    "ticks": 1680,
+    "duration_s": 7.0
+   },
+   "has_boundary": false,
+   "audit_keys": [
+    "conditions",
+    "execution_outcome",
+    "metrics",
+    "parent_audit",
+    "parent_audit_sha256",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualified",
+    "schema",
+    "segment",
+    "visibility_status"
+   ],
+   "frames": 0,
+   "five_view_sets": 0,
+   "video_bytes": 0
+  },
+  {
+   "id": "SUBOP-C-12",
+   "name": "holder_release_exit",
+   "g05_stage": 8,
+   "stage_zh": "开爪释放、撤离并检查稳定",
+   "actor": "ur5e_C",
+   "object": "holder_0",
+   "station": "C",
+   "source_rows": [],
+   "workflow_ids": [
+    "wf02"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T173540_131079855_scripted/episodes/C",
+   "parent_ticks": [
+    29925,
+    31125
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [],
+   "boundary_stages": [],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "parent_penetration_ticks_zero": true,
+    "parent_joint_state_valid": true,
+    "stage_boundary_present": true,
+    "stage_specific_visibility_measured": false
+   },
+   "metrics": {
+    "ticks": 1200,
+    "duration_s": 5.0
+   },
+   "has_boundary": false,
+   "audit_keys": [
+    "conditions",
+    "execution_outcome",
+    "metrics",
+    "parent_audit",
+    "parent_audit_sha256",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualified",
+    "schema",
+    "segment",
+    "visibility_status"
+   ],
+   "frames": 0,
+   "five_view_sets": 0,
+   "video_bytes": 0
+  },
+  {
+   "id": "SUBOP-C-13",
+   "name": "holder_close_window",
+   "g05_stage": 9,
+   "stage_zh": null,
+   "actor": "ur5e_C",
+   "object": "holder_0",
+   "station": "C",
+   "source_rows": [],
+   "workflow_ids": [
+    "wf02"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T173540_131079855_scripted/episodes/C",
+   "parent_ticks": [
+    31125,
+    32565
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [],
+   "boundary_stages": [],
+   "physical_status": "PARTIAL",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "parent_penetration_ticks_zero": true,
+    "parent_joint_state_valid": true,
+    "stage_boundary_present": true,
+    "stage_specific_visibility_measured": false
+   },
+   "metrics": {
+    "ticks": 1440,
+    "duration_s": 6.0
+   },
+   "has_boundary": false,
+   "audit_keys": [
+    "conditions",
+    "execution_outcome",
+    "metrics",
+    "parent_audit",
+    "parent_audit_sha256",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualified",
+    "schema",
+    "segment",
+    "visibility_status"
+   ],
+   "frames": 0,
+   "five_view_sets": 0,
+   "video_bytes": 0
   }
  ]
 }
