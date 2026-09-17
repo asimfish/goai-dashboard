@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-17T23:08+08:00",
+  "updated": "2026-09-17T23:54+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -19,7 +19,7 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-17T23:08+08:00",
+    "snapshot_at": "2026-09-17T23:54+08:00",
     "gpus": [
       {
         "index": 0,
@@ -29,7 +29,7 @@
       },
       {
         "index": 1,
-        "used_mib": 15353,
+        "used_mib": 24074,
         "util": "1%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
@@ -38,7 +38,7 @@
       {
         "mount": "/",
         "used": "98%",
-        "free": "93G",
+        "free": "92G",
         "note": "不写"
       },
       {
@@ -481,6 +481,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-17 15:53",
+      "entry": "答辩 PPT 新增两页「多智能体并行回环」：S0/S1 契约（实体—证据锚点指向 LOOP_PROTOCOL / ARCHITECTURE / orchestrator / parallel_run / 正式运行记录）→ 按 S1 最高分版式原生重建 → img2ppt 可编辑件 → 1:1 合入模板。生图通道：5090 的 Codex 登录被作废（需重新 codex login），本机 Codex 额度耗尽（09-19 恢复），S2–S5 暂缓。"
+    },
     {
       "date": "2026-09-16 10:29",
       "entry": "第六轮图件交付：作者反馈「字号、粗细、空白差点意思」，在论文里实测第五轮正文 5.2–5.8 pt、全部加粗、卡片大片留白。设计系统改为按印刷 pt 定义字号、两级字重、卡片随内容定尺寸，十张图重排写回两篇论文；print_audit 实测中文正文 8.1 pt / 英文 7.2 pt，最小 7.16 pt。画廊新增四份第六轮 PDF。"
@@ -941,6 +945,15 @@
     "GitHub Pages：https://asimfish.github.io/goai-dashboard/（main 分支页面，由 final_round/site/deploy_pages.sh 从 5090 推送；data 分支 status.json 由 5090 cron 每 10 分钟推送）"
   ],
   "pdfs": [
+    {
+      "title": "SAGE-Mat 答辩 PPT · 新增「多智能体并行回环」两页（第 10、11 页）",
+      "url": "pdf/gallery/sagemat_deck_loop_slides_20260917.pptx",
+      "lang": "中文",
+      "pages": 19,
+      "date": "2026-09-17",
+      "status": "ok",
+      "note": "世界人工智能开源大赛模板 + 两页新图：1/2 账本状态机与并行分派（SC4 账本为轴），2/2 互搏通道与机械闸门（SC2 单主干闭环）。设计系统原生重建 → super_img2ppt 可编辑件 → 形状 1:1 合入模板（微软雅黑）。页面预览：pdf/gallery/deck_loop_slide1_20260917.png、deck_loop_slide2_20260917.png；单页可编辑件：deck_loop_parallel_editable.pptx、deck_loop_converge_editable.pptx。生图候选（S2–S5）因两条 Codex 通道当天不可用而暂缓，S0/S1 契约与 prompt 包已就绪，通道恢复后补跑。"
+    },
     {
       "title": "BYZSO 综述 · 中文（第六轮配图）",
       "url": "pdf/gallery/byzso_cn_r6_20260916.pdf",
