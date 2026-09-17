@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-18T01:18+08:00",
+  "updated": "2026-09-18T01:38+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -19,7 +19,7 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-18T01:18+08:00",
+    "snapshot_at": "2026-09-18T01:38+08:00",
     "gpus": [
       {
         "index": 0,
@@ -481,6 +481,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-17 17:38",
+      "entry": "答辩 PPT「多智能体并行回环」两页第二轮：作者评价第一轮\"没有顶会的质感\"并给出 ARIS 参考；改为 brief 化内容 + loop-engineering 视觉语言，生图交给 Codex agent（NAS 工作区），条件线框锁语义，素材表供可编辑版嵌图。两页已合入模板并发布。"
+    },
     {
       "date": "2026-09-17 15:53",
       "entry": "答辩 PPT 新增两页「多智能体并行回环」：S0/S1 契约（实体—证据锚点指向 LOOP_PROTOCOL / ARCHITECTURE / orchestrator / parallel_run / 正式运行记录）→ 按 S1 最高分版式原生重建 → img2ppt 可编辑件 → 1:1 合入模板。生图通道：5090 的 Codex 登录被作废（需重新 codex login），本机 Codex 额度耗尽（09-19 恢复），S2–S5 暂缓。"
@@ -950,13 +954,22 @@
   ],
   "pdfs": [
     {
+      "title": "SAGE-Mat 答辩 PPT · 「多智能体并行回环」两页（第二轮 · loop-engineering 风格）",
+      "url": "pdf/gallery/sagemat_deck_loop_slides_r2_20260917.pptx",
+      "lang": "中文",
+      "pages": 19,
+      "date": "2026-09-17",
+      "status": "ok",
+      "note": "第 10、11 页重做：参考 ARIS /method-figure 的画法——三条编号色带、带角色与小插画的白卡、分色连线（深蓝主流程 / 橙色返工回环 / 蓝虚线分派 / 灰线落账 / 绿色放行 / 红虚线升级人类）+ 图例、用真实轮次数据做证据条（4 → 7 → 0 → check-done = 0）。流程：Codex image_gen 出角色表与 8 张 S2 候选 → 我用原生构件画语义正确的条件线框 → Codex 照线框出 4 张 S5 bake 与两张无文字素材表 → 线框（全部原生可编辑对象）+ 裁出的 24 个素材 = 可编辑页，1:1 合入模板。预览：pdf/gallery/deck_loop_r2_slide1_20260917.png、deck_loop_r2_slide2_20260917.png；候选一览：pdf/gallery/deck_loop_r2_candidates_20260917.jpg；角色表：pdf/gallery/deck_loop_r2_cast_20260917.jpg；单页可编辑件：deck_loop_parallel_r2_editable.pptx、deck_loop_converge_r2_editable.pptx。"
+    },
+    {
       "title": "SAGE-Mat 答辩 PPT · 新增「多智能体并行回环」两页（第 10、11 页）",
       "url": "pdf/gallery/sagemat_deck_loop_slides_20260917.pptx",
       "lang": "中文",
       "pages": 19,
       "date": "2026-09-17",
       "status": "ok",
-      "note": "世界人工智能开源大赛模板 + 两页新图：1/2 账本状态机与并行分派（SC4 账本为轴），2/2 互搏通道与机械闸门（SC2 单主干闭环）。设计系统原生重建 → super_img2ppt 可编辑件 → 形状 1:1 合入模板（微软雅黑）。页面预览：pdf/gallery/deck_loop_slide1_20260917.png、deck_loop_slide2_20260917.png；单页可编辑件：deck_loop_parallel_editable.pptx、deck_loop_converge_editable.pptx。生图候选（S2–S5）因两条 Codex 通道当天不可用而暂缓，S0/S1 契约与 prompt 包已就绪，通道恢复后补跑。"
+      "note": "已被第二轮取代（作者评价：质量太低，没有顶会的质感）。世界人工智能开源大赛模板 + 两页新图：1/2 账本状态机与并行分派（SC4 账本为轴），2/2 互搏通道与机械闸门（SC2 单主干闭环）。设计系统原生重建 → super_img2ppt 可编辑件 → 形状 1:1 合入模板（微软雅黑）。页面预览：pdf/gallery/deck_loop_slide1_20260917.png、deck_loop_slide2_20260917.png；单页可编辑件：deck_loop_parallel_editable.pptx、deck_loop_converge_editable.pptx。生图候选（S2–S5）因两条 Codex 通道当天不可用而暂缓，S0/S1 契约与 prompt 包已就绪，通道恢复后补跑。"
     },
     {
       "title": "BYZSO 综述 · 中文（第六轮配图）",
