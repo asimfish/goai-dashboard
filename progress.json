@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-18T02:53+08:00",
+  "updated": "2026-09-18T03:09+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -19,18 +19,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-18T02:53+08:00",
+    "snapshot_at": "2026-09-18T03:09+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 1076,
-        "util": "5%",
+        "used_mib": 8649,
+        "util": "34%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 7197,
-        "util": "10%",
+        "used_mib": 7460,
+        "util": "9%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -38,7 +38,7 @@
       {
         "mount": "/",
         "used": "98%",
-        "free": "90G",
+        "free": "89G",
         "note": "不写"
       },
       {
@@ -499,6 +499,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-17 19:09",
+      "entry": "SAGE-Mat 宣传封面（HTML 源 + 2×/1× PNG）发布；数字出处表在仓库 docs/competition/cover/README.md。"
+    },
     {
       "date": "2026-09-17 18:51",
       "entry": "答辩 PPT「多智能体并行闭环」第三轮：与整套 PPT 的配色/化学流程/用词统一；图一按作者点的两张候选（C01 横向三带、C03 账本居中成环）各出一份最终可编辑页，图二同步重做并把轮次数字按账本更正（4 / 5 / 2 / 0）。三页已合入模板并发布，等作者二选一。"
@@ -987,6 +991,15 @@
     "GitHub Pages：https://asimfish.github.io/goai-dashboard/（main 分支页面，由 final_round/site/deploy_pages.sh 从 5090 推送；data 分支 status.json 由 5090 cron 每 10 分钟推送）"
   ],
   "pdfs": [
+    {
+      "title": "SAGE-Mat 宣传封面（16:9，2880×1620）",
+      "url": "pdf/gallery/sagemat_cover_20260917_2880x1620.png",
+      "lang": "中文",
+      "pages": 1,
+      "date": "2026-09-17",
+      "status": "ok",
+      "note": "版式参照作者给的样例封面，视觉取自本站（浅灰蓝底、白卡、Chakra Petch / IBM Plex / Noto Sans SC、青橙强调色）；流程条 = 文献核验 → 条件抽取 → 前驱体预测 → 方案生成 → 仿真执行 → 表征反馈，插画与答辩 PPT 第 10、11 页同源；笔记本里是 showcase.html 的真实截图。数字逐项对过 FINAL_REPORT 与站点统计，出处见仓库 docs/competition/cover/README.md。1× 版：pdf/gallery/sagemat_cover_20260917_1440x810.png。"
+    },
     {
       "title": "SAGE-Mat 答辩 PPT · 「多智能体并行闭环」第三轮：图一两种构图（A 横向三带 / B 账本居中成环）+ 图二，待作者挑选",
       "url": "pdf/gallery/sagemat_deck_loop_slides_r3_AB_20260917.pptx",
