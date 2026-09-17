@@ -4,8 +4,8 @@
   "input_manifest_sha256": "49cb5dc7ca85d0aff0c5ec307fed58799852da8d677b7e8bacca4c9e56763fa2",
   "coordinate_system": "isaac_z_up",
   "quaternion": "isaac_wxyz",
-  "geometry_sha256": "b7558a516b2b8fb86f0f0f8af63b96e45dbae075c0558bcce320dce1ff523032",
-  "bytes": 13579168,
+  "geometry_sha256": "b025f7eab174413ebb38b53bebb2d796edd782cc0715aeeb6ce51f023d0273a9",
+  "bytes": 13589912,
   "texture_count": 47,
   "entities": [
     {
@@ -800,5 +800,17 @@
       "kind": "articulation_link"
     }
   ],
-  "transmission_materials": 20
+  "transmission_materials": 20,
+  "visual_overlay": {
+    "revision": "round19_control",
+    "source_sha256": "6a41282eecadbbe368dabeebc6d895cefdcceda214cb5e8cace80856b739928c",
+    "assets": {
+      "control_server_rack.usda": "45b04a6b9f65a1582a83f7cda1ae39ea72433c31528f203aaa0f5d2c73f1b4f2",
+      "control_chair.usda": "544f4868393c60b39e07835c6529a22460e0deb9ada47b106117c528d0b82da4"
+    },
+    "static_replacement_bindings": {
+      "/World/Control/chair#root": "/World/Control/chair",
+      "/World/Control/server_rack#root": "/World/Control/server_rack"
+    }
+  }
 }
