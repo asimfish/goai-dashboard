@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-18T01:53+08:00",
+  "updated": "2026-09-18T02:02+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -19,18 +19,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-18T01:53+08:00",
+    "snapshot_at": "2026-09-18T02:02+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 480,
+        "used_mib": 479,
         "util": "1%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
         "used_mib": 7197,
-        "util": "19%",
+        "util": "2%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -38,7 +38,7 @@
       {
         "mount": "/",
         "used": "98%",
-        "free": "91G",
+        "free": "90G",
         "note": "不写"
       },
       {
@@ -342,6 +342,15 @@
       "status": "running",
       "eta": "诚实门今晚；物理轨迹接入与五条修正 09-18 白天",
       "evidence": "5090:_shared/inbox_ops/{WORKBENCH23_T1_20260917,WORKBENCH23_T2_CARTESIAN_20260917,WORKBENCH23_T6_VIEWER_20260918_R2}/; 5090:subop_library/review_20260917_73actions/collision_baseline.md; https://asimfish.github.io/goai-dashboard/subops.html",
+      "group": "active"
+    },
+    {
+      "id": "Q-subop2",
+      "topic": "**第二个采集 agent「goal_子操作集合2」已上岗（02:00），与原 agent 并行。** 分工写成一份两边共读的文件（5090:_shared/COLLECTION_SPLIT_20260918.md）：原 agent 负责 A 站（8 瓶两组各 4 瓶、称量纸、研钵 / 研杵）和工具链（碰撞检查器、规划器补丁、布局包、查看器包），用 A100 的 GPU 5、6；新 agent 负责 C 站 8 个还没有物理轨迹的动作（小瓶 2 的 6 个搬运、样品架去制样位、样品架从 XRD 归位），做完接 B 站（整盘出炉、整盘入炉的释放撤离段重采、两个导轨动作），用 5090 GPU0 + A100 的 GPU 3、4。片段 ID、进度文件、派生计划目录各自独立；登记 index.jsonl 必须持锁追加；验收门两边一致，不放宽。新 agent 自检全部通过（liyufeng 身份、/data 余 12.8 GiB、5090 GPU0 与 A100 GPU3/4 空闲、库可写、锁可用），已开始量 C 站站点几何，先在 5090 上打通「天平 → 封盖位」。风险：5090 的 /data 只剩约 13 GB，规则里定了低于 8 GB 不启动、原始 run 登记后移到 NAS。",
+      "owner": "codex@5090（goal_子操作集合2）· claude 指导",
+      "status": "running",
+      "eta": "首个 C 站动作（vial_capper）约 1–2 小时",
+      "evidence": "5090:_shared/COLLECTION_SPLIT_20260918.md; 5090:subop_library/PROGRESS_agent2.md",
       "group": "active"
     },
     {
@@ -948,6 +957,10 @@
     {
       "date": "2026-09-18 01:50",
       "entry": "**更正：公开三维查看器的回放此前全部无法加载，现已修复并用真实浏览器验证。** 原因是站点上的场景 GLB 是旧版，与回放清单里的几何哈希不符，查看器按设计拒绝播放；我之前只做了 HTTP 和解码层面的检查就报告「可回放」，结论是错的。已重新拉取当前几何，写了无头 Chrome 加载检查（以查看器进入 replay 状态且无报错为准）：本地 8/8、公开站点 3/3 通过，门窗回放里的门体通道也在其中。子操作 agent 进展：T2 补丁里整盘进 / 出炉、样品架进 / 出 XRD 四个动作共 1,595 个样本通过碰撞检查；它同时把已有 B 站释放段的两处 4.795 mm 净空如实标为未过 5 mm 门。「GOAI继续」01:36 已开始执行线上修正：备份完成，拒绝门（S1）代码已落地、回归中，尚未部署。"
+    },
+    {
+      "date": "2026-09-18 02:15",
+      "entry": "**采集改为两个 agent 并行。** 用户新开的「goal_子操作集合2」接 C 站 8 个动作和随后的 B 站，原「goai_子操作集合」专注 A 站 8 瓶（用户定为两组各 4 瓶）和工具链；GPU 按人分开（A100 5/6 对 3/4，5090 GPU0 给新 agent），共用的片段索引持锁追加。我同时撤回了之前给原 agent 的两条方向：投料位留在天平上方、不移动 1–4 号瓶——用户第 5 条明确说称量纸可以摆到机械臂旁，它把投料位移到天平外侧的纸上方是对的，8 只瓶在新布局里全部重采也是对的。"
     }
   ],
   "contract": [
