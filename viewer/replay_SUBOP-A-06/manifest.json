@@ -11,13 +11,13 @@
  "quaternion": "isaac_wxyz",
  "geometry": "../layout_v4_color_draco.glb",
  "binary": "frames.bin",
- "binary_sha256": "39166f623e63c6210575586c19bc0086d97b5c6809d1021d72daa9f8309ae300",
+ "binary_sha256": "dd4cbe1250a7d7a05e4800055f9bfaa3c248f2aeaac66d8f59a7d96beb738933",
  "fps": 30,
  "frame_count": 900,
  "frame_bytes": 992,
  "byte_length": 892800,
- "start_sim_time": 0.016666666666666666,
- "end_sim_time": 29.983333333333334,
+ "start_sim_time": 0.01666666753590107,
+ "end_sim_time": 29.983333587646484,
  "entities": [
   {
    "id": 4,
@@ -370,8 +370,8 @@
  "scope": "子操作片段，切自 20260916T151316_239038588_scripted/episodes/A（父轨迹 tick 1141–2941）。物理判据 PASS；视觉准入 NOT_MEASURED。执行者 fr3_A，对象 precursor_1，G05 第 6 步。",
  "events": [],
  "source": {
-  "steps_sha256": "3f9ec22f26e447b29cce481ef94705995760dc7339a9967f614b9259abbcfc70",
-  "metrics_sha256": "937ac449b6aa28e0456259c53b19a554f928dd6e4a5d80d4742b5d5eb895aa0d",
+  "steps_sha256": "348f1f31f56faa30277a5be07555dd97f3c30c353e940c66cbfe34498d635acc",
+  "metrics_sha256": "d77c90c5f7ec9b1c9c46950288c59c2b195ae25bbcbef0e6fb8ed2340ef21a6b",
   "checkpoint_sha256": null,
   "source_manifest_sha256": "2adc0bb71684d8e335697cb1bc2b0b298e9285e8770aec1018ffdaf17a16a9f3"
  },
