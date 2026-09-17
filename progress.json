@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-17T12:32+08:00",
+  "updated": "2026-09-17T22:51+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -19,18 +19,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-17T12:32+08:00",
+    "snapshot_at": "2026-09-17T22:51+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 4298,
-        "util": "46%",
+        "used_mib": 479,
+        "util": "1%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 7460,
-        "util": "20%",
+        "used_mib": 15353,
+        "util": "37%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -38,13 +38,13 @@
       {
         "mount": "/",
         "used": "98%",
-        "free": "102G",
+        "free": "93G",
         "note": "不写"
       },
       {
         "mount": "/data",
         "used": "100%",
-        "free": "13G",
+        "free": "16G",
         "note": "工作目录；21:20 我把已送达 A100 的 1.2 GB 传输包移到 NAS，21:47 本机 agent 无损去重释放 2.8 GB"
       },
       {
@@ -328,20 +328,20 @@
     },
     {
       "id": "Q-a100",
-      "topic": "A100 运行时已可用（21:40 修通）。原因：设置 `CUDA_VISIBLE_DEVICES` 后，Kit 渲染器把每张卡都判成 “CUDA bad state”，不出图，PhysX 退回 CPU；沙箱外复现结果相同，所以不是沙箱的问题。修法：沙箱只挂载目标卡的 /dev/nvidiaN，不再设置该变量；渲染器显示 `Yes: 0`，其他人的卡显存没有变化。同时补传了 layout_v4 房间（61 个文件）和资产贴图（17 个目录，102 MB）。A、B 两站的候选相机已渲染完成（A 两轮，B 一轮）。 23:10 起：GPU4 跑 C 站 G3（draw01→draw02）；GPU5/6 留给子操作 agent 做指垫补测。C 站交接工具不接受 --kit_args，因此 check/audit 改用去掉这一参数的启动器，工具文件本身没改。 01:05：补装 ffmpeg（imageio-ffmpeg 静态版）到 Isaac 环境；之前缺它导致 C draw01 保存失败。 12:30–13:00：补装 ffprobe（视觉审计校验 MP4 用）、修正 C 审计工具在 pip 版 isaacsim 里找不到 PhysX schema 扩展的路径（omni.usd.schema.physx-*）。",
+      "topic": "A100 运行时已可用（21:40 修通）。原因：设置 `CUDA_VISIBLE_DEVICES` 后，Kit 渲染器把每张卡都判成 “CUDA bad state”，不出图，PhysX 退回 CPU；沙箱外复现结果相同，所以不是沙箱的问题。修法：沙箱只挂载目标卡的 /dev/nvidiaN，不再设置该变量；渲染器显示 `Yes: 0`，其他人的卡显存没有变化。同时补传了 layout_v4 房间（61 个文件）和资产贴图（17 个目录，102 MB）。A、B 两站的候选相机已渲染完成（A 两轮，B 一轮）。 23:10 起：GPU4 跑 C 站 G3（draw01→draw02）；GPU5/6 留给子操作 agent 做指垫补测。C 站交接工具不接受 --kit_args，因此 check/audit 改用去掉这一参数的启动器，工具文件本身没改。 01:05：补装 ffmpeg（imageio-ffmpeg 静态版）到 Isaac 环境；之前缺它导致 C draw01 保存失败。 12:30–13:00：补装 ffprobe（视觉审计校验 MP4 用）、修正 C 审计工具在 pip 版 isaacsim 里找不到 PhysX schema 扩展的路径（omni.usd.schema.physx-*）。 09-17 下午（claude 接管执行）：C draw02 未过——55 s 处「release vial_1 unconfirmed」中止，需要修执行器的释放判定，C 站 G3 停在 2/3；precursor_3 重跑抬升时 physical_grasp_lost，precursor_4 抓取抬升通过、在 over_balance 被碰撞预检拦下（与用户指出的天平冲突同源）；干燥箱门、XRD 滑窗两个 run 已保存，审计工具在 A100 上找不到 PhysX 库（同 C 站那个扩展目录名问题），待补路径后审计；炉 4 门包缺文件未过 check。",
       "owner": "claude",
       "status": "running",
-      "eta": "已可用；A 站相机审计进行中",
+      "eta": "GPU 0/1/3/4/6 空闲，留给第 10 轮任务",
       "evidence": "A100:~/liyufeng/goai_a100/{twin/a100_launch.sh,cam2.log,cam3.log}; 5090:goai_assets/handoff/collection_astra/camera_candidates_{A_r1,B_r1,A_r2}_20260916.jpg",
       "group": "active"
     },
     {
       "id": "Q-subop",
-      "topic": "子操作库（「goai_子操作集合」）：**31 段**——A 站 12 段（其中 SUBOP-A-09..14 是 02:23 在 A100 新采的 precursor_2 投料，落点 0.607 mm、倾角 0.016 rad、零负分离，脚本专家、0 次模型调用）、B 站 6 段、C 站 13 段，全部接入三维查看器。新采失败 2 条：precursor_3/4 闭爪时双侧接触 0 tick——这两只瓶子 69.8 mm 宽、141 mm 高，派生计划沿用了 precursor_1 的夹持高度和宽度；已要求按碰撞网格截面重算后重跑。正在做：precursor_3/4 重跑（GPU5）；操作实现线的 6 个交接包（3 个门窗、vial_2、precursor_3/4）串行执行（GPU6）；随后 B 站 Astra 诊断。",
+      "topic": "子操作库与「73 步」修正（「goai_子操作集合」，22:30 起恢复运行）。**先澄清：用户审看的「73/73 个动作」不是 Isaac 物理轨迹**——它是高靖侧材料工作台的网页回放（记录 mwb-a33b95b13bb0ee63b79f），代码自己标了 `browser_trajectory`、`physical_verified=false`：9 个 IK 关键帧 + 关节空间插值、只抬 0.14 m、不做碰撞检查，跨站物体用抛物线飞移。所以「73/73 成功」只代表网页流程走完。用户看回放后提了 5 个问题，根因已逐条定位到 motion.py：① 样品架入 XRD / 归位是从机壳顶上垂直进腔（离线复核 24/49、26/49 帧与外壳相交）；② 四瓶投料位 (2.12, 0.46) 落在分析天平占地内（各 20–21 帧相交；我在 A100 重跑 precursor_4 也在 over_balance 被碰撞预检拦下）；③ 模板只有 4 瓶，需要 8 瓶按序取（场景里 stock_1..4 在 FR3 够不到的储液架上）；④ 整盘入炉时关节插值把托盘带斜，盘底低于台面约 5.2 mm；⑤ 研磨、称量纸等是物体飞移 / 瞬移。22:45 已下发第 10 轮任务单（T1 全 23 个机械臂动作逐帧穿模基线表 → T2 笛卡尔分段 + 按站点接近方向 + 碰撞门 → T3 投料位移出天平占地 → T4 8 瓶顺序 → T5 不可达物体摆到臂旁、禁止飞移 → T6 23 个动作用物理 episode 导出到三维查看器）。子操作库现有：我方已上线 31 段；「GOAI继续」对话另报 18 段通过复核（前驱体 3/4 共 12 段、小瓶正向 6 段），待并入索引和查看器；物理闭环 17/473。",
       "owner": "codex@5090（goai_子操作集合）· claude 指导",
       "status": "running",
-      "eta": "首批新采约 1–2 小时",
-      "evidence": "https://asimfish.github.io/goai-dashboard/subops.html; 5090:subop_library/index.jsonl（31）",
+      "eta": "T1 基线表约 1 小时；(1)(4) 两条穿模修正今晚；8 瓶与臂旁摆位随后",
+      "evidence": "https://asimfish.github.io/goai-dashboard/subops.html; 5090:/home/gaojing/goai_final_lab/packages/alab_web_sim_devices/alab_web_sim_devices/{motion.py,template.py}（只读核对）; 5090:subop_library/index.jsonl",
       "group": "active"
     },
     {
@@ -924,6 +924,10 @@
     {
       "date": "2026-09-17 13:05",
       "entry": "**C 站 G3 2/3：draw01 在 A100 上通过；子操作库扩到 31 段。** C draw01 第四次运行保存成功，独立审计 36/36 条件通过（小瓶称量回架、样品架入 XRD、开窗 0.480 m 保持 3 s、关窗、外部接触 0、原始负分离 0）；审计过程又踩了两个 A100 环境坑（缺 ffprobe；pip 版 isaacsim 的 PhysX schema 扩展目录名不同），已修，draw02 13:02 启动。子操作 agent 新采的 precursor_2 投料 episode（脚本专家）通过审计并切成 SUBOP-A-09..14，回放已导出上线；precursor_3/4 因夹持几何沿用了小瓶参数而闭爪失败，改按碰撞截面重算后重跑。主 agent「goai」12 小时无动作，B 站 Astra 诊断改由子操作 agent 在 A100 接手。操作实现线交付了 6 个交接包，执行线开始串行处理。"
+    },
+    {
+      "date": "2026-09-17 23:00",
+      "entry": "**「73/73 个动作」是网页轨迹，不是物理验收；用户指出的 5 个问题已定位根因并下发修正。** 该页面来自高靖侧材料工作台，规划器是 IK 关键帧 + 关节插值、无碰撞检查（代码自标 physical_verified=false）。5 个问题：样品架入 XRD / 归位穿机壳、四瓶投料位与分析天平冲突、需要 8 瓶按序取、整盘入炉穿台面（盘底低 5.2 mm）、研磨 / 称量纸等物体飞移——逐条对应到 motion.py 的站点和插值方式。第 10 轮任务单 22:45 进入子操作 agent 队列：先出 23 个机械臂动作的逐帧穿模基线表，再改为笛卡尔分段 + 按站点接近方向 + 碰撞门，投料位移出天平占地，8 瓶顺序，臂旁摆放替代飞移，最后用物理 episode 替换回放。该 agent 对高靖目录只有读权限，网页侧修正以补丁包形式交付。同日：C draw02 未过（释放判定中止），C 站 G3 仍为 2/3；我接管的 precursor_3/4 重跑均未过（grasp_lost / 碰撞预检拦截）。"
     }
   ],
   "contract": [
