@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-19T06:09+08:00",
+  "updated": "2026-09-19T06:25+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -21,7 +21,7 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-19T06:09+08:00",
+    "snapshot_at": "2026-09-19T06:25+08:00",
     "gpus": [
       {
         "index": 0,
@@ -32,7 +32,7 @@
       {
         "index": 1,
         "used_mib": 7198,
-        "util": "19%",
+        "util": "1%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -510,6 +510,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-19 10:20",
+      "entry": "知识森林逐层展开页改为页面内讲解（作者：PPT 还是丑，干脆不做 PPT，把展示本身讲清楚）：顶部台阶条 = 中心 + 八级按五棵树分组，当前级橙色、已展开级缩成圆点、橙色弧线指向本级挂在哪一级（带数量）；底部说明块 = 本级一句话 + 新增 / 来源 / 挂法 + 构成（卡片种类与数量）+ 卡片颜色表。八张分级海报与 GIF / MP4 已重出并覆盖（pdf/gallery/sagemat_knowledge_layers_20260919_*）。"
+    },
     {
       "date": "2026-09-19 09:10",
       "entry": "知识森林讲解页重排（作者：太乱）：改为 4 页、一页一个意思——搭建机制（三句话 + 第 2 / 第 8 级两帧对照）、第 1–4 级、第 5–8 级（每级一张示意帧 + 一行说明，示意帧只留色块与挂到父节点的曲线）、八级一览表（新增 / 来源 / 挂法 + 卡片语法）；pdf/gallery/sagemat_knowledge_layers_explainer_20260919.pptx 与四页 PNG 已覆盖。"
