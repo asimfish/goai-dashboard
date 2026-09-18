@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-19T05:41+08:00",
+  "updated": "2026-09-19T05:48+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -21,7 +21,7 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-19T05:41+08:00",
+    "snapshot_at": "2026-09-19T05:48+08:00",
     "gpus": [
       {
         "index": 0,
@@ -1097,6 +1097,10 @@
     {
       "date": "2026-09-19 05:20",
       "entry": "**采集 agent 于 04:50 恢复；R4 差异诊断、B 站第 7 次重跑、stock_1 新候选已在 mainskill GPU5/GPU1/GPU6 上跑。** agent 2 发现其 5090 运行一直落在与他人共用的卡上、声明的卡对 Isaac 不可用，已停并转审计；库 105 段、完整验收 0。"
+    },
+    {
+      "date": "2026-09-19 05:50",
+      "entry": "**看板新增第 1b 节「子操作动作验收清单」：分工表 v2 的 24 个机械臂动作 + 设备电机段逐条列出段数、物理 / 视觉状态、完整准入与逐条原因、当前状态、关门条件、证据路径，供逐个核查。** 库 105 段（PASS 72 / PARTIAL 32 / FAIL 1）、完整准入 0；跨动作缺口是 5 mm 净空逐 tick 独立通道与视觉门。"
     }
   ],
   "contract": [
@@ -1526,5 +1530,616 @@
       "link": "subops.html",
       "link_text": "子操作轨迹库（12 段视频与审计） →"
     }
-  ]
+  ],
+  "subop_actions": [
+    {
+      "id": "A-precursor_1",
+      "station": "A 站 · FR3 · agent 1「goai_子操作集合」",
+      "owner": "agent 1",
+      "workflow": "wf01.t_dose（r1_pick / r1_return）",
+      "action": "precursor_1 投料：取出与归位",
+      "seg_ids": "SUBOP-A-03..08、A-27..32、A-33..38",
+      "status": "partial",
+      "visual": "A-03..08 选定相机回放通过（历史 a_front / a_top 未测）；A-27..32 相机配置不一致；A-33..38 待分段回放",
+      "reasons": [
+        "5 mm 开口包络最小净空不是逐 tick 独立测量的通道（只保留原执行器守卫记录，未伪造净空 PASS），这是标 PARTIAL 的主因（A-03、A-08、A-33、A-38 等 4 段 PARTIAL）",
+        "A-37（阶段 7 归位）物理 FAIL：物体终点不在声明目标 20 mm 内",
+        "A-27..32 视觉 FAIL：station_a / a_side 相机与选定 A 文件不一致，A-30 另有 dosing 阶段未过；不能用历史 RGB 追溯替换视觉准入",
+        "A-03..08：选定相机回放已通过，但历史完整机位配置未认证；阶段目标与夹爪的逐视角可见性统计未完成",
+        "A-33..38：待分段回放（PENDING_SEGMENTATION_REPLAY）",
+        "取出与归位共用一条往返来源轨迹，面板 r1_pick / r1_return 不是两条独立验收轨迹"
+      ],
+      "now": "无新采集，agent 1 精力在 stock 与 R4",
+      "next": "T1 检查器逐 tick 净空复核 + 查看器三路 / 腕部回放；A-37 重采归位段；取出 / 归位拆为两条独立轨迹",
+      "evidence": [
+        "5090:subop_library/episodes/SUBOP-A-03..38/independent_audit.json",
+        "5090:subop_library/episodes/SUBOP-A-27..32/opening_clearance_audit.json、visibility_audit",
+        "5090:_shared/inbox_ops/WEBPLANNER_FIX_APPLIED_20260918T200200/RESULT.md（11 项状态表）"
+      ],
+      "segments": 18,
+      "physical": {
+        "PASS": 13,
+        "PARTIAL": 4,
+        "FAIL": 1
+      },
+      "qualified": 0
+    },
+    {
+      "id": "A-precursor_2",
+      "station": "A 站 · FR3 · agent 1「goai_子操作集合」",
+      "owner": "agent 1",
+      "workflow": "wf01.t_dose（r2_pick / r2_return）",
+      "action": "precursor_2 投料：取出与归位",
+      "seg_ids": "SUBOP-A-09..14、A-39..44",
+      "status": "partial",
+      "visual": "12 段全部待分段回放",
+      "reasons": [
+        "5 mm 开口包络最小净空不是逐 tick 独立测量的通道（只保留原执行器守卫记录，未伪造净空 PASS），这是标 PARTIAL 的主因（4 段 PARTIAL）",
+        "视觉门未完成：三路固定相机 + 腕部相机逐阶段看得见目标物、指垫、落位面（≥ 200 像素）的统计要在查看器里真实浏览器回放核对；12 段全部 PENDING_SEGMENTATION_REPLAY",
+        "取出与归位共用一条往返来源轨迹"
+      ],
+      "now": "无新采集",
+      "next": "T1 复核 + 分段回放",
+      "evidence": [
+        "5090:subop_library/episodes/SUBOP-A-09..14、A-39..44/independent_audit.json"
+      ],
+      "segments": 12,
+      "physical": {
+        "PASS": 8,
+        "PARTIAL": 4
+      },
+      "qualified": 0
+    },
+    {
+      "id": "A-precursor_3",
+      "station": "A 站 · FR3 · agent 1「goai_子操作集合」",
+      "owner": "agent 1",
+      "workflow": "wf01.t_dose（r3_pick / r3_return）",
+      "action": "precursor_3 投料：取出与归位",
+      "seg_ids": "SUBOP-A-15..20、A-45..50",
+      "status": "partial",
+      "visual": "A-15..20 独立核过父边界，6 段合并审计合格；A-45..50 待分段回放",
+      "reasons": [
+        "5 mm 开口包络最小净空不是逐 tick 独立测量的通道（只保留原执行器守卫记录，未伪造净空 PASS），这是标 PARTIAL 的主因（4 段 PARTIAL）",
+        "A-15..20 只独立验证了父 episode 边界与合并审计（current_combined_qualified），逐阶段可见性统计未做，库级完整准入仍为 0",
+        "A-45..50 待分段回放",
+        "取出与归位共用一条往返来源轨迹"
+      ],
+      "now": "无新采集",
+      "next": "T1 复核 + 逐阶段可见性统计即可升格 A-15..20",
+      "evidence": [
+        "5090:subop_library/episodes/SUBOP-A-15..20/independent_combined_audit.json"
+      ],
+      "segments": 12,
+      "physical": {
+        "PASS": 8,
+        "PARTIAL": 4
+      },
+      "qualified": 0
+    },
+    {
+      "id": "A-precursor_4",
+      "station": "A 站 · FR3 · agent 1「goai_子操作集合」",
+      "owner": "agent 1",
+      "workflow": "wf01.t_dose（r4_pick / r4_return）",
+      "action": "precursor_4 投料：取出与归位",
+      "seg_ids": "SUBOP-A-21..26",
+      "status": "partial",
+      "visual": "独立核过父边界，6 段合并审计合格；逐阶段可见性未统计",
+      "reasons": [
+        "5 mm 开口包络最小净空不是逐 tick 独立测量的通道（只保留原执行器守卫记录，未伪造净空 PASS），这是标 PARTIAL 的主因（2 段 PARTIAL）",
+        "只验了父边界与合并审计，视觉门未完成：三路固定相机 + 腕部相机逐阶段看得见目标物、指垫、落位面（≥ 200 像素）的统计要在查看器里真实浏览器回放核对",
+        "面板注记：当前流程未执行，这是旧投料位的历史物理证据"
+      ],
+      "now": "无新采集",
+      "next": "T1 复核 + 可见性统计；确认新布局下是否需重采",
+      "evidence": [
+        "5090:subop_library/episodes/SUBOP-A-21..26/independent_combined_audit.json"
+      ],
+      "segments": 6,
+      "physical": {
+        "PASS": 4,
+        "PARTIAL": 2
+      },
+      "qualified": 0
+    },
+    {
+      "id": "A-stock",
+      "station": "A 站 · FR3 · agent 1「goai_子操作集合」",
+      "owner": "agent 1",
+      "workflow": "wf01.t_dose（第 2 组 4 瓶）",
+      "action": "stock_1..4 投料（0 段）",
+      "seg_ids": "—（登记将从 SUBOP-A-51 起）",
+      "status": "running",
+      "visual": "—",
+      "reasons": [
+        "stock_4_retry_r3：抓取到达阶段 collision_preflight，右指垫 ↔ stock_rack 最深 −1.032 mm、bilateral=0，未登记",
+        "stock_2（run 20260918T171313）：over_balance 预检 FR3 link2 ↔ hand 自碰撞 −1.259 mm，位置误差 566 mm，悬停点对 stock 瓶根本不可达",
+        "stock_3（run 20260918T173224）：over_balance 未到达，无独立到位证据",
+        "更早的 precursor_4 retry / stock_2 / stock_3 均在 bilateral grasp 或 over_balance 预检失败；旧 stock_1/2/3 结果 05:11 审计均失败",
+        "根因：储液架槽位太挤（用户提醒：摆放不能挤得没空间）；修正为拉开间距的新布局"
+      ],
+      "now": "新布局静置门 PASS（位移 0.249 mm、转角 0.966°、负分离 0）；stock_1 spacing-r2 候选 run 20260918T211020 在 mainskill GPU6 跑；隔离副本先后缺 launch.sh、robot_geometry.json 各重启一次",
+      "next": "每瓶按瓶高与抓取半径重算 over_balance 悬停点；通过独立审计后登记",
+      "evidence": [
+        "5090:subop_library/PROGRESS.md（03:22、05:12 行）",
+        "mainskill:goai_a100/twin/eight_bottle_candidate_stock_spacing_r2*/runs/",
+        "mainskill:goai_a100/subop_queue/gpu6_stock_*.done.jsonl"
+      ],
+      "segments": 0,
+      "physical": {},
+      "qualified": 0
+    },
+    {
+      "id": "A-paper",
+      "station": "A 站 · FR3 · agent 1「goai_子操作集合」",
+      "owner": "agent 1",
+      "workflow": "wf01.t_dose",
+      "action": "称量纸搬运（0 段）",
+      "seg_ids": "—",
+      "status": "pending",
+      "visual": "—",
+      "reasons": [
+        "未开始，分工表排在 8 瓶之后"
+      ],
+      "now": "",
+      "next": "stock 通过后排队",
+      "evidence": [
+        "5090:_shared/COLLECTION_SPLIT_20260918.md 第 1 节"
+      ],
+      "segments": 0,
+      "physical": {},
+      "qualified": 0
+    },
+    {
+      "id": "A-mortar",
+      "station": "A 站 · FR3 · agent 1「goai_子操作集合」",
+      "owner": "agent 1（布局包）+ 线上导师核验 + 「代码-串联流程」接入",
+      "workflow": "wf01.t_grind（T3–T5 布局包）",
+      "action": "研钵 / 研杵摆位与研磨：布局包 R3 → R4（0 段）",
+      "seg_ids": "—",
+      "status": "blocked",
+      "visual": "—",
+      "reasons": [
+        "v4 布局里研钵离 FR3 基座 1.77 m 超出可达范围，t_grind 采不了，因此需要 T3–T5 布局包把研杵放进研钵",
+        "R2 被就地修改导致计划 / 证据哈希漂移而作废；前六次手工种子静置全部超 1° 门（3.13°、5.14°、1.96°、1.29°、1.07°，45° 种子 37.2°）",
+        "R3 第 7 次尝试用运行时凸包 fallback 过门（0.367 mm / 0.966° / 负分离 0），但报告只绑定 R2 计划 SHA 80c6d0b3…，没有记录发货资产哈希；封包时把该值\"来源重绑\"到 R3 计划",
+        "用发货资产 pestle_r3.usda（显式凸包 R3_PestleConvexHull，SHA 0cc12454…）正式重跑：位移 6.173 mm、转角 7.905°，FAIL",
+        "线上导师 05:06 裁定：封包格式通过，但门禁证据不能归因给发货资产，不接入 5051，留 R4 REQUEST",
+        "05:25 对照实验：同一冻结端点上原 fallback 表示也 FAIL（18.9 mm / 52.7°），说明冻结端点（落定 2.39 s 就冻结）不是真正的平衡位置"
+      ],
+      "now": "agent 1 在 mainskill GPU5 做 R4 差异诊断（r4_rebind_work）；R3 目录封存不动；5051 现场研钵 (1.598, 1.075, 1.028)、研杵在 R1 托座位未变",
+      "next": "用发货资产重新落定到静止 → 冻结 → 5 s 门（≤ 2 mm、≤ 1°、负分离 0），报告写资产 SHA 与计划 SHA → 新建 R4 封包 → 导师核验 → 第 4 轮接入 5051 → 才能采研磨与取杵",
+      "evidence": [
+        "5090:_shared/inbox_ops/WORKBENCH23_T3_T5_LAYOUT_20260918_R3/{COMMAND.md,RESULT.md,SHA256.json}",
+        "5090:_shared/inbox_ops/REQUEST_WORKBENCH23_T3_T5_LAYOUT_20260918_R4_REBIND_20260919.md",
+        "mainskill:goai_a100/twin/r4_rebind_work/evidence/static_r4_{formal,fallback}/report.json",
+        "5090:subop_library/PROGRESS_mentor4.md"
+      ],
+      "segments": 0,
+      "physical": {},
+      "qualified": 0
+    },
+    {
+      "id": "B-tray_load",
+      "station": "B 站 · UR5e B · agent 3「goai_子操作集合3」",
+      "owner": "agent 3（原 agent 1 采集）",
+      "workflow": "wf01.t_heat / wf04.t_grow",
+      "action": "tray_load 装炉（crucible_rack_2）",
+      "seg_ids": "SUBOP-B-03..08",
+      "status": "partial",
+      "visual": "6 段未测（NOT_MEASURED）",
+      "reasons": [
+        "B-08：把手锚点 ↔ furnace_4 liner_floor 4.79456 mm < 5 mm；导师裁定托盘落到炉膛底板后该对为支撑接触面、按条款豁免，但 11 项状态表按严格失败保留，且释放撤离段需重采",
+        "5 mm 开口包络最小净空不是逐 tick 独立测量的通道（只保留原执行器守卫记录，未伪造净空 PASS），这是标 PARTIAL 的主因（B-04、B-07、B-08 等 3 段 PARTIAL）",
+        "B-07 落点误差 9.62 mm（≤ 20 mm 门内）",
+        "视觉门未完成：三路固定相机 + 腕部相机逐阶段看得见目标物、指垫、落位面（≥ 200 像素）的统计要在查看器里真实浏览器回放核对"
+      ],
+      "now": "无人在补；agent 3 全力在出炉",
+      "next": "释放撤离段重采到净空 ≥ 5 mm；T1 复核；视觉回放",
+      "evidence": [
+        "5090:subop_library/episodes/SUBOP-B-03..08/independent_audit.json",
+        "mainskill:agent3_b08_fix/runs/*/episodes/B/B08_support_pair_ruling.json"
+      ],
+      "segments": 6,
+      "physical": {
+        "PASS": 3,
+        "PARTIAL": 3
+      },
+      "qualified": 0
+    },
+    {
+      "id": "B-tray_unload",
+      "station": "B 站 · UR5e B · agent 3「goai_子操作集合3」",
+      "owner": "agent 3",
+      "workflow": "wf01.t_heat / wf04.t_grow",
+      "action": "tray_unload 整盘出炉：连续 装炉 → 支撑 → 出炉 episode（0 段）",
+      "seg_ids": "—（登记将从 SUBOP-B-09 起）",
+      "status": "running",
+      "visual": "—",
+      "reasons": [
+        "run 20260918T143433：进入 record_initial_settle 后缺父依赖 steps.npz 立即中止，0 帧（父 episode 三文件随后按 SHA256 补齐）",
+        "run 20260918T154339：104.2 s、1250 帧；装炉到 stage 4、支撑观察 5 s 通过；出炉抓取接近段派生代码直接对多元素 Tensor 做布尔判断报错。独立审计 25,002 tick、负分离 0、穿透 0、最小相关净空 0.336 mm",
+        "run 20260918T174934：同一位置被 require() 拒绝，但实测 TCP 误差 0.019 mm、姿态误差 0.00006 rad 都在容差内，是 require 参数顺序写反导致误拒",
+        "三次都是工具链错误，不计入\"同一原因三次\"的物理失败；每轮 100 秒物理要 1.5 到 2 小时墙钟，主要耗在渲染"
+      ],
+      "now": "第 7 次修复重跑 run 20260918T210651 在 mainskill GPU1，05:06 起，已过装炉前段、无拒绝",
+      "next": "过出炉抓取接近后看抬升 / 撤离与炉门净空（此前最小相关净空只有 0.34 mm）；通过则按 G05 切段登记 SUBOP-B-09 起",
+      "evidence": [
+        "NAS:/mnt/nas/data/lyf/goai/subop_store/agent3/plans_agent3/tray_unload/FAILED_*.md、independent_audit_*.json",
+        "mainskill:goai_a100/agent3_b08_fix/runs/、queue_logs/",
+        "5090:subop_library/PROGRESS_agent3.md"
+      ],
+      "segments": 0,
+      "physical": {},
+      "qualified": 0
+    },
+    {
+      "id": "B-tray_load_release",
+      "station": "B 站 · UR5e B · agent 3「goai_子操作集合3」",
+      "owner": "agent 3",
+      "workflow": "wf01.t_heat",
+      "action": "tray_load 释放撤离段重采（0 段）",
+      "seg_ids": "—",
+      "status": "pending",
+      "visual": "—",
+      "reasons": [
+        "现有段（B-08）净空 4.795 mm < 5 mm；分工表要求重采",
+        "排在 tray_unload 之后"
+      ],
+      "now": "",
+      "next": "出炉通过后排队",
+      "evidence": [
+        "5090:_shared/COLLECTION_SPLIT_20260918.md 第 1 节"
+      ],
+      "segments": 0,
+      "physical": {},
+      "qualified": 0
+    },
+    {
+      "id": "B-rail_furnace",
+      "station": "B 站 · UR5e B · agent 3「goai_子操作集合3」",
+      "owner": "agent 3",
+      "workflow": "wf01.t_heat",
+      "action": "rail_furnace 导轨移到炉前（0 段）",
+      "seg_ids": "—",
+      "status": "pending",
+      "visual": "—",
+      "reasons": [
+        "未开始"
+      ],
+      "now": "",
+      "next": "排在 tray_unload、释放段之后",
+      "evidence": [],
+      "segments": 0,
+      "physical": {},
+      "qualified": 0
+    },
+    {
+      "id": "B-rail_park",
+      "station": "B 站 · UR5e B · agent 3「goai_子操作集合3」",
+      "owner": "agent 3",
+      "workflow": "wf01.t_heat",
+      "action": "rail_park 导轨归位（0 段）",
+      "seg_ids": "—",
+      "status": "pending",
+      "visual": "—",
+      "reasons": [
+        "未开始"
+      ],
+      "now": "",
+      "next": "同上",
+      "evidence": [],
+      "segments": 0,
+      "physical": {},
+      "qualified": 0
+    },
+    {
+      "id": "B-handover",
+      "station": "B 站 · UR5e B · agent 3「goai_子操作集合3」",
+      "owner": "agent 3",
+      "workflow": "跨工作流",
+      "action": "跨站交接位：A↔B、B↔C 坩埚交接（0 段）",
+      "seg_ids": "—",
+      "status": "pending",
+      "visual": "—",
+      "reasons": [
+        "分工表排在 B 站四项之后，未开始"
+      ],
+      "now": "",
+      "next": "",
+      "evidence": [],
+      "segments": 0,
+      "physical": {},
+      "qualified": 0
+    },
+    {
+      "id": "C-vial_balance",
+      "station": "C 站 · UR5e C · agent 2「goal_子操作集合2」",
+      "owner": "agent 2（原 agent 1 采集）",
+      "workflow": "wf02.t_recover（vial_balance）",
+      "action": "小瓶 2 上天平（vial_2）",
+      "seg_ids": "SUBOP-C-14..19",
+      "status": "partial",
+      "visual": "独立核过边界，6 段合并审计合格；逐阶段可见性未统计",
+      "reasons": [
+        "5 mm 开口包络与释放余量未对该切片独立重测（2 段 PARTIAL）",
+        "只验了独立边界与合并审计（current_combined_qualified），视觉门未完成：三路固定相机 + 腕部相机逐阶段看得见目标物、指垫、落位面（≥ 200 像素）的统计要在查看器里真实浏览器回放核对",
+        "库级 qualified 仍为 False"
+      ],
+      "now": "无人在补",
+      "next": "T1 复核 + 可见性统计即可升格，是最接近完成的机械臂动作",
+      "evidence": [
+        "5090:subop_library/episodes/SUBOP-C-14/independent_combined_audit.json"
+      ],
+      "segments": 6,
+      "physical": {
+        "PASS": 4,
+        "PARTIAL": 2
+      },
+      "qualified": 0
+    },
+    {
+      "id": "C-vial_1",
+      "station": "C 站 · UR5e C · agent 2「goal_子操作集合2」",
+      "owner": "agent 2（原 agent 1 采集）",
+      "workflow": "wf02.t_recover",
+      "action": "小瓶 1 搬运（C draw00 参考 run）",
+      "seg_ids": "SUBOP-C-01..06",
+      "status": "partial",
+      "visual": "未测，只有外部 C 审计",
+      "reasons": [
+        "C draw00 是诊断 / 参考 run，没有分阶段切分报告，视觉资格暂缓（disqualified_pending_visibility）",
+        "5 mm 开口包络与释放余量未独立重测",
+        "视觉文件不完整（visual_files_complete=False，five_view_sets=0）"
+      ],
+      "now": "无人在补",
+      "next": "在独立采集场景重采，或补切分报告 + 五路视图",
+      "evidence": [
+        "5090:subop_library/episodes/SUBOP-C-01..06/independent_audit.json"
+      ],
+      "segments": 6,
+      "physical": {
+        "PARTIAL": 6
+      },
+      "qualified": 0
+    },
+    {
+      "id": "C-holder_load",
+      "station": "C 站 · UR5e C · agent 2「goal_子操作集合2」",
+      "owner": "agent 2（原 agent 1 采集）",
+      "workflow": "wf02.t_prep / t_xrd",
+      "action": "holder_load 样品架装到托座（holder_0）",
+      "seg_ids": "SUBOP-C-07..13",
+      "status": "partial",
+      "visual": "未测，只有外部 C 审计",
+      "reasons": [
+        "同 vial_1：C draw00 参考 run 无分阶段切分报告，视觉资格暂缓",
+        "5 mm 开口包络与释放余量未独立重测（7 段全 PARTIAL）",
+        "视觉文件不完整（five_view_sets=0）",
+        "面板注记：R4 窗通道保留；独立采集场景含托座 / 适配器"
+      ],
+      "now": "无人在补",
+      "next": "独立采集场景重采或补切分报告",
+      "evidence": [
+        "5090:subop_library/episodes/SUBOP-C-07..13/independent_audit.json"
+      ],
+      "segments": 7,
+      "physical": {
+        "PARTIAL": 7
+      },
+      "qualified": 0
+    },
+    {
+      "id": "C-capper",
+      "station": "C 站 · UR5e C · agent 2「goal_子操作集合2」",
+      "owner": "agent 2",
+      "workflow": "wf02（小瓶 2 六个搬运位之一）",
+      "action": "capper 送入封盖机（0 段）",
+      "seg_ids": "—（登记将从 SUBOP-C-20 起）",
+      "status": "running",
+      "visual": "—",
+      "reasons": [
+        "R3 系列接触诊断后改为水平正面送入（capper_horizontal_front_entry）",
+        "seq6 / seq13：5090 与 A100 GPU0 两张卡都零穿透把瓶送到瓶座，但固定 5 mm 开爪门实测指垫 ↔ 封盖机导轨 4.4567 mm，未释放，判失败保留",
+        "修正：按已有 C 站开口标定改为\"部分开口 = 抓持宽度 + 3 mm\"，门仍 5 mm、路线不转腕；seq14 在 5090 与 A100 GPU0 重跑",
+        "5090 seq15–17 环境失败：分工表分给 agent 2 的 GPU-b129224c 是桌面卡（Xorg / gnome-shell 常驻），Isaac 报 no device / CUDA bad state；此前 r8–r10、seq13/14 实际落在与他人共用的 GPU-828bb172 上"
+      ],
+      "now": "A100 seq14 / seq6 独立审计中；mainskill GPU0 队列自动接续；5090 用卡待用户裁定",
+      "next": "seq14 过 5 mm 门并独立审计后登记；随后 shaker 等五个搬运位",
+      "evidence": [
+        "5090:subop_library/plans_agent2/{capper_r3_contact_diagnosis.json,capper_loading_derivation.json,C_SITE_REPORT.md}",
+        "NAS:/mnt/nas/data/lyf/goai/subop_store/agent2/runtime_C_r3b_runtime_20260918/runs/",
+        "5090:subop_library/PROGRESS_agent2.md"
+      ],
+      "segments": 0,
+      "physical": {},
+      "qualified": 0
+    },
+    {
+      "id": "C-shaker",
+      "station": "C 站 · UR5e C · agent 2「goal_子操作集合2」",
+      "owner": "agent 2",
+      "workflow": "wf02",
+      "action": "shaker 搬运（0 段）",
+      "seg_ids": "—",
+      "status": "pending",
+      "visual": "—",
+      "reasons": [
+        "未开始，排在 capper 之后"
+      ],
+      "now": "",
+      "next": "",
+      "evidence": [],
+      "segments": 0,
+      "physical": {},
+      "qualified": 0
+    },
+    {
+      "id": "C-uncap",
+      "station": "C 站 · UR5e C · agent 2「goal_子操作集合2」",
+      "owner": "agent 2",
+      "workflow": "wf02",
+      "action": "uncap_site 搬运（0 段）",
+      "seg_ids": "—",
+      "status": "pending",
+      "visual": "—",
+      "reasons": [
+        "未开始"
+      ],
+      "now": "",
+      "next": "",
+      "evidence": [],
+      "segments": 0,
+      "physical": {},
+      "qualified": 0
+    },
+    {
+      "id": "C-prep",
+      "station": "C 站 · UR5e C · agent 2「goal_子操作集合2」",
+      "owner": "agent 2",
+      "workflow": "wf02.t_prep",
+      "action": "prep 制样位搬运（0 段）",
+      "seg_ids": "—",
+      "status": "pending",
+      "visual": "—",
+      "reasons": [
+        "未开始"
+      ],
+      "now": "",
+      "next": "",
+      "evidence": [],
+      "segments": 0,
+      "physical": {},
+      "qualified": 0
+    },
+    {
+      "id": "C-recap",
+      "station": "C 站 · UR5e C · agent 2「goal_子操作集合2」",
+      "owner": "agent 2",
+      "workflow": "wf02",
+      "action": "recap_site 搬运（0 段）",
+      "seg_ids": "—",
+      "status": "pending",
+      "visual": "—",
+      "reasons": [
+        "未开始"
+      ],
+      "now": "",
+      "next": "",
+      "evidence": [],
+      "segments": 0,
+      "physical": {},
+      "qualified": 0
+    },
+    {
+      "id": "C-store",
+      "station": "C 站 · UR5e C · agent 2「goal_子操作集合2」",
+      "owner": "agent 2",
+      "workflow": "wf02",
+      "action": "store 存放位搬运（0 段）",
+      "seg_ids": "—",
+      "status": "pending",
+      "visual": "—",
+      "reasons": [
+        "未开始"
+      ],
+      "now": "",
+      "next": "",
+      "evidence": [],
+      "segments": 0,
+      "physical": {},
+      "qualified": 0
+    },
+    {
+      "id": "C-holder_prep",
+      "station": "C 站 · UR5e C · agent 2「goal_子操作集合2」",
+      "owner": "agent 2",
+      "workflow": "wf02.t_prep",
+      "action": "holder_prep 样品架去制样位（0 段）",
+      "seg_ids": "—",
+      "status": "blocked",
+      "visual": "—",
+      "reasons": [
+        "R8：前五段水平转移物理到达、负分离 0；第六段残差 0.566 rad 触发固定 20 样本门",
+        "R9（拆 16 段）：同因失败",
+        "R10（每段以实测关节状态为种子）：第 12 段被上臂 ↔ 腕 2 预测碰撞 1.903 mm 拒绝；独立审计零穿透但未通过",
+        "三次同一类原因，按规则停线；根因不在 IK 种子而在目标位姿：制样位候选 [2.6, −2.2] 朝南边缘支撑位让 UR5e 在水平转移末段进入肘部内收、腕 2 折回上臂的构型"
+      ],
+      "now": "停线，改法未开始（agent 2 被 5090 设备问题与审计占满）",
+      "next": "① 限定肘朝外分支解 IK，解不出报不可达；② 若仍自碰撞，把放置朝向转 90°，重过静态筛查（净空 ≥ 5 mm）再采",
+      "evidence": [
+        "5090:subop_library/plans_agent2/holder_prep_candidate_r1_ik.json、holder_prep_candidate_r1.log",
+        "5090:subop_library/PROGRESS_agent2.md（残差曲线、拒绝采样点）"
+      ],
+      "segments": 0,
+      "physical": {},
+      "qualified": 0
+    },
+    {
+      "id": "C-holder_store",
+      "station": "C 站 · UR5e C · agent 2「goal_子操作集合2」",
+      "owner": "agent 2",
+      "workflow": "wf02.t_xrd",
+      "action": "holder_store 样品架归位（0 段）",
+      "seg_ids": "—",
+      "status": "blocked",
+      "visual": "—",
+      "reasons": [
+        "R2：到 stage 3，倾角 0.0182 rad 过门，但位置误差 41.408 mm > 20 mm、未稳定；mainskill GPU0 复核同结果",
+        "R3 计划：携行段速度 / 加速度降到 holder_load 通过时的水平、夹持点同 holder_load；排在 mainskill GPU3 队列，等待门早已满足却没起"
+      ],
+      "now": "GPU3 队列未触发，已要求 agent 2 查",
+      "next": "R3 跑通位置误差 ≤ 20 mm + 释放后 5 s 稳定",
+      "evidence": [
+        "mainskill:goai_a100/agent2_C_loading/holder_store_gpu3_queue.sh、holder_store_queue_gpu0.sh",
+        "5090:subop_library/PROGRESS_agent2.md"
+      ],
+      "segments": 0,
+      "physical": {},
+      "qualified": 0
+    },
+    {
+      "id": "MOTOR",
+      "station": "设备电机段（参考，非机械臂动作）",
+      "owner": "agent 1（09-17 采集）",
+      "workflow": "wf01.t_heat、wf02.t_xrd、wf03.t_dry",
+      "action": "设备电机开合：炉门 1–4、干燥箱、XRD（open / hold / close）",
+      "seg_ids": "SUBOP-MOTOR-I001/I004/I007/I010/I028/I051-*",
+      "status": "ok",
+      "visual": "电机范围独立认可 32 段；状态回放独立通过；三路相机逐阶段可见性未测",
+      "reasons": [
+        "物理全 PASS，电机范围内独立认可（current_motor_scope_qualified=True）",
+        "视觉全门未测，所以库级 qualified 仍为 False",
+        "这是设备自身动作，不计入机械臂子操作的完整准入"
+      ],
+      "now": "完成，无需再采",
+      "next": "如要计入完整准入，只需补三路相机可见性",
+      "evidence": [
+        "5090:subop_library/episodes/SUBOP-MOTOR-*/{independent_audit.json,motor_scope_admission}"
+      ],
+      "segments": 32,
+      "physical": {
+        "PASS": 32
+      },
+      "qualified": 0
+    }
+  ],
+  "subop_summary": {
+    "updated": "2026-09-19 05:50",
+    "segments": 105,
+    "physical": {
+      "PASS": 72,
+      "PARTIAL": 32,
+      "FAIL": 1
+    },
+    "qualified": 0,
+    "matrix": "585 行任务矩阵：473 物理行，17 行物理完成（A12/14/17/19/39/41/43/45 的 .02 步 + 设备 I001/004/007/010/013/015/016/028/051）",
+    "cross_cutting": [
+      "跨所有动作的缺口 ①：5 mm 最小净空要用 T1 检查器对物理轨迹加密采样、逐 tick 独立复核；73 段机械臂片段全部缺这条通道，是 32 段 PARTIAL 的主因",
+      "跨所有动作的缺口 ②：视觉门（三路固定相机 + 腕部相机逐阶段可见目标物 / 指垫 / 落位面 ≥ 200 像素）要在查看器里真实浏览器回放核对；A 站 24 段待分段回放、6 段相机配置不一致、6 段历史配置未认证，B 站 6 段、C 站 13 段未测",
+      "缺口 ③：A 站取出 / 归位共用一条往返轨迹，不算两条独立验收",
+      "现状：三个采集 agent 都在攻新动作（stock、出炉、capper），没有人在补 ① ②；这两条通了，72 段 PASS 里的大部分可成批升格"
+    ]
+  }
 }
