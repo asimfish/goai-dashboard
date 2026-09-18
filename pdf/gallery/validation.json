@@ -1,0 +1,41 @@
+{
+  "page": "knowledge_layers.html",
+  "levels": 9,
+  "timing": {"intro": 1.2, "transition": 1.6, "hold": 4.5, "tail": 3.0, "total": 59.1},
+  "gif": {
+    "file": "sagemat_knowledge_layers_20260919_1600x900.gif",
+    "size": 1600,
+    "height": 900,
+    "fps": 12,
+    "frames": 194,
+    "seconds": 58.9,
+    "bytes": 14680064,
+    "sha256": "80a3f080d20708640f09641f06ccd77b56859c472fb014a29ed4efcb1f0c3023"
+  },
+  "mp4": {
+    "file": "sagemat_knowledge_layers_20260919_1600x900.mp4",
+    "bytes": 6920601,
+    "sha256": "b8ac1fe264da6281098aa095c918a7dc175cffb512074e38f3d47b28dbfd4bf1"
+  },
+  "posters": "sagemat_knowledge_layers_20260919_L{1..9}_2880x1620.png",
+  "gates": {
+    "overlaps": 0,
+    "outside": 0,
+    "overflow": 0,
+    "pillHits": 0,
+    "pillDotHits": 0,
+    "minTitleFont": 17
+  },
+  "per_level": [
+    {"level": 1, "title": "????????", "cards": 13, "truncTitle": 0, "truncSub": 1, "overlaps": 0, "outside": 0, "overflow": 0, "pillHits": 0, "pillDotHits": 0},
+    {"level": 2, "title": "??????", "cards": 8, "truncTitle": 0, "truncSub": 0, "overlaps": 0, "outside": 0, "overflow": 0, "pillHits": 0, "pillDotHits": 0},
+    {"level": 3, "title": "???", "cards": 35, "truncTitle": 0, "truncSub": 0, "overlaps": 0, "outside": 0, "overflow": 0, "pillHits": 0, "pillDotHits": 0},
+    {"level": 4, "title": "??", "cards": 51, "truncTitle": 1, "truncSub": 50, "overlaps": 0, "outside": 0, "overflow": 0, "pillHits": 0, "pillDotHits": 0},
+    {"level": 5, "title": "??????", "cards": 41, "truncTitle": 0, "truncSub": 21, "overlaps": 0, "outside": 0, "overflow": 0, "pillHits": 0, "pillDotHits": 0},
+    {"level": 6, "title": "????", "cards": 6, "truncTitle": 0, "truncSub": 0, "overlaps": 0, "outside": 0, "overflow": 0, "pillHits": 0, "pillDotHits": 0},
+    {"level": 7, "title": "????", "cards": 29, "truncTitle": 1, "truncSub": 9, "overlaps": 0, "outside": 0, "overflow": 0, "pillHits": 0, "pillDotHits": 0},
+    {"level": 8, "title": "?? · ???? · ????", "cards": 16, "truncTitle": 0, "truncSub": 0, "overlaps": 0, "outside": 0, "overflow": 0, "pillHits": 0, "pillDotHits": 0},
+    {"level": 9, "title": "?????", "cards": 12, "truncTitle": 0, "truncSub": 0, "overlaps": 0, "outside": 0, "overflow": 0, "pillHits": 0, "pillDotHits": 0}
+  ],
+  "notes": "Level 4 subtitle ellipses are long paper titles in a two-lane ring; level 5/7 leftover ellipses are long compound notes / temp–time strings that still fit inside the card (overflow=0)."
+}
