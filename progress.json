@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-18T23:28+08:00",
+  "updated": "2026-09-18T23:47+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -20,18 +20,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-18T23:28+08:00",
+    "snapshot_at": "2026-09-18T23:47+08:00",
     "gpus": [
       {
         "index": 0,
         "used_mib": 9628,
-        "util": "3%",
+        "util": "2%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 7214,
-        "util": "35%",
+        "used_mib": 19005,
+        "util": "13%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -45,7 +45,7 @@
       {
         "mount": "/data",
         "used": "100%",
-        "free": "11G",
+        "free": "9.8G",
         "note": "工作目录；21:20 我把已送达 A100 的 1.2 GB 传输包移到 NAS，21:47 本机 agent 无损去重释放 2.8 GB"
       },
       {
@@ -509,6 +509,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-18 17:10",
+      "entry": "知识森林重做成「年轮」径向图：根在中心、五圈年轮 = 五层、八个扇区 = 文献树八分支，跨层连线束化、跨扇区绕内环；深色底 + 发光节点，配色按 dataviz 规范校验（橙 = 目标相谱系、青绿 = N1 近邻、紫 = AI 推断，其余中性灰阶），只给关键节点常显标签。海报与 GIF 同名覆盖。"
+    },
     {
       "date": "2026-09-18 15:30",
       "entry": "知识森林第二轮：加元素层（12 个元素 → 化合物，化学式解析），「▶ 生长」逐层长出时旧层淡化、新层突出，紫色统一标 AI 推断 / 预测；出逐层生长 GIF pdf/gallery/sagemat_knowledge_forest_20260918_growth_1280x720.gif。"
