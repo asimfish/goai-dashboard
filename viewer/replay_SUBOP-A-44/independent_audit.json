@@ -1,0 +1,96 @@
+{
+  "schema": "subop_raw_audit_v1",
+  "physical_numerical_pass": true,
+  "physical_status": "PARTIAL",
+  "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "object_endpoint_within20mm_of_declared_goal": true,
+    "object_endpoint_tilt_within0_25rad": true,
+    "release_clear_3ticks": true,
+    "stable_at_least0_5s": true,
+    "stable_final": true,
+    "withdrawal150mm_within_original10mm": true
+  },
+  "metrics": {
+    "ticks": 2160,
+    "duration_s": 9.0,
+    "TCP_endpoint_error_mm": 0.009561716069583781,
+    "orientation_endpoint_error_rad": 2.3651142574736154e-05,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.0009595693554729223,
+    "bilateral_fraction": 0.004166666666666667,
+    "longest_bilateral_ticks": 9,
+    "jaw_width_range_m": [
+      0.055568092826943444,
+      0.07995986210710965
+    ],
+    "jaw_logged_vs_recomputed_max_error_m": 5.976856254363838e-08,
+    "final_object_tilt_rad": 1.902452906191904e-07,
+    "maximum_object_tilt_rad": 0.037967575432788045,
+    "reference_first_grasp_parent_tick": 3402,
+    "reference_object_in_TCP_m": [
+      -2.197197773057269e-06,
+      -7.904199037511717e-07,
+      0.030004747211933136
+    ],
+    "original_reference_preserved": true,
+    "joint_state": {
+      "required": true,
+      "evaluated": true,
+      "position_violation_ticks": 0,
+      "velocity_violation_ticks": 0,
+      "violating_joint_names": []
+    },
+    "declared_phase_goal_root_m": [
+      1.7960001230239868,
+      0.2099999487400055,
+      1.153744101524353
+    ],
+    "endpoint_position_error_mm": 1.416654824156565,
+    "final_release_gap_m": 0.07995914634565521,
+    "final_speed_m_s": 0.0,
+    "stable_seconds": 8.7875,
+    "empty_retreat_m": 0.15000033378601074,
+    "collision_preflight_refusals": []
+  },
+  "unverified_physical_criteria": [
+    "Opening-envelope5mm minimum clearance is not an independently measured per-tick channel; original guard source/enforcement retained, no clearance PASS fabricated."
+  ],
+  "execution_outcome": "completed_segment",
+  "visibility_status": "NOT_MEASURED",
+  "qualified": false,
+  "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+  "criterion_sources": [
+    "/data/liyufeng/goai_workflows/alab_twin_collect/trajectory_audit.py",
+    "/data/liyufeng/goai_workflows/alab_twin_collect/jaw_geometry_audit.py",
+    "/data/liyufeng/goai_workflows/subop_library/first_batch.json"
+  ],
+  "notes": [
+    "Partial stages are not rescored as a complete station task.",
+    "No new thresholds replace original gates; user50mm lift is an additional stricter check.",
+    "No recomputation writes to the original parent episode."
+  ],
+  "episode": "/data/liyufeng/goai_workflows/subop_library/episodes/SUBOP-A-44",
+  "source_sha256": {
+    "steps.npz": "4d8edd9cabd0dee3f4d88483f9cf07897641316acfab6bcd0dea4fcfd20ffa8e",
+    "contacts.jsonl.gz": "077520ad42beb833b84e8c4c6792aa65d2d0d5dac7c1c89d6c7c9430c88af1e4",
+    "initial_state.npz": "31c8b3629e8b418e0ef321e84ab12d609081bd7fcf6ffb524ec11a5dcc83ea78",
+    "meta.json": "9bec3c431ce703e8c232b1c7b734b823a0492c094887358f7570b3d2933a428e",
+    "jaw_geometry.json": "a09deb8e2ad4484efc790028fbccfd7def3f63de30628712607e6f772526c51f"
+  },
+  "auditor_sha256": "ee047f4cfe2d8905754fdc7b3836d368b43fe5ee2faf7a245f55b798c23c95b5",
+  "reused_core_sha256": {
+    "trajectory_audit.py": "b0b5ed98a47610928683aec399ca66759303d13416be52dd94d69803e7779959",
+    "jaw_geometry_audit.py": "b6baa124413d52e2fc9792acc5daaac0ea676a5d90504664e4d743e2ec53b097",
+    "contact_io.py": "cb60ae1abb96df58f091e9625dc6517cc6e83531455e3ff3c770479b247a1c6c"
+  }
+}

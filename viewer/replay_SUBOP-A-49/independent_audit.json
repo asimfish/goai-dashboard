@@ -1,0 +1,90 @@
+{
+  "schema": "subop_raw_audit_v1",
+  "physical_numerical_pass": true,
+  "physical_status": "PASS",
+  "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "bilateral_transport_fraction_at_least0_8": true,
+    "relative_grip_displacement_within20mm": true,
+    "tilt_within0_25rad": true,
+    "object_endpoint_within20mm_of_declared_goal": true,
+    "object_endpoint_tilt_within0_25rad": true
+  },
+  "metrics": {
+    "ticks": 1920,
+    "duration_s": 8.0,
+    "TCP_endpoint_error_mm": 0.005108295226818882,
+    "orientation_endpoint_error_rad": 2.0058180706953805e-05,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.000783732975833118,
+    "bilateral_fraction": 1.0,
+    "longest_bilateral_ticks": 1920,
+    "jaw_width_range_m": [
+      0.05501106058260152,
+      0.055012358740640366
+    ],
+    "jaw_logged_vs_recomputed_max_error_m": 6.196535080604804e-07,
+    "final_object_tilt_rad": 1.6914294878075094e-05,
+    "maximum_object_tilt_rad": 0.00019940703209393585,
+    "reference_first_grasp_parent_tick": 4577,
+    "reference_object_in_TCP_m": [
+      -0.00036579830339178443,
+      9.355484507977962e-06,
+      0.046790484338998795
+    ],
+    "original_reference_preserved": true,
+    "joint_state": {
+      "required": true,
+      "evaluated": true,
+      "position_violation_ticks": 0,
+      "velocity_violation_ticks": 0,
+      "violating_joint_names": []
+    },
+    "max_displacement_from_original_grip_m": 4.947582965542097e-06,
+    "declared_phase_goal_root_m": [
+      2.2900002002716064,
+      0.6599988341331482,
+      1.0742104053497314
+    ],
+    "endpoint_position_error_mm": 19.999862292856527,
+    "collision_preflight_refusals": []
+  },
+  "unverified_physical_criteria": [],
+  "execution_outcome": "completed_segment",
+  "visibility_status": "NOT_MEASURED",
+  "qualified": false,
+  "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+  "criterion_sources": [
+    "/data/liyufeng/goai_workflows/alab_twin_collect/trajectory_audit.py",
+    "/data/liyufeng/goai_workflows/alab_twin_collect/jaw_geometry_audit.py",
+    "/data/liyufeng/goai_workflows/subop_library/first_batch.json"
+  ],
+  "notes": [
+    "Partial stages are not rescored as a complete station task.",
+    "No new thresholds replace original gates; user50mm lift is an additional stricter check.",
+    "No recomputation writes to the original parent episode."
+  ],
+  "episode": "/data/liyufeng/goai_workflows/subop_library/episodes/SUBOP-A-49",
+  "source_sha256": {
+    "steps.npz": "933d1faba95af797da3511da0a43e46be0295eff3abf6241d66d834bd86f764a",
+    "contacts.jsonl.gz": "3a2b8bd60ec158142bbb97430b8f329926c844d9ec3ea0902e132e09e9bcee9c",
+    "initial_state.npz": "8c1ec1775063f77419b6c5d7b341296a646721f8949cbe23d4649cd24d7e270d",
+    "meta.json": "e66482d7447d095659789e6376881860be15049a86fb8953f17067f758b62da7",
+    "jaw_geometry.json": "a09deb8e2ad4484efc790028fbccfd7def3f63de30628712607e6f772526c51f"
+  },
+  "auditor_sha256": "ee047f4cfe2d8905754fdc7b3836d368b43fe5ee2faf7a245f55b798c23c95b5",
+  "reused_core_sha256": {
+    "trajectory_audit.py": "b0b5ed98a47610928683aec399ca66759303d13416be52dd94d69803e7779959",
+    "jaw_geometry_audit.py": "b6baa124413d52e2fc9792acc5daaac0ea676a5d90504664e4d743e2ec53b097",
+    "contact_io.py": "cb60ae1abb96df58f091e9625dc6517cc6e83531455e3ff3c770479b247a1c6c"
+  }
+}

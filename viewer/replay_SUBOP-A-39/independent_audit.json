@@ -1,0 +1,83 @@
+{
+  "schema": "subop_raw_audit_v1",
+  "physical_numerical_pass": true,
+  "physical_status": "PARTIAL",
+  "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "empty_gripper_no_target_loaded_contacts": true,
+    "no_carried_object_state": true,
+    "preshape_aperture_at_least_contact_width_plus3mm": true
+  },
+  "metrics": {
+    "ticks": 1200,
+    "duration_s": 5.0,
+    "TCP_endpoint_error_mm": 0.009781985681911465,
+    "orientation_endpoint_error_rad": 1.5764132736731288e-05,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": null,
+    "bilateral_fraction": 0.0,
+    "longest_bilateral_ticks": 0,
+    "jaw_width_range_m": [
+      0.07995901135537326,
+      0.07995989805677461
+    ],
+    "jaw_logged_vs_recomputed_max_error_m": 6.846680333794097e-08,
+    "final_object_tilt_rad": 4.793914539261332e-07,
+    "maximum_object_tilt_rad": 4.793914539261332e-07,
+    "reference_first_grasp_parent_tick": 3402,
+    "reference_object_in_TCP_m": [
+      -2.197197773057269e-06,
+      -7.904199037511717e-07,
+      0.030004747211933136
+    ],
+    "original_reference_preserved": true,
+    "joint_state": {
+      "required": true,
+      "evaluated": true,
+      "position_violation_ticks": 0,
+      "velocity_violation_ticks": 0,
+      "violating_joint_names": []
+    },
+    "collision_preflight_refusals": []
+  },
+  "unverified_physical_criteria": [
+    "Opening-envelope5mm minimum clearance is not an independently measured per-tick channel; original guard source/enforcement retained, no clearance PASS fabricated."
+  ],
+  "execution_outcome": "completed_segment",
+  "visibility_status": "NOT_MEASURED",
+  "qualified": false,
+  "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+  "criterion_sources": [
+    "/data/liyufeng/goai_workflows/alab_twin_collect/trajectory_audit.py",
+    "/data/liyufeng/goai_workflows/alab_twin_collect/jaw_geometry_audit.py",
+    "/data/liyufeng/goai_workflows/subop_library/first_batch.json"
+  ],
+  "notes": [
+    "Partial stages are not rescored as a complete station task.",
+    "No new thresholds replace original gates; user50mm lift is an additional stricter check.",
+    "No recomputation writes to the original parent episode."
+  ],
+  "episode": "/data/liyufeng/goai_workflows/subop_library/episodes/SUBOP-A-39",
+  "source_sha256": {
+    "steps.npz": "3721ae01e6cd5f9fa2205e7c8e2aa0034ea3ef0f4fc4c8ac7d6c7e9a71b0cf6e",
+    "contacts.jsonl.gz": "161f4329098ec4a441bf53b71fcb005bed84ee3758a29024a6b1f3ac68f8953e",
+    "initial_state.npz": "24b6a5e9d361285fe0523a635e39bcef33e50259ce1abff8e23ddef3382c33c1",
+    "meta.json": "5ac27c39a35383f445a8d6738e564efa96d9d12a039a84072142031f5b9942e0",
+    "jaw_geometry.json": "a09deb8e2ad4484efc790028fbccfd7def3f63de30628712607e6f772526c51f"
+  },
+  "auditor_sha256": "ee047f4cfe2d8905754fdc7b3836d368b43fe5ee2faf7a245f55b798c23c95b5",
+  "reused_core_sha256": {
+    "trajectory_audit.py": "b0b5ed98a47610928683aec399ca66759303d13416be52dd94d69803e7779959",
+    "jaw_geometry_audit.py": "b6baa124413d52e2fc9792acc5daaac0ea676a5d90504664e4d743e2ec53b097",
+    "contact_io.py": "cb60ae1abb96df58f091e9625dc6517cc6e83531455e3ff3c770479b247a1c6c"
+  }
+}

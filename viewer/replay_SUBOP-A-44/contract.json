@@ -1,0 +1,158 @@
+{
+  "protocol": "robocurve_v3_physical_01",
+  "station": "A",
+  "trial": 0,
+  "dt_s": 0.004166666666666667,
+  "robot": "fr3_A",
+  "robot_prim": "/World/Robots/fr3_A",
+  "grasp_mode": "physical",
+  "diagnostic": true,
+  "phases": [
+    {
+      "object": "precursor_2",
+      "grasp_width_m": 0.05387,
+      "grasp_local_xyz": [
+        0,
+        0,
+        0.03
+      ],
+      "tool_down_at_grasp": true,
+      "initial_horizontal_yaw_deg": 0.0,
+      "grasp_joint_command": [
+        0.024,
+        0.024
+      ],
+      "grasp_close_s": 2.0,
+      "grasp_contact_region": "bottle cap lower skirt; measured bilateral contact, not bottle body",
+      "dosing_hold_s": 2.0,
+      "return_release_clearance_m": 0.02,
+      "tangent_candidate_index": 1,
+      "initial_root_xyz": [
+        1.7960001230239868,
+        0.2099999487400055,
+        1.153744101524353
+      ],
+      "goal_root_xyz": [
+        1.7960001230239868,
+        0.2099999487400055,
+        1.153744101524353
+      ],
+      "dosing_root_xyz": [
+        2.200000000000001,
+        0.5500000000000002,
+        1.0975555471860965
+      ]
+    }
+  ],
+  "description": "Physically grasp this bottle, lift, carry upright to the specified paper-adjacent dosing pose, dwell two seconds, then return, release and retreat. No cap or powder motion is simulated.",
+  "jitter": {},
+  "seed": 20260915,
+  "object_prims": {
+    "precursor_2": "/World/StationA/precursor_2"
+  },
+  "penetration_numerical_tolerance_m": 0.0,
+  "penetration_definition": "each physics tick with any relevant negative contact separation, including finger/object contacts; 1 mm counts retained separately for comparison",
+  "position_tolerance_m": 0.02,
+  "tilt_tolerance_rad": 0.25,
+  "maximum_calls": 20,
+  "jaw_geometry_required": true,
+  "robot_state_bounds": {
+    "joint_names": [
+      "fr3_joint1",
+      "fr3_joint2",
+      "fr3_joint3",
+      "fr3_joint4",
+      "fr3_joint5",
+      "fr3_joint6",
+      "fr3_joint7",
+      "fr3_finger_joint1",
+      "fr3_finger_joint2"
+    ],
+    "position_limits": [
+      [
+        -2.743699789047241,
+        2.743699789047241
+      ],
+      [
+        -1.7836999893188477,
+        1.7836999893188477
+      ],
+      [
+        -2.9006998538970947,
+        2.9006998538970947
+      ],
+      [
+        -3.042099952697754,
+        -0.1517999917268753
+      ],
+      [
+        -2.80649995803833,
+        2.80649995803833
+      ],
+      [
+        0.544499933719635,
+        4.516899585723877
+      ],
+      [
+        -3.015899658203125,
+        3.015899658203125
+      ],
+      [
+        0.0,
+        0.03999999910593033
+      ],
+      [
+        0.0,
+        0.03999999910593033
+      ]
+    ],
+    "position_tolerance": [
+      0.15,
+      0.15,
+      0.15,
+      0.15,
+      0.15,
+      0.15,
+      0.15,
+      0.0005,
+      0.0005
+    ],
+    "velocity_limit": [
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      2.0,
+      2.0
+    ],
+    "units": "radians and rad/s for revolute joints; metres and m/s for FR3 prismatic fingers"
+  },
+  "library": "subop",
+  "bottle_index": 2,
+  "workflow_ids": [
+    "wf01"
+  ],
+  "workflow_step": "t_dose",
+  "new_simulation": true,
+  "scene_sequence": [
+    "precursor_1",
+    "precursor_2",
+    "precursor_3",
+    "precursor_4",
+    "stock_1",
+    "stock_2",
+    "stock_3",
+    "stock_4"
+  ],
+  "initial_scene_reset": false,
+  "collection_mode": "continuous_eight_bottle_diagnostic",
+  "plan_sha256": "f8f41671adb6aa03bb381b0a5c9fef3ec44678da9fb6082c59b814fa20ce9498",
+  "input_object_dimensions_m": [
+    0.05482430011034012,
+    0.05482429638504982,
+    0.10184615090802918
+  ]
+}

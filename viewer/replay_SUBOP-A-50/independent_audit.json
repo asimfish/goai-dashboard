@@ -1,0 +1,96 @@
+{
+  "schema": "subop_raw_audit_v1",
+  "physical_numerical_pass": true,
+  "physical_status": "PARTIAL",
+  "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "object_endpoint_within20mm_of_declared_goal": true,
+    "object_endpoint_tilt_within0_25rad": true,
+    "release_clear_3ticks": true,
+    "stable_at_least0_5s": true,
+    "stable_final": true,
+    "withdrawal150mm_within_original10mm": true
+  },
+  "metrics": {
+    "ticks": 2160,
+    "duration_s": 9.0,
+    "TCP_endpoint_error_mm": 0.01376493128191214,
+    "orientation_endpoint_error_rad": 3.3212452049238726e-05,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.0007851844420656562,
+    "bilateral_fraction": 0.019444444444444445,
+    "longest_bilateral_ticks": 42,
+    "jaw_width_range_m": [
+      0.055012027677875164,
+      0.07996001405723652
+    ],
+    "jaw_logged_vs_recomputed_max_error_m": 6.347737140366405e-07,
+    "final_object_tilt_rad": 0.000495980187670805,
+    "maximum_object_tilt_rad": 0.004020338998511074,
+    "reference_first_grasp_parent_tick": 4577,
+    "reference_object_in_TCP_m": [
+      -0.00036579830339178443,
+      9.355484507977962e-06,
+      0.046790484338998795
+    ],
+    "original_reference_preserved": true,
+    "joint_state": {
+      "required": true,
+      "evaluated": true,
+      "position_violation_ticks": 0,
+      "velocity_violation_ticks": 0,
+      "violating_joint_names": []
+    },
+    "declared_phase_goal_root_m": [
+      2.2900002002716064,
+      0.6599988341331482,
+      1.0742104053497314
+    ],
+    "endpoint_position_error_mm": 0.031623957527919015,
+    "final_release_gap_m": 0.07995907357071941,
+    "final_speed_m_s": 0.0,
+    "stable_seconds": 8.5875,
+    "empty_retreat_m": 0.15000450611114502,
+    "collision_preflight_refusals": []
+  },
+  "unverified_physical_criteria": [
+    "Opening-envelope5mm minimum clearance is not an independently measured per-tick channel; original guard source/enforcement retained, no clearance PASS fabricated."
+  ],
+  "execution_outcome": "completed_segment",
+  "visibility_status": "NOT_MEASURED",
+  "qualified": false,
+  "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+  "criterion_sources": [
+    "/data/liyufeng/goai_workflows/alab_twin_collect/trajectory_audit.py",
+    "/data/liyufeng/goai_workflows/alab_twin_collect/jaw_geometry_audit.py",
+    "/data/liyufeng/goai_workflows/subop_library/first_batch.json"
+  ],
+  "notes": [
+    "Partial stages are not rescored as a complete station task.",
+    "No new thresholds replace original gates; user50mm lift is an additional stricter check.",
+    "No recomputation writes to the original parent episode."
+  ],
+  "episode": "/data/liyufeng/goai_workflows/subop_library/episodes/SUBOP-A-50",
+  "source_sha256": {
+    "steps.npz": "6921c0e60db93a69726e59568f4739efa589f15937def346779efe43875967fd",
+    "contacts.jsonl.gz": "36df120c4fc9ee2d3a94031b82353d569d12a6979c39d4d98277ffbf39795b47",
+    "initial_state.npz": "a236aae858e352cb54383291fd20ae96a408c620b606d23dca3eae3be3db593f",
+    "meta.json": "5f8c6d91331226e4d9647bb6c6eb7dcabfe5fcf68503719473a7e191a0b6e9b2",
+    "jaw_geometry.json": "a09deb8e2ad4484efc790028fbccfd7def3f63de30628712607e6f772526c51f"
+  },
+  "auditor_sha256": "ee047f4cfe2d8905754fdc7b3836d368b43fe5ee2faf7a245f55b798c23c95b5",
+  "reused_core_sha256": {
+    "trajectory_audit.py": "b0b5ed98a47610928683aec399ca66759303d13416be52dd94d69803e7779959",
+    "jaw_geometry_audit.py": "b6baa124413d52e2fc9792acc5daaac0ea676a5d90504664e4d743e2ec53b097",
+    "contact_io.py": "cb60ae1abb96df58f091e9625dc6517cc6e83531455e3ff3c770479b247a1c6c"
+  }
+}
