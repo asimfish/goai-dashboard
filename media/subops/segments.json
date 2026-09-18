@@ -2443,7 +2443,10 @@
    "source_rows": [
     "I001"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T093239_318059452_scripted/episodes/B",
    "parent_ticks": [
     1202,
@@ -2517,7 +2520,10 @@
    "source_rows": [
     "I001"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T093239_318059452_scripted/episodes/B",
    "parent_ticks": [
     2162,
@@ -2591,7 +2597,10 @@
    "source_rows": [
     "I001"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T093239_318059452_scripted/episodes/B",
    "parent_ticks": [
     3364,
@@ -2665,7 +2674,10 @@
    "source_rows": [
     "I001"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T093239_318059452_scripted/episodes/B",
    "parent_ticks": [
     4324,
@@ -2738,7 +2750,9 @@
    "source_rows": [
     "A39.02"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf02_powder_recovery_xrd"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C",
    "parent_ticks": [
     1202,
@@ -2812,7 +2826,9 @@
    "source_rows": [
     "A39.03"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf02_powder_recovery_xrd"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C",
    "parent_ticks": [
     2162,
@@ -2886,7 +2902,9 @@
    "source_rows": [
     "A41.02"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf02_powder_recovery_xrd"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C",
    "parent_ticks": [
     3364,
@@ -2960,7 +2978,9 @@
    "source_rows": [
     "A41.03"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf02_powder_recovery_xrd"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C",
    "parent_ticks": [
     4324,
@@ -3034,7 +3054,9 @@
    "source_rows": [
     "A43.02"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf02_powder_recovery_xrd"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C",
    "parent_ticks": [
     5526,
@@ -3108,7 +3130,9 @@
    "source_rows": [
     "A43.03"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf02_powder_recovery_xrd"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C",
    "parent_ticks": [
     6486,
@@ -3182,7 +3206,9 @@
    "source_rows": [
     "A45.02"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf02_powder_recovery_xrd"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C",
    "parent_ticks": [
     7688,
@@ -3256,7 +3282,9 @@
    "source_rows": [
     "A45.03"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf02_powder_recovery_xrd"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C",
    "parent_ticks": [
     8648,
@@ -3329,7 +3357,9 @@
    "source_rows": [
     "I051"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf03_wet_chemical_precursor"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T091215_020973547_scripted/episodes/A",
    "parent_ticks": [
     302,
@@ -3403,7 +3433,9 @@
    "source_rows": [
     "I051"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf03_wet_chemical_precursor"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T091215_020973547_scripted/episodes/A",
    "parent_ticks": [
     542,
@@ -3477,7 +3509,9 @@
    "source_rows": [
     "I051"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf03_wet_chemical_precursor"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T091215_020973547_scripted/episodes/A",
    "parent_ticks": [
     844,
@@ -3551,7 +3585,9 @@
    "source_rows": [
     "I051"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf03_wet_chemical_precursor"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T091215_020973547_scripted/episodes/A",
    "parent_ticks": [
     1084,
@@ -3624,7 +3660,10 @@
    "source_rows": [
     "I004"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T094846_533486327_scripted/episodes/B",
    "parent_ticks": [
     1202,
@@ -3698,7 +3737,10 @@
    "source_rows": [
     "I004"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T094846_533486327_scripted/episodes/B",
    "parent_ticks": [
     2162,
@@ -3772,7 +3814,10 @@
    "source_rows": [
     "I004"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T094846_533486327_scripted/episodes/B",
    "parent_ticks": [
     3364,
@@ -3846,7 +3891,10 @@
    "source_rows": [
     "I004"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T094846_533486327_scripted/episodes/B",
    "parent_ticks": [
     4324,
@@ -3919,7 +3967,10 @@
    "source_rows": [
     "A12.02"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T095037_272581773_scripted/episodes/B",
    "parent_ticks": [
     1202,
@@ -3993,7 +4044,10 @@
    "source_rows": [
     "A12.03"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T095037_272581773_scripted/episodes/B",
    "parent_ticks": [
     2162,
@@ -4067,7 +4121,10 @@
    "source_rows": [
     "A14.02"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T095037_272581773_scripted/episodes/B",
    "parent_ticks": [
     3364,
@@ -4141,7 +4198,10 @@
    "source_rows": [
     "A14.03"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T095037_272581773_scripted/episodes/B",
    "parent_ticks": [
     4324,
@@ -4215,7 +4275,10 @@
    "source_rows": [
     "A17.02"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T095037_272581773_scripted/episodes/B",
    "parent_ticks": [
     5526,
@@ -4289,7 +4352,10 @@
    "source_rows": [
     "A17.03"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T095037_272581773_scripted/episodes/B",
    "parent_ticks": [
     6486,
@@ -4363,7 +4429,10 @@
    "source_rows": [
     "A19.02"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T095037_272581773_scripted/episodes/B",
    "parent_ticks": [
     7688,
@@ -4437,7 +4506,10 @@
    "source_rows": [
     "A19.03"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T095037_272581773_scripted/episodes/B",
    "parent_ticks": [
     8648,
@@ -4510,7 +4582,10 @@
    "source_rows": [
     "I007"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T100505_759778129_scripted/episodes/B",
    "parent_ticks": [
     1202,
@@ -4584,7 +4659,10 @@
    "source_rows": [
     "I007"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T100505_759778129_scripted/episodes/B",
    "parent_ticks": [
     2162,
@@ -4658,7 +4736,10 @@
    "source_rows": [
     "I007"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T100505_759778129_scripted/episodes/B",
    "parent_ticks": [
     3364,
@@ -4732,7 +4813,10 @@
    "source_rows": [
     "I007"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination",
+    "wf04_flux_growth_pt_crucible"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T100505_759778129_scripted/episodes/B",
    "parent_ticks": [
     4324,
@@ -4807,7 +4891,9 @@
     "A05.10",
     "I058"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114323_719288454_scripted/episodes/A",
    "parent_ticks": [
     300,
@@ -4898,7 +4984,9 @@
     "A05.10",
     "I058"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114323_719288454_scripted/episodes/A",
    "parent_ticks": [
     600,
@@ -4986,7 +5074,9 @@
     "A05.10",
     "I058"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114323_719288454_scripted/episodes/A",
    "parent_ticks": [
     1320,
@@ -5078,7 +5168,9 @@
     "A05.10",
     "I058"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114323_719288454_scripted/episodes/A",
    "parent_ticks": [
     1500,
@@ -5175,7 +5267,9 @@
     "A05.10",
     "I058"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114323_719288454_scripted/episodes/A",
    "parent_ticks": [
     3300,
@@ -5286,7 +5380,9 @@
     "A05.10",
     "I058"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114323_719288454_scripted/episodes/A",
    "parent_ticks": [
     3716,
@@ -5380,7 +5476,9 @@
    "source_rows": [
     "I060"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T111602_832256025_scripted/episodes/A",
    "parent_ticks": [
     300,
@@ -5469,7 +5567,9 @@
    "source_rows": [
     "I060"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T111602_832256025_scripted/episodes/A",
    "parent_ticks": [
     600,
@@ -5555,7 +5655,9 @@
    "source_rows": [
     "I060"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T111602_832256025_scripted/episodes/A",
    "parent_ticks": [
     1320,
@@ -5645,7 +5747,9 @@
    "source_rows": [
     "I060"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T111602_832256025_scripted/episodes/A",
    "parent_ticks": [
     1500,
@@ -5740,7 +5844,9 @@
    "source_rows": [
     "I060"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T111602_832256025_scripted/episodes/A",
    "parent_ticks": [
     3300,
@@ -5849,7 +5955,9 @@
    "source_rows": [
     "I060"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf01_solid_state_calcination"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T111602_832256025_scripted/episodes/A",
    "parent_ticks": [
     3717,
@@ -5944,7 +6052,9 @@
     "I222",
     "I105"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf02_powder_recovery_xrd"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C",
    "parent_ticks": [
     1200,
@@ -6034,7 +6144,9 @@
     "I222",
     "I105"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf02_powder_recovery_xrd"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C",
    "parent_ticks": [
     5158,
@@ -6121,7 +6233,9 @@
     "I222",
     "I105"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf02_powder_recovery_xrd"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C",
    "parent_ticks": [
     6838,
@@ -6212,7 +6326,9 @@
     "I222",
     "I105"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf02_powder_recovery_xrd"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C",
    "parent_ticks": [
     7558,
@@ -6309,7 +6425,9 @@
     "I222",
     "I105"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf02_powder_recovery_xrd"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C",
    "parent_ticks": [
     12838,
@@ -6401,7 +6519,9 @@
     "I222",
     "I105"
    ],
-   "workflow_ids": null,
+   "workflow_ids": [
+    "wf02_powder_recovery_xrd"
+   ],
    "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C",
    "parent_ticks": [
     13798,
@@ -6488,6 +6608,630 @@
    "frames": 157,
    "five_view_sets": 4,
    "video_bytes": 1399178
+  },
+  {
+   "id": "SUBOP-A-27",
+   "name": "夹爪张开，移动到源容器预接近位",
+   "g05_stage": 3,
+   "stage_zh": "开爪到预接近位",
+   "actor": "fr3_A",
+   "object": "precursor_1",
+   "station": "A",
+   "source_rows": [
+    "A03.02",
+    "I054"
+   ],
+   "workflow_ids": [
+    "wf01"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T171703_972161080_scripted/episodes/A_bottle_01",
+   "parent_ticks": [
+    1200,
+    2400
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [
+    "pregrasp_hover"
+   ],
+   "boundary_stages": [
+    "pregrasp_hover",
+    "pregrasp_hover"
+   ],
+   "physical_status": "PASS",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "FAIL_SELECTED_CONFIG_MISMATCH",
+   "qualified": false,
+   "qualification_reason": "Physical evidence complete for this stage; selected camera mismatch and remaining visual constraints keep full admission false.",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "empty_gripper_no_target_loaded_contacts": true,
+    "no_carried_object_state": true,
+    "preshape_aperture_at_least_contact_width_plus3mm": true,
+    "opening_envelope_5mm_every_recorded_tick": true
+   },
+   "metrics": {
+    "duration_s": 5.0,
+    "ticks": 1200,
+    "TCP_endpoint_error_mm": 0.01380462072120281,
+    "orientation_endpoint_error_rad": 2.513389066833723e-05,
+    "bilateral_fraction": 0.0,
+    "maximum_object_tilt_rad": 1.4975481660844235e-07,
+    "final_object_tilt_rad": 1.4975481660844235e-07,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": null,
+    "jaw_width_range_m": [
+     0.07995919021740483,
+     0.07996017660978771
+    ],
+    "collision_preflight_refusals": []
+   },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "supplemental_auditor_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
+   "frames": 60,
+   "five_view_sets": 1,
+   "video_bytes": 708737
+  },
+  {
+   "id": "SUBOP-A-28",
+   "name": "沿接近方向到夹持位并闭爪",
+   "g05_stage": 4,
+   "stage_zh": "沿接近方向到夹持位并闭爪",
+   "actor": "fr3_A",
+   "object": "precursor_1",
+   "station": "A",
+   "source_rows": [
+    "A03.02",
+    "I054"
+   ],
+   "workflow_ids": [
+    "wf01"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T171703_972161080_scripted/episodes/A_bottle_01",
+   "parent_ticks": [
+    2400,
+    3840
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [
+    "pregrasp_hover",
+    "before_close",
+    "after_close"
+   ],
+   "boundary_stages": [
+    "pregrasp_hover",
+    "after_close"
+   ],
+   "physical_status": "PASS",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "bilateral_contact_confirmed": true
+   },
+   "metrics": {
+    "duration_s": 6.0,
+    "ticks": 1440,
+    "TCP_endpoint_error_mm": 0.0018848643321689451,
+    "orientation_endpoint_error_rad": 3.671254216062024e-06,
+    "bilateral_fraction": 0.30486111111111114,
+    "maximum_object_tilt_rad": 0.00378892113858011,
+    "final_object_tilt_rad": 0.0037753806741035864,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.0009597761672921479,
+    "jaw_width_range_m": [
+     0.05561782147733496,
+     0.07995990086236165
+    ],
+    "collision_preflight_refusals": []
+   },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
+   "frames": 72,
+   "five_view_sets": 3,
+   "video_bytes": 840163
+  },
+  {
+   "id": "SUBOP-A-29",
+   "name": "确认唯一持有者，提离支撑面并确认物体随臂",
+   "g05_stage": 5,
+   "stage_zh": "确认物理夹持并提离",
+   "actor": "fr3_A",
+   "object": "precursor_1",
+   "station": "A",
+   "source_rows": [
+    "A03.02",
+    "I054"
+   ],
+   "workflow_ids": [
+    "wf01"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T171703_972161080_scripted/episodes/A_bottle_01",
+   "parent_ticks": [
+    3840,
+    4560
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [
+    "after_close",
+    "lifted"
+   ],
+   "boundary_stages": [
+    "after_close",
+    "lifted"
+   ],
+   "physical_status": "PASS",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "bilateral_transport_fraction_at_least0_8": true,
+    "relative_grip_displacement_within20mm": true,
+    "tilt_within0_25rad": true,
+    "user_lift_strictly_above50mm": true,
+    "original_lift30mm_held0_15s": true
+   },
+   "metrics": {
+    "duration_s": 3.0,
+    "ticks": 720,
+    "TCP_endpoint_error_mm": 0.014476967407972552,
+    "orientation_endpoint_error_rad": 2.6241397562864745e-05,
+    "bilateral_fraction": 1.0,
+    "maximum_object_tilt_rad": 0.0038050102255510663,
+    "final_object_tilt_rad": 0.0037346432069780356,
+    "max_displacement_from_original_grip_m": 3.4339352623646846e-06,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.0009596404270268977,
+    "jaw_width_range_m": [
+     0.05561699808287651,
+     0.05561835270888266
+    ],
+    "collision_preflight_refusals": []
+   },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
+   "frames": 36,
+   "five_view_sets": 2,
+   "video_bytes": 433450
+  },
+  {
+   "id": "SUBOP-A-30",
+   "name": "携物沿已规划路线移动；跨站执行接收方锁定/接手",
+   "g05_stage": 6,
+   "stage_zh": "沿路线携行",
+   "actor": "fr3_A",
+   "object": "precursor_1",
+   "station": "A",
+   "source_rows": [
+    "A03.02",
+    "I054"
+   ],
+   "workflow_ids": [
+    "wf01"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T171703_972161080_scripted/episodes/A_bottle_01",
+   "parent_ticks": [
+    4560,
+    12720
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [
+    "lifted",
+    "above_balance",
+    "dosing",
+    "above_source"
+   ],
+   "boundary_stages": [
+    "lifted",
+    "above_source"
+   ],
+   "physical_status": "PASS",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "bilateral_transport_fraction_at_least0_8": true,
+    "relative_grip_displacement_within20mm": true,
+    "tilt_within0_25rad": true,
+    "dosing_goal_held2s": true,
+    "object_endpoint_within20mm_of_declared_goal": true,
+    "object_endpoint_tilt_within0_25rad": true
+   },
+   "metrics": {
+    "duration_s": 34.0,
+    "ticks": 8160,
+    "endpoint_position_error_mm": 0.05125484080147412,
+    "TCP_endpoint_error_mm": 0.004910786174150417,
+    "orientation_endpoint_error_rad": 1.1515079003455325e-05,
+    "bilateral_fraction": 1.0,
+    "maximum_object_tilt_rad": 0.05390127820512491,
+    "final_object_tilt_rad": 0.04827780776215139,
+    "max_displacement_from_original_grip_m": 0.0017222246387973428,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.0009581121848896146,
+    "jaw_width_range_m": [
+     0.05557469882786803,
+     0.05561778633939457
+    ],
+    "dosing_hold_s": 3.5041666666666664,
+    "collision_preflight_refusals": []
+   },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "derivation_sha256",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "parameter_binding",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "schema",
+    "source_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
+   "frames": 408,
+   "five_view_sets": 4,
+   "video_bytes": 4028725
+  },
+  {
+   "id": "SUBOP-A-31",
+   "name": "对准目标槽口，降落至支撑/定位面",
+   "g05_stage": 7,
+   "stage_zh": "对准目标位下放",
+   "actor": "fr3_A",
+   "object": "precursor_1",
+   "station": "A",
+   "source_rows": [
+    "A03.02",
+    "I054"
+   ],
+   "workflow_ids": [
+    "wf01"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T171703_972161080_scripted/episodes/A_bottle_01",
+   "parent_ticks": [
+    12720,
+    13423
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [
+    "above_source",
+    "before_release"
+   ],
+   "boundary_stages": [
+    "above_source",
+    "before_release"
+   ],
+   "physical_status": "PASS",
+   "physical_numerical_pass": true,
+   "execution_outcome": "guarded_stop_within_tolerance",
+   "visibility_status": "NOT_MEASURED",
+   "qualified": false,
+   "qualification_reason": "Stage visibility segmentation is not available; physical gaps, if any, remain explicit.",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "bilateral_transport_fraction_at_least0_8": true,
+    "relative_grip_displacement_within20mm": true,
+    "tilt_within0_25rad": true,
+    "object_endpoint_within20mm_of_declared_goal": true,
+    "object_endpoint_tilt_within0_25rad": true
+   },
+   "metrics": {
+    "duration_s": 2.9291666666666667,
+    "ticks": 703,
+    "endpoint_position_error_mm": 8.941543785849543,
+    "TCP_endpoint_error_mm": 8.94118007272482,
+    "orientation_endpoint_error_rad": 0.00010406091892800354,
+    "bilateral_fraction": 1.0,
+    "maximum_object_tilt_rad": 0.048410953132492815,
+    "final_object_tilt_rad": 0.04829117583635762,
+    "max_displacement_from_original_grip_m": 0.0014727021334692836,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.0009602424106560647,
+    "jaw_width_range_m": [
+     0.055575497460926826,
+     0.05557589657529527
+    ],
+    "collision_preflight_refusals": [
+     {
+      "tick": 13423,
+      "pass": false,
+      "hits": [
+       {
+        "a": "/World/StationA/precursor_1/model/ReagentBottle004/Collisions/ReagentBottle004_Collider98",
+        "b": "/World/StationA/carousel/turntable_deck",
+        "depth_m": 0.005729788500277947,
+        "fraction": 1.0
+       }
+      ],
+      "samples": 2,
+      "narrowphase_checks": 588,
+      "prediction_scope": "measured rigid-body geometry, proposed arm-joint samples, held-object rigid transport assumption, current gripper pose plus opening envelope",
+      "releasing_objects_at_current_measured_pose": [],
+      "continuous_certification": false,
+      "measured_joint_position": [
+       1.5422645807266235,
+       1.398622751235962,
+       1.0376287698745728,
+       -2.4505667686462402,
+       -1.8859124183654785,
+       2.0388259887695312,
+       0.21180133521556854
+      ],
+      "measured_joint_velocity": [
+       0.10929850488901138,
+       0.1319701224565506,
+       -0.2115057408809662,
+       0.15529851615428925,
+       -0.19935964047908783,
+       0.07225365936756134,
+       0.03132547065615654
+      ],
+      "rejected_joint_command": [
+       1.5536572933197021,
+       1.412386417388916,
+       1.0156426429748535,
+       -2.434356451034546,
+       -1.906755805015564,
+       2.046332836151123,
+       0.21508033573627472
+      ],
+      "measured_tcp": [
+       1.7026340961456299,
+       0.21052396297454834,
+       1.1929411888122559
+      ],
+      "target_tcp": [
+       1.7026410102844238,
+       0.2105153501033783,
+       1.184000015258789
+      ],
+      "target_quaternion": [
+       0.0,
+       -0.998277485370636,
+       0.05866963043808937,
+       0.0
+      ]
+     }
+    ]
+   },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
+   "frames": 35,
+   "five_view_sets": 2,
+   "video_bytes": 440886
+  },
+  {
+   "id": "SUBOP-A-32",
+   "name": "开爪释放、撤离并检查物体稳定与目标占用",
+   "g05_stage": 8,
+   "stage_zh": "开爪释放、撤离并检查稳定",
+   "actor": "fr3_A",
+   "object": "precursor_1",
+   "station": "A",
+   "source_rows": [
+    "A03.02",
+    "I054"
+   ],
+   "workflow_ids": [
+    "wf01"
+   ],
+   "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T171703_972161080_scripted/episodes/A_bottle_01",
+   "parent_ticks": [
+    13423,
+    15583
+   ],
+   "dt_s": 0.004166666666666667,
+   "stages": [
+    "before_release",
+    "released",
+    "final"
+   ],
+   "boundary_stages": [
+    "before_release",
+    "final"
+   ],
+   "physical_status": "PASS",
+   "physical_numerical_pass": true,
+   "execution_outcome": "completed_segment",
+   "visibility_status": "FAIL_SELECTED_CONFIG_MISMATCH",
+   "qualified": false,
+   "qualification_reason": "Physical evidence complete for this stage; selected camera mismatch and remaining visual constraints keep full admission false.",
+   "unverified_physical_criteria": [],
+   "conditions": {
+    "physical_grasp": true,
+    "finite_trajectory": true,
+    "joint_state_valid": true,
+    "contact_rows_complete": true,
+    "contact_parse_errors_zero": true,
+    "contact_coverage_verified": true,
+    "penetration_ticks_zero": true,
+    "no_other_robot_target_contact": true,
+    "tcp_endpoint_within_10mm": true,
+    "orientation_endpoint_within_0_10rad": true,
+    "object_endpoint_within20mm_of_declared_goal": true,
+    "object_endpoint_tilt_within0_25rad": true,
+    "release_clear_3ticks": true,
+    "stable_at_least0_5s": true,
+    "stable_final": true,
+    "withdrawal150mm_within_original10mm": true,
+    "opening_envelope_5mm_every_recorded_tick": true,
+    "support_footprint_margin_5mm_after_release": true
+   },
+   "metrics": {
+    "duration_s": 9.0,
+    "ticks": 2160,
+    "endpoint_position_error_mm": 2.5320284481886848,
+    "TCP_endpoint_error_mm": 0.01023406093736412,
+    "orientation_endpoint_error_rad": 1.647812420761963e-05,
+    "bilateral_fraction": 0.004166666666666667,
+    "maximum_object_tilt_rad": 0.04829860223572874,
+    "final_object_tilt_rad": 5.372690074837192e-08,
+    "raw_negative_separation_ticks": 0,
+    "minimum_relevant_separation_m": 0.0009603453800082207,
+    "jaw_width_range_m": [
+     0.05556885883649221,
+     0.07995989076375554
+    ],
+    "collision_preflight_refusals": []
+   },
+   "has_boundary": true,
+   "audit_keys": [
+    "auditor_sha256",
+    "conditions",
+    "criterion_sources",
+    "episode",
+    "execution_outcome",
+    "metrics",
+    "notes",
+    "physical_numerical_pass",
+    "physical_status",
+    "qualification_reason",
+    "qualified",
+    "reused_core_sha256",
+    "schema",
+    "source_sha256",
+    "supplemental_auditor_sha256",
+    "unverified_physical_criteria",
+    "visibility_status"
+   ],
+   "frames": 108,
+   "five_view_sets": 3,
+   "video_bytes": 1131015
   }
  ]
 }
