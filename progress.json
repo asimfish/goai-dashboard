@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-18T22:46+08:00",
+  "updated": "2026-09-18T22:54+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -15,11 +15,12 @@
     "viewer_B_g3": "https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_B_g3",
     "viewer_A_g3": "https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_A_g3",
     "subops": "https://asimfish.github.io/goai-dashboard/subops.html",
-    "viewer_subops": "https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_SUBOP-B-06"
+    "viewer_subops": "https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_SUBOP-B-06",
+    "knowledge_graph": "https://asimfish.github.io/goai-dashboard/knowledge_graph.html"
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-18T22:46+08:00",
+    "snapshot_at": "2026-09-18T22:54+08:00",
     "gpus": [
       {
         "index": 0,
@@ -29,8 +30,8 @@
       },
       {
         "index": 1,
-        "used_mib": 7198,
-        "util": "8%",
+        "used_mib": 9858,
+        "util": "26%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -38,7 +39,7 @@
       {
         "mount": "/",
         "used": "98%",
-        "free": "79G",
+        "free": "78G",
         "note": "不写"
       },
       {
@@ -496,9 +497,22 @@
       "eta": "已上线",
       "evidence": "https://asimfish.github.io/goai-dashboard/",
       "group": "done"
+    },
+    {
+      "id": "Q23",
+      "topic": "知识森林：把 BYZSO 调研画成可交互的知识图谱（个人知识树 → 文献树 → 实体主干 → 结论树 → 新树）",
+      "owner": "Claude",
+      "status": "ok",
+      "eta": "已上线",
+      "evidence": "https://asimfish.github.io/goai-dashboard/knowledge_graph.html",
+      "group": "done"
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-18 14:55",
+      "entry": "**知识森林上线**：调研的知识图谱展示 knowledge_graph.html —— 368 节点 / 1280 边，全部从证据包生成（51 篇文献、35 个叶节点、29 个化合物、29 条条件记录、100 条主张、RECIPE 预测、4 个实验方向、5 条工作流、3 个补充案例）。五张阶段海报在 pdf/gallery/sagemat_knowledge_forest_20260918_stage{0..4}_3072x1728.png；源码 goai_research/docs/competition/knowledge_graph/。"
+    },
     {
       "date": "2026-09-18 12:35",
       "entry": "宣传封面出 A/B 两版：孪生实验室在 5090 上重渲染（3000×2000，两台新相机：配料站一角推近全景 / XRD 站一角反向全景），底部与地址栏链接去掉；仓库 docs/competition/cover/。"
