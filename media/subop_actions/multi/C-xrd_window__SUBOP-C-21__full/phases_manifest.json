@@ -1,0 +1,287 @@
+{
+  "schema": "panel_media/phases/1",
+  "label": "SUBOP-C-21",
+  "run": "/mnt/nas/data/lyf/goai/subop_store/agent2/runtime_C_r3b_runtime_20260918/runs/20260920T001626_524262716_scripted/episodes/C_holder_smoke",
+  "phases_file": "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-C-21_subop_phases_full.json",
+  "dt_s": 0.004166666666666667,
+  "tick_offset": 0,
+  "station_source": {
+    "kind": "frames",
+    "path": "/mnt/nas/data/lyf/goai/subop_store/agent2/runtime_C_r3b_runtime_20260918/runs/20260920T001626_524262716_scripted/episodes/C_holder_smoke/frames_station",
+    "fps": 12.0,
+    "frames": 362,
+    "start_number": 0
+  },
+  "view_sources": {},
+  "frame_mapping": "frame = floor(tick * dt * fps); phase [a,b) -> frames [floor(a*dt*fps), ceil(b*dt*fps))",
+  "outputs": [
+    {
+      "name": "full",
+      "view": null,
+      "clip": "video_full.mp4",
+      "poster": "video_full.png",
+      "ticks": [
+        0,
+        2145
+      ],
+      "seconds": [
+        0.0,
+        8.9375
+      ],
+      "frames": [
+        0,
+        108
+      ],
+      "frames_expected": 108,
+      "frames_written": 108,
+      "fps": 12.0,
+      "bytes": 925946,
+      "ok": true
+    },
+    {
+      "name": "pre_approach",
+      "view": null,
+      "clip": "phase_1_pre_approach.mp4",
+      "poster": "phase_1_pre_approach.png",
+      "ticks": [
+        0,
+        28
+      ],
+      "seconds": [
+        0.0,
+        0.11666666666666667
+      ],
+      "frames": [
+        0,
+        2
+      ],
+      "frames_expected": 2,
+      "frames_written": 2,
+      "fps": 12.0,
+      "bytes": 68298,
+      "ok": true
+    },
+    {
+      "name": "open_window",
+      "view": null,
+      "clip": "phase_2_open_window.mp4",
+      "poster": "phase_2_open_window.png",
+      "ticks": [
+        28,
+        942
+      ],
+      "seconds": [
+        0.11666666666666667,
+        3.925
+      ],
+      "frames": [
+        1,
+        48
+      ],
+      "frames_expected": 47,
+      "frames_written": 47,
+      "fps": 12.0,
+      "bytes": 431258,
+      "ok": true
+    },
+    {
+      "name": "hold_open",
+      "view": null,
+      "clip": "phase_3_hold_open.mp4",
+      "poster": "phase_3_hold_open.png",
+      "ticks": [
+        942,
+        2145
+      ],
+      "seconds": [
+        3.925,
+        8.9375
+      ],
+      "frames": [
+        47,
+        108
+      ],
+      "frames_expected": 61,
+      "frames_written": 61,
+      "fps": 12.0,
+      "bytes": 571613,
+      "ok": true
+    }
+  ],
+  "skipped": [],
+  "ffmpeg_log": [
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-framerate",
+        "12",
+        "-start_number",
+        "0",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent2/runtime_C_r3b_runtime_20260918/runs/20260920T001626_524262716_scripted/episodes/C_holder_smoke/frames_station/%05d.jpg",
+        "-frames:v",
+        "108",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-C-21_full/video_full.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent2/runtime_C_r3b_runtime_20260918/runs/20260920T001626_524262716_scripted/episodes/C_holder_smoke/frames_station/00000.jpg",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-C-21_full/video_full.png"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-framerate",
+        "12",
+        "-start_number",
+        "0",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent2/runtime_C_r3b_runtime_20260918/runs/20260920T001626_524262716_scripted/episodes/C_holder_smoke/frames_station/%05d.jpg",
+        "-frames:v",
+        "2",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-C-21_full/phase_1_pre_approach.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent2/runtime_C_r3b_runtime_20260918/runs/20260920T001626_524262716_scripted/episodes/C_holder_smoke/frames_station/00000.jpg",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-C-21_full/phase_1_pre_approach.png"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-framerate",
+        "12",
+        "-start_number",
+        "1",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent2/runtime_C_r3b_runtime_20260918/runs/20260920T001626_524262716_scripted/episodes/C_holder_smoke/frames_station/%05d.jpg",
+        "-frames:v",
+        "47",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-C-21_full/phase_2_open_window.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent2/runtime_C_r3b_runtime_20260918/runs/20260920T001626_524262716_scripted/episodes/C_holder_smoke/frames_station/00001.jpg",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-C-21_full/phase_2_open_window.png"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-framerate",
+        "12",
+        "-start_number",
+        "47",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent2/runtime_C_r3b_runtime_20260918/runs/20260920T001626_524262716_scripted/episodes/C_holder_smoke/frames_station/%05d.jpg",
+        "-frames:v",
+        "61",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-C-21_full/phase_3_hold_open.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent2/runtime_C_r3b_runtime_20260918/runs/20260920T001626_524262716_scripted/episodes/C_holder_smoke/frames_station/00047.jpg",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-C-21_full/phase_3_hold_open.png"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    }
+  ],
+  "all_ok": true
+}
