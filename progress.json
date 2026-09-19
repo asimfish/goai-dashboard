@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-20T04:41+08:00",
+  "updated": "2026-09-20T04:46+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -21,18 +21,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-20T04:41+08:00",
+    "snapshot_at": "2026-09-20T04:46+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 521,
+        "used_mib": 522,
         "util": "1%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 9830,
-        "util": "17%",
+        "used_mib": 19117,
+        "util": "20%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -1245,6 +1245,10 @@
     {
       "date": "2026-09-20 04:42",
       "entry": "**A 站四瓶重录第三批定位到真正原因：携行时瓶子相对指垫滑移 40 mm（大瓶）与再抓前未声明目标（小瓶），秤玻璃已不是障碍；第四批（大瓶慢运输 ×2、再抓修复）在跑。** a100-a/b/m 改为不用设备 bridge 直接选卡探针中；H100 管理员请求最终版已定稿（宿主驱动升级到 580.65.06、容器注入匹配 glibc 的图形用户态、预装 libvulkan1/vulkan-tools）。"
+    },
+    {
+      "date": "2026-09-20 04:58",
+      "entry": "**新增 Claude 辅助 agent「goal_子操作采集」（不受 Codex 容量影响）：负责共用相机机位 v2 工具、面板分阶段媒体管线，并先重切 C-21 / C-20 / B-10。** 分工表 v4.1 卡分配不变。"
     }
   ],
   "contract": [
@@ -2333,7 +2337,7 @@
   "user_directives": {
     "issued": "2026-09-19 06:40 CST（用户逐条审看动作面板后提出）",
     "rule": "每条由负责 agent 在自己的 PROGRESS 文件里新开「## 用户指令落实（D 编号）」小节逐条回执：状态（未开始 / 进行中 / 已完成 / 受阻+原因）、证据路径、时间；监督每 20 分钟核对一次并更新本表与面板。完成标准写在每条里，达不到不许标完成。 16:50 用户追加决定：静置门 5 mm / 5° 确认；C 站开门目标为干燥箱柜门（够不着就挪近，再不行 XRD 滑窗）；a100-new 归还、七台服务器已释放可用；旧段先放行（有站位相机视频即按 demo 门通过）；瓶盖资产由我们自己修。 23:40 用户第二轮审片追加 D26–D30。",
-    "updated": "2026-09-20 04:42",
+    "updated": "2026-09-20 04:58",
     "items": [
       {
         "id": "D01",
@@ -2604,6 +2608,15 @@
         "done_when": "面板上四瓶总视频为新资产、新机位，用户看不到旧瓶。",
         "status": "进行中（第四批：P1fix / P3slow / P4slow 在跑）",
         "evidence": "第三批：P3/P4 在 over_scale 携行段瓶根相对指垫沿运输方向滑移 40–41 mm 失持（不是秤玻璃），P1 已放秤并释放但再抓前未声明 grasp_target 失败；修法：大瓶运输段时间 ×2（抓取几何不变）、P1 补再抓声明；04:38 起 GPU0 P4slow、GPU5 P1fix→P2、GPU6 P3slow，四路独立视频开启；本批机位仍为 v1，v2 首帧待下一批"
+      },
+      {
+        "id": "D31",
+        "owner": "goal_子操作采集（Claude 辅助 agent，用户 04:50 指定）",
+        "topic": "共用相机机位 v2 工具 + 面板媒体管线 + 已登记动作重切",
+        "what": "① camera_rig_v2：按本动作目标物 + 基座 + TCP 轨迹包围盒计算四机位并做几何可见性核查，三站样例，三个 agent 换用；② panel_media：按 subop_phases 切每阶段 clip 与首帧，四路同切；立刻应用到 C-21（从预接近到保持完整重切）、C-20、B-10 并交面板；③ 之后按分配用新机位重放已登记 episode 重渲染视频。不占 Codex agent 的卡与目录。",
+        "done_when": "工具在 _shared/tools/ 有 README 与三站样例；C-21/C-20/B-10 的分阶段 clip 与首帧上面板；三个 agent 的新 run 用该机位工具。",
+        "status": "进行中（04:55 任务书已下发）",
+        "evidence": "client_message_id guidance-20260920-c5-0455-brief；进度 subop_library/PROGRESS_claude.md"
       }
     ]
   }
