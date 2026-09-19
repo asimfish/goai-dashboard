@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-19T17:07+08:00",
+  "updated": "2026-09-19T17:30+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -21,18 +21,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-19T17:07+08:00",
+    "snapshot_at": "2026-09-19T17:30+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 519,
-        "util": "1%",
+        "used_mib": 1112,
+        "util": "5%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
         "used_mib": 7198,
-        "util": "19%",
+        "util": "36%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -1145,6 +1145,10 @@
     {
       "date": "2026-09-19 16:52",
       "entry": "**用户追加决定：静置门 5 mm / 5° 确认；C 站机械臂开门目标为干燥箱柜门（挪近或 XRD 备选）；a100-new 归还他人，七台 H100 / A100 已释放可用（agent 3 用 a100-new 方法逐台重探后按归属上任务）；旧段有站位相机视频即按 demo 门放行；瓶盖资产改由 agent 1 自修。** 已写入分工表 v4 增补并下发。"
+    },
+    {
+      "date": "2026-09-19 17:30",
+      "entry": "**用户加压：全部并行、每子任务一个子 agent 一张卡、空卡问责；H100 渲染专项交 agent 3，按用户仓库 a100-issacsim 的做法（补齐与内核模块同版本的图形用户态库、绕过 CUDA MPS）在三台 H100 上打通 Isaac 渲染；卡分配已写入分工表第 18 节。** a100-new 已归还他人并清空我们的进程。"
     }
   ],
   "contract": [
@@ -2189,7 +2193,7 @@
   "user_directives": {
     "issued": "2026-09-19 06:40 CST（用户逐条审看动作面板后提出）",
     "rule": "每条由负责 agent 在自己的 PROGRESS 文件里新开「## 用户指令落实（D 编号）」小节逐条回执：状态（未开始 / 进行中 / 已完成 / 受阻+原因）、证据路径、时间；监督每 20 分钟核对一次并更新本表与面板。完成标准写在每条里，达不到不许标完成。 16:50 用户追加决定：静置门 5 mm / 5° 确认；C 站开门目标为干燥箱柜门（够不着就挪近，再不行 XRD 滑窗）；a100-new 归还、七台服务器已释放可用；旧段先放行（有站位相机视频即按 demo 门通过）；瓶盖资产由我们自己修。",
-    "updated": "2026-09-19 16:52",
+    "updated": "2026-09-19 17:30",
     "items": [
       {
         "id": "D01",
@@ -2384,10 +2388,10 @@
         "id": "D22",
         "owner": "agent 3 探针 → agent 1 / 2 / 3 使用",
         "topic": "七台已释放服务器重探并上任务",
-        "what": "h100-a/b/c（10.1.130.101:39001/39002/39003）、a100-a/b/c（115.190.90.101:58120/39674/63896）用户确认已释放，a100-m（:37904）仍有 MinerU。用 a100-new 通过的方法（GPFS 上 Isaac 5.1 pip 环境 + 无头 Vulkan + torch CUDA + PhysX GPU + 非黑视口）逐台重探；A100 驱动 535.129.03 与 a100-new 相同预期能过，H100 535.183.06 昨天失败过必须实测。归属：h100-c → agent 1；h100-a、a100-a → agent 2；h100-b、a100-b、a100-c → agent 3。",
+        "what": "h100-a/b/c（10.1.130.101:39001/39002/39003）、a100-a/b/c（115.190.90.101:58120/39674/63896）用户确认已释放，a100-m（:37904）仍有 MinerU。用 a100-new 通过的方法（GPFS 上 Isaac 5.1 pip 环境 + 无头 Vulkan + torch CUDA + PhysX GPU + 非黑视口）逐台重探；A100 驱动 535.129.03 与 a100-new 相同预期能过，H100 535.183.06 昨天失败过必须实测。归属：h100-c → agent 1；h100-a、a100-a → agent 2；h100-b、a100-b、a100-c → agent 3。 17:25 用户追加：H100 渲染作为 agent 3 的专项子 agent，参考 https://github.com/asimfish/a100-issacsim（缺的是与内核模块同版本的图形用户态库：Vulkan ICD、libnvidia-glcore/eglcore/rtcore/glvkspirv；CUDA MPS 需绕过），先在 h100-b 打通再复制到 h100-a/h100-c，目标当天 8 张 H100 可采。",
         "done_when": "INVENTORY.md 每台有 PASS / FAIL 与原因；PASS 的卡当天有 run 在跑。",
-        "status": "进行中",
-        "evidence": ""
+        "status": "进行中（H100 专项已下达；a100-a/b/c 可直接用）",
+        "evidence": "README 已复制到 5090:_shared/remote_hosts/H100_ISAAC_RECIPE_a100-issacsim_README.md"
       },
       {
         "id": "D23",
@@ -2397,6 +2401,15 @@
         "done_when": "verify_registration.py --gate demo 总门 pass=true，导师复核后第 4 轮接入 5051。",
         "status": "进行中",
         "evidence": "此前总门 pass=false 是 60 个旧 episode 缺无损帧 / 视频 / 四机位"
+      },
+      {
+        "id": "D24",
+        "owner": "agent 1 / agent 2 / agent 3",
+        "topic": "全部并行 + 子 agent（用户 17:25）",
+        "what": "每个子任务一个子 agent、一张卡；父 agent 只做调度 / 审计 / 登记。卡分配：mainskill GPU0 → agent 1 称量纸；GPU3、5090 计算卡、a100-a ×2 → agent 2 四条搬运位物理链 + holder_prep R12 / holder_store；GPU1、a100-b、a100-c → agent 3 出炉 / 导轨 / 开炉门；GPU5/6 → agent 1 stock；H100 打通后 h100-a → agent 2、h100-b → agent 3、h100-c → agent 1。",
+        "done_when": "每轮巡检所有归属卡都有任务；各 agent 进度文件列出子 agent 与卡的对应表。",
+        "status": "进行中",
+        "evidence": "17:30 实测空卡：mainskill GPU0、5090 计算卡、a100-a ×2、a100-b、a100-c"
       }
     ]
   }
