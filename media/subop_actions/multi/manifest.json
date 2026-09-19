@@ -14,7 +14,8 @@
     "c_top": "俯视",
     "station_c": "站位相机",
     "wrist": "腕部"
-   }
+   },
+   "review_note": "失败 run（9 s），仅供看机位；机位标准已按 04:20 修订重算。"
   },
   {
    "dir": "C-xrd_window__SUBOP-C-21",
@@ -29,7 +30,8 @@
     "four_view_videos/c_side": "侧面",
     "four_view_videos/c_top": "俯视",
     "four_view_videos/wrist": "腕部"
-   }
+   },
+   "review_note": "用户 09-20 04:15 审片：正面机位贴着机械臂只拍到臂杆、侧面位置不对、三路都对着天平而不是 XRD 滑窗；且登记视频只有滑窗到 0.48 m 之后的 5 s 保持段，开窗动作被切掉。已要求 agent 2 按目标物包围盒重算机位、从预接近到保持完整重切，先出首帧再出视频。"
   }
  ]
 }
