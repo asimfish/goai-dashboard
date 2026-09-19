@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-20T03:57+08:00",
+  "updated": "2026-09-20T04:06+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -21,7 +21,7 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-20T03:57+08:00",
+    "snapshot_at": "2026-09-20T04:06+08:00",
     "gpus": [
       {
         "index": 0,
@@ -31,8 +31,8 @@
       },
       {
         "index": 1,
-        "used_mib": 9874,
-        "util": "18%",
+        "used_mib": 18989,
+        "util": "88%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -1233,6 +1233,10 @@
     {
       "date": "2026-09-20 03:58",
       "entry": "**秤罩框整体移除后 A 站抓取通过，四瓶重录第三批（修正瓶、无罩秤、同排、台沿纸、四路视频）在 GPU0/5/6 跑；a100-c 上第一条真实采集 run（rail_furnace r3）已到炉前，新服务器正式投入。** h100-a/b 同点 GPU 丢失判为驱动组合问题，管理员请求定稿中；a100-a/b/m 加载链差异待查。库 107 段。"
+    },
+    {
+      "date": "2026-09-20 04:08",
+      "entry": "**机械臂开 XRD 滑窗登记 SUBOP-C-21（库 108 段）：滑窗开到 0.48 m、无穿透，带站位 + 四路独立视频，是第一条按用户新录制标准登记的动作。** A 站四瓶重录第三批修 P2–P4 对象绑定后重启。"
     }
   ],
   "contract": [
@@ -2250,6 +2254,32 @@
       "qualified": 0
     },
     {
+      "id": "C-xrd_window",
+      "station": "C 站 · UR5e C · agent 2「goal_子操作集合2」",
+      "owner": "agent 2",
+      "workflow": "wf02（用户要求：仪器门由机械臂开）",
+      "action": "机械臂开 XRD 滑窗（用户 09-19 要求门由机械臂开；干燥箱门不可达改此）",
+      "segments": 1,
+      "seg_ids": "SUBOP-C-21",
+      "physical": {
+        "PASS": 1
+      },
+      "qualified": 1,
+      "status": "ok",
+      "visual": "站位相机 + 正面 / 侧面 / 俯视 / 腕部四路独立视频（v3 录制标准）",
+      "reasons": [
+        "用户要求仪器门由机械臂打开；干燥箱门距 C 臂基座 3.58 m 不可达（挪近需 2.78 m 且穿过 A/B 工位），改开 XRD 滑窗（TCP 半径 0.71 m 可达）",
+        "两条 run 均把 Window_slide_joint 开到 0.480 m，最小接触分离 +0.05 / +0.01 mm，原始负分离 0",
+        "按 demo 门登记 SUBOP-C-21（run 20260920T001626_524262716，5090 计算卡）；holder 抓取是另一动作，不计入本动作"
+      ],
+      "now": "已登记；四路视频与站位视频在面板「多机位新录」块",
+      "next": "后续动作（holder 放入 XRD）单独采",
+      "evidence": [
+        "NAS:/mnt/nas/data/lyf/goai/subop_store/agent2/episodes/SUBOP-C-21/{video.mp4,four_view_videos/,independent_audit.json}",
+        "5090:subop_library/index.jsonl SUBOP-C-21 行"
+      ]
+    },
+    {
       "id": "MOTOR",
       "station": "设备电机段（参考，非机械臂动作）",
       "owner": "agent 1（09-17 采集）",
@@ -2276,8 +2306,8 @@
     }
   ],
   "subop_summary": {
-    "updated": "2026-09-19 05:50",
-    "segments": 105,
+    "updated": "2026-09-20 04:08",
+    "segments": 108,
     "physical": {
       "PASS": 72,
       "PARTIAL": 32,
@@ -2295,7 +2325,7 @@
   "user_directives": {
     "issued": "2026-09-19 06:40 CST（用户逐条审看动作面板后提出）",
     "rule": "每条由负责 agent 在自己的 PROGRESS 文件里新开「## 用户指令落实（D 编号）」小节逐条回执：状态（未开始 / 进行中 / 已完成 / 受阻+原因）、证据路径、时间；监督每 20 分钟核对一次并更新本表与面板。完成标准写在每条里，达不到不许标完成。 16:50 用户追加决定：静置门 5 mm / 5° 确认；C 站开门目标为干燥箱柜门（够不着就挪近，再不行 XRD 滑窗）；a100-new 归还、七台服务器已释放可用；旧段先放行（有站位相机视频即按 demo 门通过）；瓶盖资产由我们自己修。 23:40 用户第二轮审片追加 D26–D30。",
-    "updated": "2026-09-20 03:58",
+    "updated": "2026-09-20 04:08",
     "items": [
       {
         "id": "D01",
@@ -2411,8 +2441,8 @@
         "topic": "机械臂开干燥箱柜门（C 站）",
         "what": "用户不想让仪器自己动：目标是干燥箱柜门。C 臂到门前缘 3.58 m 不可达 → 先在派生布局里把干燥箱或 C 臂工位挪近到可达范围（不互穿、不破坏已登记动作）；10 分钟定不了就改做 XRD 滑窗（0.71 m 可达）。",
         "done_when": "用户确认后一条 demo 门通过的 run。",
-        "status": "待登记（被容量打断）",
-        "evidence": "5090 task019 与 GPU3 task011 均开到 0.480 m，最小分离 +0.05 / +0.01 mm、无负分离；已要求作为独立动作按 demo 门登记 SUBOP-C-21"
+        "status": "已完成（XRD 滑窗已登记 C-21）",
+        "evidence": "SUBOP-C-21 registered_demo_pass：滑窗开到 0.480 m、最小分离 +0.01 mm、负分离 0；站位 + 四路视频已上面板；干燥箱门不可达（3.58 m）"
       },
       {
         "id": "D14",

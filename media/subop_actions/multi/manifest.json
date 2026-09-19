@@ -1,14 +1,35 @@
 {
-  "note": "v3 录制标准（用户 09-19 要求）：正面 / 侧面 / 俯视 / 站位 + 腕部各录一路独立视频，机位按机械臂基座计算并拉近。此处列出已产出的多机位 run，含失败 run，供用户挑选机位。",
-  "sets": [
-    {
-      "dir": "C-uncap__20260919T235447",
-      "action": "C-uncap",
-      "run": "20260919T235447_824130994_scripted",
-      "host": "5090 计算卡",
-      "label": "uncap_site 搬运候选（第一组按新标准录的五路视频；run 在空手预接近段因 no_clear_empty_joint_path 中止，9.0 s / 108 帧）",
-      "outcome": "FAIL：preapproach 无自由关节路径（TCP 误差 0.835 m）",
-      "views": {"c_front": "正面", "c_side": "侧面", "c_top": "俯视", "station_c": "站位相机", "wrist": "腕部"}
-    }
-  ]
+ "note": "v3 录制标准（用户 09-19 要求）：正面 / 侧面 / 俯视 / 站位 + 腕部各录一路独立视频，机位按机械臂基座计算并拉近。此处列出已产出的多机位 run，含失败 run，供用户挑选机位。",
+ "sets": [
+  {
+   "dir": "C-uncap__20260919T235447",
+   "action": "C-uncap",
+   "run": "20260919T235447_824130994_scripted",
+   "host": "5090 计算卡",
+   "label": "uncap_site 搬运候选（第一组按新标准录的五路视频；run 在空手预接近段因 no_clear_empty_joint_path 中止，9.0 s / 108 帧）",
+   "outcome": "FAIL：preapproach 无自由关节路径（TCP 误差 0.835 m）",
+   "views": {
+    "c_front": "正面",
+    "c_side": "侧面",
+    "c_top": "俯视",
+    "station_c": "站位相机",
+    "wrist": "腕部"
+   }
+  },
+  {
+   "dir": "C-xrd_window__SUBOP-C-21",
+   "action": "C-xrd_window",
+   "run": "20260920T001626_524262716_scripted",
+   "host": "5090 计算卡",
+   "label": "机械臂开 XRD 滑窗 · 已登记 SUBOP-C-21（demo 门通过：开到 0.480 m、最小分离 +0.01 mm、负分离 0）",
+   "outcome": "PASS（demo 门），已登记",
+   "views": {
+    "video": "站位相机（登记视频）",
+    "four_view_videos/c_front": "正面",
+    "four_view_videos/c_side": "侧面",
+    "four_view_videos/c_top": "俯视",
+    "four_view_videos/wrist": "腕部"
+   }
+  }
+ ]
 }
