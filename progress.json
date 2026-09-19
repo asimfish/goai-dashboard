@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-20T03:13+08:00",
+  "updated": "2026-09-20T03:26+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -17,11 +17,11 @@
     "subops": "https://asimfish.github.io/goai-dashboard/subops.html",
     "viewer_subops": "https://asimfish.github.io/goai-dashboard/viewer/?scene=replay_SUBOP-B-06",
     "knowledge_graph": "https://asimfish.github.io/goai-dashboard/knowledge_graph.html",
-    "knowledge_layers": "https://asimfish.github.io/goai-dashboard/knowledge_layers.html?autoplay=1&v=ca155d1"
+    "knowledge_layers": "https://asimfish.github.io/goai-dashboard/knowledge_layers.html?autoplay=1&v=c77ddb2"
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-20T03:13+08:00",
+    "snapshot_at": "2026-09-20T03:26+08:00",
     "gpus": [
       {
         "index": 0,
@@ -32,7 +32,7 @@
       {
         "index": 1,
         "used_mib": 7198,
-        "util": "40%",
+        "util": "19%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -510,6 +510,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-19 22:30",
+      "entry": "知识森林第 9 级「全貌」改为从问题到产物：左栏五个调研目标（原文 + 回答状态 + 一句话回答），中间八级收拢的证据树，右栏七类科研产物（综述报告、合成条件总表、综述结论、实验方向、前驱体预测、自动化工作流、同源案例），数字全部由图数据计算，卡片可点开详情。九张海报、GIF、MP4 重出覆盖，控制台内嵌页同步。"
+    },
     {
       "date": "2026-09-19 19:07",
       "entry": "答辩 PPT「整体方案」页重做：生图素材表 D + 等距实验室插画，原生可编辑页（引文四类信息彩色 run），合入模板第 7 页并发布。"
