@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-20T02:39+08:00",
+  "updated": "2026-09-20T02:47+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -21,7 +21,7 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-20T02:39+08:00",
+    "snapshot_at": "2026-09-20T02:47+08:00",
     "gpus": [
       {
         "index": 0,
@@ -32,7 +32,7 @@
       {
         "index": 1,
         "used_mib": 7198,
-        "util": "11%",
+        "util": "7%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -1205,6 +1205,10 @@
     {
       "date": "2026-09-19 23:45",
       "entry": "**用户第二轮审片：A 站瓶资产仍旧、秤上放置疑似穿模且未到位（审计：无穿透但净空 <1 mm、落点误差 2.7–8.9 mm、guarded stop）、大瓶应与小瓶同排、录制太远要拉近多视角、往返动作看不懂、B 站门仍自动开、5/6/7/10–13/18–22 未并行。** 已拆为 D26–D30 下发三个 agent（子 agent 每卡深队列），A 站四瓶按新资产 / 新排位 / 新机位重录。"
+    },
+    {
+      "date": "2026-09-20 02:50",
+      "entry": "**A 站按用户五条重录已开跑（修正瓶资产、大小瓶同排布局 r2、四路独立视频、取出→放秤→释放→再抓→归位），GPU0/5/6 各一瓶；XRD 滑窗由机械臂开到 0.48 m 无穿透，作为独立动作待登记 C-21；a100-c 探针只差 libXt / libGLU 两个发行版库。** 出炉改为装炉轨迹精确逆序；R4 重复失败队列已停。"
     }
   ],
   "contract": [
@@ -2249,7 +2253,7 @@
   "user_directives": {
     "issued": "2026-09-19 06:40 CST（用户逐条审看动作面板后提出）",
     "rule": "每条由负责 agent 在自己的 PROGRESS 文件里新开「## 用户指令落实（D 编号）」小节逐条回执：状态（未开始 / 进行中 / 已完成 / 受阻+原因）、证据路径、时间；监督每 20 分钟核对一次并更新本表与面板。完成标准写在每条里，达不到不许标完成。 16:50 用户追加决定：静置门 5 mm / 5° 确认；C 站开门目标为干燥箱柜门（够不着就挪近，再不行 XRD 滑窗）；a100-new 归还、七台服务器已释放可用；旧段先放行（有站位相机视频即按 demo 门通过）；瓶盖资产由我们自己修。 23:40 用户第二轮审片追加 D26–D30。",
-    "updated": "2026-09-19 23:45",
+    "updated": "2026-09-20 02:50",
     "items": [
       {
         "id": "D01",
@@ -2348,7 +2352,7 @@
         "what": "第 7 次 run 出炉抓取已过，回架位的高位偏航段炉门内衬 ↔ 腕 2 预测穿透 1.33 mm 是真实几何问题；改退出路线（先沿 +Y 退出炉口再转向，或降低偏航）。",
         "done_when": "一条完整 装炉 → 支撑 → 出炉 → 回架位 episode 按 demo 门通过并登记 SUBOP-B-09 起。",
         "status": "进行中",
-        "evidence": "+Y 0.35 m 退出版归档为自碰撞失败；降偏航 yaw45 变体 run 20260919T084409 已结束待审计；GPU1 现空"
+        "evidence": "yaw5/10/20 均在 wrist_2 ↔ 炉门内衬失败，同因三次已停；yaw0 在跑；已改为出炉轨迹 = 装炉轨迹精确逆序"
       },
       {
         "id": "D12",
@@ -2356,7 +2360,7 @@
         "topic": "机械臂开炉门",
         "what": "炉门不再由电机自动开，新增动作：UR5e_B 抓把手开炉门到位。",
         "done_when": "可达性方案 + 一条 demo 门通过的 run。",
-        "status": "进行中（首条 run 在跑）",
+        "status": "进行中（v2 失败待写原因）",
         "evidence": "GPU1 run 20260919T124939 机械臂开炉门 r1，后接 yaw20/10/5/0/15 五条出炉变体"
       },
       {
@@ -2365,8 +2369,8 @@
         "topic": "机械臂开干燥箱柜门（C 站）",
         "what": "用户不想让仪器自己动：目标是干燥箱柜门。C 臂到门前缘 3.58 m 不可达 → 先在派生布局里把干燥箱或 C 臂工位挪近到可达范围（不互穿、不破坏已登记动作）；10 分钟定不了就改做 XRD 滑窗（0.71 m 可达）。",
         "done_when": "用户确认后一条 demo 门通过的 run。",
-        "status": "进行中（XRD 物理开窗 run 在跑）",
-        "evidence": "干燥箱需向 C 站移 ≥ 2.777 m 且穿过 A/B 工位，判不可行；XRD 滑窗 181 点 FCL 无碰撞候选轨迹已落盘 plans_agent2/v3_demo/C_XRD_WINDOW_FCL_CANDIDATE.json，待上卡；XRD 首次物理入口因缺 static_delta_audit.json 0 帧，已追加原生 Window_slide_joint=0.480 m 重试；5090 task009 xrd_window_native 在 Kit 中运行"
+        "status": "已完成待登记（XRD 开窗 0.480 m）",
+        "evidence": "5090 task019 与 GPU3 task011 均开到 0.480 m，最小分离 +0.05 / +0.01 mm、无负分离；已要求作为独立动作按 demo 门登记 SUBOP-C-21"
       },
       {
         "id": "D14",
@@ -2465,7 +2469,7 @@
         "what": "每个子任务一个子 agent、一张卡；父 agent 只做调度 / 审计 / 登记。卡分配：mainskill GPU0 → agent 1 称量纸；GPU3、5090 计算卡、a100-a ×2 → agent 2 四条搬运位物理链 + holder_prep R12 / holder_store；GPU1、a100-b、a100-c → agent 3 出炉 / 导轨 / 开炉门；GPU5/6 → agent 1 stock；H100 打通后 h100-a → agent 2、h100-b → agent 3、h100-c → agent 1。",
         "done_when": "每轮巡检所有归属卡都有任务；各 agent 进度文件列出子 agent 与卡的对应表。",
         "status": "进行中",
-        "evidence": "23:16 实测：mainskill GPU1（agent 3 出炉变体）、GPU3（agent 2 R13 变体刚起）、5090 计算卡（XRD 开窗）在跑；GPU0/5/6 空（agent 1 三条 R4 取杵 run 只跑了 3 s 即结束，入口有问题，已催）；23:45 用户点名 5/6/7/10–13/18–22 未并行，已要求每卡子 agent 深队列并给出卡→子 agent→run 对应表"
+        "evidence": "02:45 实测：mainskill GPU0/5/6 四瓶重录、GPU1 出炉 yaw0、GPU3 C 站 task018；5090 计算卡 task027；全部在跑"
       },
       {
         "id": "D25",
@@ -2473,8 +2477,8 @@
         "topic": "H100 / A100 容器上打通 Isaac 渲染",
         "what": "参考 asimfish/a100-issacsim，在七台容器上让 Isaac Sim 5.1 无头 Vulkan 渲染 + GPU PhysX 通过金标准探针；A100 先补 Vulkan loader，H100 分诊 eDeviceLost；做不到就出可执行的管理员重建容器请求。",
         "done_when": "至少一台 A100 与一台 H100 探针 PASS 并分给采集 agent；或管理员请求定稿。",
-        "status": "进行中（22:40 任务书已下发，agent 3 移交证据）",
-        "evidence": "goai_H100 已接任务书与路径补充；agent 3 交接文件 _shared/remote_hosts/H100_GOAI_HANDOFF_20260919.md 已写；35 分钟内尚无 PROGRESS_h100.md 与机器上的动作，已催直接做 P0"
+        "status": "进行中（a100-c 只差两个发行版库）",
+        "evidence": "a100-c：官方 535.129.03 前缀 + 绝对 ICD，Kit 加载前缀 glcore，Vulkan / torch / PhysX GPU 12 步 / 相机初始化全过，get_rgb 因 libXt.so.6、libGLU.so.1 缺失为空；a100-a/b/m ICD 仍不兼容（需各机本地前缀）；h100-b eDeviceLost；管理员请求已定稿"
       },
       {
         "id": "D26",
@@ -2482,8 +2486,8 @@
         "topic": "录制拉近 + 多视角",
         "what": "正面 / 侧面机位拉近到能看清被操作物与指垫；四机位 + 腕部各录一路独立视频，全部上面板由用户选；总视频阶段标注照旧。",
         "done_when": "每个动作的新 run 在面板有 ≥ 4 路视频且看得清。",
-        "status": "进行中（已下达）",
-        "evidence": ""
+        "status": "进行中（C 站已出第一组五路；A 站代码已同步）",
+        "evidence": "C uncap run 20260919T235447 五路视频已上面板（失败 run，看机位）；A 站四路独立视频代码已同步待新 run"
       },
       {
         "id": "D27",
@@ -2491,8 +2495,8 @@
         "topic": "秤上放置核查 / 去玻璃",
         "what": "审计：无穿透但瓶底 ↔ 秤盘最小净空 0.57–0.96 mm、落点误差 2.7–8.9 mm、guarded stop。量化释放瞬间瓶底与秤盘面的高差、与玻璃罩距离、guarded stop 触发对；若玻璃罩挡住下降，按用户拍板在派生布局里去掉秤的玻璃。",
         "done_when": "释放后瓶底 ↔ 秤盘为支撑接触对，位置误差 ≤ 5 mm，新 run 视频里看不出下沉。",
-        "status": "进行中（已下达）",
-        "evidence": "A-07/13/19/25/31 阶段 7 审计"
+        "status": "进行中",
+        "evidence": "A-07/13/19/25/31 阶段 7 审计；秤罩碰撞证据核对中，随重录 run 出数"
       },
       {
         "id": "D28",
@@ -2500,8 +2504,8 @@
         "topic": "大瓶与小瓶同排",
         "what": "precursor_3 / 4 两只大瓶与 precursor_1 / 2 小瓶摆成一排（派生布局，静置门 5 mm / 5°），四瓶按新排位重录。",
         "done_when": "新布局包 + 四瓶新 run。",
-        "status": "进行中（已下达）",
-        "evidence": ""
+        "status": "进行中（布局 r2 已生成）",
+        "evidence": "plans/A_rerecord_20260920/MANIFEST.json"
       },
       {
         "id": "D29",
@@ -2518,8 +2522,8 @@
         "topic": "A 站新 run 切换修正瓶资产并重录 1–4",
         "what": "采集闭包切到 WORKBENCH23_S3_GREEN_CAP_FIX_20260919 的瓶资产（碰撞体不变）；precursor 1–4 用修正资产、新排位、新机位重录；动作顺序统一为 取出 → 放到秤盘 → 释放停 2 s → 再抓 → 归位，phases 标两个动作。",
         "done_when": "面板上四瓶总视频为新资产、新机位，用户看不到旧瓶。",
-        "status": "进行中（已下达）",
-        "evidence": "面板现有 A 站视频均为 09-16/17/18 旧资产 run"
+        "status": "进行中（四瓶重录 run 在跑）",
+        "evidence": "02:38：R4 重复队列已停；同排派生布局 r2（四瓶均载入，MANIFEST SHA 60fbba64…）；四路独立视频代码已同步；动作顺序固化 pick→place→release→regrasp→return；GPU0/5/6 各起一条重录（P1/P2/P3）"
       }
     ]
   }
