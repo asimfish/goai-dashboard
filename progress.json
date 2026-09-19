@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-20T04:17+08:00",
+  "updated": "2026-09-20T04:41+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -21,7 +21,7 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-20T04:17+08:00",
+    "snapshot_at": "2026-09-20T04:41+08:00",
     "gpus": [
       {
         "index": 0,
@@ -31,8 +31,8 @@
       },
       {
         "index": 1,
-        "used_mib": 7824,
-        "util": "2%",
+        "used_mib": 9830,
+        "util": "17%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -1241,6 +1241,10 @@
     {
       "date": "2026-09-20 04:22",
       "entry": "**用户审 C-21 视频：三路机位对着天平没拍到 XRD 滑窗、正面贴着臂杆、登记段只有保持没有开窗动作。** 相机标准修订 v2（瞄本动作目标物 + 基座 + TCP 轨迹包围盒，录前首帧可见性核查）下发三个 agent；C-21 媒体重切重录；面板多机位块加阶段同步跳转与首帧预览。"
+    },
+    {
+      "date": "2026-09-20 04:42",
+      "entry": "**A 站四瓶重录第三批定位到真正原因：携行时瓶子相对指垫滑移 40 mm（大瓶）与再抓前未声明目标（小瓶），秤玻璃已不是障碍；第四批（大瓶慢运输 ×2、再抓修复）在跑。** a100-a/b/m 改为不用设备 bridge 直接选卡探针中；H100 管理员请求最终版已定稿（宿主驱动升级到 580.65.06、容器注入匹配 glibc 的图形用户态、预装 libvulkan1/vulkan-tools）。"
     }
   ],
   "contract": [
@@ -2329,7 +2333,7 @@
   "user_directives": {
     "issued": "2026-09-19 06:40 CST（用户逐条审看动作面板后提出）",
     "rule": "每条由负责 agent 在自己的 PROGRESS 文件里新开「## 用户指令落实（D 编号）」小节逐条回执：状态（未开始 / 进行中 / 已完成 / 受阻+原因）、证据路径、时间；监督每 20 分钟核对一次并更新本表与面板。完成标准写在每条里，达不到不许标完成。 16:50 用户追加决定：静置门 5 mm / 5° 确认；C 站开门目标为干燥箱柜门（够不着就挪近，再不行 XRD 滑窗）；a100-new 归还、七台服务器已释放可用；旧段先放行（有站位相机视频即按 demo 门通过）；瓶盖资产由我们自己修。 23:40 用户第二轮审片追加 D26–D30。",
-    "updated": "2026-09-20 04:22",
+    "updated": "2026-09-20 04:42",
     "items": [
       {
         "id": "D01",
@@ -2544,8 +2548,8 @@
         "topic": "全部并行 + 子 agent（用户 17:25）",
         "what": "每个子任务一个子 agent、一张卡；父 agent 只做调度 / 审计 / 登记。卡分配：mainskill GPU0 → agent 1 称量纸；GPU3、5090 计算卡、a100-a ×2 → agent 2 四条搬运位物理链 + holder_prep R12 / holder_store；GPU1、a100-b、a100-c → agent 3 出炉 / 导轨 / 开炉门；GPU5/6 → agent 1 stock；H100 打通后 h100-a → agent 2、h100-b → agent 3、h100-c → agent 1。",
         "done_when": "每轮巡检所有归属卡都有任务；各 agent 进度文件列出子 agent 与卡的对应表。",
-        "status": "进行中",
-        "evidence": "03:55 实测：GPU0/5/6 四瓶重录、GPU1 反序出炉 r2、a100-c rail 在跑；GPU3 与 5090 计算卡空近 2 小时（agent 2 队列未接，已催）"
+        "status": "进行中（全部在跑）",
+        "evidence": "04:41 实测：GPU0/5/6 四瓶第四批、GPU1 出炉逆序 r2 / 开炉门、GPU3 与 5090 holder_prep r13 变体、a100-c rail_park r3；a100-a/b/m 探针中"
       },
       {
         "id": "D25",
@@ -2554,7 +2558,7 @@
         "what": "参考 asimfish/a100-issacsim，在七台容器上让 Isaac Sim 5.1 无头 Vulkan 渲染 + GPU PhysX 通过金标准探针；A100 先补 Vulkan loader，H100 分诊 eDeviceLost；做不到就出可执行的管理员重建容器请求。",
         "done_when": "至少一台 A100 与一台 H100 探针 PASS 并分给采集 agent；或管理员请求定稿。",
         "status": "部分完成（a100-c 已在采；其余六台未通）",
-        "evidence": "配方 ISAAC_CONTAINER_RECIPE_20260920.md 已写；a100-a/b/m 同配方仍 ERROR_INCOMPATIBLE_DRIVER（加载链差异待查）；h100-a/b 同点 eDeviceLost（21.7 s / 26 s）排除单机故障，判为 535.183.06 + H100 + Kit RTX 组合问题，管理员请求定稿中（请求宿主驱动升级）"
+        "evidence": "配方 ISAAC_CONTAINER_RECIPE_20260920.md 已写；a100-a/b/m 同配方仍 ERROR_INCOMPATIBLE_DRIVER（加载链差异待查）；h100-a/b 同点 eDeviceLost（21.7 s / 26 s）排除单机故障，判为 535.183.06 + H100 + Kit RTX 组合问题，管理员请求定稿中（请求宿主驱动升级）；A100 三台 loader 与 a100-c 逐字节一致，差异是设备节点 bridge 硬编码 /dev/nvidia3，改为不用 bridge 直接 activeGpu 选卡，三台无 bridge 探针 04:40 起并行运行中；管理员请求最终版已定稿"
       },
       {
         "id": "D26",
@@ -2598,8 +2602,8 @@
         "topic": "A 站新 run 切换修正瓶资产并重录 1–4",
         "what": "采集闭包切到 WORKBENCH23_S3_GREEN_CAP_FIX_20260919 的瓶资产（碰撞体不变）；precursor 1–4 用修正资产、新排位、新机位重录；动作顺序统一为 取出 → 放到秤盘 → 释放停 2 s → 再抓 → 归位，phases 标两个动作。",
         "done_when": "面板上四瓶总视频为新资产、新机位，用户看不到旧瓶。",
-        "status": "进行中（第三批 P1–P4 在跑）",
-        "evidence": "03:50 起 GPU0/P4、GPU5/P1→P2、GPU6/P3，带 capfix 瓶、无罩秤、台沿纸、四路独立视频、释放保持 2 s；前六条同因失败保留"
+        "status": "进行中（第四批：P1fix / P3slow / P4slow 在跑）",
+        "evidence": "第三批：P3/P4 在 over_scale 携行段瓶根相对指垫沿运输方向滑移 40–41 mm 失持（不是秤玻璃），P1 已放秤并释放但再抓前未声明 grasp_target 失败；修法：大瓶运输段时间 ×2（抓取几何不变）、P1 补再抓声明；04:38 起 GPU0 P4slow、GPU5 P1fix→P2、GPU6 P3slow，四路独立视频开启；本批机位仍为 v1，v2 首帧待下一批"
       }
     ]
   }
