@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-19T21:07+08:00",
+  "updated": "2026-09-19T22:08+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -21,18 +21,18 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-19T21:07+08:00",
+    "snapshot_at": "2026-09-19T22:08+08:00",
     "gpus": [
       {
         "index": 0,
-        "used_mib": 1138,
-        "util": "1%",
+        "used_mib": 1115,
+        "util": "2%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
         "index": 1,
-        "used_mib": 7198,
-        "util": "19%",
+        "used_mib": 9890,
+        "util": "37%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -40,7 +40,7 @@
       {
         "mount": "/",
         "used": "99%",
-        "free": "69G",
+        "free": "68G",
         "note": "不写"
       },
       {
@@ -1165,6 +1165,10 @@
     {
       "date": "2026-09-19 21:05",
       "entry": "**研杵进研钵的 R4 布局包已接入 5051（修订 …-prep1-r4，研杵落在研钵内、托座删除），研磨 / 取杵采集的前置条件打通。** 机械臂开炉门首条 run 在 GPU1 跑；称量纸改为下方托举抓法在 GPU0 跑；H100 补库后 Vulkan 可用但 Kit 探针 GPU crash 仍在排查；干燥箱门不可达改做 XRD 滑窗；agent 2 两卡队列全被预检阻塞待解。"
+    },
+    {
+      "date": "2026-09-19 22:08",
+      "entry": "**demo 门总门通过：107 / 107 段（A 48、B 7、C 20、电机 32），导师复核后发第 5 轮接入 5051；R4 研钵接入回执补齐关闭。** agent 2 集中诊断确认 C 站失败是路径搜索而非可达性，shaker / holder_prep 加高位过渡点重跑，5090 与 GPU3 已起真实物理 run；七台新服务器疑为容器未开图形能力，取证后向管理员提重启参数。"
     }
   ],
   "contract": [
@@ -2209,7 +2213,7 @@
   "user_directives": {
     "issued": "2026-09-19 06:40 CST（用户逐条审看动作面板后提出）",
     "rule": "每条由负责 agent 在自己的 PROGRESS 文件里新开「## 用户指令落实（D 编号）」小节逐条回执：状态（未开始 / 进行中 / 已完成 / 受阻+原因）、证据路径、时间；监督每 20 分钟核对一次并更新本表与面板。完成标准写在每条里，达不到不许标完成。 16:50 用户追加决定：静置门 5 mm / 5° 确认；C 站开门目标为干燥箱柜门（够不着就挪近，再不行 XRD 滑窗）；a100-new 归还、七台服务器已释放可用；旧段先放行（有站位相机视频即按 demo 门通过）；瓶盖资产由我们自己修。",
-    "updated": "2026-09-19 21:05",
+    "updated": "2026-09-19 22:08",
     "items": [
       {
         "id": "D01",
@@ -2281,7 +2285,7 @@
         "what": "称量纸放台沿并露出一部分，夹爪夹露出部分。",
         "done_when": "有候选计划 + 一条按 demo 门通过的 run。",
         "status": "进行中（第三种抓法在跑）",
-        "evidence": "GPU0 run 20260919T125347：纸露出 40 mm、从下方托举（工具轴 +Y、闭合轴 +Z），计划 SHA 755bc98c…"
+        "evidence": "GPU0 run 20260919T125347：纸露出 40 mm、从下方托举（工具轴 +Y、闭合轴 +Z），计划 SHA 755bc98c…；run 已结束待审计"
       },
       {
         "id": "D09",
@@ -2289,8 +2293,8 @@
         "topic": "研钵 / 研杵布局 R4",
         "what": "用发货资产重新落定到静止 → 冻结 → 静置门（用户确认 ≤ 5 mm / ≤ 5°），报告写资产 SHA 与计划 SHA，新建 R4 封包。",
         "done_when": "R4 封包通过导师核验并接入 5051。",
-        "status": "已完成（已接入 5051，回执待补）",
-        "evidence": "5051 场景修订 eight-bottles-…-prep1-r4：mortar (1.598, 1.075, 1.028)，pestle 在 R4 静置姿态 (1.576, 1.067, 1.062)，pestle_cradle 已删；导师独立核过浏览器、缓存 SHA、三视图；目标会话 RESULT.md 待补（20:33 被容量打断）"
+        "status": "已完成",
+        "evidence": "5051 修订 …-prep1-r4，mortar (1.598, 1.075, 1.028)、pestle R4 静置位 (1.576, 1.067, 1.062)、托座删；「代码-串联流程」RESULT.md 已补（R4 20/20 SHA、父快照、18 条历史比对、47 文件回滚 dry-run、四项浏览器检查、三张截图）；导师二次核过"
       },
       {
         "id": "D10",
@@ -2298,8 +2302,8 @@
         "topic": "已通过动作按 demo 门放行接入",
         "what": "tray_load（含 B-08 4.795 mm）、precursor 1–4 取放、小瓶 2 上天平在 demo 门下整体放行，接入 5051 面板。",
         "done_when": "5051 显示这些动作为 demo 通过。",
-        "status": "未开始（等 D05 修正）",
-        "evidence": ""
+        "status": "进行中（第 5 轮待发）",
+        "evidence": "demo 放行清单：tray_load、precursor 1–4、vial_2 回收、SUBOP-C-20、SUBOP-B-10 + 瓶盖修正包；导师复核新汇总后发"
       },
       {
         "id": "D11",
@@ -2326,7 +2330,7 @@
         "what": "用户不想让仪器自己动：目标是干燥箱柜门。C 臂到门前缘 3.58 m 不可达 → 先在派生布局里把干燥箱或 C 臂工位挪近到可达范围（不互穿、不破坏已登记动作）；10 分钟定不了就改做 XRD 滑窗（0.71 m 可达）。",
         "done_when": "用户确认后一条 demo 门通过的 run。",
         "status": "进行中（干燥箱门不可行，转 XRD 滑窗）",
-        "evidence": "干燥箱需向 C 站移 ≥ 2.777 m 且穿过 A/B 工位，判不可行；XRD 滑窗 181 点 FCL 无碰撞候选轨迹已落盘 plans_agent2/v3_demo/C_XRD_WINDOW_FCL_CANDIDATE.json，待上卡"
+        "evidence": "干燥箱需向 C 站移 ≥ 2.777 m 且穿过 A/B 工位，判不可行；XRD 滑窗 181 点 FCL 无碰撞候选轨迹已落盘 plans_agent2/v3_demo/C_XRD_WINDOW_FCL_CANDIDATE.json，待上卡；XRD 首次物理入口因缺 static_delta_audit.json 0 帧，已追加原生 Window_slide_joint=0.480 m 重试"
       },
       {
         "id": "D14",
@@ -2361,8 +2365,8 @@
         "topic": "holder_prep R11",
         "what": "自碰撞 / 环境预检阈值改 0 mm（只拒实际穿透）后重跑；R10 的 1.903 mm 预测净空应放行。",
         "done_when": "一条 demo 门通过的 holder_prep run 登记。",
-        "status": "受阻",
-        "evidence": "R11 用 0 mm predictor 重跑，第 12 段 no_clear_empty_joint_path、TCP 误差 41.2 mm；需改肘朝外分支或制样位朝向转 90°，已再次下达"
+        "status": "进行中（R13 高位 via）",
+        "evidence": "集中诊断：holder_prep elbow-alt 终点 IK/FCL 可达，失败在末段路径搜索自碰撞；R13 加高位 via 在 GPU3 跑 retry1（run 20260919T133328），已结束待审计"
       },
       {
         "id": "D18",
@@ -2379,8 +2383,8 @@
         "topic": "C 站 18–22 五个搬运位并行",
         "what": "shaker / uncap_site / prep / recap_site / store 各出候选计划与四机位截图，一动作一卡。",
         "done_when": "五项各有候选与至少一条 run。",
-        "status": "进行中（候选层完成）",
-        "evidence": "五项各有派生候选与四机位 probe run（diagnostic_only），物理链未成；a100-new GPU0 在跑其中一条"
+        "status": "进行中（真实物理 run 已起）",
+        "evidence": "shaker 5/8 IK 分支可达但路径 FCL 碰撞 → 肘朝外 +0.25 m via；5090 计算卡 vial_prep task 004 真实 Isaac，队列 7 条 READY；uncap 0 帧前驱拒绝已加 C20 末态派生重试"
       },
       {
         "id": "D20",
@@ -2406,8 +2410,8 @@
         "topic": "七台已释放服务器重探并上任务",
         "what": "h100-a/b/c（10.1.130.101:39001/39002/39003）、a100-a/b/c（115.190.90.101:58120/39674/63896）用户确认已释放，a100-m（:37904）仍有 MinerU。用 a100-new 通过的方法（GPFS 上 Isaac 5.1 pip 环境 + 无头 Vulkan + torch CUDA + PhysX GPU + 非黑视口）逐台重探；A100 驱动 535.129.03 与 a100-new 相同预期能过，H100 535.183.06 昨天失败过必须实测。归属：h100-c → agent 1；h100-a、a100-a → agent 2；h100-b、a100-b、a100-c → agent 3。 17:25 用户追加：H100 渲染作为 agent 3 的专项子 agent，参考 https://github.com/asimfish/a100-issacsim（缺的是与内核模块同版本的图形用户态库：Vulkan ICD、libnvidia-glcore/eglcore/rtcore/glvkspirv；CUDA MPS 需绕过），先在 h100-b 打通再复制到 h100-a/h100-c，目标当天 8 张 H100 可采。",
         "done_when": "INVENTORY.md 每台有 PASS / FAIL 与原因；PASS 的卡当天有 run 在跑。",
-        "status": "进行中（H100 vulkaninfo 通过，Kit 探针 GPU crash）",
-        "evidence": "h100-b：在可写前缀补齐 535.183.06 图形用户态后 vulkaninfo PASS（两张 H100，Vulkan 1.3.242），前一条 glibc 结论撤回；但 Kit 金标准探针 CVD 方式报 CUDA bad state → Vulkan GPU crash，无 CVD 方式枚举到卡后仍 crash，判 failed_kit_gpu_crash_before_physx_render，未复制到 h100-a/c；A100 三台用户态修复未开始"
+        "status": "受阻（疑为容器未开图形能力）",
+        "evidence": "三台 A100 系统级 .run 被 /usr /lib 只读 bind mount 挡住；a100-a ldconfig 已见 535.129.03 图形库但 Kit activeGpu=0 仍 ERROR_INCOMPATIBLE_DRIVER + PhysX no CUDA GPU；h100-b 可写前缀 vulkaninfo 过但 Kit 16 s eDeviceLost；容器内 dmesg 不可读。七台都是容器（overlay 根、只读系统目录），最可能是启动时 NVIDIA_DRIVER_CAPABILITIES 未含 graphics；agent 3 取证后给管理员一段重启参数建议"
       },
       {
         "id": "D23",
@@ -2415,8 +2419,8 @@
         "topic": "旧段先放行",
         "what": "已过物理门（负分离 0、终态到达）的历史段只要有站位相机视频即按 demo 门放行，不因缺四机位 / 无损帧 / 腕部文件而拒；四机位等新要求只对 16:50 之后的新 run。",
         "done_when": "verify_registration.py --gate demo 总门 pass=true，导师复核后第 4 轮接入 5051。",
-        "status": "进行中",
-        "evidence": "agent 1 已出 REQUEST_DEMO_GATE_RECALC_20260919_REPLY.md，导师复核中"
+        "status": "已完成（待导师发第 5 轮）",
+        "evidence": "verify_registration.py --gate demo aggregate pass=true，107/107（A 48、B 7、C 20、MOTOR 32）；视频判定 = 本段 video 或父 episode video + parent_ticks；负分离 0 与终态未放宽；evidence/demo_gate_recompute_20260919.json"
       },
       {
         "id": "D24",
@@ -2424,8 +2428,8 @@
         "topic": "全部并行 + 子 agent（用户 17:25）",
         "what": "每个子任务一个子 agent、一张卡；父 agent 只做调度 / 审计 / 登记。卡分配：mainskill GPU0 → agent 1 称量纸；GPU3、5090 计算卡、a100-a ×2 → agent 2 四条搬运位物理链 + holder_prep R12 / holder_store；GPU1、a100-b、a100-c → agent 3 出炉 / 导轨 / 开炉门；GPU5/6 → agent 1 stock；H100 打通后 h100-a → agent 2、h100-b → agent 3、h100-c → agent 1。",
         "done_when": "每轮巡检所有归属卡都有任务；各 agent 进度文件列出子 agent 与卡的对应表。",
-        "status": "进行中（agent 2 两卡队列全被预检阻塞）",
-        "evidence": "21:00 实测：mainskill GPU0 称量纸托举候选、GPU1 开炉门（深队列 6 条）、GPU5/6 stock v7 在跑；GPU3 与 5090 计算卡各 6 条全部 BLOCKED_PRECHECK 等于空转，agent 2 已停机"
+        "status": "进行中",
+        "evidence": "22:06 实测：GPU1 开炉门深队列、GPU5/6 stock v7（尾接 R4 取杵→研磨）、5090 计算卡 vial_prep；GPU0 与 GPU3 刚空（称量纸托举、holder_prep R13 结束待审计），已催接续"
       }
     ]
   }
