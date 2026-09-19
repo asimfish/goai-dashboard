@@ -32,6 +32,24 @@
     "four_view_videos/wrist": "腕部"
    },
    "review_note": "用户 09-20 04:15 审片：正面机位贴着机械臂只拍到臂杆、侧面位置不对、三路都对着天平而不是 XRD 滑窗；且登记视频只有滑窗到 0.48 m 之后的 5 s 保持段，开窗动作被切掉。已要求 agent 2 按目标物包围盒重算机位、从预接近到保持完整重切，先出首帧再出视频。"
+  },
+  {
+   "dir": "A-precursor_batch4__20260919T203856",
+   "action": "A-precursor_3",
+   "run": "20260919T203856_500857872_scripted",
+   "host": "mainskill GPU6",
+   "label": "A 站四瓶重录第四批 P3slow（precursor_3，慢运输 ×2）· 闭爪后四机位截图 + 站位视频；用于核对：秤玻璃罩已整体移除、四瓶一排、瓶资产外观",
+   "outcome": "FAIL：闭爪后抬升 raise_clearance 时 physical_grasp_lost（27.7 s / 332 帧）；本批机位仍为 v1（远景），v2 下一批生效",
+   "views": {
+    "video": "站位相机（27 s，失败 run）"
+   },
+   "stills": {
+    "after_close_a_front": "正面机位 · 闭爪后",
+    "after_close_a_side": "侧面机位 · 闭爪后",
+    "after_close_a_top": "俯视机位 · 闭爪后",
+    "after_close_station_a": "站位相机 · 闭爪后"
+   },
+   "review_note": "导师 05:10 核对：秤玻璃罩已不在、秤盘裸露（已解决）；四瓶在秤后方台沿排成一排（已到位）；瓶子仍是深色瓶身 + 亮绿瓶盖，外观未变（待用户定目标外观）；机位仍是旧远景。"
   }
  ]
 }

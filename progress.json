@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-20T04:49+08:00",
+  "updated": "2026-09-20T05:10+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -21,7 +21,7 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-20T04:49+08:00",
+    "snapshot_at": "2026-09-20T05:10+08:00",
     "gpus": [
       {
         "index": 0,
@@ -31,8 +31,8 @@
       },
       {
         "index": 1,
-        "used_mib": 19117,
-        "util": "31%",
+        "used_mib": 7198,
+        "util": "1%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -2341,7 +2341,7 @@
   "user_directives": {
     "issued": "2026-09-19 06:40 CST（用户逐条审看动作面板后提出）",
     "rule": "每条由负责 agent 在自己的 PROGRESS 文件里新开「## 用户指令落实（D 编号）」小节逐条回执：状态（未开始 / 进行中 / 已完成 / 受阻+原因）、证据路径、时间；监督每 20 分钟核对一次并更新本表与面板。完成标准写在每条里，达不到不许标完成。 16:50 用户追加决定：静置门 5 mm / 5° 确认；C 站开门目标为干燥箱柜门（够不着就挪近，再不行 XRD 滑窗）；a100-new 归还、七台服务器已释放可用；旧段先放行（有站位相机视频即按 demo 门通过）；瓶盖资产由我们自己修。 23:40 用户第二轮审片追加 D26–D30。",
-    "updated": "2026-09-20 05:15",
+    "updated": "2026-09-20 05:05",
     "items": [
       {
         "id": "D01",
@@ -2620,7 +2620,7 @@
         "what": "用户 05:10 扩大职责：把昨天审片各点亲自修正并渲染出来，多开子 agent 并行。分配 5090 计算卡（agent 2 释放）与探针通过后的 a100-a/b/m。交付：① camera_rig_v2 工具并用它回放重渲染 C-21 / C-20 / B-10 五路完整视频；② 全库按 subop_phases 分阶段 clip + 首帧；③ 修正后 A 站布局（新瓶、无罩秤、四瓶一排、台沿纸）四机位静帧先给用户看；④ B 站视频标明门由电机开（旧）直到开炉门 run 通过；⑤ A 站阶段按\"投料取出 / 归位\"两段分组。Codex agent 继续物理搜索与登记。",
         "done_when": "C-21 v2 机位五路完整视频 + 三段 clip 上面板（2 小时内）；A 站修正布局静帧上面板；工具被三个 agent 换用。",
         "status": "进行中（05:15 扩大任务书已下发）",
-        "evidence": "client_message_id guidance-20260920-c5-0455-brief；进度 subop_library/PROGRESS_claude.md"
+        "evidence": "client_message_id guidance-20260920-c5-0455-brief；进度 subop_library/PROGRESS_claude.md；05:05 用户加卡：mainskill GPU4 划给 Claude agent，mainskill 其它我方卡空闲 ≥ 20 分钟可认领；5090 计算卡已空归它"
       }
     ]
   }
