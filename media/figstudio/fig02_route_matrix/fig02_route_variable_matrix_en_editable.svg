@@ -1,0 +1,805 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1545" width="1536" height="1545">
+  <rect width="100%" height="100%" fill="#FFFFFF" />
+  <g id="zT">
+    <rect x="26" y="26" width="1484" height="579" rx="14" fill="#E6F2F3" stroke="#1F7F8C" stroke-width="1.6" />
+  </g>
+  <g id="zT_l">
+    <text x="44" y="69.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="28" font-weight="bold" font-style="normal" fill="#0F4F58">Experimental Items</tspan>
+    </text>
+  </g>
+  <g id="leg">
+    <rect x="1094" y="36" width="399" height="48" rx="24.0" fill="#F5F6F7" stroke="#9AA3AB" stroke-width="1.6" />
+  </g>
+  <g id="leg_t">
+    <text x="1123.125" y="68.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#5B6570">Dashed = process reference</tspan>
+    </text>
+  </g>
+  <g id="r1">
+    <rect x="42" y="94" width="282" height="495" rx="9" fill="#FFFFFF" stroke="#1F7F8C" stroke-width="1.9" />
+  </g>
+  <g id="r1_b">
+    <rect x="42" y="94" width="6" height="495" rx="3.0" fill="#1F7F8C" stroke="none" stroke-width="1" />
+  </g>
+  <g id="r1_t">
+    <text x="85.587890625" y="162.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#0F4F58">External Flux</tspan>
+    </text>
+  </g>
+  <g id="r1_g_b_0">
+    <line x1="174" y1="212" x2="174" y2="246" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r1_g_b_1">
+    <line x1="174" y1="246" x2="179" y2="250" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r1_g_b_2">
+    <line x1="179" y1="250" x2="193" y2="250" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r1_g_b_3">
+    <line x1="193" y1="250" x2="198" y2="246" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r1_g_b_4">
+    <line x1="198" y1="246" x2="198" y2="212" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r1_g_t">
+    <line x1="171" y1="212" x2="201" y2="212" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r1_g_d1">
+    <ellipse cx="182.0" cy="235.0" rx="2.0" ry="2.0" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r1_g_d2">
+    <ellipse cx="189.5" cy="239.5" rx="1.5" ry="1.5" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r1c_t0">
+    <rect x="58" y="266" width="256" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="r1c_t0_t">
+    <text x="135.75" y="319.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Dissolve</tspan>
+    </text>
+  </g>
+  <g id="r1c_t1">
+    <rect x="58" y="375" width="256" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="r1c_t1_t">
+    <text x="152.875" y="428.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Dwell</tspan>
+    </text>
+  </g>
+  <g id="r1c_a1">
+    <polygon points="187.1,360.0 187.1,365.4 188.97,365.4 186,372 183.03,365.4 184.9,365.4 184.9,360.0" fill="#3C4753" />
+  </g>
+  <g id="r1c_t2">
+    <rect x="58" y="484" width="256" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="r1c_t2_t">
+    <text x="68.853515625" y="537.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Slow cool, separate</tspan>
+    </text>
+  </g>
+  <g id="r1c_a2">
+    <polygon points="187.1,469.0 187.1,474.4 188.97,474.4 186,481 183.03,474.4 184.9,474.4 184.9,469.0" fill="#3C4753" />
+  </g>
+  <g id="r2">
+    <rect x="334" y="94" width="282" height="495" rx="9" fill="#FFFFFF" stroke="#1F7F8C" stroke-width="1.9" />
+  </g>
+  <g id="r2_b">
+    <rect x="334" y="94" width="6" height="495" rx="3.0" fill="#1F7F8C" stroke="none" stroke-width="1" />
+  </g>
+  <g id="r2_t">
+    <text x="363.0859375" y="162.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#0F4F58">Self-Flux / Melt</tspan>
+    </text>
+  </g>
+  <g id="r2_g_b_0">
+    <line x1="460" y1="218" x2="466" y2="248" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r2_g_b_1">
+    <line x1="466" y1="248" x2="490" y2="248" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r2_g_b_2">
+    <line x1="490" y1="248" x2="496" y2="218" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r2_g_r">
+    <line x1="457" y1="218" x2="499" y2="218" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r2_g_w_0">
+    <line x1="464" y1="229" x2="470" y2="225" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r2_g_w_1">
+    <line x1="470" y1="225" x2="478" y2="229" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r2_g_w_2">
+    <line x1="478" y1="229" x2="486" y2="225" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r2_g_w_3">
+    <line x1="486" y1="225" x2="492" y2="229" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r2c_t0">
+    <rect x="350" y="266" width="256" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="r2c_t0_t">
+    <text x="402.982421875" y="319.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Homogenize</tspan>
+    </text>
+  </g>
+  <g id="r2c_t1">
+    <rect x="350" y="375" width="256" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="r2c_t1_t">
+    <text x="424.625" y="428.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Nucleate</tspan>
+    </text>
+  </g>
+  <g id="r2c_a1">
+    <polygon points="479.1,360.0 479.1,365.4 480.97,365.4 478,372 475.03,365.4 476.9,365.4 476.9,360.0" fill="#3C4753" />
+  </g>
+  <g id="r2c_t2">
+    <rect x="350" y="484" width="256" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="r2c_t2_t">
+    <text x="369.25" y="537.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Controlled cooling</tspan>
+    </text>
+  </g>
+  <g id="r2c_a2">
+    <polygon points="479.1,469.0 479.1,474.4 480.97,474.4 478,481 475.03,474.4 476.9,474.4 476.9,469.0" fill="#3C4753" />
+  </g>
+  <g id="r3">
+    <rect x="626" y="94" width="282" height="495" rx="9" fill="#FFFFFF" stroke="#1F7F8C" stroke-width="1.9" />
+  </g>
+  <g id="r3_b">
+    <rect x="626" y="94" width="6" height="495" rx="3.0" fill="#1F7F8C" stroke="none" stroke-width="1" />
+  </g>
+  <g id="r3_t">
+    <text x="680.875" y="146.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#0F4F58">Solid-State </tspan>
+    </text>
+    <text x="708.47265625" y="178.25" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#0F4F58">Ceramic</tspan>
+    </text>
+  </g>
+  <g id="r3_g_e1">
+    <ellipse cx="770.5" cy="223.0" rx="16.5" ry="5.0" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r3_g_s1">
+    <line x1="754" y1="223" x2="754" y2="237" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r3_g_s2">
+    <line x1="786" y1="223" x2="786" y2="237" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r3_g_e2">
+    <ellipse cx="770.5" cy="237.0" rx="16.5" ry="5.0" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r3c_t0">
+    <rect x="642" y="266" width="256" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="r3c_t0_t">
+    <text x="686.83203125" y="319.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Mix and press</tspan>
+    </text>
+  </g>
+  <g id="r3c_t1">
+    <rect x="642" y="375" width="256" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="r3c_t1_t">
+    <text x="675.224609375" y="428.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Calcine, regrind</tspan>
+    </text>
+  </g>
+  <g id="r3c_a1">
+    <polygon points="771.1,360.0 771.1,365.4 772.97,365.4 770,372 767.03,365.4 768.9,365.4 768.9,360.0" fill="#3C4753" />
+  </g>
+  <g id="r3c_t2">
+    <rect x="642" y="484" width="256" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="r3c_t2_t">
+    <text x="734.375" y="537.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Sinter</tspan>
+    </text>
+  </g>
+  <g id="r3c_a2">
+    <polygon points="771.1,469.0 771.1,474.4 772.97,474.4 770,481 767.03,474.4 768.9,474.4 768.9,469.0" fill="#3C4753" />
+  </g>
+  <g id="r4">
+    <rect x="918" y="94" width="282" height="495" rx="9" fill="#FFFFFF" stroke="#1F7F8C" stroke-width="1.9" />
+  </g>
+  <g id="r4_b">
+    <rect x="918" y="94" width="6" height="495" rx="3.0" fill="#1F7F8C" stroke="none" stroke-width="1" />
+  </g>
+  <g id="r4_t">
+    <text x="972.0" y="146.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#0F4F58">Mechanical </tspan>
+    </text>
+    <text x="984.59375" y="178.25" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#0F4F58">Activation</tspan>
+    </text>
+  </g>
+  <g id="r4_g_j">
+    <rect x="1048" y="217" width="29" height="31" rx="4.8" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r4_g_c">
+    <line x1="1048" y1="222" x2="1076" y2="222" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r4_g_b0">
+    <ellipse cx="1055.0" cy="233.0" rx="4.0" ry="4.0" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r4_g_b1">
+    <ellipse cx="1066.0" cy="230.0" rx="4.0" ry="4.0" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r4_g_b2">
+    <ellipse cx="1062.0" cy="241.0" rx="4.0" ry="4.0" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r4c_t0">
+    <rect x="934" y="266" width="256" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="r4c_t0_t">
+    <text x="962.75" y="319.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">High-energy mill</tspan>
+    </text>
+  </g>
+  <g id="r4c_t1">
+    <rect x="934" y="375" width="256" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="r4c_t1_t">
+    <text x="1012.822265625" y="428.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Activate</tspan>
+    </text>
+  </g>
+  <g id="r4c_a1">
+    <polygon points="1063.1,360.0 1063.1,365.4 1064.97,365.4 1062,372 1059.03,365.4 1060.9,365.4 1060.9,360.0" fill="#3C4753" />
+  </g>
+  <g id="r4c_t2">
+    <rect x="934" y="484" width="256" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="r4c_t2_t">
+    <text x="964.0" y="537.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Phase formation</tspan>
+    </text>
+  </g>
+  <g id="r4c_a2">
+    <polygon points="1063.1,469.0 1063.1,474.4 1064.97,474.4 1062,481 1059.03,474.4 1060.9,474.4 1060.9,469.0" fill="#3C4753" />
+  </g>
+  <g id="r5">
+    <rect x="1210" y="94" width="282" height="495" rx="9" fill="#FFFFFF" stroke="#9AA3AB" stroke-width="1.9" stroke-dasharray="12 8" />
+  </g>
+  <g id="r5_t">
+    <text x="1267.25" y="162.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#5B6570">Czochralski</tspan>
+    </text>
+  </g>
+  <g id="r5_g_r">
+    <line x1="1354" y1="209" x2="1354" y2="222" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r5_g_c_0">
+    <line x1="1354" y1="222" x2="1361" y2="231" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r5_g_c_1">
+    <line x1="1361" y1="231" x2="1354" y2="240" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r5_g_c_2">
+    <line x1="1354" y1="240" x2="1347" y2="231" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r5_g_c_3">
+    <line x1="1347" y1="231" x2="1354" y2="222" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r5_g_m_0">
+    <line x1="1342" y1="242" x2="1344" y2="250" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r5_g_m_1">
+    <line x1="1344" y1="250" x2="1364" y2="250" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r5_g_m_2">
+    <line x1="1364" y1="250" x2="1366" y2="242" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r5_g_t">
+    <line x1="1339" y1="242" x2="1369" y2="242" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="r5c_t0">
+    <rect x="1226" y="266" width="256" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="r5c_t0_t">
+    <text x="1303.48046875" y="319.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Pre-melt</tspan>
+    </text>
+  </g>
+  <g id="r5c_t1">
+    <rect x="1226" y="375" width="256" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="r5c_t1_t">
+    <text x="1298.25" y="428.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Seed pull</tspan>
+    </text>
+  </g>
+  <g id="r5c_a1">
+    <polygon points="1355.1,360.0 1355.1,365.4 1356.97,365.4 1354,372 1351.03,365.4 1352.9,365.4 1352.9,360.0" fill="#3C4753" />
+  </g>
+  <g id="r5c_t2">
+    <rect x="1226" y="484" width="256" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="r5c_t2_t">
+    <text x="1312.5" y="537.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Anneal</tspan>
+    </text>
+  </g>
+  <g id="r5c_a2">
+    <polygon points="1355.1,469.0 1355.1,474.4 1356.97,474.4 1354,481 1351.03,474.4 1352.9,474.4 1352.9,469.0" fill="#3C4753" />
+  </g>
+  <g id="zM">
+    <rect x="26" y="755" width="1484" height="309" rx="14" fill="#EEF2F7" stroke="#5B7592" stroke-width="1.6" />
+  </g>
+  <g id="zM_l">
+    <text x="44" y="798.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="28" font-weight="bold" font-style="normal" fill="#2B3E57">Literature Evidence</tspan>
+    </text>
+  </g>
+  <g id="led">
+    <rect x="42" y="823" width="1452" height="225" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.9" />
+  </g>
+  <g id="led_b">
+    <rect x="42" y="823" width="6" height="225" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
+  </g>
+  <g id="led_t">
+    <text x="62" y="869.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#2B3E57">Unified Experiment Record</tspan>
+    </text>
+  </g>
+  <g id="cav">
+    <rect x="1190" y="836" width="288" height="48" rx="24.0" fill="#FFF6E3" stroke="#C48A24" stroke-width="1.6" />
+  </g>
+  <g id="cav_t">
+    <text x="1212.875" y="868.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#7A5410">Framework ≠ recipe</tspan>
+    </text>
+  </g>
+  <g id="cl0_g_s0">
+    <rect x="187" y="899" width="22" height="33" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl0_g_l1">
+    <line x1="192" y1="911" x2="207" y2="911" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl0_g_l2">
+    <line x1="192" y1="918" x2="207" y2="918" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl0_g_l3">
+    <line x1="192" y1="924" x2="202" y2="924" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl0_k_c">
+    <ellipse cx="257.5" cy="916.5" rx="14.5" ry="14.5" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl0_k_k_0">
+    <line x1="250" y1="917" x2="255" y2="922" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="cl0_k_k_1">
+    <line x1="255" y1="922" x2="265" y2="910" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="cl0_t">
+    <text x="86.732421875" y="998.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Ratio and raw materials</tspan>
+    </text>
+  </g>
+  <g id="cl1_g_t">
+    <rect x="557" y="897" width="9" height="27" rx="4.5" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl1_g_b">
+    <ellipse cx="561.5" cy="929.5" rx="7.5" ry="7.5" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl1_g_m0">
+    <line x1="567" y1="904" x2="573" y2="904" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl1_g_m1">
+    <line x1="567" y1="910" x2="573" y2="910" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl1_g_m2">
+    <line x1="567" y1="915" x2="573" y2="915" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl1_k_c">
+    <ellipse cx="617.5" cy="916.5" rx="14.5" ry="14.5" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl1_k_k_0">
+    <line x1="610" y1="917" x2="616" y2="922" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="cl1_k_k_1">
+    <line x1="616" y1="922" x2="626" y2="910" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="cl1_t">
+    <text x="473.12109375" y="984.75" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Temperature–time, </tspan>
+    </text>
+    <text x="518.0" y="1013.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">atmosphere</tspan>
+    </text>
+  </g>
+  <g id="cl1_s">
+    <line x1="410" y1="891" x2="410" y2="1032" stroke="#E3E8ED" stroke-width="1.2" />
+  </g>
+  <g id="cl2_g_b_0">
+    <line x1="909" y1="907" x2="914" y2="932" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl2_g_b_1">
+    <line x1="914" y1="932" x2="931" y2="932" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl2_g_b_2">
+    <line x1="931" y1="932" x2="935" y2="907" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl2_g_r">
+    <line x1="907" y1="907" x2="938" y2="907" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl2_k_c">
+    <ellipse cx="978.5" cy="916.5" rx="14.5" ry="14.5" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl2_k_k_0">
+    <line x1="971" y1="917" x2="976" y2="922" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="cl2_k_k_1">
+    <line x1="976" y1="922" x2="986" y2="910" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="cl2_t">
+    <text x="871.875" y="998.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Crucible, flux</tspan>
+    </text>
+  </g>
+  <g id="cl2_s">
+    <line x1="771" y1="891" x2="771" y2="1032" stroke="#E3E8ED" stroke-width="1.2" />
+  </g>
+  <g id="cl3_g_d_0">
+    <line x1="1283" y1="898" x2="1294" y2="914" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl3_g_d_1">
+    <line x1="1294" y1="914" x2="1288" y2="924" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl3_g_d_2">
+    <line x1="1288" y1="924" x2="1277" y2="924" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl3_g_d_3">
+    <line x1="1277" y1="924" x2="1272" y2="914" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl3_g_d_4">
+    <line x1="1272" y1="914" x2="1283" y2="898" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl3_g_n0">
+    <ellipse cx="1277.0" cy="932.0" rx="3.0" ry="3.0" fill="#111A24" stroke="none" stroke-width="1" />
+  </g>
+  <g id="cl3_g_n1">
+    <ellipse cx="1285.0" cy="934.0" rx="3.0" ry="3.0" fill="#111A24" stroke="none" stroke-width="1" />
+  </g>
+  <g id="cl3_g_n2">
+    <ellipse cx="1292.0" cy="930.0" rx="3.0" ry="3.0" fill="#111A24" stroke="none" stroke-width="1" />
+  </g>
+  <g id="cl3_k_c">
+    <ellipse cx="1338.5" cy="916.5" rx="14.5" ry="14.5" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="cl3_k_k_0">
+    <line x1="1331" y1="917" x2="1337" y2="922" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="cl3_k_k_1">
+    <line x1="1337" y1="922" x2="1347" y2="910" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="cl3_t">
+    <text x="1146.125" y="998.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Cooling, growth, separation</tspan>
+    </text>
+  </g>
+  <g id="cl3_s">
+    <line x1="1132" y1="891" x2="1132" y2="1032" stroke="#E3E8ED" stroke-width="1.2" />
+  </g>
+  <g id="zB">
+    <rect x="26" y="1160" width="1484" height="359" rx="14" fill="#E6F2F3" stroke="#1F7F8C" stroke-width="1.6" />
+  </g>
+  <g id="zB_l">
+    <text x="44" y="1203.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="28" font-weight="bold" font-style="normal" fill="#0F4F58">Characterization</tspan>
+    </text>
+  </g>
+  <g id="k1">
+    <rect x="42" y="1228" width="354" height="275" rx="9" fill="#FFFFFF" stroke="#1F7F8C" stroke-width="1.9" />
+  </g>
+  <g id="k1_b">
+    <rect x="42" y="1228" width="6" height="275" rx="3.0" fill="#1F7F8C" stroke="none" stroke-width="1" />
+  </g>
+  <g id="k1_t">
+    <text x="110.697265625" y="1280.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#0F4F58">Single-Crystal </tspan>
+    </text>
+    <text x="149.625" y="1312.25" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#0F4F58">Structure</tspan>
+    </text>
+  </g>
+  <g id="k1_g_h0">
+    <line x1="207" y1="1349" x2="237" y2="1349" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k1_g_v0">
+    <line x1="207" y1="1349" x2="207" y2="1379" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k1_g_h1">
+    <line x1="207" y1="1364" x2="237" y2="1364" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k1_g_v1">
+    <line x1="222" y1="1349" x2="222" y2="1379" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k1_g_h2">
+    <line x1="207" y1="1379" x2="237" y2="1379" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k1_g_v2">
+    <line x1="237" y1="1349" x2="237" y2="1379" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k1_g_d00">
+    <ellipse cx="206.5" cy="1348.5" rx="3.5" ry="3.5" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="k1_g_d01">
+    <ellipse cx="206.5" cy="1364.5" rx="3.5" ry="3.5" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="k1_g_d02">
+    <ellipse cx="206.5" cy="1379.5" rx="3.5" ry="3.5" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="k1_g_d10">
+    <ellipse cx="222.5" cy="1348.5" rx="3.5" ry="3.5" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="k1_g_d11">
+    <ellipse cx="222.5" cy="1364.5" rx="3.5" ry="3.5" fill="#111A24" stroke="none" stroke-width="1" />
+  </g>
+  <g id="k1_g_d12">
+    <ellipse cx="222.5" cy="1379.5" rx="3.5" ry="3.5" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="k1_g_d20">
+    <ellipse cx="237.5" cy="1348.5" rx="3.5" ry="3.5" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="k1_g_d21">
+    <ellipse cx="237.5" cy="1364.5" rx="3.5" ry="3.5" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="k1_g_d22">
+    <ellipse cx="237.5" cy="1379.5" rx="3.5" ry="3.5" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="k1_s">
+    <rect x="58" y="1398" width="328" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="k1_s_t">
+    <text x="82.75" y="1437.75" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Structural identity and </tspan>
+    </text>
+    <text x="132.09375" y="1466.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">site occupancy</tspan>
+    </text>
+  </g>
+  <g id="k2">
+    <rect x="408" y="1228" width="354" height="275" rx="9" fill="#FFFFFF" stroke="#1F7F8C" stroke-width="1.9" />
+  </g>
+  <g id="k2_b">
+    <rect x="408" y="1228" width="6" height="275" rx="3.0" fill="#1F7F8C" stroke="none" stroke-width="1" />
+  </g>
+  <g id="k2_t">
+    <text x="468.875" y="1296.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#0F4F58">PXRD / Rietveld</tspan>
+    </text>
+  </g>
+  <g id="k2_g_a_0">
+    <line x1="569" y1="1379" x2="576" y2="1379" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k2_g_a_1">
+    <line x1="576" y1="1379" x2="579" y2="1356" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k2_g_a_2">
+    <line x1="579" y1="1356" x2="582" y2="1379" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k2_g_a_3">
+    <line x1="582" y1="1379" x2="588" y2="1379" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k2_g_a_4">
+    <line x1="588" y1="1379" x2="591" y2="1364" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k2_g_a_5">
+    <line x1="591" y1="1364" x2="594" y2="1379" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k2_g_a_6">
+    <line x1="594" y1="1379" x2="600" y2="1379" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k2_g_a_7">
+    <line x1="600" y1="1379" x2="601" y2="1370" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k2_g_a_8">
+    <line x1="601" y1="1370" x2="603" y2="1379" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k2_g_a_9">
+    <line x1="603" y1="1379" x2="608" y2="1379" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k2_s">
+    <rect x="424" y="1398" width="328" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="k2_s_t">
+    <text x="452.5" y="1437.75" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Bulk phase purity and </tspan>
+    </text>
+    <text x="527.75" y="1466.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">impurities</tspan>
+    </text>
+  </g>
+  <g id="k3">
+    <rect x="774" y="1228" width="354" height="275" rx="9" fill="#FFFFFF" stroke="#1F7F8C" stroke-width="1.9" />
+  </g>
+  <g id="k3_b">
+    <rect x="774" y="1228" width="6" height="275" rx="3.0" fill="#1F7F8C" stroke="none" stroke-width="1" />
+  </g>
+  <g id="k3_t">
+    <text x="821.375" y="1280.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#0F4F58">Composition and </tspan>
+    </text>
+    <text x="842.25" y="1312.25" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#0F4F58">Contamination</tspan>
+    </text>
+  </g>
+  <g id="k3_g_d0">
+    <ellipse cx="941.5" cy="1363.5" rx="6.5" ry="6.5" fill="#111A24" stroke="none" stroke-width="1" />
+  </g>
+  <g id="k3_g_d1">
+    <ellipse cx="954.0" cy="1364.0" rx="5.0" ry="5.0" fill="#111A24" stroke="none" stroke-width="1" />
+  </g>
+  <g id="k3_g_d2">
+    <ellipse cx="966.5" cy="1364.5" rx="3.5" ry="3.5" fill="#111A24" stroke="none" stroke-width="1" />
+  </g>
+  <g id="k3_s">
+    <rect x="790" y="1398" width="328" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="k3_s_t">
+    <text x="801.0" y="1451.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Nominal–local–bulk mean</tspan>
+    </text>
+  </g>
+  <g id="k4">
+    <rect x="1140" y="1228" width="354" height="275" rx="9" fill="#FFFFFF" stroke="#1F7F8C" stroke-width="1.9" />
+  </g>
+  <g id="k4_b">
+    <rect x="1140" y="1228" width="6" height="275" rx="3.0" fill="#1F7F8C" stroke="none" stroke-width="1" />
+  </g>
+  <g id="k4_t">
+    <text x="1179.375" y="1280.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#0F4F58">High-Temperature </tspan>
+    </text>
+    <text x="1255.875" y="1312.25" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#0F4F58">Stability</tspan>
+    </text>
+  </g>
+  <g id="k4_g_t">
+    <rect x="1315" y="1344" width="10" height="28" rx="4.8" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k4_g_b">
+    <ellipse cx="1319.5" cy="1378.5" rx="7.5" ry="7.5" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k4_g_m0">
+    <line x1="1326" y1="1352" x2="1332" y2="1352" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k4_g_m1">
+    <line x1="1326" y1="1357" x2="1332" y2="1357" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k4_g_m2">
+    <line x1="1326" y1="1363" x2="1332" y2="1363" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="k4_s">
+    <rect x="1156" y="1398" width="328" height="91" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="k4_s_t">
+    <text x="1201.86328125" y="1437.75" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">In situ HT ≠ cooled </tspan>
+    </text>
+    <text x="1273.845703125" y="1466.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">product</tspan>
+    </text>
+  </g>
+  <g id="d0_0">
+    <polygon points="184.25,594.0 184.25,742.0 189.0,742.0 183,757 177.0,742.0 181.75,742.0 181.75,594.0" fill="#3C4753" />
+  </g>
+  <g id="d0_p">
+    <rect x="80" y="637" width="207" height="86" rx="43.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.6" />
+  </g>
+  <g id="d0_p_t">
+    <text x="141.248046875" y="674.25" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Ratio · </tspan>
+    </text>
+    <text x="108.072265625" y="702.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">temperature</tspan>
+    </text>
+  </g>
+  <g id="d1_0">
+    <polygon points="476.25,594.0 476.25,742.0 481.0,742.0 475,757 469.0,742.0 473.75,742.0 473.75,594.0" fill="#3C4753" />
+  </g>
+  <g id="d1_p">
+    <rect x="354" y="637" width="243" height="48" rx="24.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.6" />
+  </g>
+  <g id="d1_p_t">
+    <text x="390.875" y="669.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Melt · crucible</tspan>
+    </text>
+  </g>
+  <g id="d2_0">
+    <polygon points="768.25,594.0 768.25,742.0 773.0,742.0 767,757 761.0,742.0 765.75,742.0 765.75,594.0" fill="#3C4753" />
+  </g>
+  <g id="d2_p">
+    <rect x="664" y="637" width="207" height="86" rx="43.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.6" />
+  </g>
+  <g id="d2_p_t">
+    <text x="716.7109375" y="674.25" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Mixing · </tspan>
+    </text>
+    <text x="702.337890625" y="702.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">calcination</tspan>
+    </text>
+  </g>
+  <g id="d3_0">
+    <polygon points="1060.25,594.0 1060.25,742.0 1065.0,742.0 1059,757 1053.0,742.0 1057.75,742.0 1057.75,594.0" fill="#3C4753" />
+  </g>
+  <g id="d3_p">
+    <rect x="940" y="637" width="237" height="86" rx="43.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.6" />
+  </g>
+  <g id="d3_p_t">
+    <text x="1008.125" y="674.25" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Milling · </tspan>
+    </text>
+    <text x="971.875" y="702.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">contamination</tspan>
+    </text>
+  </g>
+  <g id="d4_0">
+    <defs>
+      <marker id="marker-d4_0" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="#3C4753" />
+      </marker>
+    </defs>
+    <line x1="1351" y1="594" x2="1351" y2="757" stroke="#3C4753" stroke-width="2.5" stroke-dasharray="11 7" marker-end="url(#marker-d4_0)" />
+  </g>
+  <g id="d4_p">
+    <rect x="1262" y="637" width="177" height="86" rx="43.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.6" />
+  </g>
+  <g id="d4_p_t">
+    <text x="1290.5" y="674.25" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Seeding · </tspan>
+    </text>
+    <text x="1291.25" y="702.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">annealing</tspan>
+    </text>
+  </g>
+  <g id="c0_0">
+    <polygon points="220.25,1053.0 220.25,1147.0 225.0,1147.0 219,1162 213.0,1147.0 217.75,1147.0 217.75,1053.0" fill="#3C4753" />
+  </g>
+  <g id="c0_p">
+    <rect x="134" y="1088" width="169" height="48" rx="24.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.6" />
+  </g>
+  <g id="c0_p_t">
+    <text x="162.625" y="1120.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Structure</tspan>
+    </text>
+  </g>
+  <g id="c1_0">
+    <polygon points="586.25,1053.0 586.25,1147.0 591.0,1147.0 585,1162 579.0,1147.0 583.75,1147.0 583.75,1053.0" fill="#3C4753" />
+  </g>
+  <g id="c1_p">
+    <rect x="444" y="1088" width="281" height="48" rx="24.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.6" />
+  </g>
+  <g id="c1_p_t">
+    <text x="471.6953125" y="1120.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Phase composition</tspan>
+    </text>
+  </g>
+  <g id="c2_0">
+    <polygon points="952.25,1053.0 952.25,1147.0 957.0,1147.0 951,1162 945.0,1147.0 949.75,1147.0 949.75,1053.0" fill="#3C4753" />
+  </g>
+  <g id="c2_p">
+    <rect x="852" y="1088" width="199" height="48" rx="24.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.6" />
+  </g>
+  <g id="c2_p_t">
+    <text x="876.5" y="1120.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Composition</tspan>
+    </text>
+  </g>
+  <g id="c3_0">
+    <polygon points="1318.25,1053.0 1318.25,1147.0 1323.0,1147.0 1317,1162 1311.0,1147.0 1315.75,1147.0 1315.75,1053.0" fill="#3C4753" />
+  </g>
+  <g id="c3_p">
+    <rect x="1184" y="1088" width="266" height="48" rx="24.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.6" />
+  </g>
+  <g id="c3_p_t">
+    <text x="1210.125" y="1120.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">High temperature</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,291 @@
+{
+ "max_theta_rad": 0.0,
+ "placements_mm": [],
+ "events": [
+  {
+   "t": 2.5,
+   "msg": "call 1: 0 waypoints in 15 s, stage_estimate 0, done=False: The requested transfer is infeasible under the supplied fixed-base reach and collision constraints. Furnace_3's front wa"
+  },
+  {
+   "t": 2.5,
+   "msg": "stage after call 1: 0"
+  },
+  {
+   "t": 2.5,
+   "msg": "call 2: 0 waypoints in 13 s, stage_estimate 0, done=False: The requested transfer is infeasible with the stated fixed robot base and reach constraints. The opening-front TCP is ap"
+  },
+  {
+   "t": 2.5,
+   "msg": "planner refused twice in a row \u2192 trial ended (recorded as refusal)"
+  }
+ ],
+ "simplifications": [
+  "objects released inside instrument chambers are pinned at the release pose (chamber interiors are convex-hull solid)",
+  "tilt metric excludes deliberate pour phases"
+ ],
+ "refused": "The requested transfer is infeasible with the stated fixed robot base and reach constraints. The opening-front TCP is approximately 1.796 m from the base, and the insertion TCP is approximately 1.952 m away, both exceeding the 0.82 m usable radius and 0.85 m maximum reach. A rail is present, but no ",
+ "loop": {
+  "trial": 0,
+  "stage": 0,
+  "calls": 2,
+  "budget": 12,
+  "tokens_in": 10098,
+  "tokens_out": 651,
+  "wall_s": 43.1,
+  "penetration_ticks": 0,
+  "gate_pass": false,
+  "history": [
+   {
+    "call": 0,
+    "waypoints": [],
+    "outcomes": [],
+    "stage_after": 0
+   }
+  ]
+ },
+ "astra_plans": [
+  {
+   "reasoning_summary": "The requested transfer is infeasible under the supplied fixed-base reach and collision constraints. Furnace_3's front waypoint is approximately 1.796 m from the robot base, and the insertion waypoint is approximately 1.952 m away, both exceeding the 0.82 m usable radius. No rail-motion control is provided. In addition, the specified handle grasp point lies inside crucible_1's AABB, so the required clearance from other objects cannot be maintained. Do not begin grasping until base repositioning and the handle-access conflict are resolved.",
+   "waypoints": [],
+   "safety_checks": [
+    "Reach check failed: front TCP [-2.215, -2.338, 1.163] exceeds the usable radius from base [-0.5, -1.805, 1.164].",
+    "Reach check failed: insertion TCP [-2.215, -2.738, 1.163] exceeds both the usable radius and nominal 0.85 m reach.",
+    "Collision check failed: grasp TCP [-0.645, -2.305, 1.038] is inside crucible_1's supplied AABB; no contact exemption for that object is specified.",
+    "The rail is listed as a station, not a controllable robot axis; base translation cannot be assumed.",
+    "Insertion depth would be 0.120 m, within the 0.150 m door-plane limit, but this does not resolve reach or grasp-access failures."
+   ],
+   "done": false,
+   "stage_estimate": 0,
+   "_meta": {
+    "usage": {
+     "attribution": {
+      "items": {
+       "msg_04510ce20f1c177b016aa5b4d9f3a887d0bb9a22c44a4e6727": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 2130,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1201,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 4,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 313,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1202,
+          "output_tokens": 0
+         }
+        ],
+        "input_tokens": 4860,
+        "output_tokens": 0
+       },
+       "rs_04510ce20f1c177b016aa5b4db965c87d0b40b1b49a3bed316": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 2,
+        "output_tokens": 31
+       },
+       "msg_04510ce20f1c177b016aa5b4dd322487d099481513d6b9946f": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 0,
+          "output_tokens": 341
+         }
+        ],
+        "input_tokens": 0,
+        "output_tokens": 341
+       }
+      },
+      "request_fields": {
+       "text.format": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 155,
+        "output_tokens": 0
+       },
+       "instructions": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 21,
+        "output_tokens": 0
+       }
+      }
+     },
+     "input_tokens": 5038,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 372,
+     "output_tokens_details": {
+      "reasoning_tokens": 31
+     },
+     "total_tokens": 5410
+    },
+    "elapsed_s": 14.851893835992087,
+    "effort": "medium",
+    "call": 0
+   },
+   "validator_corrections": []
+  },
+  {
+   "reasoning_summary": "The requested transfer is infeasible with the stated fixed robot base and reach constraints. The opening-front TCP is approximately 1.796 m from the base, and the insertion TCP is approximately 1.952 m away, both exceeding the 0.82 m usable radius and 0.85 m maximum reach. A rail is present, but no controllable base-motion interface is provided. Hold position before grasping; a validated base-repositioning operation or revised task allocation is required.",
+   "waypoints": [],
+   "safety_checks": [
+    "No grasp or attachment commanded because the subsequent transfer cannot satisfy reach constraints.",
+    "Do not infer permission or capability to translate the robot base merely from the presence of the rail.",
+    "The requested insertion is 0.120 m past the door plane, within the 0.150 m insertion limit, but remains unreachable.",
+    "After base repositioning, revalidate reach, full gripper and payload clearances, and support of the rack before release."
+   ],
+   "done": false,
+   "stage_estimate": 0,
+   "_meta": {
+    "usage": {
+     "attribution": {
+      "items": {
+       "msg_04bc39ceac93d30e016aa5b4e9b79487d0b0e3600b212437d4": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 2152,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1201,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 4,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 313,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1202,
+          "output_tokens": 0
+         }
+        ],
+        "input_tokens": 4882,
+        "output_tokens": 0
+       },
+       "rs_04bc39ceac93d30e016aa5b4ec0c9887d08fe702e6527e994a": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 2,
+        "output_tokens": 39
+       },
+       "msg_04bc39ceac93d30e016aa5b4ed5d7087d0b1da1b12374c9248": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 0,
+          "output_tokens": 240
+         }
+        ],
+        "input_tokens": 0,
+        "output_tokens": 240
+       }
+      },
+      "request_fields": {
+       "text.format": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 155,
+        "output_tokens": 0
+       },
+       "instructions": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 21,
+        "output_tokens": 0
+       }
+      }
+     },
+     "input_tokens": 5060,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 279,
+     "output_tokens_details": {
+      "reasoning_tokens": 39
+     },
+     "total_tokens": 5339
+    },
+    "elapsed_s": 13.12331112503307,
+    "effort": "medium",
+    "call": 1
+   }
+  }
+ ],
+ "dp_max_mm": null,
+ "frames": 75,
+ "duration_s": 5.0,
+ "safety": {
+  "theta_dev_ok": true,
+  "dp_ok": true
+ }
+}

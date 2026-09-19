@@ -1,0 +1,47 @@
+{
+ "/World/Room/Table001/Table001/Collisions/Table001_Collider5": [
+  -4.409,
+  -3.163,
+  0.965,
+  0.053,
+  -1.638,
+  1.003
+ ],
+ "/World/Room/Table001_01/Table001/Collisions/Table001_Collider5": [
+  0.06,
+  -3.163,
+  0.965,
+  4.522,
+  -1.638,
+  1.003
+ ],
+ "/World/Room/Table001_02/Table001/Collisions/Table001_Collider5": [
+  0.994,
+  -1.631,
+  0.965,
+  2.519,
+  2.831,
+  1.003
+ ],
+ "/World/Room/Table001": [
+  -4.409,
+  -3.164,
+  0.0,
+  0.053,
+  -1.637,
+  1.003
+ ],
+ "/World/Room/Wall001": [
+  -4.85,
+  -3.9,
+  -0.0,
+  4.85,
+  3.9,
+  3.6
+ ],
+ "root_z_furnace_1": 1.311,
+ "root_z_rail": 1.004,
+ "root_z_xrd": 1.003,
+ "root_z_carousel": 1.004,
+ "root_z_vial_1": 1.06
+}

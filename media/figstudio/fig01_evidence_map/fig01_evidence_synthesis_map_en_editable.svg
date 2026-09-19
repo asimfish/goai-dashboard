@@ -1,0 +1,549 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1071" width="1536" height="1071">
+  <rect width="100%" height="100%" fill="#FFFFFF" />
+  <g id="zL">
+    <rect x="26" y="26" width="536" height="1019" rx="14" fill="#EEF2F7" stroke="#5B7592" stroke-width="1.6" />
+  </g>
+  <g id="zL_l">
+    <text x="44" y="69.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="28" font-weight="bold" font-style="normal" fill="#2B3E57">Literature Evidence</tspan>
+    </text>
+  </g>
+  <g id="zE">
+    <rect x="586" y="26" width="400" height="1019" rx="14" fill="#E6F2F3" stroke="#1F7F8C" stroke-width="1.6" />
+  </g>
+  <g id="zE_l">
+    <text x="604" y="69.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="28" font-weight="bold" font-style="normal" fill="#0F4F58">Experimental Items</tspan>
+    </text>
+  </g>
+  <g id="zQ">
+    <rect x="1010" y="26" width="500" height="1019" rx="14" fill="#FFF6E3" stroke="#C48A24" stroke-width="1.6" />
+  </g>
+  <g id="zQ_l">
+    <text x="1028" y="69.625" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="28" font-weight="bold" font-style="normal" fill="#7A5410">Answerable Questions</tspan>
+    </text>
+  </g>
+  <g id="a1">
+    <rect x="128" y="94" width="418" height="165" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.9" />
+  </g>
+  <g id="a1_b">
+    <rect x="128" y="94" width="6" height="165" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a1_g_s0">
+    <rect x="153" y="162" width="19" height="29" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a1_g_l1">
+    <line x1="158" y1="172" x2="171" y2="172" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a1_g_l2">
+    <line x1="158" y1="178" x2="171" y2="178" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a1_g_l3">
+    <line x1="158" y1="184" x2="167" y2="184" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a1_t">
+    <text x="196" y="170.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#2B3E57">Direct Reports on </tspan>
+    </text>
+    <text x="196" y="201.75" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#2B3E57">Target</tspan>
+    </text>
+  </g>
+  <g id="a2">
+    <rect x="128" y="283" width="418" height="165" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.9" />
+  </g>
+  <g id="a2_b">
+    <rect x="128" y="283" width="6" height="165" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a2_g_o_0">
+    <line x1="166" y1="349" x2="182" y2="359" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a2_g_o_1">
+    <line x1="182" y1="359" x2="175" y2="381" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a2_g_o_2">
+    <line x1="175" y1="381" x2="157" y2="381" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a2_g_o_3">
+    <line x1="157" y1="381" x2="150" y2="359" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a2_g_o_4">
+    <line x1="150" y1="359" x2="166" y2="349" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a2_g_a">
+    <line x1="166" y1="349" x2="166" y2="381" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a2_g_b">
+    <line x1="150" y1="359" x2="182" y2="359" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a2_t">
+    <text x="196" y="359.25" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="26.31642150878906" font-weight="bold" font-style="normal" fill="#2B3E57">Same Ba–Y Tetragonal </tspan>
+    </text>
+    <text x="196" y="390.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="26.31642150878906" font-weight="bold" font-style="normal" fill="#2B3E57">Silicates</tspan>
+    </text>
+  </g>
+  <g id="a3">
+    <rect x="128" y="472" width="418" height="165" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.9" />
+  </g>
+  <g id="a3_b">
+    <rect x="128" y="472" width="6" height="165" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_h0">
+    <line x1="153" y1="542" x2="179" y2="542" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a3_g_v0">
+    <line x1="153" y1="542" x2="153" y2="567" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a3_g_h1">
+    <line x1="153" y1="554" x2="179" y2="554" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a3_g_v1">
+    <line x1="166" y1="542" x2="166" y2="567" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a3_g_h2">
+    <line x1="153" y1="567" x2="179" y2="567" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a3_g_v2">
+    <line x1="179" y1="542" x2="179" y2="567" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a3_g_d00">
+    <ellipse cx="153.0" cy="542.0" rx="3.0" ry="3.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_d01">
+    <ellipse cx="153.0" cy="555.0" rx="3.0" ry="3.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_d02">
+    <ellipse cx="153.0" cy="567.0" rx="3.0" ry="3.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_d10">
+    <ellipse cx="166.0" cy="542.0" rx="3.0" ry="3.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_d11">
+    <ellipse cx="166.0" cy="555.0" rx="3.0" ry="3.0" fill="#111A24" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_d12">
+    <ellipse cx="166.0" cy="567.0" rx="3.0" ry="3.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_d20">
+    <ellipse cx="179.0" cy="542.0" rx="3.0" ry="3.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_d21">
+    <ellipse cx="179.0" cy="555.0" rx="3.0" ry="3.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_g_d22">
+    <ellipse cx="179.0" cy="567.0" rx="3.0" ry="3.0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a3_t">
+    <text x="196" y="548.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#2B3E57">Crystal-Chemical </tspan>
+    </text>
+    <text x="196" y="579.75" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#2B3E57">Neighbors</tspan>
+    </text>
+  </g>
+  <g id="a4">
+    <rect x="128" y="661" width="418" height="165" rx="9" fill="#FFFFFF" stroke="#5B7592" stroke-width="1.9" />
+  </g>
+  <g id="a4_b">
+    <rect x="128" y="661" width="6" height="165" rx="3.0" fill="#5B7592" stroke="none" stroke-width="1" />
+  </g>
+  <g id="a4_g_b_0">
+    <line x1="155" y1="736" x2="159" y2="757" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a4_g_b_1">
+    <line x1="159" y1="757" x2="173" y2="757" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a4_g_b_2">
+    <line x1="173" y1="757" x2="177" y2="736" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a4_g_r">
+    <line x1="152" y1="736" x2="180" y2="736" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a4_t">
+    <text x="196" y="737.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#2B3E57">Process Reference </tspan>
+    </text>
+    <text x="196" y="768.75" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#2B3E57">Studies</tspan>
+    </text>
+  </g>
+  <g id="a5">
+    <rect x="128" y="862" width="418" height="165" rx="9" fill="#FFFFFF" stroke="#9AA3AB" stroke-width="1.9" stroke-dasharray="12 8" />
+  </g>
+  <g id="a5_g_s0">
+    <rect x="153" y="930" width="19" height="29" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a5_g_l1">
+    <line x1="158" y1="940" x2="171" y2="940" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a5_g_l2">
+    <line x1="158" y1="946" x2="171" y2="946" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a5_g_l3">
+    <line x1="158" y1="952" x2="167" y2="952" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a5_g_x">
+    <line x1="152" y1="960" x2="180" y2="928" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="a5_t">
+    <text x="196" y="953.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#5B6570">Outside Study Scope</tspan>
+    </text>
+  </g>
+  <g id="ax_n">
+    <text x="56.25" y="122.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Near</tspan>
+    </text>
+  </g>
+  <g id="ax_f">
+    <text x="66.875" y="814.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Far</tspan>
+    </text>
+  </g>
+  <g id="ax_l" transform="rotate(-90 85.5 460.0)">
+    <text x="-39.01171875" y="468.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Distance from target</tspan>
+    </text>
+  </g>
+  <g id="ax_u">
+    <line x1="85" y1="140" x2="85" y2="302" stroke="#27303A" stroke-width="2.2" />
+  </g>
+  <g id="ax_d">
+    <polygon points="86.1,618.0 86.1,767.0 90.0,767.0 85,780 80.0,767.0 83.9,767.0 83.9,618.0" fill="#27303A" />
+  </g>
+  <g id="led">
+    <rect x="602" y="94" width="368" height="732" rx="9" fill="#FFFFFF" stroke="#1F7F8C" stroke-width="1.9" />
+  </g>
+  <g id="led_b">
+    <rect x="602" y="94" width="6" height="732" rx="3.0" fill="#1F7F8C" stroke="none" stroke-width="1" />
+  </g>
+  <g id="led_g_b">
+    <rect x="772" y="118" width="33" height="29" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="led_g_r1">
+    <line x1="772" y1="128" x2="806" y2="128" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="led_g_r2">
+    <line x1="772" y1="137" x2="806" y2="137" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="led_g_c1">
+    <line x1="783" y1="118" x2="783" y2="147" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="led_g_c2">
+    <line x1="795" y1="118" x2="795" y2="147" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="led_t">
+    <text x="624.591796875" y="202.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#0F4F58">Compared on Shared </tspan>
+    </text>
+    <text x="746.25" y="234.25" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#0F4F58">Items</tspan>
+    </text>
+  </g>
+  <g id="ledr_r0">
+    <rect x="622" y="268" width="334" height="85" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="ledr_c0_b">
+    <rect x="636" y="303" width="16" height="16" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="ledr_c0_k_0">
+    <line x1="639" y1="311" x2="642" y2="314" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="ledr_c0_k_1">
+    <line x1="642" y1="314" x2="648" y2="307" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="ledr_x0">
+    <text x="665" y="304.75" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Ratio and raw </tspan>
+    </text>
+    <text x="665" y="333.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">materials</tspan>
+    </text>
+  </g>
+  <g id="ledr_r1">
+    <rect x="622" y="359" width="334" height="85" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="ledr_c1_b">
+    <rect x="636" y="394" width="16" height="16" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="ledr_c1_k_0">
+    <line x1="639" y1="402" x2="642" y2="406" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="ledr_c1_k_1">
+    <line x1="642" y1="406" x2="648" y2="398" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="ledr_x1">
+    <text x="665" y="409.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Thermal history</tspan>
+    </text>
+  </g>
+  <g id="ledr_r2">
+    <rect x="622" y="451" width="334" height="85" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="ledr_c2_b">
+    <rect x="636" y="485" width="16" height="16" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="ledr_c2_k_0">
+    <line x1="639" y1="494" x2="642" y2="497" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="ledr_c2_k_1">
+    <line x1="642" y1="497" x2="648" y2="490" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="ledr_x2">
+    <text x="665" y="501.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Atmosphere</tspan>
+    </text>
+  </g>
+  <g id="ledr_r3">
+    <rect x="622" y="542" width="334" height="85" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="ledr_c3_b">
+    <rect x="636" y="577" width="16" height="16" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="ledr_c3_k_0">
+    <line x1="639" y1="585" x2="642" y2="588" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="ledr_c3_k_1">
+    <line x1="642" y1="588" x2="648" y2="581" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="ledr_x3">
+    <text x="665" y="592.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Crucible and flux</tspan>
+    </text>
+  </g>
+  <g id="ledr_r4">
+    <rect x="622" y="633" width="334" height="85" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="ledr_c4_b">
+    <rect x="636" y="668" width="16" height="16" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="ledr_c4_k_0">
+    <line x1="639" y1="676" x2="642" y2="680" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="ledr_c4_k_1">
+    <line x1="642" y1="680" x2="648" y2="672" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="ledr_x4">
+    <text x="665" y="669.75" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Cooling and </tspan>
+    </text>
+    <text x="665" y="698.0" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">separation</tspan>
+    </text>
+  </g>
+  <g id="ledr_r5">
+    <rect x="622" y="725" width="334" height="85" rx="6" fill="#F4F7FA" stroke="#AEBBC7" stroke-width="1.6" />
+  </g>
+  <g id="ledr_c5_b">
+    <rect x="636" y="759" width="16" height="16" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="ledr_c5_k_0">
+    <line x1="639" y1="768" x2="642" y2="771" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="ledr_c5_k_1">
+    <line x1="642" y1="771" x2="648" y2="764" stroke="#111A24" stroke-width="2.9835000000000003" />
+  </g>
+  <g id="ledr_x5">
+    <text x="665" y="775.875" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Characterization</tspan>
+    </text>
+  </g>
+  <g id="u1">
+    <rect x="1026" y="94" width="468" height="165" rx="9" fill="#FFFFFF" stroke="#C48A24" stroke-width="1.9" />
+  </g>
+  <g id="u1_b">
+    <rect x="1026" y="94" width="6" height="165" rx="3.0" fill="#C48A24" stroke="none" stroke-width="1" />
+  </g>
+  <g id="u1_g_n_0">
+    <line x1="1060" y1="160" x2="1060" y2="172" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u1_g_n_1">
+    <line x1="1060" y1="172" x2="1050" y2="192" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u1_g_n_2">
+    <line x1="1050" y1="192" x2="1078" y2="192" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u1_g_n_3">
+    <line x1="1078" y1="192" x2="1068" y2="172" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u1_g_n_4">
+    <line x1="1068" y1="172" x2="1068" y2="160" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u1_g_m">
+    <line x1="1058" y1="160" x2="1070" y2="160" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u1_g_d1">
+    <ellipse cx="1060.5" cy="184.5" rx="1.5" ry="1.5" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u1_g_d2">
+    <ellipse cx="1067.0" cy="187.0" rx="1.0" ry="1.0" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u1_t">
+    <text x="1094" y="186.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#7A5410">Direct Reproduction</tspan>
+    </text>
+  </g>
+  <g id="u2">
+    <rect x="1026" y="283" width="468" height="165" rx="9" fill="#FFFFFF" stroke="#C48A24" stroke-width="1.9" />
+  </g>
+  <g id="u2_b">
+    <rect x="1026" y="283" width="6" height="165" rx="3.0" fill="#C48A24" stroke="none" stroke-width="1" />
+  </g>
+  <g id="u2_g_o_0">
+    <line x1="1064" y1="349" x2="1080" y2="359" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u2_g_o_1">
+    <line x1="1080" y1="359" x2="1073" y2="381" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u2_g_o_2">
+    <line x1="1073" y1="381" x2="1055" y2="381" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u2_g_o_3">
+    <line x1="1055" y1="381" x2="1048" y2="359" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u2_g_o_4">
+    <line x1="1048" y1="359" x2="1064" y2="349" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u2_g_a">
+    <line x1="1064" y1="349" x2="1064" y2="381" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u2_g_b">
+    <line x1="1048" y1="359" x2="1080" y2="359" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u2_t">
+    <text x="1094" y="358.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#7A5410">Family Phase </tspan>
+    </text>
+    <text x="1094" y="390.25" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#7A5410">Comparison</tspan>
+    </text>
+  </g>
+  <g id="u3">
+    <rect x="1026" y="472" width="468" height="165" rx="9" fill="#FFFFFF" stroke="#C48A24" stroke-width="1.9" />
+  </g>
+  <g id="u3_b">
+    <rect x="1026" y="472" width="6" height="165" rx="3.0" fill="#C48A24" stroke="none" stroke-width="1" />
+  </g>
+  <g id="u3_g_p">
+    <line x1="1064" y1="540" x2="1064" y2="566" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u3_g_b">
+    <line x1="1050" y1="546" x2="1078" y2="546" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u3_g_l_0">
+    <line x1="1050" y1="546" x2="1046" y2="554" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u3_g_l_1">
+    <line x1="1046" y1="554" x2="1054" y2="554" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u3_g_l_2">
+    <line x1="1054" y1="554" x2="1050" y2="546" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u3_g_r_0">
+    <line x1="1078" y1="546" x2="1074" y2="554" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u3_g_r_1">
+    <line x1="1074" y1="554" x2="1082" y2="554" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u3_g_r_2">
+    <line x1="1082" y1="554" x2="1078" y2="546" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u3_g_f">
+    <line x1="1056" y1="569" x2="1072" y2="569" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u3_t">
+    <text x="1094" y="564.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#7A5410">Methods and Variables</tspan>
+    </text>
+  </g>
+  <g id="cav">
+    <rect x="1100" y="688" width="319" height="86" rx="43.0" fill="#FFF6E3" stroke="#C48A24" stroke-width="1.6" />
+  </g>
+  <g id="cav_t">
+    <text x="1121.458984375" y="725.25" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#7A5410">Neighbor conditions ≠ </tspan>
+    </text>
+    <text x="1176.982421875" y="753.5" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#7A5410">proven recipe</tspan>
+    </text>
+  </g>
+  <g id="u4">
+    <rect x="1026" y="862" width="468" height="165" rx="9" fill="#FFFFFF" stroke="#9AA3AB" stroke-width="1.9" stroke-dasharray="12 8" />
+  </g>
+  <g id="u4_g_o">
+    <ellipse cx="1064.0" cy="944.0" rx="12.0" ry="12.0" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u4_g_i">
+    <ellipse cx="1064.0" cy="944.0" rx="4.0" ry="4.0" fill="none" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u4_g_t506">
+    <line x1="1064" y1="927" x2="1064" y2="933" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u4_g_t5078">
+    <line x1="1064" y1="956" x2="1064" y2="962" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u4_g_t650">
+    <line x1="1046" y1="944" x2="1053" y2="944" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u4_g_t7850">
+    <line x1="1075" y1="944" x2="1082" y2="944" stroke="#111A24" stroke-width="2.295" />
+  </g>
+  <g id="u4_t">
+    <text x="1094" y="954.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="27" font-weight="bold" font-style="normal" fill="#5B6570">Study Boundary Only</tspan>
+    </text>
+  </g>
+  <g id="br_a1_0">
+    <line x1="551" y1="176" x2="574" y2="176" stroke="#3C4753" stroke-width="2.5" />
+  </g>
+  <g id="br_a2_0">
+    <line x1="551" y1="366" x2="574" y2="366" stroke="#3C4753" stroke-width="2.5" />
+  </g>
+  <g id="br_a3_0">
+    <line x1="551" y1="554" x2="574" y2="554" stroke="#3C4753" stroke-width="2.5" />
+  </g>
+  <g id="br_a4_0">
+    <line x1="551" y1="744" x2="574" y2="744" stroke="#3C4753" stroke-width="2.5" />
+  </g>
+  <g id="brv_0">
+    <line x1="574" y1="176" x2="574" y2="744" stroke="#3C4753" stroke-width="2.5" />
+  </g>
+  <g id="brh_0">
+    <polygon points="574.0,458.75 584.0,458.75 584.0,454.0 599,460 584.0,466.0 584.0,461.25 574.0,461.25" fill="#3C4753" />
+  </g>
+  <g id="fan0_0">
+    <line x1="975" y1="460" x2="998" y2="460" stroke="#3C4753" stroke-width="2.5" />
+  </g>
+  <g id="fanv_0">
+    <line x1="998" y1="176" x2="998" y2="554" stroke="#3C4753" stroke-width="2.5" />
+  </g>
+  <g id="fan1_0">
+    <polygon points="998.0,174.75 1008.0,174.75 1008.0,170.0 1023,176 1008.0,182.0 1008.0,177.25 998.0,177.25" fill="#3C4753" />
+  </g>
+  <g id="fan2_0">
+    <polygon points="998.0,364.75 1008.0,364.75 1008.0,360.0 1023,366 1008.0,372.0 1008.0,367.25 998.0,367.25" fill="#3C4753" />
+  </g>
+  <g id="fan3_0">
+    <polygon points="998.0,552.75 1008.0,552.75 1008.0,548.0 1023,554 1008.0,560.0 1008.0,555.25 998.0,555.25" fill="#3C4753" />
+  </g>
+  <g id="ex_0">
+    <defs>
+      <marker id="marker-ex_0" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="#3C4753" />
+      </marker>
+    </defs>
+    <line x1="551" y1="944" x2="1022" y2="944" stroke="#3C4753" stroke-width="2.5" stroke-dasharray="11 7" marker-end="url(#marker-ex_0)" />
+  </g>
+  <g id="ex_p">
+    <rect x="708" y="920" width="155" height="48" rx="24.0" fill="#FFFFFF" stroke="#CBD3DA" stroke-width="1.6" />
+  </g>
+  <g id="ex_p_t">
+    <text x="730.873046875" y="952.375" xml:space="preserve">
+      <tspan font-family="DejaVu Sans" font-size="24" font-weight="normal" font-style="normal" fill="#27303A">Excluded</tspan>
+    </text>
+  </g>
+</svg>

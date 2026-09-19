@@ -1,0 +1,365 @@
+{
+  "schema": "panel_media/phases/1",
+  "label": "SUBOP-B-10",
+  "run": "/mnt/nas/data/lyf/goai/subop_store/agent3/plans_agent3/v3_candidates/tray_load_release/evidence/20260919T004409_005746225",
+  "phases_file": "/mnt/nas/data/lyf/goai/subop_store/agent3/plans_agent3/v3_candidates/tray_load_release/evidence/20260919T004409_005746225/subop_phases.json",
+  "dt_s": 0.004166666666666667,
+  "tick_offset": 0,
+  "station_source": {
+    "kind": "video",
+    "path": "/mnt/nas/data/lyf/goai/subop_store/agent3/plans_agent3/v3_candidates/tray_load_release/evidence/20260919T004409_005746225/video.mp4",
+    "width": 1280,
+    "height": 800,
+    "fps": 12.0,
+    "frames": 1058,
+    "duration_s": 88.166667
+  },
+  "view_sources": {},
+  "frame_mapping": "frame = floor(tick * dt * fps); phase [a,b) -> frames [floor(a*dt*fps), ceil(b*dt*fps))",
+  "outputs": [
+    {
+      "name": "settle_scene_initial",
+      "view": null,
+      "clip": "phase_1_settle_scene_initial.mp4",
+      "poster": "phase_1_settle_scene_initial.png",
+      "ticks": [
+        0,
+        1200
+      ],
+      "seconds": [
+        0.0,
+        5.0
+      ],
+      "frames": [
+        0,
+        60
+      ],
+      "frames_expected": 60,
+      "frames_written": 60,
+      "fps": 12.0,
+      "bytes": 504511,
+      "ok": true
+    },
+    {
+      "name": "load_grasp_lift_insert",
+      "view": null,
+      "clip": "phase_2_load_grasp_lift_insert.mp4",
+      "poster": "phase_2_load_grasp_lift_insert.png",
+      "ticks": [
+        1200,
+        16320
+      ],
+      "seconds": [
+        5.0,
+        68.0
+      ],
+      "frames": [
+        60,
+        816
+      ],
+      "frames_expected": 756,
+      "frames_written": 756,
+      "fps": 12.0,
+      "bytes": 6942740,
+      "ok": true
+    },
+    {
+      "name": "support_observe",
+      "view": null,
+      "clip": "phase_3_support_observe.mp4",
+      "poster": "phase_3_support_observe.png",
+      "ticks": [
+        16320,
+        17520
+      ],
+      "seconds": [
+        68.0,
+        73.0
+      ],
+      "frames": [
+        816,
+        876
+      ],
+      "frames_expected": 60,
+      "frames_written": 60,
+      "fps": 12.0,
+      "bytes": 519880,
+      "ok": true
+    },
+    {
+      "name": "release_and_same_height_exit",
+      "view": null,
+      "clip": "phase_4_release_and_same_height_exit.mp4",
+      "poster": "phase_4_release_and_same_height_exit.png",
+      "ticks": [
+        17520,
+        19920
+      ],
+      "seconds": [
+        73.0,
+        83.0
+      ],
+      "frames": [
+        876,
+        996
+      ],
+      "frames_expected": 120,
+      "frames_written": 120,
+      "fps": 12.0,
+      "bytes": 1002207,
+      "ok": true
+    },
+    {
+      "name": "retreat_final_hold",
+      "view": null,
+      "clip": "phase_5_retreat_final_hold.mp4",
+      "poster": "phase_5_retreat_final_hold.png",
+      "ticks": [
+        19920,
+        21162
+      ],
+      "seconds": [
+        83.0,
+        88.175
+      ],
+      "frames": [
+        996,
+        1058
+      ],
+      "frames_expected": 62,
+      "frames_written": 62,
+      "fps": 12.0,
+      "bytes": 632855,
+      "ok": true
+    }
+  ],
+  "skipped": [],
+  "ffmpeg_log": [
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent3/plans_agent3/v3_candidates/tray_load_release/evidence/20260919T004409_005746225/video.mp4",
+        "-vf",
+        "select='between(n\\,0\\,59)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-B-10/phase_1_settle_scene_initial.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent3/plans_agent3/v3_candidates/tray_load_release/evidence/20260919T004409_005746225/video.mp4",
+        "-vf",
+        "select='eq(n\\,0)'",
+        "-frames:v",
+        "1",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-B-10/phase_1_settle_scene_initial.png"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent3/plans_agent3/v3_candidates/tray_load_release/evidence/20260919T004409_005746225/video.mp4",
+        "-vf",
+        "select='between(n\\,60\\,815)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-B-10/phase_2_load_grasp_lift_insert.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent3/plans_agent3/v3_candidates/tray_load_release/evidence/20260919T004409_005746225/video.mp4",
+        "-vf",
+        "select='eq(n\\,60)'",
+        "-frames:v",
+        "1",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-B-10/phase_2_load_grasp_lift_insert.png"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent3/plans_agent3/v3_candidates/tray_load_release/evidence/20260919T004409_005746225/video.mp4",
+        "-vf",
+        "select='between(n\\,816\\,875)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-B-10/phase_3_support_observe.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent3/plans_agent3/v3_candidates/tray_load_release/evidence/20260919T004409_005746225/video.mp4",
+        "-vf",
+        "select='eq(n\\,816)'",
+        "-frames:v",
+        "1",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-B-10/phase_3_support_observe.png"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent3/plans_agent3/v3_candidates/tray_load_release/evidence/20260919T004409_005746225/video.mp4",
+        "-vf",
+        "select='between(n\\,876\\,995)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-B-10/phase_4_release_and_same_height_exit.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent3/plans_agent3/v3_candidates/tray_load_release/evidence/20260919T004409_005746225/video.mp4",
+        "-vf",
+        "select='eq(n\\,876)'",
+        "-frames:v",
+        "1",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-B-10/phase_4_release_and_same_height_exit.png"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent3/plans_agent3/v3_candidates/tray_load_release/evidence/20260919T004409_005746225/video.mp4",
+        "-vf",
+        "select='between(n\\,996\\,1057)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-B-10/phase_5_retreat_final_hold.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/agent3/plans_agent3/v3_candidates/tray_load_release/evidence/20260919T004409_005746225/video.mp4",
+        "-vf",
+        "select='eq(n\\,996)'",
+        "-frames:v",
+        "1",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/SUBOP-B-10/phase_5_retreat_final_hold.png"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    }
+  ],
+  "all_ok": true
+}

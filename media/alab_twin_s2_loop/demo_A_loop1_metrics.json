@@ -1,0 +1,1219 @@
+{
+ "max_theta_rad": 1.577325463294983,
+ "placements_mm": [
+  643.0894136428833
+ ],
+ "events": [
+  {
+   "t": 0.33,
+   "msg": "trial 1: precursor_1 jittered by (-0.015, 0.014) m"
+  },
+  {
+   "t": 0.33,
+   "msg": "call 1: 3 waypoints in 22 s, stage_estimate 0, done=False: Raise the open tool, align above precursor_1, then descend vertically to the requested grasp at 45% of bottle height. Wa"
+  },
+  {
+   "t": 0.33,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 1.83,
+   "msg": "waypoint 'raise_to_approach_height' reached (err 0 mm; Vertical rise at the current XY before moving toward the bottle.)"
+  },
+  {
+   "t": 5.33,
+   "msg": "IK stuck (265 mm) \u2192 re-home and retry"
+  },
+  {
+   "t": 10.33,
+   "msg": "waypoint 'precursor_1_pregrasp' reached (err 0 mm; Centered over the bottle, 0.12 m above its top; horizontal approach clears the d)"
+  },
+  {
+   "t": 10.33,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 12.83,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 13.43,
+   "msg": "grasp precursor_1 (err 0 mm, width 55 mm)"
+  },
+  {
+   "t": 13.43,
+   "msg": "stage after call 1: 1"
+  },
+  {
+   "t": 13.43,
+   "msg": "call 2: 3 waypoints in 23 s, stage_estimate 1, done=False: precursor_1 is reported attached. Raise vertically to a transport height that clears the balance with the bottle bottom,"
+  },
+  {
+   "t": 13.43,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 14.93,
+   "msg": "waypoint 'lift_attached_bottle_to_transport_height' reached (err 0 mm; Vertical lift from the reported TCP. With a 45%-height grasp, the bottle bottom )"
+  },
+  {
+   "t": 14.93,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 16.43,
+   "msg": "waypoint 'translate_above_weighing_paper' reached (err 1 mm; Maintain upright orientation and transport height during horizontal travel to th)"
+  },
+  {
+   "t": 16.43,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 18.93,
+   "msg": "waypoint 'dosing_pose_hold_two_seconds' reached (err 1 mm; Descend vertically and hold at the endpoint for 2 s. Bottle bottom is at z=1.179)"
+  },
+  {
+   "t": 18.93,
+   "msg": "stage after call 2: 1"
+  },
+  {
+   "t": 18.93,
+   "msg": "call 3: 3 waypoints in 24 s, stage_estimate 3, done=False: The previous hold used TCP z=1.224 m. Correct the dosing TCP to 0.10 m above the paper top, hold for 2 s, then lift vert"
+  },
+  {
+   "t": 18.93,
+   "msg": "\u2717 waypoint 'correct_dosing_height_and_hold' corrected by the validator (dosing_balance: moved z+50 mm)"
+  },
+  {
+   "t": 18.93,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 20.93,
+   "msg": "waypoint 'correct_dosing_height_and_hold' reached (err 1 mm; Dosing TCP is 0.100 m above paper top and 0.037 m above balance AABB. Before des)"
+  },
+  {
+   "t": 20.93,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 22.43,
+   "msg": "waypoint 'vertical_lift_for_return' reached (err 1 mm; Vertical lift; with the grasp at 45% height, bottle bottom reaches approximately)"
+  },
+  {
+   "t": 22.43,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 24.43,
+   "msg": "waypoint 'return_above_original_bottle_position' reached (err 1 mm; Translate upright at transport height. Bottle bottom remains over 0.10 m above t)"
+  },
+  {
+   "t": 24.43,
+   "msg": "stage after call 3: 2"
+  },
+  {
+   "t": 24.43,
+   "msg": "call 4: 0 waypoints in 14 s, stage_estimate 2, done=False: The dosing stage has executed, but return to the exact original position conflicts with the required usable radius. The "
+  },
+  {
+   "t": 24.43,
+   "msg": "stage after call 4: 2"
+  },
+  {
+   "t": 24.43,
+   "msg": "call 5: 3 waypoints in 29 s, stage_estimate 2, done=False: The history indicates dosing completed; precursor_1 remains attached. Return upright and release at the original grasp h"
+  },
+  {
+   "t": 24.43,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 26.43,
+   "msg": "waypoint 'align_above_tolerance_adjusted_return_position' reached (err 1 mm; Return XY is within the usable radius. Bottle bottom remains at approximately 1.)"
+  },
+  {
+   "t": 26.43,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 28.93,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 29.63,
+   "msg": "release precursor_1 at 'place_upright_and_release' (err 1 mm, dp 643 mm)"
+  },
+  {
+   "t": 29.63,
+   "msg": "pre-swing skipped: both arcs cross an instrument box"
+  },
+  {
+   "t": 31.13,
+   "msg": "waypoint 'vertical_retreat_after_release' reached (err 1 mm; Retreat exactly 0.12 m vertically without lateral motion.)"
+  },
+  {
+   "t": 31.13,
+   "msg": "stage after call 5: 2"
+  },
+  {
+   "t": 31.13,
+   "msg": "call 6: 0 waypoints in 11 s, stage_estimate 2, done=False: Recovery is blocked: precursor_1 is now below the worktop, apparently on the floor after the failed release. Its centre "
+  },
+  {
+   "t": 31.13,
+   "msg": "stage after call 6: 2"
+  },
+  {
+   "t": 31.13,
+   "msg": "call 7: 0 waypoints in 11 s, stage_estimate 2, done=False: Recovery is blocked: precursor_1 has fallen below the worktop and outside the robot's usable workspace. Its reported gra"
+  },
+  {
+   "t": 31.13,
+   "msg": "planner refused twice in a row \u2192 trial ended (recorded as refusal)"
+  }
+ ],
+ "simplifications": [
+  "objects released inside instrument chambers are pinned at the release pose (chamber interiors are convex-hull solid)",
+  "tilt metric excludes deliberate pour phases"
+ ],
+ "refused": "Recovery is blocked: precursor_1 has fallen below the worktop and outside the robot's usable workspace. Its reported grasp point is [2.6075, 0.3115, 0.0209], approximately 0.865 m horizontally and 1.309 m in 3D from the base, exceeding both the 0.75 m usable radius and 0.85 m reach. The previous rel",
+ "loop": {
+  "trial": 1,
+  "stage": 2,
+  "calls": 7,
+  "budget": 12,
+  "tokens_in": 31117,
+  "tokens_out": 3582,
+  "wall_s": 339.1,
+  "penetration_ticks": 0,
+  "gate_pass": false,
+  "history": [
+   {
+    "call": 0,
+    "waypoints": [
+     "raise_to_approach_height",
+     "precursor_1_pregrasp",
+     "grasp_precursor_1"
+    ],
+    "outcomes": [
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'raise_to_approach_height' reached (err 0 mm; Vertical rise at the current XY bef",
+     "IK stuck (265 mm) \u2192 re-home and retry",
+     "waypoint 'precursor_1_pregrasp' reached (err 0 mm; Centered over the bottle, 0.12 m above ",
+     "pre-swing skipped: both arcs cross an instrument box",
+     "pre-swing skipped: both arcs cross an instrument box",
+     "grasp precursor_1 (err 0 mm, width 55 mm)"
+    ],
+    "stage_after": 1
+   },
+   {
+    "call": 1,
+    "waypoints": [
+     "lift_attached_bottle_to_transport_height",
+     "translate_above_weighing_paper",
+     "dosing_pose_hold_two_seconds"
+    ],
+    "outcomes": [
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'lift_attached_bottle_to_transport_height' reached (err 0 mm; Vertical lift from ",
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'translate_above_weighing_paper' reached (err 1 mm; Maintain upright orientation ",
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'dosing_pose_hold_two_seconds' reached (err 1 mm; Descend vertically and hold at "
+    ],
+    "stage_after": 1
+   },
+   {
+    "call": 2,
+    "waypoints": [
+     "correct_dosing_height_and_hold",
+     "vertical_lift_for_return",
+     "return_above_original_bottle_position"
+    ],
+    "outcomes": [
+     "\u2717 waypoint 'correct_dosing_height_and_hold' corrected by the validator (dosing_balance: mo",
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'correct_dosing_height_and_hold' reached (err 1 mm; Dosing TCP is 0.100 m above p",
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'vertical_lift_for_return' reached (err 1 mm; Vertical lift; with the grasp at 45",
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'return_above_original_bottle_position' reached (err 1 mm; Translate upright at t"
+    ],
+    "stage_after": 2
+   },
+   {
+    "call": 3,
+    "waypoints": [],
+    "outcomes": [],
+    "stage_after": 2
+   },
+   {
+    "call": 4,
+    "waypoints": [
+     "align_above_tolerance_adjusted_return_position",
+     "place_upright_and_release",
+     "vertical_retreat_after_release"
+    ],
+    "outcomes": [
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'align_above_tolerance_adjusted_return_position' reached (err 1 mm; Return XY is ",
+     "pre-swing skipped: both arcs cross an instrument box",
+     "pre-swing skipped: both arcs cross an instrument box",
+     "release precursor_1 at 'place_upright_and_release' (err 1 mm, dp 643 mm)",
+     "pre-swing skipped: both arcs cross an instrument box",
+     "waypoint 'vertical_retreat_after_release' reached (err 1 mm; Retreat exactly 0.12 m vertic"
+    ],
+    "stage_after": 2
+   },
+   {
+    "call": 5,
+    "waypoints": [],
+    "outcomes": [],
+    "stage_after": 2
+   }
+  ]
+ },
+ "astra_plans": [
+  {
+   "reasoning_summary": "Raise the open tool, align above precursor_1, then descend vertically to the requested grasp at 45% of bottle height. Wait for grasp feedback before lifting and dosing.",
+   "waypoints": [
+    {
+     "name": "raise_to_approach_height",
+     "tcp_xyz_m": [
+      2.245,
+      -0.103,
+      1.387
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "open",
+     "attach": "",
+     "detach": false,
+     "duration_s": 1.5,
+     "clearance_note": "Vertical rise at the current XY before moving toward the bottle."
+    },
+    {
+     "name": "precursor_1_pregrasp",
+     "tcp_xyz_m": [
+      2.223,
+      -0.2035,
+      1.387
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "open",
+     "attach": "",
+     "detach": false,
+     "duration_s": 1.5,
+     "clearance_note": "Centered over the bottle, 0.12 m above its top; horizontal approach clears the dosing balance."
+    },
+    {
+     "name": "grasp_precursor_1",
+     "tcp_xyz_m": [
+      2.223,
+      -0.2035,
+      1.2109
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "close",
+     "attach": "precursor_1",
+     "detach": false,
+     "duration_s": 2,
+     "clearance_note": "Vertical descent to z = 1.165 + 0.45 \u00d7 0.102. Only intended bottle contact is permitted."
+    }
+   ],
+   "safety_checks": [
+    "Waypoint horizontal distances from the robot base are approximately 0.58\u20130.62 m, within the 0.25\u20130.75 m usable range.",
+    "Grasp TCP is 0.0689 m above the dosing balance AABB; verify full gripper clearance during descent.",
+    "Maintain tool-down orientation and validate tracking errors against 20 mm position and 0.25 rad orientation limits.",
+    "Confirm attachment before carrying; subsequent transit must keep the bottle bottom at least 0.10 m above instrument tops."
+   ],
+   "done": false,
+   "stage_estimate": 0,
+   "_meta": {
+    "usage": {
+     "attribution": {
+      "items": {
+       "msg_04f3f3c11d1d96e9016aa5b31ecee087d0b8a2d781018a1830": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 2305,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1201,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 4,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 314,
+          "output_tokens": 0
+         }
+        ],
+        "input_tokens": 3829,
+        "output_tokens": 0
+       },
+       "rs_04f3f3c11d1d96e9016aa5b321a2ac87d09ee7360a7d377c4e": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 2,
+        "output_tokens": 57
+       },
+       "msg_04f3f3c11d1d96e9016aa5b32424d087d0ad6c067559864be4": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 0,
+          "output_tokens": 527
+         }
+        ],
+        "input_tokens": 0,
+        "output_tokens": 527
+       }
+      },
+      "request_fields": {
+       "text.format": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 155,
+        "output_tokens": 0
+       },
+       "instructions": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 21,
+        "output_tokens": 0
+       }
+      }
+     },
+     "input_tokens": 4007,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 584,
+     "output_tokens_details": {
+      "reasoning_tokens": 57
+     },
+     "total_tokens": 4591
+    },
+    "elapsed_s": 22.25950137799373,
+    "effort": "medium",
+    "call": 0
+   },
+   "validator_corrections": []
+  },
+  {
+   "reasoning_summary": "precursor_1 is reported attached. Raise vertically to a transport height that clears the balance with the bottle bottom, move over the paper center, then lower to an upright dosing pose with the bottle bottom 0.10 m above the paper and hold for 2 s.",
+   "waypoints": [
+    {
+     "name": "lift_attached_bottle_to_transport_height",
+     "tcp_xyz_m": [
+      2.223,
+      -0.203,
+      1.29
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 1.5,
+     "clearance_note": "Vertical lift from the reported TCP. With a 45%-height grasp, the bottle bottom is 0.0459 m below TCP; at transport height it clears the balance top by 0.1021 m."
+    },
+    {
+     "name": "translate_above_weighing_paper",
+     "tcp_xyz_m": [
+      2.287,
+      -0.191,
+      1.29
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 1.5,
+     "clearance_note": "Maintain upright orientation and transport height during horizontal travel to the paper center."
+    },
+    {
+     "name": "dosing_pose_hold_two_seconds",
+     "tcp_xyz_m": [
+      2.287,
+      -0.191,
+      1.2249
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 2,
+     "clearance_note": "Descend vertically and hold at the endpoint for 2 s. Bottle bottom is at z=1.179, 0.10 m above paper top and 0.037 m above the balance AABB."
+    }
+   ],
+   "safety_checks": [
+    "Use interpolation with translation increments no greater than 0.020 m and orientation deviation no greater than 0.25 rad.",
+    "Maintain the existing grasp; do not release or tilt the bottle.",
+    "Waypoint horizontal radii from the robot base are approximately 0.621\u20130.664 m, within the usable 0.25\u20130.75 m range.",
+    "Verify the attached bottle follows the commanded upright pose before lowering; stop if grasp or clearance validation fails.",
+    "Return placement and the final 0.12 m retreat remain pending."
+   ],
+   "done": false,
+   "stage_estimate": 1,
+   "_meta": {
+    "usage": {
+     "attribution": {
+      "items": {
+       "msg_0b383f379a46b370016aa5b38a47f087d08b41d959c510e998": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 2484,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1201,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 4,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 314,
+          "output_tokens": 0
+         }
+        ],
+        "input_tokens": 4008,
+        "output_tokens": 0
+       },
+       "rs_0b383f379a46b370016aa5b38bc0bc87d0a7f5ca0e76bcd8aa": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 2,
+        "output_tokens": 56
+       },
+       "msg_0b383f379a46b370016aa5b38de48c87d08a2451491679978e": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 0,
+          "output_tokens": 589
+         }
+        ],
+        "input_tokens": 0,
+        "output_tokens": 589
+       }
+      },
+      "request_fields": {
+       "text.format": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 155,
+        "output_tokens": 0
+       },
+       "instructions": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 21,
+        "output_tokens": 0
+       }
+      }
+     },
+     "input_tokens": 4186,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 645,
+     "output_tokens_details": {
+      "reasoning_tokens": 56
+     },
+     "total_tokens": 4831
+    },
+    "elapsed_s": 22.66087767801946,
+    "effort": "medium",
+    "call": 1
+   },
+   "validator_corrections": []
+  },
+  {
+   "reasoning_summary": "The previous hold used TCP z=1.224 m. Correct the dosing TCP to 0.10 m above the paper top, hold for 2 s, then lift vertically before returning above the original bottle position. Placement and retreat will follow after observation.",
+   "waypoints": [
+    {
+     "name": "correct_dosing_height_and_hold",
+     "tcp_xyz_m": [
+      2.287,
+      -0.191,
+      1.179
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 2,
+     "clearance_note": "Dosing TCP is 0.100 m above paper top and 0.037 m above balance AABB. Before descent, check attached-bottle geometry against the actual balance surface; stop if the bottle would intersect the balance."
+    },
+    {
+     "name": "vertical_lift_for_return",
+     "tcp_xyz_m": [
+      2.287,
+      -0.191,
+      1.3
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 1.5,
+     "clearance_note": "Vertical lift; with the grasp at 45% height, bottle bottom reaches approximately 1.254 m, over 0.10 m above the balance."
+    },
+    {
+     "name": "return_above_original_bottle_position",
+     "tcp_xyz_m": [
+      2.3985,
+      -0.0235,
+      1.3
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 2,
+     "clearance_note": "Translate upright at transport height. Bottle bottom remains over 0.10 m above the balance; descend only after confirming arrival."
+    }
+   ],
+   "safety_checks": [
+    "Maintain upright bottle orientation; no pouring tilt is requested.",
+    "Validate the full attached-object and gripper swept volumes, not just TCP clearance. The balance AABB alone does not certify the low dosing pose as collision-free.",
+    "Interpolate motions at no more than 20 mm positional increments and 0.25 rad orientation deviation.",
+    "Waypoint distances from the base remain within the 0.25\u20130.75 m usable range.",
+    "Keep the gripper closed until the bottle is supported at its original position."
+   ],
+   "done": false,
+   "stage_estimate": 3,
+   "_meta": {
+    "usage": {
+     "attribution": {
+      "items": {
+       "msg_0d15ac689f33aa29016aa5b3c5c85487d0952716033f58a5bf": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 2646,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1201,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 4,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 314,
+          "output_tokens": 0
+         }
+        ],
+        "input_tokens": 4170,
+        "output_tokens": 0
+       },
+       "rs_0d15ac689f33aa29016aa5b3c7577887d086787ada86e42a4c": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 2,
+        "output_tokens": 98
+       },
+       "msg_0d15ac689f33aa29016aa5b3cbdf7087d0baacb4ff94b48d20": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 0,
+          "output_tokens": 576
+         }
+        ],
+        "input_tokens": 0,
+        "output_tokens": 576
+       }
+      },
+      "request_fields": {
+       "text.format": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 155,
+        "output_tokens": 0
+       },
+       "instructions": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 21,
+        "output_tokens": 0
+       }
+      }
+     },
+     "input_tokens": 4348,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 674,
+     "output_tokens_details": {
+      "reasoning_tokens": 98
+     },
+     "total_tokens": 5022
+    },
+    "elapsed_s": 23.759646681020968,
+    "effort": "medium",
+    "call": 2
+   },
+   "validator_corrections": [
+    {
+     "waypoint": "correct_dosing_height_and_hold",
+     "from": [
+      2.287,
+      -0.191,
+      1.179
+     ],
+     "to": [
+      2.287,
+      -0.191,
+      1.229
+     ],
+     "note": "dosing_balance: moved z+50 mm"
+    }
+   ]
+  },
+  {
+   "reasoning_summary": "The dosing stage has executed, but return to the exact original position conflicts with the required usable radius. The original bottle grasp TCP is [2.5095, 0.1435, 1.1129], whose horizontal distance from the robot base is 0.7616 m, exceeding the 0.75 m limit. The current TCP also differs from the previously requested return position, so that waypoint cannot be treated as successful alignment. Hold the bottle without releasing; completing the exact return requires an authorized workspace adjustment.",
+   "waypoints": [],
+   "safety_checks": [
+    "Original grasp height: 1.067 + 0.45 \u00d7 0.102 = 1.1129 m.",
+    "Original-position horizontal radius: 0.7616 m; permitted maximum: 0.75 m.",
+    "Do not descend or release at the current TCP: it is not aligned with the original bottle position.",
+    "Do not substitute a different placement position without authorization.",
+    "Keep the gripper closed; placement and the final 0.12 m retreat remain incomplete."
+   ],
+   "done": false,
+   "stage_estimate": 2,
+   "_meta": {
+    "usage": {
+     "attribution": {
+      "items": {
+       "msg_04c86a0278537a9a016aa5b4020d0887d09cc5141af62de20d": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 2834,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1201,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 4,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 314,
+          "output_tokens": 0
+         }
+        ],
+        "input_tokens": 4358,
+        "output_tokens": 0
+       },
+       "rs_04c86a0278537a9a016aa5b403cf0c87d0aebb70b3369f9ac1": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 2,
+        "output_tokens": 82
+       },
+       "msg_04c86a0278537a9a016aa5b4066c1087d08fe569893944242a": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 0,
+          "output_tokens": 260
+         }
+        ],
+        "input_tokens": 0,
+        "output_tokens": 260
+       }
+      },
+      "request_fields": {
+       "text.format": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 155,
+        "output_tokens": 0
+       },
+       "instructions": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 21,
+        "output_tokens": 0
+       }
+      }
+     },
+     "input_tokens": 4536,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 342,
+     "output_tokens_details": {
+      "reasoning_tokens": 82
+     },
+     "total_tokens": 4878
+    },
+    "elapsed_s": 14.113574821036309,
+    "effort": "medium",
+    "call": 3
+   },
+   "validator_corrections": []
+  },
+  {
+   "reasoning_summary": "The history indicates dosing completed; precursor_1 remains attached. Return upright and release at the original grasp height, then retreat vertically. The exact original bottle center lies 0.762 m from the base, outside the 0.750 m usable radius. Use a return position shifted 12.5 mm toward the base, within the specified 20 mm positional tolerance, rather than command an out-of-bounds pose.",
+   "waypoints": [
+    {
+     "name": "align_above_tolerance_adjusted_return_position",
+     "tcp_xyz_m": [
+      2.497,
+      0.1435,
+      1.299
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "hold",
+     "attach": "",
+     "detach": false,
+     "duration_s": 2,
+     "clearance_note": "Return XY is within the usable radius. Bottle bottom remains at approximately 1.253 m during translation, above the dosing balance top by more than 0.10 m; the route avoids the oven."
+    },
+    {
+     "name": "place_upright_and_release",
+     "tcp_xyz_m": [
+      2.497,
+      0.1435,
+      1.1129
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "open",
+     "attach": "",
+     "detach": true,
+     "duration_s": 2,
+     "clearance_note": "Descend vertically to the original 45%-height grasp level, restoring the bottle bottom to z=1.067 m. Placement is shifted 12.5 mm in x from the original position, within dp_max_mm=20. Release only after support contact is confirmed."
+    },
+    {
+     "name": "vertical_retreat_after_release",
+     "tcp_xyz_m": [
+      2.497,
+      0.1435,
+      1.2329
+     ],
+     "tool_down": true,
+     "yaw_deg": 0,
+     "gripper": "open",
+     "attach": "",
+     "detach": false,
+     "duration_s": 1.5,
+     "clearance_note": "Retreat exactly 0.12 m vertically without lateral motion."
+    }
+   ],
+   "safety_checks": [
+    "Commanded TCP horizontal radius is approximately 0.749 m, within the 0.25\u20130.75 m usable interval.",
+    "Maintain upright tool orientation and enforce theta_dev_max_rad=0.25.",
+    "Validate full-arm and carried-bottle swept-volume clearance of at least 0.03 m from non-target objects.",
+    "Confirm support at the tolerance-adjusted placement before opening; the supporting surface at the original elevated bottle base is not explicitly modeled.",
+    "Await execution feedback before declaring placement and retreat physically complete."
+   ],
+   "done": false,
+   "stage_estimate": 2,
+   "_meta": {
+    "usage": {
+     "attribution": {
+      "items": {
+       "msg_08f831769e21fa56016aa5b4105fa087d0bea98c2098c25b7d": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 2857,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1201,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 4,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 314,
+          "output_tokens": 0
+         }
+        ],
+        "input_tokens": 4381,
+        "output_tokens": 0
+       },
+       "rs_08f831769e21fa56016aa5b411cb5c87d0b3a8940961b5b1ad": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 2,
+        "output_tokens": 234
+       },
+       "msg_08f831769e21fa56016aa5b41bf65c87d0ad2003ee188d6f2b": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 0,
+          "output_tokens": 621
+         }
+        ],
+        "input_tokens": 0,
+        "output_tokens": 621
+       }
+      },
+      "request_fields": {
+       "text.format": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 155,
+        "output_tokens": 0
+       },
+       "instructions": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 21,
+        "output_tokens": 0
+       }
+      }
+     },
+     "input_tokens": 4559,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 855,
+     "output_tokens_details": {
+      "reasoning_tokens": 234
+     },
+     "total_tokens": 5414
+    },
+    "elapsed_s": 28.858718600997236,
+    "effort": "medium",
+    "call": 4
+   },
+   "validator_corrections": []
+  },
+  {
+   "reasoning_summary": "Recovery is blocked: precursor_1 is now below the worktop, apparently on the floor after the failed release. Its centre is approximately [2.6075, 0.3115, 0.026], with horizontal distance 0.865 m from the robot base, beyond the 0.75 m usable radius. Its required grasp height is 0.0209 m, also far outside the robot's 0.85 m reach from the elevated base. No safe recovery waypoint is available. Pause for external recovery and restoration of the bottle to its verified original position before replanning.",
+   "waypoints": [],
+   "safety_checks": [
+    "Do not attempt a floor-level grasp outside the permitted workspace.",
+    "The previous release reported 643 mm placement error, exceeding the 20 mm limit; successful placement cannot be claimed.",
+    "The gripper is open and the bottle is not attached.",
+    "The original return position must be verified from the initial scene; the current bottle position must not be treated as the original position.",
+    "External recovery is required before continuing."
+   ],
+   "done": false,
+   "stage_estimate": 2,
+   "_meta": {
+    "usage": {
+     "attribution": {
+      "items": {
+       "msg_066d96d06546fb52016aa5b45ad45887d0bac622ad6cb6ae1a": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 3027,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1201,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 4,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 314,
+          "output_tokens": 0
+         }
+        ],
+        "input_tokens": 4551,
+        "output_tokens": 0
+       },
+       "msg_066d96d06546fb52016aa5b45cce9487d0b763e2bf9a5f9183": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 2,
+          "output_tokens": 256
+         }
+        ],
+        "input_tokens": 2,
+        "output_tokens": 256
+       }
+      },
+      "request_fields": {
+       "text.format": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 155,
+        "output_tokens": 0
+       },
+       "instructions": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 21,
+        "output_tokens": 0
+       }
+      }
+     },
+     "input_tokens": 4729,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 256,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 4985
+    },
+    "elapsed_s": 11.351645838993136,
+    "effort": "medium",
+    "call": 5
+   },
+   "validator_corrections": []
+  },
+  {
+   "reasoning_summary": "Recovery is blocked: precursor_1 has fallen below the worktop and outside the robot's usable workspace. Its reported grasp point is [2.6075, 0.3115, 0.0209], approximately 0.865 m horizontally and 1.309 m in 3D from the base, exceeding both the 0.75 m usable radius and 0.85 m reach. The previous release reported a 643 mm placement error; the task is not complete. Pause for external bottle recovery and restoration of its original placement reference before replanning.",
+   "waypoints": [],
+   "safety_checks": [
+    "Do not attempt to reach the fallen bottle or descend through the worktop.",
+    "Keep the gripper open; no object is currently attached.",
+    "Require external recovery to a verified reachable supported position and confirmation of the original return pose.",
+    "Do not interpret the previous release and retreat as successful placement."
+   ],
+   "done": false,
+   "stage_estimate": 2,
+   "_meta": {
+    "usage": {
+     "attribution": {
+      "items": {
+       "msg_0661c69e0d0f10db016aa5b466ba8c87d0a20156d41977bf3a": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 3050,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1201,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 4,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 314,
+          "output_tokens": 0
+         }
+        ],
+        "input_tokens": 4574,
+        "output_tokens": 0
+       },
+       "msg_0661c69e0d0f10db016aa5b46907e487d0b2ab27ef012eba7f": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 2,
+          "output_tokens": 226
+         }
+        ],
+        "input_tokens": 2,
+        "output_tokens": 226
+       }
+      },
+      "request_fields": {
+       "text.format": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 155,
+        "output_tokens": 0
+       },
+       "instructions": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 21,
+        "output_tokens": 0
+       }
+      }
+     },
+     "input_tokens": 4752,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 226,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 4978
+    },
+    "elapsed_s": 10.699127079977188,
+    "effort": "medium",
+    "call": 6
+   }
+  }
+ ],
+ "dp_max_mm": 643.0894136428833,
+ "frames": 467,
+ "duration_s": 31.1,
+ "safety": {
+  "theta_dev_ok": false,
+  "dp_ok": false
+ }
+}

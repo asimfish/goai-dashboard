@@ -1,0 +1,250 @@
+{
+  "workflow": "wf05_reagent_logistics_safety",
+  "status": "ok",
+  "env": "isaacsim51",
+  "files": [
+    "cam_wrist.png",
+    "inspect_assets.py",
+    "run_metrics.json",
+    "render_check.json",
+    "cam_head.png",
+    "recon_kit.log",
+    "contact_calibration.json",
+    "depth_head.png",
+    "depth_wrist.png",
+    "RUN_MANIFEST.json",
+    "depth_third.npy",
+    "usd_python.sh",
+    "asset_audit.json",
+    "cam_third.png",
+    "full.log",
+    "scene.usd",
+    "paper_material.py",
+    "placement_plan.json",
+    "prepare_assets.py",
+    "measure_support.py",
+    "RUN_INFO.json",
+    "export_joint_state.py",
+    "depth_wrist.npy",
+    "smoke_result.json",
+    "build_scene.py",
+    "scene_cfg.py",
+    "scene_state.json",
+    "depth_head.npy",
+    "build.log",
+    "failure_all.json",
+    "depth_third.png",
+    "REPORT.md",
+    "launch.sh",
+    "assets/cabinet_1.usda",
+    "assets/dispenser_1.usda",
+    "assets/crucible_used.usda",
+    "assets/rack_1.usda",
+    "assets/waste_1.usda",
+    "assets/bottle_acid.usda",
+    "assets/tube_used.usda",
+    "assets/room_mounted.usda",
+    "assets/tongs_1.usda",
+    "assets/balance_1.usda",
+    "assets/beaker_1.usda"
+  ],
+  "cameras_ok": true,
+  "joints": {
+    "/World/Stations/cabinet_1": {
+      "dof_names": [
+        "Door002_joint",
+        "Door001_joint",
+        "ReagentCabinet001_002_joint",
+        "Door003_joint",
+        "Door004_joint",
+        "Prop002_joint",
+        "Prop001_joint"
+      ],
+      "positions": [
+        5.087235393442754e-24,
+        -7.594166045793091e-14,
+        0.0,
+        3.751109395153433e-18,
+        5.671875551624644e-17,
+        0.0,
+        -3.6056596436905583e-16
+      ],
+      "velocities": [
+        -8.470280500058007e-22,
+        -6.505411558260039e-19,
+        -1.0598251598335667e-24,
+        2.245732100308222e-16,
+        3.4191641115892835e-15,
+        -1.790364408537452e-16,
+        -2.1282556608975128e-14
+      ],
+      "physics_limits": [
+        [
+          0.0,
+          1.5707963705062866
+        ],
+        [
+          -1.5707963705062866,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -1.5707963705062866,
+          0.0
+        ],
+        [
+          0.0,
+          1.5707963705062866
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.7853981852531433,
+          0.0
+        ]
+      ],
+      "physics_units": "radians for revolute, metres for prismatic",
+      "usd_joints": [
+        {
+          "name": "Door003_joint",
+          "path": "/World/Stations/cabinet_1/model/ReagentCabinet001_Door003/Door003_joint",
+          "type": "PhysicsRevoluteJoint",
+          "axis": "Z",
+          "usd_lower_limit": -90.0,
+          "usd_upper_limit": 0.0,
+          "usd_limit_unit": "degrees",
+          "body0": [
+            "/World/Stations/cabinet_1/model/ReagentCabinet001_002"
+          ],
+          "body1": [
+            "/World/Stations/cabinet_1/model/ReagentCabinet001_Door003"
+          ]
+        },
+        {
+          "name": "Door004_joint",
+          "path": "/World/Stations/cabinet_1/model/ReagentCabinet001_Door004/Door004_joint",
+          "type": "PhysicsRevoluteJoint",
+          "axis": "Z",
+          "usd_lower_limit": 0.0,
+          "usd_upper_limit": 90.0,
+          "usd_limit_unit": "degrees",
+          "body0": [
+            "/World/Stations/cabinet_1/model/ReagentCabinet001_002"
+          ],
+          "body1": [
+            "/World/Stations/cabinet_1/model/ReagentCabinet001_Door004"
+          ]
+        },
+        {
+          "name": "Prop002_joint",
+          "path": "/World/Stations/cabinet_1/model/ReagentCabinet001_Prop002/Prop002_joint",
+          "type": "PhysicsPrismaticJoint",
+          "axis": "X",
+          "usd_lower_limit": 0.0,
+          "usd_upper_limit": 0.0,
+          "usd_limit_unit": "asset stage metres",
+          "body0": [
+            "/World/Stations/cabinet_1/model/ReagentCabinet001_Door004"
+          ],
+          "body1": [
+            "/World/Stations/cabinet_1/model/ReagentCabinet001_Prop002"
+          ]
+        },
+        {
+          "name": "Door002_joint",
+          "path": "/World/Stations/cabinet_1/model/ReagentCabinet001_Door002/Door002_joint",
+          "type": "PhysicsRevoluteJoint",
+          "axis": "Z",
+          "usd_lower_limit": 0.0,
+          "usd_upper_limit": 90.0,
+          "usd_limit_unit": "degrees",
+          "body0": [
+            "/World/Stations/cabinet_1/model/ReagentCabinet001_001"
+          ],
+          "body1": [
+            "/World/Stations/cabinet_1/model/ReagentCabinet001_Door002"
+          ]
+        },
+        {
+          "name": "Prop001_joint",
+          "path": "/World/Stations/cabinet_1/model/ReagentCabinet001_Prop001/Prop001_joint",
+          "type": "PhysicsRevoluteJoint",
+          "axis": "Z",
+          "usd_lower_limit": -45.0,
+          "usd_upper_limit": 0.0,
+          "usd_limit_unit": "degrees",
+          "body0": [
+            "/World/Stations/cabinet_1/model/ReagentCabinet001_Door004"
+          ],
+          "body1": [
+            "/World/Stations/cabinet_1/model/ReagentCabinet001_Prop001"
+          ]
+        },
+        {
+          "name": "Door001_joint",
+          "path": "/World/Stations/cabinet_1/model/ReagentCabinet001_Door001/Door001_joint",
+          "type": "PhysicsRevoluteJoint",
+          "axis": "Z",
+          "usd_lower_limit": -90.0,
+          "usd_upper_limit": 0.0,
+          "usd_limit_unit": "degrees",
+          "body0": [
+            "/World/Stations/cabinet_1/model/ReagentCabinet001_001"
+          ],
+          "body1": [
+            "/World/Stations/cabinet_1/model/ReagentCabinet001_Door001"
+          ]
+        },
+        {
+          "name": "FixedJoint",
+          "path": "/World/Stations/cabinet_1/model/ReagentCabinet001_001/FixedJoint",
+          "type": "PhysicsFixedJoint",
+          "axis": null,
+          "usd_lower_limit": null,
+          "usd_upper_limit": null,
+          "usd_limit_unit": null,
+          "body0": [],
+          "body1": [
+            "/World/Stations/cabinet_1/model/ReagentCabinet001_001"
+          ]
+        },
+        {
+          "name": "ReagentCabinet001_002_joint",
+          "path": "/World/Stations/cabinet_1/model/ReagentCabinet001_002/ReagentCabinet001_002_joint",
+          "type": "PhysicsPrismaticJoint",
+          "axis": "X",
+          "usd_lower_limit": 0.0,
+          "usd_upper_limit": 0.0,
+          "usd_limit_unit": "asset stage metres",
+          "body0": [
+            "/World/Stations/cabinet_1/model/ReagentCabinet001_001"
+          ],
+          "body1": [
+            "/World/Stations/cabinet_1/model/ReagentCabinet001_002"
+          ]
+        },
+        {
+          "name": "FixedJoint",
+          "path": "/World/Stations/cabinet_1/model/handle/FixedJoint",
+          "type": "PhysicsFixedJoint",
+          "axis": null,
+          "usd_lower_limit": null,
+          "usd_upper_limit": null,
+          "usd_limit_unit": null,
+          "body0": [
+            "/World/Stations/cabinet_1/model/ReagentCabinet001_Door002"
+          ],
+          "body1": [
+            "/World/Stations/cabinet_1/model/handle"
+          ]
+        }
+      ],
+      "fixed_base": true
+    }
+  }
+}

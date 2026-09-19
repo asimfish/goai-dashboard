@@ -1,0 +1,737 @@
+{
+ "id": "alab_twin",
+ "title": "A-Lab task graph on the SafeLab digital twin",
+ "source": "Szymanski et al. 2023 Nature 624:86 (Methods; ED Fig. 1–3); alab_example task classes",
+ "robots": {
+  "fr3_A": "Station A (Labman R1 → Franka FR3)",
+  "ur5e_B": "Station B (UR5e R2 on 3.6 m rail)",
+  "fr3_C": "Station C (UR5e R3 → Franka FR3)"
+ },
+ "tasks": [
+  {
+   "id": "Starting",
+   "station": null,
+   "alab": "tasks/starting (register sample, label)",
+   "robot": null,
+   "primitives": []
+  },
+  {
+   "id": "PowderDosing",
+   "station": "A",
+   "alab": "PowderDosing → LabmanQuadrant (R1 Mitsubishi; here FR3 fr3_A)",
+   "robot": "fr3_A",
+   "safety": {
+    "dp_max_mm": 20,
+    "theta_dev_max_rad": 0.25,
+    "f_peak_max_n": 20,
+    "tilt_limit_rad": 0.85
+   },
+   "primitives": [
+    {
+     "op": "pick_place",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/paper",
+     "to": "/World/StationA/dosing_balance",
+     "note": "weighing paper onto the dosing balance; tare"
+    },
+    {
+     "op": "press_button",
+     "robot": "fr3_A",
+     "target": "/World/StationA/dosing_balance",
+     "note": "tare (Quantos auto-balance proxy)"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/precursor_1",
+     "to": "/World/StationA/dosing_balance",
+     "slot": "dose"
+    },
+    {
+     "op": "pour_powder",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/precursor_1",
+     "to": "/World/StationA/paper",
+     "tilt_max_rad": 0.85
+    },
+    {
+     "op": "weigh",
+     "robot": "fr3_A",
+     "target": "/World/StationA/dosing_balance"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/precursor_1",
+     "to": "home"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/precursor_2",
+     "to": "/World/StationA/dosing_balance",
+     "slot": "dose"
+    },
+    {
+     "op": "pour_powder",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/precursor_2",
+     "to": "/World/StationA/paper",
+     "tilt_max_rad": 0.85
+    },
+    {
+     "op": "weigh",
+     "robot": "fr3_A",
+     "target": "/World/StationA/dosing_balance"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/precursor_2",
+     "to": "home"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/precursor_3",
+     "to": "/World/StationA/dosing_balance",
+     "slot": "dose"
+    },
+    {
+     "op": "pour_powder",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/precursor_3",
+     "to": "/World/StationA/paper",
+     "tilt_max_rad": 0.85
+    },
+    {
+     "op": "weigh",
+     "robot": "fr3_A",
+     "target": "/World/StationA/dosing_balance"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/precursor_3",
+     "to": "home"
+    },
+    {
+     "op": "pour_powder",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/paper",
+     "to": "/World/StationA/carousel",
+     "slot": "vial_0",
+     "note": "powders into the mixing vial on the carousel"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/ethanol",
+     "to": "/World/StationA/carousel",
+     "slot": "vial_0",
+     "note": "solvent addition (ethanol, volume ∝ mass/density)"
+    },
+    {
+     "op": "pour_liquid",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/ethanol",
+     "to": "vial_0"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/ethanol",
+     "to": "home"
+    },
+    {
+     "op": "open_close",
+     "robot": "fr3_A",
+     "target": "/World/StationA/mixer",
+     "dof": "Lid",
+     "state": "open"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_A",
+     "obj": "vial_0",
+     "to": "/World/StationA/mixer",
+     "slot": "cup"
+    },
+    {
+     "op": "open_close",
+     "robot": "fr3_A",
+     "target": "/World/StationA/mixer",
+     "dof": "Lid",
+     "state": "close"
+    },
+    {
+     "op": "press_button",
+     "robot": "fr3_A",
+     "target": "/World/StationA/mixer",
+     "note": "Smart DAC 250 mix 9 min → wait event"
+    },
+    {
+     "op": "wait",
+     "robot": "fr3_A",
+     "process": "mixing",
+     "t_real_s": 540,
+     "t_sim_s": 10
+    },
+    {
+     "op": "open_close",
+     "robot": "fr3_A",
+     "target": "/World/StationA/mixer",
+     "dof": "Lid",
+     "state": "open"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_A",
+     "obj": "vial_0",
+     "to": "/World/StationA/carousel",
+     "slot": "vial_0"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/pipette",
+     "to": "vial_0",
+     "note": "rLine pipettor: slurry → alumina crucible"
+    },
+    {
+     "op": "pour_liquid",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/pipette",
+     "to": "crucible_A0"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_A",
+     "obj": "/World/StationA/pipette",
+     "to": "home"
+    },
+    {
+     "op": "open_close",
+     "robot": "fr3_A",
+     "target": "/World/StationA/drying_oven",
+     "dof": "Door",
+     "state": "open"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_A",
+     "obj": "crucible_A0",
+     "to": "/World/StationA/drying_oven",
+     "slot": "shelf"
+    },
+    {
+     "op": "open_close",
+     "robot": "fr3_A",
+     "target": "/World/StationA/drying_oven",
+     "dof": "Door",
+     "state": "close"
+    },
+    {
+     "op": "wait",
+     "robot": "fr3_A",
+     "process": "drying 80 °C",
+     "t_real_s": 3600,
+     "t_sim_s": 10
+    },
+    {
+     "op": "open_close",
+     "robot": "fr3_A",
+     "target": "/World/StationA/drying_oven",
+     "dof": "Door",
+     "state": "open"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_A",
+     "obj": "crucible_A0",
+     "to": "/World/StationA/carousel",
+     "slot": "crucible_0"
+    },
+    {
+     "op": "open_close",
+     "robot": "fr3_A",
+     "target": "/World/StationA/drying_oven",
+     "dof": "Door",
+     "state": "close"
+    }
+   ]
+  },
+  {
+   "id": "Moving_A_to_B",
+   "station": "A→B",
+   "alab": "Moving (run_programs: carousel → transfer rack → rail arm)",
+   "robot": "fr3_A→ur5e_B",
+   "safety": {
+    "dp_max_mm": 20,
+    "theta_dev_max_rad": 0.25,
+    "f_peak_max_n": 20,
+    "tilt_limit_rad": 0.85
+   },
+   "primitives": [
+    {
+     "op": "pick_place",
+     "robot": "fr3_A",
+     "obj": "crucible_A0",
+     "to": "/World/StationB/transfer_rack",
+     "slot": 0,
+     "note": "handover point between the two benches"
+    },
+    {
+     "op": "rail_move",
+     "robot": "ur5e_B",
+     "to_x": -6.2
+    },
+    {
+     "op": "pick_place",
+     "robot": "ur5e_B",
+     "obj": "crucible_A0",
+     "to": "/World/StationB/crucible_rack_2",
+     "slot": 0
+    }
+   ]
+  },
+  {
+   "id": "Heating",
+   "station": "B",
+   "alab": "Heating: open_box_furnace → move_rack_into_box_furnace → close → run_program → open → take_rack_out",
+   "robot": "ur5e_B",
+   "safety": {
+    "dp_max_mm": 20,
+    "theta_dev_max_rad": 0.15,
+    "f_peak_max_n": 10,
+    "tilt_limit_rad": 0.85
+   },
+   "primitives": [
+    {
+     "op": "rail_move",
+     "robot": "ur5e_B",
+     "to_x": -7.35
+    },
+    {
+     "op": "open_close",
+     "robot": "ur5e_B",
+     "target": "/World/StationB/furnace_3",
+     "dof": "Door",
+     "state": "open"
+    },
+    {
+     "op": "rail_move",
+     "robot": "ur5e_B",
+     "to_x": -6.2
+    },
+    {
+     "op": "grasp",
+     "robot": "ur5e_B",
+     "obj": "/World/StationB/crucible_rack_2",
+     "grasp_point": "handle"
+    },
+    {
+     "op": "rail_move",
+     "robot": "ur5e_B",
+     "to_x": -7.35,
+     "holding": "crucible_rack_2"
+    },
+    {
+     "op": "insert",
+     "robot": "ur5e_B",
+     "obj": "/World/StationB/crucible_rack_2",
+     "to": "/World/StationB/furnace_3",
+     "slot": "chamber",
+     "theta_dev_max_rad": 0.15
+    },
+    {
+     "op": "open_close",
+     "robot": "ur5e_B",
+     "target": "/World/StationB/furnace_3",
+     "dof": "Door",
+     "state": "close"
+    },
+    {
+     "op": "press_button",
+     "robot": "ur5e_B",
+     "target": "/World/StationB/furnace_3",
+     "note": "Eurotherm programme 2 °C/min→300 °C, 15 °C/min→1000 °C, 4 h"
+    },
+    {
+     "op": "wait",
+     "robot": "ur5e_B",
+     "process": "calcination",
+     "t_real_s": 14400,
+     "t_sim_s": 20
+    },
+    {
+     "op": "open_close",
+     "robot": "ur5e_B",
+     "target": "/World/StationB/furnace_3",
+     "dof": "Door",
+     "state": "open"
+    },
+    {
+     "op": "extract",
+     "robot": "ur5e_B",
+     "obj": "/World/StationB/crucible_rack_2",
+     "from_": "/World/StationB/furnace_3",
+     "theta_dev_max_rad": 0.15
+    },
+    {
+     "op": "rail_move",
+     "robot": "ur5e_B",
+     "to_x": -6.2,
+     "holding": "crucible_rack_2"
+    },
+    {
+     "op": "pick_place",
+     "robot": "ur5e_B",
+     "obj": "/World/StationB/crucible_rack_2",
+     "to": "bench_B",
+     "slot": "cooling"
+    },
+    {
+     "op": "rail_move",
+     "robot": "ur5e_B",
+     "to_x": -7.35
+    },
+    {
+     "op": "open_close",
+     "robot": "ur5e_B",
+     "target": "/World/StationB/furnace_3",
+     "dof": "Door",
+     "state": "close"
+    },
+    {
+     "op": "wait",
+     "robot": "ur5e_B",
+     "process": "cooling",
+     "t_real_s": 1800,
+     "t_sim_s": 5
+    }
+   ]
+  },
+  {
+   "id": "Moving_B_to_C",
+   "station": "B→C",
+   "alab": "Moving via transfer rack (R2 → R3)",
+   "robot": "ur5e_B→fr3_C",
+   "safety": {
+    "dp_max_mm": 20,
+    "theta_dev_max_rad": 0.25,
+    "f_peak_max_n": 20,
+    "tilt_limit_rad": 0.85
+   },
+   "primitives": [
+    {
+     "op": "pick_place",
+     "robot": "ur5e_B",
+     "obj": "crucible_A0",
+     "to": "/World/StationB/transfer_rack",
+     "slot": 1
+    },
+    {
+     "op": "handover",
+     "robot": "fr3_C",
+     "obj": "crucible_A0",
+     "from_": "/World/StationB/transfer_rack",
+     "note": "in the twin the racks are 4 m apart; the handover is a mobile-base or human step, shown as an event"
+    }
+   ]
+  },
+  {
+   "id": "RecoverPowder",
+   "station": "C",
+   "alab": "RecoverPowder: weigh crucible → dispense ball → shake 2 min → new vial uncap → pour → weigh → cap → discard crucible",
+   "robot": "fr3_C",
+   "safety": {
+    "dp_max_mm": 20,
+    "theta_dev_max_rad": 0.25,
+    "f_peak_max_n": 20,
+    "tilt_limit_rad": 0.85
+   },
+   "primitives": [
+    {
+     "op": "weigh",
+     "robot": "fr3_C",
+     "obj": "crucible_A0",
+     "target": "/World/StationC/balance"
+    },
+    {
+     "op": "press_button",
+     "robot": "fr3_C",
+     "target": "/World/StationC/ball_dispenser",
+     "note": "dispense_one 10 mm alumina ball into the crucible"
+    },
+    {
+     "op": "clamp",
+     "robot": "fr3_C",
+     "obj": "crucible_A0",
+     "to": "/World/StationC/shaker",
+     "note": "vertical shaker fixture (grab)"
+    },
+    {
+     "op": "press_button",
+     "robot": "fr3_C",
+     "target": "/World/StationC/shaker"
+    },
+    {
+     "op": "wait",
+     "robot": "fr3_C",
+     "process": "shaking",
+     "t_real_s": 120,
+     "t_sim_s": 6
+    },
+    {
+     "op": "grasp",
+     "robot": "fr3_C",
+     "obj": "crucible_A0",
+     "note": "shaker release"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_C",
+     "obj": "/World/StationC/vial_1",
+     "to": "/World/StationC/capper",
+     "slot": "cup"
+    },
+    {
+     "op": "uncap",
+     "robot": "fr3_C",
+     "obj": "/World/StationC/vial_1"
+    },
+    {
+     "op": "pour_powder",
+     "robot": "fr3_C",
+     "obj": "crucible_A0",
+     "to": "/World/StationC/vial_1",
+     "tilt_max_rad": 0.85
+    },
+    {
+     "op": "weigh",
+     "robot": "fr3_C",
+     "obj": "/World/StationC/vial_1",
+     "target": "/World/StationC/balance"
+    },
+    {
+     "op": "cap",
+     "robot": "fr3_C",
+     "obj": "/World/StationC/vial_1"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_C",
+     "obj": "/World/StationC/vial_1",
+     "to": "/World/StationC/vial_rack",
+     "slot": 0
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_C",
+     "obj": "crucible_A0",
+     "to": "/World/StationC/waste"
+    }
+   ]
+  },
+  {
+   "id": "PrepareSampleforXRD",
+   "station": "C",
+   "alab": "PrepareSampleforXRD: clean holder → uncap vial → pour through mesh → flatten with acrylic disc → weigh (≤3 top-ups) → return holder",
+   "robot": "fr3_C",
+   "safety": {
+    "dp_max_mm": 20,
+    "theta_dev_max_rad": 0.25,
+    "f_peak_max_n": 20,
+    "tilt_limit_rad": 0.85
+   },
+   "primitives": [
+    {
+     "op": "pick_place",
+     "robot": "fr3_C",
+     "obj": "holder_0",
+     "from_": "/World/StationC/xrd_holder_rack",
+     "to": "/World/StationC/balance"
+    },
+    {
+     "op": "press_button",
+     "robot": "fr3_C",
+     "target": "/World/StationC/balance",
+     "note": "tare"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_C",
+     "obj": "/World/StationC/vial_1",
+     "to": "/World/StationC/capper"
+    },
+    {
+     "op": "uncap",
+     "robot": "fr3_C",
+     "obj": "/World/StationC/vial_1"
+    },
+    {
+     "op": "pour_powder",
+     "robot": "fr3_C",
+     "obj": "/World/StationC/vial_1",
+     "to": "holder_0",
+     "via": "mesh",
+     "tilt_max_rad": 0.85
+    },
+    {
+     "op": "flatten",
+     "robot": "fr3_C",
+     "obj": "acrylic_disc",
+     "target": "holder_0"
+    },
+    {
+     "op": "weigh",
+     "robot": "fr3_C",
+     "target": "/World/StationC/balance",
+     "check": "mass ≥ target else top-up (max 3)"
+    },
+    {
+     "op": "cap",
+     "robot": "fr3_C",
+     "obj": "/World/StationC/vial_1"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_C",
+     "obj": "/World/StationC/vial_1",
+     "to": "/World/StationC/vial_rack",
+     "slot": 0
+    }
+   ]
+  },
+  {
+   "id": "Diffraction",
+   "station": "C",
+   "alab": "Diffraction: holder → Aeris → run_scan 2θ 10–100° (8 min) → out → slot dirty",
+   "robot": "fr3_C",
+   "safety": {
+    "dp_max_mm": 20,
+    "theta_dev_max_rad": 0.25,
+    "f_peak_max_n": 20,
+    "tilt_limit_rad": 0.85
+   },
+   "primitives": [
+    {
+     "op": "open_close",
+     "robot": "fr3_C",
+     "target": "/World/StationC/xrd",
+     "dof": "Door",
+     "state": "open"
+    },
+    {
+     "op": "insert",
+     "robot": "fr3_C",
+     "obj": "holder_0",
+     "to": "/World/StationC/xrd",
+     "slot": "stage"
+    },
+    {
+     "op": "open_close",
+     "robot": "fr3_C",
+     "target": "/World/StationC/xrd",
+     "dof": "Door",
+     "state": "close"
+    },
+    {
+     "op": "press_button",
+     "robot": "fr3_C",
+     "target": "/World/StationC/xrd"
+    },
+    {
+     "op": "wait",
+     "robot": "fr3_C",
+     "process": "XRD scan",
+     "t_real_s": 480,
+     "t_sim_s": 8
+    },
+    {
+     "op": "open_close",
+     "robot": "fr3_C",
+     "target": "/World/StationC/xrd",
+     "dof": "Door",
+     "state": "open"
+    },
+    {
+     "op": "extract",
+     "robot": "fr3_C",
+     "obj": "holder_0",
+     "from_": "/World/StationC/xrd"
+    },
+    {
+     "op": "pick_place",
+     "robot": "fr3_C",
+     "obj": "holder_0",
+     "to": "/World/StationC/xrd_holder_rack",
+     "slot": "dirty_0"
+    },
+    {
+     "op": "open_close",
+     "robot": "fr3_C",
+     "target": "/World/StationC/xrd",
+     "dof": "Door",
+     "state": "close"
+    }
+   ]
+  },
+  {
+   "id": "Ending",
+   "station": "C",
+   "alab": "Ending: vial to storage; XRD-AutoAnalyzer → ARROWS proposes next recipe (closes the loop to PowderDosing)",
+   "robot": "fr3_C",
+   "primitives": [
+    {
+     "op": "pick_place",
+     "robot": "fr3_C",
+     "obj": "/World/StationC/vial_1",
+     "to": "/World/StationC/vial_rack",
+     "slot": "storage"
+    }
+   ]
+  }
+ ],
+ "edges": [
+  [
+   "Starting",
+   "PowderDosing"
+  ],
+  [
+   "PowderDosing",
+   "Moving_A_to_B"
+  ],
+  [
+   "Moving_A_to_B",
+   "Heating"
+  ],
+  [
+   "Heating",
+   "Moving_B_to_C"
+  ],
+  [
+   "Moving_B_to_C",
+   "RecoverPowder"
+  ],
+  [
+   "RecoverPowder",
+   "PrepareSampleforXRD"
+  ],
+  [
+   "PrepareSampleforXRD",
+   "Diffraction"
+  ],
+  [
+   "Diffraction",
+   "Ending"
+  ],
+  [
+   "Ending",
+   "PowderDosing"
+  ]
+ ],
+ "n_primitives": 88,
+ "time_compression": "wait events: real minutes/hours → seconds in sim"
+}

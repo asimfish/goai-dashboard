@@ -1,0 +1,247 @@
+{
+ "min_px": 40,
+ "G5": {
+  "stations": {
+   "A": {
+    "targets": [
+     {
+      "target": "precursor_1",
+      "pixels_per_camera": {
+       "station_a": 921,
+       "a_front": 833,
+       "a_side": 335,
+       "a_top": 545
+      },
+      "cameras_above_floor": 4,
+      "pass": true,
+      "best_camera": "station_a"
+     },
+     {
+      "target": "precursor_2",
+      "pixels_per_camera": {
+       "station_a": 925,
+       "a_front": 834,
+       "a_side": 306,
+       "a_top": 543
+      },
+      "cameras_above_floor": 4,
+      "pass": true,
+      "best_camera": "station_a"
+     },
+     {
+      "target": "paper",
+      "pixels_per_camera": {
+       "station_a": 625,
+       "a_front": 416,
+       "a_side": 0,
+       "a_top": 1156
+      },
+      "cameras_above_floor": 3,
+      "pass": true,
+      "best_camera": "a_top"
+     },
+     {
+      "target": "crucible_A0",
+      "pixels_per_camera": {
+       "station_a": 697,
+       "a_front": 640,
+       "a_side": 718,
+       "a_top": 684
+      },
+      "cameras_above_floor": 4,
+      "pass": true,
+      "best_camera": "a_side"
+     },
+     {
+      "target": "carousel",
+      "pixels_per_camera": {
+       "station_a": 83128,
+       "a_front": 65261,
+       "a_side": 50981,
+       "a_top": 79066
+      },
+      "cameras_above_floor": 4,
+      "pass": true,
+      "best_camera": "station_a"
+     },
+     {
+      "target": "dosing_balance",
+      "pixels_per_camera": {
+       "station_a": 18154,
+       "a_front": 15884,
+       "a_side": 43570,
+       "a_top": 14760
+      },
+      "cameras_above_floor": 4,
+      "pass": true,
+      "best_camera": "a_side"
+     }
+    ],
+    "pass": true,
+    "failing": []
+   },
+   "B": {
+    "targets": [
+     {
+      "target": "crucible_rack_2",
+      "pixels_per_camera": {
+       "station_b": 2350,
+       "b_front": 2733,
+       "b_side": 2486,
+       "b_top": 3971
+      },
+      "cameras_above_floor": 4,
+      "pass": true,
+      "best_camera": "b_top"
+     },
+     {
+      "target": "crucible_1",
+      "pixels_per_camera": {
+       "station_b": 546,
+       "b_front": 774,
+       "b_side": 337,
+       "b_top": 659
+      },
+      "cameras_above_floor": 4,
+      "pass": true,
+      "best_camera": "b_front"
+     },
+     {
+      "target": "crucible_2",
+      "pixels_per_camera": {
+       "station_b": 571,
+       "b_front": 783,
+       "b_side": 368,
+       "b_top": 658
+      },
+      "cameras_above_floor": 4,
+      "pass": true,
+      "best_camera": "b_front"
+     },
+     {
+      "target": "crucible_3",
+      "pixels_per_camera": {
+       "station_b": 598,
+       "b_front": 781,
+       "b_side": 416,
+       "b_top": 659
+      },
+      "cameras_above_floor": 4,
+      "pass": true,
+      "best_camera": "b_front"
+     },
+     {
+      "target": "crucible_4",
+      "pixels_per_camera": {
+       "station_b": 648,
+       "b_front": 778,
+       "b_side": 1088,
+       "b_top": 660
+      },
+      "cameras_above_floor": 4,
+      "pass": true,
+      "best_camera": "b_side"
+     },
+     {
+      "target": "transfer_rack",
+      "pixels_per_camera": {
+       "station_b": 3642,
+       "b_front": 4579,
+       "b_side": 4325,
+       "b_top": 3123
+      },
+      "cameras_above_floor": 4,
+      "pass": true,
+      "best_camera": "b_front"
+     }
+    ],
+    "pass": true,
+    "failing": []
+   },
+   "C": {
+    "targets": [
+     {
+      "target": "holder_0",
+      "pixels_per_camera": {
+       "station_c": 262,
+       "c_front": 87,
+       "c_side": 191,
+       "c_top": 0
+      },
+      "cameras_above_floor": 3,
+      "pass": true,
+      "best_camera": "station_c"
+     },
+     {
+      "target": "vial_1",
+      "pixels_per_camera": {
+       "station_c": 367,
+       "c_front": 402,
+       "c_side": 412,
+       "c_top": 89
+      },
+      "cameras_above_floor": 4,
+      "pass": true,
+      "best_camera": "c_side"
+     },
+     {
+      "target": "xrd_holder_rack",
+      "pixels_per_camera": {
+       "station_c": 15434,
+       "c_front": 6961,
+       "c_side": 9407,
+       "c_top": 8291
+      },
+      "cameras_above_floor": 4,
+      "pass": true,
+      "best_camera": "station_c"
+     },
+     {
+      "target": "balance",
+      "pixels_per_camera": {
+       "station_c": 15105,
+       "c_front": 9151,
+       "c_side": 55532,
+       "c_top": 15831
+      },
+      "cameras_above_floor": 4,
+      "pass": true,
+      "best_camera": "c_side"
+     },
+     {
+      "target": "xrd",
+      "pixels_per_camera": {
+       "station_c": 167853,
+       "c_front": 119617,
+       "c_side": 53183,
+       "c_top": 178419
+      },
+      "cameras_above_floor": 4,
+      "pass": true,
+      "best_camera": "c_top"
+     }
+    ],
+    "pass": true,
+    "failing": []
+   }
+  },
+  "prims_visible_per_camera": {
+   "station_a": 154,
+   "a_front": 146,
+   "a_side": 279,
+   "a_top": 155,
+   "station_b": 254,
+   "b_front": 282,
+   "b_side": 187,
+   "b_top": 191,
+   "station_c": 236,
+   "c_front": 314,
+   "c_side": 207,
+   "c_top": 304
+  },
+  "criterion": "a target passes if at least 2 of its 4 fixed cameras each show >= 40 px of it",
+  "scope": "initial state, doors closed, robots at home; instance-id pixels only, no depth ordering analysis"
+ },
+ "status": "ok",
+ "wall_s": 82.9
+}

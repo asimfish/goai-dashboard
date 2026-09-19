@@ -1,0 +1,3150 @@
+{
+ "prims": {
+  "/World/StationB/furnace_1": {
+   "prim_path": "/World/StationB/furnace_1",
+   "kind": "station",
+   "asset_key": "art:Oven065",
+   "usd": "articulated/Oven065/Oven065_small.usd",
+   "pose": [
+    -9.37,
+    -1.75,
+    0.9
+   ],
+   "yaw_deg": 180,
+   "semantic": "box_furnace",
+   "articulated": true,
+   "target_size_m": [
+    0.7,
+    0.55,
+    0.62
+   ],
+   "scale_axis": "x",
+   "name": "furnace_1",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/furnace_1.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/articulated/Oven065/Oven065_small.usd",
+   "uniform_scale": 0.8403217894654631,
+   "world_pose": [
+    -9.37,
+    -1.75,
+    1.2077324721400742,
+    6.123233995736766e-17,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.34999998322387427,
+     -0.2670404689764805,
+     -0.30773247214007426
+    ],
+    "max": [
+     0.35000000826741484,
+     0.2670405002809062,
+     0.30773249718361484
+    ]
+   },
+   "changes": [
+    "scaled x0.84 to real size [0.7, 0.55, 0.62]"
+   ],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -9.369999885559082,
+    -1.773516058921814,
+    1.2077324390411377,
+    5.593527863112513e-10,
+    -1.8025551884459645e-10,
+    1.1286554156553219e-11,
+    1.0
+   ]
+  },
+  "/World/StationB/furnace_2": {
+   "prim_path": "/World/StationB/furnace_2",
+   "kind": "station",
+   "asset_key": "art:Oven065",
+   "usd": "articulated/Oven065/Oven065_small.usd",
+   "pose": [
+    -8.62,
+    -1.75,
+    0.9
+   ],
+   "yaw_deg": 180,
+   "semantic": "box_furnace",
+   "articulated": true,
+   "target_size_m": [
+    0.7,
+    0.55,
+    0.62
+   ],
+   "scale_axis": "x",
+   "name": "furnace_2",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/furnace_2.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/articulated/Oven065/Oven065_small.usd",
+   "uniform_scale": 0.8403217894654631,
+   "world_pose": [
+    -8.62,
+    -1.75,
+    1.2077324721400742,
+    6.123233995736766e-17,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.34999998322387427,
+     -0.2670404689764805,
+     -0.30773247214007426
+    ],
+    "max": [
+     0.35000000826741484,
+     0.2670405002809062,
+     0.30773249718361484
+    ]
+   },
+   "changes": [
+    "scaled x0.84 to real size [0.7, 0.55, 0.62]"
+   ],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -8.619999885559082,
+    -1.773516058921814,
+    1.2077324390411377,
+    5.593527863112513e-10,
+    -1.8025551884459645e-10,
+    1.1286554156553219e-11,
+    1.0
+   ]
+  },
+  "/World/StationB/furnace_3": {
+   "prim_path": "/World/StationB/furnace_3",
+   "kind": "station",
+   "asset_key": "art:Oven065",
+   "usd": "articulated/Oven065/Oven065_small.usd",
+   "pose": [
+    -6.83,
+    -1.75,
+    0.9
+   ],
+   "yaw_deg": 180,
+   "semantic": "box_furnace",
+   "articulated": true,
+   "target_size_m": [
+    0.7,
+    0.55,
+    0.62
+   ],
+   "scale_axis": "x",
+   "name": "furnace_3",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/furnace_3.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/articulated/Oven065/Oven065_small.usd",
+   "uniform_scale": 0.8403217894654631,
+   "world_pose": [
+    -6.83,
+    -1.75,
+    1.2077324721400742,
+    6.123233995736766e-17,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.34999998322387427,
+     -0.2670404689764805,
+     -0.30773247214007426
+    ],
+    "max": [
+     0.35000000826741484,
+     0.2670405002809062,
+     0.30773249718361484
+    ]
+   },
+   "changes": [
+    "scaled x0.84 to real size [0.7, 0.55, 0.62]"
+   ],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -6.829999923706055,
+    -1.773516058921814,
+    1.2077324390411377,
+    5.593527863112513e-10,
+    -1.8025551884459645e-10,
+    1.1286554156553219e-11,
+    1.0
+   ]
+  },
+  "/World/StationB/furnace_4": {
+   "prim_path": "/World/StationB/furnace_4",
+   "kind": "station",
+   "asset_key": "art:Oven065",
+   "usd": "articulated/Oven065/Oven065_small.usd",
+   "pose": [
+    -6.08,
+    -1.75,
+    0.9
+   ],
+   "yaw_deg": 180,
+   "semantic": "box_furnace",
+   "articulated": true,
+   "target_size_m": [
+    0.7,
+    0.55,
+    0.62
+   ],
+   "scale_axis": "x",
+   "name": "furnace_4",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/furnace_4.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/articulated/Oven065/Oven065_small.usd",
+   "uniform_scale": 0.8403217894654631,
+   "world_pose": [
+    -6.08,
+    -1.75,
+    1.2077324721400742,
+    6.123233995736766e-17,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.34999998322387427,
+     -0.2670404689764805,
+     -0.30773247214007426
+    ],
+    "max": [
+     0.35000000826741484,
+     0.2670405002809062,
+     0.30773249718361484
+    ]
+   },
+   "changes": [
+    "scaled x0.84 to real size [0.7, 0.55, 0.62]"
+   ],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -6.079999923706055,
+    -1.773516058921814,
+    1.2077324390411377,
+    5.593527863112513e-10,
+    -1.8025551884459645e-10,
+    1.1286554156553219e-11,
+    1.0
+   ]
+  },
+  "/World/StationB/rail": {
+   "prim_path": "/World/StationB/rail",
+   "kind": "station",
+   "asset_key": null,
+   "usd": null,
+   "pose": [
+    -7.73,
+    -0.78,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "linear_rail",
+   "articulated": false,
+   "procedural": "rail",
+   "target_size_m": [
+    3.6,
+    0.14,
+    0.1
+   ],
+   "carriage_offset": 1.28,
+   "name": "rail",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/rail.usda",
+   "source_usd": null,
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -7.73,
+    -0.78,
+    0.8999999993294477,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -1.7999999986588955,
+     -0.1120000034570694,
+     6.705522526129215e-10
+    ],
+    "max": [
+     1.7999999986588955,
+     0.1120000034570694,
+     0.15999999932944775
+    ]
+   },
+   "changes": [
+    "procedural rail"
+   ],
+   "rest_offset_m": 0.0,
+   "status": "created",
+   "root_pose": [
+    -7.730000019073486,
+    -0.7799999713897705,
+    0.8999999761581421,
+    1.0,
+    0.0,
+    -3.367908729678959e-11,
+    0.0
+   ]
+  },
+  "/World/StationB/crucible_rack_1": {
+   "prim_path": "/World/StationB/crucible_rack_1",
+   "kind": "object",
+   "asset_key": null,
+   "usd": null,
+   "pose": [
+    -9.45,
+    -1.25,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "crucible_tray",
+   "articulated": false,
+   "labware": "crucible_tray",
+   "procedural": "tray4",
+   "name": "crucible_rack_1",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/crucible_rack_1.usda",
+   "source_usd": null,
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -9.45,
+    -1.25,
+    0.9020000001899898,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.13100000005215406,
+     -0.07000000029802322,
+     -1.899898051382909e-10
+    ],
+    "max": [
+     0.12999999523162842,
+     0.07000000029802322,
+     0.05500000037252903
+    ]
+   },
+   "changes": [
+    "procedural tray4"
+   ],
+   "rest_offset_m": 0.0008,
+   "status": "created",
+   "root_pose": [
+    -9.463330268859863,
+    -1.2513630390167236,
+    0.9231885671615601,
+    0.999998152256012,
+    -2.953429975605104e-05,
+    0.0004743426979985088,
+    0.0018645355012267828
+   ]
+  },
+  "/World/StationB/crucible_rack_2": {
+   "prim_path": "/World/StationB/crucible_rack_2",
+   "kind": "object",
+   "asset_key": null,
+   "usd": null,
+   "pose": [
+    -5.95,
+    -1.25,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "crucible_tray",
+   "articulated": false,
+   "labware": "crucible_tray",
+   "procedural": "tray4",
+   "name": "crucible_rack_2",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/crucible_rack_2.usda",
+   "source_usd": null,
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -5.95,
+    -1.25,
+    0.9020000001899898,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.13100000005215406,
+     -0.07000000029802322,
+     -1.899898051382909e-10
+    ],
+    "max": [
+     0.12999999523162842,
+     0.07000000029802322,
+     0.05500000037252903
+    ]
+   },
+   "changes": [
+    "procedural tray4"
+   ],
+   "rest_offset_m": 0.0008,
+   "status": "created",
+   "root_pose": [
+    -5.965726852416992,
+    -1.2087292671203613,
+    0.9232603311538696,
+    0.9992696642875671,
+    -7.427478294630419e-07,
+    2.0197230696794577e-05,
+    -0.03821093961596489
+   ]
+  },
+  "/World/StationB/crucible_1": {
+   "prim_path": "/World/StationB/crucible_1",
+   "kind": "object",
+   "asset_key": "Crucible",
+   "usd": "solid_assets_all/Crucible/Crucible001.usd",
+   "pose": [
+    -9.54,
+    -1.25,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "crucible",
+   "articulated": false,
+   "labware": "crucible",
+   "name": "crucible_1",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/crucible_1.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Crucible/Crucible001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -9.54,
+    -1.25,
+    0.9394409034848213,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.03583374246954918,
+     -0.03583374619483948,
+     -0.03744090348482132
+    ],
+    "max": [
+     0.035833749920129776,
+     0.03583374619483948,
+     0.03744090348482132
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -9.549673080444336,
+    -1.2530959844589233,
+    0.9707850217819214,
+    0.9935450553894043,
+    0.0033829458989202976,
+    0.014243723824620247,
+    0.11248914897441864
+   ]
+  },
+  "/World/StationB/crucible_2": {
+   "prim_path": "/World/StationB/crucible_2",
+   "kind": "object",
+   "asset_key": "Crucible",
+   "usd": "solid_assets_all/Crucible/Crucible001.usd",
+   "pose": [
+    -9.48,
+    -1.25,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "crucible",
+   "articulated": false,
+   "labware": "crucible",
+   "name": "crucible_2",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/crucible_2.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Crucible/Crucible001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -9.48,
+    -1.25,
+    0.9394409034848213,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.03583374246954918,
+     -0.03583374619483948,
+     -0.03744090348482132
+    ],
+    "max": [
+     0.035833749920129776,
+     0.03583374619483948,
+     0.03744090348482132
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -9.466946601867676,
+    -1.2490429878234863,
+    0.9726572632789612,
+    0.9947984218597412,
+    -0.04034706950187683,
+    -0.09329067915678024,
+    -0.0067171319387853146
+   ]
+  },
+  "/World/StationB/crucible_3": {
+   "prim_path": "/World/StationB/crucible_3",
+   "kind": "object",
+   "asset_key": "Crucible",
+   "usd": "solid_assets_all/Crucible/Crucible001.usd",
+   "pose": [
+    -9.42,
+    -1.25,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "crucible",
+   "articulated": false,
+   "labware": "crucible",
+   "name": "crucible_3",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/crucible_3.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Crucible/Crucible001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -9.42,
+    -1.25,
+    0.9394409034848213,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.03583374246954918,
+     -0.03583374619483948,
+     -0.03744090348482132
+    ],
+    "max": [
+     0.035833749920129776,
+     0.03583374619483948,
+     0.03744090348482132
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -9.400201797485352,
+    -1.2454851865768433,
+    0.9742979407310486,
+    0.9960792064666748,
+    -0.007774116471409798,
+    0.0832877978682518,
+    0.028790008276700974
+   ]
+  },
+  "/World/StationB/crucible_4": {
+   "prim_path": "/World/StationB/crucible_4",
+   "kind": "object",
+   "asset_key": "Crucible",
+   "usd": "solid_assets_all/Crucible/Crucible001.usd",
+   "pose": [
+    -9.36,
+    -1.25,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "crucible",
+   "articulated": false,
+   "labware": "crucible",
+   "name": "crucible_4",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/crucible_4.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Crucible/Crucible001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -9.36,
+    -1.25,
+    0.9394409034848213,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.03583374246954918,
+     -0.03583374619483948,
+     -0.03744090348482132
+    ],
+    "max": [
+     0.035833749920129776,
+     0.03583374619483948,
+     0.03744090348482132
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -9.336385726928711,
+    -1.2393945455551147,
+    0.9697779417037964,
+    0.9984491467475891,
+    -0.007036859635263681,
+    -0.006097756791859865,
+    0.054886993020772934
+   ]
+  },
+  "/World/StationB/transfer_rack": {
+   "prim_path": "/World/StationB/transfer_rack",
+   "kind": "station",
+   "asset_key": "Test_Tube_Rack",
+   "usd": "solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+   "pose": [
+    -5.85,
+    -0.66,
+    0.9
+   ],
+   "yaw_deg": 0,
+   "semantic": "transfer_rack",
+   "articulated": false,
+   "name": "transfer_rack",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/transfer_rack.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -5.85,
+    -0.66,
+    0.9367499999701977,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.1094968244433403,
+     -0.037400022149086,
+     -0.03674999997019768
+    ],
+    "max": [
+     0.1094968244433403,
+     0.037400022149086,
+     0.03674999624490738
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -6.900000095367432,
+    3.4000000953674316,
+    0.9367499947547913,
+    1.0000001192092896,
+    -2.271323823466176e-10,
+    -5.0628844866507094e-11,
+    -1.1374543668063453e-11
+   ]
+  },
+  "/World/StationA/carousel": {
+   "prim_path": "/World/StationA/carousel",
+   "kind": "station",
+   "asset_key": null,
+   "usd": null,
+   "pose": [
+    -6.45,
+    1.95,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "carousel",
+   "articulated": false,
+   "procedural": "carousel",
+   "target_size_m": [
+    0.5,
+    0.5,
+    0.12
+   ],
+   "name": "carousel",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/carousel.usda",
+   "source_usd": null,
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -6.45,
+    1.95,
+    0.900000000372529,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.25,
+     -0.25,
+     -3.725290284584126e-10
+    ],
+    "max": [
+     0.25,
+     0.25,
+     0.12500000037252904
+    ]
+   },
+   "changes": [
+    "procedural carousel"
+   ],
+   "rest_offset_m": 0.0,
+   "status": "created",
+   "root_pose": [
+    -6.449999809265137,
+    1.9500000476837158,
+    0.8999999761581421,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "/World/StationA/dosing_balance": {
+   "prim_path": "/World/StationA/dosing_balance",
+   "kind": "station",
+   "asset_key": "Precision_Electronic_Balance",
+   "usd": "solid_assets_all/Precision_Electronic_Balance/PrecisionElectronicBalance001.usd",
+   "pose": [
+    -5.9,
+    1.0,
+    0.9
+   ],
+   "yaw_deg": -90,
+   "semantic": "dosing_station",
+   "articulated": false,
+   "name": "dosing_balance",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/dosing_balance.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Precision_Electronic_Balance/PrecisionElectronicBalance001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -5.9,
+    1.0,
+    0.9689155757427216,
+    0.7071067811865476,
+    0.0,
+    0.0,
+    -0.7071067811865475
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.09500002861022949,
+     -0.12203957885503769,
+     -0.06891557574272156
+    ],
+    "max": [
+     0.09500002861022949,
+     0.12278674288542273,
+     0.06891557574272156
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -5.900000095367432,
+    1.0,
+    0.968915581703186,
+    -0.70710688829422,
+    2.7234696720057627e-09,
+    2.5415994309163636e-10,
+    0.7071068286895752
+   ]
+  },
+  "/World/StationA/paper": {
+   "prim_path": "/World/StationA/paper",
+   "kind": "object",
+   "asset_key": "weighing_paper",
+   "usd": "solid_assets_all/weighing_paper/WeighingPaper001.usd",
+   "pose": [
+    -6.05,
+    1.22,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "weighing_paper",
+   "articulated": false,
+   "labware": "xrd_holder",
+   "name": "paper",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/paper.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/weighing_paper/WeighingPaper001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -6.05,
+    1.22,
+    0.9020000020431835,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.04500001358147765,
+     -0.04500001358803431,
+     -2.0431835566450453e-09
+    ],
+    "max": [
+     0.045000028840267436,
+     0.0450000288468241,
+     0.00030000211239241607
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -6.050000190734863,
+    1.2200000286102295,
+    -6.424455642700195,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "/World/StationA/mixer": {
+   "prim_path": "/World/StationA/mixer",
+   "kind": "station",
+   "asset_key": "art:HighSpeedCentrifuge001",
+   "usd": "articulated/HighSpeedCentrifuge001/HighSpeedCentrifuge001.usd",
+   "pose": [
+    -5.85,
+    1.72,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "mixer",
+   "articulated": false,
+   "target_size_m": [
+    0.32,
+    0.36,
+    0.3
+   ],
+   "name": "mixer",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/mixer.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/articulated/HighSpeedCentrifuge001/HighSpeedCentrifuge001.usd",
+   "uniform_scale": 0.8269362076079172,
+   "world_pose": [
+    -5.85,
+    1.72,
+    1.0033697094334424,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.131317475552983,
+     -0.17491613068090117,
+     -0.10336970943344242
+    ],
+    "max": [
+     0.13330212692044252,
+     0.18508385963362783,
+     0.09905040749278052
+    ]
+   },
+   "changes": [
+    "scaled x0.83 to real size [0.32, 0.36, 0.3]"
+   ],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -5.849999904632568,
+    1.7200000286102295,
+    1.003369688987732,
+    1.0000001192092896,
+    1.7399526264227916e-10,
+    -1.83617593352281e-10,
+    -3.855599173263613e-11
+   ]
+  },
+  "/World/StationA/drying_oven": {
+   "prim_path": "/World/StationA/drying_oven",
+   "kind": "station",
+   "asset_key": "art:Oven065",
+   "usd": "articulated/Oven065/Oven065_small.usd",
+   "pose": [
+    -6.95,
+    2.02,
+    0.9
+   ],
+   "yaw_deg": 0,
+   "semantic": "drying_oven",
+   "articulated": true,
+   "target_size_m": [
+    0.4,
+    0.45,
+    0.5
+   ],
+   "scale_axis": "z",
+   "name": "drying_oven",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/drying_oven.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/articulated/Oven065/Oven065_small.usd",
+   "uniform_scale": 0.6826723056021337,
+   "world_pose": [
+    -6.95,
+    2.02,
+    1.1499999957578644,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.28433786565557106,
+     -0.2169420589482356,
+     -0.24999999575786447
+    ],
+    "max": [
+     0.2843378860007917,
+     0.21694208437976137,
+     0.2500000161030851
+    ]
+   },
+   "changes": [
+    "scaled x0.68 to real size [0.4, 0.45, 0.5]"
+   ],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -6.949999809265137,
+    2.0391042232513428,
+    1.149999976158142,
+    1.0,
+    -3.3548528538540623e-12,
+    4.416714216581852e-11,
+    5.875386288600737e-10
+   ]
+  },
+  "/World/StationA/precursor_1": {
+   "prim_path": "/World/StationA/precursor_1",
+   "kind": "object",
+   "asset_key": "brown_reagent_bottle_small",
+   "usd": "solid_assets_all/brown_reagent_bottle_small/ReagentBottle004.usd",
+   "pose": [
+    -7.0,
+    0.95,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "precursor_bottle",
+   "articulated": false,
+   "labware": "precursor_bottle",
+   "name": "precursor_1",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/precursor_1.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/brown_reagent_bottle_small/ReagentBottle004.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -7.0,
+    0.95,
+    0.9543493140935898,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.02741215005517006,
+     -0.02741215191781521,
+     -0.05234931409358978
+    ],
+    "max": [
+     0.02741215005517006,
+     0.02741214446723461,
+     0.04949683681443939
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -4.772340297698975,
+    3.1680185794830322,
+    0.027592642232775688,
+    -0.2572328746318817,
+    -0.5948044061660767,
+    -0.382562518119812,
+    -0.6585475206375122
+   ]
+  },
+  "/World/StationA/precursor_2": {
+   "prim_path": "/World/StationA/precursor_2",
+   "kind": "object",
+   "asset_key": "clear_reagent_bottle_small",
+   "usd": "solid_assets_all/clear_reagent_bottle_small/ReagentBottle003.usd",
+   "pose": [
+    -7.0,
+    1.1,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "precursor_bottle",
+   "articulated": false,
+   "labware": "precursor_bottle",
+   "name": "precursor_2",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/precursor_2.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/clear_reagent_bottle_small/ReagentBottle003.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -7.0,
+    1.1,
+    0.9543493140935898,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.02741215005517006,
+     -0.02741215191781521,
+     -0.05234931409358978
+    ],
+    "max": [
+     0.02741215005517006,
+     0.02741214446723461,
+     0.04949683681443939
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    1.7183966636657715,
+    2.4157865047454834,
+    0.05447082594037056,
+    -0.9891201257705688,
+    0.01379508338868618,
+    0.017557861283421516,
+    -0.14540565013885498
+   ]
+  },
+  "/World/StationA/precursor_3": {
+   "prim_path": "/World/StationA/precursor_3",
+   "kind": "object",
+   "asset_key": "clear_reagent_bottle_large",
+   "usd": "solid_assets_all/clear_reagent_bottle_large/ReagentBottle002.usd",
+   "pose": [
+    -6.85,
+    0.95,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "precursor_bottle",
+   "articulated": false,
+   "labware": "precursor_bottle",
+   "name": "precursor_3",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/precursor_3.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/clear_reagent_bottle_large/ReagentBottle002.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -6.85,
+    0.95,
+    0.9726025436520577,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.03489227592945099,
+     -0.03497324511408806,
+     -0.07060254365205765
+    ],
+    "max": [
+     0.03489227592945099,
+     0.03497323766350746,
+     0.07058337431024894
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -6.848546028137207,
+    0.9683246612548828,
+    0.9617577195167542,
+    0.28995901346206665,
+    -0.6149137020111084,
+    0.4703229069709778,
+    -0.5626733899116516
+   ]
+  },
+  "/World/StationA/precursor_4": {
+   "prim_path": "/World/StationA/precursor_4",
+   "kind": "object",
+   "asset_key": "brown_reagent_bottle_large",
+   "usd": "solid_assets_all/brown_reagent_bottle_large/ReagentBottle001.usd",
+   "pose": [
+    -6.85,
+    1.1,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "precursor_bottle",
+   "articulated": false,
+   "labware": "precursor_bottle",
+   "name": "precursor_4",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/precursor_4.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/brown_reagent_bottle_large/ReagentBottle001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -6.85,
+    1.1,
+    0.9726025436520577,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.03489227592945099,
+     -0.03497324511408806,
+     -0.07060254365205765
+    ],
+    "max": [
+     0.03489227592945099,
+     0.03497323766350746,
+     0.07058337431024894
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -7.055170059204102,
+    1.5574246644973755,
+    0.9581671953201294,
+    0.22071723639965057,
+    0.21572265028953552,
+    0.6743820905685425,
+    -0.6707879304885864
+   ]
+  },
+  "/World/StationA/vial_rack": {
+   "prim_path": "/World/StationA/vial_rack",
+   "kind": "station",
+   "asset_key": "Test_Tube_Rack",
+   "usd": "solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+   "pose": [
+    -5.85,
+    1.4,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "storage_rack",
+   "articulated": false,
+   "name": "vial_rack",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/vial_rack.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -5.85,
+    1.4,
+    0.9367499999701977,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.1094968244433403,
+     -0.037400022149086,
+     -0.03674999997019768
+    ],
+    "max": [
+     0.1094968244433403,
+     0.037400022149086,
+     0.03674999624490738
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -4.699999809265137,
+    3.619999885559082,
+    0.9367499947547913,
+    1.0000001192092896,
+    -2.271323823466176e-10,
+    -5.0628844866507094e-11,
+    -1.1374543668063453e-11
+   ]
+  },
+  "/World/StationA/crucible_A0": {
+   "prim_path": "/World/StationA/crucible_A0",
+   "kind": "object",
+   "asset_key": "Crucible",
+   "usd": "solid_assets_all/Crucible/Crucible001.usd",
+   "pose": [
+    -7.05,
+    1.36,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "crucible",
+   "articulated": false,
+   "labware": "crucible",
+   "name": "crucible_A0",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/crucible_A0.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Crucible/Crucible001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -7.05,
+    1.36,
+    0.9394409034848213,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.03583374246954918,
+     -0.03583374619483948,
+     -0.03744090348482132
+    ],
+    "max": [
+     0.035833749920129776,
+     0.03583374619483948,
+     0.03744090348482132
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -8.190980911254883,
+    3.883265495300293,
+    0.008972321636974812,
+    0.12780162692070007,
+    0.6430150270462036,
+    0.09070328623056412,
+    -0.7496475577354431
+   ]
+  },
+  "/World/StationA/ethanol": {
+   "prim_path": "/World/StationA/ethanol",
+   "kind": "object",
+   "asset_key": "clear_reagent_bottle_large",
+   "usd": "solid_assets_all/clear_reagent_bottle_large/ReagentBottle002.usd",
+   "pose": [
+    -7.0,
+    1.6,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "solvent_bottle",
+   "articulated": false,
+   "labware": "precursor_bottle",
+   "name": "ethanol",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/ethanol.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/clear_reagent_bottle_large/ReagentBottle002.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -7.0,
+    1.6,
+    0.9726025436520577,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.03489227592945099,
+     -0.03497324511408806,
+     -0.07060254365205765
+    ],
+    "max": [
+     0.03489227592945099,
+     0.03497323766350746,
+     0.07058337431024894
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -4.80199670791626,
+    4.011203289031982,
+    0.8704867959022522,
+    -0.2796178460121155,
+    -0.6283465623855591,
+    -0.5939111113548279,
+    -0.41744938492774963
+   ]
+  },
+  "/World/StationA/pipette": {
+   "prim_path": "/World/StationA/pipette",
+   "kind": "object",
+   "asset_key": "Micropipette",
+   "usd": "solid_assets_all/Micropipette/Micropipette001.usd",
+   "pose": [
+    -7.0,
+    1.82,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "pipettor",
+   "articulated": false,
+   "labware": "pipette",
+   "name": "pipette",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/pipette.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Micropipette/Micropipette001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -7.0,
+    1.82,
+    1.0143917996883391,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.04051673412322998,
+     -0.011780564673244953,
+     -0.11239179968833923
+    ],
+    "max": [
+     0.020637847017496824,
+     0.012745696119964123,
+     0.11384485834251218
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -6.901844024658203,
+    1.7812353372573853,
+    0.9349581003189087,
+    -0.5994580984115601,
+    0.4745056629180908,
+    -0.5242676734924316,
+    0.37501707673072815
+   ]
+  },
+  "/World/StationA/stock_1": {
+   "prim_path": "/World/StationA/stock_1",
+   "kind": "object",
+   "asset_key": "brown_reagent_bottle_large",
+   "usd": "solid_assets_all/brown_reagent_bottle_large/ReagentBottle001.usd",
+   "pose": [
+    -9.4,
+    1.0,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "precursor_bottle",
+   "articulated": false,
+   "labware": "precursor_bottle",
+   "name": "stock_1",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/stock_1.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/brown_reagent_bottle_large/ReagentBottle001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -9.4,
+    1.0,
+    0.9726025436520577,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.03489227592945099,
+     -0.03497324511408806,
+     -0.07060254365205765
+    ],
+    "max": [
+     0.03489227592945099,
+     0.03497323766350746,
+     0.07058337431024894
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -8.3406400680542,
+    1.5090110301971436,
+    0.9625923037528992,
+    -0.6512081623077393,
+    0.5196272134780884,
+    0.5380881428718567,
+    0.12797094881534576
+   ]
+  },
+  "/World/StationA/stock_2": {
+   "prim_path": "/World/StationA/stock_2",
+   "kind": "object",
+   "asset_key": "clear_reagent_bottle_large",
+   "usd": "solid_assets_all/clear_reagent_bottle_large/ReagentBottle002.usd",
+   "pose": [
+    -9.25,
+    1.0,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "precursor_bottle",
+   "articulated": false,
+   "labware": "precursor_bottle",
+   "name": "stock_2",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/stock_2.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/clear_reagent_bottle_large/ReagentBottle002.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -9.25,
+    1.0,
+    0.9726025436520577,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.03489227592945099,
+     -0.03497324511408806,
+     -0.07060254365205765
+    ],
+    "max": [
+     0.03489227592945099,
+     0.03497323766350746,
+     0.07058337431024894
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -8.468371391296387,
+    0.5030539631843567,
+    0.619838297367096,
+    0.035256654024124146,
+    -0.2721526324748993,
+    0.6989055275917053,
+    -0.6604701280593872
+   ]
+  },
+  "/World/StationA/stock_3": {
+   "prim_path": "/World/StationA/stock_3",
+   "kind": "object",
+   "asset_key": "brown_reagent_bottle_small",
+   "usd": "solid_assets_all/brown_reagent_bottle_small/ReagentBottle004.usd",
+   "pose": [
+    -9.1,
+    1.0,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "precursor_bottle",
+   "articulated": false,
+   "labware": "precursor_bottle",
+   "name": "stock_3",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/stock_3.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/brown_reagent_bottle_small/ReagentBottle004.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -9.1,
+    1.0,
+    0.9543493140935898,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.02741215005517006,
+     -0.02741215191781521,
+     -0.05234931409358978
+    ],
+    "max": [
+     0.02741215005517006,
+     0.02741214446723461,
+     0.04949683681443939
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -7.792049884796143,
+    -1.5919219255447388,
+    4.020593166351318,
+    -0.05472854524850845,
+    -0.16529276967048645,
+    -0.17198090255260468,
+    0.9695904850959778
+   ]
+  },
+  "/World/StationA/stock_4": {
+   "prim_path": "/World/StationA/stock_4",
+   "kind": "object",
+   "asset_key": "clear_reagent_bottle_small",
+   "usd": "solid_assets_all/clear_reagent_bottle_small/ReagentBottle003.usd",
+   "pose": [
+    -8.95,
+    1.0,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "precursor_bottle",
+   "articulated": false,
+   "labware": "precursor_bottle",
+   "name": "stock_4",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/stock_4.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/clear_reagent_bottle_small/ReagentBottle003.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -8.95,
+    1.0,
+    0.9543493140935898,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.02741215005517006,
+     -0.02741215191781521,
+     -0.05234931409358978
+    ],
+    "max": [
+     0.02741215005517006,
+     0.02741214446723461,
+     0.04949683681443939
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -7.995375156402588,
+    1.2122447490692139,
+    0.9532403945922852,
+    -0.6442410945892334,
+    -0.2884782552719116,
+    -0.6476877927780151,
+    0.2867650091648102
+   ]
+  },
+  "/World/StationA/stock_rack": {
+   "prim_path": "/World/StationA/stock_rack",
+   "kind": "station",
+   "asset_key": "Test_Tube_Rack",
+   "usd": "solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+   "pose": [
+    -9.2,
+    1.95,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "storage_rack",
+   "articulated": false,
+   "name": "stock_rack",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/stock_rack.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -9.2,
+    1.95,
+    0.9367499999701977,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.1094968244433403,
+     -0.037400022149086,
+     -0.03674999997019768
+    ],
+    "max": [
+     0.1094968244433403,
+     0.037400022149086,
+     0.03674999624490738
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -9.199999809265137,
+    1.9500000476837158,
+    0.9367499947547913,
+    1.0000001192092896,
+    -2.271323823466176e-10,
+    -5.0628844866507094e-11,
+    -1.1374543668063453e-11
+   ]
+  },
+  "/World/StationA/mortar": {
+   "prim_path": "/World/StationA/mortar",
+   "kind": "station",
+   "asset_key": "mortar",
+   "usd": "solid_assets_all/mortar/Mortar001.usd",
+   "pose": [
+    -8.6,
+    1.0,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "shaker_grinder",
+   "articulated": false,
+   "name": "mortar",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/mortar.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/mortar/Mortar001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -8.6,
+    1.0,
+    0.9245760367922032,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.043303868819830844,
+     -0.04018950820251566,
+     -0.024576036792203215
+    ],
+    "max": [
+     0.04330387180006313,
+     0.04018950820251566,
+     0.024576036792203215
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -8.600000381469727,
+    1.0,
+    0.9245760440826416,
+    1.0,
+    1.8037343840759945e-10,
+    -7.339444607623591e-10,
+    1.7557655329625277e-10
+   ]
+  },
+  "/World/StationA/pestle": {
+   "prim_path": "/World/StationA/pestle",
+   "kind": "object",
+   "asset_key": "pestle",
+   "usd": "solid_assets_all/pestle/Pestle001.usd",
+   "pose": [
+    -8.4,
+    1.0,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "pestle",
+   "articulated": false,
+   "labware": "tongs",
+   "name": "pestle",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/pestle.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/pestle/Pestle001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -8.4,
+    1.0,
+    0.9168373162373901,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.056357067078351974,
+     -0.014844583347439766,
+     -0.014837316237390041
+    ],
+    "max": [
+     0.056357067078351974,
+     0.014844583347439766,
+     0.014837316237390041
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -8.399964332580566,
+    1.000221848487854,
+    0.9383330345153809,
+    0.9997685551643372,
+    0.021266000345349312,
+    -0.0032171288039535284,
+    -0.00014913063205312937
+   ]
+  },
+  "/World/StationC/xrd": {
+   "prim_path": "/World/StationC/xrd",
+   "kind": "station",
+   "asset_key": null,
+   "usd": null,
+   "pose": [
+    -5.55,
+    3.78,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "xrd",
+   "articulated": false,
+   "procedural": "xrd_cabinet",
+   "target_size_m": [
+    0.75,
+    0.6,
+    0.78
+   ],
+   "name": "xrd",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/xrd.usda",
+   "source_usd": null,
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -5.55,
+    3.78,
+    0.8999999995529652,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.375,
+     -0.3160000000949949,
+     4.470348362317633e-10
+    ],
+    "max": [
+     0.375,
+     0.30000001192092896,
+     0.7920000000521541
+    ]
+   },
+   "changes": [
+    "procedural xrd_cabinet"
+   ],
+   "rest_offset_m": 0.0,
+   "status": "created",
+   "root_pose": [
+    -5.550000190734863,
+    3.7799999713897705,
+    0.8999999761581421,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "/World/StationC/balance": {
+   "prim_path": "/World/StationC/balance",
+   "kind": "station",
+   "asset_key": "art:AnalyticalBalance001",
+   "usd": "articulated/AnalyticalBalance001/AnalyticalBalance001_2.usd",
+   "pose": [
+    -4.95,
+    3.85,
+    0.9
+   ],
+   "yaw_deg": -90,
+   "semantic": "balance",
+   "articulated": false,
+   "name": "balance",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/balance.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/articulated/AnalyticalBalance001/AnalyticalBalance001_2.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -4.95,
+    3.85,
+    1.0686916947364806,
+    0.7071067811865476,
+    0.0,
+    0.0,
+    -0.7071067811865475
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.1075238510966301,
+     -0.17216048389673233,
+     -0.1686916947364807
+    ],
+    "max": [
+     0.1075238510966301,
+     0.17216051369905472,
+     0.3868950371013572
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -4.949999809265137,
+    3.8499999046325684,
+    1.0686917304992676,
+    -0.70710688829422,
+    6.6288370348388526e-09,
+    3.3688920542118694e-09,
+    0.7071069478988647
+   ]
+  },
+  "/World/StationC/xrd_holder_rack": {
+   "prim_path": "/World/StationC/xrd_holder_rack",
+   "kind": "station",
+   "asset_key": null,
+   "usd": null,
+   "pose": [
+    -4.6,
+    3.4,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "xrd_prep",
+   "articulated": false,
+   "procedural": "holder_rack16",
+   "target_size_m": [
+    0.3,
+    0.22,
+    0.03
+   ],
+   "name": "xrd_holder_rack",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/xrd_holder_rack.usda",
+   "source_usd": null,
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -4.6,
+    3.4,
+    0.8999999996647239,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.15000000596046448,
+     -0.10999999940395355,
+     3.3527612630646075e-10
+    ],
+    "max": [
+     0.15000000596046448,
+     0.10999999940395355,
+     0.036000000026077034
+    ]
+   },
+   "changes": [
+    "procedural holder_rack16"
+   ],
+   "rest_offset_m": 0.0,
+   "status": "created",
+   "root_pose": [
+    -4.599999904632568,
+    3.4000000953674316,
+    0.8999999761581421,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "/World/StationC/holder_0": {
+   "prim_path": "/World/StationC/holder_0",
+   "kind": "object",
+   "asset_key": null,
+   "usd": null,
+   "pose": [
+    -4.71,
+    3.32,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "xrd_holder",
+   "articulated": false,
+   "labware": "xrd_holder",
+   "procedural": "disc",
+   "target_size_m": [
+    0.044,
+    0.044,
+    0.006
+   ],
+   "name": "holder_0",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/holder_0.usda",
+   "source_usd": null,
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -4.71,
+    3.32,
+    0.902000000026077,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.02199999988079071,
+     -0.02199999988079071,
+     -2.6077032026783353e-11
+    ],
+    "max": [
+     0.02199999988079071,
+     0.02199999988079071,
+     0.006000000026077032
+    ]
+   },
+   "changes": [
+    "procedural disc"
+   ],
+   "rest_offset_m": 0.0008,
+   "status": "created",
+   "root_pose": [
+    -4.710643291473389,
+    3.320725440979004,
+    0.8936372399330139,
+    0.999768853187561,
+    0.019611923024058342,
+    -0.008384806104004383,
+    0.002695872914046049
+   ]
+  },
+  "/World/StationC/capper": {
+   "prim_path": "/World/StationC/capper",
+   "kind": "station",
+   "asset_key": null,
+   "usd": null,
+   "pose": [
+    -4.68,
+    3.85,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "capper",
+   "articulated": false,
+   "procedural": "capper",
+   "target_size_m": [
+    0.16,
+    0.16,
+    0.3
+   ],
+   "name": "capper",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/capper.usda",
+   "source_usd": null,
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -4.68,
+    3.85,
+    0.899999999832362,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.07999999821186066,
+     -0.07999999821186066,
+     1.6763806315323038e-10
+    ],
+    "max": [
+     0.07999999821186066,
+     0.07999999821186066,
+     0.29999999821186063
+    ]
+   },
+   "changes": [
+    "procedural capper"
+   ],
+   "rest_offset_m": 0.0,
+   "status": "created",
+   "root_pose": [
+    -4.679999828338623,
+    3.8499999046325684,
+    0.8999999761581421,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "/World/StationC/shaker": {
+   "prim_path": "/World/StationC/shaker",
+   "kind": "station",
+   "asset_key": null,
+   "usd": null,
+   "pose": [
+    -4.42,
+    3.82,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "shaker_grinder",
+   "articulated": false,
+   "procedural": "shaker",
+   "target_size_m": [
+    0.24,
+    0.24,
+    0.3
+   ],
+   "name": "shaker",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/shaker.usda",
+   "source_usd": null,
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -4.42,
+    3.82,
+    0.900000000745058,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.11999999731779099,
+     -0.12549999994412064,
+     -7.450580569168253e-10
+    ],
+    "max": [
+     0.11999999731779099,
+     0.11999999731779099,
+     0.30000000149011613
+    ]
+   },
+   "changes": [
+    "procedural shaker"
+   ],
+   "rest_offset_m": 0.0,
+   "status": "created",
+   "root_pose": [
+    -4.420000076293945,
+    3.819999933242798,
+    0.8999999761581421,
+    0.9999999403953552,
+    0.0,
+    1.1179714931586204e-09,
+    0.0
+   ]
+  },
+  "/World/StationC/ball_dispenser": {
+   "prim_path": "/World/StationC/ball_dispenser",
+   "kind": "station",
+   "asset_key": null,
+   "usd": null,
+   "pose": [
+    -4.45,
+    3.55,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "ball_dispenser",
+   "articulated": false,
+   "procedural": "ball_dispenser",
+   "target_size_m": [
+    0.12,
+    0.12,
+    0.3
+   ],
+   "name": "ball_dispenser",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/ball_dispenser.usda",
+   "source_usd": null,
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -4.45,
+    3.55,
+    0.8999999997764826,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.05999999865889549,
+     -0.0680000001899898,
+     2.2351741811588166e-10
+    ],
+    "max": [
+     0.06700000037252903,
+     0.05999999865889549,
+     0.28200000005215403
+    ]
+   },
+   "changes": [
+    "procedural ball_dispenser"
+   ],
+   "rest_offset_m": 0.0,
+   "status": "created",
+   "root_pose": [
+    -4.449999809265137,
+    3.549999952316284,
+    0.8999999761581421,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "/World/StationC/vial_rack": {
+   "prim_path": "/World/StationC/vial_rack",
+   "kind": "station",
+   "asset_key": "Test_Tube_Rack",
+   "usd": "solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+   "pose": [
+    -4.7,
+    3.62,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "storage_rack",
+   "articulated": false,
+   "name": "vial_rack",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/vial_rack.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -4.7,
+    3.62,
+    0.9367499999701977,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.1094968244433403,
+     -0.037400022149086,
+     -0.03674999997019768
+    ],
+    "max": [
+     0.1094968244433403,
+     0.037400022149086,
+     0.03674999624490738
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -4.699999809265137,
+    3.619999885559082,
+    0.9367499947547913,
+    1.0000001192092896,
+    -2.271323823466176e-10,
+    -5.0628844866507094e-11,
+    -1.1374543668063453e-11
+   ]
+  },
+  "/World/StationC/tongs": {
+   "prim_path": "/World/StationC/tongs",
+   "kind": "object",
+   "asset_key": "Crucible_Tong",
+   "usd": "solid_assets_all/Crucible_Tong/CrucibleTong001.usd",
+   "pose": [
+    -4.75,
+    3.3,
+    0.9
+   ],
+   "yaw_deg": 90,
+   "semantic": "tongs",
+   "articulated": false,
+   "labware": "tongs",
+   "name": "tongs",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/tongs.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Crucible_Tong/CrucibleTong001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -4.75,
+    3.3,
+    0.9094325259774924,
+    0.7071067811865476,
+    0.0,
+    0.0,
+    0.7071067811865475
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.043656498193740845,
+     -0.0948246568441391,
+     -0.0074325259774923325
+    ],
+    "max": [
+     0.043656498193740845,
+     0.0948246568441391,
+     0.007432521786540747
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -4.751517295837402,
+    3.2995035648345947,
+    0.8996252417564392,
+    0.7220099568367004,
+    -0.10595089942216873,
+    0.05819319188594818,
+    0.6812410950660706
+   ]
+  },
+  "/World/StationC/vial_1": {
+   "prim_path": "/World/StationC/vial_1",
+   "kind": "object",
+   "asset_key": "Sample_Tube_With_Stopper",
+   "usd": "solid_assets_all/Sample_Tube_With_Stopper/SampleTube001.usd",
+   "pose": [
+    -5.45,
+    3.32,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "vial",
+   "articulated": false,
+   "labware": "vial",
+   "name": "vial_1",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/vial_1.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Sample_Tube_With_Stopper/SampleTube001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -5.45,
+    3.32,
+    0.9589352409802377,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.007647079415619373,
+     -0.007647081511095166,
+     -0.05693524098023772
+    ],
+    "max": [
+     0.007647079415619373,
+     0.007647078484296799,
+     0.05700006452989494
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -5.447722434997559,
+    3.1873385906219482,
+    0.026134077459573746,
+    0.3462301194667816,
+    0.6452595591545105,
+    0.5247998833656311,
+    -0.4339927136898041
+   ]
+  },
+  "/World/StationC/vial_2": {
+   "prim_path": "/World/StationC/vial_2",
+   "kind": "object",
+   "asset_key": "Sample_Tube_With_Stopper",
+   "usd": "solid_assets_all/Sample_Tube_With_Stopper/SampleTube001.usd",
+   "pose": [
+    -5.35,
+    3.32,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "vial",
+   "articulated": false,
+   "labware": "vial",
+   "name": "vial_2",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/vial_2.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Sample_Tube_With_Stopper/SampleTube001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -5.35,
+    3.32,
+    0.9589352409802377,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.007647079415619373,
+     -0.007647081511095166,
+     -0.05693524098023772
+    ],
+    "max": [
+     0.007647079415619373,
+     0.007647078484296799,
+     0.05700006452989494
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -5.34938383102417,
+    3.2276806831359863,
+    0.9038271307945251,
+    0.425610214471817,
+    0.8694345355033875,
+    -0.030842432752251625,
+    0.24897432327270508
+   ]
+  },
+  "/World/StationC/vial_3": {
+   "prim_path": "/World/StationC/vial_3",
+   "kind": "object",
+   "asset_key": "Sample_Tube_With_Stopper",
+   "usd": "solid_assets_all/Sample_Tube_With_Stopper/SampleTube001.usd",
+   "pose": [
+    -5.25,
+    3.32,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "vial",
+   "articulated": false,
+   "labware": "vial",
+   "name": "vial_3",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/vial_3.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Sample_Tube_With_Stopper/SampleTube001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -5.25,
+    3.32,
+    0.9589352409802377,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.007647079415619373,
+     -0.007647081511095166,
+     -0.05693524098023772
+    ],
+    "max": [
+     0.007647079415619373,
+     0.007647078484296799,
+     0.05700006452989494
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0008,
+   "status": "placed",
+   "root_pose": [
+    -5.319383144378662,
+    3.2816808223724365,
+    0.9242057800292969,
+    0.7035462856292725,
+    0.20489609241485596,
+    -0.65064936876297,
+    0.199237659573555
+   ]
+  },
+  "/World/StationC/waste": {
+   "prim_path": "/World/StationC/waste",
+   "kind": "station",
+   "asset_key": "glass_beaker_500ml",
+   "usd": "solid_assets_all/glass_beaker_500ml/Beaker005.usd",
+   "pose": [
+    -5.75,
+    3.3,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "waste",
+   "articulated": false,
+   "name": "waste",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/waste.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/glass_beaker_500ml/Beaker005.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -5.75,
+    3.3,
+    0.9641271471977234,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.04800240322947503,
+     -0.0429195985198021,
+     -0.06412714719772339
+    ],
+    "max": [
+     0.04800240322947503,
+     0.0429195985198021,
+     0.06412714719772339
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -5.75,
+    3.299999952316284,
+    0.9641271233558655,
+    1.0000001192092896,
+    -1.2507295199526425e-10,
+    1.7870338542280706e-10,
+    4.9220614251055395e-09
+   ]
+  },
+  "/World/StationC/store_rack_1": {
+   "prim_path": "/World/StationC/store_rack_1",
+   "kind": "station",
+   "asset_key": "Test_Tube_Rack",
+   "usd": "solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+   "pose": [
+    -7.6,
+    3.55,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "storage_rack",
+   "articulated": false,
+   "name": "store_rack_1",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/store_rack_1.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -7.6,
+    3.55,
+    0.9367499999701977,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.1094968244433403,
+     -0.037400022149086,
+     -0.03674999997019768
+    ],
+    "max": [
+     0.1094968244433403,
+     0.037400022149086,
+     0.03674999624490738
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -7.599999904632568,
+    3.549999952316284,
+    0.9367499947547913,
+    1.0000001192092896,
+    -2.271323823466176e-10,
+    -5.0628844866507094e-11,
+    -1.1374543668063453e-11
+   ]
+  },
+  "/World/StationC/store_rack_2": {
+   "prim_path": "/World/StationC/store_rack_2",
+   "kind": "station",
+   "asset_key": "Test_Tube_Rack",
+   "usd": "solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+   "pose": [
+    -7.6,
+    3.85,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "storage_rack",
+   "articulated": false,
+   "name": "store_rack_2",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/store_rack_2.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -7.6,
+    3.85,
+    0.9367499999701977,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.1094968244433403,
+     -0.037400022149086,
+     -0.03674999997019768
+    ],
+    "max": [
+     0.1094968244433403,
+     0.037400022149086,
+     0.03674999624490738
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -7.599999904632568,
+    3.8499999046325684,
+    0.9367499947547913,
+    1.0000001192092896,
+    -2.271323823466176e-10,
+    -5.0628844866507094e-11,
+    -1.1374543668063453e-11
+   ]
+  },
+  "/World/StationC/transfer_rack": {
+   "prim_path": "/World/StationC/transfer_rack",
+   "kind": "station",
+   "asset_key": "Test_Tube_Rack",
+   "usd": "solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+   "pose": [
+    -6.9,
+    3.4,
+    0.9
+   ],
+   "yaw_deg": 0.0,
+   "semantic": "transfer_rack",
+   "articulated": false,
+   "name": "transfer_rack",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/transfer_rack.usda",
+   "source_usd": "/mnt/nas/data/safelab/retreat/lyf-back/chembench/psilab/assets/usd/asset_collection/sim_ready/solid_assets_all/Test_Tube_Rack/TestTubeRack001.usd",
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -6.9,
+    3.4,
+    0.9367499999701977,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.1094968244433403,
+     -0.037400022149086,
+     -0.03674999997019768
+    ],
+    "max": [
+     0.1094968244433403,
+     0.037400022149086,
+     0.03674999624490738
+    ]
+   },
+   "changes": [],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -6.900000095367432,
+    3.4000000953674316,
+    0.9367499947547913,
+    1.0000001192092896,
+    -2.271323823466176e-10,
+    -5.0628844866507094e-11,
+    -1.1374543668063453e-11
+   ]
+  },
+  "/World/Control/pc": {
+   "prim_path": "/World/Control/pc",
+   "kind": "station",
+   "asset_key": null,
+   "usd": null,
+   "pose": [
+    -2.15,
+    0.2,
+    0.9
+   ],
+   "yaw_deg": 90,
+   "semantic": "control_pc",
+   "articulated": false,
+   "procedural": "monitor",
+   "target_size_m": [
+    0.55,
+    0.2,
+    0.4
+   ],
+   "name": "pc",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/pc.usda",
+   "source_usd": null,
+   "uniform_scale": 1.0,
+   "world_pose": [
+    -2.15,
+    0.2,
+    0.899999999832362,
+    0.7071067811865476,
+    0.0,
+    0.0,
+    0.7071067811865475
+   ],
+   "support_z": 0.9,
+   "local_asset_bounds": {
+    "min": [
+     -0.2750000059604645,
+     -0.2500000002980232,
+     1.6763806315323038e-10
+    ],
+    "max": [
+     0.2750000059604645,
+     0.09000000357627869,
+     0.44999999642372135
+    ]
+   },
+   "changes": [
+    "procedural monitor"
+   ],
+   "rest_offset_m": 0.0,
+   "status": "created",
+   "root_pose": [
+    -2.1500000953674316,
+    0.20000001788139343,
+    0.8999999761581421,
+    0.7071068286895752,
+    5.932706770295226e-09,
+    -3.97187527312326e-09,
+    0.70710688829422
+   ]
+  },
+  "/World/Control/chair": {
+   "prim_path": "/World/Control/chair",
+   "kind": "station",
+   "asset_key": "objaverse:office_chair",
+   "usd": "/data/liyufeng/goai_assets/kit/usd/office_chair/office_chair.usd",
+   "pose": [
+    -3.05,
+    0.2,
+    0.9
+   ],
+   "yaw_deg": 0,
+   "semantic": "office_chair",
+   "articulated": false,
+   "target_size_m": [
+    0.6,
+    0.6,
+    1.0
+   ],
+   "surface_z": 0.0,
+   "name": "chair",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/chair.usda",
+   "source_usd": "/data/liyufeng/goai_assets/kit/usd/office_chair/office_chair.usd",
+   "uniform_scale": 1.0000000157548263,
+   "world_pose": [
+    -3.05,
+    0.2,
+    2.804382763233401e-17,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "support_z": 0.0,
+   "local_asset_bounds": {
+    "min": [
+     -0.29999999527355214,
+     -0.28224453099197794,
+     -2.804382763233401e-17
+    ],
+    "max": [
+     0.29999999527355214,
+     0.28224453099197794,
+     0.9463551738362952
+    ]
+   },
+   "changes": [
+    "scaled x1.00 to real size [0.6, 0.6, 1.0]"
+   ],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -3.049999952316284,
+    0.20000000298023224,
+    -2.384185791015625e-07,
+    1.0000001192092896,
+    3.6594007823964603e-09,
+    1.0970330199810974e-10,
+    2.9190955208591163e-10
+   ]
+  },
+  "/World/Control/server_rack": {
+   "prim_path": "/World/Control/server_rack",
+   "kind": "station",
+   "asset_key": "objaverse:server_rack",
+   "usd": "/data/liyufeng/goai_assets/kit/usd/server_rack/server_rack.usd",
+   "pose": [
+    -2.2,
+    -2.6,
+    0.9
+   ],
+   "yaw_deg": 90,
+   "semantic": "control_rack",
+   "articulated": false,
+   "target_size_m": [
+    0.6,
+    0.8,
+    1.8
+   ],
+   "surface_z": 0.0,
+   "name": "server_rack",
+   "prepared_usd": "/data/liyufeng/goai_workflows/alab_twin/recon/assets/server_rack.usda",
+   "source_usd": "/data/liyufeng/goai_assets/kit/usd/server_rack/server_rack.usd",
+   "uniform_scale": 1.0000000330947902,
+   "world_pose": [
+    -2.2,
+    -2.6,
+    0.0,
+    0.7071067811865476,
+    0.0,
+    0.0,
+    0.7071067811865475
+   ],
+   "support_z": 0.0,
+   "local_asset_bounds": {
+    "min": [
+     -0.26228886026257925,
+     -0.3999999867620843,
+     0.0
+    ],
+    "max": [
+     0.26228886026257925,
+     0.3999999867620844,
+     0.2677794441071202
+    ]
+   },
+   "changes": [
+    "scaled x1.00 to real size [0.6, 0.8, 1.8]"
+   ],
+   "rest_offset_m": 0.0,
+   "status": "placed",
+   "root_pose": [
+    -2.200000047683716,
+    -2.5999999046325684,
+    2.9802322387695312e-08,
+    0.7071067690849304,
+    0.0,
+    0.0,
+    0.7071068286895752
+   ]
+  }
+ },
+ "joints": {
+  "/World/StationB/furnace_1": {
+   "dof_names": [
+    "Button001_joint",
+    "Button002_joint",
+    "Button003_joint",
+    "Switch_joint",
+    "Knob_joint",
+    "Button004_joint",
+    "Door_joint"
+   ],
+   "physics_limits": [
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     -0.5235987901687622,
+     0.0
+    ],
+    [
+     -3.4028234663852886e+38,
+     3.4028234663852886e+38
+    ],
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     0.0,
+     1.7453292608261108
+    ]
+   ]
+  },
+  "/World/StationB/furnace_2": {
+   "dof_names": [
+    "Button001_joint",
+    "Button002_joint",
+    "Button003_joint",
+    "Switch_joint",
+    "Knob_joint",
+    "Button004_joint",
+    "Door_joint"
+   ],
+   "physics_limits": [
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     -0.5235987901687622,
+     0.0
+    ],
+    [
+     -3.4028234663852886e+38,
+     3.4028234663852886e+38
+    ],
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     0.0,
+     1.7453292608261108
+    ]
+   ]
+  },
+  "/World/StationB/furnace_3": {
+   "dof_names": [
+    "Button001_joint",
+    "Button002_joint",
+    "Button003_joint",
+    "Switch_joint",
+    "Knob_joint",
+    "Button004_joint",
+    "Door_joint"
+   ],
+   "physics_limits": [
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     -0.5235987901687622,
+     0.0
+    ],
+    [
+     -3.4028234663852886e+38,
+     3.4028234663852886e+38
+    ],
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     0.0,
+     1.7453292608261108
+    ]
+   ]
+  },
+  "/World/StationB/furnace_4": {
+   "dof_names": [
+    "Button001_joint",
+    "Button002_joint",
+    "Button003_joint",
+    "Switch_joint",
+    "Knob_joint",
+    "Button004_joint",
+    "Door_joint"
+   ],
+   "physics_limits": [
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     -0.5235987901687622,
+     0.0
+    ],
+    [
+     -3.4028234663852886e+38,
+     3.4028234663852886e+38
+    ],
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     0.0,
+     1.7453292608261108
+    ]
+   ]
+  },
+  "/World/StationA/drying_oven": {
+   "dof_names": [
+    "Button001_joint",
+    "Button002_joint",
+    "Button003_joint",
+    "Switch_joint",
+    "Knob_joint",
+    "Button004_joint",
+    "Door_joint"
+   ],
+   "physics_limits": [
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     -0.5235987901687622,
+     0.0
+    ],
+    [
+     -3.4028234663852886e+38,
+     3.4028234663852886e+38
+    ],
+    [
+     0.0,
+     0.0003000000142492354
+    ],
+    [
+     0.0,
+     1.7453292608261108
+    ]
+   ]
+  }
+ },
+ "robots": {
+  "/World/Robots/fr3_A": {
+   "joint_names": [
+    "fr3_joint1",
+    "fr3_joint2",
+    "fr3_joint3",
+    "fr3_joint4",
+    "fr3_joint5",
+    "fr3_joint6",
+    "fr3_joint7",
+    "fr3_finger_joint1",
+    "fr3_finger_joint2"
+   ],
+   "body_names": [
+    "fr3_link0",
+    "fr3_link1",
+    "fr3_link2",
+    "fr3_link3",
+    "fr3_link4",
+    "fr3_link5",
+    "fr3_link6",
+    "fr3_link7",
+    "fr3_link8",
+    "fr3_hand",
+    "fr3_leftfinger",
+    "fr3_rightfinger",
+    "fr3_hand_tcp"
+   ],
+   "root_pose": [
+    -6.449999809265137,
+    1.350000023841858,
+    0.8999999165534973,
+    0.7071068286895752,
+    -5.92715743152894e-09,
+    1.7163145571430505e-08,
+    0.7071068286895752
+   ]
+  },
+  "/World/Robots/ur5e_B": {
+   "joint_names": [
+    "shoulder_pan_joint",
+    "shoulder_lift_joint",
+    "elbow_joint",
+    "wrist_1_joint",
+    "wrist_2_joint",
+    "wrist_3_joint",
+    "finger_joint",
+    "right_outer_knuckle_joint",
+    "left_outer_finger_joint",
+    "right_outer_finger_joint",
+    "left_inner_finger_joint",
+    "right_inner_finger_joint",
+    "left_inner_finger_knuckle_joint",
+    "right_inner_finger_knuckle_joint"
+   ],
+   "body_names": [
+    "base_link",
+    "shoulder_link",
+    "upper_arm_link",
+    "forearm_link",
+    "wrist_1_link",
+    "wrist_2_link",
+    "wrist_3_link",
+    "base_link_0",
+    "left_outer_knuckle",
+    "right_outer_knuckle",
+    "left_outer_finger",
+    "right_outer_finger",
+    "left_inner_finger",
+    "right_inner_finger",
+    "left_inner_knuckle",
+    "right_inner_knuckle"
+   ],
+   "root_pose": [
+    -6.449999809265137,
+    -0.7799999713897705,
+    1.0,
+    -0.7071068286895752,
+    0.0,
+    0.0,
+    0.7071068286895752
+   ]
+  },
+  "/World/Robots/fr3_C": {
+   "joint_names": [
+    "fr3_joint1",
+    "fr3_joint2",
+    "fr3_joint3",
+    "fr3_joint4",
+    "fr3_joint5",
+    "fr3_joint6",
+    "fr3_joint7",
+    "fr3_finger_joint1",
+    "fr3_finger_joint2"
+   ],
+   "body_names": [
+    "fr3_link0",
+    "fr3_link1",
+    "fr3_link2",
+    "fr3_link3",
+    "fr3_link4",
+    "fr3_link5",
+    "fr3_link6",
+    "fr3_link7",
+    "fr3_link8",
+    "fr3_hand",
+    "fr3_leftfinger",
+    "fr3_rightfinger",
+    "fr3_hand_tcp"
+   ],
+   "root_pose": [
+    -5.0,
+    3.319999933242798,
+    0.8999999165534973,
+    0.7071068286895752,
+    -5.92715743152894e-09,
+    1.7163145571430505e-08,
+    0.7071068286895752
+   ]
+  }
+ }
+}

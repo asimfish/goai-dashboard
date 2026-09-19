@@ -1,0 +1,280 @@
+{
+ "note": "v3 录制标准（用户 09-19 要求）：正面 / 侧面 / 俯视 / 站位 + 腕部各录一路独立视频，机位按机械臂基座计算并拉近。此处列出已产出的多机位 run，含失败 run，供用户挑选机位。",
+ "sets": [
+  {
+   "dir": "C-uncap__20260919T235447",
+   "action": "C-uncap",
+   "run": "20260919T235447_824130994_scripted",
+   "host": "5090 计算卡",
+   "label": "uncap_site 搬运候选（第一组按新标准录的五路视频；run 在空手预接近段因 no_clear_empty_joint_path 中止，9.0 s / 108 帧）",
+   "outcome": "FAIL：preapproach 无自由关节路径（TCP 误差 0.835 m）",
+   "views": {
+    "c_front": "正面",
+    "c_side": "侧面",
+    "c_top": "俯视",
+    "station_c": "站位相机",
+    "wrist": "腕部"
+   },
+   "review_note": "失败 run（9 s），仅供看机位；机位标准已按 04:20 修订重算。"
+  },
+  {
+   "dir": "C-xrd_window__SUBOP-C-21",
+   "action": "C-xrd_window",
+   "run": "20260920T001626_524262716_scripted",
+   "host": "5090 计算卡",
+   "label": "机械臂开 XRD 滑窗 · 已登记 SUBOP-C-21（demo 门通过：开到 0.480 m、最小分离 +0.01 mm、负分离 0）",
+   "outcome": "PASS（demo 门），已登记",
+   "views": {
+    "video": "站位相机（登记视频）",
+    "four_view_videos/c_front": "正面",
+    "four_view_videos/c_side": "侧面",
+    "four_view_videos/c_top": "俯视",
+    "four_view_videos/wrist": "腕部"
+   },
+   "review_note": "用户 09-20 04:15 审片：正面机位贴着机械臂只拍到臂杆、侧面位置不对、三路都对着天平而不是 XRD 滑窗；且登记视频只有滑窗到 0.48 m 之后的 5 s 保持段，开窗动作被切掉。已要求 agent 2 按目标物包围盒重算机位、从预接近到保持完整重切，先出首帧再出视频。"
+  },
+  {
+   "dir": "A-precursor_batch4__20260919T203856",
+   "action": "A-precursor_3",
+   "run": "20260919T203856_500857872_scripted",
+   "host": "mainskill GPU6",
+   "label": "A 站四瓶重录第四批 P3slow（precursor_3，慢运输 ×2）· 闭爪后四机位截图 + 站位视频；用于核对：秤玻璃罩已整体移除、四瓶一排、瓶资产外观",
+   "outcome": "FAIL：闭爪后抬升 raise_clearance 时 physical_grasp_lost（27.7 s / 332 帧）；本批机位仍为 v1（远景），v2 下一批生效",
+   "views": {
+    "video": "站位相机（27 s，失败 run）"
+   },
+   "stills": {
+    "after_close_a_front": "正面机位 · 闭爪后",
+    "after_close_a_side": "侧面机位 · 闭爪后",
+    "after_close_a_top": "俯视机位 · 闭爪后",
+    "after_close_station_a": "站位相机 · 闭爪后"
+   },
+   "review_note": "导师 05:10 核对：秤玻璃罩已不在、秤盘裸露（已解决）；四瓶在秤后方台沿排成一排（已到位）；瓶子仍是深色瓶身 + 亮绿瓶盖，外观未变（待用户定目标外观）；机位仍是旧远景。 用户 05:25 反馈：四瓶要按原小瓶架位横排一排（不是秤后台沿）；瓶盖渲染必须马上解决（已下达默认透明瓶身 + 白盖）；瓶子抓起后不动是因为该 run 抬升时脱手中止，不是设计。"
+  },
+  {
+   "dir": "C-xrd_window__SUBOP-C-21__full",
+   "action": "C-xrd_window",
+   "run": "20260920T001626_524262716_scripted",
+   "host": "5090 计算卡（源 run）· 全程重切：监督机 Claude（goal_子操作采集）",
+   "label": "机械臂开 XRD 滑窗 · SUBOP-C-21 完整区间重切（源 tick 0→2145 = 8.9 s：预接近 / 开窗 / 保持，来自源 run frames_station 12 fps；登记视频原只含 0.48 m 之后的保持段）",
+   "outcome": "PASS（demo 门），已登记；本条为全程站位相机重切 + 三阶段 clip / 首帧",
+   "views": {
+    "video_full": "站位相机 · 全程 0→8.9 s（重切）"
+   },
+   "phases": [
+    {
+     "name": "pre_approach",
+     "clip": "phase_1_pre_approach.mp4",
+     "poster": "phase_1_pre_approach.png",
+     "description_cn": "预接近：机械臂从安全位移向 XRD 滑窗，窗仍关闭",
+     "start_s": 0.0,
+     "end_s": 0.117,
+     "ticks": [
+      0,
+      28
+     ],
+     "frames_written": 2
+    },
+    {
+     "name": "open_window",
+     "clip": "phase_2_open_window.mp4",
+     "poster": "phase_2_open_window.png",
+     "description_cn": "开窗：Window_slide_joint 从 0 开到 0.48 m",
+     "start_s": 0.117,
+     "end_s": 3.925,
+     "ticks": [
+      28,
+      942
+     ],
+     "frames_written": 47
+    },
+    {
+     "name": "hold_open",
+     "clip": "phase_3_hold_open.mp4",
+     "poster": "phase_3_hold_open.png",
+     "description_cn": "保持：滑窗保持 0.48 m 开启 5 s",
+     "start_s": 3.925,
+     "end_s": 8.938,
+     "ticks": [
+      942,
+      2145
+     ],
+     "frames_written": 61
+    }
+   ],
+   "review_note": "预接近段只有 28 tick（0.12 s，2 帧）：源 run 中机械臂在 tick 28 前已在窗前就位，滑窗由 Window_slide_joint 驱动从 0 开到 0.48 m（tick 28→942），之后保持 5 s。四路机位视频只在登记的保持段存在（见上一条）；按目标包围盒重算的 v2 机位见 5090 _shared/tools/camera_rig_v2/samples/C21_xrd_window（正面 / 侧面 / 俯视对旧机位的几何核查：旧正面 / 俯视滑窗占比 0%、TCP 不在画面内）。",
+   "source": "NAS subop_store/claude/panel_media/SUBOP-C-21_full（同份已放 agent2/episodes/SUBOP-C-21/panel_media/）"
+  },
+  {
+   "dir": "C-capper__SUBOP-C-20",
+   "action": "C-capper",
+   "run": "20260918T231955_195203744_scripted",
+   "host": "agent 2（C 站，登记视频）· 阶段切分：监督机 Claude",
+   "label": "小瓶 2 上封盖机（vial_capper）· 已登记 SUBOP-C-20（demo 门通过）· 站位相机总视频 + 6 阶段 clip / 首帧",
+   "outcome": "PASS（demo 门），已登记",
+   "views": {
+    "video": "站位相机（登记视频，87.4 s）"
+   },
+   "phases": [
+    {
+     "name": "initial_static",
+     "clip": "phase_1_initial_static.mp4",
+     "poster": "phase_1_initial_static.png",
+     "description_cn": "初始 5 秒静置，确认小瓶与夹持环境稳定",
+     "start_s": 0.0,
+     "end_s": 5.0,
+     "ticks": [
+      0,
+      1200
+     ],
+     "frames_written": 60
+    },
+    {
+     "name": "approach_and_grasp",
+     "clip": "phase_2_approach_and_grasp.mp4",
+     "poster": "phase_2_approach_and_grasp.png",
+     "description_cn": "从天平上方预接近，沿上方路线闭爪抓住小瓶",
+     "start_s": 5.0,
+     "end_s": 35.467,
+     "ticks": [
+      1200,
+      8512
+     ],
+     "frames_written": 366
+    },
+    {
+     "name": "lift_and_safe_transit",
+     "clip": "phase_3_lift_and_safe_transit.mp4",
+     "poster": "phase_3_lift_and_safe_transit.png",
+     "description_cn": "抬升到安全高度并携行，保持瓶身竖直",
+     "start_s": 35.467,
+     "end_s": 58.467,
+     "ticks": [
+      8512,
+      14032
+     ],
+     "frames_written": 277
+    },
+    {
+     "name": "capper_insertion",
+     "clip": "phase_4_capper_insertion.mp4",
+     "poster": "phase_4_capper_insertion.png",
+     "description_cn": "从封盖机前方水平进入，越过瓶座环后下放到瓶座",
+     "start_s": 58.467,
+     "end_s": 74.467,
+     "ticks": [
+      14032,
+      17872
+     ],
+     "frames_written": 193
+    },
+    {
+     "name": "release",
+     "clip": "phase_5_release.mp4",
+     "poster": "phase_5_release.png",
+     "description_cn": "夹爪受限开爪释放，确认指垫无载荷",
+     "start_s": 74.467,
+     "end_s": 77.467,
+     "ticks": [
+      17872,
+      18592
+     ],
+     "frames_written": 37
+    },
+    {
+     "name": "empty_retreat_and_stability",
+     "clip": "phase_6_empty_retreat_and_stability.mp4",
+     "poster": "phase_6_empty_retreat_and_stability.png",
+     "description_cn": "开爪后撤离并保持 5 秒，确认小瓶在瓶座中稳定",
+     "start_s": 77.467,
+     "end_s": 87.475,
+     "ticks": [
+      18592,
+      20994
+     ],
+     "frames_written": 120
+    }
+   ],
+   "source": "NAS subop_store/claude/panel_media/SUBOP-C-20"
+  },
+  {
+   "dir": "B-tray_load_release__SUBOP-B-10",
+   "action": "B-tray_load_release",
+   "run": "20260919T004409_005746225_scripted",
+   "host": "agent 3（B 站，登记视频）· 阶段切分：监督机 Claude",
+   "label": "装炉 → 支撑 → 释放撤离（tray_load_release）· 已登记 SUBOP-B-10（demo 门通过，严格门 PARTIAL / diagnostic）· 站位相机总视频 + 5 阶段 clip / 首帧",
+   "outcome": "PASS（demo 门），已登记（严格数值门 PARTIAL，diagnostic=true）",
+   "views": {
+    "video": "站位相机（登记视频，88.2 s）"
+   },
+   "phases": [
+    {
+     "name": "settle_scene_initial",
+     "clip": "phase_1_settle_scene_initial.mp4",
+     "poster": "phase_1_settle_scene_initial.png",
+     "description_cn": "settle_scene_initial",
+     "start_s": 0.0,
+     "end_s": 5.0,
+     "ticks": [
+      0,
+      1200
+     ],
+     "frames_written": 60
+    },
+    {
+     "name": "load_grasp_lift_insert",
+     "clip": "phase_2_load_grasp_lift_insert.mp4",
+     "poster": "phase_2_load_grasp_lift_insert.png",
+     "description_cn": "load_grasp_lift_insert",
+     "start_s": 5.0,
+     "end_s": 68.0,
+     "ticks": [
+      1200,
+      16320
+     ],
+     "frames_written": 756
+    },
+    {
+     "name": "support_observe",
+     "clip": "phase_3_support_observe.mp4",
+     "poster": "phase_3_support_observe.png",
+     "description_cn": "support_observe",
+     "start_s": 68.0,
+     "end_s": 73.0,
+     "ticks": [
+      16320,
+      17520
+     ],
+     "frames_written": 60
+    },
+    {
+     "name": "release_and_same_height_exit",
+     "clip": "phase_4_release_and_same_height_exit.mp4",
+     "poster": "phase_4_release_and_same_height_exit.png",
+     "description_cn": "release_and_same_height_exit",
+     "start_s": 73.0,
+     "end_s": 83.0,
+     "ticks": [
+      17520,
+      19920
+     ],
+     "frames_written": 120
+    },
+    {
+     "name": "retreat_final_hold",
+     "clip": "phase_5_retreat_final_hold.mp4",
+     "poster": "phase_5_retreat_final_hold.png",
+     "description_cn": "retreat_final_hold",
+     "start_s": 83.0,
+     "end_s": 88.17,
+     "ticks": [
+      19920,
+      21162
+     ],
+     "frames_written": 62
+    }
+   ],
+   "source": "NAS subop_store/claude/panel_media/SUBOP-B-10"
+  }
+ ]
+}

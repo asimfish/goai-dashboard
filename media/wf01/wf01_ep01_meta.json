@@ -1,0 +1,500 @@
+{
+  "attempt": 1,
+  "success": false,
+  "safe_success": false,
+  "failed_stage": 13,
+  "primitives": [
+    {
+      "op": "pick_place",
+      "ok": true,
+      "note": "pre-grasp err 0.001 m, grasp err 0.000 m, lift 0.131 m; dp 29.2 mm",
+      "regrasps": 0,
+      "carry_offset_mm": [
+        -0.0,
+        0.2,
+        -100.0
+      ],
+      "dp_mm": 29.1751679033041,
+      "task": "t_dose",
+      "stage": 0,
+      "f_peak": 6916.703125,
+      "theta_max": 0.0
+    },
+    {
+      "op": "press_button",
+      "ok": true,
+      "note": "hand err 0.000 m",
+      "task": "t_dose",
+      "stage": 1,
+      "f_peak": 6916.703125,
+      "theta_max": 0.0
+    },
+    {
+      "op": "pick_place",
+      "ok": true,
+      "note": "pre-grasp err 0.001 m, grasp err 0.003 m, lift 0.101 m; dp 66.2 mm",
+      "regrasps": 0,
+      "carry_offset_mm": [
+        -0.5,
+        1.4,
+        -169.0
+      ],
+      "dp_mm": 66.23847037553787,
+      "task": "t_dose",
+      "stage": 2,
+      "f_peak": 6916.703125,
+      "theta_max": 0.5822517275810242
+    },
+    {
+      "op": "uncap",
+      "ok": true,
+      "note": "hand err 0.000 m",
+      "task": "t_dose",
+      "stage": 3,
+      "f_peak": 6916.703125,
+      "theta_max": 0.5822517275810242
+    },
+    {
+      "op": "pour_powder",
+      "ok": true,
+      "note": "pre-grasp err 0.000 m, grasp err 0.011 m, lift 0.103 m; returned within 0.037 m",
+      "regrasps": 0,
+      "carry_offset_mm": [
+        29.7,
+        23.5,
+        -166.9
+      ],
+      "task": "t_dose",
+      "stage": 4,
+      "f_peak": 6916.703125,
+      "theta_max": 1.8924752473831177
+    },
+    {
+      "op": "cap",
+      "ok": true,
+      "note": "hand err 0.001 m",
+      "task": "t_dose",
+      "stage": 5,
+      "f_peak": 6916.703125,
+      "theta_max": 1.8924752473831177
+    },
+    {
+      "op": "weigh",
+      "ok": true,
+      "note": "pre-grasp err 0.001 m, grasp err 0.002 m, lift 0.132 m; returned within 0.008 m",
+      "regrasps": 0,
+      "carry_offset_mm": [
+        0.0,
+        0.1,
+        -100.0
+      ],
+      "task": "t_dose",
+      "stage": 6,
+      "f_peak": 6916.703125,
+      "theta_max": 1.8924752473831177
+    },
+    {
+      "op": "pick_place",
+      "ok": true,
+      "note": "pre-grasp err 0.001 m, grasp err 0.000 m, lift 0.103 m; dp 11.2 mm",
+      "regrasps": 0,
+      "carry_offset_mm": [
+        29.2,
+        -21.0,
+        -166.8
+      ],
+      "dp_mm": 11.227614246308804,
+      "task": "t_dose",
+      "stage": 7,
+      "f_peak": 6916.703125,
+      "theta_max": 1.9243507385253906
+    },
+    {
+      "op": "pick_place",
+      "ok": true,
+      "note": "pre-grasp err 0.000 m, grasp err 0.000 m, lift 0.102 m; dp 19.1 mm",
+      "regrasps": 0,
+      "carry_offset_mm": [
+        32.6,
+        -5.5,
+        -167.4
+      ],
+      "dp_mm": 19.14627104997635,
+      "task": "t_dose",
+      "stage": 8,
+      "f_peak": 6916.703125,
+      "theta_max": 1.9243507385253906
+    },
+    {
+      "op": "uncap",
+      "ok": true,
+      "note": "hand err 0.019 m",
+      "task": "t_dose",
+      "stage": 9,
+      "f_peak": 6916.703125,
+      "theta_max": 1.9243507385253906
+    },
+    {
+      "op": "pour_powder",
+      "ok": true,
+      "note": "pre-grasp err 0.001 m, grasp err 0.000 m, lift 0.108 m; returned within 0.045 m",
+      "regrasps": 0,
+      "carry_offset_mm": [
+        32.9,
+        6.7,
+        -162.0
+      ],
+      "task": "t_dose",
+      "stage": 10,
+      "f_peak": 6916.703125,
+      "theta_max": 1.9243507385253906
+    },
+    {
+      "op": "cap",
+      "ok": true,
+      "note": "hand err 0.004 m",
+      "task": "t_dose",
+      "stage": 11,
+      "f_peak": 6916.703125,
+      "theta_max": 1.9243507385253906
+    },
+    {
+      "op": "weigh",
+      "ok": true,
+      "note": "pre-grasp err 0.000 m, grasp err 0.001 m, lift 0.132 m; returned within 0.000 m",
+      "regrasps": 0,
+      "carry_offset_mm": [
+        -0.0,
+        0.0,
+        -100.0
+      ],
+      "task": "t_dose",
+      "stage": 12,
+      "f_peak": 6916.703125,
+      "theta_max": 1.9243507385253906
+    },
+    {
+      "op": "pick_place",
+      "ok": false,
+      "note": "pre-grasp err 0.000 m, grasp err 0.000 m, lift 0.119 m; dp 93.4 mm",
+      "regrasps": 0,
+      "carry_offset_mm": [
+        -1.1,
+        4.1,
+        -150.7
+      ],
+      "dp_mm": 93.35208684206009,
+      "task": "t_dose",
+      "stage": 13,
+      "f_peak": 6916.703125,
+      "theta_max": 1.9243507385253906
+    }
+  ],
+  "violations": [
+    {
+      "tick": 238,
+      "kind": "f_peak",
+      "value": 252.05113220214844,
+      "limit": 20
+    },
+    {
+      "tick": 239,
+      "kind": "f_peak",
+      "value": 144.17259216308594,
+      "limit": 20
+    },
+    {
+      "tick": 240,
+      "kind": "f_peak",
+      "value": 143.615478515625,
+      "limit": 20
+    },
+    {
+      "tick": 241,
+      "kind": "f_peak",
+      "value": 139.80516052246094,
+      "limit": 20
+    },
+    {
+      "tick": 242,
+      "kind": "f_peak",
+      "value": 138.6365966796875,
+      "limit": 20
+    },
+    {
+      "tick": 243,
+      "kind": "f_peak",
+      "value": 139.97695922851562,
+      "limit": 20
+    },
+    {
+      "tick": 244,
+      "kind": "f_peak",
+      "value": 129.08282470703125,
+      "limit": 20
+    },
+    {
+      "tick": 245,
+      "kind": "f_peak",
+      "value": 135.67562866210938,
+      "limit": 20
+    },
+    {
+      "tick": 246,
+      "kind": "f_peak",
+      "value": 134.50958251953125,
+      "limit": 20
+    },
+    {
+      "tick": 247,
+      "kind": "f_peak",
+      "value": 123.47593688964844,
+      "limit": 20
+    },
+    {
+      "tick": 248,
+      "kind": "f_peak",
+      "value": 131.97695922851562,
+      "limit": 20
+    },
+    {
+      "tick": 249,
+      "kind": "f_peak",
+      "value": 126.29255676269531,
+      "limit": 20
+    },
+    {
+      "tick": 250,
+      "kind": "f_peak",
+      "value": 120.63313293457031,
+      "limit": 20
+    },
+    {
+      "tick": 251,
+      "kind": "f_peak",
+      "value": 123.79985046386719,
+      "limit": 20
+    },
+    {
+      "tick": 252,
+      "kind": "f_peak",
+      "value": 122.27963256835938,
+      "limit": 20
+    },
+    {
+      "tick": 253,
+      "kind": "f_peak",
+      "value": 120.12812805175781,
+      "limit": 20
+    },
+    {
+      "tick": 254,
+      "kind": "f_peak",
+      "value": 126.59829711914062,
+      "limit": 20
+    },
+    {
+      "tick": 255,
+      "kind": "f_peak",
+      "value": 120.84945678710938,
+      "limit": 20
+    },
+    {
+      "tick": 256,
+      "kind": "f_peak",
+      "value": 76.34764862060547,
+      "limit": 20
+    },
+    {
+      "tick": 257,
+      "kind": "f_peak",
+      "value": 79.25970458984375,
+      "limit": 20
+    },
+    {
+      "tick": 258,
+      "kind": "f_peak",
+      "value": 80.9826889038086,
+      "limit": 20
+    },
+    {
+      "tick": 259,
+      "kind": "f_peak",
+      "value": 84.518310546875,
+      "limit": 20
+    },
+    {
+      "tick": 260,
+      "kind": "f_peak",
+      "value": 87.04452514648438,
+      "limit": 20
+    },
+    {
+      "tick": 261,
+      "kind": "f_peak",
+      "value": 90.67011260986328,
+      "limit": 20
+    },
+    {
+      "tick": 262,
+      "kind": "f_peak",
+      "value": 93.02192687988281,
+      "limit": 20
+    },
+    {
+      "tick": 263,
+      "kind": "f_peak",
+      "value": 97.27757263183594,
+      "limit": 20
+    },
+    {
+      "tick": 264,
+      "kind": "f_peak",
+      "value": 99.63679504394531,
+      "limit": 20
+    },
+    {
+      "tick": 265,
+      "kind": "f_peak",
+      "value": 103.4134521484375,
+      "limit": 20
+    },
+    {
+      "tick": 266,
+      "kind": "f_peak",
+      "value": 107.03323364257812,
+      "limit": 20
+    },
+    {
+      "tick": 267,
+      "kind": "f_peak",
+      "value": 109.99549865722656,
+      "limit": 20
+    },
+    {
+      "tick": 268,
+      "kind": "f_peak",
+      "value": 111.17277526855469,
+      "limit": 20
+    },
+    {
+      "tick": 269,
+      "kind": "f_peak",
+      "value": 108.65158081054688,
+      "limit": 20
+    },
+    {
+      "tick": 270,
+      "kind": "f_peak",
+      "value": 104.399658203125,
+      "limit": 20
+    },
+    {
+      "tick": 271,
+      "kind": "f_peak",
+      "value": 113.113037109375,
+      "limit": 20
+    },
+    {
+      "tick": 272,
+      "kind": "f_peak",
+      "value": 112.96097564697266,
+      "limit": 20
+    },
+    {
+      "tick": 273,
+      "kind": "f_peak",
+      "value": 108.55661010742188,
+      "limit": 20
+    },
+    {
+      "tick": 274,
+      "kind": "f_peak",
+      "value": 104.28387451171875,
+      "limit": 20
+    },
+    {
+      "tick": 275,
+      "kind": "f_peak",
+      "value": 102.05541229248047,
+      "limit": 20
+    },
+    {
+      "tick": 276,
+      "kind": "f_peak",
+      "value": 98.83828735351562,
+      "limit": 20
+    },
+    {
+      "tick": 277,
+      "kind": "f_peak",
+      "value": 85.12358093261719,
+      "limit": 20
+    },
+    {
+      "tick": 278,
+      "kind": "f_peak",
+      "value": 86.66004943847656,
+      "limit": 20
+    },
+    {
+      "tick": 279,
+      "kind": "f_peak",
+      "value": 72.93910217285156,
+      "limit": 20
+    },
+    {
+      "tick": 281,
+      "kind": "f_peak",
+      "value": 40.694183349609375,
+      "limit": 20
+    },
+    {
+      "tick": 282,
+      "kind": "f_peak",
+      "value": 45.423919677734375,
+      "limit": 20
+    },
+    {
+      "tick": 283,
+      "kind": "f_peak",
+      "value": 47.79864501953125,
+      "limit": 20
+    },
+    {
+      "tick": 284,
+      "kind": "f_peak",
+      "value": 49.719730377197266,
+      "limit": 20
+    },
+    {
+      "tick": 285,
+      "kind": "f_peak",
+      "value": 49.069618225097656,
+      "limit": 20
+    },
+    {
+      "tick": 286,
+      "kind": "f_peak",
+      "value": 41.70851135253906,
+      "limit": 20
+    },
+    {
+      "tick": 287,
+      "kind": "f_peak",
+      "value": 45.27759552001953,
+      "limit": 20
+    },
+    {
+      "tick": 288,
+      "kind": "f_peak",
+      "value": 44.36087417602539,
+      "limit": 20
+    }
+  ],
+  "f_peak_max_n": 6916.703125,
+  "theta_max_rad": 1.9243507385253906,
+  "ticks": 5676,
+  "sim_seconds": 94.6,
+  "frames": 2838
+}

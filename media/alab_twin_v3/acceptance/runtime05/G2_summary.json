@@ -1,0 +1,80 @@
+[
+  {
+    "door": "furnace_1",
+    "tracking_pass": true,
+    "max_hold_error": 0.001318812370300293,
+    "unit": "rad",
+    "external_contacts": 0,
+    "sweep_contacts": null,
+    "drive_readback": {
+      "stiffnesses": 200.0,
+      "dampings": 20.0,
+      "max_forces": 50.0
+    }
+  },
+  {
+    "door": "furnace_2",
+    "tracking_pass": true,
+    "max_hold_error": 0.001318812370300293,
+    "unit": "rad",
+    "external_contacts": 0,
+    "sweep_contacts": null,
+    "drive_readback": {
+      "stiffnesses": 200.0,
+      "dampings": 20.0,
+      "max_forces": 50.0
+    }
+  },
+  {
+    "door": "furnace_3",
+    "tracking_pass": true,
+    "max_hold_error": 0.001318812370300293,
+    "unit": "rad",
+    "external_contacts": 0,
+    "sweep_contacts": null,
+    "drive_readback": {
+      "stiffnesses": 200.0,
+      "dampings": 20.0,
+      "max_forces": 50.0
+    }
+  },
+  {
+    "door": "furnace_4",
+    "tracking_pass": true,
+    "max_hold_error": 0.001318812370300293,
+    "unit": "rad",
+    "external_contacts": 0,
+    "sweep_contacts": 0,
+    "drive_readback": {
+      "stiffnesses": 200.0,
+      "dampings": 20.0,
+      "max_forces": 50.0
+    }
+  },
+  {
+    "door": "drying_oven",
+    "tracking_pass": true,
+    "max_hold_error": 4.851818084716797e-05,
+    "unit": "rad",
+    "external_contacts": 0,
+    "sweep_contacts": 0,
+    "drive_readback": {
+      "stiffnesses": 200.0,
+      "dampings": 20.0,
+      "max_forces": 50.0
+    }
+  },
+  {
+    "door": "xrd",
+    "tracking_pass": true,
+    "max_hold_error": 1.1134147643865333e-06,
+    "unit": "m",
+    "external_contacts": 0,
+    "sweep_contacts": 0,
+    "drive_readback": {
+      "stiffnesses": 2000.0,
+      "dampings": 100.0,
+      "max_forces": 100.0
+    }
+  }
+]

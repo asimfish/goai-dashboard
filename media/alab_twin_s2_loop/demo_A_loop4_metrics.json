@@ -1,0 +1,258 @@
+{
+ "max_theta_rad": 0.0,
+ "placements_mm": [],
+ "events": [
+  {
+   "t": 0.33,
+   "msg": "trial 4: precursor_1 jittered by (-0.011, -0.016) m"
+  },
+  {
+   "t": 0.33,
+   "msg": "call 1: 0 waypoints in 13 s, stage_estimate 0, done=False: No safe approach is available. precursor_1 is below the worktop and outside the robot's usable workspace. Its required g"
+  },
+  {
+   "t": 0.33,
+   "msg": "stage after call 1: 0"
+  },
+  {
+   "t": 0.33,
+   "msg": "call 2: 0 waypoints in 11 s, stage_estimate 0, done=False: No safe approach is feasible from the supplied state. precursor_1 is below the worktop and outside the robot's usable wo"
+  },
+  {
+   "t": 0.33,
+   "msg": "planner refused twice in a row \u2192 trial ended (recorded as refusal)"
+  }
+ ],
+ "simplifications": [
+  "objects released inside instrument chambers are pinned at the release pose (chamber interiors are convex-hull solid)",
+  "tilt metric excludes deliberate pour phases"
+ ],
+ "refused": "No safe approach is feasible from the supplied state. precursor_1 is below the worktop and outside the robot's usable workspace. Its required grasp TCP is [2.605, 0.315, 0.0209], approximately 0.863 m horizontally and 1.308 m in 3D from the base, exceeding both the 0.75 m usable radius and 0.85 m re",
+ "loop": {
+  "trial": 4,
+  "stage": 0,
+  "calls": 2,
+  "budget": 12,
+  "tokens_in": 8036,
+  "tokens_out": 505,
+  "wall_s": 25.1,
+  "penetration_ticks": 0,
+  "gate_pass": false,
+  "history": [
+   {
+    "call": 0,
+    "waypoints": [],
+    "outcomes": [],
+    "stage_after": 0
+   }
+  ]
+ },
+ "astra_plans": [
+  {
+   "reasoning_summary": "No safe approach is available. precursor_1 is below the worktop and outside the robot's usable workspace. Its required grasp TCP is [2.605, 0.315, 0.0209], approximately 0.863 m horizontally and 1.308 m in 3D from the robot base, exceeding both the 0.75 m usable radius and 0.85 m reach. Recovery or scene correction is required before executing this task.",
+   "waypoints": [],
+   "safety_checks": [
+    "Required pre-grasp TCP [2.605, 0.315, 0.197] is also outside the permitted workspace.",
+    "Bottle AABB z range [-0.025, 0.077] lies entirely below the worktop at z=1.002705; do not assume the bottle is on the bench.",
+    "Do not attempt an unreachable grasp or attach the bottle remotely.",
+    "Reposition precursor_1 upright onto a reachable, clear worktop location and obtain an updated scene before replanning."
+   ],
+   "done": false,
+   "stage_estimate": 0,
+   "_meta": {
+    "usage": {
+     "attribution": {
+      "items": {
+       "msg_008db34aec7d9794016aa5b4b20f2487d090c7dbe25337fcfb": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 2305,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1201,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 4,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 314,
+          "output_tokens": 0
+         }
+        ],
+        "input_tokens": 3829,
+        "output_tokens": 0
+       },
+       "msg_008db34aec7d9794016aa5b4b5e06487d09d0d121af93a65a7": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 2,
+          "output_tokens": 249
+         }
+        ],
+        "input_tokens": 2,
+        "output_tokens": 249
+       }
+      },
+      "request_fields": {
+       "text.format": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 155,
+        "output_tokens": 0
+       },
+       "instructions": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 21,
+        "output_tokens": 0
+       }
+      }
+     },
+     "input_tokens": 4007,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 249,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 4256
+    },
+    "elapsed_s": 12.777990332979243,
+    "effort": "medium",
+    "call": 0
+   },
+   "validator_corrections": []
+  },
+  {
+   "reasoning_summary": "No safe approach is feasible from the supplied state. precursor_1 is below the worktop and outside the robot's usable workspace. Its required grasp TCP is [2.605, 0.315, 0.0209], approximately 0.863 m horizontally and 1.308 m in 3D from the base, exceeding both the 0.75 m usable radius and 0.85 m reach. Do not attempt the grasp; the bottle must be recovered into the reachable workspace or its pose corrected before planning can continue.",
+   "waypoints": [],
+   "safety_checks": [
+    "Required grasp height: -0.025 + 0.45 \u00d7 0.102 = 0.0209 m.",
+    "Required vertical pre-grasp TCP [2.605, 0.315, 0.197] is also outside reach.",
+    "Bottle AABB lies entirely below the worktop at z = 1.0027 m; do not assume an on-bench pose.",
+    "No grasp, attachment, dosing, or placement has occurred."
+   ],
+   "done": false,
+   "stage_estimate": 0,
+   "_meta": {
+    "usage": {
+     "attribution": {
+      "items": {
+       "msg_0c82b83b594f664b016aa5b4bf536087d09bbac011f7b0a3be": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 2327,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 5,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 1201,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 4,
+          "output_tokens": 0
+         },
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 314,
+          "output_tokens": 0
+         }
+        ],
+        "input_tokens": 3851,
+        "output_tokens": 0
+       },
+       "msg_0c82b83b594f664b016aa5b4c168ac87d0a18c7ad875167c82": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "content": [
+         {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "input_tokens": 2,
+          "output_tokens": 256
+         }
+        ],
+        "input_tokens": 2,
+        "output_tokens": 256
+       }
+      },
+      "request_fields": {
+       "text.format": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 155,
+        "output_tokens": 0
+       },
+       "instructions": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "input_tokens": 21,
+        "output_tokens": 0
+       }
+      }
+     },
+     "input_tokens": 4029,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 256,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 4285
+    },
+    "elapsed_s": 11.225593238021247,
+    "effort": "medium",
+    "call": 1
+   }
+  }
+ ],
+ "dp_max_mm": null,
+ "frames": 5,
+ "duration_s": 0.3,
+ "safety": {
+  "theta_dev_ok": true,
+  "dp_ok": true
+ }
+}
