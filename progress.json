@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-21T01:58+08:00",
+  "updated": "2026-09-21T02:18+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -21,12 +21,12 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-21T01:58+08:00",
+    "snapshot_at": "2026-09-21T02:18+08:00",
     "gpus": [
       {
         "index": 0,
         "used_mib": 373,
-        "util": "2%",
+        "util": "1%",
         "note": "GoAI 重建/采集专用（准入：空闲 ≥ 10 GB）"
       },
       {
@@ -46,7 +46,7 @@
       {
         "mount": "/data",
         "used": "100%",
-        "free": "6.7G",
+        "free": "6.6G",
         "note": "工作目录；21:20 我把已送达 A100 的 1.2 GB 传输包移到 NAS，21:47 本机 agent 无损去重释放 2.8 GB"
       },
       {
@@ -1269,6 +1269,10 @@
     {
       "date": "2026-09-20 22:20",
       "entry": "**瓶子外观第二阶段：绿盖已除但仍像没盖好，查明小瓶资产缺封顶几何（只有开口盖环），大瓶自带真实瓶盖；改为启用 / 复用实心盖几何后重渲染。** 同时纠正口径：相机可见性只是录制质量检查、不是登记门，物理跑通的 run 一律补登记，媒体另行重渲染。"
+    },
+    {
+      "date": "2026-09-21 02:15",
+      "entry": "**用户指出《机械臂开 XRD 滑窗》成片里机械臂纯静止，复核属实：SUBOP-C-21 登记作废。** 登记切片内 door_xrd 恒为 0.48 m，源 run 里开窗那 885 个 tick 内 TCP 只动 0.017 mm，滑窗由 Window_slide_joint 自己开。根因是 demo 门禁不验「谁开的门」。已下发新门禁 ARM_DRIVEN v1（夹爪↔门体接触对覆盖 ≥80% 开门帧、TCP 行程 ≥0.8×门行程、d(door)/dt 与 |TCP 速度| 相关 ≥0.6、开门期间门关节不得位控），并要求 agent 2 重采 SUBOP-C-21b、agent 3 用同一门禁重做 B 站炉门并回溯审计全库。验收面板已把该条从「验收通过」移到页尾「已退回」。瓶盖：Claude agent 已硬证掉 warm-up、盖子自身 opacity、盖子几何三条，锁定成因在瓶身玻璃的离线渲染处理（藏掉瓶身盖子即实心），且查出 PathTracing 的 kit 参数根本没生效（Isaac Lab 之后又改了 rendermode），已改为从 Python 侧写 carb 设置并逐项验证折射弹射深度。"
     }
   ],
   "contract": [
@@ -2291,24 +2295,29 @@
       "owner": "agent 2",
       "workflow": "wf02（用户要求：仪器门由机械臂开）",
       "action": "机械臂开 XRD 滑窗（用户 09-19 要求门由机械臂开；干燥箱门不可达改此）",
-      "segments": 1,
-      "seg_ids": "SUBOP-C-21",
+      "segments": 0,
+      "seg_ids": "SUBOP-C-21（已作废）→ 重采 SUBOP-C-21b",
       "physical": {
-        "PASS": 1
+        "REVOKED": 1
       },
-      "qualified": 1,
-      "status": "ok",
-      "visual": "站位相机 + 正面 / 侧面 / 俯视 / 腕部四路独立视频（v3 录制标准）",
+      "qualified": 0,
+      "status": "fail",
+      "visual": "成片与四路视频保留作证据；画面里机械臂全程静止",
       "reasons": [
-        "用户要求仪器门由机械臂打开；干燥箱门距 C 臂基座 3.58 m 不可达（挪近需 2.78 m 且穿过 A/B 工位），改开 XRD 滑窗（TCP 半径 0.71 m 可达）",
-        "两条 run 均把 Window_slide_joint 开到 0.480 m，最小接触分离 +0.05 / +0.01 mm，原始负分离 0",
-        "按 demo 门登记 SUBOP-C-21（run 20260920T001626_524262716，5090 计算卡）；holder 抓取是另一动作，不计入本动作"
+        "用户 09-20 指出「机械臂开 XRD 滑窗这里没有操作啊，机械臂纯静止的」——复核属实，登记作废",
+        "登记切片 1201 帧里 door_xrd 恒为 0.4800 m：进切片时滑窗已全开，切片内窗一毫米没动",
+        "同一切片内六关节整段极差最大 3.0°、max|qd| 0.035 rad/s、TCP 只走 20.3 mm 且全为竖直方向（重力下垂）",
+        "源 run 20260920T001626_524262716 里滑窗从 0 开到 0.48 m 发生在 tick 59→944，这 885 个 tick 内 TCP 只动了 0.017 mm——开窗全程机械臂冻结",
+        "成片逐帧：t=0→7.0 s 机械臂区域像素变化 ≤0.045%（噪声量级），同期滑窗区域 0→29.4%；臂第一次动是 t≈7.2 s 的腕部小转，开窗早已结束",
+        "根因是 demo 门只验「门到位 / 保持 5 s / 无负间距 / 有视频」，一扇自己开的门能全部通过；motion_evidence 记的是门关节轨迹不是机械臂轨迹"
       ],
-      "now": "已登记；四路视频与站位视频在面板「多机位新录」块",
-      "next": "后续动作（holder 放入 XRD）单独采",
+      "now": "SUBOP-C-21 作废（原始 run / 视频 / 日志全保留）；新门禁 ARM_DRIVEN v1 已下发 agent 2 / agent 3",
+      "next": "重采 SUBOP-C-21b：Window_slide_joint 改被动（只留阻尼、去掉 position target），UR5e_C 末端顶推滑窗到 ≥0.48 m 并保持 5 s；须过 ARM_DRIVEN v1 五条",
       "evidence": [
-        "NAS:/mnt/nas/data/lyf/goai/subop_store/agent2/episodes/SUBOP-C-21/{video.mp4,four_view_videos/,independent_audit.json}",
-        "5090:subop_library/index.jsonl SUBOP-C-21 行"
+        "NAS:/mnt/nas/data/lyf/goai/subop_store/agent2/episodes/SUBOP-C-21/steps.npz（q 极差 / TCP 轨迹长度 / door_xrd 恒 0.48）",
+        "NAS:.../agent2/runtime_C_r3b_runtime_20260918/runs/20260920T001626_524262716_scripted/episodes/C_holder_smoke/steps.npz（tick 59→944 开窗，TCP 位移 1.7e-5 m）",
+        "showcase/media/subop_actions/final/C-xrd_window__SUBOP-C-21.mp4 逐帧像素差（臂区 ≤0.045%）",
+        "待产出：_shared/ARM_DRIVEN_AUDIT_20260920.md（全库回溯审计）"
       ]
     },
     {
@@ -2352,12 +2361,13 @@
       "跨所有动作的缺口 ②：视觉门（三路固定相机 + 腕部相机逐阶段可见目标物 / 指垫 / 落位面 ≥ 200 像素）要在查看器里真实浏览器回放核对；A 站 24 段待分段回放、6 段相机配置不一致、6 段历史配置未认证，B 站 6 段、C 站 13 段未测",
       "缺口 ③：A 站取出 / 归位共用一条往返轨迹，不算两条独立验收",
       "现状：三个采集 agent 都在攻新动作（stock、出炉、capper），没有人在补 ① ②；这两条通了，72 段 PASS 里的大部分可成批升格"
-    ]
+    ],
+    "note_20260920": "SUBOP-C-21 已作废：滑窗自己开、机械臂全程静止。新门禁 ARM_DRIVEN v1 对所有「机械臂开/关门」动作生效，全库回溯审计进行中。"
   },
   "user_directives": {
     "issued": "2026-09-19 06:40 CST（用户逐条审看动作面板后提出）",
     "rule": "每条由负责 agent 在自己的 PROGRESS 文件里新开「## 用户指令落实（D 编号）」小节逐条回执：状态（未开始 / 进行中 / 已完成 / 受阻+原因）、证据路径、时间；监督每 20 分钟核对一次并更新本表与面板。完成标准写在每条里，达不到不许标完成。 16:50 用户追加决定：静置门 5 mm / 5° 确认；C 站开门目标为干燥箱柜门（够不着就挪近，再不行 XRD 滑窗）；a100-new 归还、七台服务器已释放可用；旧段先放行（有站位相机视频即按 demo 门通过）；瓶盖资产由我们自己修。 23:40 用户第二轮审片追加 D26–D30。",
-    "updated": "2026-09-20 22:20",
+    "updated": "2026-09-21 02:20",
     "items": [
       {
         "id": "D01",
@@ -2473,8 +2483,8 @@
         "topic": "机械臂开干燥箱柜门（C 站）",
         "what": "用户不想让仪器自己动：目标是干燥箱柜门。C 臂到门前缘 3.58 m 不可达 → 先在派生布局里把干燥箱或 C 臂工位挪近到可达范围（不互穿、不破坏已登记动作）；10 分钟定不了就改做 XRD 滑窗（0.71 m 可达）。",
         "done_when": "用户确认后一条 demo 门通过的 run。",
-        "status": "已登记但媒体需重做",
-        "evidence": "SUBOP-C-21 registered_demo_pass：滑窗开到 0.480 m、最小分离 +0.01 mm、负分离 0；站位 + 四路视频已上面板；干燥箱门不可达（3.58 m）；登记视频只有 0.48 m 到达后的 5 s 保持段，开窗动作被切掉，机位没拍到滑窗；已要求从预接近 → 开窗 → 保持完整重切并重算机位"
+        "status": "登记作废，重采中（SUBOP-C-21b）",
+        "evidence": "09-20 复核作废：用户指出成片里机械臂纯静止，实测属实——登记切片 1201 帧 door_xrd 恒 0.4800 m（进切片时已全开）；源 run 里滑窗 0→0.48 m 发生在 tick 59→944，这 885 tick 内 TCP 只动 0.017 mm；成片 t=0→7.0 s 臂区像素变化 ≤0.045%。滑窗由 Window_slide_joint 自己开，机械臂没参与。根因：demo 门只验门到位 / 保持 5 s / 无负间距 / 有视频，自己开的门可全通过。已下发 ARM_DRIVEN v1 新门禁并重采 SUBOP-C-21b（门关节改被动、末端顶推）。原始 run / 视频 / 日志全部保留。"
       },
       {
         "id": "D14",
@@ -2637,6 +2647,15 @@
         "done_when": "C-21 v2 机位五路完整视频 + 三段 clip 上面板（2 小时内）；A 站修正布局静帧上面板；工具被三个 agent 换用。",
         "status": "部分完成（工具与切片已交，回放渲染待起）",
         "evidence": "camera_rig_v2 交付：make_rig.py / check_visibility.py / 三站样例；C-21 旧机位量化：滑窗占比 0%、TCP 不在画面；新机位正面 8.2% 侧面 10.9%。C-21 全程重切（预接近 / 开窗 / 保持）+ C-20 六阶段 + B-10 五阶段 clip 与首帧已上面板。任务 3（5090 计算卡 / GPU4 回放重渲染、A 站布局静帧、瓶特写）已催起"
+      },
+      {
+        "id": "D32",
+        "owner": "agent 2 / agent 3（门禁定义由监督会话给出）",
+        "topic": "新门禁 ARM_DRIVEN v1：必须证明门是机械臂开的",
+        "what": "对所有「机械臂开 / 关 X」动作（XRD 滑窗、B 站炉门、干燥箱门、封盖机盖等）强制六条：C1 门从 <5% 行程到 ≥95% 行程的全部 tick 必须落在登记切片内；C2 开门区间内 contacts.jsonl 必须有（夹爪 / 末端 link）↔（门体 link）接触对，覆盖 ≥80% 开门 tick，pair 名进 audit；C3 开门区间内 TCP 轨迹长度 ≥ 0.8 × 门行程，且 TCP 主方向与门行程方向 cos ≥ 0.7；C4 开门区间内 d(door)/dt 与 |TCP 速度| 相关系数 ≥ 0.6；C5 开门区间内 door_joint 不得被 position / velocity target 驱动，必须被动（只留阻尼 / 弹簧），drive 配置 dump 进 audit；C6 原 demo 门四条继续成立。任一条不过 → 不得登记为机械臂动作，最多作为 MOTOR-* 设备动作登记并在标题写明「设备自身动作」。",
+        "done_when": "① 门禁写进 _shared/COLLECTION_SPLIT_20260918.md 并同步 NAS；② 全库回溯审计产出 _shared/ARM_DRIVEN_AUDIT_20260920.md（agent 2 + agent 3 各一份，一行一条 id / C1..C5 / 结论）；③ SUBOP-C-21b 与 B 站机械臂开炉门 v2 各一条过门 run。",
+        "status": "刚下发（09-21 02:20）",
+        "evidence": "发起于 SUBOP-C-21 作废；该条是现行 demo 门禁漏洞的直接证据"
       }
     ]
   }
