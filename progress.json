@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-21T03:09+08:00",
+  "updated": "2026-09-21T05:37+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -21,7 +21,7 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-21T03:09+08:00",
+    "snapshot_at": "2026-09-21T05:37+08:00",
     "gpus": [
       {
         "index": 0,
@@ -1285,6 +1285,10 @@
     {
       "date": "2026-09-21 03:35",
       "entry": "**用户对刚上面板的 r6 成片提了两处返工，都已量化下发。** ① 排位错了：用户要的「一排」是转盘上原来两只小瓶那条线（precursor_1 (1.704,0.210,1.1537)、precursor_2 (1.796,0.210,1.1537)，y=0.210、x 间距 0.092 m），r6 摆到了台面前沿 (2.100,0.550,1.0560)；大瓶要沿同线外延、间距 max(0.092, 外径+25 mm)、root z 按自身 extent 重算，并过 5 s 静置门与 FR3 可达性检查。② 机位错了：用户要旧机位，station_a eye (1.75,−2.00,2.75)/lookat (1.75,0.50,1.15)/22 mm 等四路全部改回，camera_rig_v2 对 A 站暂停（B/C 站继续用）。天平无罩这条 r6 做对了，保持。③ 用户给了瓶盖兜底授权：PT 成本不可接受就把瓶盖整个去掉。已要求 Claude agent 交四个量化数（单帧秒数、1059 帧×5 路总时长、六条总机时、PT 连续帧噪点判断）再二选一。A 站成片在返工完成前不重渲，避免白跑机时。"
+    },
+    {
+      "date": "2026-09-21 05:40",
+      "entry": "**A 站四瓶采集按用户指令整条移交 Claude agent。** agent 1（Codex）19:59:47 在执行工具调用途中被平台打断，此后 1.5 小时零产出、r7 一条没跑；agent 2 同样在 20:11 后停摆。移交包含：已就绪的 r7 布局包（四瓶摆回转盘上原小瓶那条线 y=0.210、旧机位四路、天平无罩）、mainskill 五张空卡、PathTracing 渲染口径、以及大瓶携行脱手的已知修法。 **SUBOP-C-20 的 PathTracing 重渲已出片**（1050 帧、87.5 s），是第一条用新渲染管线的成片，已换上验收面板。 **C-21b 九个变体全部失败**（base/low/high/x_left/x_right/short_contact，全部 13.0 s 死在 near_frame、door 0.0000）：伺服诊断显示末端其实已到窗框边（y 只差 8 mm），超标的是 z 掉了 17.6 mm 的重力下垂，是过程航点拿 10 mm/0.1 rad 终态精度卡自己，不是 IK 无解；已要求改成 50 mm/0.25 rad 并只跑 low 一个变体。"
     }
   ],
   "contract": [
@@ -2379,7 +2383,7 @@
   "user_directives": {
     "issued": "2026-09-19 06:40 CST（用户逐条审看动作面板后提出）",
     "rule": "每条由负责 agent 在自己的 PROGRESS 文件里新开「## 用户指令落实（D 编号）」小节逐条回执：状态（未开始 / 进行中 / 已完成 / 受阻+原因）、证据路径、时间；监督每 20 分钟核对一次并更新本表与面板。完成标准写在每条里，达不到不许标完成。 16:50 用户追加决定：静置门 5 mm / 5° 确认；C 站开门目标为干燥箱柜门（够不着就挪近，再不行 XRD 滑窗）；a100-new 归还、七台服务器已释放可用；旧段先放行（有站位相机视频即按 demo 门通过）；瓶盖资产由我们自己修。 23:40 用户第二轮审片追加 D26–D30。",
-    "updated": "2026-09-21 03:35",
+    "updated": "2026-09-21 05:40",
     "items": [
       {
         "id": "D01",
@@ -2684,8 +2688,17 @@
         "topic": "瓶盖兜底授权：实在不行就不要盖子",
         "what": "用户 09-21：「试剂瓶盖子的问题实在解决不了的话，就都不要盖子里」。决策树：PT 逐帧成本可接受且无帧间噪点 → 全部用 PathTracing 重出成片，保留原始盖；否则 → 派生可视层里把 <Bottle>_Lid/Visuals 设 invisible，四瓶都不要盖子，继续实时模式渲。纯视觉，不动碰撞体/质量/变换/已登记物理数据。",
         "done_when": "拿到实时 vs PT 单帧秒数、1059 帧×5 路单条总时长、六条总机时，以及一段 PT 连续帧的噪点判断，然后二选一落地。",
-        "status": "等 PT 成本探针数据",
-        "evidence": "静态图已由 PathTracing 修好（bottle_capfix_v4/diag_pipeline/step_D1_pathtracing_*.png）；视频管线未切"
+        "status": "已定：保留原始瓶盖走 PathTracing（噪点 0.028/255、成本 2.51×）；C-20 成片已重渲上板",
+        "evidence": "静态图已由 PathTracing 修好（bottle_capfix_v4/diag_pipeline/step_D1_pathtracing_*.png）；视频管线未切  PT_COST.md：PT/实时 = 2.51×，C-20 10→26 min、B-10 13→32 min；噪点探针 60 帧静止背景帧间平均绝对差 0.028/255、最大 0.063。SUBOP-C-20 PathTracing 成片 1050 帧已出（claude/replay/SUBOP-C-20_pt/video.mp4）并换上验收面板。"
+      },
+      {
+        "id": "D35",
+        "owner": "goal_子操作采集（Claude agent，用户 09-21 指定）",
+        "topic": "A 站四瓶采集整条移交 Claude agent",
+        "what": "用户：「A站的新的视频，有新的按照我的要求的结果了吗，没有的话直接交给 claude code 的那个 agent 去干吧」。agent 1（Codex）19:59:47 执行中被平台打断，1.5 小时零产出，r7 一条没跑。A 站四瓶的物理采集 + PathTracing 渲染 + 出片全部转交 Claude agent，布局用已就绪的 r7 包。",
+        "done_when": "四瓶各一条 r7 布局 + 旧机位 + PathTracing 的完整成片上验收面板。",
+        "status": "刚移交（09-21）",
+        "evidence": "r7 包 /data/liyufeng/goai_assets/handoff/collection_astra/A_r7_row_oldcam_20260921/ （4 个 json + ASSET_SHA256.json + RESULT.md）；可用卡实测 mainskill GPU0/3/4/5/6 五张空闲"
       }
     ]
   }
