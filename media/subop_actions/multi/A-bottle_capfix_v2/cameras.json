@@ -1,0 +1,355 @@
+{
+  "station_a": {
+    "eye": [
+      0.6412000060081482,
+      -0.5562000274658203,
+      2.3886001110076904
+    ],
+    "target": [
+      1.2204307044239542,
+      0.02303076906124879,
+      1.8150292974684206
+    ],
+    "target_definition": "one metre along the measured optical axis",
+    "manifest_lookat_target": [
+      1.7874,
+      0.59,
+      1.2536
+    ],
+    "manifest_eye": [
+      0.6412,
+      -0.5562,
+      2.3886
+    ],
+    "world_quat_wxyz": [
+      0.881120502948761,
+      -0.11507390439510345,
+      0.2778128981590271,
+      0.3649721145629883
+    ],
+    "focal_length_mm": 16.0,
+    "intrinsic_matrix": [
+      [
+        853.3333129882812,
+        0.0,
+        640.0
+      ],
+      [
+        0.0,
+        853.3333129882812,
+        400.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "width": 1280,
+    "height": 800,
+    "image_std": 62.2649585210303,
+    "capture_tick": 12,
+    "path": "initial_station_a.png",
+    "pose_source": "USD world pose of fixed camera",
+    "legacy_usd_eye": [
+      0.6412000060081482,
+      -0.5562000274658203,
+      2.3886001110076904
+    ],
+    "legacy_usd_quat_wxyz": [
+      0.881120502948761,
+      -0.11507390439510345,
+      0.2778128981590271,
+      0.3649721145629883
+    ]
+  },
+  "a_front": {
+    "eye": [
+      2.0999999046325684,
+      0.4000000059604645,
+      1.0546000003814697
+    ],
+    "target": [
+      2.09999993886111,
+      1.3999999717319227,
+      1.0546000003814706
+    ],
+    "target_definition": "one metre along the measured optical axis",
+    "manifest_lookat_target": [
+      2.1,
+      0.7,
+      1.0546
+    ],
+    "manifest_eye": [
+      2.1,
+      0.4,
+      1.0546
+    ],
+    "world_quat_wxyz": [
+      0.7071067690849304,
+      1.2560739454502297e-15,
+      5.805445765263951e-16,
+      0.7071067690849304
+    ],
+    "focal_length_mm": 20.0,
+    "intrinsic_matrix": [
+      [
+        1066.6666259765625,
+        0.0,
+        640.0
+      ],
+      [
+        0.0,
+        1066.6666259765625,
+        400.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "width": 1280,
+    "height": 800,
+    "image_std": 76.24771764032594,
+    "capture_tick": 12,
+    "path": "initial_a_front.png",
+    "pose_source": "USD world pose of fixed camera",
+    "legacy_usd_eye": [
+      2.0999999046325684,
+      0.4000000059604645,
+      1.0546000003814697
+    ],
+    "legacy_usd_quat_wxyz": [
+      0.7071067690849304,
+      1.2560739454502297e-15,
+      5.805445765263951e-16,
+      0.7071067690849304
+    ]
+  },
+  "a_side": {
+    "eye": [
+      2.0999999046325684,
+      0.5400000214576721,
+      1.1035000085830688
+    ],
+    "target": [
+      2.099999920336315,
+      1.5380525842561061,
+      1.0411217232268255
+    ],
+    "target_definition": "one metre along the measured optical axis",
+    "manifest_lookat_target": [
+      2.1,
+      0.7,
+      1.0935
+    ],
+    "manifest_eye": [
+      2.1,
+      0.54,
+      1.1035
+    ],
+    "world_quat_wxyz": [
+      0.706762433052063,
+      -0.022064799442887306,
+      0.022064799442887306,
+      0.706762433052063
+    ],
+    "focal_length_mm": 26.0,
+    "intrinsic_matrix": [
+      [
+        1386.6666259765625,
+        0.0,
+        640.0
+      ],
+      [
+        0.0,
+        1386.6666259765625,
+        400.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "width": 1280,
+    "height": 800,
+    "image_std": 73.65845192478025,
+    "capture_tick": 12,
+    "path": "initial_a_side.png",
+    "pose_source": "USD world pose of fixed camera",
+    "legacy_usd_eye": [
+      2.0999999046325684,
+      0.5400000214576721,
+      1.1035000085830688
+    ],
+    "legacy_usd_quat_wxyz": [
+      0.706762433052063,
+      -0.022064799442887306,
+      0.022064799442887306,
+      0.706762433052063
+    ]
+  },
+  "a_top": {
+    "eye": [
+      1.625599980354309,
+      0.7749999761581421,
+      1.1341999769210815
+    ],
+    "target": [
+      2.61769663549318,
+      0.7750000059069473,
+      1.0087239769467131
+    ],
+    "target_definition": "one metre along the measured optical axis",
+    "manifest_lookat_target": [
+      2.1,
+      0.775,
+      1.0742
+    ],
+    "manifest_eye": [
+      1.6256,
+      0.775,
+      1.1342
+    ],
+    "world_quat_wxyz": [
+      0.998022198677063,
+      -1.2973223384449284e-08,
+      0.062862329185009,
+      1.5721022705861287e-08
+    ],
+    "focal_length_mm": 18.0,
+    "intrinsic_matrix": [
+      [
+        960.0,
+        0.0,
+        640.0
+      ],
+      [
+        0.0,
+        960.0,
+        400.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "width": 1280,
+    "height": 800,
+    "image_std": 72.82576549224221,
+    "capture_tick": 12,
+    "path": "initial_a_top.png",
+    "pose_source": "USD world pose of fixed camera",
+    "legacy_usd_eye": [
+      1.625599980354309,
+      0.7749999761581421,
+      1.1341999769210815
+    ],
+    "legacy_usd_quat_wxyz": [
+      0.998022198677063,
+      -1.2973223384449284e-08,
+      0.062862329185009,
+      1.5721022705861287e-08
+    ]
+  },
+  "wrist": {
+    "eye": [
+      1.7499680519104004,
+      0.9720333814620972,
+      1.7690173387527466
+    ],
+    "target": [
+      1.7501874317417498,
+      0.40717537794379055,
+      0.9438289991598499
+    ],
+    "target_definition": "one metre along the measured optical axis",
+    "manifest_lookat_target": null,
+    "manifest_eye": null,
+    "world_quat_wxyz": [
+      -0.20919042825698853,
+      -0.6755362749099731,
+      0.208914652466774,
+      0.675459086894989
+    ],
+    "focal_length_mm": 12.0,
+    "intrinsic_matrix": [
+      [
+        320.0,
+        0.0,
+        320.0
+      ],
+      [
+        0.0,
+        320.0,
+        200.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "width": 640,
+    "height": 400,
+    "image_std": 57.03968406574676,
+    "capture_tick": 12,
+    "path": "initial_wrist.png",
+    "pose_source": "Measured PhysX wrist-link pose composed with USD local camera mount",
+    "legacy_usd_eye": [
+      1.7499741315841675,
+      0.9720195531845093,
+      1.7691097259521484
+    ],
+    "legacy_usd_quat_wxyz": [
+      0.2091158777475357,
+      0.6755613088607788,
+      -0.20884673297405243,
+      -0.6754780411720276
+    ],
+    "direct_fabric_pose_query": false,
+    "legacy_position_discrepancy_m": 9.361398406326771e-05,
+    "wrist_mount_check": {
+      "method": "Composed USD local camera transform compared with camera configuration; both transformed by measured PhysX parent. Rendering-parent inheritance is not independently sampled here.",
+      "body_name": "fr3_hand",
+      "body_pose_w": [
+        1.749995231628418,
+        0.9070491790771484,
+        1.8440310955047607,
+        7.069863204378635e-05,
+        0.7069637775421143,
+        0.7072499394416809,
+        -7.840525358915329e-05
+      ],
+      "offset_xyz": [
+        0.065,
+        0.0,
+        0.075
+      ],
+      "offset_quaternion": [
+        0.9553290692870786,
+        -0.0,
+        -0.2955441919156661,
+        0.0
+      ],
+      "offset_convention": "ros",
+      "expected_eye": [
+        1.7499680519104004,
+        0.9720333814620972,
+        1.7690173387527466
+      ],
+      "expected_world_quat_wxyz": [
+        -0.20919042825698853,
+        -0.6755362749099731,
+        0.208914652466774,
+        0.675459086894989
+      ],
+      "position_error_m": 0.0,
+      "orientation_error_rad": 0.0,
+      "pass": true
+    }
+  }
+}

@@ -1,14 +1,62 @@
 {
-  "schema": "subop_phases_v1",
-  "phase_id": "SUBOP-C-21",
-  "dt_s": 0.004166666666666667,
-  "fps": 12,
-  "actor": "ur5e_C",
-  "object": "xrd_window",
-  "phases": [
-    {"segment_id":"pre_approach","name":"pre_approach","name_cn":"预接近","description_cn":"机械臂从起始位移动到滑窗前的安全预接近位。","start_tick":0,"end_tick":28,"g05_stage":3},
-    {"segment_id":"open_window","name":"open_window","name_cn":"开窗","description_cn":"机械臂进入 via 点并推动 XRD 滑窗，直到窗口完全打开。","start_tick":28,"end_tick":942,"g05_stage":3},
-    {"segment_id":"hold_open","name":"hold_open","name_cn":"保持","description_cn":"滑窗保持在 0.480 m 开度，机械臂保持稳定 5 秒。","start_tick":942,"end_tick":2145,"g05_stage":3}
+ "schema": "subop_phases_v1",
+ "phase_id": "SUBOP-C-21",
+ "dt_s": 0.004166666666666667,
+ "fps": 12,
+ "actor": "ur5e_C",
+ "object": "xrd_window",
+ "phases": [
+  {
+   "segment_id": "pre_approach",
+   "name": "pre_approach",
+   "name_cn": "预接近",
+   "description_cn": "机械臂在滑窗前方就位、基本不动（本段 TCP 位移约 2 cm）；滑窗仍关闭。",
+   "start_tick": 0,
+   "end_tick": 28,
+   "g05_stage": 3
+  },
+  {
+   "segment_id": "open_window",
+   "name": "open_window",
+   "name_cn": "开窗（由关节驱动，非机械臂）",
+   "description_cn": "XRD 滑窗由 Window_slide_joint 从 0 开到 0.480 m。实测机械臂全程未接触滑窗：夹爪与滑窗最近 0.756 m，夹爪开度恒为 0.085 m 未动作。",
+   "start_tick": 28,
+   "end_tick": 942,
+   "g05_stage": 3
+  },
+  {
+   "segment_id": "hold_open",
+   "name": "hold_open",
+   "name_cn": "保持开启",
+   "description_cn": "滑窗保持 0.480 m 开度约 5 s，机械臂保持不动；原始负分离 tick = 0。",
+   "start_tick": 942,
+   "end_tick": 2145,
+   "g05_stage": 3
+  }
+ ],
+ "demo_result": {
+  "qualified_demo": true,
+  "gate": "v4_demo_20260919_1650",
+  "window_open_m": 0.48,
+  "hold_s": 5.0,
+  "negative_separation_m": 0.0
+ },
+ "steps_cn": [
+  "机械臂在 XRD 滑窗前方就位并保持稳定。",
+  "XRD 滑窗由自身关节（电机）驱动，从 0 开到 0.480 m。",
+  "滑窗保持 0.480 m 开度 5 s，动作结束。"
+ ],
+ "door_note_cn": "滑窗由关节（电机）驱动开启，不是机械臂开门（D29）；机械臂开窗的动作需另行采集。",
+ "measured_arm_motion": {
+  "tick_range": [
+   0,
+   2145
   ],
-  "demo_result": {"qualified_demo": true, "gate": "v4_demo_20260919_1650", "window_open_m": 0.480, "hold_s": 5.0, "negative_separation_m": 0.0}
+  "tcp_path_length_m": 0.0212,
+  "tcp_displacement_m": 0.02,
+  "min_tcp_to_window_distance_m": 0.756,
+  "jaw_width_m_constant": 0.085,
+  "door_open_tick": 942,
+  "source": "steps.npz of run 20260920T001626_524262716_scripted, measured by goal_子操作采集 2026-09-20"
+ }
 }

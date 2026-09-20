@@ -3191,56 +3191,119 @@
   {
    "dir": "C-xrd_window__SUBOP-C-21__v2",
    "action": "C-xrd_window",
-   "run": "20260920T001626_524262716_scripted → camera_rig_v2 回放重渲染",
-   "host": "mainskill GPU3（agent 2 用 camera_rig_v2 重放）",
-   "label": "★ 机械臂开 XRD 滑窗 · camera_rig_v2 新机位全程重渲染（108 帧 × 5 路，预接近 / 开窗 / 保持三阶段）",
-   "outcome": "可见性门通过：正面 8.248% / 侧面 10.931% / 倾斜俯视 7.820% / 站位 5.071%，TCP 全程在画面内（旧机位：正面与俯视滑窗占比 0%、TCP 不在画面）",
+   "run": "20260920T001626_524262716_scripted",
+   "host": "5090 计算卡 GPU-828bb172 · 运动学回放重渲染（不跑物理）：监督机 Claude（goal_子操作采集）",
+   "label": "机械臂开 XRD 滑窗 SUBOP-C-21 · v2 机位重渲染五路全程 + 三段 clip（按「被操作物 + base_link + TCP 轨迹」联合包围盒算机位）",
+   "outcome": "渲染完成：五路各 108 帧；回放保真度 max 物体位姿误差 1.2e-07 m、关节误差 0、门开度误差 0（物理结果与登记行未改动）",
    "views": {
-    "video_full__station_c": "站位相机 · 全程（v2 机位）",
-    "four_view_videos/c_front": "正面（v2）",
-    "four_view_videos/c_side": "侧面（v2）",
-    "four_view_videos/c_top": "俯视（v2，倾 20°）",
-    "four_view_videos/wrist": "腕部（v2）"
+    "panel_media_v2/video_full": "站位相机 station_c · v2 机位全程 0–8.9 s（108 帧）",
+    "panel_media_v2/video_full__c_front": "正面 c_front · v2 机位全程 0–8.9 s（108 帧）",
+    "panel_media_v2/video_full__c_side": "侧面 c_side · v2 机位全程 0–8.9 s（108 帧）",
+    "panel_media_v2/video_full__c_top": "俯视（倾 20°）c_top · v2 机位全程 0–8.9 s（108 帧）",
+    "panel_media_v2/video_full__wrist": "腕部 wrist · v2 机位全程 0–8.9 s（108 帧）"
    },
    "phases": [
     {
      "name": "pre_approach",
-     "clip": "phase_1_pre_approach.mp4",
-     "poster": "phase_1_pre_approach.jpg",
-     "description_cn": "预接近：机械臂从起始位移动到滑窗前的安全预接近位。",
+     "clip": "panel_media_v2/phase_1_pre_approach.mp4",
+     "poster": "panel_media_v2/phase_1_pre_approach.jpg",
+     "description_cn": "预接近：机械臂在滑窗前方就位、基本不动（本段 TCP 位移约 2 cm）；滑窗仍关闭。",
      "start_s": 0.0,
      "end_s": 0.117,
      "ticks": [
       0,
       28
-     ]
+     ],
+     "frames_written": 2
     },
     {
      "name": "open_window",
-     "clip": "phase_2_open_window.mp4",
-     "poster": "phase_2_open_window.jpg",
-     "description_cn": "开窗：机械臂进入 via 点并推动 XRD 滑窗，直到窗口完全打开。",
+     "clip": "panel_media_v2/phase_2_open_window.mp4",
+     "poster": "panel_media_v2/phase_2_open_window.jpg",
+     "description_cn": "开窗（由关节驱动，非机械臂）：XRD 滑窗由 Window_slide_joint 从 0 开到 0.480 m。实测机械臂全程未接触滑窗：夹爪与滑窗最近 0.756 m，夹爪开度恒为 0.085 m 未动作。",
      "start_s": 0.117,
      "end_s": 3.925,
      "ticks": [
       28,
       942
-     ]
+     ],
+     "frames_written": 47
     },
     {
      "name": "hold_open",
-     "clip": "phase_3_hold_open.mp4",
-     "poster": "phase_3_hold_open.jpg",
-     "description_cn": "保持：滑窗保持在 0.480 m 开度，机械臂保持稳定 5 秒。",
+     "clip": "panel_media_v2/phase_3_hold_open.mp4",
+     "poster": "panel_media_v2/phase_3_hold_open.jpg",
+     "description_cn": "保持开启：滑窗保持 0.480 m 开度约 5 s，机械臂保持不动；原始负分离 tick = 0。",
      "start_s": 3.925,
      "end_s": 8.938,
      "ticks": [
       942,
       2145
-     ]
+     ],
+     "frames_written": 61
     }
    ],
-   "review_note": "这是按用户 09-20 04:15 审片意见（正面太近、侧面位置不对、视频要分阶段）重做的版本：机位对准 XRD 滑窗 + 机械臂基座 + TCP 轨迹的联合包围盒，视频覆盖预接近到保持全程并按三阶段切分。"
+   "stills": {
+    "gate/c_front_t00000": "正面 · 开窗前（tick 0，滑窗关闭）",
+    "gate/c_front_t00942": "正面 · 开窗后（tick 942，滑窗 0.480 m）",
+    "gate/c_top_t00942": "俯视（倾 20°）· 开窗后：滑窗伸出、机械臂在左下方",
+    "gate/c_side_t00942": "侧面 · 开窗后",
+    "gate/wrist_t00942": "腕部 · 开窗后（夹爪视角）"
+   },
+   "review_note": "实测：本段机械臂并未开窗——TCP 全程只移动 21 mm，夹爪与滑窗最近 0.756 m，夹爪开度恒定 0.085 m；滑窗由 Window_slide_joint（电机）从 0 驱动到 0.480 m。因此本条按 D29 标注「门由电机开（旧）」，机械臂开窗动作需另行采集。机位已按 D01/D26 v2 重算：正面滑窗占比 8.25 %、侧面 10.93 %、俯视（倾 20°）7.82 %，TCP 全程在画面内，实测相机位姿核查 PASS（对照旧机位：正面与俯视滑窗 0 %、正面/侧面 TCP 0 % 在画面内）。",
+   "door_note_cn": "门由电机开（旧）",
+   "source": "NAS subop_store/claude/render/SUBOP-C-21_v2（frames/ 与 logs/ 未下载，留在 NAS）"
+  },
+  {
+   "dir": "A-bottle_capfix_v2",
+   "action": "A-precursor_1",
+   "run": "资产派生 + 真实场景渲染（无物理 run）",
+   "host": "mainskill GPU4（Claude 辅助 agent）",
+   "label": "★ 试剂瓶盖修正 v2：亮绿盖 → 白 / 浅灰（用户连续三轮要求）· 真实 A 站场景渲染",
+   "outcome": "绿盖已消除；四瓶实测成一排（x=2.1，y=0.55/0.70/0.85/1.00，间距 0.15 m）。碰撞体、质量、变换未改。",
+   "views": {},
+   "stills": {
+    "capfix_four_bottles_row": "四瓶一排（左起：棕大 / 透明大 / 透明小 / 棕小，盖已改白）",
+    "capfix_lid_closeup": "瓶盖特写（30 cm）",
+    "capfix_bottle_front": "单瓶正面",
+    "capfix_station_a": "站位相机全景",
+    "capfix_wrist": "腕部相机"
+   },
+   "review_note": "根因修正：绿色不是颜色常量，而是来自盖子贴图 T_ReagentBottleNNN_BC001.png，OmniPBR 的 diffuse_color_constant 根本没 authored，所以覆盖常量无效；做法是在派生层用 strongerThanDescendants 给 Lid/Visuals 整体换绑不带贴图的新材质（MDL + UsdPreviewSurface 双通道）。派生资产在 NAS subop_store/claude/bottle_capfix_v2/derived_assets/。待用户确认：盖子目前偏半透明，若要实心白塑料感可再调不透明度与粗糙度。"
+  },
+  {
+   "dir": "A-bottle_capfix_v3_compare",
+   "action": "A-precursor_1",
+   "run": "材质 A/B 对照渲染（无物理 run）",
+   "host": "mainskill GPU4（Claude 辅助 agent）",
+   "label": "试剂瓶盖 · 半透明观感的 A/B 对照（同机位逐字节相同相机）",
+   "outcome": "结论：不是材质问题。A 版与 B 版（opacity=1、enable_opacity=0、roughness 0.45）画面无可见差异",
+   "views": {},
+   "stills": {
+    "lid_closeup_A_v2_translucent_look": "A 版特写（v2 材质）",
+    "lid_closeup_B_v3_opaque_material": "B 版特写（v3 完全不透明材质）",
+    "row_A_v2": "A 版四瓶一排",
+    "row_B_v3": "B 版四瓶一排"
+   },
+   "review_note": "查明原因：这些瓶的 Lid 是一圈开口的带竖纹盖环，套在瓶颈外面，透明玻璃螺纹颈从盖环中间穿上去；特写里「透过盖看到螺纹」看到的是穿过盖环开口的玻璃瓶颈，不是盖子透光。属资产几何设计，非缺陷，按现状接受；用户若要实心封口盖需换瓶资产族。"
+  },
+  {
+   "dir": "A-bottle_capfix_v4",
+   "action": "A-precursor_1",
+   "run": "红色探针实验 + 多版材质对照（无物理 run）",
+   "host": "5090 计算卡（Claude 辅助 agent）",
+   "label": "★★ 瓶盖问题的最终答案：几何本来就是好的，白盖在白墙白台前没有对比度",
+   "outcome": "红色探针证明：把盖子材质换成纯红、其余不动，四只瓶立刻显示为实心完整的螺旋盖并严密封口。所以\"盖子没盖上\"是白盖低对比造成的错觉，不是几何缺陷。导师的 v4 封顶资产与 agent 的 v5–v7 网格尝试都在解决不存在的问题，已弃用（文件留痕）。",
+   "views": {},
+   "stills": {
+    "PROOF_red_probe_row": "★ 红色探针：四瓶一排（证明盖子几何完整、确实盖住瓶口）",
+    "PROOF_red_probe_closeup": "★ 红色探针：30 cm 特写",
+    "row_1_v3_white_ring": "白盖版四瓶一排（同机位对照）",
+    "closeup_1_v3_white_ring": "白盖版特写",
+    "mentor_v4_row": "导师 v4 封顶资产渲染（与不加时一致，证明封顶是多余的）",
+    "v11_matte_grey_row": "最哑光灰版四瓶一排"
+   },
+   "review_note": "待用户拍板的是外观偏好：① 保持白 / 浅灰（符合原话，但白墙前不显眼）；② 换低饱和有色（浅蓝灰 0.62/0.66/0.72 或米白 0.88/0.85/0.78），既避开用户否掉的亮绿又能看清；③ 改场景光照或加深色背景（会影响所有 A 站画面）。选定后 5 分钟出图。所有改动只在派生层：无 collider、无 PhysicsAPI、未改质量与变换。"
   }
  ]
 }
