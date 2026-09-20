@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-21T02:55+08:00",
+  "updated": "2026-09-21T03:09+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -21,7 +21,7 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-21T02:55+08:00",
+    "snapshot_at": "2026-09-21T03:09+08:00",
     "gpus": [
       {
         "index": 0,
@@ -31,8 +31,8 @@
       },
       {
         "index": 1,
-        "used_mib": 15413,
-        "util": "100%",
+        "used_mib": 23,
+        "util": "0%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -1281,6 +1281,10 @@
     {
       "date": "2026-09-21 03:05",
       "entry": "**试剂瓶盖渲染问题解决：根因是渲染模式，不是资产。** `RaytracedLighting` 下 RTX 的 translucency 通道把瓶身 OmniGlass 合成到不透明瓶盖之上，所以盖子看起来像没拧上；从 Python 侧写 `/rtx/rendermode=\"PathTracing\"`（读回确认，kit 命令行参数会被 Isaac Lab 覆盖所以无效）后渲成完整实心螺旋盖，四瓶一排橙/蓝/绿/绿、标签清晰、玻璃仍是玻璃，原始资产零 override。沿途排除且每项读回生效值：warm-up、盖子 opacity、盖子几何、maxRefractionBounces 6→16→32、virtualDepth、fractionalCutoutOpacity、sampledLighting。`OmniPBR.mdl` 经逐行核对没有透射通道，盖子材质物理上不可能透射。已固化为静态图管线默认；视频管线待 PT 成本探针出数再切。 **A 站 r6：precursor_1、precursor_2 两条新布局成片（敞口天平 + 四瓶横排）已替换上验收面板**，物理 stage 4、穿透 0、原始负分离 0；precursor_3/4 两条 r6 run 在携行段脱手（stage 0，transport 三条判据全挂，但穿透 0 —— 是抓不住不是穿模），已要求先出滑移时间曲线定位再改夹持参数。"
+    },
+    {
+      "date": "2026-09-21 03:35",
+      "entry": "**用户对刚上面板的 r6 成片提了两处返工，都已量化下发。** ① 排位错了：用户要的「一排」是转盘上原来两只小瓶那条线（precursor_1 (1.704,0.210,1.1537)、precursor_2 (1.796,0.210,1.1537)，y=0.210、x 间距 0.092 m），r6 摆到了台面前沿 (2.100,0.550,1.0560)；大瓶要沿同线外延、间距 max(0.092, 外径+25 mm)、root z 按自身 extent 重算，并过 5 s 静置门与 FR3 可达性检查。② 机位错了：用户要旧机位，station_a eye (1.75,−2.00,2.75)/lookat (1.75,0.50,1.15)/22 mm 等四路全部改回，camera_rig_v2 对 A 站暂停（B/C 站继续用）。天平无罩这条 r6 做对了，保持。③ 用户给了瓶盖兜底授权：PT 成本不可接受就把瓶盖整个去掉。已要求 Claude agent 交四个量化数（单帧秒数、1059 帧×5 路总时长、六条总机时、PT 连续帧噪点判断）再二选一。A 站成片在返工完成前不重渲，避免白跑机时。"
     }
   ],
   "contract": [
@@ -2375,7 +2379,7 @@
   "user_directives": {
     "issued": "2026-09-19 06:40 CST（用户逐条审看动作面板后提出）",
     "rule": "每条由负责 agent 在自己的 PROGRESS 文件里新开「## 用户指令落实（D 编号）」小节逐条回执：状态（未开始 / 进行中 / 已完成 / 受阻+原因）、证据路径、时间；监督每 20 分钟核对一次并更新本表与面板。完成标准写在每条里，达不到不许标完成。 16:50 用户追加决定：静置门 5 mm / 5° 确认；C 站开门目标为干燥箱柜门（够不着就挪近，再不行 XRD 滑窗）；a100-new 归还、七台服务器已释放可用；旧段先放行（有站位相机视频即按 demo 门通过）；瓶盖资产由我们自己修。 23:40 用户第二轮审片追加 D26–D30。",
-    "updated": "2026-09-21 03:05",
+    "updated": "2026-09-21 03:35",
     "items": [
       {
         "id": "D01",
@@ -2624,9 +2628,9 @@
         "id": "D28",
         "owner": "agent 1",
         "topic": "大瓶与小瓶同排",
-        "what": "四瓶按 09-16/17 原小瓶架位那条线横排一排（用户 05:25 明确：不是秤后台沿），大瓶以原间距向两侧延伸，静置门 5 mm / 5°。",
+        "what": "四瓶按 09-16/17 原小瓶架位那条线横排一排（用户 05:25 明确：不是秤后台沿），大瓶以原间距向两侧延伸，静置门 5 mm / 5°。  **09-21 03:35 用户澄清**：「我指的四个在一排是之前小试剂瓶的位置的一排，不是这么一排」——指的是转盘上原来两只小瓶那条线（precursor_1 (1.704,0.210,1.1537)、precursor_2 (1.796,0.210,1.1537)，y=0.210、x 间距 0.092 m），不是 r6 用的台面前沿 (2.100,0.550,1.0560)。大瓶沿同一条线向外延伸，间距取 max(0.092, 大瓶外径+25 mm)，root z 按大瓶自身 extent 重算使瓶底落在转盘面。",
         "done_when": "新布局包 + 四瓶新 run。",
-        "status": "布局已验证；precursor_1/2 的 r6 成片已上面板，3/4 携行脱手修中",
+        "status": "排位需返工（r6 摆错位置），已下发 agent 1",
         "evidence": "capfix 渲染实测四瓶已成一排；agent 1 第五批用该布局 + 新瓶资产  09-21 02:30 实测确认：r6 布局首帧（evidence/A_camera_rig_v2_r6_20260920/P1）与 raw/r6_final/20260920T150404_469207382_scripted/episodes/A/video.mp4 里，天平是敞口无罩、四瓶横排同一排。precursor_1 已跑通：stage 4、抓取/抬升/放置全确认、最终位置误差 0.056 mm、穿透 tick 0、原始负分离 0；gate_pass=false 仅因 contract 带 diagnostic 标志。该成片已上验收面板。**precursor_2/3/4 的面板成片仍是 09-16/17 旧布局（带玻璃罩、瓶子未并排）**，r6 重采已下发 agent 1，跑完替换。  **09-21 02:46 解决**：根因是渲染模式。`RaytracedLighting`（RTX 实时）下 translucency 通道把瓶身 OmniGlass 合成到不透明瓶盖之上，于是建模与绑定都正确、盖顶封闭的螺旋盖在近景里显示为半透明。从 Python 侧在 Isaac Lab 初始化后写 `/rtx/rendermode=\"PathTracing\"`（读回确认生效，配 maxBounces=16 / spp=4 / totalSpp=64）后，盖子渲成完整实心螺旋盖，四瓶一排橙/蓝/绿/绿四只实心盖、250ml/100ml 标签清晰、玻璃仍是玻璃。原始资产零 override，不换色不改几何。排除项（每项都读回生效值）：warm-up 帧数、盖子材质 opacity、盖子几何、maxRefractionBounces 6→16→32、virtualDepth、fractionalCutoutOpacity、sampledLighting 全部无变化。关键方法论：命令行 kit arg 写 rendermode 无效（Isaac Lab 之后会覆盖），必须 Python 侧写并读回。证据 NAS:subop_store/claude/bottle_capfix_v4/diag_pipeline/{step_C_cutout_false_closeup.png, step_D1_pathtracing_closeup.png, step_D1_pathtracing_row.png, QUEUE_rtx.md}。已固化进静态图管线默认；**视频管线未切**——面板成片仍是实时模式渲的，盖子在视频里还是错的，PT 逐帧成本探针在跑，出数后决定 A 站四条 / C-20 / B-10 是否用 PT 重出。"
       },
       {
@@ -2664,6 +2668,24 @@
         "done_when": "① 门禁写进 _shared/COLLECTION_SPLIT_20260918.md 并同步 NAS；② 全库回溯审计产出 _shared/ARM_DRIVEN_AUDIT_20260920.md（agent 2 + agent 3 各一份，一行一条 id / C1..C5 / 结论）；③ SUBOP-C-21b 与 B 站机械臂开炉门 v2 各一条过门 run。",
         "status": "刚下发（09-21 02:20）",
         "evidence": "发起于 SUBOP-C-21 作废；该条是现行 demo 门禁漏洞的直接证据"
+      },
+      {
+        "id": "D33",
+        "owner": "agent 1 / goal_子操作采集",
+        "topic": "A 站机位改回旧机位",
+        "what": "用户 09-21：「视角还是之前的视角」。A 站成片一律用旧固定机位，camera_rig_v2 对 A 站暂停（B/C 站继续用）：station_a eye (1.75,−2.00,2.75) / lookat (1.75,0.50,1.15) / 22 mm；a_front (2.75,−0.25,1.75) / (2.05,0.30,1.28) / 15 mm；a_side (4.00,0.50,2.00) / (1.90,0.50,1.20) / 24 mm；a_top (2.30,0.30,2.50) / (1.95,0.30,1.00) / 20 mm。",
+        "done_when": "A 站新 run 的五路视频全部用这组机位，面板上的 A 站成片换成新机位版本。",
+        "status": "刚下发（09-21 03:30）",
+        "evidence": "旧值来源 agent1/episodes/SUBOP-A-33/observations/pregrasp_hover_cameras.json；r6 当前用的是 station_a eye (3.291,1.179,2.384) / 16 mm 广角，用户不要这个"
+      },
+      {
+        "id": "D34",
+        "owner": "goal_子操作采集",
+        "topic": "瓶盖兜底授权：实在不行就不要盖子",
+        "what": "用户 09-21：「试剂瓶盖子的问题实在解决不了的话，就都不要盖子里」。决策树：PT 逐帧成本可接受且无帧间噪点 → 全部用 PathTracing 重出成片，保留原始盖；否则 → 派生可视层里把 <Bottle>_Lid/Visuals 设 invisible，四瓶都不要盖子，继续实时模式渲。纯视觉，不动碰撞体/质量/变换/已登记物理数据。",
+        "done_when": "拿到实时 vs PT 单帧秒数、1059 帧×5 路单条总时长、六条总机时，以及一段 PT 连续帧的噪点判断，然后二选一落地。",
+        "status": "等 PT 成本探针数据",
+        "evidence": "静态图已由 PathTracing 修好（bottle_capfix_v4/diag_pipeline/step_D1_pathtracing_*.png）；视频管线未切"
       }
     ]
   }
