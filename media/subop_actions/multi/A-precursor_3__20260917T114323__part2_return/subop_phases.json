@@ -1,0 +1,103 @@
+{
+ "schema": "subop_phases_v1",
+ "generated_by": "phase-batch make_groups.py",
+ "group_id": "A-precursor_3__20260917T114323__part2_return",
+ "group_label_cn": "归位",
+ "action_id": "A-precursor_3",
+ "action_cn": "precursor_3 投料：取出与归位",
+ "parent_group": "A-precursor_3__20260917T114323",
+ "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114323_719288454_scripted/episodes/A",
+ "run_id": "20260917T114323",
+ "dt_s": 0.016666666666666666,
+ "fps": 12,
+ "video_frames": 852,
+ "object": "precursor_3",
+ "actor": "fr3_A",
+ "station": "A",
+ "split_tick": 2820,
+ "split_s": 47.0,
+ "split_evidence": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114323_719288454_scripted/episodes/A/meta.json metrics.events 'leave_balance' arrived tick",
+ "segment_ids": [
+  "SUBOP-A-18",
+  "SUBOP-A-19",
+  "SUBOP-A-20"
+ ],
+ "full": [
+  2820,
+  4262
+ ],
+ "full_s": [
+  47.0,
+  71.0333
+ ],
+ "markers": {
+  "restore_grasp_yaw": 3060,
+  "over_source": 3300,
+  "return": 3716,
+  "retreat": 3956
+ },
+ "needs_review": false,
+ "notes": [
+  "last phase end frame 853 > video frames 852: clipped by 1 frame(s) (tick 4262 = last tick of the run; cut_phases clamps to stream length)"
+ ],
+ "phases": [
+  {
+   "name": "A-18b_carry_back",
+   "name_cn": "携瓶回到源位上方",
+   "description_cn": "SUBOP-A-18 后半：leave_balance → restore_grasp_yaw → over_source（tick 2820 起）",
+   "segment_id": "SUBOP-A-18",
+   "g05_stage": 6,
+   "stages": [
+    "lifted",
+    "above_balance",
+    "dosing",
+    "above_source"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 2820,
+   "end_tick": 3300,
+   "start_s": 0.0,
+   "end_s": 8.0,
+   "parent_start_s": 47.0,
+   "parent_end_s": 55.0
+  },
+  {
+   "name": "A-19_lower",
+   "name_cn": "对准目标位下放",
+   "description_cn": "对准目标槽口，降落至支撑/定位面",
+   "segment_id": "SUBOP-A-19",
+   "g05_stage": 7,
+   "stages": [
+    "above_source",
+    "before_release"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 3300,
+   "end_tick": 3716,
+   "start_s": 8.0,
+   "end_s": 14.9333,
+   "parent_start_s": 55.0,
+   "parent_end_s": 61.9333
+  },
+  {
+   "name": "A-20_release_retreat",
+   "name_cn": "开爪释放、撤离并检查稳定",
+   "description_cn": "开爪释放、撤离并检查物体稳定与目标占用",
+   "segment_id": "SUBOP-A-20",
+   "g05_stage": 8,
+   "stages": [
+    "before_release",
+    "released",
+    "final"
+   ],
+   "physical_status": "PARTIAL",
+   "start_tick": 3716,
+   "end_tick": 4262,
+   "start_s": 14.9333,
+   "end_s": 24.0333,
+   "parent_start_s": 61.9333,
+   "parent_end_s": 71.0333
+  }
+ ],
+ "time_base": "video_full.mp4 timeline = parent-run seconds minus 47.0000; ticks are parent-run ticks (unchanged)"
+}

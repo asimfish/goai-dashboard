@@ -1,0 +1,66 @@
+[
+ {
+  "row": 0,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 0.0,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 4.2146848510894035e-08
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 942,
+  "robot_max_pos_m": 1.1920928955078125e-07,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ }
+]

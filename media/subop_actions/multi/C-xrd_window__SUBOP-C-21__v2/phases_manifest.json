@@ -1,0 +1,1848 @@
+{
+  "schema": "panel_media/phases/1",
+  "label": "SUBOP-C-21",
+  "run": "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2",
+  "phases_file": "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/subop_phases_v2.json",
+  "dt_s": 0.004166666666666667,
+  "tick_offset": 0,
+  "poster_format": "jpg",
+  "station_source": {
+    "kind": "video",
+    "path": "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/video.mp4",
+    "width": 1280,
+    "height": 800,
+    "fps": 12.0,
+    "frames": 108,
+    "duration_s": 9.0
+  },
+  "view_sources": {
+    "c_front": {
+      "kind": "video",
+      "path": "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_front.mp4",
+      "width": 1280,
+      "height": 800,
+      "fps": 12.0,
+      "frames": 108,
+      "duration_s": 9.0
+    },
+    "c_side": {
+      "kind": "video",
+      "path": "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_side.mp4",
+      "width": 1280,
+      "height": 800,
+      "fps": 12.0,
+      "frames": 108,
+      "duration_s": 9.0
+    },
+    "c_top": {
+      "kind": "video",
+      "path": "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_top.mp4",
+      "width": 1280,
+      "height": 800,
+      "fps": 12.0,
+      "frames": 108,
+      "duration_s": 9.0
+    },
+    "station_c": {
+      "kind": "video",
+      "path": "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/station_c.mp4",
+      "width": 1280,
+      "height": 800,
+      "fps": 12.0,
+      "frames": 108,
+      "duration_s": 9.0
+    },
+    "wrist": {
+      "kind": "video",
+      "path": "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/wrist.mp4",
+      "width": 640,
+      "height": 400,
+      "fps": 12.0,
+      "frames": 108,
+      "duration_s": 9.0
+    }
+  },
+  "frame_mapping": "frame = floor(tick * dt * fps); phase [a,b) -> frames [floor(a*dt*fps), ceil(b*dt*fps))",
+  "outputs": [
+    {
+      "name": "full",
+      "view": null,
+      "clip": "video_full.mp4",
+      "poster": "video_full.jpg",
+      "ticks": [
+        0,
+        2145
+      ],
+      "seconds": [
+        0.0,
+        8.9375
+      ],
+      "frames": [
+        0,
+        108
+      ],
+      "frames_expected": 108,
+      "frames_written": 108,
+      "fps": 12.0,
+      "bytes": 631739,
+      "poster_bytes": 85552,
+      "ok": true
+    },
+    {
+      "name": "full",
+      "view": "c_front",
+      "clip": "video_full__c_front.mp4",
+      "poster": "video_full__c_front.jpg",
+      "ticks": [
+        0,
+        2145
+      ],
+      "seconds": [
+        0.0,
+        8.9375
+      ],
+      "frames": [
+        0,
+        108
+      ],
+      "frames_expected": 108,
+      "frames_written": 108,
+      "fps": 12.0,
+      "bytes": 558179,
+      "poster_bytes": 85584,
+      "ok": true
+    },
+    {
+      "name": "full",
+      "view": "c_side",
+      "clip": "video_full__c_side.mp4",
+      "poster": "video_full__c_side.jpg",
+      "ticks": [
+        0,
+        2145
+      ],
+      "seconds": [
+        0.0,
+        8.9375
+      ],
+      "frames": [
+        0,
+        108
+      ],
+      "frames_expected": 108,
+      "frames_written": 108,
+      "fps": 12.0,
+      "bytes": 534592,
+      "poster_bytes": 85897,
+      "ok": true
+    },
+    {
+      "name": "full",
+      "view": "c_top",
+      "clip": "video_full__c_top.mp4",
+      "poster": "video_full__c_top.jpg",
+      "ticks": [
+        0,
+        2145
+      ],
+      "seconds": [
+        0.0,
+        8.9375
+      ],
+      "frames": [
+        0,
+        108
+      ],
+      "frames_expected": 108,
+      "frames_written": 108,
+      "fps": 12.0,
+      "bytes": 561416,
+      "poster_bytes": 81237,
+      "ok": true
+    },
+    {
+      "name": "full",
+      "view": "station_c",
+      "clip": "video_full__station_c.mp4",
+      "poster": "video_full__station_c.jpg",
+      "ticks": [
+        0,
+        2145
+      ],
+      "seconds": [
+        0.0,
+        8.9375
+      ],
+      "frames": [
+        0,
+        108
+      ],
+      "frames_expected": 108,
+      "frames_written": 108,
+      "fps": 12.0,
+      "bytes": 631739,
+      "poster_bytes": 85552,
+      "ok": true
+    },
+    {
+      "name": "full",
+      "view": "wrist",
+      "clip": "video_full__wrist.mp4",
+      "poster": "video_full__wrist.jpg",
+      "ticks": [
+        0,
+        2145
+      ],
+      "seconds": [
+        0.0,
+        8.9375
+      ],
+      "frames": [
+        0,
+        108
+      ],
+      "frames_expected": 108,
+      "frames_written": 108,
+      "fps": 12.0,
+      "bytes": 172297,
+      "poster_bytes": 21664,
+      "ok": true
+    },
+    {
+      "name": "pre_approach",
+      "view": null,
+      "clip": "phase_1_pre_approach.mp4",
+      "poster": "phase_1_pre_approach.jpg",
+      "ticks": [
+        0,
+        28
+      ],
+      "seconds": [
+        0.0,
+        0.11666666666666667
+      ],
+      "frames": [
+        0,
+        2
+      ],
+      "frames_expected": 2,
+      "frames_written": 2,
+      "fps": 12.0,
+      "bytes": 66821,
+      "poster_bytes": 85552,
+      "ok": true,
+      "name_cn": "预接近",
+      "description_cn": "机械臂从起始位移动到滑窗前的安全预接近位。",
+      "segment_id": "pre_approach",
+      "g05_stage": 3
+    },
+    {
+      "name": "pre_approach",
+      "view": "c_front",
+      "clip": "phase_1_pre_approach__c_front.mp4",
+      "poster": "phase_1_pre_approach__c_front.jpg",
+      "ticks": [
+        0,
+        28
+      ],
+      "seconds": [
+        0.0,
+        0.11666666666666667
+      ],
+      "frames": [
+        0,
+        2
+      ],
+      "frames_expected": 2,
+      "frames_written": 2,
+      "fps": 12.0,
+      "bytes": 58548,
+      "poster_bytes": 85584,
+      "ok": true,
+      "name_cn": "预接近",
+      "description_cn": "机械臂从起始位移动到滑窗前的安全预接近位。",
+      "segment_id": "pre_approach",
+      "g05_stage": 3
+    },
+    {
+      "name": "pre_approach",
+      "view": "c_side",
+      "clip": "phase_1_pre_approach__c_side.mp4",
+      "poster": "phase_1_pre_approach__c_side.jpg",
+      "ticks": [
+        0,
+        28
+      ],
+      "seconds": [
+        0.0,
+        0.11666666666666667
+      ],
+      "frames": [
+        0,
+        2
+      ],
+      "frames_expected": 2,
+      "frames_written": 2,
+      "fps": 12.0,
+      "bytes": 59343,
+      "poster_bytes": 85897,
+      "ok": true,
+      "name_cn": "预接近",
+      "description_cn": "机械臂从起始位移动到滑窗前的安全预接近位。",
+      "segment_id": "pre_approach",
+      "g05_stage": 3
+    },
+    {
+      "name": "pre_approach",
+      "view": "c_top",
+      "clip": "phase_1_pre_approach__c_top.mp4",
+      "poster": "phase_1_pre_approach__c_top.jpg",
+      "ticks": [
+        0,
+        28
+      ],
+      "seconds": [
+        0.0,
+        0.11666666666666667
+      ],
+      "frames": [
+        0,
+        2
+      ],
+      "frames_expected": 2,
+      "frames_written": 2,
+      "fps": 12.0,
+      "bytes": 62536,
+      "poster_bytes": 81237,
+      "ok": true,
+      "name_cn": "预接近",
+      "description_cn": "机械臂从起始位移动到滑窗前的安全预接近位。",
+      "segment_id": "pre_approach",
+      "g05_stage": 3
+    },
+    {
+      "name": "pre_approach",
+      "view": "station_c",
+      "clip": "phase_1_pre_approach__station_c.mp4",
+      "poster": "phase_1_pre_approach__station_c.jpg",
+      "ticks": [
+        0,
+        28
+      ],
+      "seconds": [
+        0.0,
+        0.11666666666666667
+      ],
+      "frames": [
+        0,
+        2
+      ],
+      "frames_expected": 2,
+      "frames_written": 2,
+      "fps": 12.0,
+      "bytes": 66821,
+      "poster_bytes": 85552,
+      "ok": true,
+      "name_cn": "预接近",
+      "description_cn": "机械臂从起始位移动到滑窗前的安全预接近位。",
+      "segment_id": "pre_approach",
+      "g05_stage": 3
+    },
+    {
+      "name": "pre_approach",
+      "view": "wrist",
+      "clip": "phase_1_pre_approach__wrist.mp4",
+      "poster": "phase_1_pre_approach__wrist.jpg",
+      "ticks": [
+        0,
+        28
+      ],
+      "seconds": [
+        0.0,
+        0.11666666666666667
+      ],
+      "frames": [
+        0,
+        2
+      ],
+      "frames_expected": 2,
+      "frames_written": 2,
+      "fps": 12.0,
+      "bytes": 16923,
+      "poster_bytes": 21664,
+      "ok": true,
+      "name_cn": "预接近",
+      "description_cn": "机械臂从起始位移动到滑窗前的安全预接近位。",
+      "segment_id": "pre_approach",
+      "g05_stage": 3
+    },
+    {
+      "name": "open_window",
+      "view": null,
+      "clip": "phase_2_open_window.mp4",
+      "poster": "phase_2_open_window.jpg",
+      "ticks": [
+        28,
+        942
+      ],
+      "seconds": [
+        0.11666666666666667,
+        3.925
+      ],
+      "frames": [
+        1,
+        48
+      ],
+      "frames_expected": 47,
+      "frames_written": 47,
+      "fps": 12.0,
+      "bytes": 331301,
+      "poster_bytes": 85427,
+      "ok": true,
+      "name_cn": "开窗",
+      "description_cn": "机械臂进入 via 点并推动 XRD 滑窗，直到窗口完全打开。",
+      "segment_id": "open_window",
+      "g05_stage": 3
+    },
+    {
+      "name": "open_window",
+      "view": "c_front",
+      "clip": "phase_2_open_window__c_front.mp4",
+      "poster": "phase_2_open_window__c_front.jpg",
+      "ticks": [
+        28,
+        942
+      ],
+      "seconds": [
+        0.11666666666666667,
+        3.925
+      ],
+      "frames": [
+        1,
+        48
+      ],
+      "frames_expected": 47,
+      "frames_written": 47,
+      "fps": 12.0,
+      "bytes": 304157,
+      "poster_bytes": 85497,
+      "ok": true,
+      "name_cn": "开窗",
+      "description_cn": "机械臂进入 via 点并推动 XRD 滑窗，直到窗口完全打开。",
+      "segment_id": "open_window",
+      "g05_stage": 3
+    },
+    {
+      "name": "open_window",
+      "view": "c_side",
+      "clip": "phase_2_open_window__c_side.mp4",
+      "poster": "phase_2_open_window__c_side.jpg",
+      "ticks": [
+        28,
+        942
+      ],
+      "seconds": [
+        0.11666666666666667,
+        3.925
+      ],
+      "frames": [
+        1,
+        48
+      ],
+      "frames_expected": 47,
+      "frames_written": 47,
+      "fps": 12.0,
+      "bytes": 291641,
+      "poster_bytes": 85884,
+      "ok": true,
+      "name_cn": "开窗",
+      "description_cn": "机械臂进入 via 点并推动 XRD 滑窗，直到窗口完全打开。",
+      "segment_id": "open_window",
+      "g05_stage": 3
+    },
+    {
+      "name": "open_window",
+      "view": "c_top",
+      "clip": "phase_2_open_window__c_top.mp4",
+      "poster": "phase_2_open_window__c_top.jpg",
+      "ticks": [
+        28,
+        942
+      ],
+      "seconds": [
+        0.11666666666666667,
+        3.925
+      ],
+      "frames": [
+        1,
+        48
+      ],
+      "frames_expected": 47,
+      "frames_written": 47,
+      "fps": 12.0,
+      "bytes": 310323,
+      "poster_bytes": 81318,
+      "ok": true,
+      "name_cn": "开窗",
+      "description_cn": "机械臂进入 via 点并推动 XRD 滑窗，直到窗口完全打开。",
+      "segment_id": "open_window",
+      "g05_stage": 3
+    },
+    {
+      "name": "open_window",
+      "view": "station_c",
+      "clip": "phase_2_open_window__station_c.mp4",
+      "poster": "phase_2_open_window__station_c.jpg",
+      "ticks": [
+        28,
+        942
+      ],
+      "seconds": [
+        0.11666666666666667,
+        3.925
+      ],
+      "frames": [
+        1,
+        48
+      ],
+      "frames_expected": 47,
+      "frames_written": 47,
+      "fps": 12.0,
+      "bytes": 331301,
+      "poster_bytes": 85427,
+      "ok": true,
+      "name_cn": "开窗",
+      "description_cn": "机械臂进入 via 点并推动 XRD 滑窗，直到窗口完全打开。",
+      "segment_id": "open_window",
+      "g05_stage": 3
+    },
+    {
+      "name": "open_window",
+      "view": "wrist",
+      "clip": "phase_2_open_window__wrist.mp4",
+      "poster": "phase_2_open_window__wrist.jpg",
+      "ticks": [
+        28,
+        942
+      ],
+      "seconds": [
+        0.11666666666666667,
+        3.925
+      ],
+      "frames": [
+        1,
+        48
+      ],
+      "frames_expected": 47,
+      "frames_written": 47,
+      "fps": 12.0,
+      "bytes": 63553,
+      "poster_bytes": 21604,
+      "ok": true,
+      "name_cn": "开窗",
+      "description_cn": "机械臂进入 via 点并推动 XRD 滑窗，直到窗口完全打开。",
+      "segment_id": "open_window",
+      "g05_stage": 3
+    },
+    {
+      "name": "hold_open",
+      "view": null,
+      "clip": "phase_3_hold_open.mp4",
+      "poster": "phase_3_hold_open.jpg",
+      "ticks": [
+        942,
+        2145
+      ],
+      "seconds": [
+        3.925,
+        8.9375
+      ],
+      "frames": [
+        47,
+        108
+      ],
+      "frames_expected": 61,
+      "frames_written": 61,
+      "fps": 12.0,
+      "bytes": 378145,
+      "poster_bytes": 87176,
+      "ok": true,
+      "name_cn": "保持",
+      "description_cn": "滑窗保持在 0.480 m 开度，机械臂保持稳定 5 秒。",
+      "segment_id": "hold_open",
+      "g05_stage": 3
+    },
+    {
+      "name": "hold_open",
+      "view": "c_front",
+      "clip": "phase_3_hold_open__c_front.mp4",
+      "poster": "phase_3_hold_open__c_front.jpg",
+      "ticks": [
+        942,
+        2145
+      ],
+      "seconds": [
+        3.925,
+        8.9375
+      ],
+      "frames": [
+        47,
+        108
+      ],
+      "frames_expected": 61,
+      "frames_written": 61,
+      "fps": 12.0,
+      "bytes": 327806,
+      "poster_bytes": 88653,
+      "ok": true,
+      "name_cn": "保持",
+      "description_cn": "滑窗保持在 0.480 m 开度，机械臂保持稳定 5 秒。",
+      "segment_id": "hold_open",
+      "g05_stage": 3
+    },
+    {
+      "name": "hold_open",
+      "view": "c_side",
+      "clip": "phase_3_hold_open__c_side.mp4",
+      "poster": "phase_3_hold_open__c_side.jpg",
+      "ticks": [
+        942,
+        2145
+      ],
+      "seconds": [
+        3.925,
+        8.9375
+      ],
+      "frames": [
+        47,
+        108
+      ],
+      "frames_expected": 61,
+      "frames_written": 61,
+      "fps": 12.0,
+      "bytes": 318978,
+      "poster_bytes": 89189,
+      "ok": true,
+      "name_cn": "保持",
+      "description_cn": "滑窗保持在 0.480 m 开度，机械臂保持稳定 5 秒。",
+      "segment_id": "hold_open",
+      "g05_stage": 3
+    },
+    {
+      "name": "hold_open",
+      "view": "c_top",
+      "clip": "phase_3_hold_open__c_top.mp4",
+      "poster": "phase_3_hold_open__c_top.jpg",
+      "ticks": [
+        942,
+        2145
+      ],
+      "seconds": [
+        3.925,
+        8.9375
+      ],
+      "frames": [
+        47,
+        108
+      ],
+      "frames_expected": 61,
+      "frames_written": 61,
+      "fps": 12.0,
+      "bytes": 336560,
+      "poster_bytes": 83113,
+      "ok": true,
+      "name_cn": "保持",
+      "description_cn": "滑窗保持在 0.480 m 开度，机械臂保持稳定 5 秒。",
+      "segment_id": "hold_open",
+      "g05_stage": 3
+    },
+    {
+      "name": "hold_open",
+      "view": "station_c",
+      "clip": "phase_3_hold_open__station_c.mp4",
+      "poster": "phase_3_hold_open__station_c.jpg",
+      "ticks": [
+        942,
+        2145
+      ],
+      "seconds": [
+        3.925,
+        8.9375
+      ],
+      "frames": [
+        47,
+        108
+      ],
+      "frames_expected": 61,
+      "frames_written": 61,
+      "fps": 12.0,
+      "bytes": 378145,
+      "poster_bytes": 87176,
+      "ok": true,
+      "name_cn": "保持",
+      "description_cn": "滑窗保持在 0.480 m 开度，机械臂保持稳定 5 秒。",
+      "segment_id": "hold_open",
+      "g05_stage": 3
+    },
+    {
+      "name": "hold_open",
+      "view": "wrist",
+      "clip": "phase_3_hold_open__wrist.mp4",
+      "poster": "phase_3_hold_open__wrist.jpg",
+      "ticks": [
+        942,
+        2145
+      ],
+      "seconds": [
+        3.925,
+        8.9375
+      ],
+      "frames": [
+        47,
+        108
+      ],
+      "frames_expected": 61,
+      "frames_written": 61,
+      "fps": 12.0,
+      "bytes": 130463,
+      "poster_bytes": 21701,
+      "ok": true,
+      "name_cn": "保持",
+      "description_cn": "滑窗保持在 0.480 m 开度，机械臂保持稳定 5 秒。",
+      "segment_id": "hold_open",
+      "g05_stage": 3
+    }
+  ],
+  "skipped": [],
+  "ffmpeg_log": [
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/video.mp4",
+        "-vf",
+        "select='between(n\\,0\\,107)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/video_full.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/video.mp4",
+        "-vf",
+        "select='eq(n\\,0)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/video_full.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_front.mp4",
+        "-vf",
+        "select='between(n\\,0\\,107)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/video_full__c_front.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_front.mp4",
+        "-vf",
+        "select='eq(n\\,0)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/video_full__c_front.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_side.mp4",
+        "-vf",
+        "select='between(n\\,0\\,107)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/video_full__c_side.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_side.mp4",
+        "-vf",
+        "select='eq(n\\,0)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/video_full__c_side.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_top.mp4",
+        "-vf",
+        "select='between(n\\,0\\,107)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/video_full__c_top.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_top.mp4",
+        "-vf",
+        "select='eq(n\\,0)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/video_full__c_top.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/station_c.mp4",
+        "-vf",
+        "select='between(n\\,0\\,107)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/video_full__station_c.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/station_c.mp4",
+        "-vf",
+        "select='eq(n\\,0)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/video_full__station_c.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/wrist.mp4",
+        "-vf",
+        "select='between(n\\,0\\,107)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/video_full__wrist.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/wrist.mp4",
+        "-vf",
+        "select='eq(n\\,0)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/video_full__wrist.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/video.mp4",
+        "-vf",
+        "select='between(n\\,0\\,1)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_1_pre_approach.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/video.mp4",
+        "-vf",
+        "select='eq(n\\,0)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_1_pre_approach.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_front.mp4",
+        "-vf",
+        "select='between(n\\,0\\,1)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_1_pre_approach__c_front.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_front.mp4",
+        "-vf",
+        "select='eq(n\\,0)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_1_pre_approach__c_front.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_side.mp4",
+        "-vf",
+        "select='between(n\\,0\\,1)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_1_pre_approach__c_side.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_side.mp4",
+        "-vf",
+        "select='eq(n\\,0)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_1_pre_approach__c_side.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_top.mp4",
+        "-vf",
+        "select='between(n\\,0\\,1)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_1_pre_approach__c_top.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_top.mp4",
+        "-vf",
+        "select='eq(n\\,0)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_1_pre_approach__c_top.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/station_c.mp4",
+        "-vf",
+        "select='between(n\\,0\\,1)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_1_pre_approach__station_c.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/station_c.mp4",
+        "-vf",
+        "select='eq(n\\,0)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_1_pre_approach__station_c.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/wrist.mp4",
+        "-vf",
+        "select='between(n\\,0\\,1)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_1_pre_approach__wrist.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/wrist.mp4",
+        "-vf",
+        "select='eq(n\\,0)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_1_pre_approach__wrist.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/video.mp4",
+        "-vf",
+        "select='between(n\\,1\\,47)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_2_open_window.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/video.mp4",
+        "-vf",
+        "select='eq(n\\,1)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_2_open_window.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_front.mp4",
+        "-vf",
+        "select='between(n\\,1\\,47)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_2_open_window__c_front.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_front.mp4",
+        "-vf",
+        "select='eq(n\\,1)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_2_open_window__c_front.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_side.mp4",
+        "-vf",
+        "select='between(n\\,1\\,47)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_2_open_window__c_side.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_side.mp4",
+        "-vf",
+        "select='eq(n\\,1)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_2_open_window__c_side.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_top.mp4",
+        "-vf",
+        "select='between(n\\,1\\,47)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_2_open_window__c_top.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_top.mp4",
+        "-vf",
+        "select='eq(n\\,1)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_2_open_window__c_top.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/station_c.mp4",
+        "-vf",
+        "select='between(n\\,1\\,47)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_2_open_window__station_c.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/station_c.mp4",
+        "-vf",
+        "select='eq(n\\,1)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_2_open_window__station_c.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/wrist.mp4",
+        "-vf",
+        "select='between(n\\,1\\,47)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_2_open_window__wrist.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/wrist.mp4",
+        "-vf",
+        "select='eq(n\\,1)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_2_open_window__wrist.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/video.mp4",
+        "-vf",
+        "select='between(n\\,47\\,107)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_3_hold_open.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/video.mp4",
+        "-vf",
+        "select='eq(n\\,47)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_3_hold_open.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_front.mp4",
+        "-vf",
+        "select='between(n\\,47\\,107)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_3_hold_open__c_front.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_front.mp4",
+        "-vf",
+        "select='eq(n\\,47)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_3_hold_open__c_front.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_side.mp4",
+        "-vf",
+        "select='between(n\\,47\\,107)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_3_hold_open__c_side.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_side.mp4",
+        "-vf",
+        "select='eq(n\\,47)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_3_hold_open__c_side.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_top.mp4",
+        "-vf",
+        "select='between(n\\,47\\,107)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_3_hold_open__c_top.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/c_top.mp4",
+        "-vf",
+        "select='eq(n\\,47)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_3_hold_open__c_top.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/station_c.mp4",
+        "-vf",
+        "select='between(n\\,47\\,107)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_3_hold_open__station_c.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/station_c.mp4",
+        "-vf",
+        "select='eq(n\\,47)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_3_hold_open__station_c.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/wrist.mp4",
+        "-vf",
+        "select='between(n\\,47\\,107)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_3_hold_open__wrist.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/videos/wrist.mp4",
+        "-vf",
+        "select='eq(n\\,47)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2/panel_media_v2/phase_3_hold_open__wrist.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    }
+  ],
+  "all_ok": true
+}

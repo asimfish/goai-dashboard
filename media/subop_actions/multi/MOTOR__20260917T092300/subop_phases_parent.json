@@ -1,0 +1,175 @@
+{
+ "schema": "subop_phases_v1",
+ "generated_by": "phase-batch make_groups.py",
+ "group_id": "MOTOR__20260917T092300",
+ "action_id": "MOTOR",
+ "action_cn": "设备电机开合",
+ "station": "C",
+ "actor": "xrd.motor",
+ "object": "xrd",
+ "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C",
+ "run_id": "20260917T092300",
+ "dt_s": 0.004166666666666667,
+ "fps": 12,
+ "video_frames": 492,
+ "video_frame_rate": "12/1",
+ "parent_ticks_total": 9850,
+ "segment_ids": [
+  "SUBOP-MOTOR-I028-01-20260917T092300",
+  "SUBOP-MOTOR-I028-02-20260917T092300",
+  "SUBOP-MOTOR-I028-03-20260917T092300",
+  "SUBOP-MOTOR-I028-04-20260917T092300",
+  "SUBOP-MOTOR-I028-05-20260917T092300",
+  "SUBOP-MOTOR-I028-06-20260917T092300",
+  "SUBOP-MOTOR-I028-07-20260917T092300",
+  "SUBOP-MOTOR-I028-08-20260917T092300"
+ ],
+ "full": [
+  1202,
+  9850
+ ],
+ "full_s": [
+  5.0083,
+  41.0417
+ ],
+ "notes": [
+  "last phase end frame 493 > video frames 492: clipped by 1 frame(s) (tick 9850 = last tick of the run; cut_phases clamps to stream length)"
+ ],
+ "phases": [
+  {
+   "name": "MOTOR-I028-01_open",
+   "name_cn": "开",
+   "description_cn": "open",
+   "segment_id": "SUBOP-MOTOR-I028-01-20260917T092300",
+   "g05_stage": null,
+   "stages": [
+    "R2_XRD_WINDOW_ONLY_C1_open_start",
+    "initial_closed",
+    "R2_XRD_WINDOW_ONLY_C1_open_arrived"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 1202,
+   "end_tick": 2162,
+   "start_s": 5.0083,
+   "end_s": 9.0083
+  },
+  {
+   "name": "MOTOR-I028-02_hold_open",
+   "name_cn": "保持开",
+   "description_cn": "hold_open",
+   "segment_id": "SUBOP-MOTOR-I028-02-20260917T092300",
+   "g05_stage": null,
+   "stages": [
+    "R2_XRD_WINDOW_ONLY_C1_open_arrived",
+    "R2_XRD_WINDOW_ONLY_C1_close_start",
+    "R2_XRD_WINDOW_ONLY_C1_open_held"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 2162,
+   "end_tick": 3364,
+   "start_s": 9.0083,
+   "end_s": 14.0167
+  },
+  {
+   "name": "MOTOR-I028-03_close",
+   "name_cn": "关",
+   "description_cn": "close",
+   "segment_id": "SUBOP-MOTOR-I028-03-20260917T092300",
+   "g05_stage": null,
+   "stages": [
+    "R2_XRD_WINDOW_ONLY_C1_close_start",
+    "R2_XRD_WINDOW_ONLY_C1_open_held",
+    "R2_XRD_WINDOW_ONLY_C1_close_arrived"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 3364,
+   "end_tick": 4324,
+   "start_s": 14.0167,
+   "end_s": 18.0167
+  },
+  {
+   "name": "MOTOR-I028-04_hold_close",
+   "name_cn": "保持关",
+   "description_cn": "hold_close",
+   "segment_id": "SUBOP-MOTOR-I028-04-20260917T092300",
+   "g05_stage": null,
+   "stages": [
+    "R2_XRD_WINDOW_ONLY_C1_close_arrived",
+    "R2_XRD_WINDOW_ONLY_C1_close_held",
+    "R2_XRD_WINDOW_ONLY_C2_open_start"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 4324,
+   "end_tick": 5526,
+   "start_s": 18.0167,
+   "end_s": 23.025
+  },
+  {
+   "name": "MOTOR-I028-05_open",
+   "name_cn": "开",
+   "description_cn": "open",
+   "segment_id": "SUBOP-MOTOR-I028-05-20260917T092300",
+   "g05_stage": null,
+   "stages": [
+    "R2_XRD_WINDOW_ONLY_C1_close_held",
+    "R2_XRD_WINDOW_ONLY_C2_open_start",
+    "R2_XRD_WINDOW_ONLY_C2_open_arrived"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 5526,
+   "end_tick": 6486,
+   "start_s": 23.025,
+   "end_s": 27.025
+  },
+  {
+   "name": "MOTOR-I028-06_hold_open",
+   "name_cn": "保持开",
+   "description_cn": "hold_open",
+   "segment_id": "SUBOP-MOTOR-I028-06-20260917T092300",
+   "g05_stage": null,
+   "stages": [
+    "R2_XRD_WINDOW_ONLY_C2_open_arrived",
+    "R2_XRD_WINDOW_ONLY_C2_close_start",
+    "R2_XRD_WINDOW_ONLY_C2_open_held"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 6486,
+   "end_tick": 7688,
+   "start_s": 27.025,
+   "end_s": 32.0333
+  },
+  {
+   "name": "MOTOR-I028-07_close",
+   "name_cn": "关",
+   "description_cn": "close",
+   "segment_id": "SUBOP-MOTOR-I028-07-20260917T092300",
+   "g05_stage": null,
+   "stages": [
+    "R2_XRD_WINDOW_ONLY_C2_close_start",
+    "R2_XRD_WINDOW_ONLY_C2_open_held",
+    "R2_XRD_WINDOW_ONLY_C2_close_arrived"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 7688,
+   "end_tick": 8648,
+   "start_s": 32.0333,
+   "end_s": 36.0333
+  },
+  {
+   "name": "MOTOR-I028-08_hold_close",
+   "name_cn": "保持关",
+   "description_cn": "hold_close",
+   "segment_id": "SUBOP-MOTOR-I028-08-20260917T092300",
+   "g05_stage": null,
+   "stages": [
+    "R2_XRD_WINDOW_ONLY_C2_close_arrived",
+    "R2_XRD_WINDOW_ONLY_C2_close_held"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 8648,
+   "end_tick": 9850,
+   "start_s": 36.0333,
+   "end_s": 41.0417
+  }
+ ]
+}

@@ -1,0 +1,154 @@
+{
+ "schema": "subop_phases_v1",
+ "generated_by": "phase-batch make_groups.py",
+ "group_id": "B-tray_load",
+ "action_id": "B-tray_load",
+ "action_cn": "tray_load 装炉（crucible_rack_2）",
+ "station": "B",
+ "actor": "ur5e_B",
+ "object": "crucible_rack_2",
+ "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T122918_093111776_scripted/episodes/B",
+ "run_id": "20260916T122918",
+ "dt_s": 0.004166666666666667,
+ "fps": 12,
+ "video_frames": 1058,
+ "video_frame_rate": "12/1",
+ "parent_ticks_total": 21162,
+ "segment_ids": [
+  "SUBOP-B-03",
+  "SUBOP-B-04",
+  "SUBOP-B-05",
+  "SUBOP-B-06",
+  "SUBOP-B-07",
+  "SUBOP-B-08"
+ ],
+ "full": [
+  2760,
+  20322
+ ],
+ "full_s": [
+  11.5,
+  84.675
+ ],
+ "notes": [],
+ "door_note_cn": "门由电机开（旧）",
+ "phases": [
+  {
+   "name": "B-03_preapproach",
+   "name_cn": "开爪到预接近位",
+   "description_cn": "夹爪张开，移动到源容器预接近位",
+   "segment_id": "SUBOP-B-03",
+   "g05_stage": 3,
+   "stages": [
+    "handle_initial",
+    "handle_after_preapproach"
+   ],
+   "physical_status": "PARTIAL",
+   "start_tick": 2760,
+   "end_tick": 6042,
+   "start_s": 0.0,
+   "end_s": 13.675,
+   "parent_start_s": 11.5,
+   "parent_end_s": 25.175
+  },
+  {
+   "name": "B-04_approach_close",
+   "name_cn": "沿接近方向到夹持位并闭爪",
+   "description_cn": "沿接近方向到夹持位并闭爪",
+   "segment_id": "SUBOP-B-04",
+   "g05_stage": 4,
+   "stages": [
+    "handle_after_preapproach",
+    "handle_before_close",
+    "handle_after_close"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 6042,
+   "end_tick": 7602,
+   "start_s": 13.675,
+   "end_s": 20.175,
+   "parent_start_s": 25.175,
+   "parent_end_s": 31.675
+  },
+  {
+   "name": "B-05_grasp_lift",
+   "name_cn": "确认物理夹持并提离",
+   "description_cn": "确认唯一持有者，提离支撑面并确认物体随臂",
+   "segment_id": "SUBOP-B-05",
+   "g05_stage": 5,
+   "stages": [
+    "handle_after_close",
+    "handle_after_lift",
+    "lifted"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 7602,
+   "end_tick": 8322,
+   "start_s": 20.175,
+   "end_s": 23.175,
+   "parent_start_s": 31.675,
+   "parent_end_s": 34.675
+  },
+  {
+   "name": "B-06_carry",
+   "name_cn": "沿路线携行",
+   "description_cn": "携物沿已规划路线移动；跨站执行接收方锁定/接手",
+   "segment_id": "SUBOP-B-06",
+   "g05_stage": 6,
+   "stages": [
+    "handle_after_lift",
+    "lifted",
+    "lift_clearance",
+    "advance_before_align",
+    "at_furnace_entry",
+    "inside_furnace"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 8322,
+   "end_tick": 12642,
+   "start_s": 23.175,
+   "end_s": 41.175,
+   "parent_start_s": 34.675,
+   "parent_end_s": 52.675
+  },
+  {
+   "name": "B-07_lower",
+   "name_cn": "对准目标位下放",
+   "description_cn": "对准目标槽口，降落至支撑/定位面",
+   "segment_id": "SUBOP-B-07",
+   "g05_stage": 7,
+   "stages": [
+    "inside_furnace",
+    "on_measured_shelf"
+   ],
+   "physical_status": "PARTIAL",
+   "start_tick": 12642,
+   "end_tick": 13602,
+   "start_s": 41.175,
+   "end_s": 45.175,
+   "parent_start_s": 52.675,
+   "parent_end_s": 56.675
+  },
+  {
+   "name": "B-08_release_retreat",
+   "name_cn": "开爪释放、撤离并检查稳定",
+   "description_cn": "开爪释放、撤离并检查物体稳定与目标占用",
+   "segment_id": "SUBOP-B-08",
+   "g05_stage": 8,
+   "stages": [
+    "on_measured_shelf",
+    "released_on_shelf",
+    "outside_full_open",
+    "withdrawn"
+   ],
+   "physical_status": "PARTIAL",
+   "start_tick": 13602,
+   "end_tick": 20322,
+   "start_s": 45.175,
+   "end_s": 73.175,
+   "parent_start_s": 56.675,
+   "parent_end_s": 84.675
+  }
+ ],
+ "time_base": "video_full.mp4 timeline = parent-run seconds minus 11.5000; ticks are parent-run ticks (unchanged)"
+}

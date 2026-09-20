@@ -1,0 +1,547 @@
+{
+  "schema": "panel_media/phases/1",
+  "label": "C-vial_balance",
+  "run": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C",
+  "phases_file": "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_balance/subop_phases.json",
+  "dt_s": 0.004166666666666667,
+  "tick_offset": 0,
+  "poster_format": "jpg",
+  "station_source": {
+    "kind": "video",
+    "path": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C/video.mp4",
+    "width": 1280,
+    "height": 800,
+    "fps": 12.0,
+    "frames": 846,
+    "duration_s": 70.5
+  },
+  "view_sources": {},
+  "frame_mapping": "frame = floor(tick * dt * fps); phase [a,b) -> frames [floor(a*dt*fps), ceil(b*dt*fps))",
+  "outputs": [
+    {
+      "name": "full",
+      "view": null,
+      "clip": "video_full.mp4",
+      "poster": "video_full.jpg",
+      "ticks": [
+        1200,
+        16920
+      ],
+      "seconds": [
+        5.0,
+        70.5
+      ],
+      "frames": [
+        60,
+        846
+      ],
+      "frames_expected": 786,
+      "frames_written": 786,
+      "fps": 12.0,
+      "bytes": 7634057,
+      "poster_bytes": 85146,
+      "ok": true
+    },
+    {
+      "name": "C-14_preapproach",
+      "view": null,
+      "clip": "phase_1_C-14_preapproach.mp4",
+      "poster": "phase_1_C-14_preapproach.jpg",
+      "ticks": [
+        1200,
+        5158
+      ],
+      "seconds": [
+        5.0,
+        21.491666666666667
+      ],
+      "frames": [
+        60,
+        258
+      ],
+      "frames_expected": 198,
+      "frames_written": 198,
+      "fps": 12.0,
+      "bytes": 1962744,
+      "poster_bytes": 85146,
+      "ok": true,
+      "name_cn": "开爪到预接近位",
+      "description_cn": "空爪预形并到试管2预接近位",
+      "segment_id": "SUBOP-C-14",
+      "g05_stage": 3
+    },
+    {
+      "name": "C-15_approach_close",
+      "view": null,
+      "clip": "phase_2_C-15_approach_close.mp4",
+      "poster": "phase_2_C-15_approach_close.jpg",
+      "ticks": [
+        5158,
+        6838
+      ],
+      "seconds": [
+        21.491666666666667,
+        28.491666666666667
+      ],
+      "frames": [
+        257,
+        342
+      ],
+      "frames_expected": 85,
+      "frames_written": 85,
+      "fps": 12.0,
+      "bytes": 799058,
+      "poster_bytes": 84784,
+      "ok": true,
+      "name_cn": "沿接近方向到夹持位并闭爪",
+      "description_cn": "到实测试管夹持位并闭合确认双侧接触",
+      "segment_id": "SUBOP-C-15",
+      "g05_stage": 4
+    },
+    {
+      "name": "C-16_grasp_lift",
+      "view": null,
+      "clip": "phase_3_C-16_grasp_lift.mp4",
+      "poster": "phase_3_C-16_grasp_lift.jpg",
+      "ticks": [
+        6838,
+        7558
+      ],
+      "seconds": [
+        28.491666666666667,
+        31.491666666666667
+      ],
+      "frames": [
+        341,
+        378
+      ],
+      "frames_expected": 37,
+      "frames_written": 37,
+      "fps": 12.0,
+      "bytes": 396988,
+      "poster_bytes": 85373,
+      "ok": true,
+      "name_cn": "确认物理夹持并提离",
+      "description_cn": "提离源位100毫米",
+      "segment_id": "SUBOP-C-16",
+      "g05_stage": 5
+    },
+    {
+      "name": "C-17_carry",
+      "view": null,
+      "clip": "phase_4_C-17_carry.mp4",
+      "poster": "phase_4_C-17_carry.jpg",
+      "ticks": [
+        7558,
+        12838
+      ],
+      "seconds": [
+        31.491666666666667,
+        53.49166666666667
+      ],
+      "frames": [
+        377,
+        642
+      ],
+      "frames_expected": 265,
+      "frames_written": 265,
+      "fps": 12.0,
+      "bytes": 2649062,
+      "poster_bytes": 84599,
+      "ok": true,
+      "name_cn": "沿路线携行",
+      "description_cn": "沿高位北侧路径转移至称量支座上方",
+      "segment_id": "SUBOP-C-17",
+      "g05_stage": 6
+    },
+    {
+      "name": "C-18_lower",
+      "view": null,
+      "clip": "phase_5_C-18_lower.mp4",
+      "poster": "phase_5_C-18_lower.jpg",
+      "ticks": [
+        12838,
+        13798
+      ],
+      "seconds": [
+        53.49166666666667,
+        57.49166666666667
+      ],
+      "frames": [
+        641,
+        690
+      ],
+      "frames_expected": 49,
+      "frames_written": 49,
+      "fps": 12.0,
+      "bytes": 468663,
+      "poster_bytes": 84053,
+      "ok": true,
+      "name_cn": "对准目标位下放",
+      "description_cn": "下降到称量支座支撑位",
+      "segment_id": "SUBOP-C-18",
+      "g05_stage": 7
+    },
+    {
+      "name": "C-19_release_retreat",
+      "view": null,
+      "clip": "phase_6_C-19_release_retreat.mp4",
+      "poster": "phase_6_C-19_release_retreat.jpg",
+      "ticks": [
+        13798,
+        16920
+      ],
+      "seconds": [
+        57.49166666666667,
+        70.5
+      ],
+      "frames": [
+        689,
+        846
+      ],
+      "frames_expected": 157,
+      "frames_written": 157,
+      "fps": 12.0,
+      "bytes": 1307063,
+      "poster_bytes": 83818,
+      "ok": true,
+      "name_cn": "开爪释放、撤离并检查稳定",
+      "description_cn": "开爪、向正X撤离并连续观察释放稳定5秒",
+      "segment_id": "SUBOP-C-19",
+      "g05_stage": 8
+    }
+  ],
+  "skipped": [],
+  "ffmpeg_log": [
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,60\\,845)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_balance/video_full.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,60)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_balance/video_full.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,60\\,257)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_balance/phase_1_C-14_preapproach.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,60)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_balance/phase_1_C-14_preapproach.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,257\\,341)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_balance/phase_2_C-15_approach_close.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,257)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_balance/phase_2_C-15_approach_close.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,341\\,377)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_balance/phase_3_C-16_grasp_lift.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,341)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_balance/phase_3_C-16_grasp_lift.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,377\\,641)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_balance/phase_4_C-17_carry.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,377)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_balance/phase_4_C-17_carry.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,641\\,689)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_balance/phase_5_C-18_lower.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,641)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_balance/phase_5_C-18_lower.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,689\\,845)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_balance/phase_6_C-19_release_retreat.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,689)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_balance/phase_6_C-19_release_retreat.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    }
+  ],
+  "all_ok": true
+}

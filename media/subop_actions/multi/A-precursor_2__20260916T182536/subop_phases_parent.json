@@ -1,0 +1,212 @@
+{
+ "schema": "subop_phases_v1",
+ "generated_by": "phase-batch make_groups.py",
+ "group_id": "A-precursor_2__20260916T182536",
+ "action_id": "A-precursor_2",
+ "action_cn": "precursor_2 投料：取出与归位",
+ "station": "A",
+ "actor": "fr3_A",
+ "object": "precursor_2",
+ "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260916T182536_392809844_scripted/episodes/A",
+ "run_id": "20260916T182536",
+ "dt_s": 0.004166666666666667,
+ "fps": 12,
+ "video_frames": 683,
+ "video_frame_rate": "12/1",
+ "parent_ticks_total": 13668,
+ "segment_ids": [
+  "SUBOP-A-09",
+  "SUBOP-A-10",
+  "SUBOP-A-11",
+  "SUBOP-A-12",
+  "SUBOP-A-13",
+  "SUBOP-A-14"
+ ],
+ "full": [
+  1200,
+  13668
+ ],
+ "full_s": [
+  5.0,
+  56.95
+ ],
+ "notes": [
+  "last phase end frame 684 > video frames 683: clipped by 1 frame(s) (tick 13668 = last tick of the run; cut_phases clamps to stream length)"
+ ],
+ "markers": [
+  {
+   "waypoint": "pregrasp_hover",
+   "tick": 2400,
+   "t_s": 10.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "grasp_arrival",
+   "tick": 3360,
+   "t_s": 14.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "lift",
+   "tick": 4560,
+   "t_s": 19.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "raise_clearance",
+   "tick": 5520,
+   "t_s": 23.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "over_balance",
+   "tick": 6480,
+   "t_s": 27.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "turn_above_balance",
+   "tick": 7440,
+   "t_s": 31.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "dosing",
+   "tick": 8400,
+   "t_s": 35.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "leave_balance",
+   "tick": 9840,
+   "t_s": 41.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "restore_grasp_yaw",
+   "tick": 10800,
+   "t_s": 45.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "over_source",
+   "tick": 11760,
+   "t_s": 49.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "return",
+   "tick": 12468,
+   "t_s": 51.95,
+   "arrived": true
+  },
+  {
+   "waypoint": "retreat",
+   "tick": 13428,
+   "t_s": 55.95,
+   "arrived": true
+  }
+ ],
+ "phases": [
+  {
+   "name": "A-09_preapproach",
+   "name_cn": "开爪到预接近位",
+   "description_cn": "夹爪张开，移动到源容器预接近位",
+   "segment_id": "SUBOP-A-09",
+   "g05_stage": 3,
+   "stages": [
+    "G3_after_settle",
+    "pregrasp_hover"
+   ],
+   "physical_status": "PARTIAL",
+   "start_tick": 1200,
+   "end_tick": 2400,
+   "start_s": 5.0,
+   "end_s": 10.0
+  },
+  {
+   "name": "A-10_approach_close",
+   "name_cn": "沿接近方向到夹持位并闭爪",
+   "description_cn": "沿接近方向到夹持位并闭爪",
+   "segment_id": "SUBOP-A-10",
+   "g05_stage": 4,
+   "stages": [
+    "pregrasp_hover",
+    "before_close",
+    "after_close"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 2400,
+   "end_tick": 3840,
+   "start_s": 10.0,
+   "end_s": 16.0
+  },
+  {
+   "name": "A-11_grasp_lift",
+   "name_cn": "确认物理夹持并提离",
+   "description_cn": "确认唯一持有者，提离支撑面并确认物体随臂",
+   "segment_id": "SUBOP-A-11",
+   "g05_stage": 5,
+   "stages": [
+    "after_close",
+    "lifted"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 3840,
+   "end_tick": 4560,
+   "start_s": 16.0,
+   "end_s": 19.0
+  },
+  {
+   "name": "A-12_carry",
+   "name_cn": "沿路线携行",
+   "description_cn": "携物沿已规划路线移动；跨站执行接收方锁定/接手",
+   "segment_id": "SUBOP-A-12",
+   "g05_stage": 6,
+   "stages": [
+    "lifted",
+    "above_balance",
+    "dosing",
+    "above_source"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 4560,
+   "end_tick": 11760,
+   "start_s": 19.0,
+   "end_s": 49.0
+  },
+  {
+   "name": "A-13_lower",
+   "name_cn": "对准目标位下放",
+   "description_cn": "对准目标槽口，降落至支撑/定位面",
+   "segment_id": "SUBOP-A-13",
+   "g05_stage": 7,
+   "stages": [
+    "above_source",
+    "before_release"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 11760,
+   "end_tick": 12468,
+   "start_s": 49.0,
+   "end_s": 51.95
+  },
+  {
+   "name": "A-14_release_retreat",
+   "name_cn": "开爪释放、撤离并检查稳定",
+   "description_cn": "开爪释放、撤离并检查物体稳定与目标占用",
+   "segment_id": "SUBOP-A-14",
+   "g05_stage": 8,
+   "stages": [
+    "before_release",
+    "released",
+    "final"
+   ],
+   "physical_status": "PARTIAL",
+   "start_tick": 12468,
+   "end_tick": 13668,
+   "start_s": 51.95,
+   "end_s": 56.95
+  }
+ ]
+}

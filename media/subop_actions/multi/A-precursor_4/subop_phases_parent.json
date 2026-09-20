@@ -1,0 +1,212 @@
+{
+ "schema": "subop_phases_v1",
+ "generated_by": "phase-batch make_groups.py",
+ "group_id": "A-precursor_4",
+ "action_id": "A-precursor_4",
+ "action_cn": "precursor_4 投料：取出与归位",
+ "station": "A",
+ "actor": "fr3_A",
+ "object": "precursor_4",
+ "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T111602_832256025_scripted/episodes/A",
+ "run_id": "20260917T111602",
+ "dt_s": 0.016666666666666666,
+ "fps": 12,
+ "video_frames": 852,
+ "video_frame_rate": "12/1",
+ "parent_ticks_total": 4263,
+ "segment_ids": [
+  "SUBOP-A-21",
+  "SUBOP-A-22",
+  "SUBOP-A-23",
+  "SUBOP-A-24",
+  "SUBOP-A-25",
+  "SUBOP-A-26"
+ ],
+ "full": [
+  300,
+  4263
+ ],
+ "full_s": [
+  5.0,
+  71.05
+ ],
+ "notes": [
+  "last phase end frame 853 > video frames 852: clipped by 1 frame(s) (tick 4263 = last tick of the run; cut_phases clamps to stream length)"
+ ],
+ "markers": [
+  {
+   "waypoint": "pregrasp_hover",
+   "tick": 600,
+   "t_s": 10.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "grasp_arrival",
+   "tick": 1080,
+   "t_s": 18.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "lift",
+   "tick": 1500,
+   "t_s": 25.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "raise_clearance",
+   "tick": 1740,
+   "t_s": 29.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "over_balance",
+   "tick": 1980,
+   "t_s": 33.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "turn_above_balance",
+   "tick": 2220,
+   "t_s": 37.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "dosing",
+   "tick": 2460,
+   "t_s": 41.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "leave_balance",
+   "tick": 2820,
+   "t_s": 47.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "restore_grasp_yaw",
+   "tick": 3060,
+   "t_s": 51.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "over_source",
+   "tick": 3300,
+   "t_s": 55.0,
+   "arrived": true
+  },
+  {
+   "waypoint": "return",
+   "tick": 3717,
+   "t_s": 61.95,
+   "arrived": true
+  },
+  {
+   "waypoint": "retreat",
+   "tick": 3957,
+   "t_s": 65.95,
+   "arrived": true
+  }
+ ],
+ "phases": [
+  {
+   "name": "A-21_preapproach",
+   "name_cn": "开爪到预接近位",
+   "description_cn": "夹爪张开，移动到源容器预接近位",
+   "segment_id": "SUBOP-A-21",
+   "g05_stage": 3,
+   "stages": [
+    "G3_after_settle",
+    "pregrasp_hover"
+   ],
+   "physical_status": "PARTIAL",
+   "start_tick": 300,
+   "end_tick": 600,
+   "start_s": 5.0,
+   "end_s": 10.0
+  },
+  {
+   "name": "A-22_approach_close",
+   "name_cn": "沿接近方向到夹持位并闭爪",
+   "description_cn": "沿接近方向到夹持位并闭爪",
+   "segment_id": "SUBOP-A-22",
+   "g05_stage": 4,
+   "stages": [
+    "pregrasp_hover",
+    "before_close",
+    "after_close"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 600,
+   "end_tick": 1320,
+   "start_s": 10.0,
+   "end_s": 22.0
+  },
+  {
+   "name": "A-23_grasp_lift",
+   "name_cn": "确认物理夹持并提离",
+   "description_cn": "确认唯一持有者，提离支撑面并确认物体随臂",
+   "segment_id": "SUBOP-A-23",
+   "g05_stage": 5,
+   "stages": [
+    "after_close",
+    "lifted"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 1320,
+   "end_tick": 1500,
+   "start_s": 22.0,
+   "end_s": 25.0
+  },
+  {
+   "name": "A-24_carry",
+   "name_cn": "沿路线携行",
+   "description_cn": "携瓶到投料操作位保持2秒，再回到源位上方；不含粉体投料",
+   "segment_id": "SUBOP-A-24",
+   "g05_stage": 6,
+   "stages": [
+    "lifted",
+    "above_balance",
+    "dosing",
+    "above_source"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 1500,
+   "end_tick": 3300,
+   "start_s": 25.0,
+   "end_s": 55.0
+  },
+  {
+   "name": "A-25_lower",
+   "name_cn": "对准目标位下放",
+   "description_cn": "对准目标槽口，降落至支撑/定位面",
+   "segment_id": "SUBOP-A-25",
+   "g05_stage": 7,
+   "stages": [
+    "above_source",
+    "before_release"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 3300,
+   "end_tick": 3717,
+   "start_s": 55.0,
+   "end_s": 61.95
+  },
+  {
+   "name": "A-26_release_retreat",
+   "name_cn": "开爪释放、撤离并检查稳定",
+   "description_cn": "开爪释放、撤离并检查物体稳定与目标占用",
+   "segment_id": "SUBOP-A-26",
+   "g05_stage": 8,
+   "stages": [
+    "before_release",
+    "released",
+    "final"
+   ],
+   "physical_status": "PARTIAL",
+   "start_tick": 3717,
+   "end_tick": 4263,
+   "start_s": 61.95,
+   "end_s": 71.05
+  }
+ ]
+}

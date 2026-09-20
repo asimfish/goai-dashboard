@@ -1,0 +1,699 @@
+{
+  "schema": "panel_media/phases/1",
+  "label": "MOTOR__20260917T092300",
+  "run": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C",
+  "phases_file": "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/subop_phases.json",
+  "dt_s": 0.004166666666666667,
+  "tick_offset": 0,
+  "poster_format": "jpg",
+  "station_source": {
+    "kind": "video",
+    "path": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+    "width": 1280,
+    "height": 800,
+    "fps": 12.0,
+    "frames": 492,
+    "duration_s": 41.0
+  },
+  "view_sources": {},
+  "frame_mapping": "frame = floor(tick * dt * fps); phase [a,b) -> frames [floor(a*dt*fps), ceil(b*dt*fps))",
+  "outputs": [
+    {
+      "name": "full",
+      "view": null,
+      "clip": "video_full.mp4",
+      "poster": "video_full.jpg",
+      "ticks": [
+        1202,
+        9850
+      ],
+      "seconds": [
+        5.008333333333333,
+        41.041666666666664
+      ],
+      "frames": [
+        60,
+        492
+      ],
+      "frames_expected": 432,
+      "frames_written": 432,
+      "fps": 12.0,
+      "bytes": 3546233,
+      "poster_bytes": 85122,
+      "ok": true,
+      "clamped": true,
+      "frames_unclamped": [
+        60,
+        493
+      ]
+    },
+    {
+      "name": "MOTOR-I028-01_open",
+      "view": null,
+      "clip": "phase_1_MOTOR-I028-01_open.mp4",
+      "poster": "phase_1_MOTOR-I028-01_open.jpg",
+      "ticks": [
+        1202,
+        2162
+      ],
+      "seconds": [
+        5.008333333333333,
+        9.008333333333333
+      ],
+      "frames": [
+        60,
+        109
+      ],
+      "frames_expected": 49,
+      "frames_written": 49,
+      "fps": 12.0,
+      "bytes": 465281,
+      "poster_bytes": 85122,
+      "ok": true,
+      "name_cn": "开",
+      "description_cn": "open",
+      "segment_id": "SUBOP-MOTOR-I028-01-20260917T092300"
+    },
+    {
+      "name": "MOTOR-I028-02_hold_open",
+      "view": null,
+      "clip": "phase_2_MOTOR-I028-02_hold_open.mp4",
+      "poster": "phase_2_MOTOR-I028-02_hold_open.jpg",
+      "ticks": [
+        2162,
+        3364
+      ],
+      "seconds": [
+        9.008333333333333,
+        14.016666666666666
+      ],
+      "frames": [
+        108,
+        169
+      ],
+      "frames_expected": 61,
+      "frames_written": 61,
+      "fps": 12.0,
+      "bytes": 519049,
+      "poster_bytes": 84956,
+      "ok": true,
+      "name_cn": "保持开",
+      "description_cn": "hold_open",
+      "segment_id": "SUBOP-MOTOR-I028-02-20260917T092300"
+    },
+    {
+      "name": "MOTOR-I028-03_close",
+      "view": null,
+      "clip": "phase_3_MOTOR-I028-03_close.mp4",
+      "poster": "phase_3_MOTOR-I028-03_close.jpg",
+      "ticks": [
+        3364,
+        4324
+      ],
+      "seconds": [
+        14.016666666666666,
+        18.016666666666666
+      ],
+      "frames": [
+        168,
+        217
+      ],
+      "frames_expected": 49,
+      "frames_written": 49,
+      "fps": 12.0,
+      "bytes": 455910,
+      "poster_bytes": 85531,
+      "ok": true,
+      "name_cn": "关",
+      "description_cn": "close",
+      "segment_id": "SUBOP-MOTOR-I028-03-20260917T092300"
+    },
+    {
+      "name": "MOTOR-I028-04_hold_close",
+      "view": null,
+      "clip": "phase_4_MOTOR-I028-04_hold_close.mp4",
+      "poster": "phase_4_MOTOR-I028-04_hold_close.jpg",
+      "ticks": [
+        4324,
+        5526
+      ],
+      "seconds": [
+        18.016666666666666,
+        23.025
+      ],
+      "frames": [
+        216,
+        277
+      ],
+      "frames_expected": 61,
+      "frames_written": 61,
+      "fps": 12.0,
+      "bytes": 548745,
+      "poster_bytes": 85143,
+      "ok": true,
+      "name_cn": "保持关",
+      "description_cn": "hold_close",
+      "segment_id": "SUBOP-MOTOR-I028-04-20260917T092300"
+    },
+    {
+      "name": "MOTOR-I028-05_open",
+      "view": null,
+      "clip": "phase_5_MOTOR-I028-05_open.mp4",
+      "poster": "phase_5_MOTOR-I028-05_open.jpg",
+      "ticks": [
+        5526,
+        6486
+      ],
+      "seconds": [
+        23.025,
+        27.025
+      ],
+      "frames": [
+        276,
+        325
+      ],
+      "frames_expected": 49,
+      "frames_written": 49,
+      "fps": 12.0,
+      "bytes": 457633,
+      "poster_bytes": 85605,
+      "ok": true,
+      "name_cn": "开",
+      "description_cn": "open",
+      "segment_id": "SUBOP-MOTOR-I028-05-20260917T092300"
+    },
+    {
+      "name": "MOTOR-I028-06_hold_open",
+      "view": null,
+      "clip": "phase_6_MOTOR-I028-06_hold_open.mp4",
+      "poster": "phase_6_MOTOR-I028-06_hold_open.jpg",
+      "ticks": [
+        6486,
+        7688
+      ],
+      "seconds": [
+        27.025,
+        32.03333333333333
+      ],
+      "frames": [
+        324,
+        385
+      ],
+      "frames_expected": 61,
+      "frames_written": 61,
+      "fps": 12.0,
+      "bytes": 517342,
+      "poster_bytes": 85331,
+      "ok": true,
+      "name_cn": "保持开",
+      "description_cn": "hold_open",
+      "segment_id": "SUBOP-MOTOR-I028-06-20260917T092300"
+    },
+    {
+      "name": "MOTOR-I028-07_close",
+      "view": null,
+      "clip": "phase_7_MOTOR-I028-07_close.mp4",
+      "poster": "phase_7_MOTOR-I028-07_close.jpg",
+      "ticks": [
+        7688,
+        8648
+      ],
+      "seconds": [
+        32.03333333333333,
+        36.03333333333333
+      ],
+      "frames": [
+        384,
+        433
+      ],
+      "frames_expected": 49,
+      "frames_written": 49,
+      "fps": 12.0,
+      "bytes": 459002,
+      "poster_bytes": 85224,
+      "ok": true,
+      "name_cn": "关",
+      "description_cn": "close",
+      "segment_id": "SUBOP-MOTOR-I028-07-20260917T092300"
+    },
+    {
+      "name": "MOTOR-I028-08_hold_close",
+      "view": null,
+      "clip": "phase_8_MOTOR-I028-08_hold_close.mp4",
+      "poster": "phase_8_MOTOR-I028-08_hold_close.jpg",
+      "ticks": [
+        8648,
+        9850
+      ],
+      "seconds": [
+        36.03333333333333,
+        41.041666666666664
+      ],
+      "frames": [
+        432,
+        492
+      ],
+      "frames_expected": 60,
+      "frames_written": 60,
+      "fps": 12.0,
+      "bytes": 500713,
+      "poster_bytes": 84729,
+      "ok": true,
+      "clamped": true,
+      "frames_unclamped": [
+        432,
+        493
+      ],
+      "name_cn": "保持关",
+      "description_cn": "hold_close",
+      "segment_id": "SUBOP-MOTOR-I028-08-20260917T092300"
+    }
+  ],
+  "skipped": [],
+  "ffmpeg_log": [
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,60\\,491)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/video_full.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,60)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/video_full.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,60\\,108)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/phase_1_MOTOR-I028-01_open.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,60)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/phase_1_MOTOR-I028-01_open.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,108\\,168)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/phase_2_MOTOR-I028-02_hold_open.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,108)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/phase_2_MOTOR-I028-02_hold_open.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,168\\,216)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/phase_3_MOTOR-I028-03_close.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,168)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/phase_3_MOTOR-I028-03_close.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,216\\,276)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/phase_4_MOTOR-I028-04_hold_close.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,216)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/phase_4_MOTOR-I028-04_hold_close.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,276\\,324)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/phase_5_MOTOR-I028-05_open.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,276)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/phase_5_MOTOR-I028-05_open.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,324\\,384)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/phase_6_MOTOR-I028-06_hold_open.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,324)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/phase_6_MOTOR-I028-06_hold_open.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,384\\,432)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/phase_7_MOTOR-I028-07_close.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,384)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/phase_7_MOTOR-I028-07_close.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,432\\,491)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/phase_8_MOTOR-I028-08_hold_close.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T092300_608591260_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,432)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/MOTOR__20260917T092300/phase_8_MOTOR-I028-08_hold_close.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    }
+  ],
+  "all_ok": true
+}

@@ -1,0 +1,140 @@
+{
+ "schema": "subop_phases_v1",
+ "generated_by": "phase-batch make_groups.py",
+ "group_id": "C-vial_balance",
+ "action_id": "C-vial_balance",
+ "action_cn": "小瓶 2 上天平（vial_2）",
+ "station": "C",
+ "actor": "ur5e_C",
+ "object": "vial_2",
+ "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T114326_380717081_scripted/episodes/C",
+ "run_id": "20260917T114326",
+ "dt_s": 0.004166666666666667,
+ "fps": 12,
+ "video_frames": 846,
+ "video_frame_rate": "12/1",
+ "parent_ticks_total": 16920,
+ "segment_ids": [
+  "SUBOP-C-14",
+  "SUBOP-C-15",
+  "SUBOP-C-16",
+  "SUBOP-C-17",
+  "SUBOP-C-18",
+  "SUBOP-C-19"
+ ],
+ "full": [
+  1200,
+  16920
+ ],
+ "full_s": [
+  5.0,
+  70.5
+ ],
+ "notes": [],
+ "phases": [
+  {
+   "name": "C-14_preapproach",
+   "name_cn": "开爪到预接近位",
+   "description_cn": "空爪预形并到试管2预接近位",
+   "segment_id": "SUBOP-C-14",
+   "g05_stage": 3,
+   "stages": [
+    "after_settle",
+    "preapproach"
+   ],
+   "physical_status": "PARTIAL",
+   "start_tick": 1200,
+   "end_tick": 5158,
+   "start_s": 5.0,
+   "end_s": 21.4917
+  },
+  {
+   "name": "C-15_approach_close",
+   "name_cn": "沿接近方向到夹持位并闭爪",
+   "description_cn": "到实测试管夹持位并闭合确认双侧接触",
+   "segment_id": "SUBOP-C-15",
+   "g05_stage": 4,
+   "stages": [
+    "preapproach",
+    "before_close",
+    "after_close"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 5158,
+   "end_tick": 6838,
+   "start_s": 21.4917,
+   "end_s": 28.4917
+  },
+  {
+   "name": "C-16_grasp_lift",
+   "name_cn": "确认物理夹持并提离",
+   "description_cn": "提离源位100毫米",
+   "segment_id": "SUBOP-C-16",
+   "g05_stage": 5,
+   "stages": [
+    "after_close",
+    "lift"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 6838,
+   "end_tick": 7558,
+   "start_s": 28.4917,
+   "end_s": 31.4917
+  },
+  {
+   "name": "C-17_carry",
+   "name_cn": "沿路线携行",
+   "description_cn": "沿高位北侧路径转移至称量支座上方",
+   "segment_id": "SUBOP-C-17",
+   "g05_stage": 6,
+   "stages": [
+    "lift",
+    "raise_neighbour_clearance",
+    "north_loaded_transit",
+    "above_east_entry",
+    "turn_to_balance",
+    "lower_before_entry",
+    "above_collar"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 7558,
+   "end_tick": 12838,
+   "start_s": 31.4917,
+   "end_s": 53.4917
+  },
+  {
+   "name": "C-18_lower",
+   "name_cn": "对准目标位下放",
+   "description_cn": "下降到称量支座支撑位",
+   "segment_id": "SUBOP-C-18",
+   "g05_stage": 7,
+   "stages": [
+    "above_collar",
+    "on_balance_pan"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 12838,
+   "end_tick": 13798,
+   "start_s": 53.4917,
+   "end_s": 57.4917
+  },
+  {
+   "name": "C-19_release_retreat",
+   "name_cn": "开爪释放、撤离并检查稳定",
+   "description_cn": "开爪、向正X撤离并连续观察释放稳定5秒",
+   "segment_id": "SUBOP-C-19",
+   "g05_stage": 8,
+   "stages": [
+    "on_balance_pan",
+    "released_on_balance",
+    "vial_empty_retreat",
+    "vial_task_finished_5s_observation"
+   ],
+   "physical_status": "PARTIAL",
+   "start_tick": 13798,
+   "end_tick": 16920,
+   "start_s": 57.4917,
+   "end_s": 70.5
+  }
+ ]
+}

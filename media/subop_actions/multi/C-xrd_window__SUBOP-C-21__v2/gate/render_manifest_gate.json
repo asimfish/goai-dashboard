@@ -1,0 +1,101 @@
+{
+  "scope": "kinematic replay + rendering only; no physics integration; no task result",
+  "plan": "/data/liyufeng/goai_workflows/_shared/tools/camera_rig_v2/samples/C21_xrd_window/plan_with_rig_v2_top_auto.json",
+  "steps": "/mnt/nas/data/lyf/goai/subop_store/agent2/runtime_C_r3b_runtime_20260918/runs/20260920T001626_524262716_scripted/episodes/C_holder_smoke/steps.npz",
+  "meta": "/mnt/nas/data/lyf/goai/subop_store/agent2/runtime_C_r3b_runtime_20260918/runs/20260920T001626_524262716_scripted/episodes/C_holder_smoke/meta.json",
+  "mode": "gate",
+  "ticks": [
+    0,
+    942
+  ],
+  "every": 20,
+  "dt_s": 0.004166666666666667,
+  "fps": 12.0,
+  "frame_convention": "frame k <-> steps.npz row t0 + k*every (row index = source tick)",
+  "views": {
+    "station_c": "station_c_camera",
+    "c_front": "c_front_camera",
+    "c_side": "c_side_camera",
+    "c_top": "c_top_camera",
+    "wrist": "ur5e_C_wrist_camera"
+  },
+  "dropped_cameras": [
+    "overview_1_camera",
+    "overview_2_camera",
+    "station_a_camera",
+    "a_front_camera",
+    "a_side_camera",
+    "a_top_camera",
+    "station_b_camera",
+    "b_front_camera",
+    "b_side_camera",
+    "b_top_camera",
+    "b_row_camera",
+    "fr3_A_wrist_camera",
+    "ur5e_B_wrist_camera"
+  ],
+  "renders_per_frame": 8,
+  "warmup_renders": 40,
+  "objects": [
+    "holder_0",
+    "tongs",
+    "vial_1",
+    "vial_2",
+    "vial_3"
+  ],
+  "doors": {
+    "xrd": "door_xrd"
+  },
+  "robot": "ur5e_C",
+  "base_body_index": 0,
+  "method": "write_root_link_pose/write_joint_state/write_root_pose -> sim.forward() -> sim.render() x N (playSimulations=false, PhysX not stepped) -> capture -> read-back check",
+  "args": {
+    "plan": "/data/liyufeng/goai_workflows/_shared/tools/camera_rig_v2/samples/C21_xrd_window/plan_with_rig_v2_top_auto.json",
+    "steps": "/mnt/nas/data/lyf/goai/subop_store/agent2/runtime_C_r3b_runtime_20260918/runs/20260920T001626_524262716_scripted/episodes/C_holder_smoke/steps.npz",
+    "meta": "/mnt/nas/data/lyf/goai/subop_store/agent2/runtime_C_r3b_runtime_20260918/runs/20260920T001626_524262716_scripted/episodes/C_holder_smoke/meta.json",
+    "out": "/mnt/nas/data/lyf/goai/subop_store/claude/render/SUBOP-C-21_v2",
+    "robot": "ur5e_C",
+    "station": "c",
+    "views": "station_c,c_front,c_side,c_top,wrist",
+    "tick_range": null,
+    "every": 20,
+    "ticks": "0,942",
+    "image_format": "png",
+    "renders_per_frame": 8,
+    "warmup_renders": 40,
+    "keep_all_cameras": false,
+    "physics_hz": 240,
+    "max_pos_err_m": 0.001,
+    "max_ang_err_rad": 0.01,
+    "device": "cuda:0",
+    "cpu": false,
+    "verbose": false,
+    "info": false,
+    "kit_args": "--portable --portable-root /mnt/nas/data/lyf/goai/subop_store/claude/render/runtime/kit --/log/file=/mnt/nas/data/lyf/goai/subop_store/claude/render/runtime/kit/kit_gate_c21_20260920T054114.log --/renderer/multiGpu/enabled=false --/renderer/activeGpu=0",
+    "headless": true,
+    "hide_ui": true,
+    "create_new_stage": false,
+    "physics_gpu": 0,
+    "active_gpu": 0
+  },
+  "frames_written": {
+    "station_c": 2,
+    "c_front": 2,
+    "c_side": 2,
+    "c_top": 2,
+    "wrist": 2
+  },
+  "pose_check_pass": true,
+  "pose_check_summary": {
+    "frames": 2,
+    "max_robot_pos_m": 1.1920928955078125e-07,
+    "max_robot_ang_rad": 4.2146848510894035e-08,
+    "max_joint_abs": 0.0,
+    "max_object_pos_m": 1.1920928955078125e-07,
+    "max_door_abs": 0.0
+  },
+  "wall_time_s": {
+    "total": 243.0081648826599,
+    "render_loop": 3.298095941543579
+  }
+}

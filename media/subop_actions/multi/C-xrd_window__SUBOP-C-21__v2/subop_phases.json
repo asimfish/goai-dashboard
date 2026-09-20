@@ -1,0 +1,14 @@
+{
+  "schema": "subop_phases_v1",
+  "phase_id": "SUBOP-C-21",
+  "dt_s": 0.004166666666666667,
+  "fps": 12,
+  "actor": "ur5e_C",
+  "object": "xrd_window",
+  "phases": [
+    {"segment_id":"pre_approach","name":"pre_approach","name_cn":"预接近","description_cn":"机械臂从起始位移动到滑窗前的安全预接近位。","start_tick":0,"end_tick":28,"g05_stage":3},
+    {"segment_id":"open_window","name":"open_window","name_cn":"开窗","description_cn":"机械臂进入 via 点并推动 XRD 滑窗，直到窗口完全打开。","start_tick":28,"end_tick":942,"g05_stage":3},
+    {"segment_id":"hold_open","name":"hold_open","name_cn":"保持","description_cn":"滑窗保持在 0.480 m 开度，机械臂保持稳定 5 秒。","start_tick":942,"end_tick":2145,"g05_stage":3}
+  ],
+  "demo_result": {"qualified_demo": true, "gate": "v4_demo_20260919_1650", "window_open_m": 0.480, "hold_s": 5.0, "negative_separation_m": 0.0}
+}

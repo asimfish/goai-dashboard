@@ -1,0 +1,112 @@
+{
+ "schema": "subop_phases_v1",
+ "generated_by": "phase-batch make_groups.py",
+ "group_id": "MOTOR__20260917T091215",
+ "action_id": "MOTOR",
+ "action_cn": "设备电机开合",
+ "station": "A",
+ "actor": "drying_oven.motor",
+ "object": "drying_oven",
+ "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T091215_020973547_scripted/episodes/A",
+ "run_id": "20260917T091215",
+ "dt_s": 0.016666666666666666,
+ "fps": 12,
+ "video_frames": 277,
+ "video_frame_rate": "12/1",
+ "parent_ticks_total": 1386,
+ "segment_ids": [
+  "SUBOP-MOTOR-I051-01-20260917T091215",
+  "SUBOP-MOTOR-I051-02-20260917T091215",
+  "SUBOP-MOTOR-I051-03-20260917T091215",
+  "SUBOP-MOTOR-I051-04-20260917T091215"
+ ],
+ "full": [
+  302,
+  1386
+ ],
+ "full_s": [
+  5.0333,
+  23.1
+ ],
+ "notes": [
+  "last phase end frame 278 > video frames 277: clipped by 1 frame(s) (tick 1386 = last tick of the run; cut_phases clamps to stream length)"
+ ],
+ "phases": [
+  {
+   "name": "MOTOR-I051-01_open",
+   "name_cn": "开",
+   "description_cn": "open",
+   "segment_id": "SUBOP-MOTOR-I051-01-20260917T091215",
+   "g05_stage": null,
+   "stages": [
+    "R2_DRYER_DOOR_ONLY_C1_open_start",
+    "initial_closed",
+    "R2_DRYER_DOOR_ONLY_C1_open_arrived"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 302,
+   "end_tick": 542,
+   "start_s": -0.0,
+   "end_s": 4.0,
+   "parent_start_s": 5.0333,
+   "parent_end_s": 9.0333
+  },
+  {
+   "name": "MOTOR-I051-02_hold_open",
+   "name_cn": "保持开",
+   "description_cn": "hold_open",
+   "segment_id": "SUBOP-MOTOR-I051-02-20260917T091215",
+   "g05_stage": null,
+   "stages": [
+    "R2_DRYER_DOOR_ONLY_C1_open_arrived",
+    "R2_DRYER_DOOR_ONLY_C1_close_start",
+    "R2_DRYER_DOOR_ONLY_C1_open_held"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 542,
+   "end_tick": 844,
+   "start_s": 4.0,
+   "end_s": 9.0334,
+   "parent_start_s": 9.0333,
+   "parent_end_s": 14.0667
+  },
+  {
+   "name": "MOTOR-I051-03_close",
+   "name_cn": "关",
+   "description_cn": "close",
+   "segment_id": "SUBOP-MOTOR-I051-03-20260917T091215",
+   "g05_stage": null,
+   "stages": [
+    "R2_DRYER_DOOR_ONLY_C1_close_start",
+    "R2_DRYER_DOOR_ONLY_C1_open_held",
+    "R2_DRYER_DOOR_ONLY_C1_close_arrived"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 844,
+   "end_tick": 1084,
+   "start_s": 9.0334,
+   "end_s": 13.0334,
+   "parent_start_s": 14.0667,
+   "parent_end_s": 18.0667
+  },
+  {
+   "name": "MOTOR-I051-04_hold_close",
+   "name_cn": "保持关",
+   "description_cn": "hold_close",
+   "segment_id": "SUBOP-MOTOR-I051-04-20260917T091215",
+   "g05_stage": null,
+   "stages": [
+    "R2_DRYER_DOOR_ONLY_C1_close_arrived",
+    "R2_DRYER_DOOR_ONLY_C1_close_held"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 1084,
+   "end_tick": 1386,
+   "start_s": 13.0334,
+   "end_s": 18.0667,
+   "parent_start_s": 18.0667,
+   "parent_end_s": 23.1
+  }
+ ],
+ "time_base": "video_full.mp4 timeline = parent-run seconds minus 5.0333; ticks are parent-run ticks (unchanged)"
+}

@@ -1,0 +1,284 @@
+{
+  "schema": "camera_rig_v2/visibility/1",
+  "steps": "/mnt/nas/data/lyf/goai/subop_store/agent2/runtime_C_r3b_runtime_20260918/runs/20260920T001626_524262716_scripted/episodes/C_holder_smoke/steps.npz",
+  "tick_range": [
+    0,
+    2145
+  ],
+  "min_target_fraction": 0.02,
+  "targets": [
+    "xrd_window"
+  ],
+  "occluders": [
+    "xrd_base",
+    "xrd_back",
+    "xrd_side_l",
+    "xrd_side_r",
+    "xrd_chamber_top",
+    "xrd_bottom",
+    "xrd_cavity_back",
+    "xrd_top"
+  ],
+  "fixed": [
+    {
+      "name": "station_c",
+      "source": "record(measured pose)",
+      "eye": [
+        1.4349000453948975,
+        -3.7407000064849854,
+        2.40310001373291
+      ],
+      "focal_mm": 16.0,
+      "targets": {
+        "xrd_window": {
+          "corners_in_front": 8,
+          "corners_total": 8,
+          "pixel_fraction": 0.050713266256530685,
+          "pixel_fraction_unclipped": 0.050713266256530685,
+          "cropped": false,
+          "corners_inside_image": 8,
+          "uv_min": [
+            639.7611830704714,
+            193.7963843107445
+          ],
+          "uv_max": [
+            993.0098045164134,
+            485.2993985464238
+          ],
+          "depth_min_m": 1.614530309131402,
+          "depth_max_m": 2.393044568102482,
+          "role": "operated",
+          "los_corners_blocked_by_occluders": 0,
+          "gate_rule": "pixel_fraction >= 0.02",
+          "pass_gate": true
+        }
+      },
+      "tcp": {
+        "ticks": 2145,
+        "inside_fraction": 1.0,
+        "ticks_outside": 0,
+        "first_tick_outside": null,
+        "behind_camera_ticks": 0,
+        "pass_all_inside": true
+      },
+      "base_link": {
+        "inside": true,
+        "uv": [
+          504.5368108749818,
+          494.9853186068969
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "c_front",
+      "source": "record(measured pose)",
+      "eye": [
+        2.5413999557495117,
+        -3.9458000659942627,
+        1.7529000043869019
+      ],
+      "focal_mm": 18.0,
+      "targets": {
+        "xrd_window": {
+          "corners_in_front": 8,
+          "corners_total": 8,
+          "pixel_fraction": 0.08248191215511451,
+          "pixel_fraction_unclipped": 0.08248191215511451,
+          "cropped": false,
+          "corners_inside_image": 8,
+          "uv_min": [
+            835.3896612104812,
+            177.56104335424243
+          ],
+          "uv_max": [
+            1106.6210452191897,
+            721.5830206818164
+          ],
+          "depth_min_m": 0.7456620823472694,
+          "depth_max_m": 1.7657914735563773,
+          "role": "operated",
+          "los_corners_blocked_by_occluders": 0,
+          "gate_rule": "pixel_fraction >= 0.02",
+          "pass_gate": true
+        }
+      },
+      "tcp": {
+        "ticks": 2145,
+        "inside_fraction": 1.0,
+        "ticks_outside": 0,
+        "first_tick_outside": null,
+        "behind_camera_ticks": 0,
+        "pass_all_inside": true
+      },
+      "base_link": {
+        "inside": true,
+        "uv": [
+          508.0548619542176,
+          508.11330312474786
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "c_side",
+      "source": "record(measured pose)",
+      "eye": [
+        1.1856000423431396,
+        -2.6364998817443848,
+        1.7526999711990356
+      ],
+      "focal_mm": 18.0,
+      "targets": {
+        "xrd_window": {
+          "corners_in_front": 8,
+          "corners_total": 8,
+          "pixel_fraction": 0.109313391042131,
+          "pixel_fraction_unclipped": 0.109313391042131,
+          "cropped": false,
+          "corners_inside_image": 8,
+          "uv_min": [
+            433.3961553219417,
+            182.73921172831118
+          ],
+          "uv_max": [
+            976.245064157537,
+            396.71869589432083
+          ],
+          "depth_min_m": 1.6694139806068966,
+          "depth_max_m": 1.8035874198881459,
+          "role": "operated",
+          "los_corners_blocked_by_occluders": 0,
+          "gate_rule": "pixel_fraction >= 0.02",
+          "pass_gate": true
+        }
+      },
+      "tcp": {
+        "ticks": 2145,
+        "inside_fraction": 1.0,
+        "ticks_outside": 0,
+        "first_tick_outside": null,
+        "behind_camera_ticks": 0,
+        "pass_all_inside": true
+      },
+      "base_link": {
+        "inside": true,
+        "uv": [
+          467.71556952891274,
+          652.785363869137
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "c_top",
+      "source": "record(measured pose)",
+      "eye": [
+        2.0058000087738037,
+        -2.6322999000549316,
+        2.7613000869750977
+      ],
+      "focal_mm": 18.0,
+      "targets": {
+        "xrd_window": {
+          "corners_in_front": 8,
+          "corners_total": 8,
+          "pixel_fraction": 0.07819698699677059,
+          "pixel_fraction_unclipped": 0.07819698699677059,
+          "cropped": false,
+          "corners_inside_image": 8,
+          "uv_min": [
+            394.0231603631688,
+            99.59085294735775
+          ],
+          "uv_max": [
+            1039.6900812510007,
+            239.85081300693946
+          ],
+          "depth_min_m": 1.4044117619678125,
+          "depth_max_m": 1.7752836626616486,
+          "role": "operated",
+          "los_corners_blocked_by_occluders": 0,
+          "gate_rule": "pixel_fraction >= 0.02",
+          "pass_gate": true
+        }
+      },
+      "tcp": {
+        "ticks": 2145,
+        "inside_fraction": 1.0,
+        "ticks_outside": 0,
+        "first_tick_outside": null,
+        "behind_camera_ticks": 0,
+        "pass_all_inside": true
+      },
+      "base_link": {
+        "inside": true,
+        "uv": [
+          511.85878485846195,
+          574.8415076120036
+        ]
+      },
+      "pass": true
+    }
+  ],
+  "wrist": {
+    "mount": {
+      "link": "wrist_3_link",
+      "offset_xyz": [
+        0.0,
+        0.065,
+        0.075
+      ],
+      "convention": "ros",
+      "offset_quat_wxyz_ros": [
+        0.9553290692870787,
+        0.2955441919156661,
+        0.0,
+        0.0
+      ],
+      "offset_quat_wxyz_world": [
+        0.3298924386857063,
+        0.6254366306013723,
+        -0.6254366306013724,
+        0.3298924386857063
+      ],
+      "focal_length_mm": 12.0,
+      "width": 640,
+      "height": 400,
+      "horizontal_aperture_mm": 24.0,
+      "optical_axis_definition": "looks at (0,0,0.17) m in the mount-link frame (along the gripper toward the finger pads)"
+    },
+    "body_index": 6,
+    "ticks_sampled": 215,
+    "stride": 10,
+    "targets": {
+      "xrd_window": {
+        "centre_in_view_fraction": 0.0,
+        "pixel_fraction_max": 0.0,
+        "pixel_fraction_mean": 0.0,
+        "first_tick_in_view": null
+      }
+    },
+    "first_tick_pose": {
+      "eye": [
+        2.166561032331153,
+        -2.1106369953665545,
+        1.418857935823608
+      ],
+      "forward": [
+        -0.0006575610352647466,
+        0.5640264804787307,
+        -0.8257564392314846
+      ]
+    },
+    "finger_pads": "NOT_RUN (pad geometry not modelled here; pads sit in the authored wrist view by construction)"
+  },
+  "gate": {
+    "cameras_gated": [
+      "c_front",
+      "c_side",
+      "c_top"
+    ],
+    "pass": true
+  }
+}

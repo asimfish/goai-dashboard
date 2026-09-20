@@ -1,0 +1,547 @@
+{
+  "schema": "panel_media/phases/1",
+  "label": "C-vial_1",
+  "run": "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C",
+  "phases_file": "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_1/subop_phases.json",
+  "dt_s": 0.004166666666666667,
+  "tick_offset": 0,
+  "poster_format": "jpg",
+  "station_source": {
+    "kind": "video",
+    "path": "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+    "width": 1280,
+    "height": 800,
+    "fps": 12.0,
+    "frames": 1628,
+    "duration_s": 135.666667
+  },
+  "view_sources": {},
+  "frame_mapping": "frame = floor(tick * dt * fps); phase [a,b) -> frames [floor(a*dt*fps), ceil(b*dt*fps))",
+  "outputs": [
+    {
+      "name": "full",
+      "view": null,
+      "clip": "video_full.mp4",
+      "poster": "video_full.jpg",
+      "ticks": [
+        5252,
+        14372
+      ],
+      "seconds": [
+        21.883333333333333,
+        59.88333333333333
+      ],
+      "frames": [
+        262,
+        719
+      ],
+      "frames_expected": 457,
+      "frames_written": 457,
+      "fps": 12.0,
+      "bytes": 4768570,
+      "poster_bytes": 84223,
+      "ok": true
+    },
+    {
+      "name": "C-01_preapproach",
+      "view": null,
+      "clip": "phase_1_C-01_preapproach.mp4",
+      "poster": "phase_1_C-01_preapproach.jpg",
+      "ticks": [
+        5252,
+        6212
+      ],
+      "seconds": [
+        21.883333333333333,
+        25.883333333333333
+      ],
+      "frames": [
+        262,
+        311
+      ],
+      "frames_expected": 49,
+      "frames_written": 49,
+      "fps": 12.0,
+      "bytes": 583825,
+      "poster_bytes": 84223,
+      "ok": true,
+      "name_cn": "开爪到预接近位",
+      "description_cn": "vial_preapproach",
+      "segment_id": "SUBOP-C-01",
+      "g05_stage": 3
+    },
+    {
+      "name": "C-02_approach_close",
+      "view": null,
+      "clip": "phase_2_C-02_approach_close.mp4",
+      "poster": "phase_2_C-02_approach_close.jpg",
+      "ticks": [
+        6212,
+        6932
+      ],
+      "seconds": [
+        25.883333333333333,
+        28.883333333333333
+      ],
+      "frames": [
+        310,
+        347
+      ],
+      "frames_expected": 37,
+      "frames_written": 37,
+      "fps": 12.0,
+      "bytes": 393667,
+      "poster_bytes": 86016,
+      "ok": true,
+      "name_cn": "沿接近方向到夹持位并闭爪",
+      "description_cn": "vial_close",
+      "segment_id": "SUBOP-C-02",
+      "g05_stage": 4
+    },
+    {
+      "name": "C-03_grasp_lift",
+      "view": null,
+      "clip": "phase_3_C-03_grasp_lift.mp4",
+      "poster": "phase_3_C-03_grasp_lift.jpg",
+      "ticks": [
+        6932,
+        7652
+      ],
+      "seconds": [
+        28.883333333333333,
+        31.883333333333333
+      ],
+      "frames": [
+        346,
+        383
+      ],
+      "frames_expected": 37,
+      "frames_written": 37,
+      "fps": 12.0,
+      "bytes": 444696,
+      "poster_bytes": 86289,
+      "ok": true,
+      "name_cn": "确认物理夹持并提离",
+      "description_cn": "vial_lift",
+      "segment_id": "SUBOP-C-03",
+      "g05_stage": 5
+    },
+    {
+      "name": "C-04_carry",
+      "view": null,
+      "clip": "phase_4_C-04_carry.mp4",
+      "poster": "phase_4_C-04_carry.jpg",
+      "ticks": [
+        7652,
+        10532
+      ],
+      "seconds": [
+        31.883333333333333,
+        43.88333333333333
+      ],
+      "frames": [
+        382,
+        527
+      ],
+      "frames_expected": 145,
+      "frames_written": 145,
+      "fps": 12.0,
+      "bytes": 1588405,
+      "poster_bytes": 85984,
+      "ok": true,
+      "name_cn": "沿路线携行",
+      "description_cn": "vial_carry",
+      "segment_id": "SUBOP-C-04",
+      "g05_stage": 6
+    },
+    {
+      "name": "C-05_lower",
+      "view": null,
+      "clip": "phase_5_C-05_lower.mp4",
+      "poster": "phase_5_C-05_lower.jpg",
+      "ticks": [
+        10532,
+        12452
+      ],
+      "seconds": [
+        43.88333333333333,
+        51.88333333333333
+      ],
+      "frames": [
+        526,
+        623
+      ],
+      "frames_expected": 97,
+      "frames_written": 97,
+      "fps": 12.0,
+      "bytes": 990538,
+      "poster_bytes": 84072,
+      "ok": true,
+      "name_cn": "对准目标位下放",
+      "description_cn": "vial_lower",
+      "segment_id": "SUBOP-C-05",
+      "g05_stage": 7
+    },
+    {
+      "name": "C-06_release_retreat",
+      "view": null,
+      "clip": "phase_6_C-06_release_retreat.mp4",
+      "poster": "phase_6_C-06_release_retreat.jpg",
+      "ticks": [
+        12452,
+        14372
+      ],
+      "seconds": [
+        51.88333333333333,
+        59.88333333333333
+      ],
+      "frames": [
+        622,
+        719
+      ],
+      "frames_expected": 97,
+      "frames_written": 97,
+      "fps": 12.0,
+      "bytes": 948295,
+      "poster_bytes": 83770,
+      "ok": true,
+      "name_cn": "开爪释放、撤离并检查稳定",
+      "description_cn": "vial_release_exit",
+      "segment_id": "SUBOP-C-06",
+      "g05_stage": 8
+    }
+  ],
+  "skipped": [],
+  "ffmpeg_log": [
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,262\\,718)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_1/video_full.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,262)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_1/video_full.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,262\\,310)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_1/phase_1_C-01_preapproach.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,262)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_1/phase_1_C-01_preapproach.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,310\\,346)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_1/phase_2_C-02_approach_close.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,310)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_1/phase_2_C-02_approach_close.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,346\\,382)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_1/phase_3_C-03_grasp_lift.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,346)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_1/phase_3_C-03_grasp_lift.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,382\\,526)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_1/phase_4_C-04_carry.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,382)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_1/phase_4_C-04_carry.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,526\\,622)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_1/phase_5_C-05_lower.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,526)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_1/phase_5_C-05_lower.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,622\\,718)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_1/phase_6_C-06_release_retreat.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,622)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-vial_1/phase_6_C-06_release_retreat.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    }
+  ],
+  "all_ok": true
+}

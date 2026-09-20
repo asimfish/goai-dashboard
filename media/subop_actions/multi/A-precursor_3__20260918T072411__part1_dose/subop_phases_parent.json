@@ -1,0 +1,113 @@
+{
+ "schema": "subop_phases_v1",
+ "generated_by": "phase-batch make_groups.py",
+ "group_id": "A-precursor_3__20260918T072411__part1_dose",
+ "group_label_cn": "投料取出",
+ "action_id": "A-precursor_3",
+ "action_cn": "precursor_3 投料：取出与归位",
+ "parent_group": "A-precursor_3__20260918T072411",
+ "parent_episode": "/mnt/nas/data/lyf/goai/subop_store/agent1/raw/r8/20260918T072411_725886855_scripted/episodes/A_bottle_03",
+ "run_id": "20260918T072411",
+ "dt_s": 0.004166666666666667,
+ "fps": 12,
+ "video_frames": 922,
+ "object": "precursor_3",
+ "actor": "fr3_A",
+ "station": "A",
+ "split_tick": 12454,
+ "split_s": 51.8917,
+ "split_evidence": "/mnt/nas/data/lyf/goai/subop_store/agent1/raw/r8/20260918T072411_725886855_scripted/episodes/A_bottle_03/meta.json metrics.events 'leave_balance' arrived tick",
+ "segment_ids": [
+  "SUBOP-A-45",
+  "SUBOP-A-46",
+  "SUBOP-A-47",
+  "SUBOP-A-48"
+ ],
+ "full": [
+  1200,
+  12454
+ ],
+ "full_s": [
+  5.0,
+  51.8917
+ ],
+ "markers": {
+  "raise_clearance": 7174,
+  "over_balance": 8134,
+  "turn_above_balance": 9094,
+  "dosing": 11014,
+  "leave_balance": 12454
+ },
+ "needs_review": false,
+ "notes": [
+  "last phase end frame 923 > video frames 922: clipped by 1 frame(s) (tick 18454 = last tick of the run; cut_phases clamps to stream length)"
+ ],
+ "phases": [
+  {
+   "name": "A-45_preapproach",
+   "name_cn": "开爪到预接近位",
+   "description_cn": "夹爪张开，移动到源容器预接近位",
+   "segment_id": "SUBOP-A-45",
+   "g05_stage": 3,
+   "stages": [
+    "pregrasp_hover"
+   ],
+   "physical_status": "PARTIAL",
+   "start_tick": 1200,
+   "end_tick": 2614,
+   "start_s": 5.0,
+   "end_s": 10.8917
+  },
+  {
+   "name": "A-46_approach_close",
+   "name_cn": "沿接近方向到夹持位并闭爪",
+   "description_cn": "沿接近方向到夹持位并闭爪",
+   "segment_id": "SUBOP-A-46",
+   "g05_stage": 4,
+   "stages": [
+    "pregrasp_hover",
+    "before_close",
+    "after_close"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 2614,
+   "end_tick": 5494,
+   "start_s": 10.8917,
+   "end_s": 22.8917
+  },
+  {
+   "name": "A-47_grasp_lift",
+   "name_cn": "确认物理夹持并提离",
+   "description_cn": "确认唯一持有者，提离支撑面并确认物体随臂",
+   "segment_id": "SUBOP-A-47",
+   "g05_stage": 5,
+   "stages": [
+    "after_close",
+    "lifted"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 5494,
+   "end_tick": 6214,
+   "start_s": 22.8917,
+   "end_s": 25.8917
+  },
+  {
+   "name": "A-48a_carry_to_dose",
+   "name_cn": "携瓶到投料位、投料并离开",
+   "description_cn": "SUBOP-A-48 前半：lifted → raise_clearance → over_balance → turn_above_balance → dosing（保持 2 s）→ leave_balance 到位 tick 12454；不含粉体投料",
+   "segment_id": "SUBOP-A-48",
+   "g05_stage": 6,
+   "stages": [
+    "lifted",
+    "above_balance",
+    "dosing",
+    "above_source"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 6214,
+   "end_tick": 12454,
+   "start_s": 25.8917,
+   "end_s": 51.8917
+  }
+ ]
+}

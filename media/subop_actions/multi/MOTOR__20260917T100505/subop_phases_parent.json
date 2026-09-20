@@ -1,0 +1,104 @@
+{
+ "schema": "subop_phases_v1",
+ "generated_by": "phase-batch make_groups.py",
+ "group_id": "MOTOR__20260917T100505",
+ "action_id": "MOTOR",
+ "action_cn": "设备电机开合",
+ "station": "B",
+ "actor": "furnace_3.motor",
+ "object": "furnace_3",
+ "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T100505_759778129_scripted/episodes/B",
+ "run_id": "20260917T100505",
+ "dt_s": 0.004166666666666667,
+ "fps": 12,
+ "video_frames": 276,
+ "video_frame_rate": "12/1",
+ "parent_ticks_total": 5526,
+ "segment_ids": [
+  "SUBOP-MOTOR-I007-01-20260917T100505",
+  "SUBOP-MOTOR-I007-02-20260917T100505",
+  "SUBOP-MOTOR-I007-03-20260917T100505",
+  "SUBOP-MOTOR-I007-04-20260917T100505"
+ ],
+ "full": [
+  1202,
+  5526
+ ],
+ "full_s": [
+  5.0083,
+  23.025
+ ],
+ "notes": [
+  "last phase end frame 277 > video frames 276: clipped by 1 frame(s) (tick 5526 = last tick of the run; cut_phases clamps to stream length)"
+ ],
+ "door_note_cn": "门由电机开（旧）",
+ "phases": [
+  {
+   "name": "MOTOR-I007-01_open",
+   "name_cn": "开",
+   "description_cn": "open",
+   "segment_id": "SUBOP-MOTOR-I007-01-20260917T100505",
+   "g05_stage": null,
+   "stages": [
+    "R4_FURNACE3_DOOR_ONLY_C1_open_start",
+    "initial_closed",
+    "R4_FURNACE3_DOOR_ONLY_C1_open_arrived"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 1202,
+   "end_tick": 2162,
+   "start_s": 5.0083,
+   "end_s": 9.0083
+  },
+  {
+   "name": "MOTOR-I007-02_hold_open",
+   "name_cn": "保持开",
+   "description_cn": "hold_open",
+   "segment_id": "SUBOP-MOTOR-I007-02-20260917T100505",
+   "g05_stage": null,
+   "stages": [
+    "R4_FURNACE3_DOOR_ONLY_C1_open_arrived",
+    "R4_FURNACE3_DOOR_ONLY_C1_close_start",
+    "R4_FURNACE3_DOOR_ONLY_C1_open_held"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 2162,
+   "end_tick": 3364,
+   "start_s": 9.0083,
+   "end_s": 14.0167
+  },
+  {
+   "name": "MOTOR-I007-03_close",
+   "name_cn": "关",
+   "description_cn": "close",
+   "segment_id": "SUBOP-MOTOR-I007-03-20260917T100505",
+   "g05_stage": null,
+   "stages": [
+    "R4_FURNACE3_DOOR_ONLY_C1_close_start",
+    "R4_FURNACE3_DOOR_ONLY_C1_open_held",
+    "R4_FURNACE3_DOOR_ONLY_C1_close_arrived"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 3364,
+   "end_tick": 4324,
+   "start_s": 14.0167,
+   "end_s": 18.0167
+  },
+  {
+   "name": "MOTOR-I007-04_hold_close",
+   "name_cn": "保持关",
+   "description_cn": "hold_close",
+   "segment_id": "SUBOP-MOTOR-I007-04-20260917T100505",
+   "g05_stage": null,
+   "stages": [
+    "R4_FURNACE3_DOOR_ONLY_C1_close_arrived",
+    "R4_FURNACE3_DOOR_ONLY_C1_close_held"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 4324,
+   "end_tick": 5526,
+   "start_s": 18.0167,
+   "end_s": 23.025
+  }
+ ]
+}

@@ -1,0 +1,3458 @@
+[
+ {
+  "row": 0,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 0.0,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 4.2146848510894035e-08
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 20,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 40,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.940696716308595e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 6.664001874625056e-08
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 1.632340423778195e-07
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 60,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 80,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 4.2146848510894035e-08
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 100,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 120,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 140,
+  "robot_max_pos_m": 2.6656007498500226e-07,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 160,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 180,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 200,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 220,
+  "robot_max_pos_m": 2.384185791015625e-07,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 240,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 260,
+  "robot_max_pos_m": 2.384185791015625e-07,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 280,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 300,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 320,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 340,
+  "robot_max_pos_m": 2.6656007498500226e-07,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 360,
+  "robot_max_pos_m": 1.1920928955078125e-07,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 380,
+  "robot_max_pos_m": 2.384185791015625e-07,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 400,
+  "robot_max_pos_m": 2.384185791015625e-07,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 420,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 440,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 460,
+  "robot_max_pos_m": 2.384185791015625e-07,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 480,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 500,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 520,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 540,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 560,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 580,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 600,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 620,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 640,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 660,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 680,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 700,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 720,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 740,
+  "robot_max_pos_m": 2.384185791015625e-07,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 760,
+  "robot_max_pos_m": 2.384185791015625e-07,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 780,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 800,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 820,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 840,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 860,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 880,
+  "robot_max_pos_m": 2.6656007498500226e-07,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 900,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 920,
+  "robot_max_pos_m": 2.384185791015625e-07,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 940,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 960,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 980,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1000,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1020,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1040,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1060,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1080,
+  "robot_max_pos_m": 1.1920928955078125e-07,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1100,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1120,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1140,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1160,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1180,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1200,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1220,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1240,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1260,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1280,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1300,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1320,
+  "robot_max_pos_m": 2.6656007498500226e-07,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1340,
+  "robot_max_pos_m": 2.384185791015625e-07,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1360,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1380,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.960464477539063e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1400,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1420,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1440,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1460,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1480,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1500,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1520,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1540,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1560,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1580,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1600,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1620,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1640,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1660,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1680,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1700,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1720,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1740,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1760,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1780,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1800,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1820,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1840,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 8.429369702178807e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1860,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1880,
+  "robot_max_pos_m": 2.6656007498500226e-07,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1900,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1920,
+  "robot_max_pos_m": 2.384185791015625e-07,
+  "robot_max_ang_rad": 5.1619136559035694e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1940,
+  "robot_max_pos_m": 2.384185791015625e-07,
+  "robot_max_ang_rad": 1.032382731180714e-07,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1960,
+  "robot_max_pos_m": 2.384185791015625e-07,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 1980,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 2000,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 2020,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 2040,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 2060,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 2080,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 2100,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 2120,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ },
+ {
+  "row": 2140,
+  "robot_max_pos_m": 0.0,
+  "robot_max_ang_rad": 4.2146848510894035e-08,
+  "joint_max_abs": 0.0,
+  "objects": {
+   "holder_0": {
+    "pos_m": 0.0,
+    "ang_rad": 2.9802322387695312e-08
+   },
+   "tongs": {
+    "pos_m": 1.1920928955078125e-07,
+    "ang_rad": 8.429369702178807e-08
+   },
+   "vial_1": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_2": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   },
+   "vial_3": {
+    "pos_m": 0.0,
+    "ang_rad": 0.0
+   }
+  },
+  "doors": {
+   "xrd": 0.0
+  },
+  "pass": true
+ }
+]

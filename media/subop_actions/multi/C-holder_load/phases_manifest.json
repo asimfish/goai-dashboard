@@ -1,0 +1,632 @@
+{
+  "schema": "panel_media/phases/1",
+  "label": "C-holder_load",
+  "run": "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C",
+  "phases_file": "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/subop_phases.json",
+  "dt_s": 0.004166666666666667,
+  "tick_offset": 0,
+  "poster_format": "jpg",
+  "station_source": {
+    "kind": "video",
+    "path": "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+    "width": 1280,
+    "height": 800,
+    "fps": 12.0,
+    "frames": 1628,
+    "duration_s": 135.666667
+  },
+  "view_sources": {},
+  "frame_mapping": "frame = floor(tick * dt * fps); phase [a,b) -> frames [floor(a*dt*fps), ceil(b*dt*fps))",
+  "outputs": [
+    {
+      "name": "full",
+      "view": null,
+      "clip": "video_full.mp4",
+      "poster": "video_full.jpg",
+      "ticks": [
+        18165,
+        32565
+      ],
+      "seconds": [
+        75.6875,
+        135.6875
+      ],
+      "frames": [
+        908,
+        1628
+      ],
+      "frames_expected": 720,
+      "frames_written": 720,
+      "fps": 12.0,
+      "bytes": 7515091,
+      "poster_bytes": 83082,
+      "ok": true,
+      "clamped": true,
+      "frames_unclamped": [
+        908,
+        1629
+      ]
+    },
+    {
+      "name": "C-07_preapproach",
+      "view": null,
+      "clip": "phase_1_C-07_preapproach.mp4",
+      "poster": "phase_1_C-07_preapproach.jpg",
+      "ticks": [
+        18165,
+        19125
+      ],
+      "seconds": [
+        75.6875,
+        79.6875
+      ],
+      "frames": [
+        908,
+        957
+      ],
+      "frames_expected": 49,
+      "frames_written": 49,
+      "fps": 12.0,
+      "bytes": 554727,
+      "poster_bytes": 83082,
+      "ok": true,
+      "name_cn": "开爪到预接近位",
+      "description_cn": "holder_preapproach",
+      "segment_id": "SUBOP-C-07",
+      "g05_stage": 3
+    },
+    {
+      "name": "C-08_approach_close",
+      "view": null,
+      "clip": "phase_2_C-08_approach_close.mp4",
+      "poster": "phase_2_C-08_approach_close.jpg",
+      "ticks": [
+        19125,
+        19845
+      ],
+      "seconds": [
+        79.6875,
+        82.6875
+      ],
+      "frames": [
+        956,
+        993
+      ],
+      "frames_expected": 37,
+      "frames_written": 37,
+      "fps": 12.0,
+      "bytes": 385003,
+      "poster_bytes": 84118,
+      "ok": true,
+      "name_cn": "沿接近方向到夹持位并闭爪",
+      "description_cn": "holder_close",
+      "segment_id": "SUBOP-C-08",
+      "g05_stage": 4
+    },
+    {
+      "name": "C-09_grasp_lift",
+      "view": null,
+      "clip": "phase_3_C-09_grasp_lift.mp4",
+      "poster": "phase_3_C-09_grasp_lift.jpg",
+      "ticks": [
+        19845,
+        20805
+      ],
+      "seconds": [
+        82.6875,
+        86.6875
+      ],
+      "frames": [
+        992,
+        1041
+      ],
+      "frames_expected": 49,
+      "frames_written": 49,
+      "fps": 12.0,
+      "bytes": 571400,
+      "poster_bytes": 84588,
+      "ok": true,
+      "name_cn": "确认物理夹持并提离",
+      "description_cn": "holder_lift",
+      "segment_id": "SUBOP-C-09",
+      "g05_stage": 5
+    },
+    {
+      "name": "C-10_carry",
+      "view": null,
+      "clip": "phase_4_C-10_carry.mp4",
+      "poster": "phase_4_C-10_carry.jpg",
+      "ticks": [
+        20805,
+        28245
+      ],
+      "seconds": [
+        86.6875,
+        117.6875
+      ],
+      "frames": [
+        1040,
+        1413
+      ],
+      "frames_expected": 373,
+      "frames_written": 373,
+      "fps": 12.0,
+      "bytes": 4020146,
+      "poster_bytes": 85614,
+      "ok": true,
+      "name_cn": "沿路线携行",
+      "description_cn": "holder_carry",
+      "segment_id": "SUBOP-C-10",
+      "g05_stage": 6
+    },
+    {
+      "name": "C-11_lower",
+      "view": null,
+      "clip": "phase_5_C-11_lower.mp4",
+      "poster": "phase_5_C-11_lower.jpg",
+      "ticks": [
+        28245,
+        29925
+      ],
+      "seconds": [
+        117.6875,
+        124.6875
+      ],
+      "frames": [
+        1412,
+        1497
+      ],
+      "frames_expected": 85,
+      "frames_written": 85,
+      "fps": 12.0,
+      "bytes": 872090,
+      "poster_bytes": 82860,
+      "ok": true,
+      "name_cn": "对准目标位下放",
+      "description_cn": "holder_lower",
+      "segment_id": "SUBOP-C-11",
+      "g05_stage": 7
+    },
+    {
+      "name": "C-12_release_retreat",
+      "view": null,
+      "clip": "phase_6_C-12_release_retreat.mp4",
+      "poster": "phase_6_C-12_release_retreat.jpg",
+      "ticks": [
+        29925,
+        31125
+      ],
+      "seconds": [
+        124.6875,
+        129.6875
+      ],
+      "frames": [
+        1496,
+        1557
+      ],
+      "frames_expected": 61,
+      "frames_written": 61,
+      "fps": 12.0,
+      "bytes": 706047,
+      "poster_bytes": 82993,
+      "ok": true,
+      "name_cn": "开爪释放、撤离并检查稳定",
+      "description_cn": "holder_release_exit",
+      "segment_id": "SUBOP-C-12",
+      "g05_stage": 8
+    },
+    {
+      "name": "C-13_close_window",
+      "view": null,
+      "clip": "phase_7_C-13_close_window.mp4",
+      "poster": "phase_7_C-13_close_window.jpg",
+      "ticks": [
+        31125,
+        32565
+      ],
+      "seconds": [
+        129.6875,
+        135.6875
+      ],
+      "frames": [
+        1556,
+        1628
+      ],
+      "frames_expected": 72,
+      "frames_written": 72,
+      "fps": 12.0,
+      "bytes": 670599,
+      "poster_bytes": 84187,
+      "ok": true,
+      "clamped": true,
+      "frames_unclamped": [
+        1556,
+        1629
+      ],
+      "name_cn": "关窗",
+      "description_cn": "holder_close_window",
+      "segment_id": "SUBOP-C-13",
+      "g05_stage": 9
+    }
+  ],
+  "skipped": [],
+  "ffmpeg_log": [
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,908\\,1627)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/video_full.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,908)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/video_full.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,908\\,956)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/phase_1_C-07_preapproach.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,908)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/phase_1_C-07_preapproach.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,956\\,992)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/phase_2_C-08_approach_close.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,956)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/phase_2_C-08_approach_close.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,992\\,1040)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/phase_3_C-09_grasp_lift.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,992)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/phase_3_C-09_grasp_lift.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,1040\\,1412)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/phase_4_C-10_carry.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,1040)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/phase_4_C-10_carry.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,1412\\,1496)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/phase_5_C-11_lower.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,1412)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/phase_5_C-11_lower.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,1496\\,1556)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/phase_6_C-12_release_retreat.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,1496)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/phase_6_C-12_release_retreat.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='between(n\\,1556\\,1627)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/phase_7_C-13_close_window.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/mnt/nas/data/gaojing/goai_585_20260917/cold/source_runs_before_resume/20260916T173540_131079855_scripted/episodes/C/video.mp4",
+        "-vf",
+        "select='eq(n\\,1556)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/C-holder_load/phase_7_C-13_close_window.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    }
+  ],
+  "all_ok": true
+}

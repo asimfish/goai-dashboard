@@ -1,0 +1,332 @@
+{
+  "schema": "panel_media/phases/1",
+  "label": "A-precursor_2__20260916T182536__part2_return",
+  "run": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260916T182536_392809844_scripted/episodes/A",
+  "phases_file": "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/A_two_part/A-precursor_2__20260916T182536__part2_return/subop_phases.json",
+  "dt_s": 0.004166666666666667,
+  "tick_offset": 0,
+  "poster_format": "jpg",
+  "station_source": {
+    "kind": "video",
+    "path": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260916T182536_392809844_scripted/episodes/A/video.mp4",
+    "width": 1280,
+    "height": 800,
+    "fps": 12.0,
+    "frames": 683,
+    "duration_s": 56.916667
+  },
+  "view_sources": {},
+  "frame_mapping": "frame = floor(tick * dt * fps); phase [a,b) -> frames [floor(a*dt*fps), ceil(b*dt*fps))",
+  "outputs": [
+    {
+      "name": "full",
+      "view": null,
+      "clip": "video_full.mp4",
+      "poster": "video_full.jpg",
+      "ticks": [
+        9840,
+        13668
+      ],
+      "seconds": [
+        41.0,
+        56.949999999999996
+      ],
+      "frames": [
+        492,
+        683
+      ],
+      "frames_expected": 191,
+      "frames_written": 191,
+      "fps": 12.0,
+      "bytes": 1515717,
+      "poster_bytes": 72760,
+      "ok": true,
+      "clamped": true,
+      "frames_unclamped": [
+        492,
+        684
+      ]
+    },
+    {
+      "name": "A-12b_carry_back",
+      "view": null,
+      "clip": "phase_1_A-12b_carry_back.mp4",
+      "poster": "phase_1_A-12b_carry_back.jpg",
+      "ticks": [
+        9840,
+        11760
+      ],
+      "seconds": [
+        41.0,
+        49.0
+      ],
+      "frames": [
+        492,
+        588
+      ],
+      "frames_expected": 96,
+      "frames_written": 96,
+      "fps": 12.0,
+      "bytes": 808585,
+      "poster_bytes": 72760,
+      "ok": true,
+      "name_cn": "携瓶回到源位上方",
+      "description_cn": "SUBOP-A-12 后半：leave_balance → restore_grasp_yaw → over_source（tick 9840 起）",
+      "segment_id": "SUBOP-A-12",
+      "g05_stage": 6
+    },
+    {
+      "name": "A-13_lower",
+      "view": null,
+      "clip": "phase_2_A-13_lower.mp4",
+      "poster": "phase_2_A-13_lower.jpg",
+      "ticks": [
+        11760,
+        12468
+      ],
+      "seconds": [
+        49.0,
+        51.949999999999996
+      ],
+      "frames": [
+        588,
+        624
+      ],
+      "frames_expected": 36,
+      "frames_written": 36,
+      "fps": 12.0,
+      "bytes": 336510,
+      "poster_bytes": 71667,
+      "ok": true,
+      "name_cn": "对准目标位下放",
+      "description_cn": "对准目标槽口，降落至支撑/定位面",
+      "segment_id": "SUBOP-A-13",
+      "g05_stage": 7
+    },
+    {
+      "name": "A-14_release_retreat",
+      "view": null,
+      "clip": "phase_3_A-14_release_retreat.mp4",
+      "poster": "phase_3_A-14_release_retreat.jpg",
+      "ticks": [
+        12468,
+        13668
+      ],
+      "seconds": [
+        51.949999999999996,
+        56.949999999999996
+      ],
+      "frames": [
+        623,
+        683
+      ],
+      "frames_expected": 60,
+      "frames_written": 60,
+      "fps": 12.0,
+      "bytes": 455921,
+      "poster_bytes": 71452,
+      "ok": true,
+      "clamped": true,
+      "frames_unclamped": [
+        623,
+        684
+      ],
+      "name_cn": "开爪释放、撤离并检查稳定",
+      "description_cn": "开爪释放、撤离并检查物体稳定与目标占用",
+      "segment_id": "SUBOP-A-14",
+      "g05_stage": 8
+    }
+  ],
+  "skipped": [],
+  "ffmpeg_log": [
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260916T182536_392809844_scripted/episodes/A/video.mp4",
+        "-vf",
+        "select='between(n\\,492\\,682)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/A_two_part/A-precursor_2__20260916T182536__part2_return/video_full.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260916T182536_392809844_scripted/episodes/A/video.mp4",
+        "-vf",
+        "select='eq(n\\,492)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/A_two_part/A-precursor_2__20260916T182536__part2_return/video_full.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260916T182536_392809844_scripted/episodes/A/video.mp4",
+        "-vf",
+        "select='between(n\\,492\\,587)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/A_two_part/A-precursor_2__20260916T182536__part2_return/phase_1_A-12b_carry_back.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260916T182536_392809844_scripted/episodes/A/video.mp4",
+        "-vf",
+        "select='eq(n\\,492)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/A_two_part/A-precursor_2__20260916T182536__part2_return/phase_1_A-12b_carry_back.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260916T182536_392809844_scripted/episodes/A/video.mp4",
+        "-vf",
+        "select='between(n\\,588\\,623)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/A_two_part/A-precursor_2__20260916T182536__part2_return/phase_2_A-13_lower.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260916T182536_392809844_scripted/episodes/A/video.mp4",
+        "-vf",
+        "select='eq(n\\,588)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/A_two_part/A-precursor_2__20260916T182536__part2_return/phase_2_A-13_lower.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260916T182536_392809844_scripted/episodes/A/video.mp4",
+        "-vf",
+        "select='between(n\\,623\\,682)',setpts=N/FRAME_RATE/TB",
+        "-r",
+        "12",
+        "-an",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/A_two_part/A-precursor_2__20260916T182536__part2_return/phase_3_A-14_release_retreat.mp4"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    },
+    {
+      "cmd": [
+        "/usr/bin/ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        "/data/liyufeng/goai_workflows/subop_library/source_runs/20260916T182536_392809844_scripted/episodes/A/video.mp4",
+        "-vf",
+        "select='eq(n\\,623)'",
+        "-frames:v",
+        "1",
+        "-q:v",
+        "3",
+        "/mnt/nas/data/lyf/goai/subop_store/claude/panel_media/actions/A_two_part/A-precursor_2__20260916T182536__part2_return/phase_3_A-14_release_retreat.jpg"
+      ],
+      "returncode": 0,
+      "stderr_tail": ""
+    }
+  ],
+  "all_ok": true
+}

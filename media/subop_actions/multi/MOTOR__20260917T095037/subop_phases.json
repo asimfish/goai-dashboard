@@ -1,0 +1,193 @@
+{
+ "schema": "subop_phases_v1",
+ "generated_by": "phase-batch make_groups.py",
+ "group_id": "MOTOR__20260917T095037",
+ "action_id": "MOTOR",
+ "action_cn": "设备电机开合",
+ "station": "B",
+ "actor": "furnace_4.motor",
+ "object": "furnace_4",
+ "parent_episode": "/data/liyufeng/goai_workflows/subop_library/source_runs/20260917T095037_272581773_scripted/episodes/B",
+ "run_id": "20260917T095037",
+ "dt_s": 0.004166666666666667,
+ "fps": 12,
+ "video_frames": 492,
+ "video_frame_rate": "12/1",
+ "parent_ticks_total": 9850,
+ "segment_ids": [
+  "SUBOP-MOTOR-I010-01-20260917T095037",
+  "SUBOP-MOTOR-I010-02-20260917T095037",
+  "SUBOP-MOTOR-I010-03-20260917T095037",
+  "SUBOP-MOTOR-I010-04-20260917T095037",
+  "SUBOP-MOTOR-I010-05-20260917T095037",
+  "SUBOP-MOTOR-I010-06-20260917T095037",
+  "SUBOP-MOTOR-I010-07-20260917T095037",
+  "SUBOP-MOTOR-I010-08-20260917T095037"
+ ],
+ "full": [
+  1202,
+  9850
+ ],
+ "full_s": [
+  5.0083,
+  41.0417
+ ],
+ "notes": [
+  "last phase end frame 493 > video frames 492: clipped by 1 frame(s) (tick 9850 = last tick of the run; cut_phases clamps to stream length)"
+ ],
+ "door_note_cn": "门由电机开（旧）",
+ "phases": [
+  {
+   "name": "MOTOR-I010-01_open",
+   "name_cn": "开",
+   "description_cn": "open",
+   "segment_id": "SUBOP-MOTOR-I010-01-20260917T095037",
+   "g05_stage": null,
+   "stages": [
+    "R2_FURNACE4_DOOR_ONLY_C1_open_start",
+    "initial_closed",
+    "R2_FURNACE4_DOOR_ONLY_C1_open_arrived"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 1202,
+   "end_tick": 2162,
+   "start_s": -0.0,
+   "end_s": 4.0,
+   "parent_start_s": 5.0083,
+   "parent_end_s": 9.0083
+  },
+  {
+   "name": "MOTOR-I010-02_hold_open",
+   "name_cn": "保持开",
+   "description_cn": "hold_open",
+   "segment_id": "SUBOP-MOTOR-I010-02-20260917T095037",
+   "g05_stage": null,
+   "stages": [
+    "R2_FURNACE4_DOOR_ONLY_C1_open_arrived",
+    "R2_FURNACE4_DOOR_ONLY_C1_close_start",
+    "R2_FURNACE4_DOOR_ONLY_C1_open_held"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 2162,
+   "end_tick": 3364,
+   "start_s": 4.0,
+   "end_s": 9.0084,
+   "parent_start_s": 9.0083,
+   "parent_end_s": 14.0167
+  },
+  {
+   "name": "MOTOR-I010-03_close",
+   "name_cn": "关",
+   "description_cn": "close",
+   "segment_id": "SUBOP-MOTOR-I010-03-20260917T095037",
+   "g05_stage": null,
+   "stages": [
+    "R2_FURNACE4_DOOR_ONLY_C1_close_start",
+    "R2_FURNACE4_DOOR_ONLY_C1_open_held",
+    "R2_FURNACE4_DOOR_ONLY_C1_close_arrived"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 3364,
+   "end_tick": 4324,
+   "start_s": 9.0084,
+   "end_s": 13.0084,
+   "parent_start_s": 14.0167,
+   "parent_end_s": 18.0167
+  },
+  {
+   "name": "MOTOR-I010-04_hold_close",
+   "name_cn": "保持关",
+   "description_cn": "hold_close",
+   "segment_id": "SUBOP-MOTOR-I010-04-20260917T095037",
+   "g05_stage": null,
+   "stages": [
+    "R2_FURNACE4_DOOR_ONLY_C1_close_arrived",
+    "R2_FURNACE4_DOOR_ONLY_C1_close_held",
+    "R2_FURNACE4_DOOR_ONLY_C2_open_start"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 4324,
+   "end_tick": 5526,
+   "start_s": 13.0084,
+   "end_s": 18.0167,
+   "parent_start_s": 18.0167,
+   "parent_end_s": 23.025
+  },
+  {
+   "name": "MOTOR-I010-05_open",
+   "name_cn": "开",
+   "description_cn": "open",
+   "segment_id": "SUBOP-MOTOR-I010-05-20260917T095037",
+   "g05_stage": null,
+   "stages": [
+    "R2_FURNACE4_DOOR_ONLY_C1_close_held",
+    "R2_FURNACE4_DOOR_ONLY_C2_open_start",
+    "R2_FURNACE4_DOOR_ONLY_C2_open_arrived"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 5526,
+   "end_tick": 6486,
+   "start_s": 18.0167,
+   "end_s": 22.0167,
+   "parent_start_s": 23.025,
+   "parent_end_s": 27.025
+  },
+  {
+   "name": "MOTOR-I010-06_hold_open",
+   "name_cn": "保持开",
+   "description_cn": "hold_open",
+   "segment_id": "SUBOP-MOTOR-I010-06-20260917T095037",
+   "g05_stage": null,
+   "stages": [
+    "R2_FURNACE4_DOOR_ONLY_C2_open_arrived",
+    "R2_FURNACE4_DOOR_ONLY_C2_close_start",
+    "R2_FURNACE4_DOOR_ONLY_C2_open_held"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 6486,
+   "end_tick": 7688,
+   "start_s": 22.0167,
+   "end_s": 27.025,
+   "parent_start_s": 27.025,
+   "parent_end_s": 32.0333
+  },
+  {
+   "name": "MOTOR-I010-07_close",
+   "name_cn": "关",
+   "description_cn": "close",
+   "segment_id": "SUBOP-MOTOR-I010-07-20260917T095037",
+   "g05_stage": null,
+   "stages": [
+    "R2_FURNACE4_DOOR_ONLY_C2_close_start",
+    "R2_FURNACE4_DOOR_ONLY_C2_open_held",
+    "R2_FURNACE4_DOOR_ONLY_C2_close_arrived"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 7688,
+   "end_tick": 8648,
+   "start_s": 27.025,
+   "end_s": 31.025,
+   "parent_start_s": 32.0333,
+   "parent_end_s": 36.0333
+  },
+  {
+   "name": "MOTOR-I010-08_hold_close",
+   "name_cn": "保持关",
+   "description_cn": "hold_close",
+   "segment_id": "SUBOP-MOTOR-I010-08-20260917T095037",
+   "g05_stage": null,
+   "stages": [
+    "R2_FURNACE4_DOOR_ONLY_C2_close_arrived",
+    "R2_FURNACE4_DOOR_ONLY_C2_close_held"
+   ],
+   "physical_status": "PASS",
+   "start_tick": 8648,
+   "end_tick": 9850,
+   "start_s": 31.025,
+   "end_s": 36.0334,
+   "parent_start_s": 36.0333,
+   "parent_end_s": 41.0417
+  }
+ ],
+ "time_base": "video_full.mp4 timeline = parent-run seconds minus 5.0083; ticks are parent-run ticks (unchanged)"
+}

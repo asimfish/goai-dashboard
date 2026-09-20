@@ -1,0 +1,130 @@
+{
+ "schema": "subop_phases_v1",
+ "generated_by": "phase-batch make_groups.py",
+ "group_id": "C-holder_load",
+ "action_id": "C-holder_load",
+ "action_cn": "holder_load 样品架装到托座（holder_0）",
+ "station": "C",
+ "actor": "ur5e_C",
+ "object": "holder_0",
+ "parent_episode": "/data/liyufeng/goai_workflows/alab_twin_collect/runs/20260916T173540_131079855_scripted/episodes/C",
+ "run_id": "20260916T173540",
+ "dt_s": 0.004166666666666667,
+ "fps": 12,
+ "video_frames": 1628,
+ "video_frame_rate": "12/1",
+ "parent_ticks_total": 32565,
+ "segment_ids": [
+  "SUBOP-C-07",
+  "SUBOP-C-08",
+  "SUBOP-C-09",
+  "SUBOP-C-10",
+  "SUBOP-C-11",
+  "SUBOP-C-12",
+  "SUBOP-C-13"
+ ],
+ "full": [
+  18165,
+  32565
+ ],
+ "full_s": [
+  75.6875,
+  135.6875
+ ],
+ "notes": [
+  "last phase end frame 1629 > video frames 1628: clipped by 1 frame(s) (tick 32565 = last tick of the run; cut_phases clamps to stream length)"
+ ],
+ "phases": [
+  {
+   "name": "C-07_preapproach",
+   "name_cn": "开爪到预接近位",
+   "description_cn": "holder_preapproach",
+   "segment_id": "SUBOP-C-07",
+   "g05_stage": 3,
+   "stages": [],
+   "physical_status": "PARTIAL",
+   "start_tick": 18165,
+   "end_tick": 19125,
+   "start_s": 75.6875,
+   "end_s": 79.6875
+  },
+  {
+   "name": "C-08_approach_close",
+   "name_cn": "沿接近方向到夹持位并闭爪",
+   "description_cn": "holder_close",
+   "segment_id": "SUBOP-C-08",
+   "g05_stage": 4,
+   "stages": [],
+   "physical_status": "PARTIAL",
+   "start_tick": 19125,
+   "end_tick": 19845,
+   "start_s": 79.6875,
+   "end_s": 82.6875
+  },
+  {
+   "name": "C-09_grasp_lift",
+   "name_cn": "确认物理夹持并提离",
+   "description_cn": "holder_lift",
+   "segment_id": "SUBOP-C-09",
+   "g05_stage": 5,
+   "stages": [],
+   "physical_status": "PARTIAL",
+   "start_tick": 19845,
+   "end_tick": 20805,
+   "start_s": 82.6875,
+   "end_s": 86.6875
+  },
+  {
+   "name": "C-10_carry",
+   "name_cn": "沿路线携行",
+   "description_cn": "holder_carry",
+   "segment_id": "SUBOP-C-10",
+   "g05_stage": 6,
+   "stages": [],
+   "physical_status": "PARTIAL",
+   "start_tick": 20805,
+   "end_tick": 28245,
+   "start_s": 86.6875,
+   "end_s": 117.6875
+  },
+  {
+   "name": "C-11_lower",
+   "name_cn": "对准目标位下放",
+   "description_cn": "holder_lower",
+   "segment_id": "SUBOP-C-11",
+   "g05_stage": 7,
+   "stages": [],
+   "physical_status": "PARTIAL",
+   "start_tick": 28245,
+   "end_tick": 29925,
+   "start_s": 117.6875,
+   "end_s": 124.6875
+  },
+  {
+   "name": "C-12_release_retreat",
+   "name_cn": "开爪释放、撤离并检查稳定",
+   "description_cn": "holder_release_exit",
+   "segment_id": "SUBOP-C-12",
+   "g05_stage": 8,
+   "stages": [],
+   "physical_status": "PARTIAL",
+   "start_tick": 29925,
+   "end_tick": 31125,
+   "start_s": 124.6875,
+   "end_s": 129.6875
+  },
+  {
+   "name": "C-13_close_window",
+   "name_cn": "关窗",
+   "description_cn": "holder_close_window",
+   "segment_id": "SUBOP-C-13",
+   "g05_stage": 9,
+   "stages": [],
+   "physical_status": "PARTIAL",
+   "start_tick": 31125,
+   "end_tick": 32565,
+   "start_s": 129.6875,
+   "end_s": 135.6875
+  }
+ ]
+}
