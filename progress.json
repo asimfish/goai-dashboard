@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-21T15:55+08:00",
+  "updated": "2026-09-21T16:50+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -21,7 +21,7 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-21T15:55+08:00",
+    "snapshot_at": "2026-09-21T16:50+08:00",
     "gpus": [
       {
         "index": 0,
@@ -31,8 +31,8 @@
       },
       {
         "index": 1,
-        "used_mib": 11807,
-        "util": "1%",
+        "used_mib": 23,
+        "util": "0%",
         "note": "用户 ubuntu 的 glint.train 占用，不使用"
       }
     ],
@@ -510,6 +510,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-09-21 08:49",
+      "entry": "A-Lab 数字孪生渲染原图单独发布：A/B 两个视角各一张 3000×2000 无标注 PNG（封面里那张画面的原始渲染）。"
+    },
     {
       "date": "2026-09-19 19:56",
       "entry": "答辩 PPT「合成方案」页重做：右侧五步纵向流程（徽章主线 + 图标卡）+ 左列数字卡与正式稿缩略图，合入模板第 13 页并发布；步骤数字按账本更正。"
@@ -1337,6 +1341,24 @@
       "date": "2026-09-18",
       "status": "ok",
       "note": "版式参照作者给的样例封面，视觉取自本站（浅灰蓝底、白卡、Chakra Petch / IBM Plex / Noto Sans SC、青橙强调色）；流程条 = 文献核验 → 条件抽取 → 前驱体预测 → 方案生成 → 仿真执行 → 表征反馈，插画与答辩 PPT 第 10、11 页同源；笔记本里是 A-Lab 数字孪生（布局 v4，六门全开）的 Isaac Sim RTX 新渲染，3000×2000 直出，屏幕上标明 RTX RENDER；封面底部与地址栏的链接已按作者要求去掉。数字逐项对过 FINAL_REPORT 与站点统计，出处见仓库 docs/competition/cover/README.md。 B 版视角：XRD 站一角反向全景，前景 UR5e 与工作站，右侧配料岛，远端马弗炉阵列。1× 版：pdf/gallery/sagemat_cover_20260918_B_1440x810.png。"
+    },
+    {
+      "title": "A-Lab 数字孪生渲染原图 · A 视角（配料站一角推近的全景，3000×2000）",
+      "url": "pdf/gallery/alab_twin_render_20260918_A_3000x2000.png",
+      "lang": "图像",
+      "pages": 1,
+      "date": "2026-09-18",
+      "status": "ok",
+      "note": "封面笔记本里那张画面的无标注原图，Isaac Sim RTX 直出，未裁切、未加 HUD。场景 = A-Lab 数字孪生布局 v4，六门全开、机械臂在初始位，与站点 scenes.html 同一状态；渲染脚本见仓库 docs/competition/cover/twin_hero_render.py。前景 FR3 与旋转托盘、天平、开门的干燥箱，后方四台马弗炉与导轨 UR5e，左侧 XRD 站。相机 (3.5, 1.3, 2.3) → (−1.0, −2.0, 0.45)，13 mm。 它是仿真渲染，不是实验室照片。"
+    },
+    {
+      "title": "A-Lab 数字孪生渲染原图 · B 视角（XRD 站一角的反向全景，3000×2000）",
+      "url": "pdf/gallery/alab_twin_render_20260918_B_3000x2000.png",
+      "lang": "图像",
+      "pages": 1,
+      "date": "2026-09-18",
+      "status": "ok",
+      "note": "封面笔记本里那张画面的无标注原图，Isaac Sim RTX 直出，未裁切、未加 HUD。场景 = A-Lab 数字孪生布局 v4，六门全开、机械臂在初始位，与站点 scenes.html 同一状态；渲染脚本见仓库 docs/competition/cover/twin_hero_render.py。前景 UR5e 与工作站，右侧配料岛（旋转托盘、FR3、干燥箱），远端马弗炉阵列与导轨 UR5e。相机 (3.9, −1.6, 2.7) → (−1.8, −0.2, 0.7)，13 mm。 它是仿真渲染，不是实验室照片。"
     },
     {
       "title": "SAGE-Mat 答辩 PPT · 「多智能体并行闭环」第三轮：图一两种构图（A 横向三带 / B 账本居中成环）+ 图二，待作者挑选",
