@@ -1,6 +1,6 @@
 {
   "title": "GoAI 决赛进度看板",
-  "updated": "2026-09-21T16:50+08:00",
+  "updated": "2026-09-21T16:55+08:00",
   "goal": "把 A-Lab（Nature 2023）三站流程在 5090 的 Isaac Sim 里做成可操作、零穿模的数字孪生，用 GPT-6 Astra 闭环采集 FR3/UR5e 轨迹；同时交付五个 SafeLab 工作流与中文综述 PDF。",
   "links": {
     "showcase": "https://claude.ai/code/artifact/edf3dadd-75d4-4e01-888e-748c94a5d201",
@@ -21,7 +21,7 @@
   },
   "compute": {
     "host": "bj.wznln.com:4009 (ubuntu-TRX50-AI-TOP, 2× RTX 5090 32 GB)",
-    "snapshot_at": "2026-09-21T16:50+08:00",
+    "snapshot_at": "2026-09-21T16:55+08:00",
     "gpus": [
       {
         "index": 0,
@@ -1297,6 +1297,10 @@
     {
       "date": "2026-09-21 15:50",
       "entry": "**A 站返工第 1 条通过并上板：precursor_1 按用户三条要求全部满足。** 四个试剂瓶横排在转盘上原来小试剂瓶那条线（y=0.210，大透 1.6117 / 小棕 1.7040 / 小透 1.7960 / 大棕 1.8884，边到边间隙 30.0 / 37.2 / 30.0 mm）；机位换回旧的 station_a eye (1.75,−2.00,2.75) / 22 mm；天平无玻璃罩。静置门 max 位移 0.408 mm / 转角 1.05°、7 行负分离全是原有的且不涉及瓶子；任务 run 55.9 s / 671 帧，13 个航点全部 arrived（TCP 误差 1e-5 m 量级），放秤落点 1.708 mm、归位 0.416 mm、最大倾角 1.13°、aborted=false。 过程中修掉两个我自己的错误：r7 第一版只改了 prims[].pose，而运行时是从 prims[].world_pose 生成的，导致相机变了瓶子没变；SUMMARY 把「没有 independent_audit.json」误判为失败，实际 run.log 结尾是 `independent score pending` + EPISODE_SAVED + aborted:false，审计是独立一步。 本条是实时模式渲染，瓶盖仍为旧显示，PathTracing 重渲后替换。precursor_2/3/4 在 5090 串行重采。"
+    },
+    {
+      "date": "2026-09-21 16:55",
+      "entry": "**A 站两条小瓶都按用户要求重采通过并上板：precursor_1、precursor_2。** 四瓶横排在转盘上原来小试剂瓶那条线（y=0.210）、机位换回旧的、天平无玻璃罩；两条各 55.9 秒，13 个航点全部 arrived，放秤落点 1.707–1.708 mm、归位 0.416–0.437 mm。 **用户决定把瓶盖整个去掉**，no-cap 派生资产已就位（只写 Lid visibility=invisible，纯渲染、物理不变，已跑通的 episode 无需重跑物理）。第一次改只动 `prims[].usd` 没生效——运行时真正加载的是 `prims[].prepared_usd`，已把三个资产字段与相关 sha 一并修正（r7 包与运行副本两处）。 **precursor_3/4 仍卡在 `grasp_arrival` 的 `no_clear_empty_joint_path`**：把大瓶间距从 30 mm 拉到 60 mm 后 TCP 误差只从 0.0367240 m 变到 0.0367201 m（3.9 微米），**排位挤这个假设被实测推翻**；残差恒定 36.7 mm 与「大瓶比小瓶高 39.4 mm」「大瓶夹持偏移比小瓶低 30 mm」同量级，且 r6 时大瓶在台面上（root z 低 98.6 mm）能过这一步，方向转向大瓶夹持位 z 的计算。"
     }
   ],
   "contract": [
@@ -2409,7 +2413,7 @@
   "user_directives": {
     "issued": "2026-09-19 06:40 CST（用户逐条审看动作面板后提出）",
     "rule": "每条由负责 agent 在自己的 PROGRESS 文件里新开「## 用户指令落实（D 编号）」小节逐条回执：状态（未开始 / 进行中 / 已完成 / 受阻+原因）、证据路径、时间；监督每 20 分钟核对一次并更新本表与面板。完成标准写在每条里，达不到不许标完成。 16:50 用户追加决定：静置门 5 mm / 5° 确认；C 站开门目标为干燥箱柜门（够不着就挪近，再不行 XRD 滑窗）；a100-new 归还、七台服务器已释放可用；旧段先放行（有站位相机视频即按 demo 门通过）；瓶盖资产由我们自己修。 23:40 用户第二轮审片追加 D26–D30。",
-    "updated": "2026-09-21 15:50",
+    "updated": "2026-09-21 16:55",
     "items": [
       {
         "id": "D01",
@@ -2651,7 +2655,7 @@
         "topic": "秤上放置核查 / 去玻璃",
         "what": "审计：无穿透但瓶底 ↔ 秤盘最小净空 0.57–0.96 mm、落点误差 2.7–8.9 mm、guarded stop。量化释放瞬间瓶底与秤盘面的高差、与玻璃罩距离、guarded stop 触发对；若玻璃罩挡住下降，按用户拍板在派生布局里去掉秤的玻璃。",
         "done_when": "释放后瓶底 ↔ 秤盘为支撑接触对，位置误差 ≤ 5 mm，新 run 视频里看不出下沉。",
-        "status": "precursor_1 已按 r7 + 旧机位通过并上板；2/3/4 重采中",
+        "status": "precursor_1/2 已按 r7 + 旧机位通过并上板；瓶盖改为整个去掉，重渲中；3/4 诊断中",
         "evidence": "P1v 证实罩框（顶梁 + 四立柱）设为不可见无碰撞后抓取不再被拦；随后发现秤上称量纸与瓶重叠 1.191 mm，纸已移到台沿候选位；资产 SHA e5a58524…  09-21 02:30 实测确认：r6 布局首帧（evidence/A_camera_rig_v2_r6_20260920/P1）与 raw/r6_final/20260920T150404_469207382_scripted/episodes/A/video.mp4 里，天平是敞口无罩、四瓶横排同一排。precursor_1 已跑通：stage 4、抓取/抬升/放置全确认、最终位置误差 0.056 mm、穿透 tick 0、原始负分离 0；gate_pass=false 仅因 contract 带 diagnostic 标志。该成片已上验收面板。**precursor_2/3/4 的面板成片仍是 09-16/17 旧布局（带玻璃罩、瓶子未并排）**，r6 重采已下发 agent 1，跑完替换。  **09-21 15:47 第 1 条返工通过**：precursor_1 用 r7 布局（四瓶在转盘 y=0.210 那条线：大透 1.6117 / 小棕 1.7040 / 小透 1.7960 / 大棕 1.8884）+ 旧机位（station_a eye (1.75,−2.00,2.75) / 22 mm）重采成功。静置门 max 位移 0.408 mm / 转角 1.05°、负分离无瓶子参与；任务 run 全程 55.9 s / 671 帧，13 个航点全部 arrived，放秤落点 1.708 mm、归位 0.416 mm、最大倾角 1.13°、aborted=false。成片已上验收面板。路径 NAS:subop_store/claude/A_r7_runs/precursor_1/episodes/A/。"
       },
       {
@@ -2660,7 +2664,7 @@
         "topic": "大瓶与小瓶同排",
         "what": "四瓶按 09-16/17 原小瓶架位那条线横排一排（用户 05:25 明确：不是秤后台沿），大瓶以原间距向两侧延伸，静置门 5 mm / 5°。  **09-21 03:35 用户澄清**：「我指的四个在一排是之前小试剂瓶的位置的一排，不是这么一排」——指的是转盘上原来两只小瓶那条线（precursor_1 (1.704,0.210,1.1537)、precursor_2 (1.796,0.210,1.1537)，y=0.210、x 间距 0.092 m），不是 r6 用的台面前沿 (2.100,0.550,1.0560)。大瓶沿同一条线向外延伸，间距取 max(0.092, 大瓶外径+25 mm)，root z 按大瓶自身 extent 重算使瓶底落在转盘面。",
         "done_when": "新布局包 + 四瓶新 run。",
-        "status": "precursor_1 已按 r7 + 旧机位通过并上板；2/3/4 重采中",
+        "status": "precursor_1/2 已按 r7 + 旧机位通过并上板；瓶盖改为整个去掉，重渲中；3/4 诊断中",
         "evidence": "capfix 渲染实测四瓶已成一排；agent 1 第五批用该布局 + 新瓶资产  09-21 02:30 实测确认：r6 布局首帧（evidence/A_camera_rig_v2_r6_20260920/P1）与 raw/r6_final/20260920T150404_469207382_scripted/episodes/A/video.mp4 里，天平是敞口无罩、四瓶横排同一排。precursor_1 已跑通：stage 4、抓取/抬升/放置全确认、最终位置误差 0.056 mm、穿透 tick 0、原始负分离 0；gate_pass=false 仅因 contract 带 diagnostic 标志。该成片已上验收面板。**precursor_2/3/4 的面板成片仍是 09-16/17 旧布局（带玻璃罩、瓶子未并排）**，r6 重采已下发 agent 1，跑完替换。  **09-21 02:46 解决**：根因是渲染模式。`RaytracedLighting`（RTX 实时）下 translucency 通道把瓶身 OmniGlass 合成到不透明瓶盖之上，于是建模与绑定都正确、盖顶封闭的螺旋盖在近景里显示为半透明。从 Python 侧在 Isaac Lab 初始化后写 `/rtx/rendermode=\"PathTracing\"`（读回确认生效，配 maxBounces=16 / spp=4 / totalSpp=64）后，盖子渲成完整实心螺旋盖，四瓶一排橙/蓝/绿/绿四只实心盖、250ml/100ml 标签清晰、玻璃仍是玻璃。原始资产零 override，不换色不改几何。排除项（每项都读回生效值）：warm-up 帧数、盖子材质 opacity、盖子几何、maxRefractionBounces 6→16→32、virtualDepth、fractionalCutoutOpacity、sampledLighting 全部无变化。关键方法论：命令行 kit arg 写 rendermode 无效（Isaac Lab 之后会覆盖），必须 Python 侧写并读回。证据 NAS:subop_store/claude/bottle_capfix_v4/diag_pipeline/{step_C_cutout_false_closeup.png, step_D1_pathtracing_closeup.png, step_D1_pathtracing_row.png, QUEUE_rtx.md}。已固化进静态图管线默认；**视频管线未切**——面板成片仍是实时模式渲的，盖子在视频里还是错的，PT 逐帧成本探针在跑，出数后决定 A 站四条 / C-20 / B-10 是否用 PT 重出。  **09-21 15:47 第 1 条返工通过**：precursor_1 用 r7 布局（四瓶在转盘 y=0.210 那条线：大透 1.6117 / 小棕 1.7040 / 小透 1.7960 / 大棕 1.8884）+ 旧机位（station_a eye (1.75,−2.00,2.75) / 22 mm）重采成功。静置门 max 位移 0.408 mm / 转角 1.05°、负分离无瓶子参与；任务 run 全程 55.9 s / 671 帧，13 个航点全部 arrived，放秤落点 1.708 mm、归位 0.416 mm、最大倾角 1.13°、aborted=false。成片已上验收面板。路径 NAS:subop_store/claude/A_r7_runs/precursor_1/episodes/A/。"
       },
       {
@@ -2705,7 +2709,7 @@
         "topic": "A 站机位改回旧机位",
         "what": "用户 09-21：「视角还是之前的视角」。A 站成片一律用旧固定机位，camera_rig_v2 对 A 站暂停（B/C 站继续用）：station_a eye (1.75,−2.00,2.75) / lookat (1.75,0.50,1.15) / 22 mm；a_front (2.75,−0.25,1.75) / (2.05,0.30,1.28) / 15 mm；a_side (4.00,0.50,2.00) / (1.90,0.50,1.20) / 24 mm；a_top (2.30,0.30,2.50) / (1.95,0.30,1.00) / 20 mm。",
         "done_when": "A 站新 run 的五路视频全部用这组机位，面板上的 A 站成片换成新机位版本。",
-        "status": "precursor_1 已按 r7 + 旧机位通过并上板；2/3/4 重采中",
+        "status": "precursor_1/2 已按 r7 + 旧机位通过并上板；瓶盖改为整个去掉，重渲中；3/4 诊断中",
         "evidence": "旧值来源 agent1/episodes/SUBOP-A-33/observations/pregrasp_hover_cameras.json；r6 当前用的是 station_a eye (3.291,1.179,2.384) / 16 mm 广角，用户不要这个  **09-21 15:47 第 1 条返工通过**：precursor_1 用 r7 布局（四瓶在转盘 y=0.210 那条线：大透 1.6117 / 小棕 1.7040 / 小透 1.7960 / 大棕 1.8884）+ 旧机位（station_a eye (1.75,−2.00,2.75) / 22 mm）重采成功。静置门 max 位移 0.408 mm / 转角 1.05°、负分离无瓶子参与；任务 run 全程 55.9 s / 671 帧，13 个航点全部 arrived，放秤落点 1.708 mm、归位 0.416 mm、最大倾角 1.13°、aborted=false。成片已上验收面板。路径 NAS:subop_store/claude/A_r7_runs/precursor_1/episodes/A/。"
       },
       {
@@ -2714,8 +2718,8 @@
         "topic": "瓶盖兜底授权：实在不行就不要盖子",
         "what": "用户 09-21：「试剂瓶盖子的问题实在解决不了的话，就都不要盖子里」。决策树：PT 逐帧成本可接受且无帧间噪点 → 全部用 PathTracing 重出成片，保留原始盖；否则 → 派生可视层里把 <Bottle>_Lid/Visuals 设 invisible，四瓶都不要盖子，继续实时模式渲。纯视觉，不动碰撞体/质量/变换/已登记物理数据。",
         "done_when": "拿到实时 vs PT 单帧秒数、1059 帧×5 路单条总时长、六条总机时，以及一段 PT 连续帧的噪点判断，然后二选一落地。",
-        "status": "已定：保留原始瓶盖走 PathTracing（噪点 0.028/255、成本 2.51×）；C-20 成片已重渲上板",
-        "evidence": "静态图已由 PathTracing 修好（bottle_capfix_v4/diag_pipeline/step_D1_pathtracing_*.png）；视频管线未切  PT_COST.md：PT/实时 = 2.51×，C-20 10→26 min、B-10 13→32 min；噪点探针 60 帧静止背景帧间平均绝对差 0.028/255、最大 0.063。SUBOP-C-20 PathTracing 成片 1050 帧已出（claude/replay/SUBOP-C-20_pt/video.mp4）并换上验收面板。"
+        "status": "用户 09-21 决定直接去掉瓶盖；no-cap 资产已就位，重渲中",
+        "evidence": "静态图已由 PathTracing 修好（bottle_capfix_v4/diag_pipeline/step_D1_pathtracing_*.png）；视频管线未切  PT_COST.md：PT/实时 = 2.51×，C-20 10→26 min、B-10 13→32 min；噪点探针 60 帧静止背景帧间平均绝对差 0.028/255、最大 0.063。SUBOP-C-20 PathTracing 成片 1050 帧已出（claude/replay/SUBOP-C-20_pt/video.mp4）并换上验收面板。  09-21：用户看过 PathTracing 之外的新片后决定「把盖子直接去掉」。已做 bottle_nocap 派生资产（sublayer 原始资产，只写 <Bottle>_Lid visibility=invisible；USD visibility 只影响渲染，不动碰撞体/质量/变换，物理与源资产逐位一致，已登记数据全部有效）。第一次改只动了 prims[].usd 没生效，查出运行时实际加载的是 prims[].prepared_usd，已把 usd / prepared_usd / source_usd 及相关 sha 字段一并指向 no-cap，两处（r7 包与 _shared/tools/a_collect/plans_r7 运行副本）都已修。"
       },
       {
         "id": "D35",
@@ -2723,7 +2727,7 @@
         "topic": "A 站四瓶采集整条移交 Claude agent",
         "what": "用户：「A站的新的视频，有新的按照我的要求的结果了吗，没有的话直接交给 claude code 的那个 agent 去干吧」。agent 1（Codex）19:59:47 执行中被平台打断，1.5 小时零产出，r7 一条没跑。A 站四瓶的物理采集 + PathTracing 渲染 + 出片全部转交 Claude agent，布局用已就绪的 r7 包。",
         "done_when": "四瓶各一条 r7 布局 + 旧机位 + PathTracing 的完整成片上验收面板。",
-        "status": "进行中：precursor_1 通过并上板，2/3/4 在 5090 串行重采",
+        "status": "precursor_1/2 已按 r7 + 旧机位通过并上板；瓶盖改为整个去掉，重渲中；3/4 诊断中",
         "evidence": "r7 包 /data/liyufeng/goai_assets/handoff/collection_astra/A_r7_row_oldcam_20260921/ （4 个 json + ASSET_SHA256.json + RESULT.md）；可用卡实测 mainskill GPU0/3/4/5/6 五张空闲  Claude agent 查明 r6 能跑通是因为入口 subop_A_expert_entry.py 用 monkey-patch 跳过了 G3 声明校验，而该入口只存在于 agent 1 的 run 快照里；已从快照重建验证执行树（204 个 .py 与 r6 逐字节一致，未改执行器源码）。mainskill 缺 python-fcl 导致 --collision-preflight 无法运行，四卡并行物理采集受阻，改在 5090 串行；PT 重渲不走 preflight，可在 mainskill 并行。"
       }
     ]
